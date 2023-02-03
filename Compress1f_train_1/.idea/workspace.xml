@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a373f9b0-a6c8-4515-8a02-6583a8c64372" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/AbstractTestCase.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/DetectArchiverTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/DetectArchiverTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/DetectCompressorTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/DetectCompressorTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/ArTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/ArTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/CpioTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/CpioTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/JarTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/JarTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/TarTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/TarTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/ZipTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/ZipTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/cpio/CpioArchiveInputStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/cpio/CpioArchiveInputStreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/jar/JarArchiveOutputStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/jar/JarArchiveOutputStreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/memory/MemoryArchiveTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/memory/MemoryArchiveTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/tar/TarArchiveEntryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/tar/TarArchiveEntryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/zip/AsiExtraFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/zip/AsiExtraFieldTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/zip/ExtraFieldUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/zip/ExtraFieldUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/zip/TestZipEncodings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/zip/TestZipEncodings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/zip/UTF8ZipFilesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/zip/UTF8ZipFilesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/zip/ZipLongTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/zip/ZipLongTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/zip/ZipShortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/zip/ZipShortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/zip/ZipUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/archivers/zip/ZipUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/changes/ChangeSetTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/changes/ChangeSetTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/compressors/BZip2TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/compressors/BZip2TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/compressors/GZipTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/compress/compressors/GZipTestCase.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Kfx8a0gnn7qd78A7cKaSAq331Z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/sepehr/masters/test_generation/model_generated_coverage/Compress1f_automated_2"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a373f9b0-a6c8-4515-8a02-6583a8c64372" name="Changes" comment="" />
+      <created>1674379280313</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674379280313</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

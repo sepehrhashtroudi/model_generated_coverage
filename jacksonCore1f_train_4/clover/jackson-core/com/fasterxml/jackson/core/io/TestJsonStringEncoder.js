@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":104,"id":14112,"methods":[{"el":31,"sc":1,"sl":15},{"el":47,"sc":1,"sl":34},{"el":54,"sc":1,"sl":50},{"el":63,"sc":1,"sl":57},{"el":72,"sc":1,"sl":66},{"el":103,"sc":5,"sl":93}],"name":"TestJsonStringEncoder","sl":11}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_120":{"methods":[{"sl":50}],"name":"testCtrlChars128","pass":true,"statements":[{"sl":51},{"sl":52},{"sl":53}]},"test_132":{"methods":[{"sl":34}],"name":"testQuoteLongAsString127","pass":true,"statements":[{"sl":35},{"sl":36},{"sl":37},{"sl":38},{"sl":39},{"sl":40},{"sl":42},{"sl":43},{"sl":44},{"sl":45},{"sl":46}]},"test_3":{"methods":[{"sl":15},{"sl":93}],"name":"testQuoteAsUTF845","pass":true,"statements":[{"sl":16},{"sl":17},{"sl":18},{"sl":19},{"sl":20},{"sl":21},{"sl":22},{"sl":23},{"sl":24},{"sl":25},{"sl":26},{"sl":27},{"sl":28},{"sl":29},{"sl":95},{"sl":96},{"sl":97},{"sl":99},{"sl":100},{"sl":102}]},"test_69":{"methods":[{"sl":57}],"name":"testQuoteAsString129","pass":true,"statements":[{"sl":58},{"sl":59},{"sl":60},{"sl":61},{"sl":62}]},"test_95":{"methods":[{"sl":66},{"sl":93}],"name":"testEncodeAsUTF8130","pass":true,"statements":[{"sl":67},{"sl":68},{"sl":69},{"sl":70},{"sl":95},{"sl":96},{"sl":97},{"sl":99},{"sl":100},{"sl":102}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [3], [3], [3], [3], [3], [3], [3], [3], [3], [3], [3], [3], [3], [3], [3], [], [], [], [], [132], [132], [132], [132], [132], [132], [132], [], [132], [132], [132], [132], [132], [], [], [], [120], [120], [120], [120], [], [], [], [69], [69], [69], [69], [69], [69], [], [], [], [95], [95], [95], [95], [95], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [95, 3], [], [95, 3], [95, 3], [95, 3], [], [95, 3], [95, 3], [], [95, 3], [], [], []]

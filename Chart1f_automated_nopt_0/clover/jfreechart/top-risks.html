@@ -1,0 +1,2979 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>jfreechart</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="historical.html">jfreechart-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        jfreechart
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Mon Jan 23 2023 12:59:19 MST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+            <li class="menu-item ">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item active-tab">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+
+                        <div style="text-align: right; margin-bottom: 10px">
+            
+            
+                                    <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;How to read this chart
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function (content, trigger, showPopup) {
+                var description = topRisksDescription();
+                var title = 'Top Risks';
+                content.css({"padding": "20px"}).html(
+                        '<h2>' + title + '</h2>' + description);
+                showPopup();
+                return false;
+            },
+            {
+                width: 600
+            }
+    );
+</script>
+        </div>
+
+        
+
+<div style="padding: 20px; border: 1px solid #cccccc; background-color: #f5f5f5; border-radius: 3px">
+          <div id="deepPackageCloud"  >
+                          
+    
+        
+    
+            <a href="org/jfree/chart/annotations/AbstractAnnotation.html" class="tag"
+            style="font-size: 18px;color:#e28e87"
+            title="Average Method Complexity - 1.364 , Coverage - 47.5% ">AbstractAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/block/AbstractBlock.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 1.611 , Coverage - 71.3% ">AbstractBlock</a>
+            
+    
+            <a href="org/jfree/data/category/AbstractCategoryDataset.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 71.4% ">AbstractCategoryDataset</a>
+            
+    
+            <a href="org/jfree/chart/labels/AbstractCategoryItemLabelGenerator.html" class="tag"
+            style="font-size: 22px;color:#e28e87"
+            title="Average Method Complexity - 2.308 , Coverage - 39.5% ">AbstractCategoryItemLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.html" class="tag"
+            style="font-size: 24px;color:#d9695f"
+            title="Average Method Complexity - 2.833 , Coverage - 27.5% ">AbstractCategoryItemRenderer</a>
+            
+    
+            <a href="org/jfree/data/general/AbstractDataset.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 1.25 , Coverage - 70.7% ">AbstractDataset</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/AbstractDialLayer.html" class="tag"
+            style="font-size: 18px;color:#e7a19b"
+            title="Average Method Complexity - 1.364 , Coverage - 56.5% ">AbstractDialLayer</a>
+            
+    
+            <a href="org/jfree/data/xy/AbstractIntervalXYDataset.html" class="tag"
+            style="font-size: 21px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 93.8% ">AbstractIntervalXYDataset</a>
+            
+    
+            <a href="org/jfree/chart/panel/AbstractMouseHandler.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 30.8% ">AbstractMouseHandler</a>
+            
+    
+            <a href="org/jfree/chart/util/AbstractObjectList.html" class="tag"
+            style="font-size: 23px;color:#fae1a0"
+            title="Average Method Complexity - 2.538 , Coverage - 80% ">AbstractObjectList</a>
+            
+    
+            <a href="org/jfree/data/pie/AbstractPieDataset.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 71.4% ">AbstractPieDataset</a>
+            
+    
+            <a href="org/jfree/chart/labels/AbstractPieItemLabelGenerator.html" class="tag"
+            style="font-size: 23px;color:#f6c342"
+            title="Average Method Complexity - 2.556 , Coverage - 66.3% ">AbstractPieItemLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/plot/AbstractPieLabelDistributor.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="Average Method Complexity - 1.2 , Coverage - 14.3% ">AbstractPieLabelDistributor</a>
+            
+    
+            <a href="org/jfree/chart/renderer/AbstractRenderer.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 2.089 , Coverage - 42.3% ">AbstractRenderer</a>
+            
+    
+            <a href="org/jfree/data/general/AbstractSeriesDataset.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 1.667 , Coverage - 100% ">AbstractSeriesDataset</a>
+            
+    
+            <a href="org/jfree/chart/annotations/AbstractXYAnnotation.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="Average Method Complexity - 2 , Coverage - 27.8% ">AbstractXYAnnotation</a>
+            
+    
+            <a href="org/jfree/data/xy/AbstractXYDataset.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 1.4 , Coverage - 78.3% ">AbstractXYDataset</a>
+            
+    
+            <a href="org/jfree/chart/labels/AbstractXYItemLabelGenerator.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 2.188 , Coverage - 39.4% ">AbstractXYItemLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/AbstractXYItemRenderer.html" class="tag"
+            style="font-size: 26px;color:#d9695f"
+            title="Average Method Complexity - 3.188 , Coverage - 18.4% ">AbstractXYItemRenderer</a>
+            
+    
+            <a href="org/jfree/chart/event/AnnotationChangeEvent.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 60% ">AnnotationChangeEvent</a>
+            
+    
+            <a href="org/jfree/chart/annotations/junit/AnnotationsPackageTests.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 80% ">AnnotationsPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/ArcDialFrame.html" class="tag"
+            style="font-size: 19px;color:#de7b72"
+            title="Average Method Complexity - 1.56 , Coverage - 32.4% ">ArcDialFrame</a>
+            
+    
+            <a href="org/jfree/chart/junit/AreaChartTests.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 20% ">AreaChartTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/AreaRenderer.html" class="tag"
+            style="font-size: 32px;color:#d5584c"
+            title="Average Method Complexity - 4.571 , Coverage - 8.9% ">AreaRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/AreaRendererEndType.html" class="tag"
+            style="font-size: 23px;color:#d9695f"
+            title="Average Method Complexity - 2.5 , Coverage - 17.6% ">AreaRendererEndType</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/AreaRendererTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">AreaRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/needle/ArrowNeedle.html" class="tag"
+            style="font-size: 24px;color:#de7b72"
+            title="Average Method Complexity - 2.8 , Coverage - 29.3% ">ArrowNeedle</a>
+            
+    
+            <a href="org/jfree/chart/needle/junit/ArrowNeedleTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">ArrowNeedleTests</a>
+            
+    
+            <a href="org/jfree/chart/util/AttributedStringUtilities.html" class="tag"
+            style="font-size: 32px;color:#de7b72"
+            title="Average Method Complexity - 4.5 , Coverage - 36.6% ">AttributedStringUtilities</a>
+            
+    
+            <a href="org/jfree/chart/axis/Axis.html" class="tag"
+            style="font-size: 21px;color:#e7a19b"
+            title="Average Method Complexity - 2.185 , Coverage - 51.8% ">Axis</a>
+            
+    
+            <a href="org/jfree/chart/event/AxisChangeEvent.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AxisChangeEvent</a>
+            
+    
+            <a href="org/jfree/chart/axis/AxisCollection.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 71.1% ">AxisCollection</a>
+            
+    
+            <a href="org/jfree/chart/axis/AxisLocation.html" class="tag"
+            style="font-size: 25px;color:#e28e87"
+            title="Average Method Complexity - 3 , Coverage - 46% ">AxisLocation</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/AxisLocationTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">AxisLocationTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/AxisPackageTests.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 90.2% ">AxisPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/AxisSpace.html" class="tag"
+            style="font-size: 22px;color:#e28e87"
+            title="Average Method Complexity - 2.316 , Coverage - 40.5% ">AxisSpace</a>
+            
+    
+            <a href="org/jfree/chart/axis/AxisState.html" class="tag"
+            style="font-size: 17px;color:#e28e87"
+            title="Average Method Complexity - 1.308 , Coverage - 45.2% ">AxisState</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/AxisTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">AxisTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/BarChart3DTests.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 20% ">BarChart3DTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/BarChartTests.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 20% ">BarChartTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/BarRenderer.html" class="tag"
+            style="font-size: 26px;color:#d9695f"
+            title="Average Method Complexity - 3.312 , Coverage - 27% ">BarRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/BarRenderer3D.html" class="tag"
+            style="font-size: 26px;color:#d5584c"
+            title="Average Method Complexity - 3.294 , Coverage - 7.2% ">BarRenderer3D</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/BarRendererTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">BarRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/ui/BasicProjectInfo.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="Average Method Complexity - 1.357 , Coverage - 23.2% ">BasicProjectInfo</a>
+            
+    
+            <a href="org/jfree/chart/block/BlockBorder.html" class="tag"
+            style="font-size: 20px;color:#e7a19b"
+            title="Average Method Complexity - 1.909 , Coverage - 59.5% ">BlockBorder</a>
+            
+    
+            <a href="org/jfree/chart/block/BlockContainer.html" class="tag"
+            style="font-size: 20px;color:#f6c342"
+            title="Average Method Complexity - 1.929 , Coverage - 67.7% ">BlockContainer</a>
+            
+    
+            <a href="org/jfree/chart/block/junit/BlockPackageTests.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 78.9% ">BlockPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/block/BlockParams.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">BlockParams</a>
+            
+    
+            <a href="org/jfree/chart/block/BlockResult.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">BlockResult</a>
+            
+    
+            <a href="org/jfree/chart/util/BooleanList.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.2 , Coverage - 84.6% ">BooleanList</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/BooleanListTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">BooleanListTests</a>
+            
+    
+            <a href="org/jfree/chart/block/BorderArrangement.html" class="tag"
+            style="font-size: 43px;color:#de7b72"
+            title="Average Method Complexity - 7 , Coverage - 28.5% ">BorderArrangement</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/BoxAndWhiskerCalculatorTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">BoxAndWhiskerCalculatorTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/BoxAndWhiskerItem.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="Average Method Complexity - 1.923 , Coverage - 19.3% ">BoxAndWhiskerItem</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/BoxAndWhiskerItemTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">BoxAndWhiskerItemTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/BoxAndWhiskerRenderer.html" class="tag"
+            style="font-size: 28px;color:#d5584c"
+            title="Average Method Complexity - 3.68 , Coverage - 14.7% ">BoxAndWhiskerRenderer</a>
+            
+    
+            <a href="org/jfree/chart/labels/BoxAndWhiskerToolTipGenerator.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="Average Method Complexity - 1.75 , Coverage - 25.8% ">BoxAndWhiskerToolTipGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/BoxAndWhiskerXYToolTipGenerator.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="Average Method Complexity - 2 , Coverage - 22.9% ">BoxAndWhiskerXYToolTipGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/BubbleXYItemLabelGenerator.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="Average Method Complexity - 2.1 , Coverage - 29.8% ">BubbleXYItemLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/CandlestickRenderer.html" class="tag"
+            style="font-size: 23px;color:#d9695f"
+            title="Average Method Complexity - 2.548 , Coverage - 21.6% ">CandlestickRenderer</a>
+            
+    
+            <a href="org/jfree/chart/axis/CategoryAnchor.html" class="tag"
+            style="font-size: 23px;color:#fae1a0"
+            title="Average Method Complexity - 2.5 , Coverage - 75.8% ">CategoryAnchor</a>
+            
+    
+            <a href="org/jfree/chart/axis/CategoryAxis.html" class="tag"
+            style="font-size: 25px;color:#e7a19b"
+            title="Average Method Complexity - 3 , Coverage - 53.7% ">CategoryAxis</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/CategoryAxis3DTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">CategoryAxis3DTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/CategoryAxisTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">CategoryAxisTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/CategoryCrosshairState.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="Average Method Complexity - 1.857 , Coverage - 21.6% ">CategoryCrosshairState</a>
+            
+    
+            <a href="org/jfree/chart/entity/CategoryItemEntity.html" class="tag"
+            style="font-size: 19px;color:#e28e87"
+            title="Average Method Complexity - 1.778 , Coverage - 40% ">CategoryItemEntity</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/CategoryItemRendererState.html" class="tag"
+            style="font-size: 18px;color:#e7a19b"
+            title="Average Method Complexity - 1.385 , Coverage - 60.8% ">CategoryItemRendererState</a>
+            
+    
+            <a href="org/jfree/chart/entity/junit/CategoryLabelEntityTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">CategoryLabelEntityTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/CategoryLabelPosition.html" class="tag"
+            style="font-size: 21px;color:#e7a19b"
+            title="Average Method Complexity - 2 , Coverage - 61% ">CategoryLabelPosition</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/CategoryLabelPositionTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">CategoryLabelPositionTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/CategoryLabelPositions.html" class="tag"
+            style="font-size: 25px;color:#de7b72"
+            title="Average Method Complexity - 3 , Coverage - 35.8% ">CategoryLabelPositions</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/CategoryLabelPositionsTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">CategoryLabelPositionsTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/CategoryLabelWidthType.html" class="tag"
+            style="font-size: 23px;color:#fae1a0"
+            title="Average Method Complexity - 2.5 , Coverage - 81.8% ">CategoryLabelWidthType</a>
+            
+    
+            <a href="org/jfree/chart/annotations/CategoryLineAnnotation.html" class="tag"
+            style="font-size: 20px;color:#de7b72"
+            title="Average Method Complexity - 1.947 , Coverage - 32.9% ">CategoryLineAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/plot/CategoryMarker.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 1.75 , Coverage - 71.1% ">CategoryMarker</a>
+            
+    
+            <a href="org/jfree/chart/plot/CategoryPlot.html" class="tag"
+            style="font-size: 24px;color:#e28e87"
+            title="Average Method Complexity - 2.731 , Coverage - 48% ">CategoryPlot</a>
+            
+    
+            <a href="org/jfree/chart/annotations/CategoryPointerAnnotation.html" class="tag"
+            style="font-size: 19px;color:#de7b72"
+            title="Average Method Complexity - 1.609 , Coverage - 36.3% ">CategoryPointerAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/CategoryStepRenderer.html" class="tag"
+            style="font-size: 26px;color:#d5584c"
+            title="Average Method Complexity - 3.222 , Coverage - 14.5% ">CategoryStepRenderer</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/CategoryTableXYDatasetTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">CategoryTableXYDatasetTests</a>
+            
+    
+            <a href="org/jfree/chart/annotations/CategoryTextAnnotation.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 2 , Coverage - 46.1% ">CategoryTextAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/axis/CategoryTick.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="Average Method Complexity - 2 , Coverage - 22.5% ">CategoryTick</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/CategoryTickTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">CategoryTickTests</a>
+            
+    
+            <a href="org/jfree/data/category/CategoryToPieDataset.html" class="tag"
+            style="font-size: 27px;color:#f6c342"
+            title="Average Method Complexity - 3.5 , Coverage - 66.9% ">CategoryToPieDataset</a>
+            
+    
+            <a href="org/jfree/chart/block/CenterArrangement.html" class="tag"
+            style="font-size: 22px;color:#d5584c"
+            title="Average Method Complexity - 2.385 , Coverage - 14.3% ">CenterArrangement</a>
+            
+    
+            <a href="org/jfree/chart/event/ChartChangeEvent.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 62.5% ">ChartChangeEvent</a>
+            
+    
+            <a href="org/jfree/chart/event/ChartChangeEventType.html" class="tag"
+            style="font-size: 21px;color:#d04437"
+            title="Average Method Complexity - 2.2 , Coverage - 5.7% ">ChartChangeEventType</a>
+            
+    
+            <a href="org/jfree/chart/ChartColor.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">ChartColor</a>
+            
+    
+            <a href="org/jfree/chart/entity/ChartEntity.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="Average Method Complexity - 2.1 , Coverage - 25.8% ">ChartEntity</a>
+            
+    
+            <a href="org/jfree/chart/ChartFactory.html" class="tag"
+            style="font-size: 20px;color:#d5584c"
+            title="Average Method Complexity - 1.975 , Coverage - 7% ">ChartFactory</a>
+            
+    
+            <a href="org/jfree/chart/junit/ChartPackageTests.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ChartPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/ChartPanel.html" class="tag"
+            style="font-size: 22px;color:#d9695f"
+            title="Average Method Complexity - 2.244 , Coverage - 25.8% ">ChartPanel</a>
+            
+    
+            <a href="org/jfree/chart/event/ChartProgressEvent.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 29.4% ">ChartProgressEvent</a>
+            
+    
+            <a href="org/jfree/chart/ChartRenderingInfo.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 1.571 , Coverage - 72.1% ">ChartRenderingInfo</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/ClusteredXYBarRenderer.html" class="tag"
+            style="font-size: 33px;color:#de7b72"
+            title="Average Method Complexity - 4.875 , Coverage - 30.6% ">ClusteredXYBarRenderer</a>
+            
+    
+            <a href="org/jfree/chart/block/ColorBlock.html" class="tag"
+            style="font-size: 18px;color:#e28e87"
+            title="Average Method Complexity - 1.5 , Coverage - 48.8% ">ColorBlock</a>
+            
+    
+            <a href="org/jfree/chart/block/junit/ColumnArrangementTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">ColumnArrangementTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/CombinedDomainCategoryPlot.html" class="tag"
+            style="font-size: 26px;color:#d5584c"
+            title="Average Method Complexity - 3.125 , Coverage - 13% ">CombinedDomainCategoryPlot</a>
+            
+    
+            <a href="org/jfree/chart/plot/CombinedDomainXYPlot.html" class="tag"
+            style="font-size: 25px;color:#d9695f"
+            title="Average Method Complexity - 2.92 , Coverage - 22.9% ">CombinedDomainXYPlot</a>
+            
+    
+            <a href="org/jfree/chart/plot/CombinedRangeCategoryPlot.html" class="tag"
+            style="font-size: 26px;color:#f6c342"
+            title="Average Method Complexity - 3.316 , Coverage - 69.5% ">CombinedRangeCategoryPlot</a>
+            
+    
+            <a href="org/jfree/chart/plot/CombinedRangeXYPlot.html" class="tag"
+            style="font-size: 24px;color:#d9695f"
+            title="Average Method Complexity - 2.875 , Coverage - 21.5% ">CombinedRangeXYPlot</a>
+            
+    
+            <a href="org/jfree/data/ComparableObjectItem.html" class="tag"
+            style="font-size: 20px;color:#f6c342"
+            title="Average Method Complexity - 1.875 , Coverage - 72% ">ComparableObjectItem</a>
+            
+    
+            <a href="org/jfree/data/ComparableObjectSeries.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="Average Method Complexity - 2.55 , Coverage - 30.6% ">ComparableObjectSeries</a>
+            
+    
+            <a href="org/jfree/chart/plot/CompassPlot.html" class="tag"
+            style="font-size: 24px;color:#d9695f"
+            title="Average Method Complexity - 2.794 , Coverage - 23.9% ">CompassPlot</a>
+            
+    
+            <a href="org/jfree/chart/title/CompositeTitle.html" class="tag"
+            style="font-size: 19px;color:#e28e87"
+            title="Average Method Complexity - 1.583 , Coverage - 48.4% ">CompositeTitle</a>
+            
+    
+            <a href="org/jfree/chart/ui/Contributor.html" class="tag"
+            style="font-size: 16px;color:#e28e87"
+            title="Average Method Complexity - 1 , Coverage - 42.9% ">Contributor</a>
+            
+    
+            <a href="org/jfree/chart/plot/CrosshairState.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="Average Method Complexity - 1.25 , Coverage - 21.4% ">CrosshairState</a>
+            
+    
+            <a href="org/jfree/chart/urls/CustomCategoryURLGenerator.html" class="tag"
+            style="font-size: 24px;color:#e7a19b"
+            title="Average Method Complexity - 2.75 , Coverage - 51.9% ">CustomCategoryURLGenerator</a>
+            
+    
+            <a href="org/jfree/chart/urls/CustomPieURLGenerator.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="Average Method Complexity - 2.5 , Coverage - 30.8% ">CustomPieURLGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/CustomXYToolTipGenerator.html" class="tag"
+            style="font-size: 22px;color:#f6c342"
+            title="Average Method Complexity - 2.25 , Coverage - 69.4% ">CustomXYToolTipGenerator</a>
+            
+    
+            <a href="org/jfree/chart/urls/CustomXYURLGenerator.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 2.75 , Coverage - 74.7% ">CustomXYURLGenerator</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/CyclicNumberAxisTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">CyclicNumberAxisTests</a>
+            
+    
+            <a href="org/jfree/data/category/junit/DataCategoryPackageTests.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 63.6% ">DataCategoryPackageTests</a>
+            
+    
+            <a href="org/jfree/data/function/junit/DataFunctionPackageTests.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 63.6% ">DataFunctionPackageTests</a>
+            
+    
+            <a href="org/jfree/data/gantt/junit/DataGanttPackageTests.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">DataGanttPackageTests</a>
+            
+    
+            <a href="org/jfree/data/general/junit/DataGeneralPackageTests.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 71.4% ">DataGeneralPackageTests</a>
+            
+    
+            <a href="org/jfree/data/resources/DataPackageResources.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DataPackageResources</a>
+            
+    
+            <a href="org/jfree/data/junit/DataPackageTests.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 80% ">DataPackageTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/DataStatisticsPackageTests.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 80% ">DataStatisticsPackageTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/DataTimePackageTests.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 85.7% ">DataTimePackageTests</a>
+            
+    
+            <a href="org/jfree/data/DataUtilities.html" class="tag"
+            style="font-size: 31px;color:#de7b72"
+            title="Average Method Complexity - 4.444 , Coverage - 29.1% ">DataUtilities</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/DataXYPackageTests.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 90.2% ">DataXYPackageTests</a>
+            
+    
+            <a href="org/jfree/data/event/DatasetChangeEvent.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 1.333 , Coverage - 50% ">DatasetChangeEvent</a>
+            
+    
+            <a href="org/jfree/data/general/DatasetGroup.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="Average Method Complexity - 1.8 , Coverage - 17.9% ">DatasetGroup</a>
+            
+    
+            <a href="org/jfree/data/general/junit/DatasetGroupTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">DatasetGroupTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/DatasetRenderingOrder.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 67.7% ">DatasetRenderingOrder</a>
+            
+    
+            <a href="org/jfree/data/general/DatasetUtilities.html" class="tag"
+            style="font-size: 40px;color:#de7b72"
+            title="Average Method Complexity - 6.269 , Coverage - 32.7% ">DatasetUtilities</a>
+            
+    
+            <a href="org/jfree/chart/axis/DateAxis.html" class="tag"
+            style="font-size: 26px;color:#de7b72"
+            title="Average Method Complexity - 3.216 , Coverage - 38.7% ">DateAxis</a>
+            
+    
+            <a href="org/jfree/chart/axis/DateAxis.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="Average Method Complexity - 1.375 , Coverage - 21.4% ">DateAxis.DefaultTimeline</a>
+            
+    
+            <a href="org/jfree/data/time/DateRange.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 60.9% ">DateRange</a>
+            
+    
+            <a href="org/jfree/chart/axis/DateTick.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 1.6 , Coverage - 66.7% ">DateTick</a>
+            
+    
+            <a href="org/jfree/chart/axis/DateTickMarkPosition.html" class="tag"
+            style="font-size: 23px;color:#e7a19b"
+            title="Average Method Complexity - 2.5 , Coverage - 51.5% ">DateTickMarkPosition</a>
+            
+    
+            <a href="org/jfree/chart/axis/DateTickUnit.html" class="tag"
+            style="font-size: 20px;color:#e28e87"
+            title="Average Method Complexity - 1.944 , Coverage - 46.7% ">DateTickUnit</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/DateTickUnitTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">DateTickUnitTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/DateTickUnitType.html" class="tag"
+            style="font-size: 25px;color:#de7b72"
+            title="Average Method Complexity - 3 , Coverage - 34.6% ">DateTickUnitType</a>
+            
+    
+            <a href="org/jfree/chart/title/junit/DateTitleTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">DateTitleTests</a>
+            
+    
+            <a href="org/jfree/data/time/Day.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 1.545 , Coverage - 66.1% ">Day</a>
+            
+    
+            <a href="org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="Average Method Complexity - 2.023 , Coverage - 33.4% ">DefaultBoxAndWhiskerCategoryDataset</a>
+            
+    
+            <a href="org/jfree/data/statistics/DefaultBoxAndWhiskerXYDataset.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="Average Method Complexity - 1.778 , Coverage - 12.4% ">DefaultBoxAndWhiskerXYDataset</a>
+            
+    
+            <a href="org/jfree/data/category/DefaultCategoryDataset.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 1.5 , Coverage - 63.6% ">DefaultCategoryDataset</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/DefaultCategoryItemRendererTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">DefaultCategoryItemRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/DefaultDrawingSupplier.html" class="tag"
+            style="font-size: 23px;color:#fae1a0"
+            title="Average Method Complexity - 2.588 , Coverage - 75.7% ">DefaultDrawingSupplier</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/DefaultDrawingSupplierTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">DefaultDrawingSupplierTests</a>
+            
+    
+            <a href="org/jfree/data/general/DefaultHeatMapDataset.html" class="tag"
+            style="font-size: 22px;color:#e28e87"
+            title="Average Method Complexity - 2.4 , Coverage - 41.3% ">DefaultHeatMapDataset</a>
+            
+    
+            <a href="org/jfree/data/xy/DefaultHighLowDataset.html" class="tag"
+            style="font-size: 20px;color:#de7b72"
+            title="Average Method Complexity - 1.792 , Coverage - 29% ">DefaultHighLowDataset</a>
+            
+    
+            <a href="org/jfree/data/category/DefaultIntervalCategoryDataset.html" class="tag"
+            style="font-size: 25px;color:#de7b72"
+            title="Average Method Complexity - 2.969 , Coverage - 37.2% ">DefaultIntervalCategoryDataset</a>
+            
+    
+            <a href="org/jfree/data/xy/DefaultIntervalXYDataset.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 2.2 , Coverage - 48.2% ">DefaultIntervalXYDataset</a>
+            
+    
+            <a href="org/jfree/data/DefaultKeyedValue.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="Average Method Complexity - 2 , Coverage - 18.8% ">DefaultKeyedValue</a>
+            
+    
+            <a href="org/jfree/data/general/DefaultKeyedValueDataset.html" class="tag"
+            style="font-size: 21px;color:#e7a19b"
+            title="Average Method Complexity - 2.1 , Coverage - 50.8% ">DefaultKeyedValueDataset</a>
+            
+    
+            <a href="org/jfree/data/junit/DefaultKeyedValueTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">DefaultKeyedValueTests</a>
+            
+    
+            <a href="org/jfree/data/DefaultKeyedValues.html" class="tag"
+            style="font-size: 21px;color:#e7a19b"
+            title="Average Method Complexity - 2.136 , Coverage - 55.4% ">DefaultKeyedValues</a>
+            
+    
+            <a href="org/jfree/data/DefaultKeyedValues2D.html" class="tag"
+            style="font-size: 24px;color:#e7a19b"
+            title="Average Method Complexity - 2.739 , Coverage - 55.8% ">DefaultKeyedValues2D</a>
+            
+    
+            <a href="org/jfree/data/general/junit/DefaultKeyedValues2DDatasetTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">DefaultKeyedValues2DDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/general/junit/DefaultKeyedValuesDatasetTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">DefaultKeyedValuesDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/DefaultMultiValueCategoryDataset.html" class="tag"
+            style="font-size: 22px;color:#de7b72"
+            title="Average Method Complexity - 2.421 , Coverage - 38.8% ">DefaultMultiValueCategoryDataset</a>
+            
+    
+            <a href="org/jfree/data/xy/DefaultOHLCDataset.html" class="tag"
+            style="font-size: 18px;color:#d5584c"
+            title="Average Method Complexity - 1.45 , Coverage - 15.4% ">DefaultOHLCDataset</a>
+            
+    
+            <a href="org/jfree/data/pie/DefaultPieDataset.html" class="tag"
+            style="font-size: 19px;color:#e28e87"
+            title="Average Method Complexity - 1.667 , Coverage - 44.7% ">DefaultPieDataset</a>
+            
+    
+            <a href="org/jfree/chart/renderer/DefaultPolarItemRenderer.html" class="tag"
+            style="font-size: 21px;color:#d5584c"
+            title="Average Method Complexity - 2 , Coverage - 12.2% ">DefaultPolarItemRenderer</a>
+            
+    
+            <a href="org/jfree/chart/util/DefaultShadowGenerator.html" class="tag"
+            style="font-size: 22px;color:#fae1a0"
+            title="Average Method Complexity - 2.231 , Coverage - 75.9% ">DefaultShadowGenerator</a>
+            
+    
+            <a href="org/jfree/data/statistics/DefaultStatisticalCategoryDataset.html" class="tag"
+            style="font-size: 25px;color:#f6c342"
+            title="Average Method Complexity - 2.966 , Coverage - 68.1% ">DefaultStatisticalCategoryDataset</a>
+            
+    
+            <a href="org/jfree/data/xy/DefaultTableXYDataset.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="Average Method Complexity - 2.139 , Coverage - 19.5% ">DefaultTableXYDataset</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/DefaultTableXYDatasetTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">DefaultTableXYDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/general/DefaultValueDataset.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="Average Method Complexity - 1.429 , Coverage - 18.5% ">DefaultValueDataset</a>
+            
+    
+            <a href="org/jfree/data/xy/DefaultWindDataset.html" class="tag"
+            style="font-size: 22px;color:#e7a19b"
+            title="Average Method Complexity - 2.231 , Coverage - 55.3% ">DefaultWindDataset</a>
+            
+    
+            <a href="org/jfree/data/xy/DefaultXYDataset.html" class="tag"
+            style="font-size: 21px;color:#e7a19b"
+            title="Average Method Complexity - 2.133 , Coverage - 57.1% ">DefaultXYDataset</a>
+            
+    
+            <a href="org/jfree/data/xy/DefaultXYZDataset.html" class="tag"
+            style="font-size: 21px;color:#d04437"
+            title="Average Method Complexity - 2.118 , Coverage - 3.8% ">DefaultXYZDataset</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/DeviationRendererTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">DeviationRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/DialBackground.html" class="tag"
+            style="font-size: 19px;color:#de7b72"
+            title="Average Method Complexity - 1.615 , Coverage - 29% ">DialBackground</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/junit/DialBackgroundTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">DialBackgroundTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/DialCap.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 1.625 , Coverage - 62.5% ">DialCap</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/DialLayerChangeEvent.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 60% ">DialLayerChangeEvent</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/junit/DialPackageTests.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 77.8% ">DialPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/DialPlot.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="Average Method Complexity - 2.171 , Coverage - 19% ">DialPlot</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/DialPointer.html" class="tag"
+            style="font-size: 18px;color:#de7b72"
+            title="Average Method Complexity - 1.4 , Coverage - 38.1% ">DialPointer</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/DialPointer.html" class="tag"
+            style="font-size: 18px;color:#e28e87"
+            title="Average Method Complexity - 1.545 , Coverage - 46.3% ">DialPointer.Pin</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/DialPointer.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="Average Method Complexity - 1.538 , Coverage - 25.2% ">DialPointer.Pointer</a>
+            
+    
+            <a href="org/jfree/chart/plot/DialShape.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 2.2 , Coverage - 48.6% ">DialShape</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/DialTextAnnotation.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="Average Method Complexity - 1.7 , Coverage - 24.2% ">DialTextAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/DialValueIndicator.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="Average Method Complexity - 1.775 , Coverage - 19.1% ">DialValueIndicator</a>
+            
+    
+            <a href="org/jfree/data/DomainOrder.html" class="tag"
+            style="font-size: 21px;color:#fae1a0"
+            title="Average Method Complexity - 2.2 , Coverage - 77.1% ">DomainOrder</a>
+            
+    
+            <a href="org/jfree/chart/imagemap/junit/DynamicDriveToolTipTagFragmentGeneratorTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">DynamicDriveToolTipTagFragmentGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/block/EmptyBlock.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 57.1% ">EmptyBlock</a>
+            
+    
+            <a href="org/jfree/chart/entity/junit/EntityPackageTests.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 71.4% ">EntityPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/ExtendedCategoryAxis.html" class="tag"
+            style="font-size: 21px;color:#e7a19b"
+            title="Average Method Complexity - 2.182 , Coverage - 59% ">ExtendedCategoryAxis</a>
+            
+    
+            <a href="org/jfree/data/time/FixedMillisecond.html" class="tag"
+            style="font-size: 18px;color:#d04437"
+            title="Average Method Complexity - 1.412 , Coverage - 5.6% ">FixedMillisecond</a>
+            
+    
+            <a href="org/jfree/chart/block/FlowArrangement.html" class="tag"
+            style="font-size: 26px;color:#e7a19b"
+            title="Average Method Complexity - 3.286 , Coverage - 60% ">FlowArrangement</a>
+            
+    
+            <a href="org/jfree/chart/text/G2TextMeasurer.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">G2TextMeasurer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/GradientBarPainter.html" class="tag"
+            style="font-size: 28px;color:#d5584c"
+            title="Average Method Complexity - 3.778 , Coverage - 15.1% ">GradientBarPainter</a>
+            
+    
+            <a href="org/jfree/chart/util/GradientPaintTransformType.html" class="tag"
+            style="font-size: 22px;color:#f6c342"
+            title="Average Method Complexity - 2.4 , Coverage - 67.5% ">GradientPaintTransformType</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/GradientXYBarPainter.html" class="tag"
+            style="font-size: 28px;color:#d5584c"
+            title="Average Method Complexity - 3.778 , Coverage - 11.7% ">GradientXYBarPainter</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/GradientXYBarPainterTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">GradientXYBarPainterTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/GrayPaintScale.html" class="tag"
+            style="font-size: 20px;color:#e7a19b"
+            title="Average Method Complexity - 1.8 , Coverage - 56.9% ">GrayPaintScale</a>
+            
+    
+            <a href="org/jfree/chart/renderer/junit/GrayPaintScaleTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">GrayPaintScaleTests</a>
+            
+    
+            <a href="org/jfree/chart/block/GridArrangement.html" class="tag"
+            style="font-size: 28px;color:#de7b72"
+            title="Average Method Complexity - 3.643 , Coverage - 34.5% ">GridArrangement</a>
+            
+    
+            <a href="org/jfree/chart/util/HashUtilities.html" class="tag"
+            style="font-size: 20px;color:#fae1a0"
+            title="Average Method Complexity - 1.9 , Coverage - 73.8% ">HashUtilities</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/HashUtilitiesTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">HashUtilitiesTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/HighLowItemLabelGenerator.html" class="tag"
+            style="font-size: 25px;color:#d9695f"
+            title="Average Method Complexity - 3 , Coverage - 23.8% ">HighLowItemLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/HighLowItemLabelGeneratorTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">HighLowItemLabelGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/HighLowRenderer.html" class="tag"
+            style="font-size: 25px;color:#d5584c"
+            title="Average Method Complexity - 3 , Coverage - 16.1% ">HighLowRenderer</a>
+            
+    
+            <a href="org/jfree/data/statistics/HistogramBin.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 1.5 , Coverage - 73.7% ">HistogramBin</a>
+            
+    
+            <a href="org/jfree/data/statistics/HistogramDataset.html" class="tag"
+            style="font-size: 22px;color:#f6c342"
+            title="Average Method Complexity - 2.238 , Coverage - 71.2% ">HistogramDataset</a>
+            
+    
+            <a href="org/jfree/data/statistics/HistogramType.html" class="tag"
+            style="font-size: 22px;color:#d04437"
+            title="Average Method Complexity - 2.4 , Coverage - 5.1% ">HistogramType</a>
+            
+    
+            <a href="org/jfree/chart/util/HorizontalAlignment.html" class="tag"
+            style="font-size: 21px;color:#fae1a0"
+            title="Average Method Complexity - 2.2 , Coverage - 75% ">HorizontalAlignment</a>
+            
+    
+            <a href="org/jfree/data/time/Hour.html" class="tag"
+            style="font-size: 19px;color:#de7b72"
+            title="Average Method Complexity - 1.739 , Coverage - 30.1% ">Hour</a>
+            
+    
+            <a href="org/jfree/chart/imagemap/junit/ImageMapPackageTests.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">ImageMapPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/imagemap/junit/ImageMapUtilitiesTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">ImageMapUtilitiesTests</a>
+            
+    
+            <a href="org/jfree/chart/title/junit/ImageTitleTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">ImageTitleTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/IntervalBarRenderer.html" class="tag"
+            style="font-size: 30px;color:#d04437"
+            title="Average Method Complexity - 4.2 , Coverage - 2% ">IntervalBarRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/IntervalBarRendererTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">IntervalBarRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/IntervalCategoryItemLabelGenerator.html" class="tag"
+            style="font-size: 22px;color:#d5584c"
+            title="Average Method Complexity - 2.25 , Coverage - 11.1% ">IntervalCategoryItemLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/IntervalCategoryToolTipGenerator.html" class="tag"
+            style="font-size: 22px;color:#d9695f"
+            title="Average Method Complexity - 2.4 , Coverage - 21.7% ">IntervalCategoryToolTipGenerator</a>
+            
+    
+            <a href="org/jfree/chart/plot/IntervalMarker.html" class="tag"
+            style="font-size: 18px;color:#e7a19b"
+            title="Average Method Complexity - 1.545 , Coverage - 59.3% ">IntervalMarker</a>
+            
+    
+            <a href="org/jfree/data/xy/IntervalXYDelegate.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="Average Method Complexity - 2 , Coverage - 22.6% ">IntervalXYDelegate</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/IntervalXYDelegateTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">IntervalXYDelegateTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/ItemLabelAnchor.html" class="tag"
+            style="font-size: 48px;color:#e7a19b"
+            title="Average Method Complexity - 8 , Coverage - 59.8% ">ItemLabelAnchor</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/ItemLabelAnchorTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">ItemLabelAnchorTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/ItemLabelPosition.html" class="tag"
+            style="font-size: 21px;color:#e7a19b"
+            title="Average Method Complexity - 2.125 , Coverage - 50% ">ItemLabelPosition</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/ItemLabelPositionTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">ItemLabelPositionTests</a>
+            
+    
+            <a href="org/jfree/chart/JFreeChart.html" class="tag"
+            style="font-size: 22px;color:#e28e87"
+            title="Average Method Complexity - 2.371 , Coverage - 44.5% ">JFreeChart</a>
+            
+    
+            <a href="org/jfree/chart/JFreeChart.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 2 , Coverage - 45.8% ">JFreeChartInfo</a>
+            
+    
+            <a href="org/jfree/chart/resources/JFreeChartResources.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">JFreeChartResources</a>
+            
+    
+            <a href="org/jfree/data/KeyToGroupMap.html" class="tag"
+            style="font-size: 26px;color:#e28e87"
+            title="Average Method Complexity - 3.333 , Coverage - 48% ">KeyToGroupMap</a>
+            
+    
+            <a href="org/jfree/data/KeyedObject.html" class="tag"
+            style="font-size: 20px;color:#de7b72"
+            title="Average Method Complexity - 1.833 , Coverage - 38.9% ">KeyedObject</a>
+            
+    
+            <a href="org/jfree/data/KeyedObjectComparator.html" class="tag"
+            style="font-size: 31px;color:#e7a19b"
+            title="Average Method Complexity - 4.25 , Coverage - 61.2% ">KeyedObjectComparator</a>
+            
+    
+            <a href="org/jfree/data/KeyedObjectComparatorType.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="Average Method Complexity - 1.75 , Coverage - 9.5% ">KeyedObjectComparatorType</a>
+            
+    
+            <a href="org/jfree/data/junit/KeyedObjectTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">KeyedObjectTests</a>
+            
+    
+            <a href="org/jfree/data/KeyedObjects.html" class="tag"
+            style="font-size: 22px;color:#e28e87"
+            title="Average Method Complexity - 2.333 , Coverage - 47.7% ">KeyedObjects</a>
+            
+    
+            <a href="org/jfree/data/KeyedObjects2D.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 2.864 , Coverage - 83.4% ">KeyedObjects2D</a>
+            
+    
+            <a href="org/jfree/data/KeyedValueComparator.html" class="tag"
+            style="font-size: 33px;color:#de7b72"
+            title="Average Method Complexity - 4.75 , Coverage - 29.9% ">KeyedValueComparator</a>
+            
+    
+            <a href="org/jfree/data/KeyedValueComparatorType.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="Average Method Complexity - 1.75 , Coverage - 9.5% ">KeyedValueComparatorType</a>
+            
+    
+            <a href="org/jfree/chart/block/LabelBlock.html" class="tag"
+            style="font-size: 19px;color:#e28e87"
+            title="Average Method Complexity - 1.773 , Coverage - 43.6% ">LabelBlock</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/LabelsPackageTests.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 85.2% ">LabelsPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/util/Layer.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 2 , Coverage - 40.6% ">Layer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/LayeredBarRendererTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">LayeredBarRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/title/LegendGraphic.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 2.026 , Coverage - 49.5% ">LegendGraphic</a>
+            
+    
+            <a href="org/jfree/chart/LegendItem.html" class="tag"
+            style="font-size: 19px;color:#e28e87"
+            title="Average Method Complexity - 1.768 , Coverage - 44.1% ">LegendItem</a>
+            
+    
+            <a href="org/jfree/chart/title/LegendItemBlockContainer.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 1.25 , Coverage - 50% ">LegendItemBlockContainer</a>
+            
+    
+            <a href="org/jfree/chart/LegendItemCollection.html" class="tag"
+            style="font-size: 18px;color:#de7b72"
+            title="Average Method Complexity - 1.375 , Coverage - 32.3% ">LegendItemCollection</a>
+            
+    
+            <a href="org/jfree/chart/junit/LegendItemCollectionTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">LegendItemCollectionTests</a>
+            
+    
+            <a href="org/jfree/chart/entity/LegendItemEntity.html" class="tag"
+            style="font-size: 18px;color:#e28e87"
+            title="Average Method Complexity - 1.5 , Coverage - 45.5% ">LegendItemEntity</a>
+            
+    
+            <a href="org/jfree/chart/title/LegendTitle.html" class="tag"
+            style="font-size: 21px;color:#e7a19b"
+            title="Average Method Complexity - 2.065 , Coverage - 50.8% ">LegendTitle</a>
+            
+    
+            <a href="org/jfree/chart/title/junit/LegendTitleTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">LegendTitleTests</a>
+            
+    
+            <a href="org/jfree/chart/util/LengthAdjustmentType.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 2.2 , Coverage - 65.7% ">LengthAdjustmentType</a>
+            
+    
+            <a href="org/jfree/chart/block/LengthConstraintType.html" class="tag"
+            style="font-size: 21px;color:#d04437"
+            title="Average Method Complexity - 2.2 , Coverage - 5.7% ">LengthConstraintType</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/LevelRenderer.html" class="tag"
+            style="font-size: 23px;color:#d5584c"
+            title="Average Method Complexity - 2.615 , Coverage - 14.1% ">LevelRenderer</a>
+            
+    
+            <a href="org/jfree/chart/ui/Library.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="Average Method Complexity - 1.5 , Coverage - 20.9% ">Library</a>
+            
+    
+            <a href="org/jfree/chart/ui/Licences.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 1.333 , Coverage - 70% ">Licences</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/LineAndShapeRenderer.html" class="tag"
+            style="font-size: 22px;color:#de7b72"
+            title="Average Method Complexity - 2.4 , Coverage - 32.5% ">LineAndShapeRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/LineAndShapeRendererTests.html" class="tag"
+            style="font-size: 35px;color:#d04437"
+            title="Average Method Complexity - 5.333 , Coverage - 2.8% ">LineAndShapeRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/block/LineBorder.html" class="tag"
+            style="font-size: 23px;color:#e7a19b"
+            title="Average Method Complexity - 2.556 , Coverage - 56.8% ">LineBorder</a>
+            
+    
+            <a href="org/jfree/chart/block/junit/LineBorderTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">LineBorderTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/LineChart3DTests.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 20% ">LineChart3DTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/LineChartTests.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 20% ">LineChartTests</a>
+            
+    
+            <a href="org/jfree/data/function/LineFunction2D.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 1.5 , Coverage - 72.4% ">LineFunction2D</a>
+            
+    
+            <a href="org/jfree/chart/needle/junit/LineNeedleTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">LineNeedleTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/LineRenderer3D.html" class="tag"
+            style="font-size: 24px;color:#d5584c"
+            title="Average Method Complexity - 2.875 , Coverage - 11.3% ">LineRenderer3D</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/LineUtilitiesTests.html" class="tag"
+            style="font-size: 23px;color:#d5584c"
+            title="Average Method Complexity - 2.667 , Coverage - 7.1% ">LineUtilitiesTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/LogAxis.html" class="tag"
+            style="font-size: 22px;color:#d9695f"
+            title="Average Method Complexity - 2.364 , Coverage - 17.8% ">LogAxis</a>
+            
+    
+            <a href="org/jfree/chart/util/LogFormat.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="Average Method Complexity - 2.091 , Coverage - 37.3% ">LogFormat</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/LogFormatTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">LogFormatTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/LogarithmicAxis.html" class="tag"
+            style="font-size: 36px;color:#d5584c"
+            title="Average Method Complexity - 5.357 , Coverage - 13.2% ">LogarithmicAxis</a>
+            
+    
+            <a href="org/jfree/chart/needle/junit/LongNeedleTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">LongNeedleTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/LookupPaintScale.html" class="tag"
+            style="font-size: 23px;color:#e28e87"
+            title="Average Method Complexity - 2.636 , Coverage - 42.6% ">LookupPaintScale</a>
+            
+    
+            <a href="org/jfree/chart/renderer/LookupPaintScale.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="Average Method Complexity - 2.2 , Coverage - 34.1% ">LookupPaintScale.PaintItem</a>
+            
+    
+            <a href="org/jfree/chart/plot/Marker.html" class="tag"
+            style="font-size: 20px;color:#e7a19b"
+            title="Average Method Complexity - 1.857 , Coverage - 60.2% ">Marker</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/MarkerAxisBandTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">MarkerAxisBandTests</a>
+            
+    
+            <a href="org/jfree/chart/event/MarkerChangeEvent.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">MarkerChangeEvent</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/MatrixSeriesCollectionTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">MatrixSeriesCollectionTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/MatrixSeriesTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">MatrixSeriesTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/MeanAndStandardDeviation.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 1.75 , Coverage - 81.8% ">MeanAndStandardDeviation</a>
+            
+    
+            <a href="org/jfree/chart/junit/MeterChartTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">MeterChartTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/MeterInterval.html" class="tag"
+            style="font-size: 20px;color:#e28e87"
+            title="Average Method Complexity - 1.9 , Coverage - 43.3% ">MeterInterval</a>
+            
+    
+            <a href="org/jfree/chart/needle/MeterNeedle.html" class="tag"
+            style="font-size: 19px;color:#de7b72"
+            title="Average Method Complexity - 1.6 , Coverage - 35.6% ">MeterNeedle</a>
+            
+    
+            <a href="org/jfree/chart/needle/junit/MeterNeedleTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">MeterNeedleTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/MeterPlot.html" class="tag"
+            style="font-size: 23px;color:#d9695f"
+            title="Average Method Complexity - 2.491 , Coverage - 19.6% ">MeterPlot</a>
+            
+    
+            <a href="org/jfree/chart/needle/junit/MiddlePinNeedleTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">MiddlePinNeedleTests</a>
+            
+    
+            <a href="org/jfree/data/time/Millisecond.html" class="tag"
+            style="font-size: 20px;color:#e28e87"
+            title="Average Method Complexity - 1.944 , Coverage - 40.9% ">Millisecond</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/MinMaxCategoryRenderer.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="Average Method Complexity - 2.12 , Coverage - 27.5% ">MinMaxCategoryRenderer</a>
+            
+    
+            <a href="org/jfree/data/time/Minute.html" class="tag"
+            style="font-size: 20px;color:#e28e87"
+            title="Average Method Complexity - 1.905 , Coverage - 46.5% ">Minute</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/ModuloAxisTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">ModuloAxisTests</a>
+            
+    
+            <a href="org/jfree/data/time/Month.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 2.083 , Coverage - 39.6% ">Month</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/MonthDateFormatTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">MonthDateFormatTests</a>
+            
+    
+            <a href="org/jfree/chart/MouseWheelHandler.html" class="tag"
+            style="font-size: 22px;color:#d5584c"
+            title="Average Method Complexity - 2.4 , Coverage - 7.8% ">MouseWheelHandler</a>
+            
+    
+            <a href="org/jfree/data/time/junit/MovingAverageTests.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 12.5% ">MovingAverageTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/MultiplePiePlot.html" class="tag"
+            style="font-size: 24px;color:#d9695f"
+            title="Average Method Complexity - 2.833 , Coverage - 18.2% ">MultiplePiePlot</a>
+            
+    
+            <a href="org/jfree/chart/labels/MultipleXYSeriesLabelGenerator.html" class="tag"
+            style="font-size: 22px;color:#e28e87"
+            title="Average Method Complexity - 2.333 , Coverage - 41.9% ">MultipleXYSeriesLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/junit/MyDialLayerChangeListener.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">MyDialLayerChangeListener</a>
+            
+    
+            <a href="org/jfree/chart/needle/junit/NeedlePackageTests.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 76.5% ">NeedlePackageTests</a>
+            
+    
+            <a href="org/jfree/data/function/NormalDistributionFunction2D.html" class="tag"
+            style="font-size: 19px;color:#e7a19b"
+            title="Average Method Complexity - 1.667 , Coverage - 58.3% ">NormalDistributionFunction2D</a>
+            
+    
+            <a href="org/jfree/chart/axis/NumberAxis.html" class="tag"
+            style="font-size: 25px;color:#f6c342"
+            title="Average Method Complexity - 2.921 , Coverage - 62.6% ">NumberAxis</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/NumberAxis3DTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">NumberAxis3DTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/NumberAxisTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">NumberAxisTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/NumberTick.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 75% ">NumberTick</a>
+            
+    
+            <a href="org/jfree/chart/axis/NumberTickUnit.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 62.2% ">NumberTickUnit</a>
+            
+    
+            <a href="org/jfree/data/time/ohlc/OHLC.html" class="tag"
+            style="font-size: 20px;color:#d5584c"
+            title="Average Method Complexity - 1.857 , Coverage - 10.6% ">OHLC</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/OHLCDataItemTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">OHLCDataItemTests</a>
+            
+    
+            <a href="org/jfree/data/time/ohlc/OHLCItem.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="Average Method Complexity - 1.571 , Coverage - 11.8% ">OHLCItem</a>
+            
+    
+            <a href="org/jfree/data/time/ohlc/junit/OHLCPackageTests.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 63.6% ">OHLCPackageTests</a>
+            
+    
+            <a href="org/jfree/data/time/ohlc/OHLCSeries.html" class="tag"
+            style="font-size: 18px;color:#d5584c"
+            title="Average Method Complexity - 1.4 , Coverage - 10.5% ">OHLCSeries</a>
+            
+    
+            <a href="org/jfree/data/time/ohlc/OHLCSeriesCollection.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="Average Method Complexity - 1.571 , Coverage - 19% ">OHLCSeriesCollection</a>
+            
+    
+            <a href="org/jfree/data/time/ohlc/junit/OHLCSeriesTests.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 33.3% ">OHLCSeriesTests</a>
+            
+    
+            <a href="org/jfree/data/time/ohlc/junit/OHLCTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">OHLCTests</a>
+            
+    
+            <a href="org/jfree/chart/util/ObjectList.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 77.8% ">ObjectList</a>
+            
+    
+            <a href="org/jfree/chart/util/ObjectUtilities.html" class="tag"
+            style="font-size: 24px;color:#d9695f"
+            title="Average Method Complexity - 2.842 , Coverage - 24.4% ">ObjectUtilities</a>
+            
+    
+            <a href="org/jfree/chart/renderer/Outlier.html" class="tag"
+            style="font-size: 19px;color:#e28e87"
+            title="Average Method Complexity - 1.636 , Coverage - 43.1% ">Outlier</a>
+            
+    
+            <a href="org/jfree/chart/imagemap/junit/OverLIBToolTipTagFragmentGeneratorTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">OverLIBToolTipTagFragmentGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/util/PaintList.html" class="tag"
+            style="font-size: 24px;color:#14892c"
+            title="Average Method Complexity - 2.714 , Coverage - 84.3% ">PaintList</a>
+            
+    
+            <a href="org/jfree/chart/util/PaintMap.html" class="tag"
+            style="font-size: 21px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 76.8% ">PaintMap</a>
+            
+    
+            <a href="org/jfree/chart/title/PaintScaleLegend.html" class="tag"
+            style="font-size: 24px;color:#d5584c"
+            title="Average Method Complexity - 2.69 , Coverage - 14.1% ">PaintScaleLegend</a>
+            
+    
+            <a href="org/jfree/chart/util/PaintUtilities.html" class="tag"
+            style="font-size: 33px;color:#de7b72"
+            title="Average Method Complexity - 4.75 , Coverage - 30.5% ">PaintUtilities</a>
+            
+    
+            <a href="org/jfree/chart/panel/PanHandler.html" class="tag"
+            style="font-size: 27px;color:#d04437"
+            title="Average Method Complexity - 3.5 , Coverage - 5.1% ">PanHandler</a>
+            
+    
+            <a href="org/jfree/chart/axis/PeriodAxis.html" class="tag"
+            style="font-size: 24px;color:#d5584c"
+            title="Average Method Complexity - 2.745 , Coverage - 14.1% ">PeriodAxis</a>
+            
+    
+            <a href="org/jfree/chart/axis/PeriodAxisLabelInfo.html" class="tag"
+            style="font-size: 21px;color:#e7a19b"
+            title="Average Method Complexity - 2.125 , Coverage - 51.2% ">PeriodAxisLabelInfo</a>
+            
+    
+            <a href="org/jfree/chart/junit/PieChart3DTests.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 16.7% ">PieChart3DTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/PieChartTests.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 16.7% ">PieChartTests</a>
+            
+    
+            <a href="org/jfree/data/pie/PieDatasetChangeInfo.html" class="tag"
+            style="font-size: 16px;color:#e28e87"
+            title="Average Method Complexity - 1 , Coverage - 40% ">PieDatasetChangeInfo</a>
+            
+    
+            <a href="org/jfree/data/pie/PieDatasetChangeType.html" class="tag"
+            style="font-size: 20px;color:#d5584c"
+            title="Average Method Complexity - 1.8 , Coverage - 7.1% ">PieDatasetChangeType</a>
+            
+    
+            <a href="org/jfree/chart/plot/PieLabelDistributor.html" class="tag"
+            style="font-size: 24px;color:#d04437"
+            title="Average Method Complexity - 2.889 , Coverage - 2% ">PieLabelDistributor</a>
+            
+    
+            <a href="org/jfree/chart/plot/PieLabelLinkStyle.html" class="tag"
+            style="font-size: 21px;color:#fae1a0"
+            title="Average Method Complexity - 2.2 , Coverage - 80.6% ">PieLabelLinkStyle</a>
+            
+    
+            <a href="org/jfree/chart/plot/PieLabelRecord.html" class="tag"
+            style="font-size: 20px;color:#de7b72"
+            title="Average Method Complexity - 1.812 , Coverage - 34.4% ">PieLabelRecord</a>
+            
+    
+            <a href="org/jfree/chart/plot/PiePlot.html" class="tag"
+            style="font-size: 23px;color:#d9695f"
+            title="Average Method Complexity - 2.453 , Coverage - 26.2% ">PiePlot</a>
+            
+    
+            <a href="org/jfree/chart/plot/PiePlot3D.html" class="tag"
+            style="font-size: 43px;color:#d5584c"
+            title="Average Method Complexity - 7.083 , Coverage - 14% ">PiePlot3D</a>
+            
+    
+            <a href="org/jfree/chart/plot/PiePlotState.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">PiePlotState</a>
+            
+    
+            <a href="org/jfree/chart/entity/junit/PieSectionEntityTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">PieSectionEntityTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/PieSelectionAttributes.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="Average Method Complexity - 1.571 , Coverage - 7.6% ">PieSelectionAttributes</a>
+            
+    
+            <a href="org/jfree/chart/needle/PinNeedle.html" class="tag"
+            style="font-size: 23px;color:#d9695f"
+            title="Average Method Complexity - 2.5 , Coverage - 23.3% ">PinNeedle</a>
+            
+    
+            <a href="org/jfree/chart/plot/Plot.html" class="tag"
+            style="font-size: 23px;color:#e28e87"
+            title="Average Method Complexity - 2.462 , Coverage - 44.8% ">Plot</a>
+            
+    
+            <a href="org/jfree/chart/event/PlotChangeEvent.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 60% ">PlotChangeEvent</a>
+            
+    
+            <a href="org/jfree/chart/plot/PlotOrientation.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 71.9% ">PlotOrientation</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/PlotOrientationTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">PlotOrientationTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/PlotPackageTests.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 87.9% ">PlotPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/PlotRenderingInfo.html" class="tag"
+            style="font-size: 20px;color:#e28e87"
+            title="Average Method Complexity - 1.786 , Coverage - 41.7% ">PlotRenderingInfo</a>
+            
+    
+            <a href="org/jfree/chart/plot/PlotState.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">PlotState</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/PlotTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">PlotTests</a>
+            
+    
+            <a href="org/jfree/chart/needle/PlumNeedle.html" class="tag"
+            style="font-size: 22px;color:#de7b72"
+            title="Average Method Complexity - 2.25 , Coverage - 29.4% ">PlumNeedle</a>
+            
+    
+            <a href="org/jfree/chart/needle/PointerNeedle.html" class="tag"
+            style="font-size: 25px;color:#d9695f"
+            title="Average Method Complexity - 3 , Coverage - 17.2% ">PointerNeedle</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/PolarPlotTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">PolarPlotTests</a>
+            
+    
+            <a href="org/jfree/data/function/PolynomialFunction2D.html" class="tag"
+            style="font-size: 18px;color:#e28e87"
+            title="Average Method Complexity - 1.5 , Coverage - 42.3% ">PolynomialFunction2D</a>
+            
+    
+            <a href="org/jfree/data/function/PowerFunction2D.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 1.5 , Coverage - 72.4% ">PowerFunction2D</a>
+            
+    
+            <a href="org/jfree/chart/ui/ProjectInfo.html" class="tag"
+            style="font-size: 18px;color:#d5584c"
+            title="Average Method Complexity - 1.444 , Coverage - 10% ">ProjectInfo</a>
+            
+    
+            <a href="org/jfree/data/time/Quarter.html" class="tag"
+            style="font-size: 19px;color:#e7a19b"
+            title="Average Method Complexity - 1.682 , Coverage - 54.1% ">Quarter</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/QuarterDateFormatTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">QuarterDateFormatTests</a>
+            
+    
+            <a href="org/jfree/data/Range.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 2.105 , Coverage - 46.7% ">Range</a>
+            
+    
+            <a href="org/jfree/data/RangeType.html" class="tag"
+            style="font-size: 21px;color:#e7a19b"
+            title="Average Method Complexity - 2.2 , Coverage - 54.3% ">RangeType</a>
+            
+    
+            <a href="org/jfree/data/junit/RangeTypeTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">RangeTypeTests</a>
+            
+    
+            <a href="org/jfree/chart/util/RectangleAnchor.html" class="tag"
+            style="font-size: 35px;color:#e28e87"
+            title="Average Method Complexity - 5.286 , Coverage - 40.7% ">RectangleAnchor</a>
+            
+    
+            <a href="org/jfree/chart/block/RectangleConstraint.html" class="tag"
+            style="font-size: 20px;color:#e28e87"
+            title="Average Method Complexity - 1.947 , Coverage - 41.4% ">RectangleConstraint</a>
+            
+    
+            <a href="org/jfree/chart/block/junit/RectangleConstraintTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">RectangleConstraintTests</a>
+            
+    
+            <a href="org/jfree/chart/util/RectangleEdge.html" class="tag"
+            style="font-size: 23px;color:#e7a19b"
+            title="Average Method Complexity - 2.667 , Coverage - 50% ">RectangleEdge</a>
+            
+    
+            <a href="org/jfree/chart/util/RectangleInsets.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 2.103 , Coverage - 49.1% ">RectangleInsets</a>
+            
+    
+            <a href="org/jfree/data/statistics/Regression.html" class="tag"
+            style="font-size: 41px;color:#d5584c"
+            title="Average Method Complexity - 6.667 , Coverage - 10.9% ">Regression</a>
+            
+    
+            <a href="org/jfree/data/time/RegularTimePeriod.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 2.143 , Coverage - 40% ">RegularTimePeriod</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/RelativeDateFormatTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">RelativeDateFormatTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/RenderAttributes.html" class="tag"
+            style="font-size: 18px;color:#d5584c"
+            title="Average Method Complexity - 1.54 , Coverage - 8.6% ">RenderAttributes</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/RendererCategoryPackageTests.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 87.1% ">RendererCategoryPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/event/RendererChangeEvent.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 80% ">RendererChangeEvent</a>
+            
+    
+            <a href="org/jfree/chart/renderer/junit/RendererPackageTests.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 83.3% ">RendererPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/RendererState.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 1.667 , Coverage - 66.7% ">RendererState</a>
+            
+    
+            <a href="org/jfree/chart/renderer/junit/RendererUtilitiesTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">RendererUtilitiesTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/RendererXYPackageTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 55.2% ">RendererXYPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/util/ResourceBundleWrapper.html" class="tag"
+            style="font-size: 20px;color:#d5584c"
+            title="Average Method Complexity - 1.8 , Coverage - 14.8% ">ResourceBundleWrapper</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/RingPlotTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">RingPlotTests</a>
+            
+    
+            <a href="org/jfree/chart/util/Rotation.html" class="tag"
+            style="font-size: 20px;color:#e7a19b"
+            title="Average Method Complexity - 1.833 , Coverage - 57.1% ">Rotation</a>
+            
+    
+            <a href="org/jfree/chart/junit/ScatterPlotTests.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 15.4% ">ScatterPlotTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/ScatterRenderer.html" class="tag"
+            style="font-size: 22px;color:#d9695f"
+            title="Average Method Complexity - 2.292 , Coverage - 17.6% ">ScatterRenderer</a>
+            
+    
+            <a href="org/jfree/data/time/Second.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="Average Method Complexity - 2.158 , Coverage - 37.2% ">Second</a>
+            
+    
+            <a href="org/jfree/chart/axis/SegmentedTimeline.html" class="tag"
+            style="font-size: 20px;color:#de7b72"
+            title="Average Method Complexity - 1.935 , Coverage - 33.6% ">SegmentedTimeline</a>
+            
+    
+            <a href="org/jfree/chart/axis/SegmentedTimeline.html" class="tag"
+            style="font-size: 17px;color:#e28e87"
+            title="Average Method Complexity - 1.31 , Coverage - 39.6% ">SegmentedTimeline.Segment</a>
+            
+    
+            <a href="org/jfree/data/SelectableValue.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 63.6% ">SelectableValue</a>
+            
+    
+            <a href="org/jfree/data/time/SerialDate.html" class="tag"
+            style="font-size: 25px;color:#d5584c"
+            title="Average Method Complexity - 3.061 , Coverage - 14.9% ">SerialDate</a>
+            
+    
+            <a href="org/jfree/chart/util/SerialUtilities.html" class="tag"
+            style="font-size: 32px;color:#f6c342"
+            title="Average Method Complexity - 4.643 , Coverage - 69.3% ">SerialUtilities</a>
+            
+    
+            <a href="org/jfree/data/general/Series.html" class="tag"
+            style="font-size: 19px;color:#e7a19b"
+            title="Average Method Complexity - 1.579 , Coverage - 53.8% ">Series</a>
+            
+    
+            <a href="org/jfree/data/event/SeriesChangeEvent.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 55.6% ">SeriesChangeEvent</a>
+            
+    
+            <a href="org/jfree/chart/plot/SeriesRenderingOrder.html" class="tag"
+            style="font-size: 21px;color:#d5584c"
+            title="Average Method Complexity - 2 , Coverage - 6.5% ">SeriesRenderingOrder</a>
+            
+    
+            <a href="org/jfree/chart/util/ShapeList.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 63% ">ShapeList</a>
+            
+    
+            <a href="org/jfree/chart/util/ShapeUtilities.html" class="tag"
+            style="font-size: 28px;color:#de7b72"
+            title="Average Method Complexity - 3.696 , Coverage - 28.1% ">ShapeUtilities</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/ShapeUtilitiesTests.html" class="tag"
+            style="font-size: 23px;color:#d5584c"
+            title="Average Method Complexity - 2.667 , Coverage - 7.1% ">ShapeUtilitiesTests</a>
+            
+    
+            <a href="org/jfree/chart/needle/ShipNeedle.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="Average Method Complexity - 2.5 , Coverage - 31.2% ">ShipNeedle</a>
+            
+    
+            <a href="org/jfree/chart/title/ShortTextTitle.html" class="tag"
+            style="font-size: 28px;color:#d04437"
+            title="Average Method Complexity - 3.714 , Coverage - 2% ">ShortTextTitle</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/SimpleHistogramBinTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">SimpleHistogramBinTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/SimpleHistogramDatasetTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">SimpleHistogramDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/time/SimpleTimePeriod.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="Average Method Complexity - 2.222 , Coverage - 32.4% ">SimpleTimePeriod</a>
+            
+    
+            <a href="org/jfree/data/time/junit/SimpleTimePeriodTests.html" class="tag"
+            style="font-size: 16px;color:#e28e87"
+            title="Average Method Complexity - 1 , Coverage - 40% ">SimpleTimePeriodTests</a>
+            
+    
+            <a href="org/jfree/chart/util/Size2D.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="Average Method Complexity - 1.444 , Coverage - 25% ">Size2D</a>
+            
+    
+            <a href="org/jfree/data/gantt/SlidingGanttCategoryDataset.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="Average Method Complexity - 1.667 , Coverage - 9.8% ">SlidingGanttCategoryDataset</a>
+            
+    
+            <a href="org/jfree/chart/util/SortOrder.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 67.7% ">SortOrder</a>
+            
+    
+            <a href="org/jfree/chart/plot/SpiderWebPlot.html" class="tag"
+            style="font-size: 22px;color:#d9695f"
+            title="Average Method Complexity - 2.235 , Coverage - 22% ">SpiderWebPlot</a>
+            
+    
+            <a href="org/jfree/data/time/SpreadsheetDate.html" class="tag"
+            style="font-size: 20px;color:#e7a19b"
+            title="Average Method Complexity - 1.9 , Coverage - 50.8% ">SpreadsheetDate</a>
+            
+    
+            <a href="org/jfree/chart/junit/StackedAreaChartTests.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 20% ">StackedAreaChartTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/StackedAreaRenderer.html" class="tag"
+            style="font-size: 26px;color:#d5584c"
+            title="Average Method Complexity - 3.25 , Coverage - 6.5% ">StackedAreaRenderer</a>
+            
+    
+            <a href="org/jfree/chart/junit/StackedBarChart3DTests.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 20% ">StackedBarChart3DTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/StackedBarChartTests.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 20% ">StackedBarChartTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/StackedBarRenderer.html" class="tag"
+            style="font-size: 34px;color:#d5584c"
+            title="Average Method Complexity - 5 , Coverage - 14.3% ">StackedBarRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/StackedBarRenderer3D.html" class="tag"
+            style="font-size: 29px;color:#d5584c"
+            title="Average Method Complexity - 3.833 , Coverage - 8.3% ">StackedBarRenderer3D</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/StackedXYAreaRenderer.html" class="tag"
+            style="font-size: 26px;color:#d5584c"
+            title="Average Method Complexity - 3.312 , Coverage - 13.7% ">StackedXYAreaRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/StackedXYAreaRenderer2.html" class="tag"
+            style="font-size: 28px;color:#d5584c"
+            title="Average Method Complexity - 3.75 , Coverage - 6% ">StackedXYAreaRenderer2</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/StackedXYBarRendererTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">StackedXYBarRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/StandardBarPainterTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">StandardBarPainterTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/StandardCategoryItemLabelGenerator.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 1.333 , Coverage - 70% ">StandardCategoryItemLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/StandardCategorySeriesLabelGenerator.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 1.714 , Coverage - 80% ">StandardCategorySeriesLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/StandardCategoryToolTipGenerator.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 1.4 , Coverage - 66.7% ">StandardCategoryToolTipGenerator</a>
+            
+    
+            <a href="org/jfree/chart/urls/StandardCategoryURLGenerator.html" class="tag"
+            style="font-size: 27px;color:#d9695f"
+            title="Average Method Complexity - 3.5 , Coverage - 21.8% ">StandardCategoryURLGenerator</a>
+            
+    
+            <a href="org/jfree/chart/StandardChartTheme.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="Average Method Complexity - 2.532 , Coverage - 37.3% ">StandardChartTheme</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/StandardDialFrame.html" class="tag"
+            style="font-size: 19px;color:#e28e87"
+            title="Average Method Complexity - 1.588 , Coverage - 48.1% ">StandardDialFrame</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/StandardDialRange.html" class="tag"
+            style="font-size: 19px;color:#de7b72"
+            title="Average Method Complexity - 1.636 , Coverage - 35.3% ">StandardDialRange</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/StandardDialScale.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="Average Method Complexity - 1.837 , Coverage - 23.4% ">StandardDialScale</a>
+            
+    
+            <a href="org/jfree/chart/entity/StandardEntityCollection.html" class="tag"
+            style="font-size: 18px;color:#de7b72"
+            title="Average Method Complexity - 1.545 , Coverage - 37.3% ">StandardEntityCollection</a>
+            
+    
+            <a href="org/jfree/chart/entity/junit/StandardEntityCollectionTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">StandardEntityCollectionTests</a>
+            
+    
+            <a href="org/jfree/chart/util/StandardGradientPaintTransformer.html" class="tag"
+            style="font-size: 22px;color:#de7b72"
+            title="Average Method Complexity - 2.286 , Coverage - 37.3% ">StandardGradientPaintTransformer</a>
+            
+    
+            <a href="org/jfree/chart/labels/StandardPieSectionLabelGenerator.html" class="tag"
+            style="font-size: 18px;color:#e7a19b"
+            title="Average Method Complexity - 1.364 , Coverage - 60% ">StandardPieSectionLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/StandardPieSectionLabelGeneratorTests.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 33.3% ">StandardPieSectionLabelGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/StandardPieToolTipGenerator.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 85.7% ">StandardPieToolTipGenerator</a>
+            
+    
+            <a href="org/jfree/chart/urls/StandardPieURLGenerator.html" class="tag"
+            style="font-size: 23px;color:#e28e87"
+            title="Average Method Complexity - 2.667 , Coverage - 43.9% ">StandardPieURLGenerator</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/StandardTickUnitSourceTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">StandardTickUnitSourceTests</a>
+            
+    
+            <a href="org/jfree/chart/imagemap/junit/StandardURLTagFragmentGeneratorTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">StandardURLTagFragmentGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/StandardXYBarPainterTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">StandardXYBarPainterTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/StandardXYItemLabelGeneratorTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">StandardXYItemLabelGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/StandardXYItemRenderer.html" class="tag"
+            style="font-size: 25px;color:#d9695f"
+            title="Average Method Complexity - 3 , Coverage - 17.7% ">StandardXYItemRenderer</a>
+            
+    
+            <a href="org/jfree/chart/labels/StandardXYSeriesLabelGenerator.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 1.714 , Coverage - 75% ">StandardXYSeriesLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/StandardXYToolTipGenerator.html" class="tag"
+            style="font-size: 17px;color:#e28e87"
+            title="Average Method Complexity - 1.222 , Coverage - 46.2% ">StandardXYToolTipGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/StandardXYToolTipGeneratorTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">StandardXYToolTipGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/urls/junit/StandardXYURLGeneratorTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">StandardXYURLGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/StandardXYZToolTipGenerator.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="Average Method Complexity - 2.111 , Coverage - 27% ">StandardXYZToolTipGenerator</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/StatisticalBarRenderer.html" class="tag"
+            style="font-size: 36px;color:#de7b72"
+            title="Average Method Complexity - 5.5 , Coverage - 28.2% ">StatisticalBarRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/StatisticalLineAndShapeRenderer.html" class="tag"
+            style="font-size: 30px;color:#d5584c"
+            title="Average Method Complexity - 4 , Coverage - 14.2% ">StatisticalLineAndShapeRenderer</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/StatisticsTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">StatisticsTests</a>
+            
+    
+            <a href="org/jfree/chart/util/StrokeList.html" class="tag"
+            style="font-size: 20px;color:#e7a19b"
+            title="Average Method Complexity - 1.875 , Coverage - 59.2% ">StrokeList</a>
+            
+    
+            <a href="org/jfree/chart/util/StrokeMap.html" class="tag"
+            style="font-size: 21px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 76.8% ">StrokeMap</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/SubCategoryAxisTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">SubCategoryAxisTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/SymbolAxis.html" class="tag"
+            style="font-size: 27px;color:#d5584c"
+            title="Average Method Complexity - 3.524 , Coverage - 10.1% ">SymbolAxis</a>
+            
+    
+            <a href="org/jfree/chart/labels/SymbolicXYItemLabelGenerator.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="Average Method Complexity - 2 , Coverage - 17.8% ">SymbolicXYItemLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/util/TableOrder.html" class="tag"
+            style="font-size: 21px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 74.2% ">TableOrder</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/TableXYDatasetTests.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 6.9% ">TableXYDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/gantt/Task.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 1.6 , Coverage - 78.9% ">Task</a>
+            
+    
+            <a href="org/jfree/data/gantt/TaskSeries.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 1.7 , Coverage - 62.1% ">TaskSeries</a>
+            
+    
+            <a href="org/jfree/data/gantt/TaskSeriesCollection.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="Average Method Complexity - 1.892 , Coverage - 25.6% ">TaskSeriesCollection</a>
+            
+    
+            <a href="org/jfree/data/gantt/junit/TaskSeriesTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">TaskSeriesTests</a>
+            
+    
+            <a href="org/jfree/data/gantt/junit/TaskTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">TaskTests</a>
+            
+    
+            <a href="org/jfree/chart/text/TextAnchor.html" class="tag"
+            style="font-size: 32px;color:#e7a19b"
+            title="Average Method Complexity - 4.6 , Coverage - 56% ">TextAnchor</a>
+            
+    
+            <a href="org/jfree/chart/annotations/TextAnnotation.html" class="tag"
+            style="font-size: 19px;color:#e7a19b"
+            title="Average Method Complexity - 1.765 , Coverage - 61.1% ">TextAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/text/TextBlock.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 2.714 , Coverage - 75.9% ">TextBlock</a>
+            
+    
+            <a href="org/jfree/chart/text/TextBlockAnchor.html" class="tag"
+            style="font-size: 27px;color:#f6c342"
+            title="Average Method Complexity - 3.4 , Coverage - 66.1% ">TextBlockAnchor</a>
+            
+    
+            <a href="org/jfree/chart/text/TextBox.html" class="tag"
+            style="font-size: 20px;color:#de7b72"
+            title="Average Method Complexity - 1.92 , Coverage - 30.5% ">TextBox</a>
+            
+    
+            <a href="org/jfree/chart/text/TextFragment.html" class="tag"
+            style="font-size: 21px;color:#e7a19b"
+            title="Average Method Complexity - 2.2 , Coverage - 60.2% ">TextFragment</a>
+            
+    
+            <a href="org/jfree/chart/text/TextLine.html" class="tag"
+            style="font-size: 20px;color:#f6c342"
+            title="Average Method Complexity - 1.923 , Coverage - 65.6% ">TextLine</a>
+            
+    
+            <a href="org/jfree/chart/title/TextTitle.html" class="tag"
+            style="font-size: 25px;color:#de7b72"
+            title="Average Method Complexity - 3.111 , Coverage - 37.6% ">TextTitle</a>
+            
+    
+            <a href="org/jfree/chart/text/TextUtilities.html" class="tag"
+            style="font-size: 40px;color:#e7a19b"
+            title="Average Method Complexity - 6.381 , Coverage - 56.1% ">TextUtilities</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/ThermometerPlotTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">ThermometerPlotTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/Tick.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 66% ">Tick</a>
+            
+    
+            <a href="org/jfree/chart/entity/junit/TickLabelEntityTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">TickLabelEntityTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/TickType.html" class="tag"
+            style="font-size: 22px;color:#e28e87"
+            title="Average Method Complexity - 2.25 , Coverage - 43.3% ">TickType</a>
+            
+    
+            <a href="org/jfree/chart/axis/TickUnit.html" class="tag"
+            style="font-size: 21px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 74% ">TickUnit</a>
+            
+    
+            <a href="org/jfree/chart/axis/TickUnits.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 1.556 , Coverage - 65.2% ">TickUnits</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/TickUnitsTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">TickUnitsTests</a>
+            
+    
+            <a href="org/jfree/data/time/TimePeriodAnchor.html" class="tag"
+            style="font-size: 21px;color:#e7a19b"
+            title="Average Method Complexity - 2.2 , Coverage - 54.3% ">TimePeriodAnchor</a>
+            
+    
+            <a href="org/jfree/data/time/junit/TimePeriodAnchorTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">TimePeriodAnchorTests</a>
+            
+    
+            <a href="org/jfree/data/time/TimePeriodValue.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 2.111 , Coverage - 43.6% ">TimePeriodValue</a>
+            
+    
+            <a href="org/jfree/data/time/junit/TimePeriodValueTests.html" class="tag"
+            style="font-size: 16px;color:#e28e87"
+            title="Average Method Complexity - 1 , Coverage - 40% ">TimePeriodValueTests</a>
+            
+    
+            <a href="org/jfree/data/time/TimePeriodValues.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 2.037 , Coverage - 46.9% ">TimePeriodValues</a>
+            
+    
+            <a href="org/jfree/data/time/TimePeriodValuesCollection.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="Average Method Complexity - 2 , Coverage - 29% ">TimePeriodValuesCollection</a>
+            
+    
+            <a href="org/jfree/data/time/TimeSeries.html" class="tag"
+            style="font-size: 24px;color:#de7b72"
+            title="Average Method Complexity - 2.722 , Coverage - 38.4% ">TimeSeries</a>
+            
+    
+            <a href="org/jfree/chart/junit/TimeSeriesChartTests.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 15.4% ">TimeSeriesChartTests</a>
+            
+    
+            <a href="org/jfree/data/time/TimeSeriesCollection.html" class="tag"
+            style="font-size: 20px;color:#d5584c"
+            title="Average Method Complexity - 1.925 , Coverage - 13.9% ">TimeSeriesCollection</a>
+            
+    
+            <a href="org/jfree/data/time/TimeSeriesDataItem.html" class="tag"
+            style="font-size: 20px;color:#e7a19b"
+            title="Average Method Complexity - 1.909 , Coverage - 60.3% ">TimeSeriesDataItem</a>
+            
+    
+            <a href="org/jfree/data/time/junit/TimeSeriesDataItemTests.html" class="tag"
+            style="font-size: 16px;color:#e28e87"
+            title="Average Method Complexity - 1 , Coverage - 40% ">TimeSeriesDataItemTests</a>
+            
+    
+            <a href="org/jfree/chart/urls/TimeSeriesURLGenerator.html" class="tag"
+            style="font-size: 24px;color:#d9695f"
+            title="Average Method Complexity - 2.875 , Coverage - 20% ">TimeSeriesURLGenerator</a>
+            
+    
+            <a href="org/jfree/data/time/TimeTableXYDataset.html" class="tag"
+            style="font-size: 19px;color:#de7b72"
+            title="Average Method Complexity - 1.656 , Coverage - 32.5% ">TimeTableXYDataset</a>
+            
+    
+            <a href="org/jfree/chart/title/Title.html" class="tag"
+            style="font-size: 21px;color:#e7a19b"
+            title="Average Method Complexity - 2 , Coverage - 51.1% ">Title</a>
+            
+    
+            <a href="org/jfree/chart/event/TitleChangeEvent.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 60% ">TitleChangeEvent</a>
+            
+    
+            <a href="org/jfree/chart/title/junit/TitlePackageTests.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 75% ">TitlePackageTests</a>
+            
+    
+            <a href="org/jfree/chart/title/junit/TitleTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">TitleTests</a>
+            
+    
+            <a href="org/jfree/chart/util/UnitType.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 67.7% ">UnitType</a>
+            
+    
+            <a href="org/jfree/data/UnknownKeyException.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">UnknownKeyException</a>
+            
+    
+            <a href="org/jfree/chart/urls/junit/UrlsPackageTests.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 71.4% ">UrlsPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/UtilPackageTests.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 78.9% ">UtilPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/ValueAxis.html" class="tag"
+            style="font-size: 22px;color:#e7a19b"
+            title="Average Method Complexity - 2.435 , Coverage - 56.7% ">ValueAxis</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/ValueAxisTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">ValueAxisTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/ValueMarker.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 1.667 , Coverage - 71.9% ">ValueMarker</a>
+            
+    
+            <a href="org/jfree/chart/axis/ValueTick.html" class="tag"
+            style="font-size: 20px;color:#fae1a0"
+            title="Average Method Complexity - 1.8 , Coverage - 73.3% ">ValueTick</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/VectorDataItemTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">VectorDataItemTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/VectorRendererTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">VectorRendererTests</a>
+            
+    
+            <a href="org/jfree/data/xy/VectorSeries.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 16.7% ">VectorSeries</a>
+            
+    
+            <a href="org/jfree/data/xy/VectorSeriesCollection.html" class="tag"
+            style="font-size: 18px;color:#de7b72"
+            title="Average Method Complexity - 1.5 , Coverage - 34.5% ">VectorSeriesCollection</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/VectorTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">VectorTests</a>
+            
+    
+            <a href="org/jfree/chart/util/VerticalAlignment.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 2.2 , Coverage - 71.4% ">VerticalAlignment</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/WaterfallBarRenderer.html" class="tag"
+            style="font-size: 28px;color:#d9695f"
+            title="Average Method Complexity - 3.6 , Coverage - 20.3% ">WaterfallBarRenderer</a>
+            
+    
+            <a href="org/jfree/chart/junit/WaterfallChartTests.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 20% ">WaterfallChartTests</a>
+            
+    
+            <a href="org/jfree/data/time/Week.html" class="tag"
+            style="font-size: 22px;color:#de7b72"
+            title="Average Method Complexity - 2.44 , Coverage - 28.9% ">Week</a>
+            
+    
+            <a href="org/jfree/data/xy/DefaultWindDataset.html" class="tag"
+            style="font-size: 22px;color:#e7a19b"
+            title="Average Method Complexity - 2.333 , Coverage - 58.3% ">WindDataItem</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/WindItemRenderer.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 8% ">WindItemRenderer</a>
+            
+    
+            <a href="org/jfree/chart/needle/WindNeedle.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="Average Method Complexity - 2.5 , Coverage - 33.3% ">WindNeedle</a>
+            
+    
+            <a href="org/jfree/data/xy/XIntervalDataItem.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 1.6 , Coverage - 76% ">XIntervalDataItem</a>
+            
+    
+            <a href="org/jfree/data/xy/XIntervalSeries.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 55% ">XIntervalSeries</a>
+            
+    
+            <a href="org/jfree/data/xy/XIntervalSeriesCollection.html" class="tag"
+            style="font-size: 18px;color:#de7b72"
+            title="Average Method Complexity - 1.5 , Coverage - 34% ">XIntervalSeriesCollection</a>
+            
+    
+            <a href="org/jfree/chart/junit/XYAreaChartTests.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 15.4% ">XYAreaChartTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYAreaRenderer.html" class="tag"
+            style="font-size: 26px;color:#d5584c"
+            title="Average Method Complexity - 3.273 , Coverage - 15.7% ">XYAreaRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYAreaRenderer2.html" class="tag"
+            style="font-size: 22px;color:#d9695f"
+            title="Average Method Complexity - 2.417 , Coverage - 17.3% ">XYAreaRenderer2</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYAreaRenderer2Tests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">XYAreaRenderer2Tests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYAreaRendererTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">XYAreaRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/XYBarChartTests.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 15.4% ">XYBarChartTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/XYBarDatasetTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">XYBarDatasetTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYBarRenderer.html" class="tag"
+            style="font-size: 25px;color:#d5584c"
+            title="Average Method Complexity - 3 , Coverage - 12.5% ">XYBarRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYBarRendererTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">XYBarRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYBlockRenderer.html" class="tag"
+            style="font-size: 24px;color:#de7b72"
+            title="Average Method Complexity - 2.867 , Coverage - 35.4% ">XYBlockRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYBoxAndWhiskerRenderer.html" class="tag"
+            style="font-size: 25px;color:#d5584c"
+            title="Average Method Complexity - 3 , Coverage - 12.7% ">XYBoxAndWhiskerRenderer</a>
+            
+    
+            <a href="org/jfree/chart/annotations/XYBoxAnnotation.html" class="tag"
+            style="font-size: 23px;color:#e28e87"
+            title="Average Method Complexity - 2.667 , Coverage - 42.2% ">XYBoxAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYBubbleRendererTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">XYBubbleRendererTests</a>
+            
+    
+            <a href="org/jfree/data/xy/XYCoordinate.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 2.125 , Coverage - 41.7% ">XYCoordinate</a>
+            
+    
+            <a href="org/jfree/chart/util/XYCoordinateType.html" class="tag"
+            style="font-size: 23px;color:#d5584c"
+            title="Average Method Complexity - 2.5 , Coverage - 6.1% ">XYCoordinateType</a>
+            
+    
+            <a href="org/jfree/data/xy/XYDataItem.html" class="tag"
+            style="font-size: 20px;color:#f6c342"
+            title="Average Method Complexity - 1.8 , Coverage - 71.6% ">XYDataItem</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/XYDataItemTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">XYDataItemTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYDifferenceRendererTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">XYDifferenceRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYDotRenderer.html" class="tag"
+            style="font-size: 22px;color:#e28e87"
+            title="Average Method Complexity - 2.385 , Coverage - 46.6% ">XYDotRenderer</a>
+            
+    
+            <a href="org/jfree/chart/annotations/junit/XYDrawableAnnotationTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">XYDrawableAnnotationTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYErrorRenderer.html" class="tag"
+            style="font-size: 22px;color:#d9695f"
+            title="Average Method Complexity - 2.294 , Coverage - 22% ">XYErrorRenderer</a>
+            
+    
+            <a href="org/jfree/chart/annotations/junit/XYImageAnnotationTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">XYImageAnnotationTests</a>
+            
+    
+            <a href="org/jfree/data/xy/XYInterval.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 2 , Coverage - 48.9% ">XYInterval</a>
+            
+    
+            <a href="org/jfree/data/xy/XYIntervalDataItem.html" class="tag"
+            style="font-size: 19px;color:#d04437"
+            title="Average Method Complexity - 1.714 , Coverage - 5.1% ">XYIntervalDataItem</a>
+            
+    
+            <a href="org/jfree/data/xy/XYIntervalSeries.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 23.1% ">XYIntervalSeries</a>
+            
+    
+            <a href="org/jfree/data/xy/XYIntervalSeriesCollection.html" class="tag"
+            style="font-size: 18px;color:#de7b72"
+            title="Average Method Complexity - 1.5 , Coverage - 32.7% ">XYIntervalSeriesCollection</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/XYIntervalSeriesTests.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 33.3% ">XYIntervalSeriesTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/XYIntervalTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">XYIntervalTests</a>
+            
+    
+            <a href="org/jfree/chart/entity/junit/XYItemEntityTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">XYItemEntityTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYLine3DRenderer.html" class="tag"
+            style="font-size: 18px;color:#e7a19b"
+            title="Average Method Complexity - 1.467 , Coverage - 55.1% ">XYLine3DRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYLineAndShapeRenderer.html" class="tag"
+            style="font-size: 23px;color:#d5584c"
+            title="Average Method Complexity - 2.591 , Coverage - 16.4% ">XYLineAndShapeRenderer</a>
+            
+    
+            <a href="org/jfree/chart/annotations/XYLineAnnotation.html" class="tag"
+            style="font-size: 25px;color:#de7b72"
+            title="Average Method Complexity - 3 , Coverage - 30.4% ">XYLineAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/junit/XYLineChartTests.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 15.4% ">XYLineChartTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/XYPlot.html" class="tag"
+            style="font-size: 25px;color:#d9695f"
+            title="Average Method Complexity - 3.09 , Coverage - 26.3% ">XYPlot</a>
+            
+    
+            <a href="org/jfree/chart/annotations/junit/XYPointerAnnotationTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">XYPointerAnnotationTests</a>
+            
+    
+            <a href="org/jfree/chart/annotations/XYPolygonAnnotation.html" class="tag"
+            style="font-size: 22px;color:#e28e87"
+            title="Average Method Complexity - 2.385 , Coverage - 40.3% ">XYPolygonAnnotation</a>
+            
+    
+            <a href="org/jfree/data/xy/XYSeries.html" class="tag"
+            style="font-size: 22px;color:#e28e87"
+            title="Average Method Complexity - 2.356 , Coverage - 46.8% ">XYSeries</a>
+            
+    
+            <a href="org/jfree/data/xy/XYSeriesCollection.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="Average Method Complexity - 2.125 , Coverage - 27.3% ">XYSeriesCollection</a>
+            
+    
+            <a href="org/jfree/chart/annotations/XYShapeAnnotation.html" class="tag"
+            style="font-size: 23px;color:#e28e87"
+            title="Average Method Complexity - 2.556 , Coverage - 45% ">XYShapeAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYShapeRenderer.html" class="tag"
+            style="font-size: 22px;color:#d9695f"
+            title="Average Method Complexity - 2.25 , Coverage - 27.1% ">XYShapeRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYSplineRenderer.html" class="tag"
+            style="font-size: 27px;color:#d5584c"
+            title="Average Method Complexity - 3.5 , Coverage - 13.3% ">XYSplineRenderer</a>
+            
+    
+            <a href="org/jfree/chart/junit/XYStepAreaChartTests.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 15.4% ">XYStepAreaChartTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYStepAreaRenderer.html" class="tag"
+            style="font-size: 27px;color:#d5584c"
+            title="Average Method Complexity - 3.5 , Coverage - 12.9% ">XYStepAreaRenderer</a>
+            
+    
+            <a href="org/jfree/chart/junit/XYStepChartTests.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 15.4% ">XYStepChartTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYStepRenderer.html" class="tag"
+            style="font-size: 27px;color:#d9695f"
+            title="Average Method Complexity - 3.444 , Coverage - 20.2% ">XYStepRenderer</a>
+            
+    
+            <a href="org/jfree/data/gantt/junit/XYTaskDatasetTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">XYTaskDatasetTests</a>
+            
+    
+            <a href="org/jfree/chart/annotations/XYTextAnnotation.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="Average Method Complexity - 1.871 , Coverage - 26.2% ">XYTextAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/annotations/XYTitleAnnotation.html" class="tag"
+            style="font-size: 23px;color:#d9695f"
+            title="Average Method Complexity - 2.6 , Coverage - 22.5% ">XYTitleAnnotation</a>
+            
+    
+            <a href="org/jfree/data/xy/YInterval.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="Average Method Complexity - 2 , Coverage - 18.2% ">YInterval</a>
+            
+    
+            <a href="org/jfree/data/xy/YIntervalDataItem.html" class="tag"
+            style="font-size: 19px;color:#de7b72"
+            title="Average Method Complexity - 1.6 , Coverage - 28% ">YIntervalDataItem</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/YIntervalRendererTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">YIntervalRendererTests</a>
+            
+    
+            <a href="org/jfree/data/xy/YIntervalSeries.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 55% ">YIntervalSeries</a>
+            
+    
+            <a href="org/jfree/data/xy/YIntervalSeriesCollection.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="Average Method Complexity - 1.5 , Coverage - 25.6% ">YIntervalSeriesCollection</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/YIntervalTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">YIntervalTests</a>
+            
+    
+            <a href="org/jfree/data/xy/YWithXInterval.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 69.7% ">YWithXInterval</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/YWithXIntervalTests.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">YWithXIntervalTests</a>
+            
+    
+            <a href="org/jfree/data/time/Year.html" class="tag"
+            style="font-size: 18px;color:#e7a19b"
+            title="Average Method Complexity - 1.526 , Coverage - 54.5% ">Year</a>
+            
+    
+            <a href="org/jfree/chart/panel/ZoomHandler.html" class="tag"
+            style="font-size: 38px;color:#d04437"
+            title="Average Method Complexity - 5.8 , Coverage - 1.5% ">ZoomHandler</a>
+           </div>
+   
+   </div>
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 23 2023 12:59:29 MST using coverage data from Mon Jan 23 2023 12:59:26 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

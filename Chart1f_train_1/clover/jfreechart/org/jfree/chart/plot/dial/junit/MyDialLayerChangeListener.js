@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":65,"id":80445,"methods":[{"el":55,"sc":5,"sl":54},{"el":63,"sc":5,"sl":62}],"name":"MyDialLayerChangeListener","sl":49}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1196":{"methods":[{"sl":54}],"name":"testCloning137","pass":true,"statements":[]},"test_1275":{"methods":[{"sl":54}],"name":"testCloning129","pass":true,"statements":[]},"test_1298":{"methods":[{"sl":54}],"name":"testCloning137","pass":true,"statements":[]},"test_1355":{"methods":[{"sl":54}],"name":"testCloning435","pass":true,"statements":[]},"test_15":{"methods":[{"sl":54}],"name":"testCloning35","pass":true,"statements":[]},"test_368":{"methods":[{"sl":54}],"name":"testCloning35","pass":true,"statements":[]},"test_469":{"methods":[{"sl":54}],"name":"testCloning129","pass":true,"statements":[]},"test_675":{"methods":[{"sl":54}],"name":"testCloning563","pass":true,"statements":[]},"test_72":{"methods":[{"sl":54}],"name":"testCloning279","pass":true,"statements":[]},"test_728":{"methods":[{"sl":54}],"name":"testCloning493","pass":true,"statements":[]},"test_731":{"methods":[{"sl":54}],"name":"testCloning563","pass":true,"statements":[]},"test_807":{"methods":[{"sl":54}],"name":"testCloning279","pass":true,"statements":[]},"test_930":{"methods":[{"sl":54}],"name":"testCloning493","pass":true,"statements":[]},"test_994":{"methods":[{"sl":54}],"name":"testCloning435","pass":true,"statements":[]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [807, 1355, 469, 72, 930, 1298, 368, 728, 1275, 1196, 675, 731, 15, 994], [], [], [], [], [], [], [], [], [], [], []]

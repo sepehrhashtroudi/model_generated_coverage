@@ -1,0 +1,195 @@
+Testsuite: org.apache.commons.codec.language.DoubleMetaphoneTest
+Tests run: 27, Failures: 23, Errors: 1, Skipped: 0, Time elapsed: 0.073 sec
+
+Testcase: testDoubleMetaphone27 took 0.014 sec
+	FAILED
+expected:<[AMPT]> but was:<[LS]>
+junit.framework.ComparisonFailure: expected:<[AMPT]> but was:<[LS]>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphoneAlt(DoubleMetaphoneTest.java:1032)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_1necsr21sg(DoubleMetaphoneTest.java:1064)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone27(DoubleMetaphoneTest.java:1044)
+
+Testcase: testDoubleMetaphone29 took 0.002 sec
+	FAILED
+expected:<[KSSK]> but was:<[MKFR]>
+junit.framework.ComparisonFailure: expected:<[KSSK]> but was:<[MKFR]>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphone(DoubleMetaphoneTest.java:1018)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_1gwcv641t5(DoubleMetaphoneTest.java:1081)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone29(DoubleMetaphoneTest.java:1070)
+
+Testcase: testDoubleMetaphone34 took 0.002 sec
+	FAILED
+expected:<STFNSN1111> but was:<Stevenson>
+junit.framework.AssertionFailedError: expected:<STFNSN1111> but was:<Stevenson>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_13fhsky1un(DoubleMetaphoneTest.java:1131)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone34(DoubleMetaphoneTest.java:1127)
+
+Testcase: testDoubleMetaphone35 took 0.002 sec
+	FAILED
+expected:<[STFN]> but was:<[KSSK]>
+junit.framework.ComparisonFailure: expected:<[STFN]> but was:<[KSSK]>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphone(DoubleMetaphoneTest.java:1018)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_16htsh1uu(DoubleMetaphoneTest.java:1149)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone35(DoubleMetaphoneTest.java:1134)
+
+Testcase: testDoubleMetaphone38 took 0.002 sec
+	FAILED
+expected:<[KSSK]> but was:<[TKS]>
+junit.framework.ComparisonFailure: expected:<[KSSK]> but was:<[TKS]>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphone(DoubleMetaphoneTest.java:1018)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_19ki2ky1vk(DoubleMetaphoneTest.java:1172)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone38(DoubleMetaphoneTest.java:1161)
+
+Testcase: testDoubleMetaphone40 took 0.001 sec
+	FAILED
+expected:<[L]S> but was:<[TK]S>
+junit.framework.ComparisonFailure: expected:<[L]S> but was:<[TK]S>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphone(DoubleMetaphoneTest.java:1018)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_1dad8sp1wb(DoubleMetaphoneTest.java:1199)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone40(DoubleMetaphoneTest.java:1189)
+
+Testcase: testDoubleMetaphone42 took 0.003 sec
+	FAILED
+expected:<[F]KS> but was:<[T]KS>
+junit.framework.ComparisonFailure: expected:<[F]KS> but was:<[T]KS>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphoneAlt(DoubleMetaphoneTest.java:1032)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_1jsd6dn1x1(DoubleMetaphoneTest.java:1233)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone42(DoubleMetaphoneTest.java:1216)
+
+Testcase: testDoubleMetaphone43 took 0.002 sec
+	FAILED
+expected:<[L]S> but was:<[TK]S>
+junit.framework.ComparisonFailure: expected:<[L]S> but was:<[TK]S>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphone(DoubleMetaphoneTest.java:1018)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_1n1d5641xs(DoubleMetaphoneTest.java:1256)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone43(DoubleMetaphoneTest.java:1244)
+
+Testcase: testDoubleMetaphone46 took 0.003 sec
+	FAILED
+expected:<[FK]S> but was:<[L]S>
+junit.framework.ComparisonFailure: expected:<[FK]S> but was:<[L]S>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphoneAlt(DoubleMetaphoneTest.java:1032)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_1wsd1jj1z9(DoubleMetaphoneTest.java:1315)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone46(DoubleMetaphoneTest.java:1299)
+
+Testcase: testDoubleMetaphone47 took 0.002 sec
+	FAILED
+expected:<[L]S> but was:<[TK]S>
+junit.framework.ComparisonFailure: expected:<[L]S> but was:<[TK]S>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphone(DoubleMetaphoneTest.java:1018)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_1yzr1n4202(DoubleMetaphoneTest.java:1340)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone47(DoubleMetaphoneTest.java:1330)
+
+Testcase: testDoubleMetaphone50 took 0.001 sec
+	FAILED
+expected:<[AMPT]> but was:<[TKS]>
+junit.framework.ComparisonFailure: expected:<[AMPT]> but was:<[TKS]>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphoneAlt(DoubleMetaphoneTest.java:1032)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_1s0vwmw20u(DoubleMetaphoneTest.java:1380)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone50(DoubleMetaphoneTest.java:1360)
+
+Testcase: testDoubleMetaphone52 took 0.002 sec
+	FAILED
+expected:<[L]S> but was:<[TK]S>
+junit.framework.ComparisonFailure: expected:<[L]S> but was:<[TK]S>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphone(DoubleMetaphoneTest.java:1018)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_1livz1y21j(DoubleMetaphoneTest.java:1396)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone52(DoubleMetaphoneTest.java:1386)
+
+Testcase: testDoubleMetaphone54 took 0.001 sec
+	FAILED
+expected:<[FK]S> but was:<[L]S>
+junit.framework.ComparisonFailure: expected:<[FK]S> but was:<[L]S>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphoneAlt(DoubleMetaphoneTest.java:1032)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_1f0w1h0229(DoubleMetaphoneTest.java:1429)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone54(DoubleMetaphoneTest.java:1413)
+
+Testcase: testDoubleMetaphone56 took 0.002 sec
+	FAILED
+expected:<[F]KS> but was:<[T]KS>
+junit.framework.ComparisonFailure: expected:<[F]KS> but was:<[T]KS>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphoneAlt(DoubleMetaphoneTest.java:1032)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_18iw3w2230(DoubleMetaphoneTest.java:1457)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone56(DoubleMetaphoneTest.java:1441)
+
+Testcase: testDoubleMetaphone61 took 0.001 sec
+	Caused an ERROR
+2
+java.lang.ArrayIndexOutOfBoundsException: 2
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_14xyyp423r(DoubleMetaphoneTest.java:1472)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone61(DoubleMetaphoneTest.java:1469)
+
+Testcase: testDoubleMetaphone62 took 0.002 sec
+	FAILED
+expected:<[STFN]> but was:<[KSSK]>
+junit.framework.ComparisonFailure: expected:<[STFN]> but was:<[KSSK]>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphone(DoubleMetaphoneTest.java:1018)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_186yxhl23x(DoubleMetaphoneTest.java:1490)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone62(DoubleMetaphoneTest.java:1475)
+
+Testcase: testDoubleMetaphone66 took 0.001 sec
+	FAILED
+expected:<[FK]S> but was:<[L]S>
+junit.framework.ComparisonFailure: expected:<[FK]S> but was:<[L]S>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphoneAlt(DoubleMetaphoneTest.java:1032)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_1l6ysnh24n(DoubleMetaphoneTest.java:1518)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone66(DoubleMetaphoneTest.java:1502)
+
+Testcase: testDoubleMetaphone68 took 0.002 sec
+	FAILED
+expected:<[KSSK]> but was:<[TKS]>
+junit.framework.ComparisonFailure: expected:<[KSSK]> but was:<[TKS]>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphone(DoubleMetaphoneTest.java:1018)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_1royq8f25e(DoubleMetaphoneTest.java:1541)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone68(DoubleMetaphoneTest.java:1530)
+
+Testcase: testDoubleMetaphone71 took 0.002 sec
+	FAILED
+expected:<[FK]S> but was:<[L]S>
+junit.framework.ComparisonFailure: expected:<[FK]S> but was:<[L]S>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphoneAlt(DoubleMetaphoneTest.java:1032)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_1yntv8n265(DoubleMetaphoneTest.java:1574)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone71(DoubleMetaphoneTest.java:1558)
+
+Testcase: testDoubleMetaphone72 took 0.001 sec
+	FAILED
+expected:<[KSSK]> but was:<[TKS]>
+junit.framework.ComparisonFailure: expected:<[KSSK]> but was:<[TKS]>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphone(DoubleMetaphoneTest.java:1018)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_1x4a7y026w(DoubleMetaphoneTest.java:1597)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone72(DoubleMetaphoneTest.java:1586)
+
+Testcase: testDoubleMetaphone73 took 0.001 sec
+	FAILED
+expected:<[STFN]> but was:<[KSSK]>
+junit.framework.ComparisonFailure: expected:<[STFN]> but was:<[KSSK]>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphone(DoubleMetaphoneTest.java:1018)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_1tva95j27n(DoubleMetaphoneTest.java:1629)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone73(DoubleMetaphoneTest.java:1614)
+
+Testcase: testIsSilentStart30 took 0.002 sec
+	FAILED
+expected:<[FK]S> but was:<[L]S>
+junit.framework.ComparisonFailure: expected:<[FK]S> but was:<[L]S>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphoneAlt(DoubleMetaphoneTest.java:1032)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_1k38o1h1tu(DoubleMetaphoneTest.java:1112)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testIsSilentStart30(DoubleMetaphoneTest.java:1096)
+
+Testcase: testIsSilentStart44 took 0.001 sec
+	FAILED
+expected:<[FK]S> but was:<[L]S>
+junit.framework.ComparisonFailure: expected:<[FK]S> but was:<[L]S>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.assertDoubleMetaphoneAlt(DoubleMetaphoneTest.java:1032)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_1880m881yi(DoubleMetaphoneTest.java:1287)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testIsSilentStart44(DoubleMetaphoneTest.java:1271)
+
+Testcase: testNTilde31 took 0.001 sec
+Testcase: testDoubleMetaphone6 took 0.001 sec
+	FAILED
+expected:<S[TFNSN1111]> but was:<S[tevenson]>
+junit.framework.ComparisonFailure: expected:<S[TFNSN1111]> but was:<S[tevenson]>
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.__CLR4_4_17zn0jt1s8(DoubleMetaphoneTest.java:1038)
+	at org.apache.commons.codec.language.DoubleMetaphoneTest.testDoubleMetaphone6(DoubleMetaphoneTest.java:1035)
+
+Testcase: testNTilde took 0.001 sec
+Testcase: testCCedilla20 took 0 sec

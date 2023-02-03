@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Thu Jan 12 2023 01:54:05 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class CommandLineRunnerTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="CommandLineRunnerTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>CommandLineRunnerTest</td>
+        <td class="testPasses"><span class="sortValue">22</span>22</td>
+<td class="testFailures"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.614</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">0.8181818</span>81.8%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="81.8% of tests passed&lt;br/&gt;18.2% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 81.8%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testPrintTree418</span><a href="CommandLineRunnerTest_testPrintTree418_36.html">CommandLineRunnerTest.testPrintTree418</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648494</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+    <span class="sortValue">expected:&lt;[digraph&#160;AST&#160;{
+&#160;&#160;node&#160;[color=lightblue2,&#160;style=filled];
+&#160;&#160;node0&#160;[label=&quot;BLOCK&quot;];
+&#160;&#160;node1&#160;[label=&quot;SCRIPT&quot;];
+&#160;&#160;node0&#160;-&gt;&#160;node1&#160;[weight=1];
+&#160;&#160;node1&#160;-&gt;&#160;RETURN&#160;[label=&quot;UNCOND&quot;,&#160;fontcolor=&quot;red&quot;,&#160;weight=0.01,&#160;color=&quot;red&quot;];
+&#160;&#160;node0&#160;-&gt;&#160;RETURN&#160;[label=&quot;SYN_BLOCK&quot;,&#160;fontcolor=&quot;red&quot;,&#160;weight=0.01,&#160;color=&quot;red&quot;];
+&#160;&#160;node0&#160;-&gt;&#160;node1&#160;[label=&quot;UNCOND&quot;,&#160;fontcolor=&quot;red&quot;,&#160;weight=0.01,&#160;color=&quot;red&quot;];
+}]
+
+&gt;&#160;but&#160;was:&lt;[BLOCK&#160;[synthetic:&#160;1]
+&#160;&#160;&#160;&#160;BLOCK&#160;[synthetic:&#160;1]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;SCRIPT&#160;1&#160;[synthetic:&#160;1]&#160;[source_file:&#160;externs]&#160;[input_id:&#160;InputId:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;VAR&#160;1&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;arguments&#160;1&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;FUNCTION&#160;Function&#160;7&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;Function&#160;7&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;PARAM_LIST&#160;7&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;var_args&#160;7&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;BLOCK&#160;7&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EXPR_RESULT&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ASSIGN&#160;12&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;GETPROP&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;GETPROP&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;Function&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STRING&#160;prototype&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STRING&#160;call&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;FUNCTION&#160;&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;PARAM_LIST&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;var_args$$1&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;BLOCK&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;FUNCTION&#160;Array&#160;17&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;Array&#160;17&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;PARAM_LIST&#160;17&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;var_args$$2&#160;17&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;BLOCK&#160;17&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EXPR_RESULT&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ASSIGN&#160;23&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;GETPROP&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;GETPROP&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;Array&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STRING&#160;prototype&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STRING&#160;slice&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;FUNCTION&#160;&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;PARAM_LIST&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;opt_begin&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;opt_end&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;BLOCK&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;FUNCTION&#160;Window&#160;23&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;Window&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;PARAM_LIST&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;BLOCK&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EXPR_RESULT&#160;24&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;GETPROP&#160;24&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;GETPROP&#160;24&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;Window&#160;24&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STRING&#160;prototype&#160;24&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STRING&#160;name&#160;24&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;VAR&#160;25&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;window&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;FUNCTION&#160;Element&#160;25&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;Element&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;PARAM_LIST&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;BLOCK&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EXPR_RESULT&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;GETPROP&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;GETPROP&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;Element&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STRING&#160;prototype&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STRING&#160;offsetWidth&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;FUNCTION&#160;noSideEffects&#160;25&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;noSideEffects&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;PARAM_LIST&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;BLOCK&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;FUNCTION&#160;alert&#160;26&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;alert&#160;26&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;PARAM_LIST&#160;26&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;x&#160;26&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;BLOCK&#160;26&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;BLOCK&#160;[synthetic:&#160;1]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;SCRIPT&#160;1&#160;[synthetic:&#160;1]&#160;[source_file:&#160;input0]&#160;[input_id:&#160;InputId:&#160;input0]]
+
+&gt;</span>
+        <span class="expand" id="togglebut1" onclick="toggleNodeExpansion('togglebut1', 'msgc1', 'msge1');return false;">&#160;</span>
+        <div class="errorMessage" id="msgc1">expected:&lt;[digraph&#160;AST&#160;{
+&#160;&#160;node&#160;[color=lightblue2,&#160;style=filled];
+&#160;&#160;node0&#160;[label=&quot;BLOCK&quot;];
+&#160;&#160;node1&#160;[label=&quot;SCRIPT&quot;];
+&#160;&#160;node0&#160;-&gt;&#160;node1&#160;[weight=1];
+&#160;&#160;node1&#160;-&gt;&#160;RETURN&#160;[label=&quot;UNCOND&quot;,&#160;fontcolor=&quot;red&quot;,&#160;weight=0.01,&#160;color=&quot;red&quot;];
+&#160;&#160;node0&#160;-&gt;&#160;RETURN&#160;[label=&quot;SYN_BLOCK&quot;,&#160;fontcolor=&quot;red&quot;,&#160;weight=0.01,&#160;color=&quot;red&quot;];
+&#160;&#160;node0&#160;-&gt;&#160;node1&#160;[label=&quot;UNCOND&quot;,&#160;fontcolor=&quot;red&quot;,&#160;weight=0.01,&#160;color=&quot;red&quot;];
+}]
+
+&gt;&#160;but&#160;was:&lt;[BLOCK&#160;[synthetic:&#160;1]
+&#160;&#160;&#160;&#160;BLOCK&#160;[synthetic:&#160;1]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;SCRIPT&#160;1&#160;[synthetic:&#160;1]&#160;[source_file:&#160;externs]&#160;[input_id:&#160;InputId:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;VAR&#160;1&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;arguments&#160;1&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;FUNCTION&#160;Function&#160;7&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;Function&#160;7&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;PARAM_LIST&#160;7&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;var_args&#160;7&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;BLOCK&#160;7&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EXPR_RESULT&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ASSIGN&#160;12&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;GETPROP&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;GETPROP&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;Function&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STRING&#160;prototype&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STRING&#160;call&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;FUNCTION&#160;&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;PARAM_LIST&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;var_args$$1&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;BLOCK&#160;12&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;FUNCTION&#160;Array&#160;17&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;Array&#160;17&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;PARAM_LIST&#160;17&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;var_args$$2&#160;17&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;BLOCK&#160;17&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EXPR_RESULT&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ASSIGN&#160;23&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;GETPROP&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;GETPROP&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;Array&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STRING&#160;prototype&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STRING&#160;slice&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;FUNCTION&#160;&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;PARAM_LIST&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;opt_begin&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;opt_end&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;BLOCK&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;FUNCTION&#160;Window&#160;23&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;Window&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;PARAM_LIST&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;BLOCK&#160;23&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EXPR_RESULT&#160;24&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;GETPROP&#160;24&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;GETPROP&#160;24&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;Window&#160;24&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STRING&#160;prototype&#160;24&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STRING&#160;name&#160;24&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;VAR&#160;25&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;window&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;FUNCTION&#160;Element&#160;25&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;Element&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;PARAM_LIST&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;BLOCK&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EXPR_RESULT&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;GETPROP&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;GETPROP&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;Element&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STRING&#160;prototype&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STRING&#160;offsetWidth&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;FUNCTION&#160;noSideEffects&#160;25&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;noSideEffects&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;PARAM_LIST&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;BLOCK&#160;25&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;FUNCTION&#160;alert&#160;26&#160;[jsdoc_info:&#160;JSDocInfo]&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;alert&#160;26&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;PARAM_LIST&#160;26&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;x&#160;26&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;BLOCK&#160;26&#160;[source_file:&#160;externs]
+&#160;&#160;&#160;&#160;BLOCK&#160;[synthetic:&#160;1]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;SCRIPT&#160;1&#160;[synthetic:&#160;1]&#160;[source_file:&#160;input0]&#160;[input_id:&#160;InputId:&#160;input0]]
+
+&gt;</div>
+        <div class="errorMessage" id="msge1" style="display:none;"> <div>junit.framework.ComparisonFailure: expected:&lt;[digraph AST {</div><div>  node [color=lightblue2, style=filled];</div><div>  node0 [label=&quot;BLOCK&quot;];</div><div>  node1 [label=&quot;SCRIPT&quot;];</div><div>  node0 -&gt; node1 [weight=1];</div><div>  node1 -&gt; RETURN [label=&quot;UNCOND&quot;, fontcolor=&quot;red&quot;, weight=0.01, color=&quot;red&quot;];</div><div>  node0 -&gt; RETURN [label=&quot;SYN_BLOCK&quot;, fontcolor=&quot;red&quot;, weight=0.01, color=&quot;red&quot;];</div><div>  node0 -&gt; node1 [label=&quot;UNCOND&quot;, fontcolor=&quot;red&quot;, weight=0.01, color=&quot;red&quot;];</div><div>}]</div><div></div><div>&gt; but was:&lt;[BLOCK [synthetic: 1]</div><div>    BLOCK [synthetic: 1]</div><div>        SCRIPT 1 [synthetic: 1] [source_file: externs] [input_id: InputId: externs]</div><div>            VAR 1 [source_file: externs]</div><div>                NAME arguments 1 [source_file: externs]</div><div>            FUNCTION Function 7 [jsdoc_info: JSDocInfo] [source_file: externs]</div><div>                NAME Function 7 [source_file: externs]</div><div>                PARAM_LIST 7 [source_file: externs]</div><div>                    NAME var_args 7 [source_file: externs]</div><div>                BLOCK 7 [source_file: externs]</div><div>            EXPR_RESULT 12 [source_file: externs]</div><div>                ASSIGN 12 [jsdoc_info: JSDocInfo] [source_file: externs]</div><div>                    GETPROP 12 [source_file: externs]</div><div>                        GETPROP 12 [source_file: externs]</div><div>                            NAME Function 12 [source_file: externs]</div><div>                            STRING prototype 12 [source_file: externs]</div><div>                        STRING call 12 [source_file: externs]</div><div>                    FUNCTION  12 [source_file: externs]</div><div>                        NAME  12 [source_file: externs]</div><div>                        PARAM_LIST 12 [source_file: externs]</div><div>                            NAME var_args$$1 12 [source_file: externs]</div><div>                        BLOCK 12 [source_file: externs]</div><div>            FUNCTION Array 17 [jsdoc_info: JSDocInfo] [source_file: externs]</div><div>                NAME Array 17 [source_file: externs]</div><div>                PARAM_LIST 17 [source_file: externs]</div><div>                    NAME var_args$$2 17 [source_file: externs]</div><div>                BLOCK 17 [source_file: externs]</div><div>            EXPR_RESULT 23 [source_file: externs]</div><div>                ASSIGN 23 [jsdoc_info: JSDocInfo] [source_file: externs]</div><div>                    GETPROP 23 [source_file: externs]</div><div>                        GETPROP 23 [source_file: externs]</div><div>                            NAME Array 23 [source_file: externs]</div><div>                            STRING prototype 23 [source_file: externs]</div><div>                        STRING slice 23 [source_file: externs]</div><div>                    FUNCTION  23 [source_file: externs]</div><div>                        NAME  23 [source_file: externs]</div><div>                        PARAM_LIST 23 [source_file: externs]</div><div>                            NAME opt_begin 23 [source_file: externs]</div><div>                            NAME opt_end 23 [source_file: externs]</div><div>                        BLOCK 23 [source_file: externs]</div><div>            FUNCTION Window 23 [jsdoc_info: JSDocInfo] [source_file: externs]</div><div>                NAME Window 23 [source_file: externs]</div><div>                PARAM_LIST 23 [source_file: externs]</div><div>                BLOCK 23 [source_file: externs]</div><div>            EXPR_RESULT 24 [source_file: externs]</div><div>                GETPROP 24 [jsdoc_info: JSDocInfo] [source_file: externs]</div><div>                    GETPROP 24 [source_file: externs]</div><div>                        NAME Window 24 [source_file: externs]</div><div>                        STRING prototype 24 [source_file: externs]</div><div>                    STRING name 24 [source_file: externs]</div><div>            VAR 25 [jsdoc_info: JSDocInfo] [source_file: externs]</div><div>                NAME window 25 [source_file: externs]</div><div>            FUNCTION Element 25 [jsdoc_info: JSDocInfo] [source_file: externs]</div><div>                NAME Element 25 [source_file: externs]</div><div>                PARAM_LIST 25 [source_file: externs]</div><div>                BLOCK 25 [source_file: externs]</div><div>            EXPR_RESULT 25 [source_file: externs]</div><div>                GETPROP 25 [source_file: externs]</div><div>                    GETPROP 25 [source_file: externs]</div><div>                        NAME Element 25 [source_file: externs]</div><div>                        STRING prototype 25 [source_file: externs]</div><div>                    STRING offsetWidth 25 [source_file: externs]</div><div>            FUNCTION noSideEffects 25 [jsdoc_info: JSDocInfo] [source_file: externs]</div><div>                NAME noSideEffects 25 [source_file: externs]</div><div>                PARAM_LIST 25 [source_file: externs]</div><div>                BLOCK 25 [source_file: externs]</div><div>            FUNCTION alert 26 [jsdoc_info: JSDocInfo] [source_file: externs]</div><div>                NAME alert 26 [source_file: externs]</div><div>                PARAM_LIST 26 [source_file: externs]</div><div>                    NAME x 26 [source_file: externs]</div><div>                BLOCK 26 [source_file: externs]</div><div>    BLOCK [synthetic: 1]</div><div>        SCRIPT 1 [synthetic: 1] [source_file: input0] [input_id: InputId: input0]]</div><div></div><div>&gt;</div><div>	at <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=239#src-239">com.google.javascript.jscomp.CommandLineRunnerTest.testPrintTree418(CommandLineRunnerTest.java:239)</a></div></div>
+        </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testDefineFlag3421</span><a href="CommandLineRunnerTest_testDefineFlag3421_6z.html">CommandLineRunnerTest.testDefineFlag3421</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648523</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+    <span class="sortValue">
+Expected:&#160;var&#160;FOO=!0,BAR=5,CCC=!0,DDD=!0
+Result:&#160;var&#160;FOO=&quot;x'&quot;,BAR=5,CCC=!0,DDD=!0
+Node&#160;tree&#160;inequality:
+Tree1:
+BLOCK&#160;[synthetic:&#160;1]
+&#160;&#160;&#160;&#160;SCRIPT&#160;1&#160;[synthetic:&#160;1]&#160;[source_file:&#160;input0]&#160;[input_id:&#160;InputId:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;VAR&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;FOO&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NOT&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NUMBER&#160;0.0&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;BAR&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NUMBER&#160;5.0&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;CCC&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NOT&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NUMBER&#160;0.0&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;DDD&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NOT&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NUMBER&#160;0.0&#160;1&#160;[source_file:&#160;input0]
+
+
+Tree2:
+BLOCK&#160;[synthetic:&#160;1]
+&#160;&#160;&#160;&#160;SCRIPT&#160;1&#160;[synthetic:&#160;1]&#160;[source_file:&#160;input0]&#160;[input_id:&#160;InputId:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;VAR&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;FOO&#160;1&#160;[is_constant_name:&#160;1]&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STRING&#160;x'&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;BAR&#160;1&#160;[is_constant_name:&#160;1]&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NUMBER&#160;5.0&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;CCC&#160;1&#160;[is_constant_name:&#160;1]&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NOT&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NUMBER&#160;0.0&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;DDD&#160;1&#160;[is_constant_name:&#160;1]&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NOT&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NUMBER&#160;0.0&#160;1&#160;[source_file:&#160;input0]
+
+
+Subtree1:&#160;NOT&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;NUMBER&#160;0.0&#160;1&#160;[source_file:&#160;input0]
+
+
+Subtree2:&#160;STRING&#160;x'&#160;1&#160;[source_file:&#160;input0]
+</span>
+        <span class="expand" id="togglebut2" onclick="toggleNodeExpansion('togglebut2', 'msgc2', 'msge2');return false;">&#160;</span>
+        <div class="errorMessage" id="msgc2">
+Expected:&#160;var&#160;FOO=!0,BAR=5,CCC=!0,DDD=!0
+Result:&#160;var&#160;FOO=&quot;x'&quot;,BAR=5,CCC=!0,DDD=!0
+Node&#160;tree&#160;inequality:
+Tree1:
+BLOCK&#160;[synthetic:&#160;1]
+&#160;&#160;&#160;&#160;SCRIPT&#160;1&#160;[synthetic:&#160;1]&#160;[source_file:&#160;input0]&#160;[input_id:&#160;InputId:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;VAR&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;FOO&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NOT&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NUMBER&#160;0.0&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;BAR&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NUMBER&#160;5.0&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;CCC&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NOT&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NUMBER&#160;0.0&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;DDD&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NOT&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NUMBER&#160;0.0&#160;1&#160;[source_file:&#160;input0]
+
+
+Tree2:
+BLOCK&#160;[synthetic:&#160;1]
+&#160;&#160;&#160;&#160;SCRIPT&#160;1&#160;[synthetic:&#160;1]&#160;[source_file:&#160;input0]&#160;[input_id:&#160;InputId:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;VAR&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;FOO&#160;1&#160;[is_constant_name:&#160;1]&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STRING&#160;x'&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;BAR&#160;1&#160;[is_constant_name:&#160;1]&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NUMBER&#160;5.0&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;CCC&#160;1&#160;[is_constant_name:&#160;1]&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NOT&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NUMBER&#160;0.0&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NAME&#160;DDD&#160;1&#160;[is_constant_name:&#160;1]&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NOT&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;NUMBER&#160;0.0&#160;1&#160;[source_file:&#160;input0]
+
+
+Subtree1:&#160;NOT&#160;1&#160;[source_file:&#160;input0]
+&#160;&#160;&#160;&#160;NUMBER&#160;0.0&#160;1&#160;[source_file:&#160;input0]
+
+
+Subtree2:&#160;STRING&#160;x'&#160;1&#160;[source_file:&#160;input0]
+</div>
+        <div class="errorMessage" id="msge2" style="display:none;"> <div>junit.framework.AssertionFailedError: </div><div>Expected: var FOO=!0,BAR=5,CCC=!0,DDD=!0</div><div>Result: var FOO=&quot;x'&quot;,BAR=5,CCC=!0,DDD=!0</div><div>Node tree inequality:</div><div>Tree1:</div><div>BLOCK [synthetic: 1]</div><div>    SCRIPT 1 [synthetic: 1] [source_file: input0] [input_id: InputId: input0]</div><div>        VAR 1 [source_file: input0]</div><div>            NAME FOO 1 [source_file: input0]</div><div>                NOT 1 [source_file: input0]</div><div>                    NUMBER 0.0 1 [source_file: input0]</div><div>            NAME BAR 1 [source_file: input0]</div><div>                NUMBER 5.0 1 [source_file: input0]</div><div>            NAME CCC 1 [source_file: input0]</div><div>                NOT 1 [source_file: input0]</div><div>                    NUMBER 0.0 1 [source_file: input0]</div><div>            NAME DDD 1 [source_file: input0]</div><div>                NOT 1 [source_file: input0]</div><div>                    NUMBER 0.0 1 [source_file: input0]</div><div></div><div></div><div>Tree2:</div><div>BLOCK [synthetic: 1]</div><div>    SCRIPT 1 [synthetic: 1] [source_file: input0] [input_id: InputId: input0]</div><div>        VAR 1 [source_file: input0]</div><div>            NAME FOO 1 [is_constant_name: 1] [source_file: input0]</div><div>                STRING x' 1 [source_file: input0]</div><div>            NAME BAR 1 [is_constant_name: 1] [source_file: input0]</div><div>                NUMBER 5.0 1 [source_file: input0]</div><div>            NAME CCC 1 [is_constant_name: 1] [source_file: input0]</div><div>                NOT 1 [source_file: input0]</div><div>                    NUMBER 0.0 1 [source_file: input0]</div><div>            NAME DDD 1 [is_constant_name: 1] [source_file: input0]</div><div>                NOT 1 [source_file: input0]</div><div>                    NUMBER 0.0 1 [source_file: input0]</div><div></div><div></div><div>Subtree1: NOT 1 [source_file: input0]</div><div>    NUMBER 0.0 1 [source_file: input0]</div><div></div><div></div><div>Subtree2: STRING x' 1 [source_file: input0]</div><div></div><div> at junit.framework.Assert.fail(Assert.java:50)</div><div> at junit.framework.Assert.assertTrue(Assert.java:20)</div><div> at junit.framework.Assert.assertNull(Assert.java:237)</div><div>	at <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=560#src-560">com.google.javascript.jscomp.CommandLineRunnerTest.test(CommandLineRunnerTest.java:560)</a></div><div>	at <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=531#src-531">com.google.javascript.jscomp.CommandLineRunnerTest.test(CommandLineRunnerTest.java:531)</a></div><div>	at <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=523#src-523">com.google.javascript.jscomp.CommandLineRunnerTest.test(CommandLineRunnerTest.java:523)</a></div><div>	at <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=257#src-257">com.google.javascript.jscomp.CommandLineRunnerTest.testDefineFlag3421(CommandLineRunnerTest.java:257)</a></div></div>
+        </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testFormattingSingleQuote426</span><a href="CommandLineRunnerTest_testFormattingSingleQuote426_28.html">CommandLineRunnerTest.testFormattingSingleQuote426</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648570</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+    <span class="sortValue">expected:&lt;var&#160;x=[&quot;&quot;];&gt;&#160;but&#160;was:&lt;var&#160;x=[''];&gt;</span>
+        <span class="expand" id="togglebut3" onclick="toggleNodeExpansion('togglebut3', 'msgc3', 'msge3');return false;">&#160;</span>
+        <div class="errorMessage" id="msgc3">expected:&lt;var&#160;x=[&quot;&quot;];&gt;&#160;but&#160;was:&lt;var&#160;x=[''];&gt;</div>
+        <div class="errorMessage" id="msge3" style="display:none;"> <div>junit.framework.ComparisonFailure: expected:&lt;var x=[&quot;&quot;];&gt; but was:&lt;var x=[''];&gt;</div><div>	at <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=274#src-274">com.google.javascript.jscomp.CommandLineRunnerTest.testFormattingSingleQuote426(CommandLineRunnerTest.java:274)</a></div></div>
+        </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testPrintPassGraph423</span><a href="CommandLineRunnerTest_testPrintPassGraph423_5m.html">CommandLineRunnerTest.testPrintPassGraph423</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648541</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+    <span class="sortValue">expected:&lt;digraph&#160;[AST&#160;{
+&#160;&#160;node&#160;[color=lightblue2,&#160;style=filled];
+&#160;&#160;node0&#160;[label=&quot;BLOCK&quot;];
+&#160;&#160;node1&#160;[label=&quot;SCRIPT&quot;];
+&#160;&#160;node0&#160;-&gt;&#160;node1&#160;[weight=1];
+&#160;&#160;node1&#160;-&gt;&#160;RETURN&#160;[label=&quot;UNCOND&quot;,&#160;fontcolor=&quot;red&quot;,&#160;weight=0.01,&#160;color=&quot;red&quot;];
+&#160;&#160;node0&#160;-&gt;&#160;RETURN&#160;[label=&quot;SYN_BLOCK&quot;,&#160;fontcolor=&quot;red&quot;,&#160;weight=0.01,&#160;color=&quot;red&quot;];
+&#160;&#160;node0&#160;-&gt;&#160;node1&#160;[label=&quot;UNCOND&quot;,&#160;fontcolor=&quot;red&quot;,&#160;weight=0.01,&#160;color=&quot;red&quot;]];
+}
+
+&gt;&#160;but&#160;was:&lt;digraph&#160;[&#160;LinkedGraph&#160;{
+&#160;&#160;node&#160;[color=lightblue2,&#160;style=filled];
+&#160;&#160;LDN1045567253&#160;[label=&quot;checkSideEffects&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1046056441&#160;[label=&quot;beforeMainOptimizations&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1120670624&#160;[label=&quot;beforeStandardOptimizations&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1255445356&#160;[label=&quot;collapseVariableDeclarations&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1273879638&#160;[label=&quot;renameLabels&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1340086277&#160;[label=&quot;sanityCheckAst&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1345293143&#160;[label=&quot;processDefines&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN136312946&#160;[label=&quot;closureReplaceGetCssName&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1427247001&#160;[label=&quot;sanityCheckVars&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1444494461&#160;[label=&quot;closurePrimitives&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1447685190&#160;[label=&quot;inlineVariables&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1448277333&#160;[label=&quot;peepholeOptimizations1&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1562950869&#160;[label=&quot;deadAssignmentsElimination&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1602785474&#160;[label=&quot;beforeStandardChecks&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN161113555&#160;[label=&quot;denormalize&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1618683794&#160;[label=&quot;removeUnusedVars&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1693003105&#160;[label=&quot;convertToDottedProperties&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1746117425&#160;[label=&quot;latePeepholeOptimizations&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN2006842965&#160;[label=&quot;removeUnusedVars1&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN2021835850&#160;[label=&quot;renameVars&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN2027701910&#160;[label=&quot;closureOptimizePrimitives&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN2034975583&#160;[label=&quot;checkControlStructures&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN2041996211&#160;[label=&quot;checkConsts&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN2117193231&#160;[label=&quot;markUnnormalized&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN2141066548&#160;[label=&quot;flowSensitiveInlineVariables&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN286658790&#160;[label=&quot;checkVars&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN289711450&#160;[label=&quot;peepholeOptimizations&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN327840833&#160;[label=&quot;closureRewriteGoogClass&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN461448225&#160;[label=&quot;afterModuleMotion&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN467146800&#160;[label=&quot;afterStandardChecks&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN550572371&#160;[label=&quot;optimizeArgumentsArray&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN634156144&#160;[label=&quot;invertContextualRenaming&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN643587433&#160;[label=&quot;inlineFunctions&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN648358364&#160;[label=&quot;minimizeExitPoints&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN684230144&#160;[label=&quot;removeUnreachableCode&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN701724503&#160;[label=&quot;stripSideEffectProtection&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN814245389&#160;[label=&quot;exploitAssign&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN828447060&#160;[label=&quot;closureCodeRemoval&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN83674409&#160;[label=&quot;checkControlFlow&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN842422776&#160;[label=&quot;collapseObjectLiterals&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN845388562&#160;[label=&quot;garbageCollectChecks&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN855501888&#160;[label=&quot;beforeModuleMotion&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN948424584&#160;[label=&quot;suspiciousCode&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN955443582&#160;[label=&quot;coalesceVariableNames&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN967531000&#160;[label=&quot;closureGoogScopeAliases&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1045567253&#160;-&gt;&#160;LDN948424584;
+&#160;&#160;LDN1046056441&#160;-&gt;&#160;LDN842422776;
+&#160;&#160;LDN1120670624&#160;-&gt;&#160;LDN550572371;
+&#160;&#160;LDN1255445356&#160;-&gt;&#160;LDN161113555;
+&#160;&#160;LDN1273879638&#160;-&gt;&#160;LDN1746117425;
+&#160;&#160;LDN1340086277&#160;-&gt;&#160;LDN1427247001;
+&#160;&#160;LDN1345293143&#160;-&gt;&#160;LDN467146800;
+&#160;&#160;LDN136312946&#160;-&gt;&#160;LDN1345293143;
+&#160;&#160;LDN1444494461&#160;-&gt;&#160;LDN286658790;
+&#160;&#160;LDN1447685190&#160;-&gt;&#160;LDN648358364;
+&#160;&#160;LDN1448277333&#160;-&gt;&#160;LDN1448277333;
+&#160;&#160;LDN1448277333&#160;-&gt;&#160;LDN814245389;
+&#160;&#160;LDN1562950869&#160;-&gt;&#160;LDN1618683794;
+&#160;&#160;LDN1602785474&#160;-&gt;&#160;LDN967531000;
+&#160;&#160;LDN161113555&#160;-&gt;&#160;LDN634156144;
+&#160;&#160;LDN1618683794&#160;-&gt;&#160;LDN842422776;
+&#160;&#160;LDN1618683794&#160;-&gt;&#160;LDN855501888;
+&#160;&#160;LDN1693003105&#160;-&gt;&#160;LDN2117193231;
+&#160;&#160;LDN1746117425&#160;-&gt;&#160;LDN701724503;
+&#160;&#160;LDN2006842965&#160;-&gt;&#160;LDN1693003105;
+&#160;&#160;LDN2006842965&#160;-&gt;&#160;LDN2006842965;
+&#160;&#160;LDN2021835850&#160;-&gt;&#160;LDN1273879638;
+&#160;&#160;LDN2027701910&#160;-&gt;&#160;LDN1046056441;
+&#160;&#160;LDN2034975583&#160;-&gt;&#160;LDN1444494461;
+&#160;&#160;LDN2041996211&#160;-&gt;&#160;LDN2027701910;
+&#160;&#160;LDN2117193231&#160;-&gt;&#160;LDN955443582;
+&#160;&#160;LDN2141066548&#160;-&gt;&#160;LDN2006842965;
+&#160;&#160;LDN286658790&#160;-&gt;&#160;LDN83674409;
+&#160;&#160;LDN289711450&#160;-&gt;&#160;LDN684230144;
+&#160;&#160;LDN327840833&#160;-&gt;&#160;LDN1045567253;
+&#160;&#160;LDN461448225&#160;-&gt;&#160;LDN2141066548;
+&#160;&#160;LDN467146800&#160;-&gt;&#160;LDN845388562;
+&#160;&#160;LDN550572371&#160;-&gt;&#160;LDN828447060;
+&#160;&#160;LDN634156144&#160;-&gt;&#160;LDN2021835850;
+&#160;&#160;LDN643587433&#160;-&gt;&#160;LDN1562950869;
+&#160;&#160;LDN648358364&#160;-&gt;&#160;LDN289711450;
+&#160;&#160;LDN684230144&#160;-&gt;&#160;LDN643587433;
+&#160;&#160;LDN701724503&#160;-&gt;&#160;LDN1340086277;
+&#160;&#160;LDN814245389&#160;-&gt;&#160;LDN1255445356;
+&#160;&#160;LDN828447060&#160;-&gt;&#160;LDN2041996211;
+&#160;&#160;LDN83674409&#160;-&gt;&#160;LDN136312946;
+&#160;&#160;LDN842422776&#160;-&gt;&#160;LDN1447685190;
+&#160;&#160;LDN845388562&#160;-&gt;&#160;LDN1120670624;
+&#160;&#160;LDN855501888&#160;-&gt;&#160;LDN461448225;
+&#160;&#160;LDN948424584&#160;-&gt;&#160;LDN2034975583;
+&#160;&#160;LDN955443582&#160;-&gt;&#160;LDN1448277333;
+&#160;&#160;LDN967531000&#160;-&gt;&#160;LDN327840833];
+}
+
+&gt;</span>
+        <span class="expand" id="togglebut4" onclick="toggleNodeExpansion('togglebut4', 'msgc4', 'msge4');return false;">&#160;</span>
+        <div class="errorMessage" id="msgc4">expected:&lt;digraph&#160;[AST&#160;{
+&#160;&#160;node&#160;[color=lightblue2,&#160;style=filled];
+&#160;&#160;node0&#160;[label=&quot;BLOCK&quot;];
+&#160;&#160;node1&#160;[label=&quot;SCRIPT&quot;];
+&#160;&#160;node0&#160;-&gt;&#160;node1&#160;[weight=1];
+&#160;&#160;node1&#160;-&gt;&#160;RETURN&#160;[label=&quot;UNCOND&quot;,&#160;fontcolor=&quot;red&quot;,&#160;weight=0.01,&#160;color=&quot;red&quot;];
+&#160;&#160;node0&#160;-&gt;&#160;RETURN&#160;[label=&quot;SYN_BLOCK&quot;,&#160;fontcolor=&quot;red&quot;,&#160;weight=0.01,&#160;color=&quot;red&quot;];
+&#160;&#160;node0&#160;-&gt;&#160;node1&#160;[label=&quot;UNCOND&quot;,&#160;fontcolor=&quot;red&quot;,&#160;weight=0.01,&#160;color=&quot;red&quot;]];
+}
+
+&gt;&#160;but&#160;was:&lt;digraph&#160;[&#160;LinkedGraph&#160;{
+&#160;&#160;node&#160;[color=lightblue2,&#160;style=filled];
+&#160;&#160;LDN1045567253&#160;[label=&quot;checkSideEffects&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1046056441&#160;[label=&quot;beforeMainOptimizations&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1120670624&#160;[label=&quot;beforeStandardOptimizations&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1255445356&#160;[label=&quot;collapseVariableDeclarations&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1273879638&#160;[label=&quot;renameLabels&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1340086277&#160;[label=&quot;sanityCheckAst&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1345293143&#160;[label=&quot;processDefines&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN136312946&#160;[label=&quot;closureReplaceGetCssName&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1427247001&#160;[label=&quot;sanityCheckVars&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1444494461&#160;[label=&quot;closurePrimitives&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1447685190&#160;[label=&quot;inlineVariables&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1448277333&#160;[label=&quot;peepholeOptimizations1&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1562950869&#160;[label=&quot;deadAssignmentsElimination&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1602785474&#160;[label=&quot;beforeStandardChecks&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN161113555&#160;[label=&quot;denormalize&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1618683794&#160;[label=&quot;removeUnusedVars&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1693003105&#160;[label=&quot;convertToDottedProperties&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1746117425&#160;[label=&quot;latePeepholeOptimizations&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN2006842965&#160;[label=&quot;removeUnusedVars1&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN2021835850&#160;[label=&quot;renameVars&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN2027701910&#160;[label=&quot;closureOptimizePrimitives&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN2034975583&#160;[label=&quot;checkControlStructures&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN2041996211&#160;[label=&quot;checkConsts&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN2117193231&#160;[label=&quot;markUnnormalized&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN2141066548&#160;[label=&quot;flowSensitiveInlineVariables&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN286658790&#160;[label=&quot;checkVars&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN289711450&#160;[label=&quot;peepholeOptimizations&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN327840833&#160;[label=&quot;closureRewriteGoogClass&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN461448225&#160;[label=&quot;afterModuleMotion&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN467146800&#160;[label=&quot;afterStandardChecks&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN550572371&#160;[label=&quot;optimizeArgumentsArray&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN634156144&#160;[label=&quot;invertContextualRenaming&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN643587433&#160;[label=&quot;inlineFunctions&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN648358364&#160;[label=&quot;minimizeExitPoints&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN684230144&#160;[label=&quot;removeUnreachableCode&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN701724503&#160;[label=&quot;stripSideEffectProtection&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN814245389&#160;[label=&quot;exploitAssign&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN828447060&#160;[label=&quot;closureCodeRemoval&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN83674409&#160;[label=&quot;checkControlFlow&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN842422776&#160;[label=&quot;collapseObjectLiterals&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN845388562&#160;[label=&quot;garbageCollectChecks&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN855501888&#160;[label=&quot;beforeModuleMotion&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN948424584&#160;[label=&quot;suspiciousCode&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN955443582&#160;[label=&quot;coalesceVariableNames&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN967531000&#160;[label=&quot;closureGoogScopeAliases&quot;&#160;color=&quot;white&quot;];
+&#160;&#160;LDN1045567253&#160;-&gt;&#160;LDN948424584;
+&#160;&#160;LDN1046056441&#160;-&gt;&#160;LDN842422776;
+&#160;&#160;LDN1120670624&#160;-&gt;&#160;LDN550572371;
+&#160;&#160;LDN1255445356&#160;-&gt;&#160;LDN161113555;
+&#160;&#160;LDN1273879638&#160;-&gt;&#160;LDN1746117425;
+&#160;&#160;LDN1340086277&#160;-&gt;&#160;LDN1427247001;
+&#160;&#160;LDN1345293143&#160;-&gt;&#160;LDN467146800;
+&#160;&#160;LDN136312946&#160;-&gt;&#160;LDN1345293143;
+&#160;&#160;LDN1444494461&#160;-&gt;&#160;LDN286658790;
+&#160;&#160;LDN1447685190&#160;-&gt;&#160;LDN648358364;
+&#160;&#160;LDN1448277333&#160;-&gt;&#160;LDN1448277333;
+&#160;&#160;LDN1448277333&#160;-&gt;&#160;LDN814245389;
+&#160;&#160;LDN1562950869&#160;-&gt;&#160;LDN1618683794;
+&#160;&#160;LDN1602785474&#160;-&gt;&#160;LDN967531000;
+&#160;&#160;LDN161113555&#160;-&gt;&#160;LDN634156144;
+&#160;&#160;LDN1618683794&#160;-&gt;&#160;LDN842422776;
+&#160;&#160;LDN1618683794&#160;-&gt;&#160;LDN855501888;
+&#160;&#160;LDN1693003105&#160;-&gt;&#160;LDN2117193231;
+&#160;&#160;LDN1746117425&#160;-&gt;&#160;LDN701724503;
+&#160;&#160;LDN2006842965&#160;-&gt;&#160;LDN1693003105;
+&#160;&#160;LDN2006842965&#160;-&gt;&#160;LDN2006842965;
+&#160;&#160;LDN2021835850&#160;-&gt;&#160;LDN1273879638;
+&#160;&#160;LDN2027701910&#160;-&gt;&#160;LDN1046056441;
+&#160;&#160;LDN2034975583&#160;-&gt;&#160;LDN1444494461;
+&#160;&#160;LDN2041996211&#160;-&gt;&#160;LDN2027701910;
+&#160;&#160;LDN2117193231&#160;-&gt;&#160;LDN955443582;
+&#160;&#160;LDN2141066548&#160;-&gt;&#160;LDN2006842965;
+&#160;&#160;LDN286658790&#160;-&gt;&#160;LDN83674409;
+&#160;&#160;LDN289711450&#160;-&gt;&#160;LDN684230144;
+&#160;&#160;LDN327840833&#160;-&gt;&#160;LDN1045567253;
+&#160;&#160;LDN461448225&#160;-&gt;&#160;LDN2141066548;
+&#160;&#160;LDN467146800&#160;-&gt;&#160;LDN845388562;
+&#160;&#160;LDN550572371&#160;-&gt;&#160;LDN828447060;
+&#160;&#160;LDN634156144&#160;-&gt;&#160;LDN2021835850;
+&#160;&#160;LDN643587433&#160;-&gt;&#160;LDN1562950869;
+&#160;&#160;LDN648358364&#160;-&gt;&#160;LDN289711450;
+&#160;&#160;LDN684230144&#160;-&gt;&#160;LDN643587433;
+&#160;&#160;LDN701724503&#160;-&gt;&#160;LDN1340086277;
+&#160;&#160;LDN814245389&#160;-&gt;&#160;LDN1255445356;
+&#160;&#160;LDN828447060&#160;-&gt;&#160;LDN2041996211;
+&#160;&#160;LDN83674409&#160;-&gt;&#160;LDN136312946;
+&#160;&#160;LDN842422776&#160;-&gt;&#160;LDN1447685190;
+&#160;&#160;LDN845388562&#160;-&gt;&#160;LDN1120670624;
+&#160;&#160;LDN855501888&#160;-&gt;&#160;LDN461448225;
+&#160;&#160;LDN948424584&#160;-&gt;&#160;LDN2034975583;
+&#160;&#160;LDN955443582&#160;-&gt;&#160;LDN1448277333;
+&#160;&#160;LDN967531000&#160;-&gt;&#160;LDN327840833];
+}
+
+&gt;</div>
+        <div class="errorMessage" id="msge4" style="display:none;"> <div>junit.framework.ComparisonFailure: expected:&lt;digraph [AST {</div><div>  node [color=lightblue2, style=filled];</div><div>  node0 [label=&quot;BLOCK&quot;];</div><div>  node1 [label=&quot;SCRIPT&quot;];</div><div>  node0 -&gt; node1 [weight=1];</div><div>  node1 -&gt; RETURN [label=&quot;UNCOND&quot;, fontcolor=&quot;red&quot;, weight=0.01, color=&quot;red&quot;];</div><div>  node0 -&gt; RETURN [label=&quot;SYN_BLOCK&quot;, fontcolor=&quot;red&quot;, weight=0.01, color=&quot;red&quot;];</div><div>  node0 -&gt; node1 [label=&quot;UNCOND&quot;, fontcolor=&quot;red&quot;, weight=0.01, color=&quot;red&quot;]];</div><div>}</div><div></div><div>&gt; but was:&lt;digraph [ LinkedGraph {</div><div>  node [color=lightblue2, style=filled];</div><div>  LDN1045567253 [label=&quot;checkSideEffects&quot; color=&quot;white&quot;];</div><div>  LDN1046056441 [label=&quot;beforeMainOptimizations&quot; color=&quot;white&quot;];</div><div>  LDN1120670624 [label=&quot;beforeStandardOptimizations&quot; color=&quot;white&quot;];</div><div>  LDN1255445356 [label=&quot;collapseVariableDeclarations&quot; color=&quot;white&quot;];</div><div>  LDN1273879638 [label=&quot;renameLabels&quot; color=&quot;white&quot;];</div><div>  LDN1340086277 [label=&quot;sanityCheckAst&quot; color=&quot;white&quot;];</div><div>  LDN1345293143 [label=&quot;processDefines&quot; color=&quot;white&quot;];</div><div>  LDN136312946 [label=&quot;closureReplaceGetCssName&quot; color=&quot;white&quot;];</div><div>  LDN1427247001 [label=&quot;sanityCheckVars&quot; color=&quot;white&quot;];</div><div>  LDN1444494461 [label=&quot;closurePrimitives&quot; color=&quot;white&quot;];</div><div>  LDN1447685190 [label=&quot;inlineVariables&quot; color=&quot;white&quot;];</div><div>  LDN1448277333 [label=&quot;peepholeOptimizations1&quot; color=&quot;white&quot;];</div><div>  LDN1562950869 [label=&quot;deadAssignmentsElimination&quot; color=&quot;white&quot;];</div><div>  LDN1602785474 [label=&quot;beforeStandardChecks&quot; color=&quot;white&quot;];</div><div>  LDN161113555 [label=&quot;denormalize&quot; color=&quot;white&quot;];</div><div>  LDN1618683794 [label=&quot;removeUnusedVars&quot; color=&quot;white&quot;];</div><div>  LDN1693003105 [label=&quot;convertToDottedProperties&quot; color=&quot;white&quot;];</div><div>  LDN1746117425 [label=&quot;latePeepholeOptimizations&quot; color=&quot;white&quot;];</div><div>  LDN2006842965 [label=&quot;removeUnusedVars1&quot; color=&quot;white&quot;];</div><div>  LDN2021835850 [label=&quot;renameVars&quot; color=&quot;white&quot;];</div><div>  LDN2027701910 [label=&quot;closureOptimizePrimitives&quot; color=&quot;white&quot;];</div><div>  LDN2034975583 [label=&quot;checkControlStructures&quot; color=&quot;white&quot;];</div><div>  LDN2041996211 [label=&quot;checkConsts&quot; color=&quot;white&quot;];</div><div>  LDN2117193231 [label=&quot;markUnnormalized&quot; color=&quot;white&quot;];</div><div>  LDN2141066548 [label=&quot;flowSensitiveInlineVariables&quot; color=&quot;white&quot;];</div><div>  LDN286658790 [label=&quot;checkVars&quot; color=&quot;white&quot;];</div><div>  LDN289711450 [label=&quot;peepholeOptimizations&quot; color=&quot;white&quot;];</div><div>  LDN327840833 [label=&quot;closureRewriteGoogClass&quot; color=&quot;white&quot;];</div><div>  LDN461448225 [label=&quot;afterModuleMotion&quot; color=&quot;white&quot;];</div><div>  LDN467146800 [label=&quot;afterStandardChecks&quot; color=&quot;white&quot;];</div><div>  LDN550572371 [label=&quot;optimizeArgumentsArray&quot; color=&quot;white&quot;];</div><div>  LDN634156144 [label=&quot;invertContextualRenaming&quot; color=&quot;white&quot;];</div><div>  LDN643587433 [label=&quot;inlineFunctions&quot; color=&quot;white&quot;];</div><div>  LDN648358364 [label=&quot;minimizeExitPoints&quot; color=&quot;white&quot;];</div><div>  LDN684230144 [label=&quot;removeUnreachableCode&quot; color=&quot;white&quot;];</div><div>  LDN701724503 [label=&quot;stripSideEffectProtection&quot; color=&quot;white&quot;];</div><div>  LDN814245389 [label=&quot;exploitAssign&quot; color=&quot;white&quot;];</div><div>  LDN828447060 [label=&quot;closureCodeRemoval&quot; color=&quot;white&quot;];</div><div>  LDN83674409 [label=&quot;checkControlFlow&quot; color=&quot;white&quot;];</div><div>  LDN842422776 [label=&quot;collapseObjectLiterals&quot; color=&quot;white&quot;];</div><div>  LDN845388562 [label=&quot;garbageCollectChecks&quot; color=&quot;white&quot;];</div><div>  LDN855501888 [label=&quot;beforeModuleMotion&quot; color=&quot;white&quot;];</div><div>  LDN948424584 [label=&quot;suspiciousCode&quot; color=&quot;white&quot;];</div><div>  LDN955443582 [label=&quot;coalesceVariableNames&quot; color=&quot;white&quot;];</div><div>  LDN967531000 [label=&quot;closureGoogScopeAliases&quot; color=&quot;white&quot;];</div><div>  LDN1045567253 -&gt; LDN948424584;</div><div>  LDN1046056441 -&gt; LDN842422776;</div><div>  LDN1120670624 -&gt; LDN550572371;</div><div>  LDN1255445356 -&gt; LDN161113555;</div><div>  LDN1273879638 -&gt; LDN1746117425;</div><div>  LDN1340086277 -&gt; LDN1427247001;</div><div>  LDN1345293143 -&gt; LDN467146800;</div><div>  LDN136312946 -&gt; LDN1345293143;</div><div>  LDN1444494461 -&gt; LDN286658790;</div><div>  LDN1447685190 -&gt; LDN648358364;</div><div>  LDN1448277333 -&gt; LDN1448277333;</div><div>  LDN1448277333 -&gt; LDN814245389;</div><div>  LDN1562950869 -&gt; LDN1618683794;</div><div>  LDN1602785474 -&gt; LDN967531000;</div><div>  LDN161113555 -&gt; LDN634156144;</div><div>  LDN1618683794 -&gt; LDN842422776;</div><div>  LDN1618683794 -&gt; LDN855501888;</div><div>  LDN1693003105 -&gt; LDN2117193231;</div><div>  LDN1746117425 -&gt; LDN701724503;</div><div>  LDN2006842965 -&gt; LDN1693003105;</div><div>  LDN2006842965 -&gt; LDN2006842965;</div><div>  LDN2021835850 -&gt; LDN1273879638;</div><div>  LDN2027701910 -&gt; LDN1046056441;</div><div>  LDN2034975583 -&gt; LDN1444494461;</div><div>  LDN2041996211 -&gt; LDN2027701910;</div><div>  LDN2117193231 -&gt; LDN955443582;</div><div>  LDN2141066548 -&gt; LDN2006842965;</div><div>  LDN286658790 -&gt; LDN83674409;</div><div>  LDN289711450 -&gt; LDN684230144;</div><div>  LDN327840833 -&gt; LDN1045567253;</div><div>  LDN461448225 -&gt; LDN2141066548;</div><div>  LDN467146800 -&gt; LDN845388562;</div><div>  LDN550572371 -&gt; LDN828447060;</div><div>  LDN634156144 -&gt; LDN2021835850;</div><div>  LDN643587433 -&gt; LDN1562950869;</div><div>  LDN648358364 -&gt; LDN289711450;</div><div>  LDN684230144 -&gt; LDN643587433;</div><div>  LDN701724503 -&gt; LDN1340086277;</div><div>  LDN814245389 -&gt; LDN1255445356;</div><div>  LDN828447060 -&gt; LDN2041996211;</div><div>  LDN83674409 -&gt; LDN136312946;</div><div>  LDN842422776 -&gt; LDN1447685190;</div><div>  LDN845388562 -&gt; LDN1120670624;</div><div>  LDN855501888 -&gt; LDN461448225;</div><div>  LDN948424584 -&gt; LDN2034975583;</div><div>  LDN955443582 -&gt; LDN1448277333;</div><div>  LDN967531000 -&gt; LDN327840833];</div><div>}</div><div></div><div>&gt;</div><div>	at <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=262#src-262">com.google.javascript.jscomp.CommandLineRunnerTest.testPrintPassGraph423(CommandLineRunnerTest.java:262)</a></div></div>
+        </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testModuleJSON420</span><a href="CommandLineRunnerTest_testModuleJSON420_3n.html">CommandLineRunnerTest.testModuleJSON420</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648510</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testSourceMapExpansion3427</span><a href="CommandLineRunnerTest_testSourceMapExpansion3427_b.html">CommandLineRunnerTest.testSourceMapExpansion3427</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648585</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testVariableMapExpansion3424</span><a href="CommandLineRunnerTest_testVariableMapExpansion3424_2.html">CommandLineRunnerTest.testVariableMapExpansion3424</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648556</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testIssue817</span><a href="CommandLineRunnerTest_testIssue817_3.html">CommandLineRunnerTest.testIssue817</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648167</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.071</span>0.071</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testProcessCJSWithModuleOutput400</span><a href="CommandLineRunnerTest_testProcessCJSWithModuleOutput400_6j.html">CommandLineRunnerTest.testProcessCJSWithModuleOutput400</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648006</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.16</span>0.16</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testCharSetExpansion412</span><a href="CommandLineRunnerTest_testCharSetExpansion412_3s.html">CommandLineRunnerTest.testCharSetExpansion412</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648411</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.026</span>0.026</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testDefineFlag411</span><a href="CommandLineRunnerTest_testDefineFlag411_4b.html">CommandLineRunnerTest.testDefineFlag411</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648390</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.02</span>0.02</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testCodeBuilderAppend103</span><a href="CommandLineRunnerTest_testCodeBuilderAppend103_13.html">CommandLineRunnerTest.testCodeBuilderAppend103</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648005</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testTypeParsingOnWithVerbose408</span><a href="CommandLineRunnerTest_testTypeParsingOnWithVerbose408_71.html">CommandLineRunnerTest.testTypeParsingOnWithVerbose408</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648287</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.088</span>0.088</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testModuleWrapperBaseNameExpansion417</span><a href="CommandLineRunnerTest_testModuleWrapperBaseNameExpansion417_6r.html">CommandLineRunnerTest.testModuleWrapperBaseNameExpansion417</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648476</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testPrintAstFlag401</span><a href="CommandLineRunnerTest_testPrintAstFlag401_1d.html">CommandLineRunnerTest.testPrintAstFlag401</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648239</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testVersionFlag2409</span><a href="CommandLineRunnerTest_testVersionFlag2409_50.html">CommandLineRunnerTest.testVersionFlag2409</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648376</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testStaticFunction7416</span><a href="CommandLineRunnerTest_testStaticFunction7416_2b.html">CommandLineRunnerTest.testStaticFunction7416</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648460</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testNoSrCFilesWithManifest403</span><a href="CommandLineRunnerTest_testNoSrCFilesWithManifest403_20.html">CommandLineRunnerTest.testNoSrCFilesWithManifest403</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648284</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testInlineInFunction5100</span><a href="CommandLineRunnerTest_testInlineInFunction5100_69.html">CommandLineRunnerTest.testInlineInFunction5100</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648598</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testModuleWrapperBaseNameExpansion406</span><a href="CommandLineRunnerTest_testModuleWrapperBaseNameExpansion406_1y.html">CommandLineRunnerTest.testModuleWrapperBaseNameExpansion406</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648258</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.026</span>0.026</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testSourceMapExpansion1402</span><a href="CommandLineRunnerTest_testSourceMapExpansion1402_67.html">CommandLineRunnerTest.testSourceMapExpansion1402</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648618</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.023</span>0.023</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CommandLineRunnerTest.testNameMapExpansion3413</span><a href="CommandLineRunnerTest_testNameMapExpansion3413_3i.html">CommandLineRunnerTest.testNameMapExpansion3413</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673513648437</span>12 Jan 01:54:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu Jan 12 2023 01:54:15 MST using coverage data from Thu Jan 12 2023 01:54:12 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

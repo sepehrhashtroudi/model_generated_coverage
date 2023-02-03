@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":128,"id":30973,"methods":[{"el":111,"sc":1,"sl":106},{"el":119,"sc":1,"sl":114}],"name":"TestPolymorphicCreators","sl":11},{"el":42,"id":30973,"methods":[{"el":25,"sc":9,"sl":25},{"el":41,"sc":9,"sl":31}],"name":"TestPolymorphicCreators.Animal","sl":20},{"el":49,"id":30984,"methods":[{"el":47,"sc":9,"sl":47},{"el":48,"sc":9,"sl":48}],"name":"TestPolymorphicCreators.Dog","sl":44},{"el":57,"id":30987,"methods":[{"el":55,"sc":9,"sl":55},{"el":56,"sc":9,"sl":56}],"name":"TestPolymorphicCreators.Cat","sl":51},{"el":81,"id":30990,"methods":[{"el":65,"sc":9,"sl":63},{"el":74,"sc":9,"sl":67},{"el":80,"sc":9,"sl":78}],"name":"TestPolymorphicCreators.AbstractRoot","sl":59},{"el":91,"id":31000,"methods":[{"el":86,"sc":9,"sl":84},{"el":90,"sc":9,"sl":88}],"name":"TestPolymorphicCreators.One","sl":83}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_3":{"methods":[{"sl":25},{"sl":31},{"sl":47},{"sl":48},{"sl":106}],"name":"testManualPolymorphicDog74","pass":true,"statements":[{"sl":34},{"sl":35},{"sl":48},{"sl":107},{"sl":108},{"sl":109},{"sl":110}]},"test_372":{"methods":[{"sl":25},{"sl":31},{"sl":55},{"sl":56},{"sl":114}],"name":"testManualPolymorphicCatWithReorder370","pass":true,"statements":[{"sl":34},{"sl":37},{"sl":38},{"sl":56},{"sl":115},{"sl":116},{"sl":117},{"sl":118}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [3, 372], [], [], [], [], [], [3, 372], [], [], [3, 372], [3], [], [372], [372], [], [], [], [], [], [], [], [], [3], [3], [], [], [], [], [], [], [372], [372], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [3], [3], [3], [3], [3], [], [], [], [372], [372], [372], [372], [372], [], [], [], [], [], [], [], [], [], []]

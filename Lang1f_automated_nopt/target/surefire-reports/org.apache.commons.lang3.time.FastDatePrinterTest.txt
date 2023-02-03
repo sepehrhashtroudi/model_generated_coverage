@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.lang3.time.FastDatePrinterTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec <<< FAILURE!
+testFormat649(org.apache.commons.lang3.time.FastDatePrinterTest)  Time elapsed: 0.017 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[2023-02-02T01:00:00.000Z]> but was:<[java.text.SimpleDateFormat@5af7aed5]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.commons.lang3.time.FastDatePrinterTest.__CLR4_4_1nkgm87gxi(FastDatePrinterTest.java:74)
+	at org.apache.commons.lang3.time.FastDatePrinterTest.testFormat649(FastDatePrinterTest.java:74)
+

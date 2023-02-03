@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.lang3.mutable.MutableFloatTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec <<< FAILURE!
+testLongValue1061(org.apache.commons.lang3.mutable.MutableFloatTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Use assertEquals(expected, actual, delta) to compare floating-point numbers
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertEquals(Assert.java:576)
+	at org.junit.Assert.assertEquals(Assert.java:565)
+	at org.apache.commons.lang3.mutable.MutableFloatTest.__CLR4_4_1zbqq04g8l(MutableFloatTest.java:34)
+	at org.apache.commons.lang3.mutable.MutableFloatTest.testLongValue1061(MutableFloatTest.java:34)
+
+testDecrement1062(org.apache.commons.lang3.mutable.MutableFloatTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<1.0> but was:<0.0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.commons.lang3.mutable.MutableFloatTest.__CLR4_4_1vppo5fg8u(MutableFloatTest.java:36)
+	at org.apache.commons.lang3.mutable.MutableFloatTest.testDecrement1062(MutableFloatTest.java:36)
+
+testDecrement1063(org.apache.commons.lang3.mutable.MutableFloatTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<1.0> but was:<0.0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.commons.lang3.mutable.MutableFloatTest.__CLR4_4_1yypmxwg93(MutableFloatTest.java:38)
+	at org.apache.commons.lang3.mutable.MutableFloatTest.testDecrement1063(MutableFloatTest.java:38)
+

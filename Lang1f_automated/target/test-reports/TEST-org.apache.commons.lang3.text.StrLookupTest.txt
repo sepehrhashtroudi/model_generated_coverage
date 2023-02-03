@@ -1,0 +1,12 @@
+Testsuite: org.apache.commons.lang3.text.StrLookupTest
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.081 sec
+
+Testcase: testSystemPropertiesLookup261 took 0.055 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at java.util.Hashtable.get(Hashtable.java:364)
+	at org.apache.commons.lang3.text.StrLookup$MapStrLookup.lookup(StrLookup.java:165)
+	at org.apache.commons.lang3.text.StrLookupTest.testSystemPropertiesLookup261(StrLookupTest.java:46)
+
+Testcase: testMapLookup_nullMap260 took 0 sec

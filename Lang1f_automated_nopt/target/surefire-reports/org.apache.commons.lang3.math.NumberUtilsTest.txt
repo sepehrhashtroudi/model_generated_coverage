@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.lang3.math.NumberUtilsTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.02 sec <<< FAILURE!
+nullTest(org.apache.commons.lang3.math.NumberUtilsTest)  Time elapsed: 0.017 sec  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<java.lang.NumberFormatException> but was<java.lang.AssertionError>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.apache.commons.lang3.math.NumberUtilsTest.__CLR4_4_1pz9yaog75(NumberUtilsTest.java:40)
+	at org.apache.commons.lang3.math.NumberUtilsTest.nullTest(NumberUtilsTest.java:40)
+

@@ -1,0 +1,11 @@
+Testsuite: org.apache.commons.lang3.text.StrMatcherTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec
+
+Testcase: testCharSetMatcher_String135 took 0.023 sec
+	FAILED
+expected same:<org.apache.commons.lang3.text.StrMatcher$NoMatcher@1ff8b8f> was not:<org.apache.commons.lang3.text.StrMatcher$CharMatcher@387c703b>
+junit.framework.AssertionFailedError: expected same:<org.apache.commons.lang3.text.StrMatcher$NoMatcher@1ff8b8f> was not:<org.apache.commons.lang3.text.StrMatcher$CharMatcher@387c703b>
+	at org.apache.commons.lang3.text.StrMatcherTest.testCharSetMatcher_String135(StrMatcherTest.java:48)
+
+Testcase: testCharSetMatcher_String509 took 0.007 sec
+Testcase: testCharSetMatcher_charArray510 took 0 sec

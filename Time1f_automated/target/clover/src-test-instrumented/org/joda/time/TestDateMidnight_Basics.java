@@ -1,0 +1,413 @@
+/* $$ This file has been instrumented by Clover 4.4.1#2019101123313948 $$ *//*
+ *  Copyright 2001-2013 Stephen Colebourne
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+package org.joda.time;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.Locale;
+import java.util.TimeZone;
+
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+
+import org.joda.time.base.AbstractInstant;
+import org.joda.time.chrono.BuddhistChronology;
+import org.joda.time.chrono.CopticChronology;
+import org.joda.time.chrono.GJChronology;
+import org.joda.time.chrono.GregorianChronology;
+import org.joda.time.chrono.ISOChronology;
+import org.joda.time.field.UnsupportedDateTimeField;
+import org.joda.time.field.UnsupportedDurationField;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
+
+/**
+ * This class is a Junit unit test for DateMidnight.
+ *
+ * @author Stephen Colebourne
+ */
+@SuppressWarnings("deprecation")
+public class TestDateMidnight_Basics extends TestCase {static class __CLR4_4_1gv4gv4lccietho{public static com_atlassian_clover.CoverageRecorder R;public static com_atlassian_clover.CloverProfile[] profiles = { };@java.lang.SuppressWarnings("unchecked") public static <I, T extends I> I lambdaInc(final int i,final T l,final int si){java.lang.reflect.InvocationHandler h=new java.lang.reflect.InvocationHandler(){public java.lang.Object invoke(java.lang.Object p,java.lang.reflect.Method m,java.lang.Object[] a) throws Throwable{R.inc(i);R.inc(si);try{return m.invoke(l,a);}catch(java.lang.reflect.InvocationTargetException e){throw e.getCause()!=null?e.getCause():new RuntimeException("Clover failed to invoke instrumented lambda",e);}}};return (I)java.lang.reflect.Proxy.newProxyInstance(l.getClass().getClassLoader(),l.getClass().getInterfaces(),h);}static{com_atlassian_clover.CoverageRecorder _R=null;try{com_atlassian_clover.CloverVersionInfo.An_old_version_of_clover_is_on_your_compilation_classpath___Please_remove___Required_version_is___4_4_1();if(2019101123313948L!=com_atlassian_clover.CloverVersionInfo.getBuildStamp()){com_atlassian_clover.Clover.l("[CLOVER] WARNING: The Clover version used in instrumentation does not match the runtime version. You need to run instrumented classes against the same version of Clover that you instrumented with.");com_atlassian_clover.Clover.l("[CLOVER] WARNING: Instr=4.4.1#2019101123313948,Runtime="+com_atlassian_clover.CloverVersionInfo.getReleaseNum()+"#"+com_atlassian_clover.CloverVersionInfo.getBuildStamp());}R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getRecorder("\u002f\u0068\u006f\u006d\u0065\u002f\u0073\u0065\u0070\u0065\u0068\u0072\u002f\u006d\u0061\u0073\u0074\u0065\u0072\u0073\u002f\u0074\u0065\u0073\u0074\u005f\u0067\u0065\u006e\u0065\u0072\u0061\u0074\u0069\u006f\u006e\u002f\u006d\u006f\u0064\u0065\u006c\u005f\u0067\u0065\u006e\u0065\u0072\u0061\u0074\u0065\u0064\u005f\u0063\u006f\u0076\u0065\u0072\u0061\u0067\u0065\u002f\u0054\u0069\u006d\u0065\u0031\u0066\u005f\u0061\u0075\u0074\u006f\u006d\u0061\u0074\u0065\u0064\u002f\u0074\u0061\u0072\u0067\u0065\u0074\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002e\u0064\u0062",1672525352587L,8589935092L,21994,profiles,new java.lang.String[]{"clover.distributed.coverage",null});}catch(java.lang.SecurityException e){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised because it has insufficient security privileges. Please consult the Clover documentation on the security policy file changes required. ("+e.getClass()+":"+e.getMessage()+")");}catch(java.lang.NoClassDefFoundError e){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised. Are you sure you have Clover in the runtime classpath? ("+e.getClass()+":"+e.getMessage()+")");}catch(java.lang.Throwable t){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised because of an unexpected error. ("+t.getClass()+":"+t.getMessage()+")");}R=_R;}}public static final com_atlassian_clover.TestNameSniffer __CLR4_4_1_TEST_NAME_SNIFFER=com_atlassian_clover.TestNameSniffer.NULL_INSTANCE;
+    // Test in 2002/03 as time zones are more well known
+    // (before the late 90's they were all over the place)
+
+    private static final DateTimeZone PARIS = DateTimeZone.forID("Europe/Paris");
+    private static final DateTimeZone LONDON = DateTimeZone.forID("Europe/London");
+    private static final DateTimeZone NEWYORK = DateTimeZone.forID("America/New_York");
+
+    // the default time zone is set to LONDON in setUp()
+    // we have to hard code LONDON here (instead of ISOChronology.getInstance() etc.)
+    // as TestAll sets up a different time zone for better all-round testing
+    private static final ISOChronology ISO_DEFAULT = ISOChronology.getInstance(LONDON);
+    private static final ISOChronology ISO_PARIS = ISOChronology.getInstance(PARIS);
+    private static final GJChronology GJ_DEFAULT = GJChronology.getInstance(LONDON);
+    private static final GregorianChronology GREGORIAN_DEFAULT = GregorianChronology.getInstance(LONDON);
+    private static final GregorianChronology GREGORIAN_PARIS = GregorianChronology.getInstance(PARIS);
+    private static final BuddhistChronology BUDDHIST_DEFAULT = BuddhistChronology.getInstance(LONDON);
+    private static final CopticChronology COPTIC_DEFAULT = CopticChronology.getInstance(LONDON);
+
+    long y2002days = 365 + 365 + 366 + 365 + 365 + 365 + 366 + 365 + 365 + 365 + 
+                     366 + 365 + 365 + 365 + 366 + 365 + 365 + 365 + 366 + 365 + 
+                     365 + 365 + 366 + 365 + 365 + 365 + 366 + 365 + 365 + 365 +
+                     366 + 365;
+    long y2003days = 365 + 365 + 366 + 365 + 365 + 365 + 366 + 365 + 365 + 365 + 
+                     366 + 365 + 365 + 365 + 366 + 365 + 365 + 365 + 366 + 365 + 
+                     365 + 365 + 366 + 365 + 365 + 365 + 366 + 365 + 365 + 365 +
+                     366 + 365 + 365;
+    
+    // 2002-06-09
+    private long TEST_TIME_NOW_UTC =
+            (y2002days + 31L + 28L + 31L + 30L + 31L + 9L -1L) * DateTimeConstants.MILLIS_PER_DAY;
+    private long TEST_TIME_NOW_LONDON =
+            TEST_TIME_NOW_UTC - DateTimeConstants.MILLIS_PER_HOUR;
+//    private long TEST_TIME_NOW_PARIS =
+//            TEST_TIME_NOW_UTC - 2*DateTimeConstants.MILLIS_PER_HOUR;
+            
+    // 2002-04-05
+    private long TEST_TIME1_UTC =
+            (y2002days + 31L + 28L + 31L + 5L -1L) * DateTimeConstants.MILLIS_PER_DAY
+            + 12L * DateTimeConstants.MILLIS_PER_HOUR
+            + 24L * DateTimeConstants.MILLIS_PER_MINUTE;
+    private long TEST_TIME1_LONDON =
+            (y2002days + 31L + 28L + 31L + 5L -1L) * DateTimeConstants.MILLIS_PER_DAY
+            - DateTimeConstants.MILLIS_PER_HOUR;
+    private long TEST_TIME1_PARIS =
+            (y2002days + 31L + 28L + 31L + 5L -1L) * DateTimeConstants.MILLIS_PER_DAY
+            - 2*DateTimeConstants.MILLIS_PER_HOUR;
+        
+    // 2003-05-06
+    private long TEST_TIME2_UTC =
+            (y2003days + 31L + 28L + 31L + 30L + 6L -1L) * DateTimeConstants.MILLIS_PER_DAY
+            + 14L * DateTimeConstants.MILLIS_PER_HOUR
+            + 28L * DateTimeConstants.MILLIS_PER_MINUTE;
+    private long TEST_TIME2_LONDON =
+            (y2003days + 31L + 28L + 31L + 30L + 6L -1L) * DateTimeConstants.MILLIS_PER_DAY
+             - DateTimeConstants.MILLIS_PER_HOUR;
+    private long TEST_TIME2_PARIS =
+            (y2003days + 31L + 28L + 31L + 30L + 6L -1L) * DateTimeConstants.MILLIS_PER_DAY
+             - 2*DateTimeConstants.MILLIS_PER_HOUR;
+    
+    private DateTimeZone originalDateTimeZone = null;
+    private TimeZone originalTimeZone = null;
+    private Locale originalLocale = null;
+
+    public static void main(String[] args) {try{__CLR4_4_1gv4gv4lccietho.R.inc(21856);
+        __CLR4_4_1gv4gv4lccietho.R.inc(21857);junit.textui.TestRunner.run(suite());
+    }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+
+    public static TestSuite suite() {try{__CLR4_4_1gv4gv4lccietho.R.inc(21858);
+        __CLR4_4_1gv4gv4lccietho.R.inc(21859);return new TestSuite(TestDateMidnight_Basics.class);
+    }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+
+    public TestDateMidnight_Basics(String name) {
+        super(name);__CLR4_4_1gv4gv4lccietho.R.inc(21861);try{__CLR4_4_1gv4gv4lccietho.R.inc(21860);
+    }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+
+    protected void setUp() throws Exception {try{__CLR4_4_1gv4gv4lccietho.R.inc(21862);
+        __CLR4_4_1gv4gv4lccietho.R.inc(21863);DateTimeUtils.setCurrentMillisFixed(TEST_TIME_NOW_UTC);
+        __CLR4_4_1gv4gv4lccietho.R.inc(21864);originalDateTimeZone = DateTimeZone.getDefault();
+        __CLR4_4_1gv4gv4lccietho.R.inc(21865);originalTimeZone = TimeZone.getDefault();
+        __CLR4_4_1gv4gv4lccietho.R.inc(21866);originalLocale = Locale.getDefault();
+        __CLR4_4_1gv4gv4lccietho.R.inc(21867);DateTimeZone.setDefault(LONDON);
+        __CLR4_4_1gv4gv4lccietho.R.inc(21868);TimeZone.setDefault(TimeZone.getTimeZone("Europe/London"));
+        __CLR4_4_1gv4gv4lccietho.R.inc(21869);Locale.setDefault(Locale.UK);
+    }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+
+    protected void tearDown() throws Exception {try{__CLR4_4_1gv4gv4lccietho.R.inc(21870);
+        __CLR4_4_1gv4gv4lccietho.R.inc(21871);DateTimeUtils.setCurrentMillisSystem();
+        __CLR4_4_1gv4gv4lccietho.R.inc(21872);DateTimeZone.setDefault(originalDateTimeZone);
+        __CLR4_4_1gv4gv4lccietho.R.inc(21873);TimeZone.setDefault(originalTimeZone);
+        __CLR4_4_1gv4gv4lccietho.R.inc(21874);Locale.setDefault(originalLocale);
+        __CLR4_4_1gv4gv4lccietho.R.inc(21875);originalDateTimeZone = null;
+        __CLR4_4_1gv4gv4lccietho.R.inc(21876);originalTimeZone = null;
+        __CLR4_4_1gv4gv4lccietho.R.inc(21877);originalLocale = null;
+    }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+
+    //-----------------------------------------------------------------------
+public void testWithDurationAdded_long_int14() {__CLR4_4_1gv4gv4lccietho.R.globalSliceStart(getClass().getName(),21878);int $CLV_p$=0;java.lang.Throwable $CLV_t$=null;try{__CLR4_4_17pa5dtgvq();$CLV_p$=1;}catch(java.lang.Throwable $CLV_t2$){if($CLV_p$==0&&$CLV_t$==null){$CLV_t$=$CLV_t2$;}__CLR4_4_1gv4gv4lccietho.R.rethrow($CLV_t2$);}finally{__CLR4_4_1gv4gv4lccietho.R.globalSliceEnd(getClass().getName(),"org.joda.time.TestDateMidnight_Basics.testWithDurationAdded_long_int14",__CLR4_4_1_TEST_NAME_SNIFFER.getTestName(),21878,$CLV_p$,$CLV_t$);}}private void  __CLR4_4_17pa5dtgvq(){try{__CLR4_4_1gv4gv4lccietho.R.inc(21878); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21879);DateMidnight test = new DateMidnight(TEST_TIME1_UTC, BUDDHIST_DEFAULT); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21880);DateMidnight result = test.withDurationAdded(123456789L, 1); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21881);DateMidnight expected = new DateMidnight(test.getMillis() + 123456789L, BUDDHIST_DEFAULT); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21882);assertEquals(expected, result); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21883);result = test.withDurationAdded(123456789L, 0); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21884);assertSame(test, result); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21885);result = test.withDurationAdded(123456789L, 2); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21886);expected = new DateMidnight(test.getMillis() + (2L * 123456789L), BUDDHIST_DEFAULT); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21887);assertEquals(expected, result); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21888);result = test.withDurationAdded(123456789L, -3); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21889);expected = new DateMidnight(test.getMillis() - (3L * 123456789L), BUDDHIST_DEFAULT); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21890);assertEquals(expected, result); 
+ }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+public void testMinusYears_int41() {__CLR4_4_1gv4gv4lccietho.R.globalSliceStart(getClass().getName(),21891);int $CLV_p$=0;java.lang.Throwable $CLV_t$=null;try{__CLR4_4_1qd2qj0gw3();$CLV_p$=1;}catch(java.lang.Throwable $CLV_t2$){if($CLV_p$==0&&$CLV_t$==null){$CLV_t$=$CLV_t2$;}__CLR4_4_1gv4gv4lccietho.R.rethrow($CLV_t2$);}finally{__CLR4_4_1gv4gv4lccietho.R.globalSliceEnd(getClass().getName(),"org.joda.time.TestDateMidnight_Basics.testMinusYears_int41",__CLR4_4_1_TEST_NAME_SNIFFER.getTestName(),21891,$CLV_p$,$CLV_t$);}}private void  __CLR4_4_1qd2qj0gw3(){try{__CLR4_4_1gv4gv4lccietho.R.inc(21891); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21892);DateMidnight test = new DateMidnight(2002, 5, 3, BUDDHIST_DEFAULT); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21893);DateMidnight result = test.minusYears(1); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21894);DateMidnight expected = new DateMidnight(2001, 5, 3, BUDDHIST_DEFAULT); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21895);assertEquals(expected, result); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21896);result = test.minusYears(0); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21897);assertSame(test, result); 
+ }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+public void testGetPeriodType107() {__CLR4_4_1gv4gv4lccietho.R.globalSliceStart(getClass().getName(),21898);int $CLV_p$=0;java.lang.Throwable $CLV_t$=null;try{__CLR4_4_1pktuu8gwa();$CLV_p$=1;}catch(java.lang.Throwable $CLV_t2$){if($CLV_p$==0&&$CLV_t$==null){$CLV_t$=$CLV_t2$;}__CLR4_4_1gv4gv4lccietho.R.rethrow($CLV_t2$);}finally{__CLR4_4_1gv4gv4lccietho.R.globalSliceEnd(getClass().getName(),"org.joda.time.TestDateMidnight_Basics.testGetPeriodType107",__CLR4_4_1_TEST_NAME_SNIFFER.getTestName(),21898,$CLV_p$,$CLV_t$);}}private void  __CLR4_4_1pktuu8gwa(){try{__CLR4_4_1gv4gv4lccietho.R.inc(21898); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21899);Period test = new Period(0L); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21900);assertEquals(PeriodType.standard(), test.getPeriodType()); 
+ }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+public void testMinus_RD108() {__CLR4_4_1gv4gv4lccietho.R.globalSliceStart(getClass().getName(),21901);int $CLV_p$=0;java.lang.Throwable $CLV_t$=null;try{__CLR4_4_1209c3xgwd();$CLV_p$=1;}catch(java.lang.Throwable $CLV_t2$){if($CLV_p$==0&&$CLV_t$==null){$CLV_t$=$CLV_t2$;}__CLR4_4_1gv4gv4lccietho.R.rethrow($CLV_t2$);}finally{__CLR4_4_1gv4gv4lccietho.R.globalSliceEnd(getClass().getName(),"org.joda.time.TestDateMidnight_Basics.testMinus_RD108",__CLR4_4_1_TEST_NAME_SNIFFER.getTestName(),21901,$CLV_p$,$CLV_t$);}}private void  __CLR4_4_1209c3xgwd(){try{__CLR4_4_1gv4gv4lccietho.R.inc(21901); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21902);DateMidnight test = new DateMidnight(TEST_TIME1_UTC, BUDDHIST_DEFAULT); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21903);DateMidnight result = test.minus(new Duration(123456789L)); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21904);DateMidnight expected = new DateMidnight(test.getMillis() - 123456789L, BUDDHIST_DEFAULT); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21905);assertEquals(expected, result); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21906);result = test.minus((ReadableDuration) null); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21907);assertSame(test, result); 
+ }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+public void testWithMillis_long109() {__CLR4_4_1gv4gv4lccietho.R.globalSliceStart(getClass().getName(),21908);int $CLV_p$=0;java.lang.Throwable $CLV_t$=null;try{__CLR4_4_1fku1xggwk();$CLV_p$=1;}catch(java.lang.Throwable $CLV_t2$){if($CLV_p$==0&&$CLV_t$==null){$CLV_t$=$CLV_t2$;}__CLR4_4_1gv4gv4lccietho.R.rethrow($CLV_t2$);}finally{__CLR4_4_1gv4gv4lccietho.R.globalSliceEnd(getClass().getName(),"org.joda.time.TestDateMidnight_Basics.testWithMillis_long109",__CLR4_4_1_TEST_NAME_SNIFFER.getTestName(),21908,$CLV_p$,$CLV_t$);}}private void  __CLR4_4_1fku1xggwk(){try{__CLR4_4_1gv4gv4lccietho.R.inc(21908); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21909);DateMidnight test = new DateMidnight(TEST_TIME1_UTC); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21910);DateMidnight result = test.withMillis(TEST_TIME1_LONDON); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21911);assertEquals(TEST_TIME1_LONDON, test.getMillis()); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21912);assertEquals(TEST_TIME1_PARIS, result.getMillis()); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21913);assertEquals(ISO_PARIS, result.getChronology()); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21914);test = new DateMidnight(TEST_TIME1_UTC, GREGORIAN_PARIS); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21915);result = test.withMillis(TEST_TIME1_UTC); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21916);assertEquals(TEST_TIME1_PARIS, test.getMillis()); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21917);assertEquals(TEST_TIME1_LONDON - DateTimeConstants.MILLIS_PER_DAY, result.getMillis()); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21918);assertEquals(GREGORIAN_DEFAULT, result.getChronology()); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21919);test = new DateMidnight(TEST_TIME1_UTC); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21920);result = test.withMillis(TEST_TIME1_UTC); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21921);assertSame(test, result); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21922);test = new DateMidnight(TEST_TIME1_UTC); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21923);result = test.withMillis(TEST_TIME1_UTC); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21924);assertSame(test, result); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21925);test = new DateMidnight(TEST_TIME1_UTC, new MockNullZoneChronology()); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21926);result = test.withMillis(TEST_TIME1_UTC); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21927);assertSame(test, result); 
+ }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+public void testToDurationTo110() {__CLR4_4_1gv4gv4lccietho.R.globalSliceStart(getClass().getName(),21928);int $CLV_p$=0;java.lang.Throwable $CLV_t$=null;try{__CLR4_4_1u6q0ezgx4();$CLV_p$=1;}catch(java.lang.Throwable $CLV_t2$){if($CLV_p$==0&&$CLV_t$==null){$CLV_t$=$CLV_t2$;}__CLR4_4_1gv4gv4lccietho.R.rethrow($CLV_t2$);}finally{__CLR4_4_1gv4gv4lccietho.R.globalSliceEnd(getClass().getName(),"org.joda.time.TestDateMidnight_Basics.testToDurationTo110",__CLR4_4_1_TEST_NAME_SNIFFER.getTestName(),21928,$CLV_p$,$CLV_t$);}}private void  __CLR4_4_1u6q0ezgx4(){try{__CLR4_4_1gv4gv4lccietho.R.inc(21928); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21929);Period test = new Period(123L); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21930);assertEquals(new Duration(123L), test.toDurationTo(new Instant(123L))); 
+ }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+public void testEqualsHashCode112() {__CLR4_4_1gv4gv4lccietho.R.globalSliceStart(getClass().getName(),21931);int $CLV_p$=0;java.lang.Throwable $CLV_t$=null;try{__CLR4_4_1j34oibgx7();$CLV_p$=1;}catch(java.lang.Throwable $CLV_t2$){if($CLV_p$==0&&$CLV_t$==null){$CLV_t$=$CLV_t2$;}__CLR4_4_1gv4gv4lccietho.R.rethrow($CLV_t2$);}finally{__CLR4_4_1gv4gv4lccietho.R.globalSliceEnd(getClass().getName(),"org.joda.time.TestDateMidnight_Basics.testEqualsHashCode112",__CLR4_4_1_TEST_NAME_SNIFFER.getTestName(),21931,$CLV_p$,$CLV_t$);}}private void  __CLR4_4_1j34oibgx7(){try{__CLR4_4_1gv4gv4lccietho.R.inc(21931); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21932);DateMidnight test1 = new DateMidnight(TEST_TIME1_UTC); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21933);DateMidnight test2 = new DateMidnight(TEST_TIME1_UTC); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21934);assertEquals(true, test1.equals(test2)); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21935);assertEquals(true, test2.equals(test1)); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21936);assertEquals(true, test1.equals(test1)); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21937);assertEquals(true, test2.equals(test2)); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21938);assertEquals(true, test1.hashCode() == test2.hashCode()); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21939);assertEquals(true, test1.hashCode() == test1.hashCode()); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21940);assertEquals(true, test2.hashCode() == test2.hashCode()); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21941);DateMidnight test3 = new DateMidnight(TEST_TIME2_UTC); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21942);assertEquals(false, test1.equals(test3)); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21943);assertEquals(false, test2.equals(test3)); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21944);assertEquals(false, test3.equals(test1)); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21945);assertEquals(false, test3.equals(test2)); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21946);assertEquals(false, test1.hashCode() == test3.hashCode()); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21947);assertEquals(false, test2.hashCode() == test3.hashCode()); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21948);assertEquals(false, test1.equals("Hello")); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21949);assertEquals(true, test1.equals(new MockInstant())); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21950);assertEquals(false, test1.equals(new DateMidnight(TEST_TIME1_UTC, GREGORIAN_DEFAULT))); 
+ }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+public void testPlus_RD114() {__CLR4_4_1gv4gv4lccietho.R.globalSliceStart(getClass().getName(),21951);int $CLV_p$=0;java.lang.Throwable $CLV_t$=null;try{__CLR4_4_1b0brmygxr();$CLV_p$=1;}catch(java.lang.Throwable $CLV_t2$){if($CLV_p$==0&&$CLV_t$==null){$CLV_t$=$CLV_t2$;}__CLR4_4_1gv4gv4lccietho.R.rethrow($CLV_t2$);}finally{__CLR4_4_1gv4gv4lccietho.R.globalSliceEnd(getClass().getName(),"org.joda.time.TestDateMidnight_Basics.testPlus_RD114",__CLR4_4_1_TEST_NAME_SNIFFER.getTestName(),21951,$CLV_p$,$CLV_t$);}}private void  __CLR4_4_1b0brmygxr(){try{__CLR4_4_1gv4gv4lccietho.R.inc(21951); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21952);DateMidnight test = new DateMidnight(TEST_TIME1_UTC, BUDDHIST_DEFAULT); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21953);DateMidnight result = test.plus(new Duration(123456789L)); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21954);DateMidnight expected = new DateMidnight(test.getMillis() + 123456789L, BUDDHIST_DEFAULT); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21955);assertEquals(expected, result); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21956);result = test.plus((ReadableDuration) null); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21957);assertSame(test, result); 
+ }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+public void testBug3476684_adjustOffset_springGap115() {__CLR4_4_1gv4gv4lccietho.R.globalSliceStart(getClass().getName(),21958);int $CLV_p$=0;java.lang.Throwable $CLV_t$=null;try{__CLR4_4_1klrk3lgxy();$CLV_p$=1;}catch(java.lang.Throwable $CLV_t2$){if($CLV_p$==0&&$CLV_t$==null){$CLV_t$=$CLV_t2$;}__CLR4_4_1gv4gv4lccietho.R.rethrow($CLV_t2$);}finally{__CLR4_4_1gv4gv4lccietho.R.globalSliceEnd(getClass().getName(),"org.joda.time.TestDateMidnight_Basics.testBug3476684_adjustOffset_springGap115",__CLR4_4_1_TEST_NAME_SNIFFER.getTestName(),21958,$CLV_p$,$CLV_t$);}}private void  __CLR4_4_1klrk3lgxy(){try{__CLR4_4_1gv4gv4lccietho.R.inc(21958); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21959);final DateTimeZone zone = DateTimeZone.forID("America/Sao_Paulo"); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21960);DateTime base = new DateTime(2011, 10, 15, 22, 15, zone); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21961);DateTime baseBefore = base.plusHours(1); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21962);DateTime baseAfter = base.plusHours(2); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21963);assertSame(base, base.withEarlierOffsetAtOverlap()); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21964);assertSame(base, base.withLaterOffsetAtOverlap()); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21965);assertSame(baseBefore, baseBefore.withEarlierOffsetAtOverlap()); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21966);assertEquals(baseBefore, baseBefore.withLaterOffsetAtOverlap()); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21967);assertSame(baseAfter, baseAfter.withLaterOffsetAtOverlap()); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21968);assertEquals(baseAfter, baseAfter.withEarlierOffsetAtOverlap()); 
+ }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+public void testWithDurationAdded_RD_int116() {__CLR4_4_1gv4gv4lccietho.R.globalSliceStart(getClass().getName(),21969);int $CLV_p$=0;java.lang.Throwable $CLV_t$=null;try{__CLR4_4_1yy4keogy9();$CLV_p$=1;}catch(java.lang.Throwable $CLV_t2$){if($CLV_p$==0&&$CLV_t$==null){$CLV_t$=$CLV_t2$;}__CLR4_4_1gv4gv4lccietho.R.rethrow($CLV_t2$);}finally{__CLR4_4_1gv4gv4lccietho.R.globalSliceEnd(getClass().getName(),"org.joda.time.TestDateMidnight_Basics.testWithDurationAdded_RD_int116",__CLR4_4_1_TEST_NAME_SNIFFER.getTestName(),21969,$CLV_p$,$CLV_t$);}}private void  __CLR4_4_1yy4keogy9(){try{__CLR4_4_1gv4gv4lccietho.R.inc(21969); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21970);DateMidnight test = new DateMidnight(TEST_TIME1_UTC, BUDDHIST_DEFAULT); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21971);DateMidnight result = test.withDurationAdded(new Duration(123456789L), 1); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21972);DateMidnight expected = new DateMidnight(test.getMillis() + 123456789L, BUDDHIST_DEFAULT); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21973);assertEquals(expected, result); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21974);result = test.withDurationAdded(null, 1); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21975);assertSame(test, result); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21976);result = test.withDurationAdded(new Duration(123456789L), 0); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21977);assertSame(test, result); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21978);result = test.withDurationAdded(new Duration(123456789L), 2); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21979);expected = new DateMidnight(test.getMillis() + (2L * 123456789L), BUDDHIST_DEFAULT); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21980);assertEquals(expected, result); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21981);result = test.withDurationAdded(new Duration(123456789L), -3); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21982);expected = new DateMidnight(test.getMillis() - (3L * 123456789L), BUDDHIST_DEFAULT); 
+     __CLR4_4_1gv4gv4lccietho.R.inc(21983);assertEquals(expected, result); 
+ }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+    
+
+    //-----------------------------------------------------------------------
+    
+
+    
+
+    //-----------------------------------------------------------------------
+    
+
+    
+
+    //-----------------------------------------------------------------------
+    
+    
+    class MockInstant extends AbstractInstant {
+        public String toString() {try{__CLR4_4_1gv4gv4lccietho.R.inc(21984);
+            __CLR4_4_1gv4gv4lccietho.R.inc(21985);return null;
+        }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+        public long getMillis() {try{__CLR4_4_1gv4gv4lccietho.R.inc(21986);
+            __CLR4_4_1gv4gv4lccietho.R.inc(21987);return TEST_TIME1_LONDON;
+        }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+        public Chronology getChronology() {try{__CLR4_4_1gv4gv4lccietho.R.inc(21988);
+            __CLR4_4_1gv4gv4lccietho.R.inc(21989);return ISO_DEFAULT;
+        }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    //-----------------------------------------------------------------------
+    
+
+    //-----------------------------------------------------------------------
+    
+
+    
+
+    
+
+    
+
+    //-----------------------------------------------------------------------
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    //-----------------------------------------------------------------------
+    
+
+    
+
+    
+
+    //-----------------------------------------------------------------------
+    
+
+    
+
+    
+
+    //-----------------------------------------------------------------------
+    
+
+    //-----------------------------------------------------------------------
+    
+
+    
+
+    //-----------------------------------------------------------------------
+    
+
+    
+
+    
+
+    
+
+    //-----------------------------------------------------------------------
+    
+    
+    //-----------------------------------------------------------------------
+    
+
+    //-----------------------------------------------------------------------
+    
+
+    //-----------------------------------------------------------------------    
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    //-----------------------------------------------------------------------    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    //-----------------------------------------------------------------------
+    
+
+    //-----------------------------------------------------------------------
+    private void check(DateMidnight test, int year, int month, int day) {try{__CLR4_4_1gv4gv4lccietho.R.inc(21990);
+        __CLR4_4_1gv4gv4lccietho.R.inc(21991);assertEquals(year, test.getYear());
+        __CLR4_4_1gv4gv4lccietho.R.inc(21992);assertEquals(month, test.getMonthOfYear());
+        __CLR4_4_1gv4gv4lccietho.R.inc(21993);assertEquals(day, test.getDayOfMonth());
+    }finally{__CLR4_4_1gv4gv4lccietho.R.flushNeeded();}}
+
+}

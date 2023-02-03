@@ -1,0 +1,32 @@
+<html xmlns:string="xalan://java.lang.String" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Standard Error from SymbolTableTest</title>
+</head>
+<body>
+<pre>Jan 12, 2023 1:54:11 AM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:3: WARNING - attempted re-definition of type Function
+found   : function (new:Function, *): ?
+expected: function (new:Function, ...[*]): ?
+ * @param {*} var_args */ function Function(var_args) {}/** @type {!Function} */ Function.prototype.apply;/** @type {!Function} */ Function.prototype.bind;/** @type {!Function} */ Function.prototype.call;/** @constructor 
+                          ^
+
+Jan 12, 2023 1:54:11 AM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: externs1:8: WARNING - attempted re-definition of type Array
+found   : function (new:Array, *): Array
+expected: function (new:Array, ...[*]): Array
+ @return {!Array} */function Array(var_args) {}
+                    ^
+
+Jan 12, 2023 1:54:11 AM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 2 warning(s), 100% typed
+Jan 12, 2023 1:54:11 AM com.google.javascript.jscomp.LoggerErrorManager println
+WARNING: in1:1: WARNING - Parse error. illegal use of unknown JSDoc tag "contstructor"; ignoring it
+/** @contstructor */function F() {  this.field1 = 3;}F.prototype.method1 = function() {  this.field1 = 5;};(new F()).method1();
+    ^
+
+Jan 12, 2023 1:54:11 AM com.google.javascript.jscomp.LoggerErrorManager printSummary
+WARNING: 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

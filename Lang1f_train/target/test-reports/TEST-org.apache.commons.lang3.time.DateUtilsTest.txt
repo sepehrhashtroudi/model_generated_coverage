@@ -1,0 +1,36 @@
+Testsuite: org.apache.commons.lang3.time.DateUtilsTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.251 sec
+------------- Standard Output ---------------
+DateUtilsTest: Default Locale=en_US
+------------- ---------------- ---------------
+
+Testcase: testIsSameDay_Cal791 took 0.028 sec
+Testcase: testTruncate306 took 0.017 sec
+Testcase: testSetMilliseconds885 took 0.004 sec
+Testcase: testParseDate1267 took 0.004 sec
+Testcase: testIsSameLocalTime_Cal1054 took 0.003 sec
+Testcase: testCeil8 took 0.02 sec
+Testcase: testAddWeeks1309 took 0.002 sec
+Testcase: testLANG799_DE_FAIL1243 took 0.003 sec
+Testcase: testMonthIterator257 took 0.007 sec
+Testcase: testSetDays527 took 0.002 sec
+Testcase: testAddMinutes535 took 0.002 sec
+Testcase: testIsSameInstant_Date180 took 0.001 sec
+Testcase: testWeekIterator154 took 0.01 sec
+Testcase: testAddMonths667 took 0.001 sec
+Testcase: testAddSeconds1098 took 0.001 sec
+Testcase: testSetMinutes711 took 0.002 sec
+Testcase: testLang5301053 took 0.099 sec
+Testcase: testLANG799_EN_WITH_DE_LOCALE524 took 0.001 sec
+Testcase: testAddDays1080 took 0.001 sec
+Testcase: testIsSameInstant_Cal797 took 0.001 sec
+Testcase: testAddYears1123 took 0.002 sec
+Testcase: testConstructor683 took 0.001 sec
+Testcase: testRound1081 took 0.005 sec
+Testcase: testSetMonths1198 took 0.001 sec
+Testcase: testIteratorEx201 took 0.001 sec
+Testcase: testSetHours656 took 0.001 sec
+Testcase: testToCalendar223 took 0.001 sec
+Testcase: testAddHours1211 took 0.001 sec
+Testcase: testSetYears1101 took 0.001 sec
+Testcase: testLANG799_DE_OK96 took 0.001 sec

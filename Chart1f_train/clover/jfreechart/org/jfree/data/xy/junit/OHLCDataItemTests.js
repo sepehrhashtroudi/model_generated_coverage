@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":131,"id":81203,"methods":[{"el":69,"sc":5,"sl":67},{"el":78,"sc":5,"sl":76},{"el":92,"sc":5,"sl":83},{"el":102,"sc":5,"sl":97},{"el":129,"sc":5,"sl":107}],"name":"OHLCDataItemTests","sl":60}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1204":{"methods":[{"sl":107}],"name":"testSerialization","pass":true,"statements":[{"sl":108},{"sl":111},{"sl":113},{"sl":114},{"sl":115},{"sl":116},{"sl":117},{"sl":119},{"sl":122},{"sl":123},{"sl":128}]},"test_1898":{"methods":[{"sl":83}],"name":"testEquals","pass":true,"statements":[{"sl":84},{"sl":87},{"sl":90},{"sl":91}]},"test_200":{"methods":[{"sl":97}],"name":"testCloning","pass":true,"statements":[{"sl":98},{"sl":101}]},"test_506":{"methods":[{"sl":97}],"name":"testCloning","pass":true,"statements":[{"sl":98},{"sl":101}]},"test_757":{"methods":[{"sl":107}],"name":"testSerialization","pass":true,"statements":[{"sl":108},{"sl":111},{"sl":113},{"sl":114},{"sl":115},{"sl":116},{"sl":117},{"sl":119},{"sl":122},{"sl":123},{"sl":128}]},"test_791":{"methods":[{"sl":83}],"name":"testEquals","pass":true,"statements":[{"sl":84},{"sl":87},{"sl":90},{"sl":91}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1898, 791], [1898, 791], [], [], [1898, 791], [], [], [1898, 791], [1898, 791], [], [], [], [], [], [200, 506], [200, 506], [], [], [200, 506], [], [], [], [], [], [757, 1204], [757, 1204], [], [], [757, 1204], [], [757, 1204], [757, 1204], [757, 1204], [757, 1204], [757, 1204], [], [757, 1204], [], [], [757, 1204], [757, 1204], [], [], [], [], [757, 1204], [], [], []]

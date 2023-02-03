@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>jackson-databind</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="historical.html">jackson-databind-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        jackson-databind
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Thu Jan 19 2023 15:22:30 MST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+
+            <ul class="tabs-menu">
+            <li class="menu-item ">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item active-tab">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+            <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">394</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">7,017</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">1,970</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">1,175</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">198</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">20</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">26,765</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">17,040</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">2,248</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.32</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">3.56</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">1.68</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">58.75</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">1.14</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">394</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">7,017</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">1,970</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">1,175</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">198</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">20</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">26,765</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">17,040</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">2,248</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.32</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">3.56</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">1.68</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">58.75</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">1.14</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+        
+
+
+        
+        <table id="projectSummaryTable" class="aui">
+                        <thead>
+    <tr>
+        <th width="30%">Project</th>
+                    <th colspan="1">
+                <label >Packages</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The average number of paths per method.">Average Method Complexity</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+            </th>
+                    <th colspan="2">
+                <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+            </th>
+            </tr>
+</thead>
+            <tbody>
+                                <tr>
+    <td>
+                <span class="sortValue">Clover&#160;database&#160;Thu&#160;Jan&#160;19&#160;2023&#160;15:22:30&#160;MST</span>
+                    Clover&#160;database&#160;Thu&#160;Jan&#160;19&#160;2023&#160;15:22:30&#160;MST
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">20.0</span>
+            20
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1411167</span>
+            1.14
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1716.0</span>
+            1,716
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8170771</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8170771</span>81.7%</div><div style="display: table-cell">
+ <div title="81.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:81.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+            </tbody>
+        </table>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                            <div>&#160;</div>
+                        <div>
+    Metrics from sub-packages:
+            <p class="aui-buttons">
+        <a href="testsrc-pkg-summary.html"
+           class="aui-button active"
+           id="simple-tooltip"
+           title="Calculate code metrics from sub-packages separately">
+            Separated
+        </a>
+        <a href="testsrc-agg-pkgs.html"
+           class="aui-button"
+           id="simple-tooltip"
+           title="Calculate a sum of metrics from a given package and all its sub-packages">
+            Aggregated
+        </a>
+    </p>
+</div>
+            <table id="projectPackagesTable" class="aui aui-table-sortable">
+                                <thead>
+    <tr>
+        <th width="30%">Package</th>
+                            <th colspan="1">
+                <label >
+                    Files
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The average number of paths per method.">
+                    Average Method Complexity
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The number of statements and branches that were not covered during testing.">
+                    Uncovered Elements
+                </label>
+            </th>
+                                <th colspan="2">
+                <label  title="The amount of code that was hit at least once during testing.">
+                    TOTAL Coverage
+                </label>
+            </th>
+                        </tr>
+</thead>
+                <tbody>
+                    
+                                                                                            <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.failing</span>
+                    <a href="com/fasterxml/jackson/failing/testsrc-pkg-summary.html" title="com.fasterxml.jackson.failing">com.fasterxml.jackson.failing</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">13.0</span>
+            13
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0144928</span>
+            1.01
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">226.0</span>
+            226
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind.jsonschema</span>
+                    <a href="com/fasterxml/jackson/databind/jsonschema/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind.jsonschema">com.fasterxml.jackson.databind.jsonschema</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0526316</span>
+            1.05
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">29.0</span>
+            29
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6506024</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6506024</span>65.1%</div><div style="display: table-cell">
+ <div title="65.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:65.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind.interop</span>
+                    <a href="com/fasterxml/jackson/databind/interop/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind.interop">com.fasterxml.jackson.databind.interop</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.4545455</span>
+            1.45
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">52.0</span>
+            52
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6904762</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6904762</span>69%</div><div style="display: table-cell">
+ <div title="69% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:69%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind.creators</span>
+                    <a href="com/fasterxml/jackson/databind/creators/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind.creators">com.fasterxml.jackson.databind.creators</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">8.0</span>
+            8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0574713</span>
+            1.06
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">160.0</span>
+            160
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6917148</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6917148</span>69.2%</div><div style="display: table-cell">
+ <div title="69.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:69.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind</span>
+                    <a href="com/fasterxml/jackson/databind/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind">com.fasterxml.jackson.databind</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">13.0</span>
+            13
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2610837</span>
+            1.26
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">241.0</span>
+            241
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7264472</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7264472</span>72.6%</div><div style="display: table-cell">
+ <div title="72.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:72.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind.introspect</span>
+                    <a href="com/fasterxml/jackson/databind/introspect/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind.introspect">com.fasterxml.jackson.databind.introspect</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0454545</span>
+            1.05
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">59.0</span>
+            59
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7305936</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7305936</span>73.1%</div><div style="display: table-cell">
+ <div title="73.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:73.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind.filter</span>
+                    <a href="com/fasterxml/jackson/databind/filter/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind.filter">com.fasterxml.jackson.databind.filter</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.060606</span>
+            1.06
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">29.0</span>
+            29
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7410714</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7410714</span>74.1%</div><div style="display: table-cell">
+ <div title="74.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:74.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind.module</span>
+                    <a href="com/fasterxml/jackson/databind/module/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind.module">com.fasterxml.jackson.databind.module</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3333334</span>
+            1.33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">65.0</span>
+            65
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.75</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.75</span>75%</div><div style="display: table-cell">
+ <div title="75% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:75%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind.ser</span>
+                    <a href="com/fasterxml/jackson/databind/ser/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind.ser">com.fasterxml.jackson.databind.ser</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">36.0</span>
+            36
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0917159</span>
+            1.09
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">264.0</span>
+            264
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.79358876</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.79358876</span>79.4%</div><div style="display: table-cell">
+ <div title="79.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:79.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind.contextual</span>
+                    <a href="com/fasterxml/jackson/databind/contextual/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind.contextual">com.fasterxml.jackson.databind.contextual</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1929824</span>
+            1.19
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">45.0</span>
+            45
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.82071716</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.82071716</span>82.1%</div><div style="display: table-cell">
+ <div title="82.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:82.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind.struct</span>
+                    <a href="com/fasterxml/jackson/databind/struct/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind.struct">com.fasterxml.jackson.databind.struct</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">10.0</span>
+            10
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0234375</span>
+            1.02
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">73.0</span>
+            73
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8306264</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8306264</span>83.1%</div><div style="display: table-cell">
+ <div title="83.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:83.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind.ext</span>
+                    <a href="com/fasterxml/jackson/databind/ext/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind.ext">com.fasterxml.jackson.databind.ext</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.625</span>
+            1.62
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">11.0</span>
+            11
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8382353</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8382353</span>83.8%</div><div style="display: table-cell">
+ <div title="83.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:83.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind.views</span>
+                    <a href="com/fasterxml/jackson/databind/views/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind.views">com.fasterxml.jackson.databind.views</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">16.0</span>
+            16
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8632479</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8632479</span>86.3%</div><div style="display: table-cell">
+ <div title="86.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:86.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind.jsontype</span>
+                    <a href="com/fasterxml/jackson/databind/jsontype/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind.jsontype">com.fasterxml.jackson.databind.jsontype</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">24.0</span>
+            24
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0790697</span>
+            1.08
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">143.0</span>
+            143
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8657277</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8657277</span>86.6%</div><div style="display: table-cell">
+ <div title="86.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:86.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind.deser</span>
+                    <a href="com/fasterxml/jackson/databind/deser/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind.deser">com.fasterxml.jackson.databind.deser</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">32.0</span>
+            32
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2</span>
+            1.2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">224.0</span>
+            224
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.86706233</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.86706233</span>86.7%</div><div style="display: table-cell">
+ <div title="86.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:86.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind.mixins</span>
+                    <a href="com/fasterxml/jackson/databind/mixins/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind.mixins">com.fasterxml.jackson.databind.mixins</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">5.0</span>
+            5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">18.0</span>
+            18
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.88387096</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.88387096</span>88.4%</div><div style="display: table-cell">
+ <div title="88.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:88.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind.convert</span>
+                    <a href="com/fasterxml/jackson/databind/convert/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind.convert">com.fasterxml.jackson.databind.convert</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">8.0</span>
+            8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1571429</span>
+            1.16
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">35.0</span>
+            35
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8888889</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8888889</span>88.9%</div><div style="display: table-cell">
+ <div title="88.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:88.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind.type</span>
+                    <a href="com/fasterxml/jackson/databind/type/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind.type">com.fasterxml.jackson.databind.type</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2307693</span>
+            1.23
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.97619045</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.97619045</span>97.6%</div><div style="display: table-cell">
+ <div title="97.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:97.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind.util</span>
+                    <a href="com/fasterxml/jackson/databind/util/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind.util">com.fasterxml.jackson.databind.util</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.5</span>
+            1.5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.984375</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.984375</span>98.4%</div><div style="display: table-cell">
+ <div title="98.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:98.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                <tr>
+    <td>
+                <span class="sortValue">com.fasterxml.jackson.databind.node</span>
+                    <a href="com/fasterxml/jackson/databind/node/testsrc-pkg-summary.html" title="com.fasterxml.jackson.databind.node">com.fasterxml.jackson.databind.node</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">14.0</span>
+            14
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2238806</span>
+            1.22
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">17.0</span>
+            17
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.9845875</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9845875</span>98.5%</div><div style="display: table-cell">
+ <div title="98.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:98.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                            </tbody>
+            </table>
+        
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu Jan 19 2023 15:25:32 MST using coverage data from Thu Jan 19 2023 15:25:30 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

@@ -1,0 +1,27 @@
+Testsuite: org.apache.commons.lang3.concurrent.TimedSemaphoreTest
+Tests run: 4, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 1.057 sec
+
+Testcase: testStartTimer30 took 1.024 sec
+Testcase: testGetLastAcquiresPerPeriod223 took 0.005 sec
+	Caused an ERROR
+org/easymock/EasyMock
+java.lang.NoClassDefFoundError: org/easymock/EasyMock
+	at org.apache.commons.lang3.concurrent.TimedSemaphoreTest.testGetLastAcquiresPerPeriod223(TimedSemaphoreTest.java:85)
+Caused by: java.lang.ClassNotFoundException: org.easymock.EasyMock
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+
+Testcase: testGetAverageCallsPerPeriod222 took 0 sec
+	Caused an ERROR
+org/easymock/EasyMock
+java.lang.NoClassDefFoundError: org/easymock/EasyMock
+	at org.apache.commons.lang3.concurrent.TimedSemaphoreTest.testGetAverageCallsPerPeriod222(TimedSemaphoreTest.java:70)
+
+Testcase: testGetAverageCallsPerPeriod224 took 0 sec
+	Caused an ERROR
+org/easymock/EasyMock
+java.lang.NoClassDefFoundError: org/easymock/EasyMock
+	at org.apache.commons.lang3.concurrent.TimedSemaphoreTest.testGetAverageCallsPerPeriod224(TimedSemaphoreTest.java:100)
+

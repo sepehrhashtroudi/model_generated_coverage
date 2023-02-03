@@ -1,0 +1,35 @@
+Testsuite: org.apache.commons.lang3.text.StrBuilderTest
+Tests run: 12, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec
+
+Testcase: testLeftString198 took 0.005 sec
+Testcase: testLeftString199 took 0.002 sec
+	FAILED
+expected:<[right]> but was:<[left ]>
+junit.framework.AssertionFailedError: expected:<[right]> but was:<[left ]>
+	at org.apache.commons.lang3.text.StrBuilderTest.testLeftString199(StrBuilderTest.java:191)
+
+Testcase: testCapacityAndLength385 took 0 sec
+Testcase: testReplaceAll_String_String63 took 0 sec
+Testcase: testLastIndexOf_String28 took 0 sec
+Testcase: testMidString59 took 0 sec
+	FAILED
+expected:<6> but was:<hello >
+junit.framework.AssertionFailedError: expected:<6> but was:<hello >
+	at org.apache.commons.lang3.text.StrBuilderTest.testMidString59(StrBuilderTest.java:90)
+
+Testcase: testReplaceAll_char_char13 took 0.001 sec
+	FAILED
+expected:<dbcbccb[a]> but was:<dbcbccb[d]>
+junit.framework.AssertionFailedError: expected:<dbcbccb[a]> but was:<dbcbccb[d]>
+	at org.apache.commons.lang3.text.StrBuilderTest.testReplaceAll_char_char13(StrBuilderTest.java:42)
+
+Testcase: testReplaceAll_StrMatcher_String185 took 0 sec
+Testcase: testReplaceFirst_char_char17 took 0 sec
+Testcase: testDeleteIntInt179 took 0 sec
+Testcase: testIndexOfLang294354 took 0 sec
+Testcase: testLeftString16 took 0.001 sec
+	FAILED
+expected:<left [right]> but was:<left []>
+junit.framework.AssertionFailedError: expected:<left [right]> but was:<left []>
+	at org.apache.commons.lang3.text.StrBuilderTest.testLeftString16(StrBuilderTest.java:53)
+

@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":100,"id":22125,"methods":[{"el":18,"sc":5,"sl":18},{"el":22,"sc":5,"sl":20},{"el":32,"sc":5,"sl":24},{"el":53,"sc":5,"sl":34},{"el":58,"sc":5,"sl":55},{"el":69,"sc":5,"sl":64},{"el":76,"sc":5,"sl":74},{"el":85,"sc":5,"sl":78},{"el":99,"sc":5,"sl":93}],"name":"AnnotationMap","sl":14}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_0":{"methods":[{"sl":18},{"sl":24},{"sl":64},{"sl":93}],"name":"testLowerCaseAcronymsTranslations","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":31},{"sl":66},{"sl":67},{"sl":95},{"sl":96},{"sl":98}]},"test_1":{"methods":[{"sl":18},{"sl":24},{"sl":64},{"sl":93}],"name":"testLowerCaseUnchangedNames","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":31},{"sl":66},{"sl":67},{"sl":95},{"sl":96},{"sl":98}]},"test_2":{"methods":[{"sl":18},{"sl":24},{"sl":64},{"sl":93}],"name":"testLowerCaseOtherNonStandardNamesTranslations","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":31},{"sl":66},{"sl":67},{"sl":95},{"sl":96},{"sl":98}]},"test_3":{"methods":[{"sl":18},{"sl":24},{"sl":64},{"sl":93}],"name":"testLowerCaseTranslations","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":31},{"sl":66},{"sl":67},{"sl":95},{"sl":96},{"sl":98}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1, 3, 0, 2], [], [], [], [], [], [1, 3, 0, 2], [], [], [], [1, 3, 0, 2], [1, 3, 0, 2], [], [1, 3, 0, 2], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1, 3, 0, 2], [], [1, 3, 0, 2], [1, 3, 0, 2], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1, 3, 0, 2], [], [1, 3, 0, 2], [1, 3, 0, 2], [], [1, 3, 0, 2], [], [], [], []]

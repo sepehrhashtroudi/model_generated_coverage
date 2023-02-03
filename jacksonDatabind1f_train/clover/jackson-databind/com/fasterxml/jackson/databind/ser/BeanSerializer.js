@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":156,"id":2395,"methods":[{"el":45,"sc":5,"sl":41},{"el":54,"sc":5,"sl":52},{"el":58,"sc":5,"sl":56},{"el":62,"sc":5,"sl":60},{"el":77,"sc":5,"sl":74},{"el":82,"sc":5,"sl":79},{"el":87,"sc":5,"sl":84},{"el":92,"sc":5,"sl":89},{"el":117,"sc":5,"sl":100},{"el":145,"sc":5,"sl":130},{"el":155,"sc":5,"sl":153}],"name":"BeanSerializer","sl":27}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_0":{"methods":[{"sl":41},{"sl":130}],"name":"testLowerCaseAcronymsTranslations","pass":true,"statements":[{"sl":44},{"sl":134},{"sl":138},{"sl":139},{"sl":142},{"sl":144}]},"test_1":{"methods":[{"sl":41},{"sl":130}],"name":"testLowerCaseUnchangedNames","pass":true,"statements":[{"sl":44},{"sl":134},{"sl":138},{"sl":139},{"sl":142},{"sl":144}]},"test_2":{"methods":[{"sl":41},{"sl":130}],"name":"testLowerCaseOtherNonStandardNamesTranslations","pass":true,"statements":[{"sl":44},{"sl":134},{"sl":138},{"sl":139},{"sl":142},{"sl":144}]},"test_3":{"methods":[{"sl":41},{"sl":130}],"name":"testLowerCaseTranslations","pass":true,"statements":[{"sl":44},{"sl":134},{"sl":138},{"sl":139},{"sl":142},{"sl":144}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1, 3, 0, 2], [], [], [1, 3, 0, 2], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1, 3, 0, 2], [], [], [], [1, 3, 0, 2], [], [], [], [1, 3, 0, 2], [1, 3, 0, 2], [], [], [1, 3, 0, 2], [], [1, 3, 0, 2], [], [], [], [], [], [], [], [], [], [], [], []]

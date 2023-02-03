@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.lang3.time.StopWatchTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE!
+testUnsplit814(org.apache.commons.lang3.time.StopWatchTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.IllegalStateException: Stopwatch has not been split. 
+	at org.apache.commons.lang3.time.StopWatch.unsplit(StopWatch.java:208)
+	at org.apache.commons.lang3.time.StopWatchTest.__CLR4_4_1fpdlrhgxz(StopWatchTest.java:37)
+	at org.apache.commons.lang3.time.StopWatchTest.testUnsplit814(StopWatchTest.java:37)
+

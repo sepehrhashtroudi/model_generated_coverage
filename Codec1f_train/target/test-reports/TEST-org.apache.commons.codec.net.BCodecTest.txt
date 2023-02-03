@@ -1,0 +1,12 @@
+Testsuite: org.apache.commons.codec.net.BCodecTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+
+Testcase: testNullInput96 took 0.009 sec
+Testcase: testEncodeObjects12 took 0.004 sec
+Testcase: testInvalidEncoding35 took 0.008 sec
+Testcase: testEncodeDecodeNull93 took 0.002 sec
+Testcase: testDecodeStringWithNull120 took 0 sec
+Testcase: testEncodeStringWithNull32 took 0.001 sec
+Testcase: testBasicEncodeDecode19 took 0.001 sec
+Testcase: testUTF8RoundTrip63 took 0.001 sec
+Testcase: testDecodeObjects57 took 0.001 sec

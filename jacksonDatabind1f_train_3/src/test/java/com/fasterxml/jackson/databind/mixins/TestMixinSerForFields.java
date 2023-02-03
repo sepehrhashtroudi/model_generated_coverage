@@ -1,0 +1,75 @@
+package com.fasterxml.jackson.databind.mixins;
+
+import java.io.*;
+import java.util.*;
+
+import com.fasterxml.jackson.annotation.*;
+
+import com.fasterxml.jackson.databind.*;
+
+public class TestMixinSerForFields
+    extends BaseMapTest
+{
+    /*
+    /**********************************************************
+    /* Helper bean classes
+    /**********************************************************
+     */
+
+    static class BaseClass
+    {
+        public String a;
+        protected String b;
+
+        public BaseClass(String a, String b) {
+            this.a = a;
+            this.b = b;
+        }
+    }
+
+    static class SubClass
+        extends BaseClass
+    {
+        public SubClass(String a, String b) {
+            super(a, b);
+        }
+    }
+
+    abstract class MixIn {
+        // Let's add 'b' as "banana"
+        @JsonProperty("banana")
+        public String b;
+    }
+
+    abstract class MixIn2 {
+        // Let's remove 'a'
+        @JsonIgnore
+        public String a;
+
+        // also: add a dummy field that is NOT to match anything
+        @JsonProperty public String xyz;
+    }
+    
+    /*
+    /**********************************************************
+    /* Unit tests
+    /**********************************************************
+     */
+
+
+public void testMultipleFieldMixIns300() throws IOException { 
+     ObjectMapper mapper = new ObjectMapper(); 
+     HashMap<Class<?>, Class<?>> mixins = new HashMap<Class<?>, Class<?>>(); 
+     mixins.put(SubClass.class, MixIn.class); 
+     mixins.put(BaseClass.class, MixIn2.class); 
+     mapper.setMixInAnnotations(mixins); 
+     Map<String, Object> result; 
+     result = writeAndMap(mapper, new SubClass("1", "2")); 
+     assertEquals(1, result.size()); 
+     assertEquals("2", result.get("banana")); 
+ } 
+
+    
+
+    
+}

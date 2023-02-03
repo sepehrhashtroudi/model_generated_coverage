@@ -1,0 +1,9 @@
+Testsuite: org.apache.commons.lang3.AnnotationUtilsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec
+
+Testcase: testEquivalence138 took 0.031 sec
+Testcase: testEquivalence518 took 0.011 sec
+Testcase: testEquivalence523 took 0.001 sec
+Testcase: testAnnotationsOfDifferingTypes515 took 0 sec
+Testcase: testAnnotationsOfDifferingTypes517 took 0.001 sec
+Testcase: testSameInstance525 took 0 sec

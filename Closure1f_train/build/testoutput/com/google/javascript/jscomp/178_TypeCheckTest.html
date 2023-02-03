@@ -1,0 +1,807 @@
+<html xmlns:string="xalan://java.lang.String" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Unit Test Results: com.google.javascript.jscomp.TypeCheckTest</title>
+<link rel="stylesheet" type="text/css" title="Style" href="../../../../stylesheet.css">
+<script type="text/javascript" language="JavaScript">
+        var TestCases = new Array();
+        var cur;
+        
+    cur = TestCases['com.google.javascript.jscomp.TypeCheckTest'] = new Array();
+    
+        cur['ant.build.javac.source'] = '1.6';
+    
+        cur['ant.build.javac.target'] = '1.6';
+    
+        cur['ant.core.lib'] = '/usr/share/ant/lib/ant.jar';
+    
+        cur['ant.file'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/build.xml';
+    
+        cur['ant.file.compiler'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/build.xml';
+    
+        cur['ant.file.type'] = 'file';
+    
+        cur['ant.file.type.compiler'] = 'file';
+    
+        cur['ant.home'] = '/usr/share/ant';
+    
+        cur['ant.java.version'] = '1.8';
+    
+        cur['ant.library.dir'] = '/usr/share/ant/lib';
+    
+        cur['ant.project.default-target'] = 'jar';
+    
+        cur['ant.project.invoked-targets'] = 'with.clover,test,clover.report';
+    
+        cur['ant.project.name'] = 'compiler';
+    
+        cur['ant.version'] = 'Apache Ant(TM) version 1.10.7 compiled on October 24 2019';
+    
+        cur['awt.toolkit'] = 'sun.awt.X11.XToolkit';
+    
+        cur['basedir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train';
+    
+        cur['build.compiler'] = 'com.atlassian.clover.ant.taskdefs.CloverCompilerAdapter';
+    
+        cur['build.dir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/build';
+    
+        cur['build.svnVersion'] = 'Unversioned directory';
+    
+        cur['buildlib.dir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/build/lib';
+    
+        cur['classes.dir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/build/classes';
+    
+        cur['closure.build.dir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/build';
+    
+        cur['clover.dest'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/clover/compiler';
+    
+        cur['clover.dir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/clover';
+    
+        cur['clover.flushinterval'] = '100';
+    
+        cur['clover.flushpolicy'] = 'directed';
+    
+        cur['clover.historical.json'] = 'true';
+    
+        cur['clover.historydir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/.cloverhistory';
+    
+        cur['clover.initstring'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/.clover/clover4_4_1.db';
+    
+        cur['clover.jar'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/${clover.home}/clover.jar';
+    
+        cur['clover.jarpath'] = '/home/sepehr/.ant/lib/clover.jar';
+    
+        cur['clover.project.historydir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/.cloverhistory/compiler';
+    
+        cur['clover.snapshot.file'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/.cloverhistory/compiler/clover.snapshot';
+    
+        cur['clover.span'] = '1day';
+    
+        cur['compiler-jarfile'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/build/compiler.jar';
+    
+        cur['externs.dir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/externs';
+    
+        cur['file.encoding'] = 'UTF-8';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '/';
+    
+        cur['gen.dir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/gen';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.X11GraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.print.PSPrinterJob';
+    
+        cur['java.class.path'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/build/classes:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/lib/ant-launcher.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/lib/ant.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/lib/args4j.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/lib/caja-r4314.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/lib/guava.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/lib/jarjar.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/lib/json.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/lib/jsr305.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/lib/junit.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/lib/protobuf-java.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/build/lib/rhino.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/build/test:/home/sepehr/.ant/lib/clover.jar:/home/sepehr/.ant/lib/evosuite-1.0.6.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar';
+    
+        cur['java.class.version'] = '52.0';
+    
+        cur['java.endorsed.dirs'] = '/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed';
+    
+        cur['java.ext.dirs'] = '/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext';
+    
+        cur['java.home'] = '/usr/lib/jvm/java-8-openjdk-amd64/jre';
+    
+        cur['java.io.tmpdir'] = '/tmp';
+    
+        cur['java.library.path'] = '/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib';
+    
+        cur['java.runtime.name'] = 'OpenJDK Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.8.0_352-8u352-ga-1~20.04-b08';
+    
+        cur['java.specification.maintenance.version'] = '4';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.specification.version'] = '1.8';
+    
+        cur['java.vendor'] = 'Private Build';
+    
+        cur['java.vendor.url'] = 'http://java.oracle.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://bugreport.sun.com/bugreport/';
+    
+        cur['java.version'] = '1.8.0_352';
+    
+        cur['java.vm.info'] = 'mixed mode';
+    
+        cur['java.vm.name'] = 'OpenJDK 64-Bit Server VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.specification.version'] = '1.8';
+    
+        cur['java.vm.vendor'] = 'Private Build';
+    
+        cur['java.vm.version'] = '25.352-b08';
+    
+        cur['javac.debug'] = 'on';
+    
+        cur['javadoc.dir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/build/javadoc';
+    
+        cur['jsonml.dir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/src/com/google/javascript/jscomp/jsonml';
+    
+        cur['jsonml-classes.dir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/build/jsonml-classes';
+    
+        cur['jsonml-jarfile'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/build/secure_compiler.jar';
+    
+        cur['lib.dir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/lib';
+    
+        cur['line.separator'] = '\n';
+    
+        cur['maven-repository-id'] = 'sonatype-nexus-staging';
+    
+        cur['maven-repository-url'] = 'https://oss.sonatype.org/service/local/staging/deploy/maven2/';
+    
+        cur['num-fuzz-tests'] = '10000';
+    
+        cur['os.arch'] = 'amd64';
+    
+        cur['os.name'] = 'Linux';
+    
+        cur['os.version'] = '5.15.0-57-generic';
+    
+        cur['path.separator'] = ':';
+    
+        cur['project.name'] = 'compiler';
+    
+        cur['project.title'] = 'compiler';
+    
+        cur['protoc.executable'] = 'protoc';
+    
+        cur['src.dir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/src';
+    
+        cur['stylesheetfile'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/build/javadoc/dev_javadoc.css';
+    
+        cur['sun.arch.data.model'] = '64';
+    
+        cur['sun.boot.class.path'] = '/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes';
+    
+        cur['sun.boot.library.path'] = '/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = '';
+    
+        cur['sun.desktop'] = 'gnome';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/junittestcases3123218496293849970.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/build/testoutput/IGNORETHIS.xml crashfile=/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/junitvmwatcher4044764787935093451.properties propsfile=/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/junit5110755408873315602.properties';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'UTF-8';
+    
+        cur['sun.management.compiler'] = 'HotSpot 64-Bit Tiered Compilers';
+    
+        cur['sun.os.patch.level'] = 'unknown';
+    
+        cur['test.class'] = '*Test';
+    
+        cur['test.dir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/test';
+    
+        cur['test.fork'] = 'true';
+    
+        cur['test.target'] = 'test';
+    
+        cur['testClasses.dir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/build/test';
+    
+        cur['tools.dir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/tools';
+    
+        cur['user.country'] = 'US';
+    
+        cur['user.dir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train';
+    
+        cur['user.home'] = '/home/sepehr';
+    
+        cur['user.language'] = 'en';
+    
+        cur['user.name'] = 'sepehr';
+    
+        cur['user.timezone'] = '';
+    
+        cur['webservice.dir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/src/com/google/javascript/jscomp/webservice';
+    
+        cur['webservice-classes.dir'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/build/webservice-classes';
+    
+        cur['webservice-jarfile'] = '/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_train/build/webservice.jar';
+    </script><script type="text/javascript" language="JavaScript">
+        function displayProperties (name) {
+          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+          var doc = win.document;
+          doc.open();
+          doc.write("<html><head><title>Properties of " + name + "</title>");
+          doc.write("<style type=\"text/css\">");
+          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+          doc.write("table tr td, table tr th { font-size: 68%; }");
+          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+          doc.write("</style>");
+          doc.write("</head><body>");
+          doc.write("<h3>Properties of " + name + "</h3>");
+          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+          doc.write("<table class='properties'>");
+          doc.write("<tr><th>Name</th><th>Value</th></tr>");
+          for (prop in TestCases[name]) {
+            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+          }
+          doc.write("</table>");
+          doc.write("</body></html>");
+          doc.close();
+          win.focus();
+        }
+      
+      </script>
+</head>
+<body>
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="https://www.junit.org/">JUnit</a> and <a href="https://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h3>Class com.google.javascript.jscomp.TypeCheckTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th>Skipped</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="Pass">
+<td><a title="Display all tests" href="178_TypeCheckTest.html">TypeCheckTest</a></td><td><a title="Display all tests" href="178_TypeCheckTest.html">171</a></td><td>0</td><td>0</td><td>0</td><td>1.076</td><td>2023-01-12T21:04:26</td><td>sepehr-UX310UQK</td>
+</tr>
+</table>
+<h2>Tests</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConstructorType12139"></a>testConstructorType12139</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testObjLitDef2a377"></a>testObjLitDef2a377</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInterfaceInheritanceCheck133"></a>testInterfaceInheritanceCheck133</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoTypeCheck7156"></a>testNoTypeCheck7156</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAnnotatedPropertyOnInterface4393"></a>testAnnotatedPropertyOnInterface4393</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSwitchCase3424"></a>testSwitchCase3424</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeCheckStandaloneAST429"></a>testTypeCheckStandaloneAST429</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConstructorType4509"></a>testConstructorType4509</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGoodImplements6521"></a>testGoodImplements6521</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTemplateType5534"></a>testTemplateType5534</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue483593"></a>testIssue483593</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCast16599"></a>testCast16599</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testForwardTypeDeclaration5629"></a>testForwardTypeDeclaration5629</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeInferenceWithNoEntry1651"></a>testTypeInferenceWithNoEntry1651</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNumericComparison2662"></a>testNumericComparison2662</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testExtendedInterfacePropertiesCompatibility4683"></a>testExtendedInterfacePropertiesCompatibility4683</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetpropDict1693"></a>testGetpropDict1693</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testThisTypeOfFunction1724"></a>testThisTypeOfFunction1724</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testWhileRestrictsType2733"></a>testWhileRestrictsType2733</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBitOperation4750"></a>testBitOperation4750</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInstanceof1764"></a>testInstanceof1764</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInheritanceCheck13798"></a>testInheritanceCheck13798</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTemplatedThisType1799"></a>testTemplatedThisType1799</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testQualifiedNameReduction5c831"></a>testQualifiedNameReduction5c831</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBadInterfaceExtends1836"></a>testBadInterfaceExtends1836</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTemplateType4839"></a>testTemplateType4839</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetprop4854"></a>testGetprop4854</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testForIn2857"></a>testForIn2857</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBug1943776861"></a>testBug1943776861</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testQualifiedNameInference11880"></a>testQualifiedNameInference11880</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNullAnd919"></a>testNullAnd919</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testStringComparison2976"></a>testStringComparison2976</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testParameterizedTypeSubtypes2992"></a>testParameterizedTypeSubtypes2992</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionBind31002"></a>testFunctionBind31002</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDuplicateStaticPropertyDecl11050"></a>testDuplicateStaticPropertyDecl11050</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetpropDict21100"></a>testGetpropDict21100</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInOnStruct188"></a>testInOnStruct188</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testForwardTypeDeclaration6266"></a>testForwardTypeDeclaration6266</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testObjectLiteralDeclaration7293"></a>testObjectLiteralDeclaration7293</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBug7701884330"></a>testBug7701884330</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testLends2450"></a>testLends2450</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDfa712"></a>testDfa712</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCast5a204"></a>testCast5a204</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCall8431"></a>testCall8431</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRecordType71114"></a>testRecordType71114</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testArrayAccess61137"></a>testArrayAccess61137</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMultipleExtendsInterface41141"></a>testMultipleExtendsInterface41141</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testControlFlowRestrictsType81146"></a>testControlFlowRestrictsType81146</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testLends71151"></a>testLends71151</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeOfReduction91164"></a>testTypeOfReduction91164</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeOfReduction151169"></a>testTypeOfReduction151169</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPropertyInference31175"></a>testPropertyInference31175</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testComparison21177"></a>testComparison21177</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCall51180"></a>testCall51180</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeCheck131187"></a>testTypeCheck131187</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInferredReturn51192"></a>testInferredReturn51192</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAdd41214"></a>testAdd41214</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetprop101215"></a>testSetprop101215</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGoodExtends151216"></a>testGoodExtends151216</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue611235"></a>testIssue611235</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue7251236"></a>testIssue7251236</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCast331310"></a>testCast331310</td><td>Success</td><td></td><td>0.017</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNumericComparison31318"></a>testNumericComparison31318</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIIFE11351"></a>testIIFE11351</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testImplicitCast1375"></a>testImplicitCast1375</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMultipleExtendsInterface21388"></a>testMultipleExtendsInterface21388</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBackwardsInferenceGoogArrayFilter11404"></a>testBackwardsInferenceGoogArrayFilter11404</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBadImplements31405"></a>testBadImplements31405</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetelemStruct21412"></a>testGetelemStruct21412</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMissingProperty211431"></a>testMissingProperty211431</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testImplementsExtendsLoop1439"></a>testImplementsExtendsLoop1439</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetelemStruct71468"></a>testGetelemStruct71468</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInferredReturn41474"></a>testInferredReturn41474</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConstructorAlias61481"></a>testConstructorAlias61481</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGenerics11486"></a>testGenerics11486</td><td>Success</td><td></td><td>0.014</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRecordType31487"></a>testRecordType31487</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoPersistentTypeInferenceForFunctionProperties1490"></a>testNoPersistentTypeInferenceForFunctionProperties1490</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue6881504"></a>testIssue6881504</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInterfaceInheritanceCheck81512"></a>testInterfaceInheritanceCheck81512</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUndefinedNode1525"></a>testUndefinedNode1525</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInnerFunction101526"></a>testInnerFunction101526</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnionTemplateThisType1536"></a>testUnionTemplateThisType1536</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testParameterized51541"></a>testParameterized51541</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInterfaceExtendsResolution1542"></a>testInterfaceExtendsResolution1542</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testObjectLiteralDeclaration11554"></a>testObjectLiteralDeclaration11554</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDuplicateRecordFields21559"></a>testDuplicateRecordFields21559</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCatchExpression21569"></a>testCatchExpression21569</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDirectPrototypeAssignment31572"></a>testDirectPrototypeAssignment31572</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetprop71573"></a>testSetprop71573</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBitOperation11586"></a>testBitOperation11586</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeInferenceWithNoEntry21619"></a>testTypeInferenceWithNoEntry21619</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionLiteralDefinedThisArgument21620"></a>testFunctionLiteralDefinedThisArgument21620</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCast111627"></a>testCast111627</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testThisTypeOfFunction41668"></a>testThisTypeOfFunction41668</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBug9014551672"></a>testBug9014551672</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBadInterfaceExtends31697"></a>testBadInterfaceExtends31697</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIIFE41742"></a>testIIFE41742</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInheritanceCheck31761"></a>testInheritanceCheck31761</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionInference71777"></a>testFunctionInference71777</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeCheckCustomExterns21784"></a>testTypeCheckCustomExterns21784</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEnum81785"></a>testEnum81785</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSwitchCase11786"></a>testSwitchCase11786</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInheritanceCheck21788"></a>testInheritanceCheck21788</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInterfacePropertyOverride11792"></a>testInterfacePropertyOverride11792</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testLends81807"></a>testLends81807</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionBind41821"></a>testFunctionBind41821</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGoodExtends161827"></a>testGoodExtends161827</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCatchExpression11828"></a>testCatchExpression11828</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testQualifiedNameInference131844"></a>testQualifiedNameInference131844</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testQualifiedNameInference121878"></a>testQualifiedNameInference121878</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDataPropertyOnInterface21879"></a>testDataPropertyOnInterface21879</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBadStruct1885"></a>testBadStruct1885</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGlobalThis2b1904"></a>testGlobalThis2b1904</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testQualifiedNameReduction81918"></a>testQualifiedNameReduction81918</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInterfaceExtendsLoop1925"></a>testInterfaceExtendsLoop1925</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInferredParam51934"></a>testInferredParam51934</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBadInterfaceExtendsNonExistentInterfaces1939"></a>testBadInterfaceExtendsNonExistentInterfaces1939</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeOfReduction161948"></a>testTypeOfReduction161948</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEnum391954"></a>testEnum391954</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBug23418121955"></a>testBug23418121955</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBadDict1968"></a>testBadDict1968</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGoogBind21972"></a>testGoogBind21972</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetprop61975"></a>testSetprop61975</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetprop91982"></a>testSetprop91982</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMissingProperty351987"></a>testMissingProperty351987</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDeleteOperator21989"></a>testDeleteOperator21989</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAdd102013"></a>testAdd102013</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCast272022"></a>testCast272022</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMissingProperty302038"></a>testMissingProperty302038</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testVar92052"></a>testVar92052</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testResolvingNamedTypes2053"></a>testResolvingNamedTypes2053</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBitOperation32055"></a>testBitOperation32055</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConstructorType112063"></a>testConstructorType112063</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testForwardTypeDeclaration82088"></a>testForwardTypeDeclaration82088</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInterfaceInheritanceCheck102108"></a>testInterfaceInheritanceCheck102108</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMissingProperty192126"></a>testMissingProperty192126</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMissingProperty332132"></a>testMissingProperty332132</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionBind12148"></a>testFunctionBind12148</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testObjLitDef72151"></a>testObjLitDef72151</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testOverriddenReturn12187"></a>testOverriddenReturn12187</td><td>Success</td><td></td><td>0.013</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConstructorType102189"></a>testConstructorType102189</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMissingProperty172195"></a>testMissingProperty172195</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMultipleExtendsInterface62198"></a>testMultipleExtendsInterface62198</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEnum12202"></a>testEnum12202</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEnum382228"></a>testEnum382228</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeof22236"></a>testTypeof22236</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue7002241"></a>testIssue7002241</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBug19407692247"></a>testBug19407692247</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBadImplements42249"></a>testBadImplements42249</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDfa112261"></a>testDfa112261</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testVar72272"></a>testVar72272</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCircularTypeDef2275"></a>testCircularTypeDef2275</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testArrayAccess32293"></a>testArrayAccess32293</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetprop32314"></a>testGetprop32314</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInterfaceAssignment82330"></a>testInterfaceAssignment82330</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeDef22343"></a>testTypeDef22343</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testActiveXObject2346"></a>testActiveXObject2346</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIn22349"></a>testIn22349</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testQualifiedNameReduction102369"></a>testQualifiedNameReduction102369</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDirectPrototypeAssign2377"></a>testDirectPrototypeAssign2377</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMethodInference72385"></a>testMethodInference72385</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testObjLitDef62417"></a>testObjLitDef62417</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAnonymousType32420"></a>testAnonymousType32420</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testForinOnStruct2432"></a>testForinOnStruct2432</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInterfaceAssignment7366"></a>testInterfaceAssignment7366</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testLends5207"></a>testLends5207</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPropAccess480"></a>testPropAccess480</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testOverriddenParams434"></a>testOverriddenParams434</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testWarnDataPropertyOnInterface326"></a>testWarnDataPropertyOnInterface326</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBooleanReduction4115"></a>testBooleanReduction4115</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBooleanReduction2385"></a>testBooleanReduction2385</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('com.google.javascript.jscomp.TypeCheckTest');">
+                    Properties &raquo;
+                </a>
+</div>
+</body>
+</html>

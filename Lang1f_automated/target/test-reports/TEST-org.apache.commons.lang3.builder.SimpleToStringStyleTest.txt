@@ -1,0 +1,10 @@
+Testsuite: org.apache.commons.lang3.builder.SimpleToStringStyleTest
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+
+Testcase: testPerson463 took 0.025 sec
+	FAILED
+expected:<[ToStringStyleTest.Person[name=John Q. Public,age=45,smoker=true]]> but was:<[John Q. Public,45,true]>
+junit.framework.AssertionFailedError: expected:<[ToStringStyleTest.Person[name=John Q. Public,age=45,smoker=true]]> but was:<[John Q. Public,45,true]>
+	at org.apache.commons.lang3.builder.SimpleToStringStyleTest.testPerson463(SimpleToStringStyleTest.java:57)
+
+Testcase: testLongArrayArray464 took 0 sec

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.lang3.time.FastDateFormatTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE!
+testEquals913(org.apache.commons.lang3.time.FastDateFormatTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.apache.commons.lang3.time.FastDateFormatTest.__CLR4_4_11c5z73gtf(FastDateFormatTest.java:55)
+	at org.apache.commons.lang3.time.FastDateFormatTest.testEquals913(FastDateFormatTest.java:55)
+

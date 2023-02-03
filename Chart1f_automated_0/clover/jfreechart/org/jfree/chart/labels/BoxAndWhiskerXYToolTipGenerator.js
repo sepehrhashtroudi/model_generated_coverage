@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":167,"id":23539,"methods":[{"el":95,"sc":5,"sl":92},{"el":113,"sc":5,"sl":107},{"el":148,"sc":5,"sl":125},{"el":165,"sc":5,"sl":157}],"name":"BoxAndWhiskerXYToolTipGenerator","sl":79}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1126":{"methods":[{"sl":92},{"sl":157}],"name":"testCloning400","pass":true,"statements":[{"sl":93},{"sl":158},{"sl":161},{"sl":164}]},"test_12":{"methods":[{"sl":92},{"sl":157}],"name":"testSerialization399","pass":true,"statements":[{"sl":93},{"sl":158},{"sl":161},{"sl":164}]},"test_204":{"methods":[{"sl":92},{"sl":157}],"name":"testSerialization399","pass":true,"statements":[{"sl":93},{"sl":158},{"sl":161},{"sl":164}]},"test_314":{"methods":[{"sl":92}],"name":"testPublicCloneable401","pass":true,"statements":[{"sl":93}]},"test_487":{"methods":[{"sl":92},{"sl":157}],"name":"testCloning400","pass":true,"statements":[{"sl":93},{"sl":158},{"sl":161},{"sl":164}]},"test_870":{"methods":[{"sl":92}],"name":"testPublicCloneable401","pass":true,"statements":[{"sl":93}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1126, 204, 870, 314, 12, 487], [1126, 204, 870, 314, 12, 487], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1126, 204, 12, 487], [1126, 204, 12, 487], [], [], [1126, 204, 12, 487], [], [], [1126, 204, 12, 487], [], [], []]

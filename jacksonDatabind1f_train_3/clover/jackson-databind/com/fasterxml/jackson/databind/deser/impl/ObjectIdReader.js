@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":62,"id":1598,"methods":[{"el":49,"sc":5,"sl":40},{"el":61,"sc":5,"sl":56}],"name":"ObjectIdReader","sl":11}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_102":{"methods":[{"sl":40},{"sl":56}],"name":"testPolymorphicRoundtrip226","pass":true,"statements":[{"sl":44},{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":60}]},"test_154":{"methods":[{"sl":40},{"sl":56}],"name":"testCustomDeserializationProperty366","pass":true,"statements":[{"sl":44},{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":60}]},"test_22":{"methods":[{"sl":40},{"sl":56}],"name":"testIssue811144","pass":true,"statements":[{"sl":44},{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":60}]},"test_440":{"methods":[{"sl":40},{"sl":56}],"name":"testCustomDeserializationClass392","pass":true,"statements":[{"sl":44},{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":60}]},"test_556":{"methods":[{"sl":40},{"sl":56}],"name":"testSimpleUUIDForClassRoundTrip355","pass":true,"statements":[{"sl":44},{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":60}]},"test_65":{"methods":[{"sl":40},{"sl":56}],"name":"testColumnMetadata167","pass":true,"statements":[{"sl":44},{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":60}]},"test_86":{"methods":[{"sl":40},{"sl":56}],"name":"testSimpleDeserializationClass374","pass":true,"statements":[{"sl":44},{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":60}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [22, 102, 556, 86, 440, 154, 65], [], [], [], [22, 102, 556, 86, 440, 154, 65], [22, 102, 556, 86, 440, 154, 65], [22, 102, 556, 86, 440, 154, 65], [22, 102, 556, 86, 440, 154, 65], [22, 102, 556, 86, 440, 154, 65], [], [], [], [], [], [], [], [22, 102, 556, 86, 440, 154, 65], [], [], [], [22, 102, 556, 86, 440, 154, 65], [], []]

@@ -1,0 +1,32 @@
+Testsuite: org.apache.commons.lang3.ClassUtilsTest
+Tests run: 9, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+
+Testcase: test_getPackageName_Class88 took 0.029 sec
+	FAILED
+expected:<[]> but was:<[java.lang]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[java.lang]>
+	at org.apache.commons.lang3.ClassUtilsTest.test_getPackageName_Class88(ClassUtilsTest.java:74)
+
+Testcase: test_getPackageCanonicalName_String208 took 0 sec
+	FAILED
+expected:<org.apache.commons[.lang3]> but was:<org.apache.commons[]>
+junit.framework.AssertionFailedError: expected:<org.apache.commons[.lang3]> but was:<org.apache.commons[]>
+	at org.apache.commons.lang3.ClassUtilsTest.test_getPackageCanonicalName_String208(ClassUtilsTest.java:91)
+
+Testcase: test_getShortClassName_Class439 took 0 sec
+Testcase: test_getPackageCanonicalName_Object21 took 0.001 sec
+Testcase: test_getPackageName_Class412 took 0 sec
+	FAILED
+expected:<[]> but was:<[java.lang]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[java.lang]>
+	at org.apache.commons.lang3.ClassUtilsTest.test_getPackageName_Class412(ClassUtilsTest.java:119)
+
+Testcase: test_getShortCanonicalName_String440 took 0.001 sec
+	FAILED
+expected:<ClassUtilsTest.[7]> but was:<ClassUtilsTest.[3]>
+junit.framework.AssertionFailedError: expected:<ClassUtilsTest.[7]> but was:<ClassUtilsTest.[3]>
+	at org.apache.commons.lang3.ClassUtilsTest.test_getShortCanonicalName_String440(ClassUtilsTest.java:166)
+
+Testcase: testConstructor209 took 0 sec
+Testcase: test_getShortCanonicalName_Object40 took 0 sec
+Testcase: test_getPackageName_String210 took 0 sec

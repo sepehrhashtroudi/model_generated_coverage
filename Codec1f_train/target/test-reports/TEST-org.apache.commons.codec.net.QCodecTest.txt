@@ -1,0 +1,13 @@
+Testsuite: org.apache.commons.codec.net.QCodecTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+
+Testcase: testBasicEncodeDecode1 took 0.01 sec
+Testcase: testNullInput91 took 0 sec
+Testcase: testEncodeObjects36 took 0.001 sec
+Testcase: testInvalidEncoding28 took 0.01 sec
+Testcase: testLetUsMakeCloverHappy68 took 0.001 sec
+Testcase: testEncodeDecodeNull30 took 0 sec
+Testcase: testDecodeStringWithNull100 took 0.001 sec
+Testcase: testEncodeStringWithNull122 took 0 sec
+Testcase: testEncodeDecodeBlanks81 took 0 sec
+Testcase: testDecodeObjects13 took 0.001 sec

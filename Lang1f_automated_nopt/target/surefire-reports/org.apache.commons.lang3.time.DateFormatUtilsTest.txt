@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.lang3.time.DateFormatUtilsTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.126 sec <<< FAILURE!
+format(org.apache.commons.lang3.time.DateFormatUtilsTest)  Time elapsed: 0.125 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<20[13 MMM d HH:mm:ss Z]> but was:<20[23 Feb 2 19:42:38 +0000]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.commons.lang3.time.DateFormatUtilsTest.__CLR4_4_1a9imjmglu(DateFormatUtilsTest.java:35)
+	at org.apache.commons.lang3.time.DateFormatUtilsTest.format(DateFormatUtilsTest.java:35)
+

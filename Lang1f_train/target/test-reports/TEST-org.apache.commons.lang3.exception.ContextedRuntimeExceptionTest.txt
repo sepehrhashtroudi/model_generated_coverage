@@ -1,0 +1,14 @@
+Testsuite: org.apache.commons.lang3.exception.ContextedRuntimeExceptionTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec
+
+Testcase: testNullExceptionPassing862 took 0.029 sec
+Testcase: testContextedExceptionStringThrowableContext1152 took 0.001 sec
+Testcase: testContextedExceptionStringThrowable505 took 0 sec
+Testcase: testContextedExceptionThrowable977 took 0.001 sec
+Testcase: testContextedException196 took 0.008 sec
+Testcase: testRawMessage1303 took 0 sec
+Testcase: testContextedExceptionString582 took 0 sec
+Testcase: testGetFirstContextValue572 took 0 sec
+Testcase: testJavaSerialization627 took 0.03 sec
+Testcase: testGetContextValues236 took 0 sec
+Testcase: testGetContextLabels517 took 0.001 sec

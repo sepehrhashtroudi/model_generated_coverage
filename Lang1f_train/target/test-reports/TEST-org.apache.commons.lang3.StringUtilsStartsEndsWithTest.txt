@@ -1,0 +1,7 @@
+Testsuite: org.apache.commons.lang3.StringUtilsStartsEndsWithTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+
+Testcase: testStartsWithAny320 took 0.034 sec
+Testcase: testStartsWithIgnoreCase1039 took 0 sec
+Testcase: testEndsWithAny471 took 0 sec
+Testcase: testEndsWith1325 took 0 sec

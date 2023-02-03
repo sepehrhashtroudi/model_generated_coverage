@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>Codec</title>
+    </head>
+
+<body onresize="processTreeMapDashJson(treeMapJson);" >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="historical.html">Codec-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        Codec
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Tue Jan 3 2023 09:51:59 MST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+        <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+
+
+
+
+
+<div class="aui-group">
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                
+                <h3>
+                    Code coverage
+                    <small style="float:right; font-weight: normal">
+                        28 classes,
+                        1,958 /
+                        2,308 elements
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.84835356</span>84.8%</div><div style="display: table-cell">
+ <div title="84.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:84.8%"></div></div></div></div>
+                <p><a href="pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    Test results
+                    <small style="float:right; font-weight: normal">
+                        145 /
+                        145 tests
+                        0.46 secs
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                                    
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>                                <p><a href="test-pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Code metrics</h3>
+            </header>
+                         
+
+<div id="$statsId" class="aui-item" style="display: ${display}">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">674</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">1,405</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">229</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">28</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">27</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">5</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">5,915</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">2,604</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">766</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.55</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">6.14</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">8.18</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">5.6</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">3.34</div>
+    </div>
+</div>
+
+</div>        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Coverage Distribution</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">                     <img src="img/classDistrubutionChart.png" alt="img/classDistrubutionChart.png" usemap="#classDistrubutionChart.png"/>
+                </div>
+                <map id="classDistrubutionChart.png" name="classDistrubutionChart.png">
+<area shape="rect" coords="288,15,310,206" title="16 classes have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="263,183,285,206" title="2 classes have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="188,195,210,206" title="1 class has 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,183,60,206" title="2 classes have 0% coverage" alt="" nohref="nohref"/>
+</map>
+            </div>
+        </div>
+        
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Complexity</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">
+                    <img src="img/classComplexityChart.png" alt="img/classComplexityChart.png" usemap="#classComplexityChart.png"/>
+                </div>
+                <map id="classComplexityChart.png" name="classComplexityChart.png">
+<area shape="poly" coords="257,180,254,183,252,180,254,178,257,180,257,180" title="Complexity: 39; Coverage: 83%; Class: DigestUtils" alt="" href="org/apache/commons/codec/digest/DigestUtils.html#DigestUtils"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: BinaryEncoderAbstractTest" alt="" href="org/apache/commons/codec/BinaryEncoderAbstractTest.html#BinaryEncoderAbstractTest"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: EncoderException" alt="" href="org/apache/commons/codec/EncoderException.html#EncoderException"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: EncoderException" alt="" href="org/apache/commons/codec/EncoderException.html#EncoderException"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 4; Coverage: 100%; Class: StringEncoderComparator" alt="" href="org/apache/commons/codec/StringEncoderComparator.html#StringEncoderComparator"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: BinaryEncoderAbstractTest" alt="" href="org/apache/commons/codec/BinaryEncoderAbstractTest.html#BinaryEncoderAbstractTest"/>
+<area shape="poly" coords="294,188,291,190,289,188,291,185,294,188,294,188" title="Complexity: 29; Coverage: 98%; Class: Soundex" alt="" href="org/apache/commons/codec/language/Soundex.html#Soundex"/>
+<area shape="poly" coords="298,200,296,203,293,200,296,198,298,200,298,200" title="Complexity: 12; Coverage: 100%; Class: SoundexUtils" alt="" href="org/apache/commons/codec/language/SoundexUtils.html#SoundexUtils"/>
+<area shape="poly" coords="272,199,269,201,267,199,269,196,272,199,272,199" title="Complexity: 14; Coverage: 89%; Class: RefinedSoundex" alt="" href="org/apache/commons/codec/language/RefinedSoundex.html#RefinedSoundex"/>
+<area shape="poly" coords="296,129,294,131,291,129,294,126,296,129,296,129" title="Complexity: 109; Coverage: 99%; Class: Metaphone" alt="" href="org/apache/commons/codec/language/Metaphone.html#Metaphone"/>
+<area shape="poly" coords="291,203,289,206,286,203,289,201,291,203,291,203" title="Complexity: 8; Coverage: 97%; Class: Caverphone" alt="" href="org/apache/commons/codec/language/Caverphone.html#Caverphone"/>
+<area shape="poly" coords="291,197,289,200,286,197,289,195,291,197,291,197" title="Complexity: 16; Coverage: 97%; Class: DoubleMetaphone.DoubleMetaphoneResult" alt="" href="org/apache/commons/codec/language/DoubleMetaphone.html#DoubleMetaphone.DoubleMetaphoneResult"/>
+<area shape="poly" coords="186,18,183,20,181,18,183,15,186,18,186,18" title="Complexity: 260; Coverage: 54%; Class: DoubleMetaphone" alt="" href="org/apache/commons/codec/language/DoubleMetaphone.html#DoubleMetaphone"/>
+<area shape="poly" coords="298,198,296,200,293,198,296,195,298,198,298,198" title="Complexity: 15; Coverage: 100%; Class: Hex" alt="" href="org/apache/commons/codec/binary/Hex.html#Hex"/>
+<area shape="poly" coords="289,160,286,162,284,160,286,157,289,160,289,160" title="Complexity: 67; Coverage: 96%; Class: Base64" alt="" href="org/apache/commons/codec/binary/Base64.html#Base64"/>
+<area shape="poly" coords="294,182,291,185,289,182,291,180,294,182,294,182" title="Complexity: 36; Coverage: 98%; Class: BinaryCodec" alt="" href="org/apache/commons/codec/binary/BinaryCodec.html#BinaryCodec"/>
+<area shape="poly" coords="298,200,296,203,293,200,296,198,298,200,298,200" title="Complexity: 12; Coverage: 100%; Class: SoundexUtils" alt="" href="org/apache/commons/codec/language/SoundexUtils.html#SoundexUtils"/>
+<area shape="poly" coords="298,193,296,195,293,193,296,190,298,193,298,193" title="Complexity: 22; Coverage: 100%; Class: BCodec" alt="" href="org/apache/commons/codec/net/BCodec.html#BCodec"/>
+<area shape="poly" coords="298,180,296,182,293,180,296,177,298,180,298,180" title="Complexity: 40; Coverage: 100%; Class: QuotedPrintableCodec" alt="" href="org/apache/commons/codec/net/QuotedPrintableCodec.html#QuotedPrintableCodec"/>
+<area shape="poly" coords="298,177,296,180,293,177,296,175,298,177,298,177" title="Complexity: 43; Coverage: 100%; Class: URLCodec" alt="" href="org/apache/commons/codec/net/URLCodec.html#URLCodec"/>
+<area shape="poly" coords="298,182,296,185,293,182,296,180,298,182,298,182" title="Complexity: 36; Coverage: 100%; Class: QCodec" alt="" href="org/apache/commons/codec/net/QCodec.html#QCodec"/>
+</map>
+            </div>
+        </div>
+        
+                    <div class="dashboard-widget">
+                <header class="dashboard-widget-header">
+                    <h3>Coverage tree map</h3>
+                </header>
+                <div class="dashboard-widget-content">
+                    <div id="infovis" style="width:100%; height:250px;">
+                        <div id="treemap-loader" style="position:relative;top:50px;">
+                            <p>
+                                Generating Coverage Tree Map. Please wait...
+                            </p>
+                            <p>
+                                <img src="img/ajax-loader.gif" alt="Loading Treemap"/>
+                            </p>
+                        </div>
+                    </div>
+                    <p><a href="treemap.html">See more</a></p>
+                </div>
+
+            </div>
+            </div>
+
+
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Top 12 project risks</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                                                                <a class="tag" href="org/apache/commons/codec/language/Metaphone.html"
+                            style="font-size: 28px;color:#89c495"
+                            title="Average Method Complexity - 9.083 , Coverage - 99.3% ">Metaphone</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/codec/binary/BinaryCodec.html"
+                            style="font-size: 18px;color:#89c495"
+                            title="Average Method Complexity - 3.6 , Coverage - 98.1% ">BinaryCodec</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/codec/language/Soundex.html"
+                            style="font-size: 16px;color:#89c495"
+                            title="Average Method Complexity - 2.417 , Coverage - 98.6% ">Soundex</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/codec/binary/Base64.html"
+                            style="font-size: 19px;color:#89c495"
+                            title="Average Method Complexity - 4.188 , Coverage - 96.5% ">Base64</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/codec/language/Caverphone.html"
+                            style="font-size: 14px;color:#89c495"
+                            title="Average Method Complexity - 1.6 , Coverage - 97.4% ">Caverphone</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/codec/language/DoubleMetaphone.html"
+                            style="font-size: 22px;color:#e7a19b"
+                            title="Average Method Complexity - 5.909 , Coverage - 54.8% ">DoubleMetaphone</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/codec/language/DoubleMetaphone.html"
+                            style="font-size: 14px;color:#89c495"
+                            title="Average Method Complexity - 1.333 , Coverage - 97.7% ">DoubleMetaphone.DoubleMetaphoneResult</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/codec/language/RefinedSoundex.html"
+                            style="font-size: 15px;color:#14892c"
+                            title="Average Method Complexity - 2 , Coverage - 89.6% ">RefinedSoundex</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/codec/digest/DigestUtils.html"
+                            style="font-size: 13px;color:#14892c"
+                            title="Average Method Complexity - 1.054 , Coverage - 83.1% ">DigestUtils</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/codec/language/AllTests.html"
+                            style="font-size: 13px;color:#d04437"
+                            title="Average Method Complexity - 1 , Coverage - 0% ">AllTests</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/codec/BinaryEncoderAbstractTest.html"
+                            style="font-size: 13px;color:#d04437"
+                            title="Average Method Complexity - 1 , Coverage - 0% ">BinaryEncoderAbstractTest</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/codec/net/CharacterEncodingNames.html"
+                            style="font-size: 12px;color:#d04437"
+                            title="Average Method Complexity - 0 , Coverage -  -  ">CharacterEncodingNames</a>
+                                                    <p><a href="top-risks.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex packages</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.73778504</span>73.8%</div><div style="display: table-cell">
+ <div title="73.8% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:73.8%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/codec/language/pkg-summary.html">org.apache.commons.codec.language</a>
+                                <span class="aui-badge" title="Package complexity">449</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/codec/net/pkg-summary.html">org.apache.commons.codec.net</a>
+                                <span class="aui-badge" title="Package complexity">153</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9727891</span>97.3%</div><div style="display: table-cell">
+ <div title="97.3% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:97.3%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/codec/binary/pkg-summary.html">org.apache.commons.codec.binary</a>
+                                <span class="aui-badge" title="Package complexity">118</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8313253</span>83.1%</div><div style="display: table-cell">
+ <div title="83.1% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:83.1%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/codec/digest/pkg-summary.html">org.apache.commons.codec.digest</a>
+                                <span class="aui-badge" title="Package complexity">39</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8888889</span>88.9%</div><div style="display: table-cell">
+ <div title="88.9% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:88.9%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/codec/pkg-summary.html">org.apache.commons.codec</a>
+                                <span class="aui-badge" title="Package complexity">7</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex classes</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5482912</span>54.8%</div><div style="display: table-cell">
+ <div title="54.8% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:54.8%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/codec/language/DoubleMetaphone.html"  title="org.apache.commons.codec.language.DoubleMetaphone">DoubleMetaphone</a>
+                                <span class="aui-badge" title="Class complexity">260</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.99256504</span>99.3%</div><div style="display: table-cell">
+ <div title="99.3% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:99.3%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/codec/language/Metaphone.html"  title="org.apache.commons.codec.language.Metaphone">Metaphone</a>
+                                <span class="aui-badge" title="Class complexity">109</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9649123</span>96.5%</div><div style="display: table-cell">
+ <div title="96.5% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:96.5%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/codec/binary/Base64.html"  title="org.apache.commons.codec.binary.Base64">Base64</a>
+                                <span class="aui-badge" title="Class complexity">67</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/codec/net/URLCodec.html"  title="org.apache.commons.codec.net.URLCodec">URLCodec</a>
+                                <span class="aui-badge" title="Class complexity">43</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/codec/net/QuotedPrintableCodec.html"  title="org.apache.commons.codec.net.QuotedPrintableCodec">QuotedPrintableCodec</a>
+                                <span class="aui-badge" title="Class complexity">40</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Least tested methods</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+
+                    <tr>
+                        <td align="right">1.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DoubleMetaphone.handleGH(String,DoubleMetaphoneResult,int)&#160;:&#160;int" href="org/apache/commons/codec/language/DoubleMetaphone.html?line=474#src-474">DoubleMetaphone.handleGH(String,DoubleMetaphoneResult,int)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">16</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">2.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DoubleMetaphone.handleCH(String,DoubleMetaphoneResult,int)&#160;:&#160;int" href="org/apache/commons/codec/language/DoubleMetaphone.html?line=361#src-361">DoubleMetaphone.handleCH(String,DoubleMetaphoneResult,int)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">7</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">3.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DoubleMetaphone.handleSC(String,DoubleMetaphoneResult,int)&#160;:&#160;int" href="org/apache/commons/codec/language/DoubleMetaphone.html?line=665#src-665">DoubleMetaphone.handleSC(String,DoubleMetaphoneResult,int)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">8</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">4.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DoubleMetaphone.conditionCH0(String,int)&#160;:&#160;boolean" href="org/apache/commons/codec/language/DoubleMetaphone.html?line=828#src-828">DoubleMetaphone.conditionCH0(String,int)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">5.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DoubleMetaphone.conditionL0(String,int)&#160;:&#160;boolean" href="org/apache/commons/codec/language/DoubleMetaphone.html?line=856#src-856">DoubleMetaphone.conditionL0(String,int)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">6.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DoubleMetaphone.handleH(String,DoubleMetaphoneResult,int)&#160;:&#160;int" href="org/apache/commons/codec/language/DoubleMetaphone.html?line=508#src-508">DoubleMetaphone.handleH(String,DoubleMetaphoneResult,int)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">7.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="AllTests.suite()&#160;:&#160;Test" href="org/apache/commons/codec/language/AllTests.html?line=31#src-31">AllTests.suite()&#160;:&#160;Test</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">8.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DoubleMetaphone.setMaxCodeLen(int)&#160;:&#160;void" href="org/apache/commons/codec/language/DoubleMetaphone.html?line=261#src-261">DoubleMetaphone.setMaxCodeLen(int)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">9.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DoubleMetaphone.conditionCH1(String,int)&#160;:&#160;boolean" href="org/apache/commons/codec/language/DoubleMetaphone.html?line=844#src-844">DoubleMetaphone.conditionCH1(String,int)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">10.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DoubleMetaphone.contains(String,int,int,String,String,String,String,String)&#160;:&#160;boolean" href="org/apache/commons/codec/language/DoubleMetaphone.html?line=983#src-983">DoubleMetaphone.contains(String,int,int,String,String,String,String,String)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">11.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DoubleMetaphone.contains(String,int,int,String,String,String,String,String,String)&#160;:&#160;boolean" href="org/apache/commons/codec/language/DoubleMetaphone.html?line=995#src-995">DoubleMetaphone.contains(String,int,int,String,String,String,String,String,String)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">12.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Caverphone.isCaverphoneEqual(String,String)&#160;:&#160;boolean" href="org/apache/commons/codec/language/Caverphone.html?line=179#src-179">Caverphone.isCaverphoneEqual(String,String)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">13.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="RefinedSoundex.difference(String,String)&#160;:&#160;int" href="org/apache/commons/codec/language/RefinedSoundex.html?line=96#src-96">RefinedSoundex.difference(String,String)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">14.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BinaryEncoderAbstractTest.BinaryEncoderAbstractTest(String)" href="org/apache/commons/codec/BinaryEncoderAbstractTest.html?line=28#src-28">BinaryEncoderAbstractTest.BinaryEncoderAbstractTest(String)</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">15.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DigestUtils.getSha512Digest()&#160;:&#160;MessageDigest" href="org/apache/commons/codec/digest/DigestUtils.html?line=107#src-107">DigestUtils.getSha512Digest()&#160;:&#160;MessageDigest</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">16.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DigestUtils.sha512(byte[])&#160;:&#160;byte[]" href="org/apache/commons/codec/digest/DigestUtils.html?line=427#src-427">DigestUtils.sha512(byte[])&#160;:&#160;byte[]</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">17.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DigestUtils.sha512(String)&#160;:&#160;byte[]" href="org/apache/commons/codec/digest/DigestUtils.html?line=441#src-441">DigestUtils.sha512(String)&#160;:&#160;byte[]</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">18.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DigestUtils.sha512(InputStream)&#160;:&#160;byte[]" href="org/apache/commons/codec/digest/DigestUtils.html?line=456#src-456">DigestUtils.sha512(InputStream)&#160;:&#160;byte[]</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">19.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DigestUtils.sha512Hex(byte[])&#160;:&#160;String" href="org/apache/commons/codec/digest/DigestUtils.html?line=470#src-470">DigestUtils.sha512Hex(byte[])&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">20.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DigestUtils.sha512Hex(String)&#160;:&#160;String" href="org/apache/commons/codec/digest/DigestUtils.html?line=484#src-484">DigestUtils.sha512Hex(String)&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                    </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+                            </div> <!-- tabs-pane active-pane -->
+                        </div>
+
+    <script type="text/javascript" src="jit.js" ></script>
+    <script type="text/javascript" src="treemap-dash-json.js" ></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Tue Jan 3 2023 09:52:05 MST using coverage data from Tue Jan 3 2023 09:52:05 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

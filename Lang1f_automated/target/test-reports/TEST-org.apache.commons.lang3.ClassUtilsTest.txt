@@ -1,0 +1,21 @@
+Testsuite: org.apache.commons.lang3.ClassUtilsTest
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+
+Testcase: test_getShortClassName_Class439 took 0.026 sec
+Testcase: test_getPackageCanonicalName_Object21 took 0 sec
+Testcase: testGetClassWithArrayClasses111 took 0 sec
+Testcase: test_getPackageName_Class412 took 0.002 sec
+	FAILED
+expected:<[]> but was:<[java.lang]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[java.lang]>
+	at org.apache.commons.lang3.ClassUtilsTest.test_getPackageName_Class412(ClassUtilsTest.java:108)
+
+Testcase: test_getShortCanonicalName_String440 took 0 sec
+	FAILED
+expected:<ClassUtilsTest.[7]> but was:<ClassUtilsTest.[3]>
+junit.framework.AssertionFailedError: expected:<ClassUtilsTest.[7]> but was:<ClassUtilsTest.[3]>
+	at org.apache.commons.lang3.ClassUtilsTest.test_getShortCanonicalName_String440(ClassUtilsTest.java:156)
+
+Testcase: testConstructor209 took 0 sec
+Testcase: test_getShortCanonicalName_Object40 took 0 sec
+Testcase: test_getPackageName_String210 took 0 sec

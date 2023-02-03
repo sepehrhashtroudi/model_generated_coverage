@@ -1,0 +1,47 @@
+Testsuite: org.apache.commons.lang3.ArrayUtilsTest
+Tests run: 19, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec
+
+Testcase: testIndexOfBoolean101 took 0.027 sec
+	FAILED
+expected:<2> but was:<0>
+junit.framework.AssertionFailedError: expected:<2> but was:<0>
+	at org.apache.commons.lang3.ArrayUtilsTest.testIndexOfBoolean101(ArrayUtilsTest.java:120)
+
+Testcase: testIndexOfBoolean430 took 0 sec
+Testcase: testToStringIfNull479 took 0 sec
+	FAILED
+expected: java.lang.String<null> but was: null<null>
+junit.framework.AssertionFailedError: expected: java.lang.String<null> but was: null<null>
+	at org.apache.commons.lang3.ArrayUtilsTest.testToStringIfNull479(ArrayUtilsTest.java:209)
+
+Testcase: testToStringIfNull484 took 0 sec
+	FAILED
+expected: java.lang.String<null> but was: null<null>
+junit.framework.AssertionFailedError: expected: java.lang.String<null> but was: null<null>
+	at org.apache.commons.lang3.ArrayUtilsTest.testToStringIfNull484(ArrayUtilsTest.java:243)
+
+Testcase: testNullToEmptyLongObject76 took 0.001 sec
+Testcase: testIndexOfFloat262 took 0.001 sec
+Testcase: testNullToEmptyByteObject58 took 0 sec
+Testcase: testToString_Object494 took 0.008 sec
+	FAILED
+expected:<[0:1:2:3]> but was:<[{0,1,2,3,<null>,0}]>
+junit.framework.AssertionFailedError: expected:<[0:1:2:3]> but was:<[{0,1,2,3,<null>,0}]>
+	at org.apache.commons.lang3.ArrayUtilsTest.testToString_Object494(ArrayUtilsTest.java:261)
+
+Testcase: testNullToEmptyShortObject54 took 0 sec
+Testcase: testToObject_byte15 took 0 sec
+Testcase: testToPrimitive_long_long66 took 0 sec
+Testcase: testNullToEmptyByteObject347 took 0 sec
+Testcase: testContainsBoolean429 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsTest.testContainsBoolean429(ArrayUtilsTest.java:191)
+
+Testcase: testRemoveElementLongArray118 took 0 sec
+Testcase: testOSMatchesNameAndVersion495 took 0 sec
+Testcase: testOSMatchesName483 took 0 sec
+Testcase: testToPrimitive_double_double33 took 0 sec
+Testcase: testIndexOfFloat43 took 0 sec
+Testcase: testLastIndexOfShortWithStartIndex125 took 0 sec

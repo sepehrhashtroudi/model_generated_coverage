@@ -1,0 +1,3919 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Thu Jan 12 2023 14:04:05 MST</a></li>
+</ol></div>
+    
+
+<h1 class="aui-h2-clover">
+            
+        Package com.google.javascript.jscomp
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+
+        <ul class="tabs-menu">
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+        
+        
+        
+        <table id="projectTestSummaryTable" class="aui">
+            <thead>
+                <tr>
+                    <th width="40%">Package</th>
+                    <th width="10%">Tests</th>
+                    <th width="10%">Fail</th>
+                    <th width="10%">Error</th>
+                    <th width="10%"><label title="The total time in seconds taken to run this set of tests.">Time</label></th>
+                    <th width="20%">% Pass</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>com.google.javascript.jscomp</td>
+                    <td class="testPasses"><span class="sortValue">2003</span>2003</td>
+<td class="testFailures"><span class="sortValue">14</span>14</td>
+<td class=""><span class="sortValue">0</span>0</td>
+                    <td>14.801</td>
+                    <td>
+                        
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">0.99301046</span>99.3%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="99.3% of tests passed&lt;br/&gt;0.7% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 99.3%"></div></div>
+            </div>
+        </div>
+    </div>                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div>&#160;</div>
+
+        
+                <table id="projectTestPackagesTable" class="aui aui-table-sortable">
+            <thead>
+                <tr>
+                    <th width="40%">Test Classes</th>
+                    <th width="10%">Tests</th>
+                    <th width="10%">Fail</th>
+                    <th width="10%">Error</th>
+                    <th width="10%"><label title="The total time in seconds taken to run this set of tests.">Time(secs)</label></th>
+                    <th width="20%">% Pass</th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+                                                                                                                                                                                                
+    
+        
+        <tr>
+        <td><span class="sortValue">ConcreteTypeTest</span><a href="test-ConcreteTypeTest.html">ConcreteTypeTest</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class="testFailures"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.001</span>0.001</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">0.0</span>0%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="0% of tests passed&lt;br/&gt;100% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 0%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">PhaseOptimizerTest</span><a href="test-PhaseOptimizerTest.html">PhaseOptimizerTest</a></td>
+        <td class="testPasses"><span class="sortValue">5</span>5</td>
+<td class="testFailures"><span class="sortValue">5</span>5</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.002</span>0.002</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">0.0</span>0%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="0% of tests passed&lt;br/&gt;100% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 0%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CheckSideEffectsTest</span><a href="test-CheckSideEffectsTest.html">CheckSideEffectsTest</a></td>
+        <td class="testPasses"><span class="sortValue">5</span>5</td>
+<td class="testFailures"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.028999999999999998</span>0.029</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">0.2</span>20%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="20% of tests passed&lt;br/&gt;80% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 20%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">IntegrationTest</span><a href="test-IntegrationTest.html">IntegrationTest</a></td>
+        <td class="testPasses"><span class="sortValue">79</span>79</td>
+<td class="testFailures"><span class="sortValue">1</span>1</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.5590000000000004</span>0.559</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">0.98734176</span>98.7%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="98.7% of tests passed&lt;br/&gt;1.3% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 98.7%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">SymbolTableTest</span><a href="test-SymbolTableTest.html">SymbolTableTest</a></td>
+        <td class="testPasses"><span class="sortValue">23</span>23</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.28300000000000003</span>0.283</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CheckAccessControlsTest</span><a href="test-CheckAccessControlsTest.html">CheckAccessControlsTest</a></td>
+        <td class="testPasses"><span class="sortValue">18</span>18</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.29000000000000004</span>0.29</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">JSModuleTest</span><a href="test-JSModuleTest.html">JSModuleTest</a></td>
+        <td class="testPasses"><span class="sortValue">3</span>3</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.001</span>0.001</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest</span><a href="test-PeepholeCollectPropertyAssignmentsTest.html">PeepholeCollectPropertyAssignmentsTest</a></td>
+        <td class="testPasses"><span class="sortValue">11</span>11</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.015000000000000003</span>0.015</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CheckUnreachableCodeTest</span><a href="test-CheckUnreachableCodeTest.html">CheckUnreachableCodeTest</a></td>
+        <td class="testPasses"><span class="sortValue">5</span>5</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.027000000000000003</span>0.027</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CleanupPassesTest</span><a href="test-CleanupPassesTest.html">CleanupPassesTest</a></td>
+        <td class="testPasses"><span class="sortValue">2</span>2</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.002</span>0.002</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ConstCheckTest</span><a href="test-ConstCheckTest.html">ConstCheckTest</a></td>
+        <td class="testPasses"><span class="sortValue">10</span>10</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.015</span>0.015</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">DenormalizeTest</span><a href="test-DenormalizeTest.html">DenormalizeTest</a></td>
+        <td class="testPasses"><span class="sortValue">3</span>3</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.038</span>0.038</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ProcessDefinesTest</span><a href="test-ProcessDefinesTest.html">ProcessDefinesTest</a></td>
+        <td class="testPasses"><span class="sortValue">14</span>14</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.026000000000000002</span>0.026</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">SourceMapTest</span><a href="test-SourceMapTest.html">SourceMapTest</a></td>
+        <td class="testPasses"><span class="sortValue">1</span>1</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.001</span>0.001</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">RenamePrototypesTest</span><a href="test-RenamePrototypesTest.html">RenamePrototypesTest</a></td>
+        <td class="testPasses"><span class="sortValue">7</span>7</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.061</span>0.061</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ProcessClosurePrimitivesTest</span><a href="test-ProcessClosurePrimitivesTest.html">ProcessClosurePrimitivesTest</a></td>
+        <td class="testPasses"><span class="sortValue">29</span>29</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.07900000000000001</span>0.079</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">InlineVariablesTest</span><a href="test-InlineVariablesTest.html">InlineVariablesTest</a></td>
+        <td class="testPasses"><span class="sortValue">29</span>29</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.15800000000000006</span>0.158</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">AliasKeywordsTest</span><a href="test-AliasKeywordsTest.html">AliasKeywordsTest</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.056</span>0.056</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">TypeCheckTest</span><a href="test-TypeCheckTest.html">TypeCheckTest</a></td>
+        <td class="testPasses"><span class="sortValue">171</span>171</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.7540000000000006</span>0.754</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ClosureCodeRemovalTest</span><a href="test-ClosureCodeRemovalTest.html">ClosureCodeRemovalTest</a></td>
+        <td class="testPasses"><span class="sortValue">7</span>7</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.016</span>0.016</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">FlowSensitiveInlineVariablesTest</span><a href="test-FlowSensitiveInlineVariablesTest.html">FlowSensitiveInlineVariablesTest</a></td>
+        <td class="testPasses"><span class="sortValue">24</span>24</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.17800000000000005</span>0.178</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">FunctionNamesTest</span><a href="test-FunctionNamesTest.html">FunctionNamesTest</a></td>
+        <td class="testPasses"><span class="sortValue">1</span>1</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.007</span>0.007</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">StrictModeCheckTest</span><a href="test-StrictModeCheckTest.html">StrictModeCheckTest</a></td>
+        <td class="testPasses"><span class="sortValue">18</span>18</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.039000000000000014</span>0.039</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">RhinoErrorReporterTest</span><a href="test-RhinoErrorReporterTest.html">RhinoErrorReporterTest</a></td>
+        <td class="testPasses"><span class="sortValue">2</span>2</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.002</span>0.002</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CheckPathsBetweenNodesTest</span><a href="test-CheckPathsBetweenNodesTest.html">CheckPathsBetweenNodesTest</a></td>
+        <td class="testPasses"><span class="sortValue">5</span>5</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.003</span>0.003</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ControlStructureCheckTest</span><a href="test-ControlStructureCheckTest.html">ControlStructureCheckTest</a></td>
+        <td class="testPasses"><span class="sortValue">5</span>5</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.007</span>0.007</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">RuntimeTypeCheckTest</span><a href="test-RuntimeTypeCheckTest.html">RuntimeTypeCheckTest</a></td>
+        <td class="testPasses"><span class="sortValue">13</span>13</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.616</span>0.616</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">BasicErrorManagerTest</span><a href="test-BasicErrorManagerTest.html">BasicErrorManagerTest</a></td>
+        <td class="testPasses"><span class="sortValue">7</span>7</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.002</span>0.002</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ClosureRewriteClassTest</span><a href="test-ClosureRewriteClassTest.html">ClosureRewriteClassTest</a></td>
+        <td class="testPasses"><span class="sortValue">11</span>11</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.03900000000000001</span>0.039</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">SpecializeModuleTest</span><a href="test-SpecializeModuleTest.html">SpecializeModuleTest</a></td>
+        <td class="testPasses"><span class="sortValue">8</span>8</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.048999999999999995</span>0.049</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CodePrinterTest</span><a href="test-CodePrinterTest.html">CodePrinterTest</a></td>
+        <td class="testPasses"><span class="sortValue">31</span>31</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.22800000000000004</span>0.228</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CheckGlobalThisTest</span><a href="test-CheckGlobalThisTest.html">CheckGlobalThisTest</a></td>
+        <td class="testPasses"><span class="sortValue">7</span>7</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.024999999999999998</span>0.025</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">FunctionRewriterTest</span><a href="test-FunctionRewriterTest.html">FunctionRewriterTest</a></td>
+        <td class="testPasses"><span class="sortValue">7</span>7</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.033</span>0.033</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">UnreachableCodeEliminationTest</span><a href="test-UnreachableCodeEliminationTest.html">UnreachableCodeEliminationTest</a></td>
+        <td class="testPasses"><span class="sortValue">10</span>10</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.10100000000000002</span>0.101</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">RescopeGlobalSymbolsTest</span><a href="test-RescopeGlobalSymbolsTest.html">RescopeGlobalSymbolsTest</a></td>
+        <td class="testPasses"><span class="sortValue">5</span>5</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.049</span>0.049</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">JsMessageVisitorTest</span><a href="test-JsMessageVisitorTest.html">JsMessageVisitorTest</a></td>
+        <td class="testPasses"><span class="sortValue">24</span>24</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.010000000000000002</span>0.01</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">RemoveTryCatchTest</span><a href="test-RemoveTryCatchTest.html">RemoveTryCatchTest</a></td>
+        <td class="testPasses"><span class="sortValue">3</span>3</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.006</span>0.006</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">GatherRawExportsTest</span><a href="test-GatherRawExportsTest.html">GatherRawExportsTest</a></td>
+        <td class="testPasses"><span class="sortValue">2</span>2</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.006</span>0.006</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">InstrumentFunctionsTest</span><a href="test-InstrumentFunctionsTest.html">InstrumentFunctionsTest</a></td>
+        <td class="testPasses"><span class="sortValue">7</span>7</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.08600000000000001</span>0.086</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">LinkedFlowScopeTest</span><a href="test-LinkedFlowScopeTest.html">LinkedFlowScopeTest</a></td>
+        <td class="testPasses"><span class="sortValue">5</span>5</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.049</span>0.049</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">SimpleDefinitionFinderTest</span><a href="test-SimpleDefinitionFinderTest.html">SimpleDefinitionFinderTest</a></td>
+        <td class="testPasses"><span class="sortValue">5</span>5</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.038</span>0.038</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CheckRegExpTest</span><a href="test-CheckRegExpTest.html">CheckRegExpTest</a></td>
+        <td class="testPasses"><span class="sortValue">1</span>1</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.026</span>0.026</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">LooseTypeCheckTest</span><a href="test-LooseTypeCheckTest.html">LooseTypeCheckTest</a></td>
+        <td class="testPasses"><span class="sortValue">88</span>88</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.3920000000000003</span>0.392</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ChainCallsTest</span><a href="test-ChainCallsTest.html">ChainCallsTest</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.026000000000000002</span>0.026</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ReplaceMessagesTest</span><a href="test-ReplaceMessagesTest.html">ReplaceMessagesTest</a></td>
+        <td class="testPasses"><span class="sortValue">14</span>14</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.02600000000000001</span>0.026</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">PeepholeIntegrationTest</span><a href="test-PeepholeIntegrationTest.html">PeepholeIntegrationTest</a></td>
+        <td class="testPasses"><span class="sortValue">6</span>6</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.053000000000000005</span>0.053</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CreateSyntheticBlocksTest</span><a href="test-CreateSyntheticBlocksTest.html">CreateSyntheticBlocksTest</a></td>
+        <td class="testPasses"><span class="sortValue">8</span>8</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.019000000000000003</span>0.019</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">InferJSDocInfoTest</span><a href="test-InferJSDocInfoTest.html">InferJSDocInfoTest</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.017</span>0.017</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CheckSuspiciousCodeTest</span><a href="test-CheckSuspiciousCodeTest.html">CheckSuspiciousCodeTest</a></td>
+        <td class="testPasses"><span class="sortValue">3</span>3</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.069</span>0.069</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">SimpleFunctionAliasAnalysisTest</span><a href="test-SimpleFunctionAliasAnalysisTest.html">SimpleFunctionAliasAnalysisTest</a></td>
+        <td class="testPasses"><span class="sortValue">1</span>1</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.015</span>0.015</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ConvertToDottedPropertiesTest</span><a href="test-ConvertToDottedPropertiesTest.html">ConvertToDottedPropertiesTest</a></td>
+        <td class="testPasses"><span class="sortValue">2</span>2</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.034</span>0.034</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ExploitAssignsTest</span><a href="test-ExploitAssignsTest.html">ExploitAssignsTest</a></td>
+        <td class="testPasses"><span class="sortValue">5</span>5</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.10300000000000001</span>0.103</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CoalesceVariableNamesTest</span><a href="test-CoalesceVariableNamesTest.html">CoalesceVariableNamesTest</a></td>
+        <td class="testPasses"><span class="sortValue">9</span>9</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.084</span>0.084</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ReplaceStringsTest</span><a href="test-ReplaceStringsTest.html">ReplaceStringsTest</a></td>
+        <td class="testPasses"><span class="sortValue">12</span>12</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.09599999999999999</span>0.096</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ClosureReverseAbstractInterpreterTest</span><a href="test-ClosureReverseAbstractInterpreterTest.html">ClosureReverseAbstractInterpreterTest</a></td>
+        <td class="testPasses"><span class="sortValue">18</span>18</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.018000000000000002</span>0.018</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">FunctionToBlockMutatorTest</span><a href="test-FunctionToBlockMutatorTest.html">FunctionToBlockMutatorTest</a></td>
+        <td class="testPasses"><span class="sortValue">9</span>9</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.011000000000000001</span>0.011</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">OptimizeArgumentsArrayTest</span><a href="test-OptimizeArgumentsArrayTest.html">OptimizeArgumentsArrayTest</a></td>
+        <td class="testPasses"><span class="sortValue">7</span>7</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.019000000000000003</span>0.019</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">PeepholeRemoveDeadCodeTest</span><a href="test-PeepholeRemoveDeadCodeTest.html">PeepholeRemoveDeadCodeTest</a></td>
+        <td class="testPasses"><span class="sortValue">28</span>28</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.3480000000000001</span>0.348</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">MaybeReachingVariableUseTest</span><a href="test-MaybeReachingVariableUseTest.html">MaybeReachingVariableUseTest</a></td>
+        <td class="testPasses"><span class="sortValue">7</span>7</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.015</span>0.015</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CrossModuleCodeMotionTest</span><a href="test-CrossModuleCodeMotionTest.html">CrossModuleCodeMotionTest</a></td>
+        <td class="testPasses"><span class="sortValue">15</span>15</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.033</span>0.033</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">TypeValidatorTest</span><a href="test-TypeValidatorTest.html">TypeValidatorTest</a></td>
+        <td class="testPasses"><span class="sortValue">2</span>2</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.009000000000000001</span>0.009</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">FixedPointGraphTraversalTest</span><a href="test-FixedPointGraphTraversalTest.html">FixedPointGraphTraversalTest</a></td>
+        <td class="testPasses"><span class="sortValue">2</span>2</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.0</span>0</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">GlobalNamespaceTest</span><a href="test-GlobalNamespaceTest.html">GlobalNamespaceTest</a></td>
+        <td class="testPasses"><span class="sortValue">2</span>2</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.002</span>0.002</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CheckMissingGetCssNameTest</span><a href="test-CheckMissingGetCssNameTest.html">CheckMissingGetCssNameTest</a></td>
+        <td class="testPasses"><span class="sortValue">3</span>3</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.031</span>0.031</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ReplaceCssNamesTest</span><a href="test-ReplaceCssNamesTest.html">ReplaceCssNamesTest</a></td>
+        <td class="testPasses"><span class="sortValue">9</span>9</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.04299999999999999</span>0.043</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">RenameVarsTest</span><a href="test-RenameVarsTest.html">RenameVarsTest</a></td>
+        <td class="testPasses"><span class="sortValue">12</span>12</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.04100000000000001</span>0.041</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">AliasExternalsTest</span><a href="test-AliasExternalsTest.html">AliasExternalsTest</a></td>
+        <td class="testPasses"><span class="sortValue">8</span>8</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.20800000000000005</span>0.208</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ExtractPrototypeMemberDeclarationsTest</span><a href="test-ExtractPrototypeMemberDeclarationsTest.html">ExtractPrototypeMemberDeclarationsTest</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.028999999999999998</span>0.029</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ExpressionDecomposerTest</span><a href="test-ExpressionDecomposerTest.html">ExpressionDecomposerTest</a></td>
+        <td class="testPasses"><span class="sortValue">11</span>11</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.014000000000000002</span>0.014</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">NormalizeTest</span><a href="test-NormalizeTest.html">NormalizeTest</a></td>
+        <td class="testPasses"><span class="sortValue">20</span>20</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.15300000000000002</span>0.153</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">FunctionArgumentInjectorTest</span><a href="test-FunctionArgumentInjectorTest.html">FunctionArgumentInjectorTest</a></td>
+        <td class="testPasses"><span class="sortValue">11</span>11</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.011000000000000003</span>0.011</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ProcessTweaksTest</span><a href="test-ProcessTweaksTest.html">ProcessTweaksTest</a></td>
+        <td class="testPasses"><span class="sortValue">19</span>19</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.026000000000000002</span>0.026</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">NodeTraversalTest</span><a href="test-NodeTraversalTest.html">NodeTraversalTest</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.003</span>0.003</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">PeepholeFoldConstantsTest</span><a href="test-PeepholeFoldConstantsTest.html">PeepholeFoldConstantsTest</a></td>
+        <td class="testPasses"><span class="sortValue">44</span>44</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">2.384999999999999</span>2.385</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ClosureCodingConventionTest</span><a href="test-ClosureCodingConventionTest.html">ClosureCodingConventionTest</a></td>
+        <td class="testPasses"><span class="sortValue">11</span>11</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.009000000000000001</span>0.009</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">OptimizeParametersTest</span><a href="test-OptimizeParametersTest.html">OptimizeParametersTest</a></td>
+        <td class="testPasses"><span class="sortValue">16</span>16</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.113</span>0.113</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ObjectPropertyStringPreprocessTest</span><a href="test-ObjectPropertyStringPreprocessTest.html">ObjectPropertyStringPreprocessTest</a></td>
+        <td class="testPasses"><span class="sortValue">5</span>5</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.005</span>0.005</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ExternExportsPassTest</span><a href="test-ExternExportsPassTest.html">ExternExportsPassTest</a></td>
+        <td class="testPasses"><span class="sortValue">10</span>10</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.06399999999999999</span>0.064</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">InlineFunctionsTest</span><a href="test-InlineFunctionsTest.html">InlineFunctionsTest</a></td>
+        <td class="testPasses"><span class="sortValue">34</span>34</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.16800000000000007</span>0.168</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ExpandJqueryAliasesTest</span><a href="test-ExpandJqueryAliasesTest.html">ExpandJqueryAliasesTest</a></td>
+        <td class="testPasses"><span class="sortValue">3</span>3</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.041</span>0.041</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CollapsePropertiesTest</span><a href="test-CollapsePropertiesTest.html">CollapsePropertiesTest</a></td>
+        <td class="testPasses"><span class="sortValue">37</span>37</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.1860000000000001</span>0.186</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">JSCompilerSourceExcerptProviderTest</span><a href="test-JSCompilerSourceExcerptProviderTest.html">JSCompilerSourceExcerptProviderTest</a></td>
+        <td class="testPasses"><span class="sortValue">5</span>5</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.0</span>0</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ReorderConstantExpressionTest</span><a href="test-ReorderConstantExpressionTest.html">ReorderConstantExpressionTest</a></td>
+        <td class="testPasses"><span class="sortValue">2</span>2</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.24</span>0.24</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">AstValidatorTest</span><a href="test-AstValidatorTest.html">AstValidatorTest</a></td>
+        <td class="testPasses"><span class="sortValue">7</span>7</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.02</span>0.02</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">GatherSideEffectSubexpressionsCallbackTest</span><a href="test-GatherSideEffectSubexpressionsCallbackTest.html">GatherSideEffectSubexpressionsCallbackTest</a></td>
+        <td class="testPasses"><span class="sortValue">5</span>5</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.0</span>0</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">MinimizeExitPointsTest</span><a href="test-MinimizeExitPointsTest.html">MinimizeExitPointsTest</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.082</span>0.082</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CallGraphTest</span><a href="test-CallGraphTest.html">CallGraphTest</a></td>
+        <td class="testPasses"><span class="sortValue">15</span>15</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.111</span>0.111</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">LiveVariableAnalysisTest</span><a href="test-LiveVariableAnalysisTest.html">LiveVariableAnalysisTest</a></td>
+        <td class="testPasses"><span class="sortValue">2</span>2</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.007</span>0.007</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">DotFormatterTest</span><a href="test-DotFormatterTest.html">DotFormatterTest</a></td>
+        <td class="testPasses"><span class="sortValue">3</span>3</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.001</span>0.001</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">OptimizeCallsTest</span><a href="test-OptimizeCallsTest.html">OptimizeCallsTest</a></td>
+        <td class="testPasses"><span class="sortValue">1</span>1</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.004</span>0.004</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">SyntacticScopeCreatorTest</span><a href="test-SyntacticScopeCreatorTest.html">SyntacticScopeCreatorTest</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.005</span>0.005</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">MemoizedScopeCreatorTest</span><a href="test-MemoizedScopeCreatorTest.html">MemoizedScopeCreatorTest</a></td>
+        <td class="testPasses"><span class="sortValue">1</span>1</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.0</span>0</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">PeepholeSubstituteAlternateSyntaxTest</span><a href="test-PeepholeSubstituteAlternateSyntaxTest.html">PeepholeSubstituteAlternateSyntaxTest</a></td>
+        <td class="testPasses"><span class="sortValue">34</span>34</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.5500000000000002</span>0.55</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CollapseVariableDeclarationsTest</span><a href="test-CollapseVariableDeclarationsTest.html">CollapseVariableDeclarationsTest</a></td>
+        <td class="testPasses"><span class="sortValue">2</span>2</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.019</span>0.019</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">DevirtualizePrototypeMethodsTest</span><a href="test-DevirtualizePrototypeMethodsTest.html">DevirtualizePrototypeMethodsTest</a></td>
+        <td class="testPasses"><span class="sortValue">15</span>15</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.05200000000000001</span>0.052</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CheckGlobalNamesTest</span><a href="test-CheckGlobalNamesTest.html">CheckGlobalNamesTest</a></td>
+        <td class="testPasses"><span class="sortValue">9</span>9</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.059000000000000004</span>0.059</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CheckRequiresForConstructorsTest</span><a href="test-CheckRequiresForConstructorsTest.html">CheckRequiresForConstructorsTest</a></td>
+        <td class="testPasses"><span class="sortValue">9</span>9</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.043000000000000003</span>0.043</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">InlineCostEstimatorTest</span><a href="test-InlineCostEstimatorTest.html">InlineCostEstimatorTest</a></td>
+        <td class="testPasses"><span class="sortValue">1</span>1</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.004</span>0.004</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">StripCodeTest</span><a href="test-StripCodeTest.html">StripCodeTest</a></td>
+        <td class="testPasses"><span class="sortValue">15</span>15</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.04000000000000001</span>0.04</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">InlineSimpleMethodsTest</span><a href="test-InlineSimpleMethodsTest.html">InlineSimpleMethodsTest</a></td>
+        <td class="testPasses"><span class="sortValue">15</span>15</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.047000000000000014</span>0.047</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">TightenTypesTest</span><a href="test-TightenTypesTest.html">TightenTypesTest</a></td>
+        <td class="testPasses"><span class="sortValue">21</span>21</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.13100000000000003</span>0.131</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">StatementFusionTest</span><a href="test-StatementFusionTest.html">StatementFusionTest</a></td>
+        <td class="testPasses"><span class="sortValue">8</span>8</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.036</span>0.036</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">VarCheckTest</span><a href="test-VarCheckTest.html">VarCheckTest</a></td>
+        <td class="testPasses"><span class="sortValue">10</span>10</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.011000000000000003</span>0.011</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CompilerTest</span><a href="test-CompilerTest.html">CompilerTest</a></td>
+        <td class="testPasses"><span class="sortValue">6</span>6</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.009000000000000001</span>0.009</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ShadowVariablesTest</span><a href="test-ShadowVariablesTest.html">ShadowVariablesTest</a></td>
+        <td class="testPasses"><span class="sortValue">5</span>5</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.012</span>0.012</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">PeepholeFoldWithTypesTest</span><a href="test-PeepholeFoldWithTypesTest.html">PeepholeFoldWithTypesTest</a></td>
+        <td class="testPasses"><span class="sortValue">6</span>6</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.025</span>0.025</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ReplaceIdGeneratorsTest</span><a href="test-ReplaceIdGeneratorsTest.html">ReplaceIdGeneratorsTest</a></td>
+        <td class="testPasses"><span class="sortValue">8</span>8</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.046000000000000006</span>0.046</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">VariableReferenceCheckTest</span><a href="test-VariableReferenceCheckTest.html">VariableReferenceCheckTest</a></td>
+        <td class="testPasses"><span class="sortValue">7</span>7</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.011000000000000001</span>0.011</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">RemoveUnusedClassPropertiesTest</span><a href="test-RemoveUnusedClassPropertiesTest.html">RemoveUnusedClassPropertiesTest</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.013999999999999999</span>0.014</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CombinedCompilerPassTest</span><a href="test-CombinedCompilerPassTest.html">CombinedCompilerPassTest</a></td>
+        <td class="testPasses"><span class="sortValue">2</span>2</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.002</span>0.002</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CheckDebuggerStatementTest</span><a href="test-CheckDebuggerStatementTest.html">CheckDebuggerStatementTest</a></td>
+        <td class="testPasses"><span class="sortValue">3</span>3</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.012</span>0.012</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CrossModuleMethodMotionTest</span><a href="test-CrossModuleMethodMotionTest.html">CrossModuleMethodMotionTest</a></td>
+        <td class="testPasses"><span class="sortValue">7</span>7</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.028</span>0.028</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ProcessCommonJSModulesTest</span><a href="test-ProcessCommonJSModulesTest.html">ProcessCommonJSModulesTest</a></td>
+        <td class="testPasses"><span class="sortValue">5</span>5</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.025</span>0.025</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">RecordFunctionInformationTest</span><a href="test-RecordFunctionInformationTest.html">RecordFunctionInformationTest</a></td>
+        <td class="testPasses"><span class="sortValue">2</span>2</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.012</span>0.012</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">FunctionTypeBuilderTest</span><a href="test-FunctionTypeBuilderTest.html">FunctionTypeBuilderTest</a></td>
+        <td class="testPasses"><span class="sortValue">2</span>2</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.01</span>0.01</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">SourceInformationAnnotatorTest</span><a href="test-SourceInformationAnnotatorTest.html">SourceInformationAnnotatorTest</a></td>
+        <td class="testPasses"><span class="sortValue">1</span>1</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.0</span>0</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">MustBeReachingVariableDefTest</span><a href="test-MustBeReachingVariableDefTest.html">MustBeReachingVariableDefTest</a></td>
+        <td class="testPasses"><span class="sortValue">11</span>11</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.014</span>0.014</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">OptimizeReturnsTest</span><a href="test-OptimizeReturnsTest.html">OptimizeReturnsTest</a></td>
+        <td class="testPasses"><span class="sortValue">7</span>7</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.020999999999999998</span>0.021</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">GlobalVarReferenceMapTest</span><a href="test-GlobalVarReferenceMapTest.html">GlobalVarReferenceMapTest</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.0</span>0</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">NodeUtilTest</span><a href="test-NodeUtilTest.html">NodeUtilTest</a></td>
+        <td class="testPasses"><span class="sortValue">39</span>39</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.08200000000000003</span>0.082</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">InlineVariablesConstantsTest</span><a href="test-InlineVariablesConstantsTest.html">InlineVariablesConstantsTest</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.056</span>0.056</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">NameAnalyzerTest</span><a href="test-NameAnalyzerTest.html">NameAnalyzerTest</a></td>
+        <td class="testPasses"><span class="sortValue">45</span>45</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.1710000000000001</span>0.171</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CheckProvidesTest</span><a href="test-CheckProvidesTest.html">CheckProvidesTest</a></td>
+        <td class="testPasses"><span class="sortValue">3</span>3</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.006</span>0.006</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">RenameLabelsTest</span><a href="test-RenameLabelsTest.html">RenameLabelsTest</a></td>
+        <td class="testPasses"><span class="sortValue">3</span>3</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.025</span>0.025</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">GoogleCodingConventionTest</span><a href="test-GoogleCodingConventionTest.html">GoogleCodingConventionTest</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.0</span>0</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">XtbMessageBundleTest</span><a href="test-XtbMessageBundleTest.html">XtbMessageBundleTest</a></td>
+        <td class="testPasses"><span class="sortValue">1</span>1</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.012</span>0.012</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">NameAnonymousFunctionsMappedTest</span><a href="test-NameAnonymousFunctionsMappedTest.html">NameAnonymousFunctionsMappedTest</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.008</span>0.008</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">RenamePropertiesTest</span><a href="test-RenamePropertiesTest.html">RenamePropertiesTest</a></td>
+        <td class="testPasses"><span class="sortValue">6</span>6</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.035</span>0.035</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">GroupVariableDeclarationsTest</span><a href="test-GroupVariableDeclarationsTest.html">GroupVariableDeclarationsTest</a></td>
+        <td class="testPasses"><span class="sortValue">2</span>2</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.038</span>0.038</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ScopedAliasesTest</span><a href="test-ScopedAliasesTest.html">ScopedAliasesTest</a></td>
+        <td class="testPasses"><span class="sortValue">18</span>18</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.04500000000000002</span>0.045</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">MakeDeclaredNamesUniqueTest</span><a href="test-MakeDeclaredNamesUniqueTest.html">MakeDeclaredNamesUniqueTest</a></td>
+        <td class="testPasses"><span class="sortValue">5</span>5</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.049</span>0.049</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">DefaultCodingConventionTest</span><a href="test-DefaultCodingConventionTest.html">DefaultCodingConventionTest</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.003</span>0.003</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">JSModuleGraphTest</span><a href="test-JSModuleGraphTest.html">JSModuleGraphTest</a></td>
+        <td class="testPasses"><span class="sortValue">9</span>9</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.003</span>0.003</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">DeadAssignmentsEliminationTest</span><a href="test-DeadAssignmentsEliminationTest.html">DeadAssignmentsEliminationTest</a></td>
+        <td class="testPasses"><span class="sortValue">19</span>19</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.19000000000000006</span>0.19</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">AmbiguatePropertiesTest</span><a href="test-AmbiguatePropertiesTest.html">AmbiguatePropertiesTest</a></td>
+        <td class="testPasses"><span class="sortValue">13</span>13</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.25400000000000006</span>0.254</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">IgnoreCajaPropertiesTest</span><a href="test-IgnoreCajaPropertiesTest.html">IgnoreCajaPropertiesTest</a></td>
+        <td class="testPasses"><span class="sortValue">3</span>3</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.014</span>0.014</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">SemanticReverseAbstractInterpreterTest</span><a href="test-SemanticReverseAbstractInterpreterTest.html">SemanticReverseAbstractInterpreterTest</a></td>
+        <td class="testPasses"><span class="sortValue">14</span>14</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.005</span>0.005</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">PeepholeOptimizationsPassTest</span><a href="test-PeepholeOptimizationsPassTest.html">PeepholeOptimizationsPassTest</a></td>
+        <td class="testPasses"><span class="sortValue">2</span>2</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.005</span>0.005</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ObjectPropertyStringPostprocessTest</span><a href="test-ObjectPropertyStringPostprocessTest.html">ObjectPropertyStringPostprocessTest</a></td>
+        <td class="testPasses"><span class="sortValue">3</span>3</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.006</span>0.006</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CommandLineRunnerTest</span><a href="test-CommandLineRunnerTest.html">CommandLineRunnerTest</a></td>
+        <td class="testPasses"><span class="sortValue">56</span>56</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.7720000000000004</span>0.772</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">RemoveUnusedVarsTest</span><a href="test-RemoveUnusedVarsTest.html">RemoveUnusedVarsTest</a></td>
+        <td class="testPasses"><span class="sortValue">24</span>24</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.14000000000000004</span>0.14</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">TypeInferenceTest</span><a href="test-TypeInferenceTest.html">TypeInferenceTest</a></td>
+        <td class="testPasses"><span class="sortValue">35</span>35</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.05400000000000003</span>0.054</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">AstParallelizerTest</span><a href="test-AstParallelizerTest.html">AstParallelizerTest</a></td>
+        <td class="testPasses"><span class="sortValue">2</span>2</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.013</span>0.013</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">PureFunctionIdentifierTest</span><a href="test-PureFunctionIdentifierTest.html">PureFunctionIdentifierTest</a></td>
+        <td class="testPasses"><span class="sortValue">22</span>22</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.3070000000000001</span>0.307</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ReplaceMessagesForChromeTest</span><a href="test-ReplaceMessagesForChromeTest.html">ReplaceMessagesForChromeTest</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.013000000000000001</span>0.013</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">RemoveUnusedNamesTest</span><a href="test-RemoveUnusedNamesTest.html">RemoveUnusedNamesTest</a></td>
+        <td class="testPasses"><span class="sortValue">3</span>3</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.017</span>0.017</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">TypedScopeCreatorTest</span><a href="test-TypedScopeCreatorTest.html">TypedScopeCreatorTest</a></td>
+        <td class="testPasses"><span class="sortValue">41</span>41</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.15500000000000008</span>0.155</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">VariableVisibilityAnalysisTest</span><a href="test-VariableVisibilityAnalysisTest.html">VariableVisibilityAnalysisTest</a></td>
+        <td class="testPasses"><span class="sortValue">2</span>2</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.006</span>0.006</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">JsMessageExtractorTest</span><a href="test-JsMessageExtractorTest.html">JsMessageExtractorTest</a></td>
+        <td class="testPasses"><span class="sortValue">6</span>6</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.006</span>0.006</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">NodeIteratorsTest</span><a href="test-NodeIteratorsTest.html">NodeIteratorsTest</a></td>
+        <td class="testPasses"><span class="sortValue">7</span>7</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.005</span>0.005</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">NameAnonymousFunctionsTest</span><a href="test-NameAnonymousFunctionsTest.html">NameAnonymousFunctionsTest</a></td>
+        <td class="testPasses"><span class="sortValue">7</span>7</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.017</span>0.017</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ClosureOptimizePrimitivesTest</span><a href="test-ClosureOptimizePrimitivesTest.html">ClosureOptimizePrimitivesTest</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.008</span>0.008</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">JsMessageTest</span><a href="test-JsMessageTest.html">JsMessageTest</a></td>
+        <td class="testPasses"><span class="sortValue">2</span>2</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.0</span>0</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CheckMissingReturnTest</span><a href="test-CheckMissingReturnTest.html">CheckMissingReturnTest</a></td>
+        <td class="testPasses"><span class="sortValue">3</span>3</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.113</span>0.113</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CollapseAnonymousFunctionsTest</span><a href="test-CollapseAnonymousFunctionsTest.html">CollapseAnonymousFunctionsTest</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.013000000000000001</span>0.013</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">CompilerOptionsTest</span><a href="test-CompilerOptionsTest.html">CompilerOptionsTest</a></td>
+        <td class="testPasses"><span class="sortValue">1</span>1</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.0</span>0</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">ControlFlowAnalysisTest</span><a href="test-ControlFlowAnalysisTest.html">ControlFlowAnalysisTest</a></td>
+        <td class="testPasses"><span class="sortValue">26</span>26</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.03800000000000001</span>0.038</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">TypeCheckFunctionCheckTest</span><a href="test-TypeCheckFunctionCheckTest.html">TypeCheckFunctionCheckTest</a></td>
+        <td class="testPasses"><span class="sortValue">1</span>1</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.009</span>0.009</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">MarkNoSideEffectCallsTest</span><a href="test-MarkNoSideEffectCallsTest.html">MarkNoSideEffectCallsTest</a></td>
+        <td class="testPasses"><span class="sortValue">4</span>4</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.031</span>0.031</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">VariableMapTest</span><a href="test-VariableMapTest.html">VariableMapTest</a></td>
+        <td class="testPasses"><span class="sortValue">3</span>3</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.004</span>0.004</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">RemoveUnusedPrototypePropertiesTest</span><a href="test-RemoveUnusedPrototypePropertiesTest.html">RemoveUnusedPrototypePropertiesTest</a></td>
+        <td class="testPasses"><span class="sortValue">6</span>6</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.049</span>0.049</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">SanityCheckTest</span><a href="test-SanityCheckTest.html">SanityCheckTest</a></td>
+        <td class="testPasses"><span class="sortValue">3</span>3</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.007</span>0.007</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">PeepholeReplaceKnownMethodsTest</span><a href="test-PeepholeReplaceKnownMethodsTest.html">PeepholeReplaceKnownMethodsTest</a></td>
+        <td class="testPasses"><span class="sortValue">11</span>11</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.216</span>0.216</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">FunctionInjectorTest</span><a href="test-FunctionInjectorTest.html">FunctionInjectorTest</a></td>
+        <td class="testPasses"><span class="sortValue">22</span>22</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.03100000000000001</span>0.031</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">SideEffectsAnalysisTest</span><a href="test-SideEffectsAnalysisTest.html">SideEffectsAnalysisTest</a></td>
+        <td class="testPasses"><span class="sortValue">6</span>6</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.11199999999999999</span>0.112</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">LightweightMessageFormatterTest</span><a href="test-LightweightMessageFormatterTest.html">LightweightMessageFormatterTest</a></td>
+        <td class="testPasses"><span class="sortValue">5</span>5</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.001</span>0.001</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">GenerateExportsTest</span><a href="test-GenerateExportsTest.html">GenerateExportsTest</a></td>
+        <td class="testPasses"><span class="sortValue">7</span>7</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.015000000000000003</span>0.015</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">DefinitionsRemoverTest</span><a href="test-DefinitionsRemoverTest.html">DefinitionsRemoverTest</a></td>
+        <td class="testPasses"><span class="sortValue">5</span>5</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.025</span>0.025</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">InlineObjectLiteralsTest</span><a href="test-InlineObjectLiteralsTest.html">InlineObjectLiteralsTest</a></td>
+        <td class="testPasses"><span class="sortValue">9</span>9</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.05999999999999999</span>0.06</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">DisambiguatePropertiesTest</span><a href="test-DisambiguatePropertiesTest.html">DisambiguatePropertiesTest</a></td>
+        <td class="testPasses"><span class="sortValue">28</span>28</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.3780000000000001</span>0.378</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">TransformAMDToCJSModuleTest</span><a href="test-TransformAMDToCJSModuleTest.html">TransformAMDToCJSModuleTest</a></td>
+        <td class="testPasses"><span class="sortValue">7</span>7</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.037</span>0.037</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">PeepholeSimplifyRegExpTest</span><a href="test-PeepholeSimplifyRegExpTest.html">PeepholeSimplifyRegExpTest</a></td>
+        <td class="testPasses"><span class="sortValue">13</span>13</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.37000000000000005</span>0.37</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">AliasStringsTest</span><a href="test-AliasStringsTest.html">AliasStringsTest</a></td>
+        <td class="testPasses"><span class="sortValue">8</span>8</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.097</span>0.097</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">PrepareAstTest</span><a href="test-PrepareAstTest.html">PrepareAstTest</a></td>
+        <td class="testPasses"><span class="sortValue">3</span>3</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.002</span>0.002</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+      
+    
+        
+        <tr>
+        <td><span class="sortValue">InlinePropertiesTest</span><a href="test-InlinePropertiesTest.html">InlinePropertiesTest</a></td>
+        <td class="testPasses"><span class="sortValue">6</span>6</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td><span class="sortValue">0.039</span>0.039</td>
+        <td>
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+               </tbody>
+        </table>
+
+    </div> 
+</div> 
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu Jan 12 2023 14:04:35 MST using coverage data from Thu Jan 12 2023 14:04:30 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

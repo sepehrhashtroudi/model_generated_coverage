@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":165,"id":78481,"methods":[{"el":40,"sc":3,"sl":36},{"el":47,"sc":3,"sl":42},{"el":53,"sc":3,"sl":49},{"el":62,"sc":1,"sl":59}],"name":"PeepholeOptimizationsPassTest","sl":32},{"el":92,"id":78491,"methods":[{"el":91,"sc":5,"sl":73}],"name":"PeepholeOptimizationsPassTest.RemoveNodesNamedXUnderVarOptimization","sl":71},{"el":111,"id":78505,"methods":[{"el":110,"sc":5,"sl":100}],"name":"PeepholeOptimizationsPassTest.RemoveNodesNamedXOptimization","sl":98},{"el":131,"id":78513,"methods":[{"el":130,"sc":5,"sl":119}],"name":"PeepholeOptimizationsPassTest.RemoveParentVarsForNodesNamedX","sl":117},{"el":150,"id":78525,"methods":[{"el":149,"sc":5,"sl":138}],"name":"PeepholeOptimizationsPassTest.RenameYToX","sl":137}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_252":{"methods":[{"sl":42},{"sl":49},{"sl":59},{"sl":100},{"sl":119}],"name":"testOptimizationsRemoveParentAfterRemoveChild1","pass":true,"statements":[{"sl":44},{"sl":52},{"sl":60},{"sl":61},{"sl":102},{"sl":103},{"sl":104},{"sl":106},{"sl":109},{"sl":121},{"sl":129}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [252], [], [252], [], [], [], [], [252], [], [], [252], [], [], [], [], [], [], [252], [252], [252], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [252], [], [252], [252], [252], [], [252], [], [], [252], [], [], [], [], [], [], [], [], [], [252], [], [252], [], [], [], [], [], [], [], [252], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]

@@ -1,0 +1,39 @@
+Testsuite: org.apache.commons.lang3.builder.CompareToBuilderTest
+Tests run: 16, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 0.042 sec
+
+Testcase: testToComparison231 took 0.019 sec
+Testcase: testReflectionFloatArray401 took 0.001 sec
+	FAILED
+Expected exception: java.lang.ClassCastException
+junit.framework.AssertionFailedError: Expected exception: java.lang.ClassCastException
+
+Testcase: testReflectionFloatArray402 took 0.001 sec
+	Caused an ERROR
+Unexpected exception, expected<java.lang.ClassCastException> but was<java.lang.AssertionError>
+java.lang.Exception: Unexpected exception, expected<java.lang.ClassCastException> but was<java.lang.AssertionError>
+Caused by: java.lang.AssertionError
+	at org.apache.commons.lang3.builder.CompareToBuilderTest.testReflectionFloatArray402(CompareToBuilderTest.java:357)
+
+Testcase: testBoolean154 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.builder.CompareToBuilderTest.testBoolean154(CompareToBuilderTest.java:205)
+
+Testcase: testBooleanArray5 took 0 sec
+Testcase: testMultiCharArray496 took 0 sec
+Testcase: testObject229 took 0 sec
+Testcase: testObject232 took 0 sec
+Testcase: testObjectArrayHiddenByObject230 took 0 sec
+Testcase: testCharArray124 took 0 sec
+Testcase: testConstructor228 took 0 sec
+Testcase: testReflectionCompareEx277 took 0 sec
+Testcase: testObjectArray122 took 0 sec
+Testcase: testLongArray32 took 0 sec
+Testcase: testReflectionObjectCycle400 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.builder.CompareToBuilderTest.testReflectionObjectCycle400(CompareToBuilderTest.java:312)
+
+Testcase: testBooleanArrayHiddenByObject155 took 0 sec

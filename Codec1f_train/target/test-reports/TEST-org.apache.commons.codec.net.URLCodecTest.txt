@@ -1,0 +1,15 @@
+Testsuite: org.apache.commons.codec.net.URLCodecTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+
+Testcase: testDecodeInvalid5 took 0.009 sec
+Testcase: testEncodeObjects17 took 0.002 sec
+Testcase: testInvalidEncoding70 took 0.007 sec
+Testcase: testBasicEncodeDecode110 took 0.003 sec
+Testcase: testDecodeStringWithNull104 took 0.001 sec
+Testcase: testEncodeStringWithNull119 took 0.001 sec
+Testcase: testEncodeDecodeNull112 took 0.001 sec
+Testcase: testEncodeNull115 took 0.001 sec
+Testcase: testUTF8RoundTrip38 took 0.001 sec
+Testcase: testDecodeWithNullArray121 took 0.001 sec
+Testcase: testDecodeObjects64 took 0.001 sec
+Testcase: testEncodeUrlWithNullBitSet124 took 0 sec

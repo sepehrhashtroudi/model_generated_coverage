@@ -1,0 +1,19 @@
+Testsuite: org.apache.commons.lang3.time.FastDateFormatTest
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec
+
+Testcase: testTimeDateDefaults370 took 0.044 sec
+	FAILED
+expected:<FastDateFormat[MMMM d, yyyy h:mm:ss a,en_CA,America/Edmonton]> but was:<FastDateFormat[MMMM d, yyyy,en_US,America/Edmonton]>
+junit.framework.AssertionFailedError: expected:<FastDateFormat[MMMM d, yyyy h:mm:ss a,en_CA,America/Edmonton]> but was:<FastDateFormat[MMMM d, yyyy,en_US,America/Edmonton]>
+	at org.apache.commons.lang3.time.FastDateFormatTest.testTimeDateDefaults370(FastDateFormatTest.java:76)
+
+Testcase: testTimeDateDefaults374 took 0.002 sec
+Testcase: test_getDateInstance_int372 took 0.001 sec
+Testcase: test_getDateInstance_int_Locale369 took 0.004 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.time.FastDateFormatTest.test_getDateInstance_int_Locale369(FastDateFormatTest.java:67)
+
+Testcase: testDateDefaults371 took 0.001 sec
+Testcase: testTimeDateDefaults69 took 0.002 sec

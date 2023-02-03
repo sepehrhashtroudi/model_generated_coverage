@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":116,"id":84670,"methods":[{"el":32,"sc":3,"sl":27},{"el":37,"sc":3,"sl":34},{"el":43,"sc":3,"sl":39},{"el":49,"sc":1,"sl":46},{"el":55,"sc":1,"sl":52},{"el":61,"sc":1,"sl":58},{"el":66,"sc":1,"sl":64},{"el":72,"sc":1,"sl":69}],"name":"ShadowVariablesTest","sl":24}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_14":{"methods":[{"sl":27},{"sl":34},{"sl":58}],"name":"testNoShadowReferencedVariables1027","pass":true,"statements":[{"sl":29},{"sl":36},{"sl":59},{"sl":60}]},"test_1690":{"methods":[{"sl":27},{"sl":34},{"sl":69}],"name":"testNoShadowLessPopularName2360","pass":true,"statements":[{"sl":29},{"sl":36},{"sl":70},{"sl":71}]},"test_1856":{"methods":[{"sl":27},{"sl":34},{"sl":52}],"name":"testSharingAcrossInnerScopes975","pass":true,"statements":[{"sl":29},{"sl":36},{"sl":53},{"sl":54}]},"test_386":{"methods":[{"sl":27},{"sl":34},{"sl":64}],"name":"testExportedLocal12015","pass":true,"statements":[{"sl":29},{"sl":36},{"sl":65}]},"test_555":{"methods":[{"sl":27},{"sl":34},{"sl":46}],"name":"testShadowBleedInFunctionName416","pass":true,"statements":[{"sl":29},{"sl":36},{"sl":47},{"sl":48}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [14, 555, 386, 1856, 1690], [], [14, 555, 386, 1856, 1690], [], [], [], [], [14, 555, 386, 1856, 1690], [], [14, 555, 386, 1856, 1690], [], [], [], [], [], [], [], [], [], [555], [555], [555], [], [], [], [1856], [1856], [1856], [], [], [], [14], [14], [14], [], [], [], [386], [386], [], [], [], [1690], [1690], [1690], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]

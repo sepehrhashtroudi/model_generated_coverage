@@ -1,0 +1,83 @@
+Testsuite: org.apache.commons.lang3.text.StrBuilderTest
+Tests run: 21, Failures: 7, Errors: 4, Skipped: 0, Time elapsed: 0.06 sec
+
+Testcase: testLeftString198 took 0.025 sec
+Testcase: testLeftString199 took 0.002 sec
+	FAILED
+expected:<[right]> but was:<[left ]>
+junit.framework.AssertionFailedError: expected:<[right]> but was:<[left ]>
+	at org.apache.commons.lang3.text.StrBuilderTest.testLeftString199(StrBuilderTest.java:397)
+
+Testcase: testCapacityAndLength385 took 0.002 sec
+Testcase: testReplaceAll_String_String63 took 0 sec
+Testcase: testLastIndexOf_String28 took 0 sec
+Testcase: testMidString59 took 0.001 sec
+	FAILED
+expected:<6> but was:<hello >
+junit.framework.AssertionFailedError: expected:<6> but was:<hello >
+	at org.apache.commons.lang3.text.StrBuilderTest.testMidString59(StrBuilderTest.java:110)
+
+Testcase: testReplaceAll_char_char13 took 0 sec
+	FAILED
+expected:<dbcbccb[a]> but was:<dbcbccb[d]>
+junit.framework.AssertionFailedError: expected:<dbcbccb[a]> but was:<dbcbccb[d]>
+	at org.apache.commons.lang3.text.StrBuilderTest.testReplaceAll_char_char13(StrBuilderTest.java:62)
+
+Testcase: testAsReader74 took 0.001 sec
+Testcase: testReplaceAll_StrMatcher_String182 took 0.006 sec
+Testcase: testReplaceAll_StrMatcher_String185 took 0 sec
+Testcase: testMatcherIndices184 took 0 sec
+	FAILED
+expected:<2> but was:<0>
+junit.framework.AssertionFailedError: expected:<2> but was:<0>
+	at org.apache.commons.lang3.text.StrBuilderTest.testMatcherIndices184(StrBuilderTest.java:330)
+
+Testcase: testReplaceFirst_char_char17 took 0 sec
+Testcase: testDeleteIntInt179 took 0 sec
+Testcase: testNoneMatcher181 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.text.StrMatcher.isMatch(StrMatcher.java:268)
+	at org.apache.commons.lang3.text.StrBuilderTest.testNoneMatcher181(StrBuilderTest.java:251)
+
+Testcase: testSplitMatcher12 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.text.StrMatcher.isMatch(StrMatcher.java:268)
+	at org.apache.commons.lang3.text.StrBuilderTest.testSplitMatcher12(StrBuilderTest.java:46)
+
+Testcase: testIndexOfLang294354 took 0 sec
+Testcase: testLeftString16 took 0 sec
+	FAILED
+expected:<left [right]> but was:<left []>
+junit.framework.AssertionFailedError: expected:<left [right]> but was:<left []>
+	at org.apache.commons.lang3.text.StrBuilderTest.testLeftString16(StrBuilderTest.java:73)
+
+Testcase: testCharMatcher_char186 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.text.StrMatcher.isMatch(StrMatcher.java:268)
+	at org.apache.commons.lang3.text.StrBuilderTest.testCharMatcher_char186(StrBuilderTest.java:363)
+
+Testcase: testCharMatcher_char187 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.text.StrMatcher.isMatch(StrMatcher.java:268)
+	at org.apache.commons.lang3.text.StrBuilderTest.testCharMatcher_char187(StrBuilderTest.java:376)
+
+Testcase: testReplace_StrMatcher_String_int_int180 took 0 sec
+	FAILED
+expected:<[]bc> but was:<[a]bc>
+junit.framework.AssertionFailedError: expected:<[]bc> but was:<[a]bc>
+	at org.apache.commons.lang3.text.StrBuilderTest.testReplace_StrMatcher_String_int_int180(StrBuilderTest.java:217)
+
+Testcase: testReplace_StrMatcher_String_int_int183 took 0 sec
+	FAILED
+expected:<[]bc> but was:<[a]bc>
+junit.framework.AssertionFailedError: expected:<[]bc> but was:<[a]bc>
+	at org.apache.commons.lang3.text.StrBuilderTest.testReplace_StrMatcher_String_int_int183(StrBuilderTest.java:295)
+

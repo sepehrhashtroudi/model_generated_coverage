@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":49,"id":6810,"methods":[{"el":30,"sc":3,"sl":27},{"el":40,"sc":3,"sl":38},{"el":48,"sc":3,"sl":46}],"name":"FilePosition","sl":23}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_11":{"methods":[{"sl":27},{"sl":38},{"sl":46}],"name":"testSourceMapExpansion3427","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":39},{"sl":47}]},"test_126":{"methods":[{"sl":27},{"sl":38},{"sl":46}],"name":"testNameMapExpansion3413","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":39},{"sl":47}]},"test_16":{"methods":[{"sl":27},{"sl":38},{"sl":46}],"name":"testMultilineMapping124","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":39},{"sl":47}]},"test_171":{"methods":[{"sl":27},{"sl":38},{"sl":46}],"name":"testBasicDeterminism123","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":39},{"sl":47}]},"test_2":{"methods":[{"sl":27},{"sl":38},{"sl":46}],"name":"testVariableMapExpansion3424","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":39},{"sl":47}]},"test_223":{"methods":[{"sl":27},{"sl":38},{"sl":46}],"name":"testSourceMapExpansion1402","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":39},{"sl":47}]},"test_254":{"methods":[{"sl":27},{"sl":38},{"sl":46}],"name":"testGoldenOutput212","pass":false,"statements":[{"sl":28},{"sl":29},{"sl":39},{"sl":47}]},"test_79":{"methods":[{"sl":27},{"sl":38},{"sl":46}],"name":"testGoldenOutput2125","pass":false,"statements":[{"sl":28},{"sl":29},{"sl":39},{"sl":47}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [254, 11, 2, 79, 171, 16, 223, 126], [254, 11, 2, 79, 171, 16, 223, 126], [254, 11, 2, 79, 171, 16, 223, 126], [], [], [], [], [], [], [], [], [254, 11, 2, 79, 171, 16, 223, 126], [254, 11, 2, 79, 171, 16, 223, 126], [], [], [], [], [], [], [254, 11, 2, 79, 171, 16, 223, 126], [254, 11, 2, 79, 171, 16, 223, 126], [], []]

@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Thu Jan 12 2023 14:04:05 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class TypeCheckTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="TypeCheckTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>TypeCheckTest</td>
+        <td class="testPasses"><span class="sortValue">171</span>171</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.754</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testTemplateType5534</span><a href="TypeCheckTest_testTemplateType5534_wc.html">TypeCheckTest.testTemplateType5534</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466720</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testForwardTypeDeclaration5629</span><a href="TypeCheckTest_testForwardTypeDeclaration5629_1ta.html">TypeCheckTest.testForwardTypeDeclaration5629</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466743</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testSetprop91982</span><a href="TypeCheckTest_testSetprop91982_148.html">TypeCheckTest.testSetprop91982</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467433</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testComparison21177</span><a href="TypeCheckTest_testComparison21177_1la.html">TypeCheckTest.testComparison21177</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466976</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testConstructorType12139</span><a href="TypeCheckTest_testConstructorType12139_nx.html">TypeCheckTest.testConstructorType12139</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466664</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testFunctionBind31002</span><a href="TypeCheckTest_testFunctionBind31002_1hx.html">TypeCheckTest.testFunctionBind31002</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466861</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testBug9014551672</span><a href="TypeCheckTest_testBug9014551672_1ng.html">TypeCheckTest.testBug9014551672</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467256</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testGlobalThis2b1904</span><a href="TypeCheckTest_testGlobalThis2b1904_5.html">TypeCheckTest.testGlobalThis2b1904</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467370</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testIn22349</span><a href="TypeCheckTest_testIn22349_6j.html">TypeCheckTest.testIn22349</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467649</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testTypeCheck131187</span><a href="TypeCheckTest_testTypeCheck131187_nv.html">TypeCheckTest.testTypeCheck131187</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466988</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testCircularTypeDef2275</span><a href="TypeCheckTest_testCircularTypeDef2275_4y.html">TypeCheckTest.testCircularTypeDef2275</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467608</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testInterfaceAssignment7366</span><a href="TypeCheckTest_testInterfaceAssignment7366_1su.html">TypeCheckTest.testInterfaceAssignment7366</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467695</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testGetpropDict21100</span><a href="TypeCheckTest_testGetpropDict21100_1oa.html">TypeCheckTest.testGetpropDict21100</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466873</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testBadImplements42249</span><a href="TypeCheckTest_testBadImplements42249_l4.html">TypeCheckTest.testBadImplements42249</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467590</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testIssue7251236</span><a href="TypeCheckTest_testIssue7251236_qu.html">TypeCheckTest.testIssue7251236</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467031</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testQualifiedNameReduction5c831</span><a href="TypeCheckTest_testQualifiedNameReduction5c831_1u8.html">TypeCheckTest.testQualifiedNameReduction5c831</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466807</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testIIFE41742</span><a href="TypeCheckTest_testIIFE41742_1cp.html">TypeCheckTest.testIIFE41742</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467272</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testIIFE11351</span><a href="TypeCheckTest_testIIFE11351_co.html">TypeCheckTest.testIIFE11351</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467061</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testFunctionLiteralDefinedThisArgument21620</span><a href="TypeCheckTest_testFunctionLiteralDefinedThisArgument21620_15z.html">TypeCheckTest.testFunctionLiteralDefinedThisArgument21620</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467237</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testInterfaceInheritanceCheck102108</span><a href="TypeCheckTest_testInterfaceInheritanceCheck102108_170.html">TypeCheckTest.testInterfaceInheritanceCheck102108</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467490</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testAnnotatedPropertyOnInterface4393</span><a href="TypeCheckTest_testAnnotatedPropertyOnInterface4393_1e7.html">TypeCheckTest.testAnnotatedPropertyOnInterface4393</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466689</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testSetprop71573</span><a href="TypeCheckTest_testSetprop71573_1fc.html">TypeCheckTest.testSetprop71573</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467217</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testTypeDef22343</span><a href="TypeCheckTest_testTypeDef22343_1pg.html">TypeCheckTest.testTypeDef22343</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467633</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testCast5a204</span><a href="TypeCheckTest_testCast5a204_13g.html">TypeCheckTest.testCast5a204</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466914</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testFunctionBind41821</span><a href="TypeCheckTest_testFunctionBind41821_lr.html">TypeCheckTest.testFunctionBind41821</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467323</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testBitOperation32055</span><a href="TypeCheckTest_testBitOperation32055_1sk.html">TypeCheckTest.testBitOperation32055</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467475</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testDirectPrototypeAssign2377</span><a href="TypeCheckTest_testDirectPrototypeAssign2377_46.html">TypeCheckTest.testDirectPrototypeAssign2377</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467662</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testLends5207</span><a href="TypeCheckTest_testLends5207_r7.html">TypeCheckTest.testLends5207</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467702</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testThisTypeOfFunction41668</span><a href="TypeCheckTest_testThisTypeOfFunction41668_7o.html">TypeCheckTest.testThisTypeOfFunction41668</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467249</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testSwitchCase3424</span><a href="TypeCheckTest_testSwitchCase3424_1t0.html">TypeCheckTest.testSwitchCase3424</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466699</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testBug19407692247</span><a href="TypeCheckTest_testBug19407692247_1te.html">TypeCheckTest.testBug19407692247</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467584</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testLends71151</span><a href="TypeCheckTest_testLends71151_1ek.html">TypeCheckTest.testLends71151</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466948</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testThisTypeOfFunction1724</span><a href="TypeCheckTest_testThisTypeOfFunction1724_8y.html">TypeCheckTest.testThisTypeOfFunction1724</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466772</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testCast331310</span><a href="TypeCheckTest_testCast331310_k.html">TypeCheckTest.testCast331310</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467038</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testRecordType71114</span><a href="TypeCheckTest_testRecordType71114_1ty.html">TypeCheckTest.testRecordType71114</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466925</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testNullAnd919</span><a href="TypeCheckTest_testNullAnd919_1qv.html">TypeCheckTest.testNullAnd919</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466847</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testMultipleExtendsInterface62198</span><a href="TypeCheckTest_testMultipleExtendsInterface62198_ke.html">TypeCheckTest.testMultipleExtendsInterface62198</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467550</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testQualifiedNameInference131844</span><a href="TypeCheckTest_testQualifiedNameInference131844_10t.html">TypeCheckTest.testQualifiedNameInference131844</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467344</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testObjectLiteralDeclaration7293</span><a href="TypeCheckTest_testObjectLiteralDeclaration7293_14d.html">TypeCheckTest.testObjectLiteralDeclaration7293</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466888</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testForwardTypeDeclaration82088</span><a href="TypeCheckTest_testForwardTypeDeclaration82088_1x.html">TypeCheckTest.testForwardTypeDeclaration82088</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467487</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testEnum391954</span><a href="TypeCheckTest_testEnum391954_1hq.html">TypeCheckTest.testEnum391954</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467406</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testInterfacePropertyOverride11792</span><a href="TypeCheckTest_testInterfacePropertyOverride11792_me.html">TypeCheckTest.testInterfacePropertyOverride11792</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467311</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testDeleteOperator21989</span><a href="TypeCheckTest_testDeleteOperator21989_7c.html">TypeCheckTest.testDeleteOperator21989</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467440</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testBadDict1968</span><a href="TypeCheckTest_testBadDict1968_1h4.html">TypeCheckTest.testBadDict1968</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467419</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testPropAccess480</span><a href="TypeCheckTest_testPropAccess480_1bu.html">TypeCheckTest.testPropAccess480</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467709</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testUnionTemplateThisType1536</span><a href="TypeCheckTest_testUnionTemplateThisType1536_18l.html">TypeCheckTest.testUnionTemplateThisType1536</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467172</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testImplementsExtendsLoop1439</span><a href="TypeCheckTest_testImplementsExtendsLoop1439_1s1.html">TypeCheckTest.testImplementsExtendsLoop1439</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467104</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testUndefinedNode1525</span><a href="TypeCheckTest_testUndefinedNode1525_17l.html">TypeCheckTest.testUndefinedNode1525</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467163</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testMultipleExtendsInterface21388</span><a href="TypeCheckTest_testMultipleExtendsInterface21388_143.html">TypeCheckTest.testMultipleExtendsInterface21388</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467071</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testForIn2857</span><a href="TypeCheckTest_testForIn2857_r3.html">TypeCheckTest.testForIn2857</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466829</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testBitOperation11586</span><a href="TypeCheckTest_testBitOperation11586_1b3.html">TypeCheckTest.testBitOperation11586</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467223</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testBadInterfaceExtends1836</span><a href="TypeCheckTest_testBadInterfaceExtends1836_1ql.html">TypeCheckTest.testBadInterfaceExtends1836</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466812</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testTypeInferenceWithNoEntry1651</span><a href="TypeCheckTest_testTypeInferenceWithNoEntry1651_12u.html">TypeCheckTest.testTypeInferenceWithNoEntry1651</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466747</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testForinOnStruct2432</span><a href="TypeCheckTest_testForinOnStruct2432_l3.html">TypeCheckTest.testForinOnStruct2432</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467689</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testInheritanceCheck21788</span><a href="TypeCheckTest_testInheritanceCheck21788_15d.html">TypeCheckTest.testInheritanceCheck21788</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467305</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testWhileRestrictsType2733</span><a href="TypeCheckTest_testWhileRestrictsType2733_s2.html">TypeCheckTest.testWhileRestrictsType2733</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466777</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testGetpropDict1693</span><a href="TypeCheckTest_testGetpropDict1693_8s.html">TypeCheckTest.testGetpropDict1693</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466766</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testObjLitDef2a377</span><a href="TypeCheckTest_testObjLitDef2a377_1ho.html">TypeCheckTest.testObjLitDef2a377</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466670</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testTypeCheckCustomExterns21784</span><a href="TypeCheckTest_testTypeCheckCustomExterns21784_ai.html">TypeCheckTest.testTypeCheckCustomExterns21784</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467290</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testImplicitCast1375</span><a href="TypeCheckTest_testImplicitCast1375_147.html">TypeCheckTest.testImplicitCast1375</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467068</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testIssue7002241</span><a href="TypeCheckTest_testIssue7002241_ei.html">TypeCheckTest.testIssue7002241</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467576</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testInferredParam51934</span><a href="TypeCheckTest_testInferredParam51934_it.html">TypeCheckTest.testInferredParam51934</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467387</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testMissingProperty332132</span><a href="TypeCheckTest_testMissingProperty332132_15u.html">TypeCheckTest.testMissingProperty332132</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467504</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testObjLitDef62417</span><a href="TypeCheckTest_testObjLitDef62417_e3.html">TypeCheckTest.testObjLitDef62417</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467676</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testLends81807</span><a href="TypeCheckTest_testLends81807_7e.html">TypeCheckTest.testLends81807</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467317</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testObjectLiteralDeclaration11554</span><a href="TypeCheckTest_testObjectLiteralDeclaration11554_1nl.html">TypeCheckTest.testObjectLiteralDeclaration11554</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467194</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testDataPropertyOnInterface21879</span><a href="TypeCheckTest_testDataPropertyOnInterface21879_1q4.html">TypeCheckTest.testDataPropertyOnInterface21879</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467356</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testExtendedInterfacePropertiesCompatibility4683</span><a href="TypeCheckTest_testExtendedInterfacePropertiesCompatibility4683_13q.html">TypeCheckTest.testExtendedInterfacePropertiesCompatibility4683</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466759</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testBadInterfaceExtendsNonExistentInterfaces1939</span><a href="TypeCheckTest_testBadInterfaceExtendsNonExistentInterfaces1939_135.html">TypeCheckTest.testBadInterfaceExtendsNonExistentInterfaces1939</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467395</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testGetelemStruct71468</span><a href="TypeCheckTest_testGetelemStruct71468_q.html">TypeCheckTest.testGetelemStruct71468</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467108</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testCall8431</span><a href="TypeCheckTest_testCall8431_zm.html">TypeCheckTest.testCall8431</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466920</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testMissingProperty172195</span><a href="TypeCheckTest_testMissingProperty172195_l.html">TypeCheckTest.testMissingProperty172195</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467544</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testBooleanReduction4115</span><a href="TypeCheckTest_testBooleanReduction4115_ob.html">TypeCheckTest.testBooleanReduction4115</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467727</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testAdd41214</span><a href="TypeCheckTest_testAdd41214_rh.html">TypeCheckTest.testAdd41214</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467001</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testIssue6881504</span><a href="TypeCheckTest_testIssue6881504_1vf.html">TypeCheckTest.testIssue6881504</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467154</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testCast272022</span><a href="TypeCheckTest_testCast272022_sg.html">TypeCheckTest.testCast272022</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467452</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testArrayAccess61137</span><a href="TypeCheckTest_testArrayAccess61137_1sv.html">TypeCheckTest.testArrayAccess61137</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466931</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testMethodInference72385</span><a href="TypeCheckTest_testMethodInference72385_1k5.html">TypeCheckTest.testMethodInference72385</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467669</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testSwitchCase11786</span><a href="TypeCheckTest_testSwitchCase11786_bj.html">TypeCheckTest.testSwitchCase11786</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467299</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testCatchExpression21569</span><a href="TypeCheckTest_testCatchExpression21569_1ix.html">TypeCheckTest.testCatchExpression21569</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467204</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testForwardTypeDeclaration6266</span><a href="TypeCheckTest_testForwardTypeDeclaration6266_1ve.html">TypeCheckTest.testForwardTypeDeclaration6266</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466885</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testInterfaceInheritanceCheck133</span><a href="TypeCheckTest_testInterfaceInheritanceCheck133_j.html">TypeCheckTest.testInterfaceInheritanceCheck133</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466676</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testBitOperation4750</span><a href="TypeCheckTest_testBitOperation4750_11u.html">TypeCheckTest.testBitOperation4750</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466783</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testDuplicateRecordFields21559</span><a href="TypeCheckTest_testDuplicateRecordFields21559_1to.html">TypeCheckTest.testDuplicateRecordFields21559</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467200</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testMissingProperty192126</span><a href="TypeCheckTest_testMissingProperty192126_1vi.html">TypeCheckTest.testMissingProperty192126</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467498</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testTemplateType4839</span><a href="TypeCheckTest_testTemplateType4839_r4.html">TypeCheckTest.testTemplateType4839</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466818</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testGetprop32314</span><a href="TypeCheckTest_testGetprop32314_1vl.html">TypeCheckTest.testGetprop32314</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467620</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testGetelemStruct21412</span><a href="TypeCheckTest_testGetelemStruct21412_ly.html">TypeCheckTest.testGetelemStruct21412</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467092</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testBooleanReduction2385</span><a href="TypeCheckTest_testBooleanReduction2385_8m.html">TypeCheckTest.testBooleanReduction2385</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467733</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testVar92052</span><a href="TypeCheckTest_testVar92052_1u9.html">TypeCheckTest.testVar92052</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467464</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testArrayAccess32293</span><a href="TypeCheckTest_testArrayAccess32293_1vc.html">TypeCheckTest.testArrayAccess32293</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467614</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testEnum81785</span><a href="TypeCheckTest_testEnum81785_s3.html">TypeCheckTest.testEnum81785</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467296</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testInheritanceCheck31761</span><a href="TypeCheckTest_testInheritanceCheck31761_1lv.html">TypeCheckTest.testInheritanceCheck31761</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467277</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testBadImplements31405</span><a href="TypeCheckTest_testBadImplements31405_1ar.html">TypeCheckTest.testBadImplements31405</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467085</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testIssue483593</span><a href="TypeCheckTest_testIssue483593_1fn.html">TypeCheckTest.testIssue483593</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466729</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testGoogBind21972</span><a href="TypeCheckTest_testGoogBind21972_1j0.html">TypeCheckTest.testGoogBind21972</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467424</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testConstructorType4509</span><a href="TypeCheckTest_testConstructorType4509_ti.html">TypeCheckTest.testConstructorType4509</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466708</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testNumericComparison2662</span><a href="TypeCheckTest_testNumericComparison2662_17n.html">TypeCheckTest.testNumericComparison2662</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466754</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testCall51180</span><a href="TypeCheckTest_testCall51180_pj.html">TypeCheckTest.testCall51180</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466982</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testMissingProperty211431</span><a href="TypeCheckTest_testMissingProperty211431_1oh.html">TypeCheckTest.testMissingProperty211431</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467098</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testVar72272</span><a href="TypeCheckTest_testVar72272_7d.html">TypeCheckTest.testVar72272</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467603</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testDuplicateStaticPropertyDecl11050</span><a href="TypeCheckTest_testDuplicateStaticPropertyDecl11050_of.html">TypeCheckTest.testDuplicateStaticPropertyDecl11050</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466867</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testSetprop101215</span><a href="TypeCheckTest_testSetprop101215_a1.html">TypeCheckTest.testSetprop101215</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467007</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testTypeOfReduction91164</span><a href="TypeCheckTest_testTypeOfReduction91164_ln.html">TypeCheckTest.testTypeOfReduction91164</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466954</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testSetprop61975</span><a href="TypeCheckTest_testSetprop61975_rr.html">TypeCheckTest.testSetprop61975</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467428</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testInstanceof1764</span><a href="TypeCheckTest_testInstanceof1764_1ph.html">TypeCheckTest.testInstanceof1764</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466789</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testConstructorType112063</span><a href="TypeCheckTest_testConstructorType112063_uq.html">TypeCheckTest.testConstructorType112063</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467480</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testEnum12202</span><a href="TypeCheckTest_testEnum12202_17k.html">TypeCheckTest.testEnum12202</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467557</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testStringComparison2976</span><a href="TypeCheckTest_testStringComparison2976_1wc.html">TypeCheckTest.testStringComparison2976</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466853</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testOverriddenReturn12187</span><a href="TypeCheckTest_testOverriddenReturn12187_1tp.html">TypeCheckTest.testOverriddenReturn12187</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467524</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testNumericComparison31318</span><a href="TypeCheckTest_testNumericComparison31318_2z.html">TypeCheckTest.testNumericComparison31318</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467055</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testBug1943776861</span><a href="TypeCheckTest_testBug1943776861_1if.html">TypeCheckTest.testBug1943776861</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466836</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testMultipleExtendsInterface41141</span><a href="TypeCheckTest_testMultipleExtendsInterface41141_1r9.html">TypeCheckTest.testMultipleExtendsInterface41141</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466936</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testDirectPrototypeAssignment31572</span><a href="TypeCheckTest_testDirectPrototypeAssignment31572_7p.html">TypeCheckTest.testDirectPrototypeAssignment31572</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467210</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testDfa112261</span><a href="TypeCheckTest_testDfa112261_1iz.html">TypeCheckTest.testDfa112261</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467597</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testBackwardsInferenceGoogArrayFilter11404</span><a href="TypeCheckTest_testBackwardsInferenceGoogArrayFilter11404_1gl.html">TypeCheckTest.testBackwardsInferenceGoogArrayFilter11404</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467078</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testGoodImplements6521</span><a href="TypeCheckTest_testGoodImplements6521_1vz.html">TypeCheckTest.testGoodImplements6521</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466714</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testTypeOfReduction161948</span><a href="TypeCheckTest_testTypeOfReduction161948_1sc.html">TypeCheckTest.testTypeOfReduction161948</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467398</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testFunctionBind12148</span><a href="TypeCheckTest_testFunctionBind12148_1r8.html">TypeCheckTest.testFunctionBind12148</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467511</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testCast16599</span><a href="TypeCheckTest_testCast16599_1pm.html">TypeCheckTest.testCast16599</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466736</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testInnerFunction101526</span><a href="TypeCheckTest_testInnerFunction101526_zb.html">TypeCheckTest.testInnerFunction101526</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467166</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testBug23418121955</span><a href="TypeCheckTest_testBug23418121955_dt.html">TypeCheckTest.testBug23418121955</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467413</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testQualifiedNameInference11880</span><a href="TypeCheckTest_testQualifiedNameInference11880_1jy.html">TypeCheckTest.testQualifiedNameInference11880</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466842</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testGoodExtends151216</span><a href="TypeCheckTest_testGoodExtends151216_1t4.html">TypeCheckTest.testGoodExtends151216</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467015</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testLends2450</span><a href="TypeCheckTest_testLends2450_s5.html">TypeCheckTest.testLends2450</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466902</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testParameterized51541</span><a href="TypeCheckTest_testParameterized51541_1mf.html">TypeCheckTest.testParameterized51541</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467180</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testBug7701884330</span><a href="TypeCheckTest_testBug7701884330_8q.html">TypeCheckTest.testBug7701884330</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466894</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testInterfaceExtendsLoop1925</span><a href="TypeCheckTest_testInterfaceExtendsLoop1925_1fs.html">TypeCheckTest.testInterfaceExtendsLoop1925</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467383</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testOverriddenParams434</span><a href="TypeCheckTest_testOverriddenParams434_4r.html">TypeCheckTest.testOverriddenParams434</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467715</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testInterfaceInheritanceCheck81512</span><a href="TypeCheckTest_testInterfaceInheritanceCheck81512_nq.html">TypeCheckTest.testInterfaceInheritanceCheck81512</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467160</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testQualifiedNameReduction81918</span><a href="TypeCheckTest_testQualifiedNameReduction81918_1ly.html">TypeCheckTest.testQualifiedNameReduction81918</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467376</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testFunctionInference71777</span><a href="TypeCheckTest_testFunctionInference71777_xu.html">TypeCheckTest.testFunctionInference71777</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467284</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testGetprop4854</span><a href="TypeCheckTest_testGetprop4854_1b9.html">TypeCheckTest.testGetprop4854</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466824</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testInheritanceCheck13798</span><a href="TypeCheckTest_testInheritanceCheck13798_ja.html">TypeCheckTest.testInheritanceCheck13798</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466795</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testQualifiedNameInference121878</span><a href="TypeCheckTest_testQualifiedNameInference121878_1ub.html">TypeCheckTest.testQualifiedNameInference121878</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467350</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testRecordType31487</span><a href="TypeCheckTest_testRecordType31487_1o.html">TypeCheckTest.testRecordType31487</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467140</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testMissingProperty302038</span><a href="TypeCheckTest_testMissingProperty302038_4c.html">TypeCheckTest.testMissingProperty302038</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467458</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testTypeOfReduction151169</span><a href="TypeCheckTest_testTypeOfReduction151169_re.html">TypeCheckTest.testTypeOfReduction151169</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466960</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testResolvingNamedTypes2053</span><a href="TypeCheckTest_testResolvingNamedTypes2053_1pw.html">TypeCheckTest.testResolvingNamedTypes2053</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467470</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testDfa712</span><a href="TypeCheckTest_testDfa712_1ah.html">TypeCheckTest.testDfa712</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466908</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testPropertyInference31175</span><a href="TypeCheckTest_testPropertyInference31175_1hy.html">TypeCheckTest.testPropertyInference31175</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466968</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testInterfaceAssignment82330</span><a href="TypeCheckTest_testInterfaceAssignment82330_1ne.html">TypeCheckTest.testInterfaceAssignment82330</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467627</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testInferredReturn41474</span><a href="TypeCheckTest_testInferredReturn41474_g5.html">TypeCheckTest.testInferredReturn41474</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467114</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testQualifiedNameReduction102369</span><a href="TypeCheckTest_testQualifiedNameReduction102369_en.html">TypeCheckTest.testQualifiedNameReduction102369</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467655</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testObjLitDef72151</span><a href="TypeCheckTest_testObjLitDef72151_1d8.html">TypeCheckTest.testObjLitDef72151</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467517</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testConstructorType102189</span><a href="TypeCheckTest_testConstructorType102189_6g.html">TypeCheckTest.testConstructorType102189</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467538</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testBadStruct1885</span><a href="TypeCheckTest_testBadStruct1885_13t.html">TypeCheckTest.testBadStruct1885</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467363</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testAnonymousType32420</span><a href="TypeCheckTest_testAnonymousType32420_pp.html">TypeCheckTest.testAnonymousType32420</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467683</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testTypeCheckStandaloneAST429</span><a href="TypeCheckTest_testTypeCheckStandaloneAST429_1qu.html">TypeCheckTest.testTypeCheckStandaloneAST429</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466705</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testNoTypeCheck7156</span><a href="TypeCheckTest_testNoTypeCheck7156_1l5.html">TypeCheckTest.testNoTypeCheck7156</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466683</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testWarnDataPropertyOnInterface326</span><a href="TypeCheckTest_testWarnDataPropertyOnInterface326_1p4.html">TypeCheckTest.testWarnDataPropertyOnInterface326</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467721</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testGenerics11486</span><a href="TypeCheckTest_testGenerics11486_1im.html">TypeCheckTest.testGenerics11486</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467126</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testTypeof22236</span><a href="TypeCheckTest_testTypeof22236_6x.html">TypeCheckTest.testTypeof22236</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467570</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testInOnStruct188</span><a href="TypeCheckTest_testInOnStruct188_73.html">TypeCheckTest.testInOnStruct188</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466879</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testMissingProperty351987</span><a href="TypeCheckTest_testMissingProperty351987_4t.html">TypeCheckTest.testMissingProperty351987</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467436</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testConstructorAlias61481</span><a href="TypeCheckTest_testConstructorAlias61481_1e0.html">TypeCheckTest.testConstructorAlias61481</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467120</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testTemplatedThisType1799</span><a href="TypeCheckTest_testTemplatedThisType1799_1kn.html">TypeCheckTest.testTemplatedThisType1799</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466801</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testGoodExtends161827</span><a href="TypeCheckTest_testGoodExtends161827_cq.html">TypeCheckTest.testGoodExtends161827</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467329</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testParameterizedTypeSubtypes2992</span><a href="TypeCheckTest_testParameterizedTypeSubtypes2992_13k.html">TypeCheckTest.testParameterizedTypeSubtypes2992</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466858</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testActiveXObject2346</span><a href="TypeCheckTest_testActiveXObject2346_hr.html">TypeCheckTest.testActiveXObject2346</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467643</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testTypeInferenceWithNoEntry21619</span><a href="TypeCheckTest_testTypeInferenceWithNoEntry21619_1fy.html">TypeCheckTest.testTypeInferenceWithNoEntry21619</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467228</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testEnum382228</span><a href="TypeCheckTest_testEnum382228_1i4.html">TypeCheckTest.testEnum382228</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467564</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testCatchExpression11828</span><a href="TypeCheckTest_testCatchExpression11828_1cw.html">TypeCheckTest.testCatchExpression11828</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467338</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testControlFlowRestrictsType81146</span><a href="TypeCheckTest_testControlFlowRestrictsType81146_5j.html">TypeCheckTest.testControlFlowRestrictsType81146</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466942</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testIssue611235</span><a href="TypeCheckTest_testIssue611235_1vw.html">TypeCheckTest.testIssue611235</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467025</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testInterfaceExtendsResolution1542</span><a href="TypeCheckTest_testInterfaceExtendsResolution1542_16k.html">TypeCheckTest.testInterfaceExtendsResolution1542</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467188</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testBadInterfaceExtends31697</span><a href="TypeCheckTest_testBadInterfaceExtends31697_11f.html">TypeCheckTest.testBadInterfaceExtends31697</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467265</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testNoPersistentTypeInferenceForFunctionProperties1490</span><a href="TypeCheckTest_testNoPersistentTypeInferenceForFunctionProperties1490_gk.html">TypeCheckTest.testNoPersistentTypeInferenceForFunctionProperties1490</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467146</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testCast111627</span><a href="TypeCheckTest_testCast111627_72.html">TypeCheckTest.testCast111627</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467243</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testInferredReturn51192</span><a href="TypeCheckTest_testInferredReturn51192_4e.html">TypeCheckTest.testInferredReturn51192</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557466994</span>12 Jan 14:04:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeCheckTest.testAdd102013</span><a href="TypeCheckTest_testAdd102013_12k.html">TypeCheckTest.testAdd102013</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467445</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu Jan 12 2023 14:04:35 MST using coverage data from Thu Jan 12 2023 14:04:30 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

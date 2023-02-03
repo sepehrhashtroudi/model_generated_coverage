@@ -1,0 +1,18 @@
+Testsuite: org.apache.commons.lang3.StringEscapeUtilsTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec
+
+Testcase: testUnescapeCsvWriter246 took 0.035 sec
+Testcase: testEscapeCsvString935 took 0 sec
+Testcase: testUnescapeJava986 took 0.003 sec
+Testcase: testEscapeJava1268 took 0.001 sec
+Testcase: testUnescapeXmlSupplementaryCharacters699 took 0 sec
+Testcase: testEscapeEcmaScript661 took 0 sec
+Testcase: testEscapeHtmlVersions1161 took 0 sec
+Testcase: testEscapeJavaWithSlash839 took 0 sec
+Testcase: testConstructor595 took 0 sec
+Testcase: testEscapeCsvWriter500 took 0 sec
+Testcase: testEscapeJson1033 took 0 sec
+Testcase: testUnescapeHtml433 took 0.001 sec
+Testcase: testEscapeXmlAllCharacters112 took 0.001 sec
+Testcase: testLang7201090 took 0 sec
+Testcase: testUnescapeCsvString1184 took 0.001 sec

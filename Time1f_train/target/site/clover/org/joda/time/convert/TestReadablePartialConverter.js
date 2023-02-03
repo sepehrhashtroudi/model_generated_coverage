@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":144,"id":37822,"methods":[{"el":55,"sc":5,"sl":53},{"el":59,"sc":5,"sl":57},{"el":63,"sc":5,"sl":61},{"el":69,"sc":5,"sl":65},{"el":88,"sc":1,"sl":73},{"el":95,"sc":1,"sl":91},{"el":102,"sc":1,"sl":98},{"el":107,"sc":1,"sl":105}],"name":"TestReadablePartialConverter","sl":42},{"el":139,"id":37853,"methods":[{"el":135,"sc":9,"sl":123},{"el":138,"sc":9,"sl":136}],"name":"TestReadablePartialConverter.MockTOD","sl":122}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1550":{"methods":[{"sl":91}],"name":"testGetChronology_Object_Zone104","pass":true,"statements":[{"sl":92},{"sl":93},{"sl":94}]},"test_818":{"methods":[{"sl":105}],"name":"testSupportedType1567","pass":true,"statements":[{"sl":106}]},"test_870":{"methods":[{"sl":98}],"name":"testGetChronology_Object_Chronology609","pass":true,"statements":[{"sl":99},{"sl":100},{"sl":101}]},"test_993":{"methods":[{"sl":73},{"sl":123},{"sl":136}],"name":"testGetPartialValues1","pass":true,"statements":[{"sl":74},{"sl":75},{"sl":76},{"sl":77},{"sl":78},{"sl":79},{"sl":83},{"sl":84},{"sl":124},{"sl":125},{"sl":126},{"sl":127},{"sl":128},{"sl":129},{"sl":130},{"sl":131},{"sl":132},{"sl":137}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [993], [993], [993], [993], [993], [993], [993], [], [], [], [993], [993], [], [], [], [], [], [], [1550], [1550], [1550], [1550], [], [], [], [870], [870], [870], [870], [], [], [], [818], [818], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [993], [993], [993], [993], [993], [993], [993], [993], [993], [993], [], [], [], [993], [993], [], [], [], [], [], [], []]

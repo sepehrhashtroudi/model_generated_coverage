@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Thu Jan 12 2023 14:04:05 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class PeepholeFoldConstantsTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="PeepholeFoldConstantsTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>PeepholeFoldConstantsTest</td>
+        <td class="testPasses"><span class="sortValue">44</span>44</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>2.385</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testNotFoldBackToTrueFalse1092</span><a href="PeepholeFoldConstantsTest_testNotFoldBackToTrueFalse1092_1lz.html">PeepholeFoldConstantsTest.testNotFoldBackToTrueFalse1092</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459417</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testUndefinedComparison3952</span><a href="PeepholeFoldConstantsTest_testUndefinedComparison3952_q0.html">PeepholeFoldConstantsTest.testUndefinedComparison3952</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459326</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldComplex1762</span><a href="PeepholeFoldConstantsTest_testFoldComplex1762_o4.html">PeepholeFoldConstantsTest.testFoldComplex1762</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459603</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldInstanceOf876</span><a href="PeepholeFoldConstantsTest_testFoldInstanceOf876_14f.html">PeepholeFoldConstantsTest.testFoldInstanceOf876</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459304</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.021</span>0.021</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testInvertibleOperators453</span><a href="PeepholeFoldConstantsTest_testInvertibleOperators453_109.html">PeepholeFoldConstantsTest.testInvertibleOperators453</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557460849</span>12 Jan 14:04:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.718</span>0.718</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldMixed2421</span><a href="PeepholeFoldConstantsTest_testFoldMixed2421_ct.html">PeepholeFoldConstantsTest.testFoldMixed2421</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459675</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldLeftChildConcat1268</span><a href="PeepholeFoldConstantsTest_testFoldLeftChildConcat1268_kb.html">PeepholeFoldConstantsTest.testFoldLeftChildConcat1268</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459428</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldObjectLiteralRef2655</span><a href="PeepholeFoldConstantsTest_testFoldObjectLiteralRef2655_ch.html">PeepholeFoldConstantsTest.testFoldObjectLiteralRef2655</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459246</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testIEString1117</span><a href="PeepholeFoldConstantsTest_testIEString1117_4d.html">PeepholeFoldConstantsTest.testIEString1117</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459426</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldLeftChildOp2302</span><a href="PeepholeFoldConstantsTest_testFoldLeftChildOp2302_dm.html">PeepholeFoldConstantsTest.testFoldLeftChildOp2302</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459646</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testUndefinedComparison1640</span><a href="PeepholeFoldConstantsTest_testUndefinedComparison1640_99.html">PeepholeFoldConstantsTest.testUndefinedComparison1640</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459174</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.071</span>0.071</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldObjectLiteralRef1251</span><a href="PeepholeFoldConstantsTest_testFoldObjectLiteralRef1251_f7.html">PeepholeFoldConstantsTest.testFoldObjectLiteralRef1251</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459720</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldLiteralsAsNumbers1354</span><a href="PeepholeFoldConstantsTest_testFoldLiteralsAsNumbers1354_j4.html">PeepholeFoldConstantsTest.testFoldLiteralsAsNumbers1354</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459512</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testConvertToNumberNegativeInf2070</span><a href="PeepholeFoldConstantsTest_testConvertToNumberNegativeInf2070_14g.html">PeepholeFoldConstantsTest.testConvertToNumberNegativeInf2070</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459612</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldBitwiseOp31</span><a href="PeepholeFoldConstantsTest_testFoldBitwiseOp31_197.html">PeepholeFoldConstantsTest.testFoldBitwiseOp31</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459474</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.032</span>0.032</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldArrayLength562</span><a href="PeepholeFoldConstantsTest_testFoldArrayLength562_1aq.html">PeepholeFoldConstantsTest.testFoldArrayLength562</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459155</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testAssignOpsEarly69</span><a href="PeepholeFoldConstantsTest_testAssignOpsEarly69_6c.html">PeepholeFoldConstantsTest.testAssignOpsEarly69</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459695</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldSimpleArithmeticOp807</span><a href="PeepholeFoldConstantsTest_testFoldSimpleArithmeticOp807_1v0.html">PeepholeFoldConstantsTest.testFoldSimpleArithmeticOp807</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459274</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldBitShiftsStringCompare608</span><a href="PeepholeFoldConstantsTest_testFoldBitShiftsStringCompare608_1gk.html">PeepholeFoldConstantsTest.testFoldBitShiftsStringCompare608</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459162</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldBitShifts334</span><a href="PeepholeFoldConstantsTest_testFoldBitShifts334_1f2.html">PeepholeFoldConstantsTest.testFoldBitShifts334</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459761</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.035</span>0.035</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldStringLength470</span><a href="PeepholeFoldConstantsTest_testFoldStringLength470_1l7.html">PeepholeFoldConstantsTest.testFoldStringLength470</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557461568</span>12 Jan 14:04:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldComparison21426</span><a href="PeepholeFoldConstantsTest_testFoldComparison21426_18f.html">PeepholeFoldConstantsTest.testFoldComparison21426</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459553</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.035</span>0.035</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testIssue821613</span><a href="PeepholeFoldConstantsTest_testIssue821613_1qy.html">PeepholeFoldConstantsTest.testIssue821613</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459170</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldComparison3345</span><a href="PeepholeFoldConstantsTest_testFoldComparison3345_2r.html">PeepholeFoldConstantsTest.testFoldComparison3345</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459796</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.021</span>0.021</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldLogicalOp1378</span><a href="PeepholeFoldConstantsTest_testFoldLogicalOp1378_p0.html">PeepholeFoldConstantsTest.testFoldLogicalOp1378</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459518</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.034</span>0.034</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldLiteralsTypeMismatches392</span><a href="PeepholeFoldConstantsTest_testFoldLiteralsTypeMismatches392_jj.html">PeepholeFoldConstantsTest.testFoldLiteralsTypeMismatches392</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557460813</span>12 Jan 14:04:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testCommutativeOperators376</span><a href="PeepholeFoldConstantsTest_testCommutativeOperators376_13i.html">PeepholeFoldConstantsTest.testCommutativeOperators376</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459818</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.994</span>0.994</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testAssignOpsLate670</span><a href="PeepholeFoldConstantsTest_testAssignOpsLate670_v0.html">PeepholeFoldConstantsTest.testAssignOpsLate670</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459255</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldBitwiseOp22106</span><a href="PeepholeFoldConstantsTest_testFoldBitwiseOp22106_w9.html">PeepholeFoldConstantsTest.testFoldBitwiseOp22106</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459614</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.025</span>0.025</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testUnaryOpsStringCompare214</span><a href="PeepholeFoldConstantsTest_testUnaryOpsStringCompare214_157.html">PeepholeFoldConstantsTest.testUnaryOpsStringCompare214</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459714</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testIssue601374</span><a href="PeepholeFoldConstantsTest_testIssue601374_o5.html">PeepholeFoldConstantsTest.testIssue601374</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459150</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testUnaryOps132</span><a href="PeepholeFoldConstantsTest_testUnaryOps132_s.html">PeepholeFoldConstantsTest.testUnaryOps132</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459433</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.032</span>0.032</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldArithmetic407</span><a href="PeepholeFoldConstantsTest_testFoldArithmetic407_1cg.html">PeepholeFoldConstantsTest.testFoldArithmetic407</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557460835</span>12 Jan 14:04:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldTypeof852</span><a href="PeepholeFoldConstantsTest_testFoldTypeof852_18x.html">PeepholeFoldConstantsTest.testFoldTypeof852</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459287</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testNullComparison11089</span><a href="PeepholeFoldConstantsTest_testNullComparison11089_e1.html">PeepholeFoldConstantsTest.testNullComparison11089</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459331</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.086</span>0.086</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldLiteralNames1528</span><a href="PeepholeFoldConstantsTest_testFoldLiteralNames1528_65.html">PeepholeFoldConstantsTest.testFoldLiteralNames1528</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459594</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldGetElem318</span><a href="PeepholeFoldConstantsTest_testFoldGetElem318_1tw.html">PeepholeFoldConstantsTest.testFoldGetElem318</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459749</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldArithmetic217</span><a href="PeepholeFoldConstantsTest_testFoldArithmetic217_1ad.html">PeepholeFoldConstantsTest.testFoldArithmetic217</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459466</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldArithmeticInfinity1489</span><a href="PeepholeFoldConstantsTest_testFoldArithmeticInfinity1489_1hg.html">PeepholeFoldConstantsTest.testFoldArithmeticInfinity1489</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459589</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldArithmeticStringComp1802</span><a href="PeepholeFoldConstantsTest_testFoldArithmeticStringComp1802_1js.html">PeepholeFoldConstantsTest.testFoldArithmeticStringComp1802</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459607</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldArithmetic32213</span><a href="PeepholeFoldConstantsTest_testFoldArithmetic32213_gq.html">PeepholeFoldConstantsTest.testFoldArithmetic32213</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459640</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testStringAdd122</span><a href="PeepholeFoldConstantsTest_testStringAdd122_zk.html">PeepholeFoldConstantsTest.testStringAdd122</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459678</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testIssue5221895</span><a href="PeepholeFoldConstantsTest_testIssue5221895_196.html">PeepholeFoldConstantsTest.testIssue5221895</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459609</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeFoldConstantsTest.testFoldVoid1278</span><a href="PeepholeFoldConstantsTest_testFoldVoid1278_oc.html">PeepholeFoldConstantsTest.testFoldVoid1278</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557459507</span>12 Jan 14:04:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu Jan 12 2023 14:04:35 MST using coverage data from Thu Jan 12 2023 14:04:30 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

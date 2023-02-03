@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":105,"id":91833,"methods":[{"el":32,"sc":1,"sl":29},{"el":39,"sc":1,"sl":35},{"el":44,"sc":1,"sl":42},{"el":49,"sc":1,"sl":47},{"el":54,"sc":1,"sl":52},{"el":82,"sc":3,"sl":80},{"el":89,"sc":7,"sl":86},{"el":93,"sc":7,"sl":90},{"el":95,"sc":3,"sl":84},{"el":99,"sc":3,"sl":97},{"el":104,"sc":3,"sl":101}],"name":"LightweightMessageFormatterTest","sl":24}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1497":{"methods":[{"sl":35},{"sl":80},{"sl":84},{"sl":86}],"name":"testFormatErrorSpaceEndOfLine11061","pass":true,"statements":[{"sl":36},{"sl":37},{"sl":38},{"sl":81},{"sl":85},{"sl":88}]},"test_1835":{"methods":[{"sl":42},{"sl":97},{"sl":101}],"name":"testOnlyOneEmptyLine1072","pass":true,"statements":[{"sl":43},{"sl":98},{"sl":103}]},"test_2343":{"methods":[{"sl":29},{"sl":97},{"sl":101}],"name":"testThreeLineRegionEmptyLine875","pass":true,"statements":[{"sl":30},{"sl":31},{"sl":98},{"sl":103}]},"test_302":{"methods":[{"sl":52},{"sl":97}],"name":"testNull1663","pass":true,"statements":[{"sl":53},{"sl":98}]},"test_740":{"methods":[{"sl":47},{"sl":97},{"sl":101}],"name":"testTwoEmptyLines1498","pass":true,"statements":[{"sl":48},{"sl":98},{"sl":103}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [2343], [2343], [2343], [], [], [], [1497], [1497], [1497], [1497], [], [], [], [1835], [1835], [], [], [], [740], [740], [], [], [], [302], [302], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1497], [1497], [], [], [1497], [1497], [1497], [], [1497], [], [], [], [], [], [], [], [], [1835, 302, 740, 2343], [1835, 302, 740, 2343], [], [], [1835, 740, 2343], [], [1835, 740, 2343], [], []]

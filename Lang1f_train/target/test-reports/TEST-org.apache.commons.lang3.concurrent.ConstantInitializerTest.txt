@@ -1,0 +1,7 @@
+Testsuite: org.apache.commons.lang3.concurrent.ConstantInitializerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+
+Testcase: testEqualsTrue452 took 0.02 sec
+Testcase: testEqualsWithOtherObjects773 took 0 sec
+Testcase: testGet983 took 0 sec
+Testcase: testToStringNull612 took 0 sec

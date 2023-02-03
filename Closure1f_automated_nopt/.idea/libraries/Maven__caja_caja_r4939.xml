@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: caja:caja:r4939">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/caja/caja/r4939/caja-r4939.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/caja/caja/r4939/caja-r4939-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/caja/caja/r4939/caja-r4939-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

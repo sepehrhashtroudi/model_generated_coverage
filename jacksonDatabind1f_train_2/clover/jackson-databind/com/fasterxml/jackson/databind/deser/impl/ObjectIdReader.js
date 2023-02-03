@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":62,"id":16182,"methods":[{"el":49,"sc":5,"sl":40},{"el":61,"sc":5,"sl":56}],"name":"ObjectIdReader","sl":11}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_124":{"methods":[{"sl":40},{"sl":56}],"name":"testSimpleDeserializationProperty360","pass":true,"statements":[{"sl":44},{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":60}]},"test_215":{"methods":[{"sl":40},{"sl":56}],"name":"testColumnMetadata156","pass":true,"statements":[{"sl":44},{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":60}]},"test_216":{"methods":[{"sl":40},{"sl":56}],"name":"testSimpleDeserializationClass364","pass":true,"statements":[{"sl":44},{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":60}]},"test_247":{"methods":[{"sl":40},{"sl":56}],"name":"testIssue877297","pass":true,"statements":[{"sl":44},{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":60}]},"test_319":{"methods":[{"sl":40},{"sl":56}],"name":"testSimpleDeserWithForwardRefs60","pass":true,"statements":[{"sl":44},{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":60}]},"test_320":{"methods":[{"sl":40},{"sl":56}],"name":"testCustomDeserializationClass382","pass":true,"statements":[{"sl":44},{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":60}]},"test_81":{"methods":[{"sl":40},{"sl":56}],"name":"testPolymorphicRoundtrip221","pass":true,"statements":[{"sl":44},{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":60}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [247, 81, 215, 319, 216, 320, 124], [], [], [], [247, 81, 215, 319, 216, 320, 124], [247, 81, 215, 319, 216, 320, 124], [247, 81, 215, 319, 216, 320, 124], [247, 81, 215, 319, 216, 320, 124], [247, 81, 215, 319, 216, 320, 124], [], [], [], [], [], [], [], [247, 81, 215, 319, 216, 320, 124], [], [], [], [247, 81, 215, 319, 216, 320, 124], [], []]

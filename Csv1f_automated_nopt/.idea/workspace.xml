@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6e4cf61b-906b-4894-acb7-cf9f8510a0ec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/maven-build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/csv/CSVFormatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/csv/CSVFormatTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/csv/CSVLexer1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/csv/CSVLexer1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/csv/CSVLexerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/csv/CSVLexerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/csv/CSVParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/csv/CSVParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/csv/CSVPrinterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/csv/CSVPrinterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/csv/ExtendedBufferedReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/csv/ExtendedBufferedReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/csv/ExtendedBufferedReaderTest.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/csv/PerformanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/apache/commons/csv/PerformanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/apache/commons/csv/PerformanceTest.java.bak" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2L77tvOZBmlV7QIT8ltjAuYTrgT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/sepehr/masters/test_generation/model_generated_coverage/Time1f_automated_nopt"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e4cf61b-906b-4894-acb7-cf9f8510a0ec" name="Changes" comment="" />
+      <created>1675210487937</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675210487937</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":72,"id":1246,"methods":[{"el":42,"sc":5,"sl":41},{"el":56,"sc":5,"sl":54},{"el":67,"sc":5,"sl":65},{"el":71,"sc":5,"sl":69}],"name":"UnicodePathExtraField","sl":37}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1":{"methods":[{"sl":41},{"sl":69}],"name":"testReadWinZipArchive22","pass":true,"statements":[{"sl":70}]},"test_10":{"methods":[{"sl":41},{"sl":69}],"name":"testParse37","pass":true,"statements":[{"sl":70}]},"test_17":{"methods":[{"sl":41},{"sl":69}],"name":"testDeletePlusAdd1","pass":true,"statements":[{"sl":70}]},"test_18":{"methods":[{"sl":41},{"sl":69}],"name":"testJarUnarchive16","pass":true,"statements":[{"sl":70}]},"test_23":{"methods":[{"sl":41},{"sl":54},{"sl":69}],"name":"testASCIIFileRoundtripExplicitUnicodeExtra2","pass":true,"statements":[{"sl":55},{"sl":70}]},"test_26":{"methods":[{"sl":41},{"sl":54},{"sl":69}],"name":"testCP437FileRoundtripImplicitUnicodeExtra31","pass":true,"statements":[{"sl":55},{"sl":70}]},"test_30":{"methods":[{"sl":41},{"sl":69}],"name":"testJarMarker7","pass":true,"statements":[{"sl":70}]},"test_34":{"methods":[{"sl":41},{"sl":69}],"name":"testExtraFieldMerging23","pass":true,"statements":[{"sl":70}]},"test_36":{"methods":[{"sl":41},{"sl":69}],"name":"testRead7ZipArchive21","pass":true,"statements":[{"sl":70}]},"test_8":{"methods":[{"sl":41},{"sl":54},{"sl":69}],"name":"testZipFileReadsUnicodeFields32","pass":true,"statements":[{"sl":55},{"sl":70}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [17, 26, 36, 30, 1, 18, 8, 10, 23, 34], [], [], [], [], [], [], [], [], [], [], [], [], [26, 8, 23], [26, 8, 23], [], [], [], [], [], [], [], [], [], [], [], [], [], [17, 26, 36, 30, 1, 18, 8, 10, 23, 34], [17, 26, 36, 30, 1, 18, 8, 10, 23, 34], [], []]

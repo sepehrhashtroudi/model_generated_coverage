@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.lang3.ClassUtilsTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec <<< FAILURE!
+testGetPackageCanonicalName419(org.apache.commons.lang3.ClassUtilsTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<org.apache.commons.lang3> but was:<null>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.commons.lang3.ClassUtilsTest.__CLR4_4_1hdvrc6f1s(ClassUtilsTest.java:57)
+	at org.apache.commons.lang3.ClassUtilsTest.testGetPackageCanonicalName419(ClassUtilsTest.java:57)
+

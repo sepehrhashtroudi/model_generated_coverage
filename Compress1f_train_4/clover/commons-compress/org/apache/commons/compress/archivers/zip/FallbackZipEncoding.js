@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":94,"id":3451,"methods":[{"el":51,"sc":5,"sl":49},{"el":61,"sc":5,"sl":59},{"el":69,"sc":5,"sl":67},{"el":81,"sc":5,"sl":75},{"el":93,"sc":5,"sl":87}],"name":"FallbackZipEncoding","sl":42}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_0":{"methods":[{"sl":59},{"sl":67},{"sl":75}],"name":"testDeletePlusAdd1","pass":true,"statements":[{"sl":60},{"sl":68},{"sl":76},{"sl":79}]},"test_1":{"methods":[{"sl":67},{"sl":75}],"name":"testDeleteFromAndAddToZip41","pass":true,"statements":[{"sl":68},{"sl":76},{"sl":79}]},"test_12":{"methods":[{"sl":87}],"name":"testReadWinZipArchive21","pass":true,"statements":[{"sl":88},{"sl":91}]},"test_2":{"methods":[{"sl":67},{"sl":75}],"name":"testDeleteFromZip31","pass":true,"statements":[{"sl":68},{"sl":76},{"sl":79}]},"test_20":{"methods":[{"sl":59}],"name":"testNioCp1252Encoding3","pass":true,"statements":[{"sl":60}]},"test_33":{"methods":[{"sl":87}],"name":"testZipFileReadsUnicodeFields32","pass":true,"statements":[{"sl":88},{"sl":91}]},"test_35":{"methods":[{"sl":59}],"name":"testCP437FileRoundtripExplicitUnicodeExtra19","pass":true,"statements":[{"sl":60}]},"test_40":{"methods":[{"sl":87}],"name":"testRead7ZipArchive20","pass":true,"statements":[{"sl":88},{"sl":91}]},"test_8":{"methods":[{"sl":67},{"sl":75}],"name":"testDeleteFromAndAddToJar38","pass":true,"statements":[{"sl":68},{"sl":76},{"sl":79}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [0, 20, 35], [0, 20, 35], [], [], [], [], [], [], [0, 8, 1, 2], [0, 8, 1, 2], [], [], [], [], [], [], [0, 8, 1, 2], [0, 8, 1, 2], [], [], [0, 8, 1, 2], [], [], [], [], [], [], [], [12, 33, 40], [12, 33, 40], [], [], [12, 33, 40], [], [], []]

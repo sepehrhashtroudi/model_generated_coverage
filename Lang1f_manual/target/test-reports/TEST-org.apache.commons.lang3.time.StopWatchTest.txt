@@ -1,0 +1,15 @@
+Testsuite: org.apache.commons.lang3.time.StopWatchTest
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.952 sec
+
+Testcase: testBadStates93 took 0.023 sec
+	Caused an ERROR
+java.lang.IllegalStateException: Stopwatch must be split to get the split time. 
+java.lang.RuntimeException: java.lang.IllegalStateException: Stopwatch must be split to get the split time. 
+	at org.apache.commons.lang3.time.StopWatchTest.testBadStates93(StopWatchTest.java:94)
+Caused by: java.lang.IllegalStateException: Stopwatch must be split to get the split time. 
+	at org.apache.commons.lang3.time.StopWatch.getSplitNanoTime(StopWatch.java:329)
+	at org.apache.commons.lang3.time.StopWatch.getSplitTime(StopWatch.java:310)
+	at org.apache.commons.lang3.time.StopWatchTest.testBadStates93(StopWatchTest.java:91)
+
+Testcase: testStopWatchSimpleGet60 took 0.509 sec
+Testcase: testLang315348 took 0.4 sec

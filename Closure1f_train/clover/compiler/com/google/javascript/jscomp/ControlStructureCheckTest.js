@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":126,"id":73296,"methods":[{"el":38,"sc":3,"sl":35},{"el":43,"sc":1,"sl":41},{"el":48,"sc":1,"sl":46},{"el":53,"sc":1,"sl":51},{"el":58,"sc":1,"sl":56},{"el":63,"sc":1,"sl":61},{"el":101,"sc":3,"sl":99},{"el":105,"sc":3,"sl":103},{"el":109,"sc":3,"sl":107},{"el":113,"sc":3,"sl":111},{"el":117,"sc":3,"sl":115},{"el":125,"sc":3,"sl":119}],"name":"ControlStructureCheckTest","sl":23}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1148":{"methods":[{"sl":41},{"sl":107},{"sl":119}],"name":"testContinueToSwitchWithDefault190","pass":true,"statements":[{"sl":42},{"sl":108},{"sl":120},{"sl":121},{"sl":122},{"sl":123},{"sl":124}]},"test_1315":{"methods":[{"sl":35},{"sl":51}],"name":"testUseOfWith21315","pass":true,"statements":[{"sl":37},{"sl":52}]},"test_2371":{"methods":[{"sl":35},{"sl":56},{"sl":99}],"name":"testWhile1349","pass":true,"statements":[{"sl":37},{"sl":57},{"sl":100}]},"test_2446":{"methods":[{"sl":61},{"sl":103},{"sl":119}],"name":"testBreak2458","pass":true,"statements":[{"sl":62},{"sl":104},{"sl":120},{"sl":121},{"sl":122},{"sl":123},{"sl":124}]},"test_3":{"methods":[{"sl":35},{"sl":46}],"name":"testUseOfWith1936","pass":true,"statements":[{"sl":37},{"sl":47}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [3, 1315, 2371], [], [3, 1315, 2371], [], [], [], [1148], [1148], [], [], [], [3], [3], [], [], [], [1315], [1315], [], [], [], [2371], [2371], [], [], [], [2446], [2446], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [2371], [2371], [], [], [2446], [2446], [], [], [1148], [1148], [], [], [], [], [], [], [], [], [], [], [2446, 1148], [2446, 1148], [2446, 1148], [2446, 1148], [2446, 1148], [2446, 1148], [], []]

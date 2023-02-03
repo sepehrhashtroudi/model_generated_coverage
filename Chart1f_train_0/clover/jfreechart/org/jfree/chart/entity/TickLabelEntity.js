@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":67,"id":14258,"methods":[{"el":65,"sc":5,"sl":63}],"name":"TickLabelEntity","sl":49}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1133":{"methods":[{"sl":63}],"name":"testEquals75","pass":true,"statements":[{"sl":64}]},"test_1193":{"methods":[{"sl":63}],"name":"testDrawWithNullQ1298","pass":true,"statements":[{"sl":64}]},"test_1274":{"methods":[{"sl":63}],"name":"testEquals62","pass":true,"statements":[{"sl":64}]},"test_207":{"methods":[{"sl":63}],"name":"testBug1572478Horizontal44","pass":true,"statements":[{"sl":64}]},"test_424":{"methods":[{"sl":63}],"name":"testBug1572478Vertical60","pass":true,"statements":[{"sl":64}]},"test_507":{"methods":[{"sl":63}],"name":"testDrawWithNullMedian448","pass":true,"statements":[{"sl":64}]},"test_766":{"methods":[{"sl":63}],"name":"testEquals75","pass":true,"statements":[{"sl":64}]},"test_772":{"methods":[{"sl":63}],"name":"testBug1572478Vertical60","pass":true,"statements":[{"sl":64}]},"test_828":{"methods":[{"sl":63}],"name":"testEquals62","pass":true,"statements":[{"sl":64}]},"test_85":{"methods":[{"sl":63}],"name":"testDrawWithNullQ1298","pass":true,"statements":[{"sl":64}]},"test_92":{"methods":[{"sl":63}],"name":"testDrawWithNullMedian448","pass":true,"statements":[{"sl":64}]},"test_962":{"methods":[{"sl":63}],"name":"testBug1572478Horizontal44","pass":true,"statements":[{"sl":64}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [507, 1274, 828, 772, 424, 85, 207, 962, 1133, 92, 766, 1193], [507, 1274, 828, 772, 424, 85, 207, 962, 1133, 92, 766, 1193], [], [], []]

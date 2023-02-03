@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="200e4e14-cf4f-4eda-9861-4cdb4870c7f6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/maven-build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/base64/TestBase64Codec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/base64/TestBase64Codec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/base64/TestBase64Generation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/base64/TestBase64Generation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/base64/TestBase64Parsing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/base64/TestBase64Parsing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/base64/TestJsonParserBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/base64/TestJsonParserBinary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/format/TestJsonFormatDetection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/format/TestJsonFormatDetection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/io/TestCharTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/io/TestCharTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/io/TestIOContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/io/TestIOContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/io/TestJDKSerializable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/io/TestJDKSerializable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/io/TestJsonStringEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/io/TestJsonStringEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/io/TestMergedStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/io/TestMergedStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/io/TestUTF8Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/io/TestUTF8Writer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestCharEscaping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestCharEscaping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestComments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestComments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestCustomEscaping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestCustomEscaping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestDecorators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestDecorators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestGeneratorWithSerializedString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestGeneratorWithSerializedString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestJsonFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestJsonFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestJsonGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestJsonGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestJsonGenerator.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestJsonGeneratorFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestJsonGeneratorFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestJsonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestNextXxx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestNextXxx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestNumericValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestNumericValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestParserErrorHandling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestParserErrorHandling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestParserNonStandard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestParserNonStandard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestParserOverrides.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestParserOverrides.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestUnicode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestUnicode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestUtf8Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestUtf8Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestUtf8Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestUtf8Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestValueConversions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestValueConversions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestWithTonsaSymbols.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/json/TestWithTonsaSymbols.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestArrayParsing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestArrayParsing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestGeneratorArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestGeneratorArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestGeneratorClosing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestGeneratorClosing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestGeneratorCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestGeneratorCopy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestGeneratorMisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestGeneratorMisc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestGeneratorObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestGeneratorObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestNumberParsing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestNumberParsing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestParserClosing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestParserClosing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestParserFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestParserFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestParserLinefeeds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestParserLinefeeds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestParserWithObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestParserWithObjects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestPrettyPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestPrettyPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestRawStringWriting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestRawStringWriting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestScopeMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestScopeMatching.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestStringGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/main/TestStringGeneration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/misc/TestExceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/misc/TestExceptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/misc/TestJDKSerializability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/misc/TestJDKSerializability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/misc/TestVersions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/misc/TestVersions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/sym/TestByteBasedSymbols.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/sym/TestByteBasedSymbols.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/sym/TestJsonParserSymbols.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/sym/TestJsonParserSymbols.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/sym/TestSymbolTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/sym/TestSymbolTables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/util/TestCharTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/util/TestCharTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/util/TestDelegates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/util/TestDelegates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/util/TestNumberPrinting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/util/TestNumberPrinting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/util/TestSerializedString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/util/TestSerializedString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/util/TestTextBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/util/TestTextBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/util/TestVersionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/core/util/TestVersionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fasterxml/jackson/test/BaseTest.java.bak" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2JwJxM8EWdFTrg99Ubx06yqsxL6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/sepehr/masters/test_generation/model_generated_coverage/jacksonCore1f_train_2"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="jacksonCore1f" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="jacksonCore1f" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="200e4e14-cf4f-4eda-9861-4cdb4870c7f6" name="Changes" comment="" />
+      <created>1672983458409</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672983458409</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

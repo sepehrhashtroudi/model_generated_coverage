@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>commons-compress</title>
+    </head>
+
+<body onresize="processTreeMapDashJson(treeMapJson);" >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="historical.html">commons-compress-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        commons-compress
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Thu Jan 26 2023 11:08:04 MST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+        <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+
+
+
+
+
+<div class="aui-group">
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                
+                <h3>
+                    Code coverage
+                    <small style="float:right; font-weight: normal">
+                        64 classes,
+                        2,066 /
+                        5,577 elements
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.37045005</span>37%</div><div style="display: table-cell">
+ <div title="37% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:37%"></div></div></div></div>
+                <p><a href="pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    Test results
+                    <small style="float:right; font-weight: normal">
+                        0 /
+                        0 tests
+                        0 secs
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                                        <div class="aui-message aui-message-warning">
+        <p class="title">
+            <strong>No test results</strong>
+        </p>
+        <p>No test results could be found. Please ensure that you have instrumented your unit tests correctly.</p>
+    </div>
+                                <p><a href="test-pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Code metrics</h3>
+            </header>
+                         
+
+<div id="$statsId" class="aui-item" style="display: ${display}">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">1,434</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">3,598</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">545</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">64</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">56</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">11</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">12,820</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">6,738</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">1,402</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.39</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">6.6</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">8.52</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">5.82</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">2.57</div>
+    </div>
+</div>
+
+</div>        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Coverage Distribution</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">                     <img src="img/classDistrubutionChart.png" alt="img/classDistrubutionChart.png" usemap="#classDistrubutionChart.png"/>
+                </div>
+                <map id="classDistrubutionChart.png" name="classDistrubutionChart.png">
+<area shape="rect" coords="288,199,310,206" title="1 class has 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="263,162,285,206" title="6 classes have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="238,177,260,206" title="4 classes have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="213,184,235,206" title="3 classes have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="188,199,210,206" title="1 class has 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="163,170,185,206" title="5 classes have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="138,199,160,206" title="1 class has 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="113,192,135,206" title="2 classes have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="88,199,110,206" title="1 class has 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="63,199,85,206" title="1 class has 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,15,60,206" title="26 classes have 0% coverage" alt="" nohref="nohref"/>
+</map>
+            </div>
+        </div>
+        
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Complexity</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">
+                    <img src="img/classComplexityChart.png" alt="img/classComplexityChart.png" usemap="#classComplexityChart.png"/>
+                </div>
+                <map id="classComplexityChart.png" name="classComplexityChart.png">
+<area shape="poly" coords="274,206,271,208,269,206,271,203,274,206,274,206" title="Complexity: 4; Coverage: 90%; Class: BZip2CompressorInputStream.Data" alt="" href="org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.html#BZip2CompressorInputStream.Data"/>
+<area shape="poly" coords="227,99,225,101,222,99,225,96,227,99,227,99" title="Complexity: 146; Coverage: 71%; Class: BZip2CompressorInputStream" alt="" href="org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.html#BZip2CompressorInputStream"/>
+<area shape="poly" coords="171,201,169,204,166,201,169,199,171,201,171,201" title="Complexity: 10; Coverage: 48%; Class: CRC" alt="" href="org/apache/commons/compress/compressors/bzip2/CRC.html#CRC"/>
+<area shape="poly" coords="213,18,210,20,208,18,210,15,213,18,213,18" title="Complexity: 254; Coverage: 65%; Class: BZip2CompressorOutputStream" alt="" href="org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.html#BZip2CompressorOutputStream"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: GzipCompressorInputStream" alt="" href="org/apache/commons/compress/compressors/gzip/GzipCompressorInputStream.html#GzipCompressorInputStream"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 3; Coverage: 0%; Class: GzipCompressorOutputStream" alt="" href="org/apache/commons/compress/compressors/gzip/GzipCompressorOutputStream.html#GzipCompressorOutputStream"/>
+<area shape="poly" coords="54,190,51,193,49,190,51,188,54,190,54,190" title="Complexity: 25; Coverage: 0%; Class: ArArchiveInputStream" alt="" href="org/apache/commons/compress/archivers/ar/ArArchiveInputStream.html#ArArchiveInputStream"/>
+<area shape="poly" coords="252,192,249,195,247,192,249,190,252,192,252,192" title="Complexity: 22; Coverage: 81%; Class: ArArchiveOutputStream" alt="" href="org/apache/commons/compress/archivers/ar/ArArchiveOutputStream.html#ArArchiveOutputStream"/>
+<area shape="poly" coords="259,201,257,204,254,201,257,199,259,201,259,201" title="Complexity: 10; Coverage: 84%; Class: ArArchiveEntry" alt="" href="org/apache/commons/compress/archivers/ar/ArArchiveEntry.html#ArArchiveEntry"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 5; Coverage: 0%; Class: JarArchiveInputStream" alt="" href="org/apache/commons/compress/archivers/jar/JarArchiveInputStream.html#JarArchiveInputStream"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 3; Coverage: 0%; Class: GzipCompressorOutputStream" alt="" href="org/apache/commons/compress/compressors/gzip/GzipCompressorOutputStream.html#GzipCompressorOutputStream"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 7; Coverage: 0%; Class: JarArchiveEntry" alt="" href="org/apache/commons/compress/archivers/jar/JarArchiveEntry.html#JarArchiveEntry"/>
+<area shape="poly" coords="127,204,125,206,122,204,125,201,127,204,127,204" title="Complexity: 7; Coverage: 30%; Class: ZipUtil" alt="" href="org/apache/commons/compress/archivers/zip/ZipUtil.html#ZipUtil"/>
+<area shape="poly" coords="156,206,154,208,151,206,154,203,156,206,156,206" title="Complexity: 4; Coverage: 42%; Class: UnicodeCommentExtraField" alt="" href="org/apache/commons/compress/archivers/zip/UnicodeCommentExtraField.html#UnicodeCommentExtraField"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: GzipCompressorInputStream" alt="" href="org/apache/commons/compress/compressors/gzip/GzipCompressorInputStream.html#GzipCompressorInputStream"/>
+<area shape="poly" coords="54,146,51,149,49,146,51,144,54,146,54,146" title="Complexity: 83; Coverage: 0%; Class: ZipArchiveOutputStream" alt="" href="org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.html#ZipArchiveOutputStream"/>
+<area shape="poly" coords="232,194,230,196,227,194,230,191,232,194,232,194" title="Complexity: 20; Coverage: 73%; Class: ExtraFieldUtils" alt="" href="org/apache/commons/compress/archivers/zip/ExtraFieldUtils.html#ExtraFieldUtils"/>
+<area shape="poly" coords="169,172,166,175,164,172,166,170,169,172,169,172" title="Complexity: 49; Coverage: 47%; Class: ZipArchiveEntry" alt="" href="org/apache/commons/compress/archivers/zip/ZipArchiveEntry.html#ZipArchiveEntry"/>
+<area shape="poly" coords="156,206,154,208,151,206,154,203,156,206,156,206" title="Complexity: 4; Coverage: 42%; Class: UnicodeCommentExtraField" alt="" href="org/apache/commons/compress/archivers/zip/UnicodeCommentExtraField.html#UnicodeCommentExtraField"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 3; Coverage: 0%; Class: GzipCompressorOutputStream" alt="" href="org/apache/commons/compress/compressors/gzip/GzipCompressorOutputStream.html#GzipCompressorOutputStream"/>
+<area shape="poly" coords="54,189,51,192,49,189,51,187,54,189,54,189" title="Complexity: 26; Coverage: 0%; Class: Simple8BitZipEncoding" alt="" href="org/apache/commons/compress/archivers/zip/Simple8BitZipEncoding.html#Simple8BitZipEncoding"/>
+<area shape="poly" coords="252,189,249,192,247,189,249,187,252,189,252,189" title="Complexity: 26; Coverage: 81%; Class: AsiExtraField" alt="" href="org/apache/commons/compress/archivers/zip/AsiExtraField.html#AsiExtraField"/>
+<area shape="poly" coords="257,198,254,201,252,198,254,196,257,198,257,198" title="Complexity: 14; Coverage: 83%; Class: ZipShort" alt="" href="org/apache/commons/compress/archivers/zip/ZipShort.html#ZipShort"/>
+<area shape="poly" coords="225,198,222,201,220,198,222,196,225,198,225,198" title="Complexity: 14; Coverage: 70%; Class: ZipLong" alt="" href="org/apache/commons/compress/archivers/zip/ZipLong.html#ZipLong"/>
+<area shape="poly" coords="213,194,210,196,208,194,210,191,213,194,213,194" title="Complexity: 20; Coverage: 65%; Class: AbstractUnicodeExtraField" alt="" href="org/apache/commons/compress/archivers/zip/AbstractUnicodeExtraField.html#AbstractUnicodeExtraField"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: ZipFile.NameAndComment" alt="" href="org/apache/commons/compress/archivers/zip/ZipFile.html#ZipFile.NameAndComment"/>
+<area shape="poly" coords="54,201,51,203,49,201,51,198,54,201,54,201" title="Complexity: 11; Coverage: 0%; Class: ZipFile.BoundedInputStream" alt="" href="org/apache/commons/compress/archivers/zip/ZipFile.html#ZipFile.BoundedInputStream"/>
+<area shape="poly" coords="230,170,227,172,225,170,227,167,230,170,230,170" title="Complexity: 52; Coverage: 72%; Class: ZipFile" alt="" href="org/apache/commons/compress/archivers/zip/ZipFile.html#ZipFile"/>
+<area shape="poly" coords="54,201,51,203,49,201,51,198,54,201,54,201" title="Complexity: 11; Coverage: 0%; Class: ZipFile.BoundedInputStream" alt="" href="org/apache/commons/compress/archivers/zip/ZipFile.html#ZipFile.BoundedInputStream"/>
+<area shape="poly" coords="264,198,262,200,259,198,262,195,264,198,264,198" title="Complexity: 15; Coverage: 86%; Class: UnrecognizedExtraField" alt="" href="org/apache/commons/compress/archivers/zip/UnrecognizedExtraField.html#UnrecognizedExtraField"/>
+<area shape="poly" coords="90,201,88,204,85,201,88,199,90,201,90,201" title="Complexity: 10; Coverage: 15%; Class: JarMarker" alt="" href="org/apache/commons/compress/archivers/zip/JarMarker.html#JarMarker"/>
+<area shape="poly" coords="115,207,112,209,110,207,112,204,115,207,115,207" title="Complexity: 3; Coverage: 25%; Class: ZipEncodingHelper.SimpleEncodingHolder" alt="" href="org/apache/commons/compress/archivers/zip/ZipEncodingHelper.html#ZipEncodingHelper.SimpleEncodingHolder"/>
+<area shape="poly" coords="161,201,159,203,156,201,159,198,161,201,161,201" title="Complexity: 11; Coverage: 44%; Class: ZipEncodingHelper" alt="" href="org/apache/commons/compress/archivers/zip/ZipEncodingHelper.html#ZipEncodingHelper"/>
+<area shape="poly" coords="54,201,51,204,49,201,51,199,54,201,54,201" title="Complexity: 10; Coverage: 0%; Class: ZipArchiveInputStream" alt="" href="org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.html#ZipArchiveInputStream"/>
+<area shape="poly" coords="134,204,132,206,129,204,132,201,134,204,134,204" title="Complexity: 7; Coverage: 33%; Class: FallbackZipEncoding" alt="" href="org/apache/commons/compress/archivers/zip/FallbackZipEncoding.html#FallbackZipEncoding"/>
+<area shape="poly" coords="242,207,240,209,237,207,240,204,242,207,242,207" title="Complexity: 3; Coverage: 77%; Class: IOUtils" alt="" href="org/apache/commons/compress/utils/IOUtils.html#IOUtils"/>
+<area shape="poly" coords="54,188,51,190,49,188,51,185,54,188,54,188" title="Complexity: 28; Coverage: 0%; Class: ChangeSet" alt="" href="org/apache/commons/compress/changes/ChangeSet.html#ChangeSet"/>
+<area shape="poly" coords="54,202,51,205,49,202,51,200,54,202,54,202" title="Complexity: 9; Coverage: 0%; Class: Change" alt="" href="org/apache/commons/compress/changes/Change.html#Change"/>
+<area shape="poly" coords="54,183,51,186,49,183,51,181,54,183,54,183" title="Complexity: 34; Coverage: 0%; Class: TarArchiveOutputStream" alt="" href="org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.html#TarArchiveOutputStream"/>
+<area shape="poly" coords="54,162,51,164,49,162,51,159,54,162,54,162" title="Complexity: 63; Coverage: 0%; Class: TarArchiveEntry" alt="" href="org/apache/commons/compress/archivers/tar/TarArchiveEntry.html#TarArchiveEntry"/>
+<area shape="poly" coords="54,165,51,168,49,165,51,163,54,165,54,165" title="Complexity: 58; Coverage: 0%; Class: TarBuffer" alt="" href="org/apache/commons/compress/archivers/tar/TarBuffer.html#TarBuffer"/>
+<area shape="poly" coords="54,192,51,194,49,192,51,189,54,192,54,192" title="Complexity: 23; Coverage: 0%; Class: TarUtils" alt="" href="org/apache/commons/compress/archivers/tar/TarUtils.html#TarUtils"/>
+<area shape="poly" coords="54,164,51,166,49,164,51,161,54,164,54,164" title="Complexity: 60; Coverage: 0%; Class: TarArchiveInputStream" alt="" href="org/apache/commons/compress/archivers/tar/TarArchiveInputStream.html#TarArchiveInputStream"/>
+<area shape="poly" coords="54,164,51,166,49,164,51,161,54,164,54,164" title="Complexity: 60; Coverage: 0%; Class: TarArchiveInputStream" alt="" href="org/apache/commons/compress/archivers/tar/TarArchiveInputStream.html#TarArchiveInputStream"/>
+<area shape="poly" coords="54,201,51,203,49,201,51,198,54,201,54,201" title="Complexity: 11; Coverage: 0%; Class: ZipFile.BoundedInputStream" alt="" href="org/apache/commons/compress/archivers/zip/ZipFile.html#ZipFile.BoundedInputStream"/>
+<area shape="poly" coords="54,162,51,165,49,162,51,160,54,162,54,162" title="Complexity: 62; Coverage: 0%; Class: CpioArchiveEntry" alt="" href="org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.html#CpioArchiveEntry"/>
+<area shape="poly" coords="54,169,51,172,49,169,51,167,54,169,54,169" title="Complexity: 53; Coverage: 0%; Class: CpioArchiveOutputStream" alt="" href="org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.html#CpioArchiveOutputStream"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: CompressorException" alt="" href="org/apache/commons/compress/compressors/CompressorException.html#CompressorException"/>
+<area shape="poly" coords="191,200,188,202,186,200,188,197,191,200,191,200" title="Complexity: 12; Coverage: 56%; Class: CompressorStreamFactory" alt="" href="org/apache/commons/compress/compressors/CompressorStreamFactory.html#CompressorStreamFactory"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 3; Coverage: 0%; Class: GzipCompressorOutputStream" alt="" href="org/apache/commons/compress/compressors/gzip/GzipCompressorOutputStream.html#GzipCompressorOutputStream"/>
+<area shape="poly" coords="68,190,66,193,63,190,66,188,68,190,68,190" title="Complexity: 25; Coverage: 6%; Class: ArchiveStreamFactory" alt="" href="org/apache/commons/compress/archivers/ArchiveStreamFactory.html#ArchiveStreamFactory"/>
+</map>
+            </div>
+        </div>
+        
+                    <div class="dashboard-widget">
+                <header class="dashboard-widget-header">
+                    <h3>Coverage tree map</h3>
+                </header>
+                <div class="dashboard-widget-content">
+                    <div id="infovis" style="width:100%; height:250px;">
+                        <div id="treemap-loader" style="position:relative;top:50px;">
+                            <p>
+                                Generating Coverage Tree Map. Please wait...
+                            </p>
+                            <p>
+                                <img src="img/ajax-loader.gif" alt="Loading Treemap"/>
+                            </p>
+                        </div>
+                    </div>
+                    <p><a href="treemap.html">See more</a></p>
+                </div>
+
+            </div>
+            </div>
+
+
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Top 20 project risks</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                                                                <a class="tag" href="org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.html"
+                            style="font-size: 26px;color:#f6c342"
+                            title="Average Method Complexity - 7.471 , Coverage - 65.9% ">BZip2CompressorOutputStream</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.html"
+                            style="font-size: 22px;color:#fae1a0"
+                            title="Average Method Complexity - 5.407 , Coverage - 71.5% ">BZip2CompressorInputStream</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/compressors/CompressorStreamFactory.html"
+                            style="font-size: 23px;color:#f6c342"
+                            title="Average Method Complexity - 6 , Coverage - 56.2% ">CompressorStreamFactory</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/archivers/zip/ZipFile.html"
+                            style="font-size: 17px;color:#fae1a0"
+                            title="Average Method Complexity - 3.059 , Coverage - 72.9% ">ZipFile</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.html"
+                            style="font-size: 15px;color:#89c495"
+                            title="Average Method Complexity - 2 , Coverage - 90% ">BZip2CompressorInputStream.Data</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/archivers/zip/ExtraFieldUtils.html"
+                            style="font-size: 17px;color:#fae1a0"
+                            title="Average Method Complexity - 2.857 , Coverage - 73.5% ">ExtraFieldUtils</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/archivers/ArchiveStreamFactory.html"
+                            style="font-size: 28px;color:#d5584c"
+                            title="Average Method Complexity - 8.333 , Coverage - 6.8% ">ArchiveStreamFactory</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/archivers/ar/ArArchiveOutputStream.html"
+                            style="font-size: 15px;color:#14892c"
+                            title="Average Method Complexity - 2 , Coverage - 81.8% ">ArArchiveOutputStream</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/archivers/cpio/CpioUtil.html"
+                            style="font-size: 22px;color:#d04437"
+                            title="Average Method Complexity - 5.5 , Coverage - 0% ">CpioUtil</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/changes/ChangeSet.html"
+                            style="font-size: 19px;color:#d04437"
+                            title="Average Method Complexity - 4 , Coverage - 0% ">ChangeSet</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/utils/IOUtils.html"
+                            style="font-size: 14px;color:#14892c"
+                            title="Average Method Complexity - 1.5 , Coverage - 77.8% ">IOUtils</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/archivers/ar/ArArchiveInputStream.html"
+                            style="font-size: 18px;color:#d04437"
+                            title="Average Method Complexity - 3.571 , Coverage - 0% ">ArArchiveInputStream</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/archivers/zip/UnrecognizedExtraField.html"
+                            style="font-size: 14px;color:#89c495"
+                            title="Average Method Complexity - 1.364 , Coverage - 86.4% ">UnrecognizedExtraField</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/archivers/zip/ZipEncodingHelper.html"
+                            style="font-size: 16px;color:#e28e87"
+                            title="Average Method Complexity - 2.2 , Coverage - 44.6% ">ZipEncodingHelper</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/archivers/tar/TarUtils.html"
+                            style="font-size: 18px;color:#d04437"
+                            title="Average Method Complexity - 3.286 , Coverage - 0% ">TarUtils</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/archivers/zip/Simple8BitZipEncoding.html"
+                            style="font-size: 18px;color:#d04437"
+                            title="Average Method Complexity - 3.25 , Coverage - 0% ">Simple8BitZipEncoding</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/archivers/zip/ZipShort.html"
+                            style="font-size: 14px;color:#14892c"
+                            title="Average Method Complexity - 1.273 , Coverage - 83.3% ">ZipShort</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/archivers/zip/ZipArchiveEntry.html"
+                            style="font-size: 15px;color:#e7a19b"
+                            title="Average Method Complexity - 1.69 , Coverage - 47.3% ">ZipArchiveEntry</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.html"
+                            style="font-size: 18px;color:#d04437"
+                            title="Average Method Complexity - 3.158 , Coverage - 0% ">CpioArchiveInputStream</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/compress/archivers/zip/AbstractUnicodeExtraField.html"
+                            style="font-size: 14px;color:#f6c342"
+                            title="Average Method Complexity - 1.429 , Coverage - 65.6% ">AbstractUnicodeExtraField</a>
+                                                    <p><a href="top-risks.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex packages</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.67673266</span>67.7%</div><div style="display: table-cell">
+ <div title="67.7% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:67.7%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/compress/compressors/bzip2/pkg-summary.html">org.apache.commons.compress.compressors.bzip2</a>
+                                <span class="aui-badge" title="Package complexity">414</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.38873628</span>38.9%</div><div style="display: table-cell">
+ <div title="38.9% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:38.9%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/compress/archivers/zip/pkg-summary.html">org.apache.commons.compress.archivers.zip</a>
+                                <span class="aui-badge" title="Package complexity">403</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/compress/archivers/tar/pkg-summary.html">org.apache.commons.compress.archivers.tar</a>
+                                <span class="aui-badge" title="Package complexity">238</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/compress/archivers/cpio/pkg-summary.html">org.apache.commons.compress.archivers.cpio</a>
+                                <span class="aui-badge" title="Package complexity">186</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.44155845</span>44.2%</div><div style="display: table-cell">
+ <div title="44.2% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:44.2%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/compress/archivers/ar/pkg-summary.html">org.apache.commons.compress.archivers.ar</a>
+                                <span class="aui-badge" title="Package complexity">57</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex classes</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6592988</span>65.9%</div><div style="display: table-cell">
+ <div title="65.9% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:65.9%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.html"  title="org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream">BZip2CompressorOutputStream</a>
+                                <span class="aui-badge" title="Class complexity">254</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7153502</span>71.5%</div><div style="display: table-cell">
+ <div title="71.5% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:71.5%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.html"  title="org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream">BZip2CompressorInputStream</a>
+                                <span class="aui-badge" title="Class complexity">146</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.html"  title="org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream">ZipArchiveOutputStream</a>
+                                <span class="aui-badge" title="Class complexity">83</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/compress/archivers/tar/TarArchiveEntry.html"  title="org.apache.commons.compress.archivers.tar.TarArchiveEntry">TarArchiveEntry</a>
+                                <span class="aui-badge" title="Class complexity">63</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.html"  title="org.apache.commons.compress.archivers.cpio.CpioArchiveEntry">CpioArchiveEntry</a>
+                                <span class="aui-badge" title="Class complexity">62</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Least tested methods</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+
+                    <tr>
+                        <td align="right">1.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BZip2CompressorOutputStream.qSort3(int,int,int,StackElem[])&#160;:&#160;void" href="org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.html?line=1003#src-1003">BZip2CompressorOutputStream.qSort3(int,int,int,StackElem[])&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">17</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">2.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TarArchiveInputStream.getNextTarEntry()&#160;:&#160;TarArchiveEntry" href="org/apache/commons/compress/archivers/tar/TarArchiveInputStream.html?line=184#src-184">TarArchiveInputStream.getNextTarEntry()&#160;:&#160;TarArchiveEntry</a>
+                            <span class="aui-badge" title="Method complexity">18</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">3.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ZipArchiveOutputStream.writeLocalFileHeader(ZipArchiveEntry)&#160;:&#160;void" href="org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.html?line=619#src-619">ZipArchiveOutputStream.writeLocalFileHeader(ZipArchiveEntry)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">12</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">4.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ArArchiveInputStream.getNextArEntry()&#160;:&#160;ArArchiveEntry" href="org/apache/commons/compress/archivers/ar/ArArchiveInputStream.html?line=39#src-39">ArArchiveInputStream.getNextArEntry()&#160;:&#160;ArArchiveEntry</a>
+                            <span class="aui-badge" title="Method complexity">10</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">5.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TarArchiveInputStream.read(byte[],int,int)&#160;:&#160;int" href="org/apache/commons/compress/archivers/tar/TarArchiveInputStream.html?line=298#src-298">TarArchiveInputStream.read(byte[],int,int)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">9</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">6.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ZipArchiveOutputStream.writeCentralFileHeader(ZipArchiveEntry)&#160;:&#160;void" href="org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.html?line=741#src-741">ZipArchiveOutputStream.writeCentralFileHeader(ZipArchiveEntry)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">7.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="CpioArchiveInputStream.read(byte[],int,int)&#160;:&#160;int" href="org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.html?line=241#src-241">CpioArchiveInputStream.read(byte[],int,int)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">15</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">8.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ZipArchiveOutputStream.closeEntry()&#160;:&#160;void" href="org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.html?line=352#src-352">ZipArchiveOutputStream.closeEntry()&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">8</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">9.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="CpioArchiveInputStream.getNextCPIOEntry()&#160;:&#160;CpioArchiveEntry" href="org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.html?line=162#src-162">CpioArchiveInputStream.getNextCPIOEntry()&#160;:&#160;CpioArchiveEntry</a>
+                            <span class="aui-badge" title="Method complexity">8</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">10.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TarArchiveInputStream.matches(byte[],int)&#160;:&#160;boolean" href="org/apache/commons/compress/archivers/tar/TarArchiveInputStream.html?line=410#src-410">TarArchiveInputStream.matches(byte[],int)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">10</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">11.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ArArchiveInputStream.matches(byte[],int)&#160;:&#160;boolean" href="org/apache/commons/compress/archivers/ar/ArArchiveInputStream.html?line=118#src-118">ArArchiveInputStream.matches(byte[],int)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">10</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">12.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TarArchiveOutputStream.write(byte[],int,int)&#160;:&#160;void" href="org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.html?line=273#src-273">TarArchiveOutputStream.write(byte[],int,int)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">13.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ChangeSet.perform(ArchiveInputStream,ArchiveOutputStream)&#160;:&#160;void" href="org/apache/commons/compress/changes/ChangeSet.html?line=54#src-54">ChangeSet.perform(ArchiveInputStream,ArchiveOutputStream)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">10</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">14.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ArchiveStreamFactory.createArchiveInputStream(InputStream)&#160;:&#160;ArchiveInputStream" href="org/apache/commons/compress/archivers/ArchiveStreamFactory.html?line=117#src-117">ArchiveStreamFactory.createArchiveInputStream(InputStream)&#160;:&#160;ArchiveInputStream</a>
+                            <span class="aui-badge" title="Method complexity">9</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">15.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TarBuffer.readBlock()&#160;:&#160;boolean" href="org/apache/commons/compress/archivers/tar/TarBuffer.html?line=237#src-237">TarBuffer.readBlock()&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">8</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">16.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="NioZipEncoding.encode(String)&#160;:&#160;ByteBuffer" href="org/apache/commons/compress/archivers/zip/NioZipEncoding.html?line=69#src-69">NioZipEncoding.encode(String)&#160;:&#160;ByteBuffer</a>
+                            <span class="aui-badge" title="Method complexity">8</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">17.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TarArchiveEntry.normalizeFileName(String)&#160;:&#160;String" href="org/apache/commons/compress/archivers/tar/TarArchiveEntry.html?line=608#src-608">TarArchiveEntry.normalizeFileName(String)&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">12</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">18.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ZipArchiveOutputStream.putNextEntry(ZipArchiveEntry)&#160;:&#160;void" href="org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.html?line=418#src-418">ZipArchiveOutputStream.putNextEntry(ZipArchiveEntry)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">9</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">19.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ZipArchiveOutputStream.write(byte[],int,int)&#160;:&#160;void" href="org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.html?line=496#src-496">ZipArchiveOutputStream.write(byte[],int,int)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">7</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">20.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BZip2CompressorInputStream.setupRandPartB()&#160;:&#160;void" href="org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.html?line=841#src-841">BZip2CompressorInputStream.setupRandPartB()&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                    </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+                            </div> <!-- tabs-pane active-pane -->
+                        </div>
+
+    <script type="text/javascript" src="jit.js" ></script>
+    <script type="text/javascript" src="treemap-dash-json.js" ></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu Jan 26 2023 11:08:13 MST using coverage data from Thu Jan 26 2023 11:08:12 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

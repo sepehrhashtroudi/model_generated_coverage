@@ -1,0 +1,30 @@
+Testsuite: org.apache.commons.codec.language.MetaphoneTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec
+
+Testcase: testSetMaxLengthWithTruncation44 took 0.009 sec
+Testcase: testIsMetaphoneEqualWright11 took 0.001 sec
+Testcase: testTCH21 took 0.001 sec
+Testcase: testTIOAndTIAToX16 took 0.001 sec
+Testcase: testIsMetaphoneEqualMary118 took 0.008 sec
+Testcase: testIsMetaphoneEqualGary61 took 0.04 sec
+Testcase: testDiscardOfSilentGN109 took 0.001 sec
+Testcase: testIsMetaphoneEqualWhite69 took 0.003 sec
+Testcase: testIsMetaphoneEqualKnight101 took 0.005 sec
+Testcase: testMetaphone75 took 0.001 sec
+Testcase: testWordEndingInMB82 took 0 sec
+Testcase: testIsMetaphoneEqualXalan71 took 0.001 sec
+Testcase: testPHTOF114 took 0.001 sec
+Testcase: testDiscardOfSilentHAfterG87 took 0.001 sec
+Testcase: testWordsWithCIA94 took 0.001 sec
+Testcase: testIsMetaphoneEqualJohn125 took 0.012 sec
+Testcase: testTranslateOfSCHAndCH84 took 0 sec
+Testcase: testSHAndSIOAndSIAToX14 took 0 sec
+Testcase: testIsMetaphoneEqualAero105 took 0 sec
+Testcase: testDiscardOfSCEOrSCIOrSCY116 took 0 sec
+Testcase: testIsMetaphoneEqual148 took 0.001 sec
+Testcase: testIsMetaphoneEqualAlbert59 took 0.001 sec
+Testcase: testTranslateToJOfDGEOrDGIOrDGY113 took 0.001 sec
+Testcase: testLocaleIndependence54 took 0.001 sec
+Testcase: testEncodeWithInvalidObject26 took 0.001 sec
+Testcase: testEncodeNull43 took 0 sec
+Testcase: testEncodeEmpty60 took 0.001 sec

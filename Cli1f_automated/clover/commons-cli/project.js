@@ -1,0 +1,2 @@
+processClover (  {"children":["org/apache/commons/cli/","org/apache/commons/cli/bug/"],"name":"Clover database Tue Jan 3 2023 12:30:57 MST","stats":{"AvgMethodComplexity":2.042056,"Complexity":437,"ErroneousTests":0,"FailingTests":0,"PassingTests":0,"PcErroneousTests":-1,"PcFailingTests":-1,"PcPassingTests":-1,"TestExecutionTime":0,"Tests":0,"TotalChildren":2,"TotalPercentageCovered":39.65646,"TotalStatements":773,"UncoveredElements":808},"title":"commons-cli"}
+ ); 

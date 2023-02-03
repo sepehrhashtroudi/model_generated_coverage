@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":168,"id":30632,"methods":[],"name":"TestEnumDeserialization","sl":17},{"el":26,"id":30632,"methods":[],"name":"TestEnumDeserialization.TestEnum","sl":26},{"el":34,"id":30632,"methods":[],"name":"TestEnumDeserialization.AnnotatedTestEnum","sl":32},{"el":44,"id":30632,"methods":[{"el":38,"sc":9,"sl":38},{"el":43,"sc":9,"sl":39}],"name":"TestEnumDeserialization.DummySerializer","sl":36},{"el":55,"id":30636,"methods":[{"el":54,"sc":9,"sl":49}],"name":"TestEnumDeserialization.EnumWithCreator","sl":46},{"el":62,"id":30646,"methods":[{"el":59,"sc":9,"sl":59},{"el":61,"sc":9,"sl":60}],"name":"TestEnumDeserialization.LowerCaseEnum","sl":57},{"el":74,"id":30649,"methods":[{"el":70,"sc":9,"sl":68},{"el":73,"sc":9,"sl":71}],"name":"TestEnumDeserialization.EnumWithJsonValue","sl":65},{"el":79,"id":30653,"methods":[],"name":"TestEnumDeserialization.ClassWithEnumMapKey","sl":77},{"el":98,"id":30653,"methods":[{"el":90,"sc":9,"sl":88},{"el":97,"sc":9,"sl":92}],"name":"TestEnumDeserialization.TestEnumFor834","sl":82}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]

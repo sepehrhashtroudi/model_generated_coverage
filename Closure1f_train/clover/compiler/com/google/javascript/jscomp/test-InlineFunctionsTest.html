@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Thu Jan 12 2023 14:04:05 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class InlineFunctionsTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="InlineFunctionsTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>InlineFunctionsTest</td>
+        <td class="testPasses"><span class="sortValue">34</span>34</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.168</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testInlineFunctions291495</span><a href="InlineFunctionsTest_testInlineFunctions291495_1pz.html">InlineFunctionsTest.testInlineFunctions291495</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455970</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testAnonymous21787</span><a href="InlineFunctionsTest_testAnonymous21787_7b.html">InlineFunctionsTest.testAnonymous21787</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455990</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testShadowVariables52345</span><a href="InlineFunctionsTest_testShadowVariables52345_18y.html">InlineFunctionsTest.testShadowVariables52345</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557456045</span>12 Jan 14:04:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testReplacePropertyFunction1026</span><a href="InlineFunctionsTest_testReplacePropertyFunction1026_1s.html">InlineFunctionsTest.testReplacePropertyFunction1026</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455933</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testCrossModuleInlining31253</span><a href="InlineFunctionsTest_testCrossModuleInlining31253_1m9.html">InlineFunctionsTest.testCrossModuleInlining31253</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455944</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testFunctionExpressionCallInlining32040</span><a href="InlineFunctionsTest_testFunctionExpressionCallInlining32040_tw.html">InlineFunctionsTest.testFunctionExpressionCallInlining32040</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557456003</span>12 Jan 14:04:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testLocalFunctionInlining51360</span><a href="InlineFunctionsTest_testLocalFunctionInlining51360_9d.html">InlineFunctionsTest.testLocalFunctionInlining51360</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455966</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testInlineWithThis61551</span><a href="InlineFunctionsTest_testInlineWithThis61551_105.html">InlineFunctionsTest.testInlineWithThis61551</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455975</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testCostBasedInlining12254</span><a href="InlineFunctionsTest_testCostBasedInlining12254_oy.html">InlineFunctionsTest.testCostBasedInlining12254</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557456019</span>12 Jan 14:04:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testInlineFunctionWithArgsMismatch12165</span><a href="InlineFunctionsTest_testInlineFunctionWithArgsMismatch12165_qa.html">InlineFunctionsTest.testInlineFunctionWithArgsMismatch12165</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557456015</span>12 Jan 14:04:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testInlineFunctions311634</span><a href="InlineFunctionsTest_testInlineFunctions311634_pr.html">InlineFunctionsTest.testInlineFunctions311634</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455985</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testInlineFunctions211835</span><a href="InlineFunctionsTest_testInlineFunctions211835_1o5.html">InlineFunctionsTest.testInlineFunctions211835</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455994</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testComplexNoInline11881</span><a href="InlineFunctionsTest_testComplexNoInline11881_1j.html">InlineFunctionsTest.testComplexNoInline11881</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455999</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testComplexFunctionWithFunctionDefinition2a872</span><a href="InlineFunctionsTest_testComplexFunctionWithFunctionDefinition2a872_uk.html">InlineFunctionsTest.testComplexFunctionWithFunctionDefinition2a872</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455912</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testIssue7281402</span><a href="InlineFunctionsTest_testIssue7281402_j5.html">InlineFunctionsTest.testIssue7281402</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557456054</span>12 Jan 14:04:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testFunctionExpressionYCombinator1254</span><a href="InlineFunctionsTest_testFunctionExpressionYCombinator1254_os.html">InlineFunctionsTest.testFunctionExpressionYCombinator1254</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455950</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testFunctionExpressionCallInlining22310</span><a href="InlineFunctionsTest_testFunctionExpressionCallInlining22310_13s.html">InlineFunctionsTest.testFunctionExpressionCallInlining22310</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557456028</span>12 Jan 14:04:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testRenamePropertyFunction2105</span><a href="InlineFunctionsTest_testRenamePropertyFunction2105_j8.html">InlineFunctionsTest.testRenamePropertyFunction2105</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557456007</span>12 Jan 14:04:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testShadowVariables16129</span><a href="InlineFunctionsTest_testShadowVariables16129_wf.html">InlineFunctionsTest.testShadowVariables16129</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455877</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testInlineFunctions9978</span><a href="InlineFunctionsTest_testInlineFunctions9978_1co.html">InlineFunctionsTest.testInlineFunctions9978</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455924</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testCostBasedInliningComplex4581</span><a href="InlineFunctionsTest_testCostBasedInliningComplex4581_8p.html">InlineFunctionsTest.testCostBasedInliningComplex4581</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455901</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testComplexInlineInExpresssions32284</span><a href="InlineFunctionsTest_testComplexInlineInExpresssions32284_bf.html">InlineFunctionsTest.testComplexInlineInExpresssions32284</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557456024</span>12 Jan 14:04:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testShadowVariables41028</span><a href="InlineFunctionsTest_testShadowVariables41028_dg.html">InlineFunctionsTest.testShadowVariables41028</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455940</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testInlineNeverOverrideNewValues2379</span><a href="InlineFunctionsTest_testInlineNeverOverrideNewValues2379_12w.html">InlineFunctionsTest.testInlineNeverOverrideNewValues2379</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557456050</span>12 Jan 14:04:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testNoInlineOfNonGlobalFunction1930</span><a href="InlineFunctionsTest_testNoInlineOfNonGlobalFunction1930_fk.html">InlineFunctionsTest.testNoInlineOfNonGlobalFunction1930</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455920</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testInlineWithThis5262</span><a href="InlineFunctionsTest_testInlineWithThis5262_1q6.html">InlineFunctionsTest.testInlineWithThis5262</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455895</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testInlineBlockMutableArgs437</span><a href="InlineFunctionsTest_testInlineBlockMutableArgs437_ji.html">InlineFunctionsTest.testInlineBlockMutableArgs437</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455867</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testFunctionExpressionOmega634</span><a href="InlineFunctionsTest_testFunctionExpressionOmega634_y2.html">InlineFunctionsTest.testFunctionExpressionOmega634</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455907</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testIssue4232313</span><a href="InlineFunctionsTest_testIssue4232313_15h.html">InlineFunctionsTest.testIssue4232313</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557456031</span>12 Jan 14:04:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testInlineFunctions102118</span><a href="InlineFunctionsTest_testInlineFunctions102118_108.html">InlineFunctionsTest.testInlineFunctions102118</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557456010</span>12 Jan 14:04:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testCostBasedInlining372</span><a href="InlineFunctionsTest_testCostBasedInlining372_1ew.html">InlineFunctionsTest.testCostBasedInlining372</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455871</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testCostBasedInlining11988</span><a href="InlineFunctionsTest_testCostBasedInlining11988_sb.html">InlineFunctionsTest.testCostBasedInlining11988</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455928</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testFunctionExpressionCallInlining11d185</span><a href="InlineFunctionsTest_testFunctionExpressionCallInlining11d185_1fm.html">InlineFunctionsTest.testFunctionExpressionCallInlining11d185</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455887</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">InlineFunctionsTest.testFunctionExpressionCallInlining81613</span><a href="InlineFunctionsTest_testFunctionExpressionCallInlining81613_1a1.html">InlineFunctionsTest.testFunctionExpressionCallInlining81613</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455982</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu Jan 12 2023 14:04:35 MST using coverage data from Thu Jan 12 2023 14:04:30 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

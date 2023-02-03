@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":124,"id":81907,"methods":[{"el":43,"sc":3,"sl":28},{"el":51,"sc":1,"sl":46},{"el":62,"sc":1,"sl":54},{"el":70,"sc":1,"sl":65},{"el":77,"sc":1,"sl":73},{"el":85,"sc":1,"sl":80},{"el":123,"sc":3,"sl":106}],"name":"JSCompilerSourceExcerptProviderTest","sl":25}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1504":{"methods":[{"sl":46}],"name":"testExcerptInexistantLine228","pass":true,"statements":[{"sl":47},{"sl":48},{"sl":49},{"sl":50}]},"test_2244":{"methods":[{"sl":54},{"sl":106}],"name":"testExcerptRegion247","pass":true,"statements":[{"sl":55},{"sl":56},{"sl":57},{"sl":58},{"sl":59},{"sl":60},{"sl":61},{"sl":107},{"sl":108},{"sl":109},{"sl":110},{"sl":111},{"sl":112},{"sl":114},{"sl":116},{"sl":117},{"sl":118},{"sl":119},{"sl":121},{"sl":122}]},"test_2280":{"methods":[{"sl":80}],"name":"testExceptNoNewLine2363","pass":true,"statements":[{"sl":81},{"sl":82},{"sl":83},{"sl":84}]},"test_2370":{"methods":[{"sl":65}],"name":"testExcerptInexistantRegion664","pass":true,"statements":[{"sl":66},{"sl":67},{"sl":68},{"sl":69}]},"test_2450":{"methods":[{"sl":73}],"name":"testExcerptRegionFromInexistantSource1780","pass":true,"statements":[{"sl":74},{"sl":75},{"sl":76}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1504], [1504], [1504], [1504], [1504], [], [], [], [2244], [2244], [2244], [2244], [2244], [2244], [2244], [2244], [], [], [], [2370], [2370], [2370], [2370], [2370], [], [], [], [2450], [2450], [2450], [2450], [], [], [], [2280], [2280], [2280], [2280], [2280], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [2244], [2244], [2244], [2244], [2244], [2244], [2244], [], [2244], [], [2244], [2244], [2244], [2244], [], [2244], [2244], [], []]

@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":58,"id":21591,"methods":[{"el":29,"sc":5,"sl":24},{"el":33,"sc":5,"sl":31},{"el":37,"sc":5,"sl":35},{"el":41,"sc":5,"sl":39},{"el":45,"sc":5,"sl":43},{"el":49,"sc":5,"sl":47},{"el":53,"sc":5,"sl":51},{"el":57,"sc":5,"sl":55}],"name":"MockZone","sl":18}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1031":{"methods":[{"sl":31}],"name":"test_LocalDate_toDateMidnight_Gaza1169","pass":true,"statements":[{"sl":32}]},"test_1224":{"methods":[{"sl":31},{"sl":39},{"sl":55}],"name":"test_DateTime_withDay_Turk420","pass":true,"statements":[{"sl":32},{"sl":40},{"sl":56}]},"test_1314":{"methods":[{"sl":31},{"sl":39}],"name":"test_DateTime_parse_Turk832","pass":true,"statements":[{"sl":32},{"sl":40}]},"test_1475":{"methods":[{"sl":24},{"sl":31},{"sl":39},{"sl":43},{"sl":55}],"name":"testWithMinuteOfHourInDstChange_mockZone275","pass":true,"statements":[{"sl":25},{"sl":26},{"sl":27},{"sl":28},{"sl":32},{"sl":40},{"sl":44},{"sl":56}]},"test_1611":{"methods":[{"sl":31}],"name":"test_LocalDate_new_Turk1442","pass":true,"statements":[{"sl":32}]},"test_221":{"methods":[{"sl":31}],"name":"test_DateTime_parse_Gaza1140","pass":true,"statements":[{"sl":32}]},"test_497":{"methods":[{"sl":31}],"name":"test_MutableDateTime_withZoneRetainFields_Gaza77","pass":true,"statements":[{"sl":32}]},"test_690":{"methods":[{"sl":31},{"sl":39}],"name":"test_DateTime_plusDayMidGap_Turk1003","pass":true,"statements":[{"sl":32},{"sl":40}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1475], [1475], [1475], [1475], [1475], [], [], [1031, 1314, 1475, 1611, 1224, 690, 221, 497], [1031, 1314, 1475, 1611, 1224, 690, 221, 497], [], [], [], [], [], [], [1314, 1475, 1224, 690], [1314, 1475, 1224, 690], [], [], [1475], [1475], [], [], [], [], [], [], [], [], [], [], [1475, 1224], [1475, 1224], [], []]

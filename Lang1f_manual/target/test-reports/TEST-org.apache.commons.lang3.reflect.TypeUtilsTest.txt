@@ -1,0 +1,202 @@
+Testsuite: org.apache.commons.lang3.reflect.TypeUtilsTest
+Tests run: 38, Failures: 17, Errors: 14, Skipped: 0, Time elapsed: 0.071 sec
+
+Testcase: testGetRawTypeWithArrayClasses345 took 0.025 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetRawTypeWithArrayClasses345(TypeUtilsTest.java:753)
+
+Testcase: testUnrollVariableAssignments324 took 0.001 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testUnrollVariableAssignments324(TypeUtilsTest.java:409)
+
+Testcase: testUnrollVariableAssignments338 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testUnrollVariableAssignments338(TypeUtilsTest.java:630)
+
+Testcase: testGetImplicitLowerBounds321 took 0 sec
+	Caused an ERROR
+a
+java.lang.NoSuchFieldException: a
+	at java.lang.Class.getField(Class.java:1703)
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetImplicitLowerBounds321(TypeUtilsTest.java:349)
+
+Testcase: testGetImplicitLowerBounds335 took 0 sec
+	Caused an ERROR
+hello
+java.lang.NoSuchFieldException: hello
+	at java.lang.Class.getField(Class.java:1703)
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetImplicitLowerBounds335(TypeUtilsTest.java:563)
+
+Testcase: testGetImplicitLowerBounds341 took 0 sec
+	Caused an ERROR
+a
+java.lang.NoSuchFieldException: a
+	at java.lang.Class.getField(Class.java:1703)
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetImplicitLowerBounds341(TypeUtilsTest.java:669)
+
+Testcase: test_isAssignable_Unboxing_Widening325 took 0 sec
+	FAILED
+byte -> byte
+junit.framework.AssertionFailedError: byte -> byte
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.test_isAssignable_Unboxing_Widening325(TypeUtilsTest.java:415)
+
+Testcase: testGetRawType_ParameterizedType333 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetRawType_ParameterizedType333(TypeUtilsTest.java:529)
+
+Testcase: testTypeVariableAssignments318 took 0.001 sec
+Testcase: testDetermineTypeVariableAssignments331 took 0 sec
+Testcase: testDetermineTypeVariableAssignments336 took 0 sec
+Testcase: testGetRawType_Unassignable152 took 0 sec
+	FAILED
+expected:<? extends java.util.Map<java.lang.Integer, ? extends java.util.Collection<?>>> but was:<class java.util.TreeSet>
+junit.framework.AssertionFailedError: expected:<? extends java.util.Map<java.lang.Integer, ? extends java.util.Collection<?>>> but was:<class java.util.TreeSet>
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetRawType_Unassignable152(TypeUtilsTest.java:314)
+
+Testcase: testNormalizeUpperBounds107 took 0 sec
+	Caused an ERROR
+1
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testNormalizeUpperBounds107(TypeUtilsTest.java:147)
+
+Testcase: testNormalizeUpperBounds334 took 0 sec
+	FAILED
+expected:<class java.lang.String> but was:<interface java.lang.Comparable>
+junit.framework.AssertionFailedError: expected:<class java.lang.String> but was:<interface java.lang.Comparable>
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testNormalizeUpperBounds334(TypeUtilsTest.java:538)
+
+Testcase: testNormalizeUpperBounds337 took 0 sec
+	FAILED
+expected:<2> but was:<3>
+junit.framework.AssertionFailedError: expected:<2> but was:<3>
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testNormalizeUpperBounds337(TypeUtilsTest.java:601)
+
+Testcase: testNormalizeUpperBounds433 took 0 sec
+	FAILED
+expected:<class java.lang.String> but was:<interface java.lang.Comparable>
+junit.framework.AssertionFailedError: expected:<class java.lang.String> but was:<interface java.lang.Comparable>
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testNormalizeUpperBounds433(TypeUtilsTest.java:785)
+
+Testcase: testGetRawType_Unboxing144 took 0 sec
+	FAILED
+expected:<? extends java.util.Map<java.lang.Integer, ? extends java.util.Collection<?>>> but was:<java.util.TreeSet>
+junit.framework.AssertionFailedError: expected:<? extends java.util.Map<java.lang.Integer, ? extends java.util.Collection<?>>> but was:<java.util.TreeSet>
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetRawType_Unboxing144(TypeUtilsTest.java:168)
+
+Testcase: testSubstituteTypeVariables332 took 0.001 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testSubstituteTypeVariables332(TypeUtilsTest.java:521)
+
+Testcase: testGenericArrayClasses344 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGenericArrayClasses344(TypeUtilsTest.java:727)
+
+Testcase: testGenericArrayClasses346 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGenericArrayClasses346(TypeUtilsTest.java:758)
+
+Testcase: testGetRawType_PrimitiveArray150 took 0 sec
+	FAILED
+expected:<boolean> but was:<class [Z>
+junit.framework.AssertionFailedError: expected:<boolean> but was:<class [Z>
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetRawType_PrimitiveArray150(TypeUtilsTest.java:272)
+
+Testcase: testGetTypeVariableAssignments55 took 0.001 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetTypeVariableAssignments55(TypeUtilsTest.java:131)
+
+Testcase: testGetTypeArguments326 took 0.001 sec
+	FAILED
+Type argument of Comparable from List: null expected:<class java.lang.Integer> but was:<null>
+junit.framework.AssertionFailedError: Type argument of Comparable from List: null expected:<class java.lang.Integer> but was:<null>
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetTypeArguments326(TypeUtilsTest.java:453)
+
+Testcase: testGetTypeArguments328 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetTypeArguments328(TypeUtilsTest.java:470)
+
+Testcase: testGetPrimitiveType4 took 0 sec
+	FAILED
+expected null, but was:<boolean>
+junit.framework.AssertionFailedError: expected null, but was:<boolean>
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetPrimitiveType4(TypeUtilsTest.java:118)
+
+Testcase: testGetRawType_GenericArray148 took 0 sec
+	FAILED
+expected:<? extends java.util.Map<java.lang.Integer, ? extends java.util.Collection<?>>> but was:<class java.util.TreeSet>
+junit.framework.AssertionFailedError: expected:<? extends java.util.Map<java.lang.Integer, ? extends java.util.Collection<?>>> but was:<class java.util.TreeSet>
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetRawType_GenericArray148(TypeUtilsTest.java:231)
+
+Testcase: testGetRawType_GenericArray149 took 0.001 sec
+	FAILED
+expected:<boolean> but was:<class [Z>
+junit.framework.AssertionFailedError: expected:<boolean> but was:<class [Z>
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetRawType_GenericArray149(TypeUtilsTest.java:253)
+
+Testcase: test_isAssignable320 took 0 sec
+Testcase: test_isAssignable327 took 0.001 sec
+	FAILED
+expected:<java.lang.Iterable<? extends java.util.Map<java.lang.Integer, ? extends java.util.Collection<?>>>> but was:<? extends java.util.Map<java.lang.Integer, ? extends java.util.Collection<?>>>
+junit.framework.AssertionFailedError: expected:<java.lang.Iterable<? extends java.util.Map<java.lang.Integer, ? extends java.util.Collection<?>>>> but was:<? extends java.util.Map<java.lang.Integer, ? extends java.util.Collection<?>>>
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.test_isAssignable327(TypeUtilsTest.java:463)
+
+Testcase: test_isAssignable339 took 0.001 sec
+Testcase: test_isAssignable343 took 0 sec
+Testcase: testDetermineTypeVariableAssignments85 took 0.001 sec
+Testcase: testGetImplicitUpperBounds322 took 0 sec
+	Caused an ERROR
+wildcard
+java.lang.NoSuchFieldException: wildcard
+	at java.lang.Class.getField(Class.java:1703)
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetImplicitUpperBounds322(TypeUtilsTest.java:375)
+
+Testcase: testGetImplicitUpperBounds330 took 0 sec
+	Caused an ERROR
+wildcard
+java.lang.NoSuchFieldException: wildcard
+	at java.lang.Class.getField(Class.java:1703)
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetImplicitUpperBounds330(TypeUtilsTest.java:483)
+
+Testcase: testGetImplicitUpperBounds340 took 0 sec
+	Caused an ERROR
+wildcard
+java.lang.NoSuchFieldException: wildcard
+	at java.lang.Class.getField(Class.java:1703)
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetImplicitUpperBounds340(TypeUtilsTest.java:643)
+
+Testcase: testGetRawType_ClassVariable153 took 0 sec
+	FAILED
+expected:<? extends java.util.Map<java.lang.Integer, ? extends java.util.Collection<?>>> but was:<class java.util.TreeSet>
+junit.framework.AssertionFailedError: expected:<? extends java.util.Map<java.lang.Integer, ? extends java.util.Collection<?>>> but was:<class java.util.TreeSet>
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetRawType_ClassVariable153(TypeUtilsTest.java:321)
+
+Testcase: testGetPrimitiveType145 took 0 sec
+	FAILED
+expected null, but was:<boolean>
+junit.framework.AssertionFailedError: expected null, but was:<boolean>
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetPrimitiveType145(TypeUtilsTest.java:180)
+
+Testcase: testGetPrimitiveType151 took 0 sec
+	FAILED
+expected null, but was:<boolean>
+junit.framework.AssertionFailedError: expected null, but was:<boolean>
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetPrimitiveType151(TypeUtilsTest.java:299)
+

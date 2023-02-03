@@ -1,0 +1,17 @@
+Testsuite: org.apache.commons.lang3.text.StrTokenizerTest
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec
+
+Testcase: testCSVSimple365 took 0.036 sec
+Testcase: testBasicQuotedTrimmed1367 took 0 sec
+Testcase: test471 took 0.008 sec
+Testcase: testTSV67 took 0 sec
+Testcase: test6366 took 0.002 sec
+	FAILED
+{a,b,c,d;"e,f} expected:<8> but was:<5>
+junit.framework.AssertionFailedError: {a,b,c,d;"e,f} expected:<8> but was:<5>
+	at org.apache.commons.lang3.text.StrTokenizerTest.test6366(StrTokenizerTest.java:124)
+
+Testcase: testReset_String363 took 0 sec
+Testcase: testCloneReset362 took 0 sec
+Testcase: testCloneNotSupportedException364 took 0 sec
+Testcase: testIteration368 took 0.001 sec

@@ -1,0 +1,11 @@
+Testsuite: org.apache.commons.lang3.math.NumberUtilsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+
+Testcase: testToShortString109 took 0.021 sec
+Testcase: testCreateNumberFailure_4434 took 0.008 sec
+Testcase: testCreateNumber435 took 0.001 sec
+Testcase: TestLang747 took 0 sec
+Testcase: testStringCreateNumberEnsureNoPrecisionLoss436 took 0.001 sec
+Testcase: testCreateBigDecimal437 took 0 sec
+Testcase: testToLongString9 took 0 sec
+Testcase: testToLongString165 took 0 sec

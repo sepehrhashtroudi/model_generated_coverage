@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":72,"id":5570,"methods":[{"el":42,"sc":5,"sl":41},{"el":56,"sc":5,"sl":54},{"el":67,"sc":5,"sl":65},{"el":71,"sc":5,"sl":69}],"name":"UnicodePathExtraField","sl":37}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1":{"methods":[{"sl":41},{"sl":54},{"sl":69}],"name":"testCP437FileRoundtripImplicitUnicodeExtra31","pass":true,"statements":[{"sl":55},{"sl":70}]},"test_10":{"methods":[{"sl":41},{"sl":69}],"name":"testJarUnarchive16","pass":true,"statements":[{"sl":70}]},"test_11":{"methods":[{"sl":41},{"sl":54},{"sl":69}],"name":"testASCIIFileRoundtripExplicitUnicodeExtra1","pass":true,"statements":[{"sl":55},{"sl":70}]},"test_13":{"methods":[{"sl":41},{"sl":54},{"sl":69}],"name":"testZipFileReadsUnicodeFields32","pass":true,"statements":[{"sl":55},{"sl":70}]},"test_20":{"methods":[{"sl":41},{"sl":69}],"name":"testJarMarker7","pass":true,"statements":[{"sl":70}]},"test_27":{"methods":[{"sl":41},{"sl":69}],"name":"testDeleteFromZip30","pass":true,"statements":[{"sl":70}]},"test_28":{"methods":[{"sl":41},{"sl":54},{"sl":69}],"name":"testCP437FileRoundtripExplicitUnicodeExtra21","pass":true,"statements":[{"sl":55},{"sl":70}]},"test_3":{"methods":[{"sl":41},{"sl":69}],"name":"testAddAsFirstExtraField23","pass":true,"statements":[{"sl":70}]},"test_6":{"methods":[{"sl":41},{"sl":69}],"name":"testParse38","pass":true,"statements":[{"sl":70}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [13, 3, 27, 11, 1, 10, 6, 28, 20], [], [], [], [], [], [], [], [], [], [], [], [], [13, 11, 1, 28], [13, 11, 1, 28], [], [], [], [], [], [], [], [], [], [], [], [], [], [13, 3, 27, 11, 1, 10, 6, 28, 20], [13, 3, 27, 11, 1, 10, 6, 28, 20], [], []]

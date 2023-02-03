@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":136,"id":3919,"methods":[{"el":36,"sc":3,"sl":31},{"el":43,"sc":1,"sl":39},{"el":52,"sc":1,"sl":46},{"el":59,"sc":1,"sl":55},{"el":66,"sc":1,"sl":62},{"el":73,"sc":1,"sl":69},{"el":80,"sc":1,"sl":76},{"el":135,"sc":3,"sl":126}],"name":"EscaperTest","sl":26}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_134":{"methods":[{"sl":69}],"name":"testSlashEscaping38","pass":true,"statements":[{"sl":70},{"sl":71},{"sl":72}]},"test_154":{"methods":[{"sl":39}],"name":"testUnicodeCharacterStringNoEscaping34","pass":true,"statements":[{"sl":40},{"sl":41},{"sl":42}]},"test_172":{"methods":[{"sl":76}],"name":"testDoubleQuoteEscaping39","pass":true,"statements":[{"sl":77},{"sl":78},{"sl":79}]},"test_19":{"methods":[{"sl":62}],"name":"testNewlineEscaping37","pass":true,"statements":[{"sl":63},{"sl":64},{"sl":65}]},"test_218":{"methods":[{"sl":55}],"name":"testTabEscaping36","pass":true,"statements":[{"sl":56},{"sl":57},{"sl":58}]},"test_66":{"methods":[{"sl":46}],"name":"testRequiredEscapingUnicodeCharacter35","pass":true,"statements":[{"sl":47},{"sl":48},{"sl":49},{"sl":50},{"sl":51}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [154], [154], [154], [154], [], [], [], [66], [66], [66], [66], [66], [66], [], [], [], [218], [218], [218], [218], [], [], [], [19], [19], [19], [19], [], [], [], [134], [134], [134], [134], [], [], [], [172], [172], [172], [172], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]

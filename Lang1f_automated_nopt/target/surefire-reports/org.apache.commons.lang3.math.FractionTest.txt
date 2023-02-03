@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.lang3.math.FractionTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec <<< FAILURE!
+testCompareTo1260(org.apache.commons.lang3.math.FractionTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<-1> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at org.apache.commons.lang3.math.FractionTest.__CLR4_4_15nk9kgg6u(FractionTest.java:48)
+	at org.apache.commons.lang3.math.FractionTest.testCompareTo1260(FractionTest.java:48)
+
+testGreatestCommonDivisor1231(org.apache.commons.lang3.math.FractionTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<-1> but was:<1>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at org.apache.commons.lang3.math.FractionTest.__CLR4_4_1o6s5pug68(FractionTest.java:40)
+	at org.apache.commons.lang3.math.FractionTest.testGreatestCommonDivisor1231(FractionTest.java:40)
+

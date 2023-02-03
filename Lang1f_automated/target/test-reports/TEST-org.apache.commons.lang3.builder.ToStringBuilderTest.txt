@@ -1,0 +1,6 @@
+Testsuite: org.apache.commons.lang3.builder.ToStringBuilderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+
+Testcase: testByte360 took 0.025 sec
+Testcase: testCharArray361 took 0 sec
+Testcase: testByteArray359 took 0.001 sec

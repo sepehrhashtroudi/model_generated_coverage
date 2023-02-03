@@ -1,0 +1,34 @@
+Testsuite: org.apache.commons.lang3.ObjectUtilsTest
+Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
+
+Testcase: testHashCode50 took 0.023 sec
+	FAILED
+expected:<null> but was:<0>
+junit.framework.AssertionFailedError: expected:<null> but was:<0>
+	at org.apache.commons.lang3.ObjectUtilsTest.testHashCode50(ObjectUtilsTest.java:55)
+
+Testcase: testHashCode289 took 0 sec
+Testcase: testHashCode293 took 0 sec
+	FAILED
+expected:<true> but was:<2012232625>
+junit.framework.AssertionFailedError: expected:<true> but was:<2012232625>
+	at org.apache.commons.lang3.ObjectUtilsTest.testHashCode293(ObjectUtilsTest.java:92)
+
+Testcase: testHashCode294 took 0 sec
+	FAILED
+expected:<null> but was:<0>
+junit.framework.AssertionFailedError: expected:<null> but was:<0>
+	at org.apache.commons.lang3.ObjectUtilsTest.testHashCode294(ObjectUtilsTest.java:101)
+
+Testcase: testHashCode295 took 0 sec
+	FAILED
+expected:<null> but was:<0>
+junit.framework.AssertionFailedError: expected:<null> but was:<0>
+	at org.apache.commons.lang3.ObjectUtilsTest.testHashCode295(ObjectUtilsTest.java:124)
+
+Testcase: testHashCode296 took 0 sec
+	FAILED
+expected:<null> but was:<0>
+junit.framework.AssertionFailedError: expected:<null> but was:<0>
+	at org.apache.commons.lang3.ObjectUtilsTest.testHashCode296(ObjectUtilsTest.java:152)
+

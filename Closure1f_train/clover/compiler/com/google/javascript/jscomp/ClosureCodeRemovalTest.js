@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":91,"id":72870,"methods":[{"el":30,"sc":3,"sl":28},{"el":35,"sc":1,"sl":33},{"el":40,"sc":1,"sl":38},{"el":45,"sc":1,"sl":43},{"el":50,"sc":1,"sl":48},{"el":55,"sc":1,"sl":53},{"el":60,"sc":1,"sl":58},{"el":65,"sc":1,"sl":63},{"el":90,"sc":3,"sl":87}],"name":"ClosureCodeRemovalTest","sl":24}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1059":{"methods":[{"sl":53},{"sl":87}],"name":"testRemoveMultiplySetAbstract2127","pass":true,"statements":[{"sl":54},{"sl":89}]},"test_11":{"methods":[{"sl":48},{"sl":87}],"name":"testAssertionRemoval21535","pass":true,"statements":[{"sl":49},{"sl":89}]},"test_1263":{"methods":[{"sl":43},{"sl":87}],"name":"testAssertionRemoval11314","pass":true,"statements":[{"sl":44},{"sl":89}]},"test_1308":{"methods":[{"sl":33},{"sl":87}],"name":"testRemoveAbstract71","pass":true,"statements":[{"sl":34},{"sl":89}]},"test_1326":{"methods":[{"sl":58},{"sl":87}],"name":"testStopRemovalAtNonQualifiedName2179","pass":true,"statements":[{"sl":59},{"sl":89}]},"test_1554":{"methods":[{"sl":38},{"sl":87}],"name":"testDoNotRemoveNonQualifiedName364","pass":true,"statements":[{"sl":39},{"sl":89}]},"test_701":{"methods":[{"sl":63},{"sl":87}],"name":"testAssertionRemoval42463","pass":true,"statements":[{"sl":64},{"sl":89}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1308], [1308], [], [], [], [1554], [1554], [], [], [], [1263], [1263], [], [], [], [11], [11], [], [], [], [1059], [1059], [], [], [], [1326], [1326], [], [], [], [701], [701], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1308, 11, 1326, 1263, 1554, 1059, 701], [], [1308, 11, 1326, 1263, 1554, 1059, 701], [], []]

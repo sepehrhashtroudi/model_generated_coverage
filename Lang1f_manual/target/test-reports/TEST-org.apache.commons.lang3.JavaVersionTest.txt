@@ -1,0 +1,93 @@
+Testsuite: org.apache.commons.lang3.JavaVersionTest
+Tests run: 15, Failures: 15, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+
+Testcase: testGetJavaVersion387 took 0.018 sec
+	FAILED
+expected: java.lang.String<1.5> but was: org.apache.commons.lang3.JavaVersion<1.5>
+junit.framework.AssertionFailedError: expected: java.lang.String<1.5> but was: org.apache.commons.lang3.JavaVersion<1.5>
+	at org.apache.commons.lang3.JavaVersionTest.testGetJavaVersion387(JavaVersionTest.java:107)
+
+Testcase: testGet75 took 0.001 sec
+	FAILED
+1.2 expected:<1.2> but was:<1.3>
+junit.framework.AssertionFailedError: 1.2 expected:<1.2> but was:<1.3>
+	at org.apache.commons.lang3.JavaVersionTest.testGet75(JavaVersionTest.java:44)
+
+Testcase: testJavaVersion389 took 0 sec
+	FAILED
+1.2 expected:<1.2> but was:<1.3>
+junit.framework.AssertionFailedError: 1.2 expected:<1.2> but was:<1.3>
+	at org.apache.commons.lang3.JavaVersionTest.testJavaVersion389(JavaVersionTest.java:162)
+
+Testcase: testJavaVersion391 took 0 sec
+	FAILED
+expected: java.lang.String<1.3> but was: org.apache.commons.lang3.JavaVersion<1.3>
+junit.framework.AssertionFailedError: expected: java.lang.String<1.3> but was: org.apache.commons.lang3.JavaVersion<1.3>
+	at org.apache.commons.lang3.JavaVersionTest.testJavaVersion391(JavaVersionTest.java:219)
+
+Testcase: testJavaVersion394 took 0 sec
+	FAILED
+1.2 expected:<1.2> but was:<1.3>
+junit.framework.AssertionFailedError: 1.2 expected:<1.2> but was:<1.3>
+	at org.apache.commons.lang3.JavaVersionTest.testJavaVersion394(JavaVersionTest.java:288)
+
+Testcase: testJavaVersion395 took 0 sec
+	FAILED
+1.2 expected:<1.2> but was:<1.3>
+junit.framework.AssertionFailedError: 1.2 expected:<1.2> but was:<1.3>
+	at org.apache.commons.lang3.JavaVersionTest.testJavaVersion395(JavaVersionTest.java:319)
+
+Testcase: testJavaVersions386 took 0.001 sec
+	FAILED
+1.2 expected:<1.2> but was:<1.5>
+junit.framework.AssertionFailedError: 1.2 expected:<1.2> but was:<1.5>
+	at org.apache.commons.lang3.JavaVersionTest.testJavaVersions386(JavaVersionTest.java:75)
+
+Testcase: testGet388 took 0 sec
+	FAILED
+expected: java.lang.String<1.3> but was: org.apache.commons.lang3.JavaVersion<1.3>
+junit.framework.AssertionFailedError: expected: java.lang.String<1.3> but was: org.apache.commons.lang3.JavaVersion<1.3>
+	at org.apache.commons.lang3.JavaVersionTest.testGet388(JavaVersionTest.java:131)
+
+Testcase: testGet390 took 0 sec
+	FAILED
+expected: java.lang.String<1.3> but was: org.apache.commons.lang3.JavaVersion<1.3>
+junit.framework.AssertionFailedError: expected: java.lang.String<1.3> but was: org.apache.commons.lang3.JavaVersion<1.3>
+	at org.apache.commons.lang3.JavaVersionTest.testGet390(JavaVersionTest.java:196)
+
+Testcase: testGet392 took 0 sec
+	FAILED
+expected: java.lang.String<1.4> but was: org.apache.commons.lang3.JavaVersion<1.4>
+junit.framework.AssertionFailedError: expected: java.lang.String<1.4> but was: org.apache.commons.lang3.JavaVersion<1.4>
+	at org.apache.commons.lang3.JavaVersionTest.testGet392(JavaVersionTest.java:230)
+
+Testcase: testGet393 took 0 sec
+	FAILED
+expected: java.lang.String<1.3> but was: org.apache.commons.lang3.JavaVersion<1.3>
+junit.framework.AssertionFailedError: expected: java.lang.String<1.3> but was: org.apache.commons.lang3.JavaVersion<1.3>
+	at org.apache.commons.lang3.JavaVersionTest.testGet393(JavaVersionTest.java:263)
+
+Testcase: testGet396 took 0 sec
+	FAILED
+1.2 expected:<1.2> but was:<1.3>
+junit.framework.AssertionFailedError: 1.2 expected:<1.2> but was:<1.3>
+	at org.apache.commons.lang3.JavaVersionTest.testGet396(JavaVersionTest.java:350)
+
+Testcase: testGet397 took 0 sec
+	FAILED
+1.2 expected:<1.2> but was:<1.3>
+junit.framework.AssertionFailedError: 1.2 expected:<1.2> but was:<1.3>
+	at org.apache.commons.lang3.JavaVersionTest.testGet397(JavaVersionTest.java:382)
+
+Testcase: testGet399 took 0 sec
+	FAILED
+1.2 expected:<1.2> but was:<1.4>
+junit.framework.AssertionFailedError: 1.2 expected:<1.2> but was:<1.4>
+	at org.apache.commons.lang3.JavaVersionTest.testGet399(JavaVersionTest.java:435)
+
+Testcase: testJavaVersionLong398 took 0 sec
+	FAILED
+expected:<1> but was:<1.2>
+junit.framework.AssertionFailedError: expected:<1> but was:<1.2>
+	at org.apache.commons.lang3.JavaVersionTest.testJavaVersionLong398(JavaVersionTest.java:414)
+

@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.google.gson.ParameterizedTypeHandlerMapTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec <<< FAILURE!
+testHidingExistingTypeHierarchyHandlerIsDisallowed57(com.google.gson.ParameterizedTypeHandlerMapTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: A handler that hides an existing type hierarchy handler is not allowed
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.google.gson.ParameterizedTypeHandlerMapTest.__CLR4_4_1rv6dqg350(ParameterizedTypeHandlerMapTest.java:70)
+	at com.google.gson.ParameterizedTypeHandlerMapTest.testHidingExistingTypeHierarchyHandlerIsDisallowed57(ParameterizedTypeHandlerMapTest.java:66)
+

@@ -1,0 +1,64 @@
+Testsuite: org.apache.commons.lang3.StringUtilsTest
+Tests run: 18, Failures: 5, Errors: 3, Skipped: 0, Time elapsed: 0.066 sec
+
+Testcase: testJoin_IterableChar70 took 0.024 sec
+	FAILED
+expected:<foo[;bar;]baz> but was:<foo[bar]baz>
+junit.framework.AssertionFailedError: expected:<foo[;bar;]baz> but was:<foo[bar]baz>
+	at org.apache.commons.lang3.StringUtilsTest.testJoin_IterableChar70(StringUtilsTest.java:193)
+
+Testcase: testJoin_IterableString376 took 0.002 sec
+Testcase: testRightPad_StringIntString36 took 0 sec
+Testcase: testReverseDelimited_StringChar156 took 0.005 sec
+	FAILED
+expected:<[]> but was:<[ab]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[ab]>
+	at org.apache.commons.lang3.StringUtilsTest.testReverseDelimited_StringChar156(StringUtilsTest.java:212)
+
+Testcase: testReverseDelimited_StringChar158 took 0 sec
+	FAILED
+expected:<[]> but was:<[ab]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[ab]>
+	at org.apache.commons.lang3.StringUtilsTest.testReverseDelimited_StringChar158(StringUtilsTest.java:231)
+
+Testcase: testReverseDelimited_StringChar159 took 0 sec
+	FAILED
+expected:<[]> but was:<[ab]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[ab]>
+	at org.apache.commons.lang3.StringUtilsTest.testReverseDelimited_StringChar159(StringUtilsTest.java:253)
+
+Testcase: testGetLevenshteinDistance_StringString276 took 0 sec
+	Caused an ERROR
+Strings must not be null
+java.lang.IllegalArgumentException: Strings must not be null
+	at org.apache.commons.lang3.StringUtils.getLevenshteinDistance(StringUtils.java:6745)
+	at org.apache.commons.lang3.StringUtilsTest.testGetLevenshteinDistance_StringString276(StringUtilsTest.java:334)
+
+Testcase: testGetLevenshteinDistance_StringString277 took 0.001 sec
+	Caused an ERROR
+Strings must not be null
+java.lang.IllegalArgumentException: Strings must not be null
+	at org.apache.commons.lang3.StringUtils.getLevenshteinDistance(StringUtils.java:6745)
+	at org.apache.commons.lang3.StringUtilsTest.testGetLevenshteinDistance_StringString277(StringUtilsTest.java:361)
+
+Testcase: testGetLevenshteinDistance_StringString278 took 0 sec
+	Caused an ERROR
+Strings must not be null
+java.lang.IllegalArgumentException: Strings must not be null
+	at org.apache.commons.lang3.StringUtils.getLevenshteinDistance(StringUtils.java:6636)
+	at org.apache.commons.lang3.StringUtilsTest.testGetLevenshteinDistance_StringString278(StringUtilsTest.java:388)
+
+Testcase: testSplitPreserveAllTokens_StringString_StringStringInt216 took 0.001 sec
+Testcase: testJoin_ArrayOfDoubles113 took 0.001 sec
+Testcase: testCenter_StringInt244 took 0 sec
+Testcase: testDifferenceAt_StringString10 took 0 sec
+Testcase: testLeftPad_StringIntChar245 took 0.004 sec
+Testcase: testJoin_IteratorString375 took 0 sec
+Testcase: testGetLevenshteinDistance_StringString46 took 0 sec
+Testcase: testRemoveEndIgnoreCase39 took 0.001 sec
+	FAILED
+removeEndIgnoreCase("www.domain.com", "www.") expected:<[www.]domain.com> but was:<[]domain.com>
+junit.framework.AssertionFailedError: removeEndIgnoreCase("www.domain.com", "www.") expected:<[www.]domain.com> but was:<[]domain.com>
+	at org.apache.commons.lang3.StringUtilsTest.testRemoveEndIgnoreCase39(StringUtilsTest.java:159)
+
+Testcase: testSwapCase_String19 took 0.001 sec

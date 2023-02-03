@@ -1,0 +1,10 @@
+Testsuite: org.apache.commons.lang3.CharSetTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
+
+Testcase: testConstructor_String_oddDash1283 took 0.029 sec
+Testcase: testEquals_Object1284 took 0 sec
+Testcase: testHashCode1103 took 0 sec
+Testcase: testSerialization629 took 0.016 sec
+Testcase: testConstructor_String_simple916 took 0 sec
+Testcase: testConstructor_String_oddNegate194 took 0 sec
+Testcase: testGetInstance_Stringarray1290 took 0 sec

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.lang3.builder.CompareToBuilderTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec <<< FAILURE!
+testIntArray500(org.apache.commons.lang3.builder.CompareToBuilderTest)  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.apache.commons.lang3.builder.CompareToBuilderTest.__CLR4_4_1y2l3uofiu(CompareToBuilderTest.java:102)
+	at org.apache.commons.lang3.builder.CompareToBuilderTest.testIntArray500(CompareToBuilderTest.java:102)
+

@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":67,"id":2891,"methods":[{"el":34,"sc":3,"sl":31},{"el":38,"sc":3,"sl":36},{"el":42,"sc":3,"sl":40},{"el":46,"sc":3,"sl":44},{"el":56,"sc":3,"sl":48},{"el":66,"sc":3,"sl":58}],"name":"VersionExclusionStrategy","sl":28}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_114":{"methods":[{"sl":31},{"sl":40},{"sl":44},{"sl":48}],"name":"testIgnoreLaterVersionClassSerialization130","pass":true,"statements":[{"sl":32},{"sl":33},{"sl":41},{"sl":45},{"sl":49},{"sl":50},{"sl":51},{"sl":52}]},"test_17":{"methods":[{"sl":31},{"sl":36},{"sl":40},{"sl":44},{"sl":48},{"sl":58}],"name":"testVersionedUntilSerialization189","pass":true,"statements":[{"sl":32},{"sl":33},{"sl":37},{"sl":41},{"sl":45},{"sl":49},{"sl":50},{"sl":51},{"sl":55},{"sl":59},{"sl":60},{"sl":61},{"sl":62},{"sl":65}]},"test_187":{"methods":[{"sl":31},{"sl":36},{"sl":40},{"sl":44},{"sl":48}],"name":"testClassAndFieldAreAheadInVersion188","pass":true,"statements":[{"sl":32},{"sl":33},{"sl":37},{"sl":41},{"sl":45},{"sl":49},{"sl":50},{"sl":51},{"sl":52}]},"test_204":{"methods":[{"sl":31},{"sl":36},{"sl":40},{"sl":44},{"sl":48},{"sl":58}],"name":"testVersionedGsonWithUnversionedClassesDeserialization181","pass":true,"statements":[{"sl":32},{"sl":33},{"sl":37},{"sl":41},{"sl":45},{"sl":49},{"sl":55},{"sl":59},{"sl":65}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [17, 187, 204, 114], [17, 187, 204, 114], [17, 187, 204, 114], [], [], [17, 187, 204], [17, 187, 204], [], [], [17, 187, 204, 114], [17, 187, 204, 114], [], [], [17, 187, 204, 114], [17, 187, 204, 114], [], [], [17, 187, 204, 114], [17, 187, 204, 114], [17, 187, 114], [17, 187, 114], [187, 114], [], [], [17, 204], [], [], [17, 204], [17, 204], [17], [17], [17], [], [], [17, 204], [], []]

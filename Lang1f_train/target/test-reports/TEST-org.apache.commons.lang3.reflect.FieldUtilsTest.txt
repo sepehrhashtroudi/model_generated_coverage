@@ -1,0 +1,28 @@
+Testsuite: org.apache.commons.lang3.reflect.FieldUtilsTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec
+
+Testcase: testConstructor1286 took 0.019 sec
+Testcase: testReadStaticFieldIllegalArgumentException2508 took 0.004 sec
+Testcase: testGetAllFields1010 took 0.006 sec
+Testcase: testReadDeclaredNamedStaticFieldForceAccess1192 took 0.001 sec
+Testcase: testGetFieldIllegalArgumentException21210 took 0 sec
+Testcase: testReadField596 took 0.001 sec
+Testcase: testReadDeclaredNamedField315 took 0 sec
+Testcase: testAmbig102 took 0.002 sec
+Testcase: testWriteDeclaredNamedStaticField660 took 0.001 sec
+Testcase: testWriteFieldForceAccess1314 took 0 sec
+Testcase: testReadFieldForceAccess963 took 0 sec
+Testcase: testGetDeclaredFieldAccessIllegalArgumentException11339 took 0 sec
+Testcase: testReadNamedField1001 took 0 sec
+Testcase: testReadNamedStaticField713 took 0 sec
+Testcase: testWriteDeclaredNamedStaticFieldForceAccess368 took 0 sec
+Testcase: testWriteNamedStaticField127 took 0.002 sec
+Testcase: testReadDeclaredNamedStaticField879 took 0 sec
+Testcase: testGetAllFieldsList890 took 0.001 sec
+Testcase: testReadNamedFieldForceAccess326 took 0.001 sec
+Testcase: testWriteDeclaredNamedField311 took 0 sec
+Testcase: testGetFieldForceAccessIllegalArgumentException2921 took 0 sec
+Testcase: testWriteNamedField247 took 0 sec
+Testcase: testWriteNamedFieldForceAccess821 took 0.001 sec
+Testcase: testReadStaticFieldIllegalArgumentException11111 took 0 sec
+Testcase: testReadStaticFieldForceAccessIllegalArgumentException2687 took 0 sec

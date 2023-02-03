@@ -1,0 +1,36 @@
+Testsuite: org.apache.commons.lang3.builder.ToStringBuilderTest
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec
+
+Testcase: testSelfInstanceTwoVarsReflectionObjectCycle372 took 0.028 sec
+Testcase: testSimpleReflectionObjectCycle943 took 0 sec
+Testcase: testReflectionFloatArray635 took 0.002 sec
+Testcase: testFloat512 took 0 sec
+Testcase: testBoolean61 took 0 sec
+Testcase: testDoubleArrayArray1196 took 0.001 sec
+Testcase: testByteArray95 took 0 sec
+Testcase: testFloatArray658 took 0 sec
+Testcase: testGetSetDefault1186 took 0 sec
+Testcase: testReflectionBooleanArrayArray894 took 0.001 sec
+Testcase: testIntArray778 took 0 sec
+Testcase: testFloatArrayArray147 took 0 sec
+Testcase: testConstructorEx3730 took 0 sec
+Testcase: testAppendToStringUsingMultiLineStyle647 took 0.001 sec
+Testcase: testInheritedReflectionStatics181 took 0.001 sec
+Testcase: testReflectionStatics907 took 0.002 sec
+Testcase: testDouble586 took 0 sec
+Testcase: testLong425 took 0.001 sec
+Testcase: testByte125 took 0 sec
+Testcase: testCharArray440 took 0.001 sec
+Testcase: testReflectionLongArrayArray802 took 0 sec
+Testcase: testReflectionNull141 took 0 sec
+Testcase: testChar228 took 0.001 sec
+Testcase: testObject1030 took 0.009 sec
+Testcase: testShort428 took 0 sec
+Testcase: testDoubleArray669 took 0 sec
+Testcase: testBooleanArray13 took 0 sec
+Testcase: testSetDefaultEx1221 took 0 sec
+Testcase: testObjectBuild843 took 0.001 sec
+Testcase: testInt698 took 0 sec
+Testcase: testReflectionHierarchy509 took 0.002 sec
+Testcase: test_setUpToClass_invalid441 took 0.001 sec
+Testcase: testShortArray30 took 0 sec

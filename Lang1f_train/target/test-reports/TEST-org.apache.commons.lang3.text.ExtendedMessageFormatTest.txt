@@ -1,0 +1,7 @@
+Testsuite: org.apache.commons.lang3.text.ExtendedMessageFormatTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.544 sec
+
+Testcase: testExtendedAndBuiltInFormats1270 took 0.414 sec
+Testcase: testBuiltInChoiceFormat690 took 0.109 sec
+Testcase: testEscapedQuote_LANG_477321 took 0 sec
+Testcase: testExtendedFormats1199 took 0 sec

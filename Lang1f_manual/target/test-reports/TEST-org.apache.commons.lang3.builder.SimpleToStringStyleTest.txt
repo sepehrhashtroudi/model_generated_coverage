@@ -1,0 +1,16 @@
+Testsuite: org.apache.commons.lang3.builder.SimpleToStringStyleTest
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+
+Testcase: testPerson463 took 0.028 sec
+	FAILED
+expected:<[ToStringStyleTest.Person[name=John Q. Public,age=45,smoker=true]]> but was:<[John Q. Public,45,true]>
+junit.framework.AssertionFailedError: expected:<[ToStringStyleTest.Person[name=John Q. Public,age=45,smoker=true]]> but was:<[John Q. Public,45,true]>
+	at org.apache.commons.lang3.builder.SimpleToStringStyleTest.testPerson463(SimpleToStringStyleTest.java:67)
+
+Testcase: testLongArray116 took 0.001 sec
+	FAILED
+expected:<[0.0[{1,2,-3,4}]]> but was:<[{1,2,-3,4}]>
+junit.framework.AssertionFailedError: expected:<[0.0[{1,2,-3,4}]]> but was:<[{1,2,-3,4}]>
+	at org.apache.commons.lang3.builder.SimpleToStringStyleTest.testLongArray116(SimpleToStringStyleTest.java:54)
+
+Testcase: testLongArrayArray464 took 0.001 sec

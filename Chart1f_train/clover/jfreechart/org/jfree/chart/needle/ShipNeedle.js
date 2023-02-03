@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":136,"id":32030,"methods":[{"el":93,"sc":5,"sl":73},{"el":113,"sc":5,"sl":102},{"el":122,"sc":5,"sl":120},{"el":134,"sc":5,"sl":132}],"name":"ShipNeedle","sl":59}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1751":{"methods":[{"sl":102}],"name":"testSerialization","pass":true,"statements":[{"sl":103},{"sl":106},{"sl":109},{"sl":110}]},"test_1770":{"methods":[{"sl":102}],"name":"testEquals","pass":true,"statements":[{"sl":103},{"sl":106},{"sl":109},{"sl":110}]},"test_314":{"methods":[{"sl":102}],"name":"testSerialization","pass":true,"statements":[{"sl":103},{"sl":106},{"sl":109},{"sl":110}]},"test_3225":{"methods":[{"sl":102}],"name":"testEquals","pass":true,"statements":[{"sl":103},{"sl":106},{"sl":109},{"sl":110}]},"test_3265":{"methods":[{"sl":102},{"sl":132}],"name":"testCloning","pass":true,"statements":[{"sl":103},{"sl":106},{"sl":109},{"sl":110},{"sl":133}]},"test_492":{"methods":[{"sl":102},{"sl":132}],"name":"testCloning","pass":true,"statements":[{"sl":103},{"sl":106},{"sl":109},{"sl":110},{"sl":133}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [314, 492, 3225, 1770, 1751, 3265], [314, 492, 3225, 1770, 1751, 3265], [], [], [314, 492, 3225, 1770, 1751, 3265], [], [], [314, 492, 3225, 1770, 1751, 3265], [314, 492, 3225, 1770, 1751, 3265], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [492, 3265], [492, 3265], [], [], [], []]

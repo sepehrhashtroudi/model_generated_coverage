@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>Clover Demo</title>
+    </head>
+
+<body onresize="processTreeMapDashJson(treeMapJson);" >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        Clover Demo
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Sat Dec 31 2022 15:54:44 MST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+        <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+
+
+
+
+
+<div class="aui-group">
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                
+                <h3>
+                    Code coverage
+                    <small style="float:right; font-weight: normal">
+                        365 classes,
+                        115 /
+                        24,143 elements
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0047632856</span>0.5%</div><div style="display: table-cell">
+ <div title="0.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0.5%"></div></div></div></div>
+                <p><a href="pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    Test results
+                    <small style="float:right; font-weight: normal">
+                        0 /
+                        0 tests
+                        0 secs
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                                        <div class="aui-message aui-message-warning">
+        <p class="title">
+            <strong>No test results</strong>
+        </p>
+        <p>No test results could be found. Please ensure that you have instrumented your unit tests correctly.</p>
+    </div>
+                                <p><a href="test-pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Code metrics</h3>
+            </header>
+                         
+
+<div id="$statsId" class="aui-item" style="display: ${display}">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">5,014</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">14,512</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">4,617</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">365</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">265</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">8</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">84,522</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">33,497</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">7,869</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.54</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">3.14</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">12.65</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">45.62</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">1.7</div>
+    </div>
+</div>
+
+</div>        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Coverage Distribution</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">                     <img src="img/classDistrubutionChart.png" alt="img/classDistrubutionChart.png" usemap="#classDistrubutionChart.png"/>
+                </div>
+                <map id="classDistrubutionChart.png" name="classDistrubutionChart.png">
+<area shape="rect" coords="282,206,304,207" title="1 class has 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="111,206,133,207" title="1 class has 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="87,205,109,206" title="3 classes have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="62,205,84,206" title="2 classes have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,15,60,206" title="332 classes have 0% coverage" alt="" nohref="nohref"/>
+</map>
+            </div>
+        </div>
+        
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Complexity</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">
+                    <img src="img/classComplexityChart.png" alt="img/classComplexityChart.png" usemap="#classComplexityChart.png"/>
+                </div>
+                <map id="classComplexityChart.png" name="classComplexityChart.png">
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 15; Coverage: 0%; Class: TestGJYearField" alt="" href="org/joda/time/chrono/gj/TestGJYearField.html#TestGJYearField"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 8; Coverage: 0%; Class: TestJulianWeekyearField" alt="" href="org/joda/time/chrono/gj/TestJulianWeekyearField.html#TestJulianWeekyearField"/>
+<area shape="poly" coords="54,164,51,167,49,164,51,162,54,164,54,164" title="Complexity: 42; Coverage: 0%; Class: TestGJChronology" alt="" href="org/joda/time/chrono/gj/TestGJChronology.html#TestGJChronology"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: TestJulianDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestJulianDayOfMonthField.html#TestJulianDayOfMonthField"/>
+<area shape="poly" coords="54,198,51,201,49,198,51,196,54,198,54,198" title="Complexity: 10; Coverage: 0%; Class: TestGJDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestGJDayOfMonthField.html#TestGJDayOfMonthField"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 8; Coverage: 0%; Class: TestJulianWeekyearField" alt="" href="org/joda/time/chrono/gj/TestJulianWeekyearField.html#TestJulianWeekyearField"/>
+<area shape="poly" coords="54,198,51,201,49,198,51,196,54,198,54,198" title="Complexity: 10; Coverage: 0%; Class: TestGJDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestGJDayOfMonthField.html#TestGJDayOfMonthField"/>
+<area shape="poly" coords="54,195,51,198,49,195,51,193,54,195,54,195" title="Complexity: 13; Coverage: 0%; Class: TestGJWeekyearField" alt="" href="org/joda/time/chrono/gj/TestGJWeekyearField.html#TestGJWeekyearField"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 15; Coverage: 0%; Class: TestGJYearField" alt="" href="org/joda/time/chrono/gj/TestGJYearField.html#TestGJYearField"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 9; Coverage: 0%; Class: TestJulianMonthOfYearField" alt="" href="org/joda/time/chrono/gj/TestJulianMonthOfYearField.html#TestJulianMonthOfYearField"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 9; Coverage: 0%; Class: TestJulianMonthOfYearField" alt="" href="org/joda/time/chrono/gj/TestJulianMonthOfYearField.html#TestJulianMonthOfYearField"/>
+<area shape="poly" coords="54,177,51,179,49,177,51,174,54,177,54,177" title="Complexity: 30; Coverage: 0%; Class: TestJulianChronology" alt="" href="org/joda/time/chrono/gj/TestJulianChronology.html#TestJulianChronology"/>
+<area shape="poly" coords="54,184,51,187,49,184,51,182,54,184,54,184" title="Complexity: 23; Coverage: 0%; Class: TestGregorianChronology" alt="" href="org/joda/time/chrono/gj/TestGregorianChronology.html#TestGregorianChronology"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TestAll" alt="" href="org/joda/time/chrono/gj/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TestAll" alt="" href="org/joda/time/chrono/gj/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 9; Coverage: 0%; Class: TestJulianMonthOfYearField" alt="" href="org/joda/time/chrono/gj/TestJulianMonthOfYearField.html#TestJulianMonthOfYearField"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 9; Coverage: 0%; Class: TestJulianMonthOfYearField" alt="" href="org/joda/time/chrono/gj/TestJulianMonthOfYearField.html#TestJulianMonthOfYearField"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TestAll" alt="" href="org/joda/time/chrono/gj/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,182,51,185,49,182,51,180,54,182,54,182" title="Complexity: 25; Coverage: 0%; Class: PeriodFormatterBuilder.Composite" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.Composite"/>
+<area shape="poly" coords="54,157,51,159,49,157,51,154,54,157,54,157" title="Complexity: 49; Coverage: 0%; Class: PeriodFormatterBuilder.Separator" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.Separator"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: PeriodFormatterBuilder.Literal" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.Literal"/>
+<area shape="poly" coords="54,64,51,66,49,64,51,61,54,64,54,64" title="Complexity: 136; Coverage: 0%; Class: PeriodFormatterBuilder.FieldFormatter" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.FieldFormatter"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 8; Coverage: 0%; Class: TestJulianWeekyearField" alt="" href="org/joda/time/chrono/gj/TestJulianWeekyearField.html#TestJulianWeekyearField"/>
+<area shape="poly" coords="54,192,51,194,49,192,51,189,54,192,54,192" title="Complexity: 16; Coverage: 0%; Class: PeriodFormatterBuilder.PluralAffix" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.PluralAffix"/>
+<area shape="poly" coords="54,184,51,187,49,184,51,182,54,184,54,184" title="Complexity: 23; Coverage: 0%; Class: TestGregorianChronology" alt="" href="org/joda/time/chrono/gj/TestGregorianChronology.html#TestGregorianChronology"/>
+<area shape="poly" coords="54,118,51,121,49,118,51,116,54,118,54,118" title="Complexity: 85; Coverage: 0%; Class: PeriodFormatterBuilder" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder"/>
+<area shape="poly" coords="54,142,51,144,49,142,51,139,54,142,54,142" title="Complexity: 63; Coverage: 0%; Class: FormatUtils" alt="" href="org/joda/time/format/FormatUtils.html#FormatUtils"/>
+<area shape="poly" coords="54,179,51,182,49,179,51,177,54,179,54,179" title="Complexity: 28; Coverage: 0%; Class: PeriodFormatter" alt="" href="org/joda/time/format/PeriodFormatter.html#PeriodFormatter"/>
+<area shape="poly" coords="54,116,51,118,49,116,51,113,54,116,54,116" title="Complexity: 87; Coverage: 0%; Class: DateTimeFormatter" alt="" href="org/joda/time/format/DateTimeFormatter.html#DateTimeFormatter"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,83,51,85,49,83,51,80,54,83,54,83" title="Complexity: 118; Coverage: 0%; Class: ISODateTimeFormat.Constants" alt="" href="org/joda/time/format/ISODateTimeFormat.html#ISODateTimeFormat.Constants"/>
+<area shape="poly" coords="54,69,51,71,49,69,51,66,54,69,54,69" title="Complexity: 131; Coverage: 0%; Class: ISODateTimeFormat" alt="" href="org/joda/time/format/ISODateTimeFormat.html#ISODateTimeFormat"/>
+<area shape="poly" coords="54,188,51,190,49,188,51,185,54,188,54,188" title="Complexity: 20; Coverage: 0%; Class: DateTimeFormatterBuilder.MatchingParser" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.MatchingParser"/>
+<area shape="poly" coords="54,168,51,171,49,168,51,166,54,168,54,168" title="Complexity: 38; Coverage: 0%; Class: DateTimeFormatterBuilder.Composite" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.Composite"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 14; Coverage: 0%; Class: DateTimeFormatterBuilder.TimeZoneId" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.TimeZoneId"/>
+<area shape="poly" coords="54,189,51,191,49,189,51,186,54,189,54,189" title="Complexity: 19; Coverage: 0%; Class: DateTimeFormatterBuilder.TimeZoneName" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.TimeZoneName"/>
+<area shape="poly" coords="54,117,51,120,49,117,51,115,54,117,54,117" title="Complexity: 86; Coverage: 0%; Class: DateTimeFormatterBuilder.TimeZoneOffset" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.TimeZoneOffset"/>
+<area shape="poly" coords="54,150,51,153,49,150,51,148,54,150,54,150" title="Complexity: 55; Coverage: 0%; Class: DateTimeFormatterBuilder.Fraction" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.Fraction"/>
+<area shape="poly" coords="54,181,51,184,49,181,51,179,54,181,54,181" title="Complexity: 26; Coverage: 0%; Class: DateTimeFormatterBuilder.TextField" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.TextField"/>
+<area shape="poly" coords="54,162,51,164,49,162,51,159,54,162,54,162" title="Complexity: 44; Coverage: 0%; Class: DateTimeFormatterBuilder.TwoDigitYear" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.TwoDigitYear"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 9; Coverage: 0%; Class: TestJulianMonthOfYearField" alt="" href="org/joda/time/chrono/gj/TestJulianMonthOfYearField.html#TestJulianMonthOfYearField"/>
+<area shape="poly" coords="54,196,51,199,49,196,51,194,54,196,54,196" title="Complexity: 12; Coverage: 0%; Class: DateTimeFormatterBuilder.PaddedNumber" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.PaddedNumber"/>
+<area shape="poly" coords="54,196,51,199,49,196,51,194,54,196,54,196" title="Complexity: 12; Coverage: 0%; Class: DateTimeFormatterBuilder.PaddedNumber" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.PaddedNumber"/>
+<area shape="poly" coords="54,188,51,190,49,188,51,185,54,188,54,188" title="Complexity: 20; Coverage: 0%; Class: DateTimeFormatterBuilder.MatchingParser" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.MatchingParser"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 9; Coverage: 0%; Class: TestJulianMonthOfYearField" alt="" href="org/joda/time/chrono/gj/TestJulianMonthOfYearField.html#TestJulianMonthOfYearField"/>
+<area shape="poly" coords="54,196,51,199,49,196,51,194,54,196,54,196" title="Complexity: 12; Coverage: 0%; Class: DateTimeFormatterBuilder.PaddedNumber" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.PaddedNumber"/>
+<area shape="poly" coords="54,75,51,78,49,75,51,73,54,75,54,75" title="Complexity: 125; Coverage: 0%; Class: DateTimeFormatterBuilder" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder"/>
+<area shape="poly" coords="54,192,51,194,49,192,51,189,54,192,54,192" title="Complexity: 16; Coverage: 0%; Class: PeriodFormatterBuilder.PluralAffix" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.PluralAffix"/>
+<area shape="poly" coords="54,80,51,82,49,80,51,77,54,80,54,80" title="Complexity: 121; Coverage: 0%; Class: DateTimeFormat" alt="" href="org/joda/time/format/DateTimeFormat.html#DateTimeFormat"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 11; Coverage: 0%; Class: ISOPeriodFormat" alt="" href="org/joda/time/format/ISOPeriodFormat.html#ISOPeriodFormat"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: PeriodFormatterBuilder.Literal" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.Literal"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: DateTimeParserBucket.SavedState" alt="" href="org/joda/time/format/DateTimeParserBucket.html#DateTimeParserBucket.SavedState"/>
+<area shape="poly" coords="54,150,51,153,49,150,51,148,54,150,54,150" title="Complexity: 55; Coverage: 0%; Class: DateTimeFormatterBuilder.Fraction" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.Fraction"/>
+<area shape="poly" coords="54,182,51,185,49,182,51,180,54,182,54,182" title="Complexity: 25; Coverage: 0%; Class: PeriodFormatterBuilder.Composite" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.Composite"/>
+<area shape="poly" coords="54,192,51,194,49,192,51,189,54,192,54,192" title="Complexity: 16; Coverage: 0%; Class: PeriodFormatterBuilder.PluralAffix" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.PluralAffix"/>
+<area shape="poly" coords="54,190,51,192,49,190,51,187,54,190,54,190" title="Complexity: 18; Coverage: 0%; Class: BasePartial" alt="" href="org/joda/time/base/BasePartial.html#BasePartial"/>
+<area shape="poly" coords="54,190,51,192,49,190,51,187,54,190,54,190" title="Complexity: 18; Coverage: 0%; Class: BasePartial" alt="" href="org/joda/time/base/BasePartial.html#BasePartial"/>
+<area shape="poly" coords="54,171,51,173,49,171,51,168,54,171,54,171" title="Complexity: 36; Coverage: 0%; Class: BaseSingleFieldPeriod" alt="" href="org/joda/time/base/BaseSingleFieldPeriod.html#BaseSingleFieldPeriod"/>
+<area shape="poly" coords="54,191,51,193,49,191,51,188,54,191,54,191" title="Complexity: 17; Coverage: 0%; Class: BaseDateTime" alt="" href="org/joda/time/base/BaseDateTime.html#BaseDateTime"/>
+<area shape="poly" coords="54,144,51,146,49,144,51,141,54,144,54,144" title="Complexity: 61; Coverage: 0%; Class: BasePeriod" alt="" href="org/joda/time/base/BasePeriod.html#BasePeriod"/>
+<area shape="poly" coords="54,179,51,182,49,179,51,177,54,179,54,179" title="Complexity: 28; Coverage: 0%; Class: PeriodFormatter" alt="" href="org/joda/time/format/PeriodFormatter.html#PeriodFormatter"/>
+<area shape="poly" coords="54,168,51,171,49,168,51,166,54,168,54,168" title="Complexity: 38; Coverage: 0%; Class: DateTimeFormatterBuilder.Composite" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.Composite"/>
+<area shape="poly" coords="54,187,51,189,49,187,51,184,54,187,54,187" title="Complexity: 21; Coverage: 0%; Class: AbstractDuration" alt="" href="org/joda/time/base/AbstractDuration.html#AbstractDuration"/>
+<area shape="poly" coords="54,159,51,161,49,159,51,156,54,159,54,159" title="Complexity: 47; Coverage: 0%; Class: AbstractPartial" alt="" href="org/joda/time/base/AbstractPartial.html#AbstractPartial"/>
+<area shape="poly" coords="54,168,51,171,49,168,51,166,54,168,54,168" title="Complexity: 38; Coverage: 0%; Class: DateTimeFormatterBuilder.Composite" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.Composite"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: BaseLocal" alt="" href="org/joda/time/base/BaseLocal.html#BaseLocal"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TestAll" alt="" href="org/joda/time/chrono/gj/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,198,51,201,49,198,51,196,54,198,54,198" title="Complexity: 10; Coverage: 0%; Class: TestGJDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestGJDayOfMonthField.html#TestGJDayOfMonthField"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 9; Coverage: 0%; Class: TestJulianMonthOfYearField" alt="" href="org/joda/time/chrono/gj/TestJulianMonthOfYearField.html#TestJulianMonthOfYearField"/>
+<area shape="poly" coords="54,163,51,166,49,163,51,161,54,163,54,163" title="Complexity: 43; Coverage: 0%; Class: GJLocaleSymbols" alt="" href="org/joda/time/chrono/GJLocaleSymbols.html#GJLocaleSymbols"/>
+<area shape="poly" coords="54,191,51,193,49,191,51,188,54,191,54,191" title="Complexity: 17; Coverage: 0%; Class: BaseDateTime" alt="" href="org/joda/time/base/BaseDateTime.html#BaseDateTime"/>
+<area shape="poly" coords="54,163,51,166,49,163,51,161,54,163,54,163" title="Complexity: 43; Coverage: 0%; Class: GJLocaleSymbols" alt="" href="org/joda/time/chrono/GJLocaleSymbols.html#GJLocaleSymbols"/>
+<area shape="poly" coords="54,198,51,201,49,198,51,196,54,198,54,198" title="Complexity: 10; Coverage: 0%; Class: TestGJDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestGJDayOfMonthField.html#TestGJDayOfMonthField"/>
+<area shape="poly" coords="54,144,51,146,49,144,51,141,54,144,54,144" title="Complexity: 61; Coverage: 0%; Class: BasePeriod" alt="" href="org/joda/time/base/BasePeriod.html#BasePeriod"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: BaseLocal" alt="" href="org/joda/time/base/BaseLocal.html#BaseLocal"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: DateTimeParserBucket.SavedState" alt="" href="org/joda/time/format/DateTimeParserBucket.html#DateTimeParserBucket.SavedState"/>
+<area shape="poly" coords="54,142,51,144,49,142,51,139,54,142,54,142" title="Complexity: 63; Coverage: 0%; Class: FormatUtils" alt="" href="org/joda/time/format/FormatUtils.html#FormatUtils"/>
+<area shape="poly" coords="54,179,51,182,49,179,51,177,54,179,54,179" title="Complexity: 28; Coverage: 0%; Class: PeriodFormatter" alt="" href="org/joda/time/format/PeriodFormatter.html#PeriodFormatter"/>
+<area shape="poly" coords="54,190,51,192,49,190,51,187,54,190,54,190" title="Complexity: 18; Coverage: 0%; Class: BasePartial" alt="" href="org/joda/time/base/BasePartial.html#BasePartial"/>
+<area shape="poly" coords="54,184,51,187,49,184,51,182,54,184,54,184" title="Complexity: 23; Coverage: 0%; Class: TestGregorianChronology" alt="" href="org/joda/time/chrono/gj/TestGregorianChronology.html#TestGregorianChronology"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: DateTimeParserBucket.SavedState" alt="" href="org/joda/time/format/DateTimeParserBucket.html#DateTimeParserBucket.SavedState"/>
+<area shape="poly" coords="54,185,51,188,49,185,51,183,54,185,54,185" title="Complexity: 22; Coverage: 0%; Class: ISOChronology" alt="" href="org/joda/time/chrono/ISOChronology.html#ISOChronology"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 11; Coverage: 0%; Class: ISOPeriodFormat" alt="" href="org/joda/time/format/ISOPeriodFormat.html#ISOPeriodFormat"/>
+<area shape="poly" coords="54,158,51,160,49,158,51,155,54,158,54,158" title="Complexity: 48; Coverage: 0%; Class: ZonedChronology.ZonedDateTimeField" alt="" href="org/joda/time/chrono/ZonedChronology.html#ZonedChronology.ZonedDateTimeField"/>
+<area shape="poly" coords="54,179,51,182,49,179,51,177,54,179,54,179" title="Complexity: 28; Coverage: 0%; Class: PeriodFormatter" alt="" href="org/joda/time/format/PeriodFormatter.html#PeriodFormatter"/>
+<area shape="poly" coords="54,176,51,178,49,176,51,173,54,176,54,176" title="Complexity: 31; Coverage: 0%; Class: ZonedChronology" alt="" href="org/joda/time/chrono/ZonedChronology.html#ZonedChronology"/>
+<area shape="poly" coords="54,165,51,168,49,165,51,163,54,165,54,165" title="Complexity: 41; Coverage: 0%; Class: AssembledChronology.Fields" alt="" href="org/joda/time/chrono/AssembledChronology.html#AssembledChronology.Fields"/>
+<area shape="poly" coords="54,106,51,109,49,106,51,104,54,106,54,106" title="Complexity: 96; Coverage: 0%; Class: AssembledChronology" alt="" href="org/joda/time/chrono/AssembledChronology.html#AssembledChronology"/>
+<area shape="poly" coords="54,159,51,161,49,159,51,156,54,159,54,159" title="Complexity: 47; Coverage: 0%; Class: AbstractPartial" alt="" href="org/joda/time/base/AbstractPartial.html#AbstractPartial"/>
+<area shape="poly" coords="54,191,51,193,49,191,51,188,54,191,54,191" title="Complexity: 17; Coverage: 0%; Class: BaseDateTime" alt="" href="org/joda/time/base/BaseDateTime.html#BaseDateTime"/>
+<area shape="poly" coords="54,190,51,192,49,190,51,187,54,190,54,190" title="Complexity: 18; Coverage: 0%; Class: BasePartial" alt="" href="org/joda/time/base/BasePartial.html#BasePartial"/>
+<area shape="poly" coords="54,187,51,189,49,187,51,184,54,187,54,187" title="Complexity: 21; Coverage: 0%; Class: AbstractDuration" alt="" href="org/joda/time/base/AbstractDuration.html#AbstractDuration"/>
+<area shape="poly" coords="54,190,51,192,49,190,51,187,54,190,54,190" title="Complexity: 18; Coverage: 0%; Class: BasePartial" alt="" href="org/joda/time/base/BasePartial.html#BasePartial"/>
+<area shape="poly" coords="54,139,51,142,49,139,51,137,54,139,54,139" title="Complexity: 65; Coverage: 0%; Class: BaseChronology" alt="" href="org/joda/time/chrono/BaseChronology.html#BaseChronology"/>
+<area shape="poly" coords="54,182,51,185,49,182,51,180,54,182,54,182" title="Complexity: 25; Coverage: 0%; Class: PeriodFormatterBuilder.Composite" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.Composite"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: GJMonthOfYearDateTimeField" alt="" href="org/joda/time/chrono/GJMonthOfYearDateTimeField.html#GJMonthOfYearDateTimeField"/>
+<area shape="poly" coords="54,181,51,184,49,181,51,179,54,181,54,181" title="Complexity: 26; Coverage: 0%; Class: DateTimeFormatterBuilder.TextField" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.TextField"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 9; Coverage: 0%; Class: TestJulianMonthOfYearField" alt="" href="org/joda/time/chrono/gj/TestJulianMonthOfYearField.html#TestJulianMonthOfYearField"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,161,51,163,49,161,51,158,54,161,54,161" title="Complexity: 45; Coverage: 0%; Class: LimitChronology" alt="" href="org/joda/time/chrono/LimitChronology.html#LimitChronology"/>
+<area shape="poly" coords="54,187,51,189,49,187,51,184,54,187,54,187" title="Complexity: 21; Coverage: 0%; Class: AbstractDuration" alt="" href="org/joda/time/base/AbstractDuration.html#AbstractDuration"/>
+<area shape="poly" coords="54,173,51,175,49,173,51,170,54,173,54,173" title="Complexity: 34; Coverage: 0%; Class: JulianChronology" alt="" href="org/joda/time/chrono/JulianChronology.html#JulianChronology"/>
+<area shape="poly" coords="54,191,51,193,49,191,51,188,54,191,54,191" title="Complexity: 17; Coverage: 0%; Class: BaseDateTime" alt="" href="org/joda/time/base/BaseDateTime.html#BaseDateTime"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,172,51,174,49,172,51,169,54,172,54,172" title="Complexity: 35; Coverage: 0%; Class: GJChronology.ImpreciseCutoverField" alt="" href="org/joda/time/chrono/GJChronology.html#GJChronology.ImpreciseCutoverField"/>
+<area shape="poly" coords="54,133,51,136,49,133,51,131,54,133,54,133" title="Complexity: 71; Coverage: 0%; Class: GJChronology.CutoverField" alt="" href="org/joda/time/chrono/GJChronology.html#GJChronology.CutoverField"/>
+<area shape="poly" coords="54,150,51,153,49,150,51,148,54,150,54,150" title="Complexity: 55; Coverage: 0%; Class: DateTimeFormatterBuilder.Fraction" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.Fraction"/>
+<area shape="poly" coords="54,181,51,184,49,181,51,179,54,181,54,181" title="Complexity: 26; Coverage: 0%; Class: DateTimeFormatterBuilder.TextField" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.TextField"/>
+<area shape="poly" coords="54,188,51,190,49,188,51,185,54,188,54,188" title="Complexity: 20; Coverage: 0%; Class: DateTimeFormatterBuilder.MatchingParser" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.MatchingParser"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 15; Coverage: 0%; Class: TestGJYearField" alt="" href="org/joda/time/chrono/gj/TestGJYearField.html#TestGJYearField"/>
+<area shape="poly" coords="54,192,51,194,49,192,51,189,54,192,54,192" title="Complexity: 16; Coverage: 0%; Class: PeriodFormatterBuilder.PluralAffix" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.PluralAffix"/>
+<area shape="poly" coords="54,177,51,179,49,177,51,174,54,177,54,177" title="Complexity: 30; Coverage: 0%; Class: TestJulianChronology" alt="" href="org/joda/time/chrono/gj/TestJulianChronology.html#TestJulianChronology"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 15; Coverage: 0%; Class: TestGJYearField" alt="" href="org/joda/time/chrono/gj/TestGJYearField.html#TestGJYearField"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TestAll" alt="" href="org/joda/time/chrono/gj/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TestAll" alt="" href="org/joda/time/chrono/gj/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: PeriodFormatterBuilder.Literal" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.Literal"/>
+<area shape="poly" coords="66,187,63,189,61,187,63,184,66,187,66,187" title="Complexity: 21; Coverage: 5%; Class: DefaultNameProvider" alt="" href="org/joda/time/tz/DefaultNameProvider.html#DefaultNameProvider"/>
+<area shape="poly" coords="54,120,51,123,49,120,51,118,54,120,54,120" title="Complexity: 83; Coverage: 0%; Class: DateTimeZoneBuilder.PrecalculatedZone" alt="" href="org/joda/time/tz/DateTimeZoneBuilder.html#DateTimeZoneBuilder.PrecalculatedZone"/>
+<area shape="poly" coords="54,171,51,173,49,171,51,168,54,171,54,171" title="Complexity: 36; Coverage: 0%; Class: BaseSingleFieldPeriod" alt="" href="org/joda/time/base/BaseSingleFieldPeriod.html#BaseSingleFieldPeriod"/>
+<area shape="poly" coords="54,176,51,178,49,176,51,173,54,176,54,176" title="Complexity: 31; Coverage: 0%; Class: ZonedChronology" alt="" href="org/joda/time/chrono/ZonedChronology.html#ZonedChronology"/>
+<area shape="poly" coords="54,198,51,201,49,198,51,196,54,198,54,198" title="Complexity: 10; Coverage: 0%; Class: TestGJDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestGJDayOfMonthField.html#TestGJDayOfMonthField"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 11; Coverage: 0%; Class: ISOPeriodFormat" alt="" href="org/joda/time/format/ISOPeriodFormat.html#ISOPeriodFormat"/>
+<area shape="poly" coords="54,195,51,198,49,195,51,193,54,195,54,195" title="Complexity: 13; Coverage: 0%; Class: TestGJWeekyearField" alt="" href="org/joda/time/chrono/gj/TestGJWeekyearField.html#TestGJWeekyearField"/>
+<area shape="poly" coords="54,164,51,167,49,164,51,162,54,164,54,164" title="Complexity: 42; Coverage: 0%; Class: TestGJChronology" alt="" href="org/joda/time/chrono/gj/TestGJChronology.html#TestGJChronology"/>
+<area shape="poly" coords="54,147,51,149,49,147,51,144,54,147,54,147" title="Complexity: 58; Coverage: 0%; Class: DateTimeZoneBuilder" alt="" href="org/joda/time/tz/DateTimeZoneBuilder.html#DateTimeZoneBuilder"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 15; Coverage: 0%; Class: TestGJYearField" alt="" href="org/joda/time/chrono/gj/TestGJYearField.html#TestGJYearField"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 9; Coverage: 0%; Class: TestJulianMonthOfYearField" alt="" href="org/joda/time/chrono/gj/TestJulianMonthOfYearField.html#TestJulianMonthOfYearField"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 14; Coverage: 0%; Class: DateTimeFormatterBuilder.TimeZoneId" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.TimeZoneId"/>
+<area shape="poly" coords="54,106,51,109,49,106,51,104,54,106,54,106" title="Complexity: 96; Coverage: 0%; Class: AssembledChronology" alt="" href="org/joda/time/chrono/AssembledChronology.html#AssembledChronology"/>
+<area shape="poly" coords="298,205,296,207,293,205,296,202,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: UTCProvider" alt="" href="org/joda/time/tz/UTCProvider.html#UTCProvider"/>
+<area shape="poly" coords="103,173,100,175,98,173,100,170,103,173,103,173" title="Complexity: 34; Coverage: 20%; Class: ZoneInfoProvider" alt="" href="org/joda/time/tz/ZoneInfoProvider.html#ZoneInfoProvider"/>
+<area shape="poly" coords="54,195,51,198,49,195,51,193,54,195,54,195" title="Complexity: 13; Coverage: 0%; Class: TestGJWeekyearField" alt="" href="org/joda/time/chrono/gj/TestGJWeekyearField.html#TestGJWeekyearField"/>
+<area shape="poly" coords="54,183,51,186,49,183,51,181,54,183,54,183" title="Complexity: 24; Coverage: 0%; Class: CachedDateTimeZone" alt="" href="org/joda/time/tz/CachedDateTimeZone.html#CachedDateTimeZone"/>
+<area shape="poly" coords="110,192,107,194,105,192,107,189,110,192,110,192" title="Complexity: 16; Coverage: 23%; Class: FixedDateTimeZone" alt="" href="org/joda/time/tz/FixedDateTimeZone.html#FixedDateTimeZone"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: GJMonthOfYearDateTimeField" alt="" href="org/joda/time/chrono/GJMonthOfYearDateTimeField.html#GJMonthOfYearDateTimeField"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: DateTimeParserBucket.SavedState" alt="" href="org/joda/time/format/DateTimeParserBucket.html#DateTimeParserBucket.SavedState"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: DateTimeParserBucket.SavedState" alt="" href="org/joda/time/format/DateTimeParserBucket.html#DateTimeParserBucket.SavedState"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: DateTimeParserBucket.SavedState" alt="" href="org/joda/time/format/DateTimeParserBucket.html#DateTimeParserBucket.SavedState"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 9; Coverage: 0%; Class: TestJulianMonthOfYearField" alt="" href="org/joda/time/chrono/gj/TestJulianMonthOfYearField.html#TestJulianMonthOfYearField"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TestAll" alt="" href="org/joda/time/chrono/gj/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,191,51,193,49,191,51,188,54,191,54,191" title="Complexity: 17; Coverage: 0%; Class: BaseDateTime" alt="" href="org/joda/time/base/BaseDateTime.html#BaseDateTime"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 8; Coverage: 0%; Class: TestJulianWeekyearField" alt="" href="org/joda/time/chrono/gj/TestJulianWeekyearField.html#TestJulianWeekyearField"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: DateTimeParserBucket.SavedState" alt="" href="org/joda/time/format/DateTimeParserBucket.html#DateTimeParserBucket.SavedState"/>
+<area shape="poly" coords="54,196,51,199,49,196,51,194,54,196,54,196" title="Complexity: 12; Coverage: 0%; Class: DateTimeFormatterBuilder.PaddedNumber" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.PaddedNumber"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: DateTimeParserBucket.SavedState" alt="" href="org/joda/time/format/DateTimeParserBucket.html#DateTimeParserBucket.SavedState"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: DateTimeParserBucket.SavedState" alt="" href="org/joda/time/format/DateTimeParserBucket.html#DateTimeParserBucket.SavedState"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 9; Coverage: 0%; Class: TestJulianMonthOfYearField" alt="" href="org/joda/time/chrono/gj/TestJulianMonthOfYearField.html#TestJulianMonthOfYearField"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: DateTimeParserBucket.SavedState" alt="" href="org/joda/time/format/DateTimeParserBucket.html#DateTimeParserBucket.SavedState"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: DateTimeParserBucket.SavedState" alt="" href="org/joda/time/format/DateTimeParserBucket.html#DateTimeParserBucket.SavedState"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: PeriodFormatterBuilder.Literal" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.Literal"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TestAll" alt="" href="org/joda/time/chrono/gj/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,198,51,201,49,198,51,196,54,198,54,198" title="Complexity: 10; Coverage: 0%; Class: TestGJDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestGJDayOfMonthField.html#TestGJDayOfMonthField"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 11; Coverage: 0%; Class: ISOPeriodFormat" alt="" href="org/joda/time/format/ISOPeriodFormat.html#ISOPeriodFormat"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 9; Coverage: 0%; Class: TestJulianMonthOfYearField" alt="" href="org/joda/time/chrono/gj/TestJulianMonthOfYearField.html#TestJulianMonthOfYearField"/>
+<area shape="poly" coords="54,163,51,166,49,163,51,161,54,163,54,163" title="Complexity: 43; Coverage: 0%; Class: GJLocaleSymbols" alt="" href="org/joda/time/chrono/GJLocaleSymbols.html#GJLocaleSymbols"/>
+<area shape="poly" coords="54,146,51,148,49,146,51,143,54,146,54,146" title="Complexity: 59; Coverage: 0%; Class: ConverterManager" alt="" href="org/joda/time/convert/ConverterManager.html#ConverterManager"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: BaseLocal" alt="" href="org/joda/time/base/BaseLocal.html#BaseLocal"/>
+<area shape="poly" coords="54,158,51,160,49,158,51,155,54,158,54,158" title="Complexity: 48; Coverage: 0%; Class: ZonedChronology.ZonedDateTimeField" alt="" href="org/joda/time/chrono/ZonedChronology.html#ZonedChronology.ZonedDateTimeField"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: BaseLocal" alt="" href="org/joda/time/base/BaseLocal.html#BaseLocal"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 11; Coverage: 0%; Class: ISOPeriodFormat" alt="" href="org/joda/time/format/ISOPeriodFormat.html#ISOPeriodFormat"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: PeriodFormatterBuilder.Literal" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.Literal"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: GJMonthOfYearDateTimeField" alt="" href="org/joda/time/chrono/GJMonthOfYearDateTimeField.html#GJMonthOfYearDateTimeField"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="95,206,93,208,90,206,93,203,95,206,95,206" title="Complexity: 3; Coverage: 17%; Class: TestAllPackages" alt="" href="org/joda/time/TestAllPackages.html#TestAllPackages"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: BaseLocal" alt="" href="org/joda/time/base/BaseLocal.html#BaseLocal"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: PeriodFormatterBuilder.Literal" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.Literal"/>
+<area shape="poly" coords="54,196,51,199,49,196,51,194,54,196,54,196" title="Complexity: 12; Coverage: 0%; Class: DateTimeFormatterBuilder.PaddedNumber" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.PaddedNumber"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TestAll" alt="" href="org/joda/time/chrono/gj/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,188,51,190,49,188,51,185,54,188,54,188" title="Complexity: 20; Coverage: 0%; Class: DateTimeFormatterBuilder.MatchingParser" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.MatchingParser"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TestAll" alt="" href="org/joda/time/chrono/gj/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: DateTimeParserBucket.SavedState" alt="" href="org/joda/time/format/DateTimeParserBucket.html#DateTimeParserBucket.SavedState"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: GJMonthOfYearDateTimeField" alt="" href="org/joda/time/chrono/GJMonthOfYearDateTimeField.html#GJMonthOfYearDateTimeField"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: GJMonthOfYearDateTimeField" alt="" href="org/joda/time/chrono/GJMonthOfYearDateTimeField.html#GJMonthOfYearDateTimeField"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: TestJulianDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestJulianDayOfMonthField.html#TestJulianDayOfMonthField"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: TestJulianDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestJulianDayOfMonthField.html#TestJulianDayOfMonthField"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: GJMonthOfYearDateTimeField" alt="" href="org/joda/time/chrono/GJMonthOfYearDateTimeField.html#GJMonthOfYearDateTimeField"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 8; Coverage: 0%; Class: TestJulianWeekyearField" alt="" href="org/joda/time/chrono/gj/TestJulianWeekyearField.html#TestJulianWeekyearField"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TestAll" alt="" href="org/joda/time/chrono/gj/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="61,206,58,208,56,206,58,203,61,206,61,206" title="Complexity: 3; Coverage: 3%; Class: TestAll" alt="" href="org/joda/time/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TestAll" alt="" href="org/joda/time/chrono/gj/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: GJMonthOfYearDateTimeField" alt="" href="org/joda/time/chrono/GJMonthOfYearDateTimeField.html#GJMonthOfYearDateTimeField"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,188,51,190,49,188,51,185,54,188,54,188" title="Complexity: 20; Coverage: 0%; Class: DateTimeFormatterBuilder.MatchingParser" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.MatchingParser"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: GJMonthOfYearDateTimeField" alt="" href="org/joda/time/chrono/GJMonthOfYearDateTimeField.html#GJMonthOfYearDateTimeField"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,198,51,201,49,198,51,196,54,198,54,198" title="Complexity: 10; Coverage: 0%; Class: TestGJDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestGJDayOfMonthField.html#TestGJDayOfMonthField"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: TestJulianDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestJulianDayOfMonthField.html#TestJulianDayOfMonthField"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: BaseLocal" alt="" href="org/joda/time/base/BaseLocal.html#BaseLocal"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: BaseLocal" alt="" href="org/joda/time/base/BaseLocal.html#BaseLocal"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TestAll" alt="" href="org/joda/time/chrono/gj/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TestAll" alt="" href="org/joda/time/chrono/gj/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 8; Coverage: 0%; Class: TestJulianWeekyearField" alt="" href="org/joda/time/chrono/gj/TestJulianWeekyearField.html#TestJulianWeekyearField"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 11; Coverage: 0%; Class: ISOPeriodFormat" alt="" href="org/joda/time/format/ISOPeriodFormat.html#ISOPeriodFormat"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TestAll" alt="" href="org/joda/time/chrono/gj/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: GJMonthOfYearDateTimeField" alt="" href="org/joda/time/chrono/GJMonthOfYearDateTimeField.html#GJMonthOfYearDateTimeField"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,190,51,192,49,190,51,187,54,190,54,190" title="Complexity: 18; Coverage: 0%; Class: BasePartial" alt="" href="org/joda/time/base/BasePartial.html#BasePartial"/>
+<area shape="poly" coords="54,81,51,83,49,81,51,78,54,81,54,81" title="Complexity: 120; Coverage: 0%; Class: MutableDateTime" alt="" href="org/joda/time/MutableDateTime.html#MutableDateTime"/>
+<area shape="poly" coords="54,113,51,115,49,113,51,110,54,113,54,113" title="Complexity: 90; Coverage: 0%; Class: PeriodType" alt="" href="org/joda/time/PeriodType.html#PeriodType"/>
+<area shape="poly" coords="54,198,51,201,49,198,51,196,54,198,54,198" title="Complexity: 10; Coverage: 0%; Class: TestGJDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestGJDayOfMonthField.html#TestGJDayOfMonthField"/>
+<area shape="poly" coords="54,145,51,147,49,145,51,142,54,145,54,145" title="Complexity: 60; Coverage: 0%; Class: MonthDay" alt="" href="org/joda/time/MonthDay.html#MonthDay"/>
+<area shape="poly" coords="54,83,51,85,49,83,51,80,54,83,54,83" title="Complexity: 118; Coverage: 0%; Class: ISODateTimeFormat.Constants" alt="" href="org/joda/time/format/ISODateTimeFormat.html#ISODateTimeFormat.Constants"/>
+<area shape="poly" coords="54,159,51,161,49,159,51,156,54,159,54,159" title="Complexity: 47; Coverage: 0%; Class: AbstractPartial" alt="" href="org/joda/time/base/AbstractPartial.html#AbstractPartial"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: BaseLocal" alt="" href="org/joda/time/base/BaseLocal.html#BaseLocal"/>
+<area shape="poly" coords="54,164,51,167,49,164,51,162,54,164,54,164" title="Complexity: 42; Coverage: 0%; Class: TestGJChronology" alt="" href="org/joda/time/chrono/gj/TestGJChronology.html#TestGJChronology"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: DateTimeParserBucket.SavedState" alt="" href="org/joda/time/format/DateTimeParserBucket.html#DateTimeParserBucket.SavedState"/>
+<area shape="poly" coords="54,180,51,183,49,180,51,178,54,180,54,180" title="Complexity: 27; Coverage: 0%; Class: IllegalFieldValueException" alt="" href="org/joda/time/IllegalFieldValueException.html#IllegalFieldValueException"/>
+<area shape="poly" coords="54,188,51,190,49,188,51,185,54,188,54,188" title="Complexity: 20; Coverage: 0%; Class: DateTimeFormatterBuilder.MatchingParser" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.MatchingParser"/>
+<area shape="poly" coords="54,111,51,113,49,111,51,108,54,111,54,111" title="Complexity: 92; Coverage: 0%; Class: DateMidnight" alt="" href="org/joda/time/DateMidnight.html#DateMidnight"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: BaseLocal" alt="" href="org/joda/time/base/BaseLocal.html#BaseLocal"/>
+<area shape="poly" coords="54,188,51,190,49,188,51,185,54,188,54,188" title="Complexity: 20; Coverage: 0%; Class: DateTimeFormatterBuilder.MatchingParser" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.MatchingParser"/>
+<area shape="poly" coords="54,18,51,20,49,18,51,15,54,18,54,18" title="Complexity: 179; Coverage: 0%; Class: LocalDateTime" alt="" href="org/joda/time/LocalDateTime.html#LocalDateTime"/>
+<area shape="poly" coords="54,174,51,176,49,174,51,171,54,174,54,174" title="Complexity: 33; Coverage: 0%; Class: MutableInterval" alt="" href="org/joda/time/MutableInterval.html#MutableInterval"/>
+<area shape="poly" coords="54,160,51,162,49,160,51,157,54,160,54,160" title="Complexity: 46; Coverage: 0%; Class: Days" alt="" href="org/joda/time/Days.html#Days"/>
+<area shape="poly" coords="54,177,51,179,49,177,51,174,54,177,54,177" title="Complexity: 30; Coverage: 0%; Class: TestJulianChronology" alt="" href="org/joda/time/chrono/gj/TestJulianChronology.html#TestJulianChronology"/>
+<area shape="poly" coords="54,164,51,167,49,164,51,162,54,164,54,164" title="Complexity: 42; Coverage: 0%; Class: TestGJChronology" alt="" href="org/joda/time/chrono/gj/TestGJChronology.html#TestGJChronology"/>
+<area shape="poly" coords="54,198,51,201,49,198,51,196,54,198,54,198" title="Complexity: 10; Coverage: 0%; Class: TestGJDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestGJDayOfMonthField.html#TestGJDayOfMonthField"/>
+<area shape="poly" coords="54,143,51,145,49,143,51,140,54,143,54,143" title="Complexity: 62; Coverage: 0%; Class: YearMonth" alt="" href="org/joda/time/YearMonth.html#YearMonth"/>
+<area shape="poly" coords="54,196,51,199,49,196,51,194,54,196,54,196" title="Complexity: 12; Coverage: 0%; Class: DateTimeFormatterBuilder.PaddedNumber" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.PaddedNumber"/>
+<area shape="poly" coords="54,141,51,143,49,141,51,138,54,141,54,141" title="Complexity: 64; Coverage: 0%; Class: YearMonthDay" alt="" href="org/joda/time/YearMonthDay.html#YearMonthDay"/>
+<area shape="poly" coords="54,195,51,198,49,195,51,193,54,195,54,195" title="Complexity: 13; Coverage: 0%; Class: TestGJWeekyearField" alt="" href="org/joda/time/chrono/gj/TestGJWeekyearField.html#TestGJWeekyearField"/>
+<area shape="poly" coords="54,137,51,140,49,137,51,135,54,137,54,137" title="Complexity: 67; Coverage: 0%; Class: TimeOfDay" alt="" href="org/joda/time/TimeOfDay.html#TimeOfDay"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 8; Coverage: 0%; Class: TestJulianWeekyearField" alt="" href="org/joda/time/chrono/gj/TestJulianWeekyearField.html#TestJulianWeekyearField"/>
+<area shape="poly" coords="54,150,51,153,49,150,51,148,54,150,54,150" title="Complexity: 55; Coverage: 0%; Class: DateTimeFormatterBuilder.Fraction" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.Fraction"/>
+<area shape="poly" coords="54,180,51,183,49,180,51,178,54,180,54,180" title="Complexity: 27; Coverage: 0%; Class: IllegalFieldValueException" alt="" href="org/joda/time/IllegalFieldValueException.html#IllegalFieldValueException"/>
+<area shape="poly" coords="54,185,51,188,49,185,51,183,54,185,54,185" title="Complexity: 22; Coverage: 0%; Class: ISOChronology" alt="" href="org/joda/time/chrono/ISOChronology.html#ISOChronology"/>
+<area shape="poly" coords="54,81,51,83,49,81,51,78,54,81,54,81" title="Complexity: 120; Coverage: 0%; Class: MutableDateTime" alt="" href="org/joda/time/MutableDateTime.html#MutableDateTime"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: TestJulianDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestJulianDayOfMonthField.html#TestJulianDayOfMonthField"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: TestJulianDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestJulianDayOfMonthField.html#TestJulianDayOfMonthField"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: BaseLocal" alt="" href="org/joda/time/base/BaseLocal.html#BaseLocal"/>
+<area shape="poly" coords="54,158,51,160,49,158,51,155,54,158,54,158" title="Complexity: 48; Coverage: 0%; Class: ZonedChronology.ZonedDateTimeField" alt="" href="org/joda/time/chrono/ZonedChronology.html#ZonedChronology.ZonedDateTimeField"/>
+<area shape="poly" coords="54,182,51,185,49,182,51,180,54,182,54,182" title="Complexity: 25; Coverage: 0%; Class: PeriodFormatterBuilder.Composite" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.Composite"/>
+<area shape="poly" coords="54,162,51,164,49,162,51,159,54,162,54,162" title="Complexity: 44; Coverage: 0%; Class: DateTimeFormatterBuilder.TwoDigitYear" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.TwoDigitYear"/>
+<area shape="poly" coords="54,172,51,174,49,172,51,169,54,172,54,172" title="Complexity: 35; Coverage: 0%; Class: GJChronology.ImpreciseCutoverField" alt="" href="org/joda/time/chrono/GJChronology.html#GJChronology.ImpreciseCutoverField"/>
+<area shape="poly" coords="54,171,51,173,49,171,51,168,54,171,54,171" title="Complexity: 36; Coverage: 0%; Class: BaseSingleFieldPeriod" alt="" href="org/joda/time/base/BaseSingleFieldPeriod.html#BaseSingleFieldPeriod"/>
+<area shape="poly" coords="54,176,51,178,49,176,51,173,54,176,54,176" title="Complexity: 31; Coverage: 0%; Class: ZonedChronology" alt="" href="org/joda/time/chrono/ZonedChronology.html#ZonedChronology"/>
+<area shape="poly" coords="54,192,51,194,49,192,51,189,54,192,54,192" title="Complexity: 16; Coverage: 0%; Class: PeriodFormatterBuilder.PluralAffix" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.PluralAffix"/>
+<area shape="poly" coords="54,183,51,186,49,183,51,181,54,183,54,183" title="Complexity: 24; Coverage: 0%; Class: CachedDateTimeZone" alt="" href="org/joda/time/tz/CachedDateTimeZone.html#CachedDateTimeZone"/>
+<area shape="poly" coords="54,58,51,61,49,58,51,56,54,58,54,58" title="Complexity: 141; Coverage: 0%; Class: DateTime" alt="" href="org/joda/time/DateTime.html#DateTime"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: DateTimeParserBucket.SavedState" alt="" href="org/joda/time/format/DateTimeParserBucket.html#DateTimeParserBucket.SavedState"/>
+<area shape="poly" coords="80,55,78,58,75,55,78,53,80,55,80,55" title="Complexity: 144; Coverage: 11%; Class: DateTimeZone" alt="" href="org/joda/time/DateTimeZone.html#DateTimeZone"/>
+<area shape="poly" coords="54,127,51,129,49,127,51,124,54,127,54,127" title="Complexity: 77; Coverage: 0%; Class: MutablePeriod" alt="" href="org/joda/time/MutablePeriod.html#MutablePeriod"/>
+<area shape="poly" coords="54,161,51,163,49,161,51,158,54,161,54,161" title="Complexity: 45; Coverage: 0%; Class: LimitChronology" alt="" href="org/joda/time/chrono/LimitChronology.html#LimitChronology"/>
+<area shape="poly" coords="54,189,51,191,49,189,51,186,54,189,54,189" title="Complexity: 19; Coverage: 0%; Class: DateTimeFormatterBuilder.TimeZoneName" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.TimeZoneName"/>
+<area shape="poly" coords="54,37,51,39,49,37,51,34,54,37,54,37" title="Complexity: 161; Coverage: 0%; Class: LocalDate" alt="" href="org/joda/time/LocalDate.html#LocalDate"/>
+<area shape="poly" coords="54,196,51,199,49,196,51,194,54,196,54,196" title="Complexity: 12; Coverage: 0%; Class: DateTimeFormatterBuilder.PaddedNumber" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.PaddedNumber"/>
+<area shape="poly" coords="54,114,51,116,49,114,51,111,54,114,54,114" title="Complexity: 89; Coverage: 0%; Class: Partial" alt="" href="org/joda/time/Partial.html#Partial"/>
+<area shape="poly" coords="54,164,51,167,49,164,51,162,54,164,54,164" title="Complexity: 42; Coverage: 0%; Class: TestGJChronology" alt="" href="org/joda/time/chrono/gj/TestGJChronology.html#TestGJChronology"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 9; Coverage: 0%; Class: TestJulianMonthOfYearField" alt="" href="org/joda/time/chrono/gj/TestJulianMonthOfYearField.html#TestJulianMonthOfYearField"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 9; Coverage: 0%; Class: TestJulianMonthOfYearField" alt="" href="org/joda/time/chrono/gj/TestJulianMonthOfYearField.html#TestJulianMonthOfYearField"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 9; Coverage: 0%; Class: TestJulianMonthOfYearField" alt="" href="org/joda/time/chrono/gj/TestJulianMonthOfYearField.html#TestJulianMonthOfYearField"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TestAll" alt="" href="org/joda/time/chrono/gj/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: TestJulianDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestJulianDayOfMonthField.html#TestJulianDayOfMonthField"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 9; Coverage: 0%; Class: TestJulianMonthOfYearField" alt="" href="org/joda/time/chrono/gj/TestJulianMonthOfYearField.html#TestJulianMonthOfYearField"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 9; Coverage: 0%; Class: TestJulianMonthOfYearField" alt="" href="org/joda/time/chrono/gj/TestJulianMonthOfYearField.html#TestJulianMonthOfYearField"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 9; Coverage: 0%; Class: TestJulianMonthOfYearField" alt="" href="org/joda/time/chrono/gj/TestJulianMonthOfYearField.html#TestJulianMonthOfYearField"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TestAll" alt="" href="org/joda/time/chrono/gj/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TestAll" alt="" href="org/joda/time/chrono/gj/TestAll.html#TestAll"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: TestTextFields" alt="" href="org/joda/time/format/TestTextFields.html#TestTextFields"/>
+<area shape="poly" coords="54,177,51,179,49,177,51,174,54,177,54,177" title="Complexity: 30; Coverage: 0%; Class: TestJulianChronology" alt="" href="org/joda/time/chrono/gj/TestJulianChronology.html#TestJulianChronology"/>
+<area shape="poly" coords="54,183,51,186,49,183,51,181,54,183,54,183" title="Complexity: 24; Coverage: 0%; Class: CachedDateTimeZone" alt="" href="org/joda/time/tz/CachedDateTimeZone.html#CachedDateTimeZone"/>
+<area shape="poly" coords="54,198,51,201,49,198,51,196,54,198,54,198" title="Complexity: 10; Coverage: 0%; Class: TestGJDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestGJDayOfMonthField.html#TestGJDayOfMonthField"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 15; Coverage: 0%; Class: TestGJYearField" alt="" href="org/joda/time/chrono/gj/TestGJYearField.html#TestGJYearField"/>
+<area shape="poly" coords="54,178,51,180,49,178,51,175,54,178,54,178" title="Complexity: 29; Coverage: 0%; Class: ZeroIsMaxDateTimeField" alt="" href="org/joda/time/field/ZeroIsMaxDateTimeField.html#ZeroIsMaxDateTimeField"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 11; Coverage: 0%; Class: ISOPeriodFormat" alt="" href="org/joda/time/format/ISOPeriodFormat.html#ISOPeriodFormat"/>
+<area shape="poly" coords="54,198,51,201,49,198,51,196,54,198,54,198" title="Complexity: 10; Coverage: 0%; Class: TestGJDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestGJDayOfMonthField.html#TestGJDayOfMonthField"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: PeriodFormatterBuilder.Literal" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.Literal"/>
+<area shape="poly" coords="54,187,51,189,49,187,51,184,54,187,54,187" title="Complexity: 21; Coverage: 0%; Class: AbstractDuration" alt="" href="org/joda/time/base/AbstractDuration.html#AbstractDuration"/>
+<area shape="poly" coords="54,182,51,185,49,182,51,180,54,182,54,182" title="Complexity: 25; Coverage: 0%; Class: PeriodFormatterBuilder.Composite" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.Composite"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: PeriodFormatterBuilder.Literal" alt="" href="org/joda/time/format/PeriodFormatterBuilder.html#PeriodFormatterBuilder.Literal"/>
+<area shape="poly" coords="54,198,51,201,49,198,51,196,54,198,54,198" title="Complexity: 10; Coverage: 0%; Class: TestGJDayOfMonthField" alt="" href="org/joda/time/chrono/gj/TestGJDayOfMonthField.html#TestGJDayOfMonthField"/>
+<area shape="poly" coords="54,145,51,147,49,145,51,142,54,145,54,145" title="Complexity: 60; Coverage: 0%; Class: MonthDay" alt="" href="org/joda/time/MonthDay.html#MonthDay"/>
+<area shape="poly" coords="54,195,51,198,49,195,51,193,54,195,54,195" title="Complexity: 13; Coverage: 0%; Class: TestGJWeekyearField" alt="" href="org/joda/time/chrono/gj/TestGJWeekyearField.html#TestGJWeekyearField"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 15; Coverage: 0%; Class: TestGJYearField" alt="" href="org/joda/time/chrono/gj/TestGJYearField.html#TestGJYearField"/>
+<area shape="poly" coords="54,178,51,180,49,178,51,175,54,178,54,178" title="Complexity: 29; Coverage: 0%; Class: ZeroIsMaxDateTimeField" alt="" href="org/joda/time/field/ZeroIsMaxDateTimeField.html#ZeroIsMaxDateTimeField"/>
+<area shape="poly" coords="54,166,51,169,49,166,51,164,54,166,54,166" title="Complexity: 40; Coverage: 0%; Class: AbstractReadableInstantFieldProperty" alt="" href="org/joda/time/field/AbstractReadableInstantFieldProperty.html#AbstractReadableInstantFieldProperty"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 11; Coverage: 0%; Class: ISOPeriodFormat" alt="" href="org/joda/time/format/ISOPeriodFormat.html#ISOPeriodFormat"/>
+<area shape="poly" coords="54,179,51,182,49,179,51,177,54,179,54,179" title="Complexity: 28; Coverage: 0%; Class: PeriodFormatter" alt="" href="org/joda/time/format/PeriodFormatter.html#PeriodFormatter"/>
+<area shape="poly" coords="54,196,51,199,49,196,51,194,54,196,54,196" title="Complexity: 12; Coverage: 0%; Class: DateTimeFormatterBuilder.PaddedNumber" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.PaddedNumber"/>
+<area shape="poly" coords="54,179,51,182,49,179,51,177,54,179,54,179" title="Complexity: 28; Coverage: 0%; Class: PeriodFormatter" alt="" href="org/joda/time/format/PeriodFormatter.html#PeriodFormatter"/>
+<area shape="poly" coords="54,149,51,152,49,149,51,147,54,149,54,149" title="Complexity: 56; Coverage: 0%; Class: FieldUtils" alt="" href="org/joda/time/field/FieldUtils.html#FieldUtils"/>
+<area shape="poly" coords="54,181,51,184,49,181,51,179,54,181,54,181" title="Complexity: 26; Coverage: 0%; Class: DateTimeFormatterBuilder.TextField" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.TextField"/>
+<area shape="poly" coords="54,196,51,199,49,196,51,194,54,196,54,196" title="Complexity: 12; Coverage: 0%; Class: DateTimeFormatterBuilder.PaddedNumber" alt="" href="org/joda/time/format/DateTimeFormatterBuilder.html#DateTimeFormatterBuilder.PaddedNumber"/>
+<area shape="poly" coords="54,148,51,151,49,148,51,146,54,148,54,148" title="Complexity: 57; Coverage: 0%; Class: DelegatedDateTimeField" alt="" href="org/joda/time/field/DelegatedDateTimeField.html#DelegatedDateTimeField"/>
+<area shape="poly" coords="54,122,51,125,49,122,51,120,54,122,54,122" title="Complexity: 81; Coverage: 0%; Class: BaseDateTimeField" alt="" href="org/joda/time/field/BaseDateTimeField.html#BaseDateTimeField"/>
+</map>
+            </div>
+        </div>
+        
+                    <div class="dashboard-widget">
+                <header class="dashboard-widget-header">
+                    <h3>Coverage tree map</h3>
+                </header>
+                <div class="dashboard-widget-content">
+                    <div id="infovis" style="width:100%; height:250px;">
+                        <div id="treemap-loader" style="position:relative;top:50px;">
+                            <p>
+                                Generating Coverage Tree Map. Please wait...
+                            </p>
+                            <p>
+                                <img src="img/ajax-loader.gif" alt="Loading Treemap"/>
+                            </p>
+                        </div>
+                    </div>
+                    <p><a href="treemap.html">See more</a></p>
+                </div>
+
+            </div>
+            </div>
+
+
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Top 20 project risks</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                                                                <a class="tag" href="org/joda/time/format/PeriodFormatterBuilder.html"
+                            style="font-size: 28px;color:#d04437"
+                            title="Average Method Complexity - 10.462 , Coverage - 0% ">PeriodFormatterBuilder.FieldFormatter</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/chrono/AssembledChronology.html"
+                            style="font-size: 27px;color:#d04437"
+                            title="Average Method Complexity - 10.25 , Coverage - 0% ">AssembledChronology.Fields</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/format/DateTimeFormatterBuilder.html"
+                            style="font-size: 26px;color:#d04437"
+                            title="Average Method Complexity - 9.556 , Coverage - 0% ">DateTimeFormatterBuilder.TimeZoneOffset</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/DateTimeFieldType.html"
+                            style="font-size: 24px;color:#d04437"
+                            title="Average Method Complexity - 7.857 , Coverage - 0% ">DateTimeFieldType.StandardDateTimeFieldType</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/format/PeriodFormatterBuilder.html"
+                            style="font-size: 22px;color:#d04437"
+                            title="Average Method Complexity - 7 , Coverage - 0% ">PeriodFormatterBuilder.Separator</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/tz/DateTimeZoneBuilder.html"
+                            style="font-size: 22px;color:#d04437"
+                            title="Average Method Complexity - 6.917 , Coverage - 0% ">DateTimeZoneBuilder.PrecalculatedZone</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/format/DateTimeFormatterBuilder.html"
+                            style="font-size: 22px;color:#d04437"
+                            title="Average Method Complexity - 6.667 , Coverage - 0% ">DateTimeFormatterBuilder.MatchingParser</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/format/DateTimeFormatterBuilder.html"
+                            style="font-size: 22px;color:#d04437"
+                            title="Average Method Complexity - 6.667 , Coverage - 0% ">DateTimeFormatterBuilder.NumberFormatter</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/tz/DefaultNameProvider.html"
+                            style="font-size: 18px;color:#d9695f"
+                            title="Average Method Complexity - 4.2 , Coverage - 5.6% ">DefaultNameProvider</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/DurationFieldType.html"
+                            style="font-size: 21px;color:#d04437"
+                            title="Average Method Complexity - 6.2 , Coverage - 0% ">DurationFieldType.StandardDurationFieldType</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/convert/StringConverter.html"
+                            style="font-size: 21px;color:#d04437"
+                            title="Average Method Complexity - 6.143 , Coverage - 0% ">StringConverter</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/convert/ConverterSet.html"
+                            style="font-size: 21px;color:#d04437"
+                            title="Average Method Complexity - 6 , Coverage - 0% ">ConverterSet</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/tz/ZoneInfoCompiler.html"
+                            style="font-size: 20px;color:#d04437"
+                            title="Average Method Complexity - 5.647 , Coverage - 0% ">ZoneInfoCompiler</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/DateTimeZone.html"
+                            style="font-size: 16px;color:#e28e87"
+                            title="Average Method Complexity - 3.2 , Coverage - 11.6% ">DateTimeZone</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/tz/ZoneInfoProvider.html"
+                            style="font-size: 16px;color:#14892c"
+                            title="Average Method Complexity - 3.091 , Coverage - 20.8% ">ZoneInfoProvider</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/format/DateTimeFormatterBuilder.html"
+                            style="font-size: 20px;color:#d04437"
+                            title="Average Method Complexity - 5.5 , Coverage - 0% ">DateTimeFormatterBuilder.Fraction</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/format/FormatUtils.html"
+                            style="font-size: 20px;color:#d04437"
+                            title="Average Method Complexity - 5.25 , Coverage - 0% ">FormatUtils</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/chrono/BasicGJChronology.html"
+                            style="font-size: 19px;color:#d04437"
+                            title="Average Method Complexity - 5.222 , Coverage - 0% ">BasicGJChronology</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/format/DateTimeFormat.html"
+                            style="font-size: 19px;color:#d04437"
+                            title="Average Method Complexity - 4.654 , Coverage - 0% ">DateTimeFormat</a>
+                                    
+                                                                <a class="tag" href="org/joda/time/format/DateTimeFormatterBuilder.html"
+                            style="font-size: 18px;color:#d04437"
+                            title="Average Method Complexity - 4.5 , Coverage - 0% ">DateTimeFormatterBuilder.FixedNumber</a>
+                                                    <p><a href="top-risks.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex packages</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.008205757</span>0.8%</div><div style="display: table-cell">
+ <div title="0.8% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0.8%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/joda/time/pkg-summary.html">org.joda.time</a>
+                                <span class="aui-badge" title="Package complexity">2815</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/joda/time/format/pkg-summary.html">org.joda.time.format</a>
+                                <span class="aui-badge" title="Package complexity">1543</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/joda/time/chrono/pkg-summary.html">org.joda.time.chrono</a>
+                                <span class="aui-badge" title="Package complexity">1286</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/joda/time/field/pkg-summary.html">org.joda.time.field</a>
+                                <span class="aui-badge" title="Package complexity">762</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.023143684</span>2.3%</div><div style="display: table-cell">
+ <div title="2.3% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:2.3%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/joda/time/tz/pkg-summary.html">org.joda.time.tz</a>
+                                <span class="aui-badge" title="Package complexity">568</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex classes</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/joda/time/LocalDateTime.html"  title="org.joda.time.LocalDateTime">LocalDateTime</a>
+                                <span class="aui-badge" title="Class complexity">179</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/joda/time/LocalDate.html"  title="org.joda.time.LocalDate">LocalDate</a>
+                                <span class="aui-badge" title="Class complexity">161</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.116412215</span>11.6%</div><div style="display: table-cell">
+ <div title="11.6% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:11.6%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/joda/time/DateTimeZone.html"  title="org.joda.time.DateTimeZone">DateTimeZone</a>
+                                <span class="aui-badge" title="Class complexity">144</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/joda/time/DateTime.html"  title="org.joda.time.DateTime">DateTime</a>
+                                <span class="aui-badge" title="Class complexity">141</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/joda/time/format/PeriodFormatterBuilder.html"  title="org.joda.time.format.PeriodFormatterBuilder.FieldFormatter">PeriodFormatterBuilder.FieldFormatter</a>
+                                <span class="aui-badge" title="Class complexity">136</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Least tested methods</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+
+                    <tr>
+                        <td align="right">1.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DateTimeFormatterBuilder.TimeZoneOffset.parseInto(DateTimeParserBucket,String,int)&#160;:&#160;int" href="org/joda/time/format/DateTimeFormatterBuilder.html?line=2277#src-2277">DateTimeFormatterBuilder.TimeZoneOffset.parseInto(DateTimeParserBucket,String,int)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">37</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">2.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DateTimeFormat.parsePatternTo(DateTimeFormatterBuilder,String)&#160;:&#160;void" href="org/joda/time/format/DateTimeFormat.html?line=416#src-416">DateTimeFormat.parsePatternTo(DateTimeFormatterBuilder,String)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">43</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">3.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="AssembledChronology.Fields.copyFieldsFrom(Chronology)&#160;:&#160;void" href="org/joda/time/chrono/AssembledChronology.html?line=442#src-442">AssembledChronology.Fields.copyFieldsFrom(Chronology)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">36</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">4.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="PeriodFormatterBuilder.FieldFormatter.parseInto(ReadWritablePeriod,String,int,Locale)&#160;:&#160;int" href="org/joda/time/format/PeriodFormatterBuilder.html?line=1186#src-1186">PeriodFormatterBuilder.FieldFormatter.parseInto(ReadWritablePeriod,String,int,Locale)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">41</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">5.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="AssembledChronology.setFields()&#160;:&#160;void" href="org/joda/time/chrono/AssembledChronology.html?line=318#src-318">AssembledChronology.setFields()&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">46</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">6.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DateTimeFormatterBuilder.TwoDigitYear.parseInto(DateTimeParserBucket,String,int)&#160;:&#160;int" href="org/joda/time/format/DateTimeFormatterBuilder.html?line=1571#src-1571">DateTimeFormatterBuilder.TwoDigitYear.parseInto(DateTimeParserBucket,String,int)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">25</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">7.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ZoneInfoCompiler.compile(File,File[])&#160;:&#160;Map&lt;String,&#160;DateTimeZone&gt;" href="org/joda/time/tz/ZoneInfoCompiler.html?line=367#src-367">ZoneInfoCompiler.compile(File,File[])&#160;:&#160;Map&lt;String,&#160;DateTimeZone&gt;</a>
+                            <span class="aui-badge" title="Method complexity">19</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">8.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="PeriodType.forFields(DurationFieldType[])&#160;:&#160;PeriodType" href="org/joda/time/PeriodType.html?line=501#src-501">PeriodType.forFields(DurationFieldType[])&#160;:&#160;PeriodType</a>
+                            <span class="aui-badge" title="Method complexity">18</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">9.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="PeriodFormatterBuilder.FieldFormatter.getFieldValue(ReadablePeriod)&#160;:&#160;long" href="org/joda/time/format/PeriodFormatterBuilder.html?line=1384#src-1384">PeriodFormatterBuilder.FieldFormatter.getFieldValue(ReadablePeriod)&#160;:&#160;long</a>
+                            <span class="aui-badge" title="Method complexity">29</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">10.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DateTimeZoneBuilder.PrecalculatedZone.create(String,boolean,ArrayList&lt;Transition&gt;,DSTZone)&#160;:&#160;PrecalculatedZone" href="org/joda/time/tz/DateTimeZoneBuilder.html?line=1390#src-1390">DateTimeZoneBuilder.PrecalculatedZone.create(String,boolean,ArrayList&lt;Transition&gt;,DSTZone)&#160;:&#160;PrecalculatedZone</a>
+                            <span class="aui-badge" title="Method complexity">25</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">11.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DateTimeFormatterBuilder.Fraction.printTo(StringBuffer,Writer,long,Chronology)&#160;:&#160;void" href="org/joda/time/format/DateTimeFormatterBuilder.html?line=1943#src-1943">DateTimeFormatterBuilder.Fraction.printTo(StringBuffer,Writer,long,Chronology)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">19</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">12.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Partial.Partial(DateTimeFieldType[],int[],Chronology)" href="org/joda/time/Partial.html?line=189#src-189">Partial.Partial(DateTimeFieldType[],int[],Chronology)</a>
+                            <span class="aui-badge" title="Method complexity">19</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">13.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ISODateTimeFormat.time(DateTimeFormatterBuilder,Collection&lt;DateTimeFieldType&gt;,boolean,boolean,boolean,boolean)&#160;:&#160;void" href="org/joda/time/format/ISODateTimeFormat.html?line=388#src-388">ISODateTimeFormat.time(DateTimeFormatterBuilder,Collection&lt;DateTimeFieldType&gt;,boolean,boolean,boolean,boolean)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">43</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">14.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DateTimeFormatterBuilder.Fraction.getFractionData(long,DateTimeField)&#160;:&#160;long[]" href="org/joda/time/format/DateTimeFormatterBuilder.html?line=2027#src-2027">DateTimeFormatterBuilder.Fraction.getFractionData(long,DateTimeField)&#160;:&#160;long[]</a>
+                            <span class="aui-badge" title="Method complexity">20</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">15.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DateTimeFormatterBuilder.TimeZoneOffset.printTo(StringBuffer,long,Chronology,int,DateTimeZone,Locale)&#160;:&#160;void" href="org/joda/time/format/DateTimeFormatterBuilder.html?line=2147#src-2147">DateTimeFormatterBuilder.TimeZoneOffset.printTo(StringBuffer,long,Chronology,int,DateTimeZone,Locale)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">17</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">16.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DateTimeFormatterBuilder.TimeZoneOffset.printTo(Writer,long,Chronology,int,DateTimeZone,Locale)&#160;:&#160;void" href="org/joda/time/format/DateTimeFormatterBuilder.html?line=2206#src-2206">DateTimeFormatterBuilder.TimeZoneOffset.printTo(Writer,long,Chronology,int,DateTimeZone,Locale)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">17</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">17.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ConverterSet.selectSlow(ConverterSet,Class&lt;?&gt;)&#160;:&#160;Converter" href="org/joda/time/convert/ConverterSet.html?line=242#src-242">ConverterSet.selectSlow(ConverterSet,Class&lt;?&gt;)&#160;:&#160;Converter</a>
+                            <span class="aui-badge" title="Method complexity">16</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">18.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ZoneInfoCompiler.DateTimeOfYear.DateTimeOfYear(StringTokenizer)" href="org/joda/time/tz/ZoneInfoCompiler.html?line=539#src-539">ZoneInfoCompiler.DateTimeOfYear.DateTimeOfYear(StringTokenizer)</a>
+                            <span class="aui-badge" title="Method complexity">10</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">19.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BaseDateTimeField.addWrapPartial(ReadablePartial,int,int[],int)&#160;:&#160;int[]" href="org/joda/time/field/BaseDateTimeField.html?line=378#src-378">BaseDateTimeField.addWrapPartial(ReadablePartial,int,int[],int)&#160;:&#160;int[]</a>
+                            <span class="aui-badge" title="Method complexity">12</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">20.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ZoneInfoCompiler.parseDataFile(BufferedReader)&#160;:&#160;void" href="org/joda/time/tz/ZoneInfoCompiler.html?line=464#src-464">ZoneInfoCompiler.parseDataFile(BufferedReader)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">15</span>
+
+                        </td>
+                    </tr>
+                                    </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+                            </div> <!-- tabs-pane active-pane -->
+                        </div>
+
+    <script type="text/javascript" src="jit.js" ></script>
+    <script type="text/javascript" src="treemap-dash-json.js" ></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Sat Dec 31 2022 15:54:48 MST using coverage data from Sat Dec 31 2022 15:54:48 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

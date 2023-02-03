@@ -1,0 +1,13 @@
+Testsuite: org.apache.commons.lang3.builder.ReflectionToStringBuilderExcludeTest
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
+
+Testcase: testFloatArrayArray503 took 0.028 sec
+	FAILED
+expected:<[0.0][{{1.0,2.29686},<nul...> but was:<[java.lang.Double@224aed64][{{1.0,2.29686},<nul...>
+junit.framework.AssertionFailedError: expected:<[0.0][{{1.0,2.29686},<nul...> but was:<[java.lang.Double@224aed64][{{1.0,2.29686},<nul...>
+	at org.apache.commons.lang3.builder.ReflectionToStringBuilderExcludeTest.testFloatArrayArray503(ReflectionToStringBuilderExcludeTest.java:124)
+
+Testcase: test_setExcludeFieldNames37 took 0.001 sec
+Testcase: test_toStringExcludeCollectionWithNulls251 took 0.005 sec
+Testcase: testReflectionHierarchy249 took 0.002 sec
+Testcase: test_setUpToClass_invalid252 took 0.001 sec

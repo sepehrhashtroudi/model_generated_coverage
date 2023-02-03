@@ -1,0 +1,94 @@
+Testsuite: org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest
+Tests run: 26, Failures: 11, Errors: 2, Skipped: 0, Time elapsed: 0.067 sec
+
+Testcase: testObjectRegistryRemove271 took 0.02 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest.testObjectRegistryRemove271(HashCodeBuilderAndEqualsBuilderTest.java:177)
+
+Testcase: testReflectionObjectCycle51 took 0.008 sec
+Testcase: testRemoveMultipleTimes268 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest.testRemoveMultipleTimes268(HashCodeBuilderAndEqualsBuilderTest.java:142)
+
+Testcase: testObject264 took 0 sec
+Testcase: testObject273 took 0.002 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest.testObject273(HashCodeBuilderAndEqualsBuilderTest.java:205)
+
+Testcase: testConstructorEx1310 took 0 sec
+Testcase: testConstructorEx2303 took 0 sec
+Testcase: testReflectionHashCodeEx3308 took 0 sec
+Testcase: testDoubleArrayAsObject309 took 0.001 sec
+	FAILED
+expected:<1899780952> but was:<null>
+junit.framework.AssertionFailedError: expected:<1899780952> but was:<null>
+	at org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest.testDoubleArrayAsObject309(HashCodeBuilderAndEqualsBuilderTest.java:338)
+
+Testcase: testReflectionHierarchyEquals265 took 0.004 sec
+Testcase: testReflectionHierarchyEquals270 took 0.001 sec
+Testcase: testObjectRegistry57 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest.testObjectRegistry57(HashCodeBuilderAndEqualsBuilderTest.java:71)
+
+Testcase: testBooleanMultiArray302 took 0.001 sec
+Testcase: testToHashCodeEqualsHashCode315 took 0 sec
+Testcase: testObject45 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest.testObject45(HashCodeBuilderAndEqualsBuilderTest.java:47)
+
+Testcase: testReflectionEquals275 took 0 sec
+Testcase: testHashCode267 took 0 sec
+Testcase: testHashCode312 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest.testHashCode312(HashCodeBuilderAndEqualsBuilderTest.java:368)
+
+Testcase: testHashCode314 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest.testHashCode314(HashCodeBuilderAndEqualsBuilderTest.java:388)
+
+Testcase: testHashCode316 took 0 sec
+Testcase: testIDKey306 took 0.001 sec
+	FAILED
+expected:<null> but was:<2096171631>
+junit.framework.AssertionFailedError: expected:<null> but was:<2096171631>
+	at org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest.testIDKey306(HashCodeBuilderAndEqualsBuilderTest.java:314)
+
+Testcase: testIDKey313 took 0.001 sec
+	FAILED
+expected:<6> but was:<org.apache.commons.lang3.builder.IDKey@5ba23b66>
+junit.framework.AssertionFailedError: expected:<6> but was:<org.apache.commons.lang3.builder.IDKey@5ba23b66>
+	at org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest.testIDKey313(HashCodeBuilderAndEqualsBuilderTest.java:378)
+
+Testcase: testEquals304 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest.testEquals304(HashCodeBuilderAndEqualsBuilderTest.java:287)
+
+Testcase: testEquals307 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest.testEquals307(HashCodeBuilderAndEqualsBuilderTest.java:320)
+
+Testcase: testEquals317 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest.testEquals317(HashCodeBuilderAndEqualsBuilderTest.java:414)
+
+Testcase: testCyclicalObjectReferences266 took 0 sec

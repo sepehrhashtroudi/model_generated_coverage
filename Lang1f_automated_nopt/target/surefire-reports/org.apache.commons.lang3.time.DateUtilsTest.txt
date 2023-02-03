@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.lang3.time.DateUtilsTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.011 sec <<< FAILURE!
+testSetSeconds1052(org.apache.commons.lang3.time.DateUtilsTest)  Time elapsed: 0.011 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Illegal pattern character 'U'
+	at java.text.SimpleDateFormat.compile(SimpleDateFormat.java:826)
+	at java.text.SimpleDateFormat.applyPatternImpl(SimpleDateFormat.java:2272)
+	at java.text.SimpleDateFormat.applyPattern(SimpleDateFormat.java:2268)
+	at org.apache.commons.lang3.time.DateUtils.parseDateWithLeniency(DateUtils.java:376)
+	at org.apache.commons.lang3.time.DateUtils.parseDate(DateUtils.java:290)
+	at org.apache.commons.lang3.time.DateUtils.parseDate(DateUtils.java:267)
+	at org.apache.commons.lang3.time.DateUtilsTest.__CLR4_4_1jix57ygqs(DateUtilsTest.java:150)
+	at org.apache.commons.lang3.time.DateUtilsTest.testSetSeconds1052(DateUtilsTest.java:150)
+

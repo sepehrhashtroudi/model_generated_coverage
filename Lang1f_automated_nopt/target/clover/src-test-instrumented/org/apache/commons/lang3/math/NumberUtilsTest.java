@@ -1,0 +1,320 @@
+/* $$ This file has been instrumented by Clover 4.4.1#2019101123313948 $$ *//*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.apache.commons.lang3.math;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Modifier;
+import java.math.BigDecimal;
+import java.math.BigInteger;
+
+import org.junit.Test;
+
+/**
+ * Unit tests {@link org.apache.commons.lang3.math.NumberUtils}.
+ *
+ * @version $Id$
+ */
+public class NumberUtilsTest {static class __CLR4_4_1g75g75ldni84z0{public static com_atlassian_clover.CoverageRecorder R;public static com_atlassian_clover.CloverProfile[] profiles = { };@java.lang.SuppressWarnings("unchecked") public static <I, T extends I> I lambdaInc(final int i,final T l,final int si){java.lang.reflect.InvocationHandler h=new java.lang.reflect.InvocationHandler(){public java.lang.Object invoke(java.lang.Object p,java.lang.reflect.Method m,java.lang.Object[] a) throws Throwable{R.inc(i);R.inc(si);try{return m.invoke(l,a);}catch(java.lang.reflect.InvocationTargetException e){throw e.getCause()!=null?e.getCause():new RuntimeException("Clover failed to invoke instrumented lambda",e);}}};return (I)java.lang.reflect.Proxy.newProxyInstance(l.getClass().getClassLoader(),l.getClass().getInterfaces(),h);}static{com_atlassian_clover.CoverageRecorder _R=null;try{com_atlassian_clover.CloverVersionInfo.An_old_version_of_clover_is_on_your_compilation_classpath___Please_remove___Required_version_is___4_4_1();if(2019101123313948L!=com_atlassian_clover.CloverVersionInfo.getBuildStamp()){com_atlassian_clover.Clover.l("[CLOVER] WARNING: The Clover version used in instrumentation does not match the runtime version. You need to run instrumented classes against the same version of Clover that you instrumented with.");com_atlassian_clover.Clover.l("[CLOVER] WARNING: Instr=4.4.1#2019101123313948,Runtime="+com_atlassian_clover.CloverVersionInfo.getReleaseNum()+"#"+com_atlassian_clover.CloverVersionInfo.getBuildStamp());}R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getRecorder("\u002f\u0068\u006f\u006d\u0065\u002f\u0073\u0065\u0070\u0065\u0068\u0072\u002f\u006d\u0061\u0073\u0074\u0065\u0072\u0073\u002f\u0074\u0065\u0073\u0074\u005f\u0067\u0065\u006e\u0065\u0072\u0061\u0074\u0069\u006f\u006e\u002f\u006d\u006f\u0064\u0065\u006c\u005f\u0067\u0065\u006e\u0065\u0072\u0061\u0074\u0065\u0064\u005f\u0063\u006f\u0076\u0065\u0072\u0061\u0067\u0065\u002f\u004c\u0061\u006e\u0067\u0031\u0066\u005f\u0061\u0075\u0074\u006f\u006d\u0061\u0074\u0065\u0064\u005f\u006e\u006f\u0070\u0074\u002f\u0074\u0061\u0072\u0067\u0065\u0074\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002e\u0064\u0062",1675366950859L,8589935092L,21036,profiles,new java.lang.String[]{"clover.distributed.coverage",null});}catch(java.lang.SecurityException e){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised because it has insufficient security privileges. Please consult the Clover documentation on the security policy file changes required. ("+e.getClass()+":"+e.getMessage()+")");}catch(java.lang.NoClassDefFoundError e){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised. Are you sure you have Clover in the runtime classpath? ("+e.getClass()+":"+e.getMessage()+")");}catch(java.lang.Throwable t){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised because of an unexpected error. ("+t.getClass()+":"+t.getMessage()+")");}R=_R;}}public static final com_atlassian_clover.TestNameSniffer __CLR4_4_1_TEST_NAME_SNIFFER=com_atlassian_clover.TestNameSniffer.NULL_INSTANCE;
+
+    //-----------------------------------------------------------------------
+@Test(expected = NumberFormatException.class) public void nullTest() {__CLR4_4_1g75g75ldni84z0.R.globalSliceStart(getClass().getName(),20993);int $CLV_p$=0;java.lang.Throwable $CLV_t$=null;try{__CLR4_4_1pz9yaog75();$CLV_p$=0;$CLV_t$=new java.lang.RuntimeException(new String(new char[] {69,120,112,101,99,116,101,100,32,111,110,101,32,111,102,32,116,104,101,32,102,111,108,108,111,119,105,110,103,32,101,120,99,101,112,116,105,111,110,115,32,116,111,32,98,101,32,116,104,114,111,119,110,32,102,114,111,109,32,116,101,115,116,32,109,101,116,104,111,100,32,110,117,108,108,84,101,115,116,58,32,91,78,117,109,98,101,114,70,111,114,109,97,116,69,120,99,101,112,116,105,111,110,93,}));}catch(java.lang.Throwable $CLV_t2$){if($CLV_t2$ instanceof NumberFormatException){$CLV_p$=1;$CLV_t$=null;}else{$CLV_p$=0;$CLV_t$=$CLV_t2$;}if($CLV_p$==0&&$CLV_t$==null){$CLV_t$=$CLV_t2$;}__CLR4_4_1g75g75ldni84z0.R.rethrow($CLV_t2$);}finally{__CLR4_4_1g75g75ldni84z0.R.globalSliceEnd(getClass().getName(),"org.apache.commons.lang3.math.NumberUtilsTest.nullTest",__CLR4_4_1_TEST_NAME_SNIFFER.getTestName(),20993,$CLV_p$,$CLV_t$);}}private void  __CLR4_4_1pz9yaog75(){try{__CLR4_4_1g75g75ldni84z0.R.inc(20993); __CLR4_4_1g75g75ldni84z0.R.inc(20994);try { __CLR4_4_1g75g75ldni84z0.R.inc(20995);NumberUtils.createBigDecimal(null); } catch (NumberFormatException e) { __CLR4_4_1g75g75ldni84z0.R.inc(20996);fail(e.getMessage()); } __CLR4_4_1g75g75ldni84z0.R.inc(20997);try { __CLR4_4_1g75g75ldni84z0.R.inc(20998);NumberUtils.createBigDecimal(null); } catch (NumberFormatException e) { __CLR4_4_1g75g75ldni84z0.R.inc(20999);fail(e.getMessage()); } __CLR4_4_1g75g75ldni84z0.R.inc(21000);try { __CLR4_4_1g75g75ldni84z0.R.inc(21001);NumberUtils.createBigDecimal(" "); } catch (NumberFormatException e) { __CLR4_4_1g75g75ldni84z0.R.inc(21002);fail(e.getMessage()); } }finally{__CLR4_4_1g75g75ldni84z0.R.flushNeeded();}}
+    
+
+    //---------------------------------------------------------------------
+
+    /**
+     * Test for {@link NumberUtils#toInt(String)}.
+     */
+    
+
+    /**
+     * Test for {@link NumberUtils#toInt(String, int)}.
+     */
+    
+
+    /**
+     * Test for {@link NumberUtils#toLong(String)}.
+     */
+    
+
+    /**
+     * Test for {@link NumberUtils#toLong(String, long)}.
+     */
+    
+
+    /**
+     * Test for {@link NumberUtils#toFloat(String)}.
+     */
+    
+
+    /**
+     * Test for {@link NumberUtils#toFloat(String, float)}.
+     */
+    
+    
+    /**
+     * Test for {(@link NumberUtils#createNumber(String)}
+     */
+    
+    /**
+     * Test for {@link NumberUtils#toDouble(String)}.
+     */
+    
+
+    /**
+     * Test for {@link NumberUtils#toDouble(String, double)}.
+     */
+    
+
+     /**
+     * Test for {@link NumberUtils#toByte(String)}.
+     */
+    
+
+    /**
+     * Test for {@link NumberUtils#toByte(String, byte)}.
+     */
+    
+
+    /**
+     * Test for {@link NumberUtils#toShort(String)}.
+     */
+    
+
+    /**
+     * Test for {@link NumberUtils#toShort(String, short)}.
+     */
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    // Tests to show when magnitude causes switch to next Number type
+    // Will probably need to be adjusted if code is changed to check precision (LANG-693)
+    
+
+    
+
+    protected void testCreateFloatFailure(final String str) {try{__CLR4_4_1g75g75ldni84z0.R.inc(21003);
+        __CLR4_4_1g75g75ldni84z0.R.inc(21004);try {
+            __CLR4_4_1g75g75ldni84z0.R.inc(21005);final Float value = NumberUtils.createFloat(str);
+            __CLR4_4_1g75g75ldni84z0.R.inc(21006);fail("createFloat(\"" + str + "\") should have failed: " + value);
+        } catch (final NumberFormatException ex) {
+            // empty
+        }
+    }finally{__CLR4_4_1g75g75ldni84z0.R.flushNeeded();}}
+
+    
+
+    protected void testCreateDoubleFailure(final String str) {try{__CLR4_4_1g75g75ldni84z0.R.inc(21007);
+        __CLR4_4_1g75g75ldni84z0.R.inc(21008);try {
+            __CLR4_4_1g75g75ldni84z0.R.inc(21009);final Double value = NumberUtils.createDouble(str);
+            __CLR4_4_1g75g75ldni84z0.R.inc(21010);fail("createDouble(\"" + str + "\") should have failed: " + value);
+        } catch (final NumberFormatException ex) {
+            // empty
+        }
+    }finally{__CLR4_4_1g75g75ldni84z0.R.flushNeeded();}}
+
+    
+
+    protected void testCreateIntegerFailure(final String str) {try{__CLR4_4_1g75g75ldni84z0.R.inc(21011);
+        __CLR4_4_1g75g75ldni84z0.R.inc(21012);try {
+            __CLR4_4_1g75g75ldni84z0.R.inc(21013);final Integer value = NumberUtils.createInteger(str);
+            __CLR4_4_1g75g75ldni84z0.R.inc(21014);fail("createInteger(\"" + str + "\") should have failed: " + value);
+        } catch (final NumberFormatException ex) {
+            // empty
+        }
+    }finally{__CLR4_4_1g75g75ldni84z0.R.flushNeeded();}}
+
+    
+
+    protected void testCreateLongFailure(final String str) {try{__CLR4_4_1g75g75ldni84z0.R.inc(21015);
+        __CLR4_4_1g75g75ldni84z0.R.inc(21016);try {
+            __CLR4_4_1g75g75ldni84z0.R.inc(21017);final Long value = NumberUtils.createLong(str);
+            __CLR4_4_1g75g75ldni84z0.R.inc(21018);fail("createLong(\"" + str + "\") should have failed: " + value);
+        } catch (final NumberFormatException ex) {
+            // empty
+        }
+    }finally{__CLR4_4_1g75g75ldni84z0.R.flushNeeded();}}
+
+    
+
+    protected void testCreateBigIntegerFailure(final String str) {try{__CLR4_4_1g75g75ldni84z0.R.inc(21019);
+        __CLR4_4_1g75g75ldni84z0.R.inc(21020);try {
+            __CLR4_4_1g75g75ldni84z0.R.inc(21021);final BigInteger value = NumberUtils.createBigInteger(str);
+            __CLR4_4_1g75g75ldni84z0.R.inc(21022);fail("createBigInteger(\"" + str + "\") should have failed: " + value);
+        } catch (final NumberFormatException ex) {
+            // empty
+        }
+    }finally{__CLR4_4_1g75g75ldni84z0.R.flushNeeded();}}
+
+    
+
+    protected void testCreateBigDecimalFailure(final String str) {try{__CLR4_4_1g75g75ldni84z0.R.inc(21023);
+        __CLR4_4_1g75g75ldni84z0.R.inc(21024);try {
+            __CLR4_4_1g75g75ldni84z0.R.inc(21025);final BigDecimal value = NumberUtils.createBigDecimal(str);
+            __CLR4_4_1g75g75ldni84z0.R.inc(21026);fail("createBigDecimal(\"" + str + "\") should have failed: " + value);
+        } catch (final NumberFormatException ex) {
+            // empty
+        }
+    }finally{__CLR4_4_1g75g75ldni84z0.R.flushNeeded();}}
+
+    // min/max tests
+    // ----------------------------------------------------------------------
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    // Testing JDK against old Lang functionality
+    
+
+    
+
+    
+
+    /**
+     * Tests isNumber(String) and tests that createNumber(String) returns
+     * a valid number iff isNumber(String) returns false.
+     */
+    
+
+    private boolean checkCreateNumber(final String val) {try{__CLR4_4_1g75g75ldni84z0.R.inc(21027);
+        __CLR4_4_1g75g75ldni84z0.R.inc(21028);try {
+            __CLR4_4_1g75g75ldni84z0.R.inc(21029);final Object obj = NumberUtils.createNumber(val);
+            __CLR4_4_1g75g75ldni84z0.R.inc(21030);if ((((obj == null)&&(__CLR4_4_1g75g75ldni84z0.R.iget(21031)!=0|true))||(__CLR4_4_1g75g75ldni84z0.R.iget(21032)==0&false))) {{
+                __CLR4_4_1g75g75ldni84z0.R.inc(21033);return false;
+            }
+            }__CLR4_4_1g75g75ldni84z0.R.inc(21034);return true;
+        } catch (final NumberFormatException e) {
+            __CLR4_4_1g75g75ldni84z0.R.inc(21035);return false;
+       }
+    }finally{__CLR4_4_1g75g75ldni84z0.R.flushNeeded();}}
+
+    
+
+    
+
+    
+
+}

@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":167,"id":21616,"methods":[{"el":52,"sc":5,"sl":50},{"el":56,"sc":5,"sl":54},{"el":60,"sc":5,"sl":58},{"el":66,"sc":5,"sl":62},{"el":72,"sc":5,"sl":68}],"name":"TestAbstractPartial","sl":31},{"el":122,"id":21630,"methods":[{"el":94,"sc":9,"sl":92},{"el":105,"sc":9,"sl":96},{"el":109,"sc":9,"sl":107},{"el":113,"sc":9,"sl":111},{"el":117,"sc":9,"sl":115},{"el":121,"sc":9,"sl":119}],"name":"TestAbstractPartial.MockPartial","sl":88},{"el":135,"id":21648,"methods":[{"el":128,"sc":9,"sl":126},{"el":131,"sc":9,"sl":129},{"el":134,"sc":9,"sl":132}],"name":"TestAbstractPartial.MockProperty0","sl":124},{"el":147,"id":21654,"methods":[{"el":140,"sc":9,"sl":138},{"el":143,"sc":9,"sl":141},{"el":146,"sc":9,"sl":144}],"name":"TestAbstractPartial.MockProperty1","sl":136},{"el":152,"id":21660,"methods":[{"el":151,"sc":9,"sl":149}],"name":"TestAbstractPartial.MockProperty0Field","sl":148},{"el":157,"id":21662,"methods":[{"el":156,"sc":9,"sl":154}],"name":"TestAbstractPartial.MockProperty0Val","sl":153},{"el":166,"id":21664,"methods":[{"el":163,"sc":17,"sl":161},{"el":165,"sc":9,"sl":159}],"name":"TestAbstractPartial.MockProperty0Chrono","sl":158}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]

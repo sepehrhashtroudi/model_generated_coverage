@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":122,"id":41960,"methods":[{"el":76,"sc":5,"sl":71},{"el":86,"sc":5,"sl":84},{"el":106,"sc":5,"sl":96},{"el":120,"sc":5,"sl":117}],"name":"BufferedImageRenderingSource","sl":56}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_169":{"methods":[{"sl":71},{"sl":96}],"name":"testDrawWithNullMean290","pass":true,"statements":[{"sl":72},{"sl":75},{"sl":97},{"sl":98},{"sl":105}]},"test_536":{"methods":[{"sl":71},{"sl":96}],"name":"testDrawWithNullMinOutlier104","pass":true,"statements":[{"sl":72},{"sl":75},{"sl":97},{"sl":98},{"sl":105}]},"test_574":{"methods":[{"sl":71},{"sl":96}],"name":"testDrawWithNullMean290","pass":true,"statements":[{"sl":72},{"sl":75},{"sl":97},{"sl":98},{"sl":105}]},"test_80":{"methods":[{"sl":71},{"sl":96}],"name":"testDrawWithNullMaxOutlier43","pass":true,"statements":[{"sl":72},{"sl":75},{"sl":97},{"sl":98},{"sl":105}]},"test_850":{"methods":[{"sl":71},{"sl":96}],"name":"testDrawWithNullMinOutlier104","pass":true,"statements":[{"sl":72},{"sl":75},{"sl":97},{"sl":98},{"sl":105}]},"test_871":{"methods":[{"sl":71},{"sl":96}],"name":"testDrawWithNullMaxOutlier43","pass":true,"statements":[{"sl":72},{"sl":75},{"sl":97},{"sl":98},{"sl":105}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [169, 80, 574, 536, 871, 850], [169, 80, 574, 536, 871, 850], [], [], [169, 80, 574, 536, 871, 850], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [169, 80, 574, 536, 871, 850], [169, 80, 574, 536, 871, 850], [169, 80, 574, 536, 871, 850], [], [], [], [], [], [], [169, 80, 574, 536, 871, 850], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]

@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":139,"id":37948,"methods":[{"el":96,"sc":5,"sl":72},{"el":116,"sc":5,"sl":105},{"el":125,"sc":5,"sl":123},{"el":137,"sc":5,"sl":135}],"name":"PlumNeedle","sl":58}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1014":{"methods":[{"sl":105}],"name":"testSerialization","pass":true,"statements":[{"sl":106},{"sl":109},{"sl":112},{"sl":115}]},"test_1678":{"methods":[{"sl":105}],"name":"testEquals","pass":true,"statements":[{"sl":106},{"sl":109},{"sl":112},{"sl":115}]},"test_2601":{"methods":[{"sl":105},{"sl":135}],"name":"testCloning","pass":true,"statements":[{"sl":106},{"sl":109},{"sl":112},{"sl":115},{"sl":136}]},"test_3427":{"methods":[{"sl":105},{"sl":135}],"name":"testCloning","pass":true,"statements":[{"sl":106},{"sl":109},{"sl":112},{"sl":115},{"sl":136}]},"test_4228":{"methods":[{"sl":105}],"name":"testSerialization","pass":true,"statements":[{"sl":106},{"sl":109},{"sl":112},{"sl":115}]},"test_977":{"methods":[{"sl":105}],"name":"testEquals","pass":true,"statements":[{"sl":106},{"sl":109},{"sl":112},{"sl":115}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1014, 2601, 977, 1678, 3427, 4228], [1014, 2601, 977, 1678, 3427, 4228], [], [], [1014, 2601, 977, 1678, 3427, 4228], [], [], [1014, 2601, 977, 1678, 3427, 4228], [], [], [1014, 2601, 977, 1678, 3427, 4228], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [2601, 3427], [2601, 3427], [], [], []]

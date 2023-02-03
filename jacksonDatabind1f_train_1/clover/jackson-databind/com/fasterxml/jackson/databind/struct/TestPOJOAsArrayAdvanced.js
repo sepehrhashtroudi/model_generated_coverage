@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":102,"id":36778,"methods":[{"el":80,"sc":1,"sl":69},{"el":94,"sc":1,"sl":83}],"name":"TestPOJOAsArrayAdvanced","sl":8},{"el":26,"id":36778,"methods":[{"el":22,"sc":9,"sl":17},{"el":24,"sc":9,"sl":24},{"el":25,"sc":9,"sl":25}],"name":"TestPOJOAsArrayAdvanced.CreatorAsArray","sl":12},{"el":44,"id":36785,"methods":[{"el":40,"sc":9,"sl":35},{"el":42,"sc":9,"sl":42},{"el":43,"sc":9,"sl":43}],"name":"TestPOJOAsArrayAdvanced.CreatorAsArrayShuffled","sl":30},{"el":46,"id":36792,"methods":[],"name":"TestPOJOAsArrayAdvanced.ViewA","sl":46},{"el":47,"id":36792,"methods":[],"name":"TestPOJOAsArrayAdvanced.ViewB","sl":47},{"el":58,"id":36792,"methods":[],"name":"TestPOJOAsArrayAdvanced.AsArrayWithView","sl":51}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_198":{"methods":[{"sl":17},{"sl":24},{"sl":25},{"sl":83}],"name":"testWithCreatorsOrdered526","pass":true,"statements":[{"sl":20},{"sl":21},{"sl":24},{"sl":25},{"sl":84},{"sl":85},{"sl":86},{"sl":87},{"sl":88},{"sl":89},{"sl":90},{"sl":91},{"sl":92},{"sl":93}]},"test_99":{"methods":[{"sl":35},{"sl":42},{"sl":43},{"sl":69}],"name":"testWithCreatorsShuffled525","pass":true,"statements":[{"sl":38},{"sl":39},{"sl":42},{"sl":43},{"sl":70},{"sl":71},{"sl":72},{"sl":73},{"sl":74},{"sl":75},{"sl":76},{"sl":77},{"sl":78},{"sl":79}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [198], [], [], [198], [198], [], [], [198], [198], [], [], [], [], [], [], [], [], [], [99], [], [], [99], [99], [], [], [99], [99], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [99], [99], [99], [99], [99], [99], [99], [99], [99], [99], [99], [], [], [], [198], [198], [198], [198], [198], [198], [198], [198], [198], [198], [198], [], [], [], [], [], [], [], [], []]

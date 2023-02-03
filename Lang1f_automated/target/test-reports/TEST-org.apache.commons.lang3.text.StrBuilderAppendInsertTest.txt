@@ -1,0 +1,49 @@
+Testsuite: org.apache.commons.lang3.text.StrBuilderAppendInsertTest
+Tests run: 10, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
+
+Testcase: testAppendWithSeparators_Iterator377 took 0.01 sec
+Testcase: testAppendln_String_Objectarray72 took 0 sec
+Testcase: testGetSetNullText90 took 0 sec
+Testcase: testAppendln_float23 took 0.004 sec
+	FAILED
+expected:<0[]
+> but was:<0[.0]
+>
+junit.framework.AssertionFailedError: expected:<0[]
+> but was:<0[.0]
+>
+	at org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_float23(StrBuilderAppendInsertTest.java:52)
+
+Testcase: testAppendln_int213 took 0.001 sec
+	FAILED
+expected:<[]
+> but was:<[0]
+>
+junit.framework.AssertionFailedError: expected:<[]
+> but was:<[0]
+>
+	at org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_int213(StrBuilderAppendInsertTest.java:147)
+
+Testcase: testAppendln_int214 took 0.001 sec
+	FAILED
+expected:<[0]1
+> but was:<[]1
+>
+junit.framework.AssertionFailedError: expected:<[0]1
+> but was:<[]1
+>
+	at org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_int214(StrBuilderAppendInsertTest.java:161)
+
+Testcase: testAppendWithNullText418 took 0 sec
+Testcase: testAppendln_long211 took 0 sec
+Testcase: testAppendln_long215 took 0.001 sec
+Testcase: testAppendln_double212 took 0 sec
+	FAILED
+expected:<0[]
+> but was:<0[.0]
+>
+junit.framework.AssertionFailedError: expected:<0[]
+> but was:<0[.0]
+>
+	at org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_double212(StrBuilderAppendInsertTest.java:121)
+

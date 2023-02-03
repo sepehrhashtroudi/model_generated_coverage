@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>commons-cli</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="index.html">commons-cli</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        commons-cli
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+        
+        
+                    <ul class="aui-nav">
+                                    <li>
+                        <a href="#coverage-overview">Coverage overview</a>
+                    </li>
+                                <li>
+                    <a href="#added-classes">Added classes</a>
+                </li>
+                <li>
+                    <a href="#changed-classes">Changed classes</a>
+                </li>
+                <li>
+                    <a href="#charts">Charts</a>
+                </li>
+            </ul>
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+    </ol>
+    
+<h1>Historical coverage report</h1>
+
+<div class="aui-group">
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Date range</h3>
+            </header>
+                <p><b>From:</b>&#160;Wed Feb 1 2023 18:17:29 MST</p>
+                <p><b>To:</b>&#160;Wed Feb 1 2023 18:20:12 MST</p>
+            </div>
+    </div>
+    <div class="aui-item">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">352</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">794</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">218</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">35</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">34</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">2</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">5,648</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">2,363</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">442</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.56</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">3.64</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">6.23</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">17.5</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">2.03</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">352</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">794</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">218</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">35</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">34</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">2</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">5,648</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">2,363</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">442</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.56</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">3.64</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">6.23</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">17.5</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">2.03</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+        
+    <a name="coverage-overview"></a><h2>Coverage overview</h2>
+    <table class="aui">
+    <thead>
+        <tr>
+            <th><b>&#160;</b></th>
+            <th>Conditionals</th>
+            <th>Statements</th>
+            <th>Methods</th>
+            <th colspan="2"><b>TOTAL</b></th>
+        </tr>
+    </thead>
+
+
+<tbody>
+    <tr>
+        <td>
+          <a title="Project"
+                      >Project</a>
+        </td>
+
+        <td>6.2%</td>
+        <td>9.4%</td>
+        <td>17.4%</td>
+        <td>
+                            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">$sortValue</span>9.9%</div><div style="display: table-cell">
+ <div title="9.9% Covered"  style="min-width:100px;" class="barNegative contribBarNegative $customBarNegative"><div class="barPositive contribBarPositive $customBarPositive" style="width:9.9%"></div></div></div></div>                    </td>
+    </tr>
+</tbody>
+</table>
+<a name="added-classes"></a><h2>Added classes</h2>
+
+            
+<p>
+    <small>
+                    Table shows classes which have been added over the last <b>2 minutes</b>.
+                    Actual interval (based on timestamps of history points) is <b>2 minutes</b>.
+            Showing maximum <b>5</b> classes.
+            Metric used: <b>% TOTAL Coverage</b>, max value is <b>100</b>.
+    </small>
+</p>
+
+            <table class="aui">
+            <thead>
+            <tr>
+                <th>Class</th>
+                <th>% TOTAL Coverage</th>
+            </tr>
+            </thead>
+            <tbody>
+                                    
+
+    <tr>
+        <td class="graphItemGainer" title="org.apache.commons.cli.OptionBuilderTest">
+                            <a target="classPane"  href="org/apache/commons/cli/OptionBuilderTest.html" >
+                        org.apache.commons.cli.OptionBuilderTest
+                            </a>
+                    </td>
+        <td>
+            <table class="barGraph" cellspacing="0">
+                <tr>
+                                            <td>
+                            <div title="66.7 less than Maximum" class="barNegative" style="width: 300px">
+                                <div title="33.3% (% TOTAL Coverage)" class="barPositive" style="width: 100px"/>
+                            </div>
+                        </td>
+                        <td class="gainerBarGraphFigure">
+                            (33.3%)
+                        </td>
+                                    </tr>
+            </table>
+        </td>
+    </tr>
+
+                                    
+
+    <tr>
+        <td class="graphItemGainer" title="org.apache.commons.cli.BuildTest">
+                            <a target="classPane"  href="org/apache/commons/cli/BuildTest.html" >
+                        org.apache.commons.cli.BuildTest
+                            </a>
+                    </td>
+        <td>
+            <table class="barGraph" cellspacing="0">
+                <tr>
+                                            <td>
+                            <div title="66.7 less than Maximum" class="barNegative" style="width: 300px">
+                                <div title="33.3% (% TOTAL Coverage)" class="barPositive" style="width: 100px"/>
+                            </div>
+                        </td>
+                        <td class="gainerBarGraphFigure">
+                            (33.3%)
+                        </td>
+                                    </tr>
+            </table>
+        </td>
+    </tr>
+
+                                    
+
+    <tr>
+        <td class="graphItemGainer" title="org.apache.commons.cli.BugsTest">
+                            <a target="classPane"  href="org/apache/commons/cli/BugsTest.html" >
+                        org.apache.commons.cli.BugsTest
+                            </a>
+                    </td>
+        <td>
+            <table class="barGraph" cellspacing="0">
+                <tr>
+                                            <td>
+                            <div title="66.7 less than Maximum" class="barNegative" style="width: 300px">
+                                <div title="33.3% (% TOTAL Coverage)" class="barPositive" style="width: 100px"/>
+                            </div>
+                        </td>
+                        <td class="gainerBarGraphFigure">
+                            (33.3%)
+                        </td>
+                                    </tr>
+            </table>
+        </td>
+    </tr>
+
+                                    
+
+    <tr>
+        <td class="graphItemGainer" title="org.apache.commons.cli.TestHelpFormatter">
+                            <a target="classPane"  href="org/apache/commons/cli/TestHelpFormatter.html" >
+                        org.apache.commons.cli.TestHelpFormatter
+                            </a>
+                    </td>
+        <td>
+            <table class="barGraph" cellspacing="0">
+                <tr>
+                                            <td>
+                            <div title="71.4 less than Maximum" class="barNegative" style="width: 300px">
+                                <div title="28.6% (% TOTAL Coverage)" class="barPositive" style="width: 85px"/>
+                            </div>
+                        </td>
+                        <td class="gainerBarGraphFigure">
+                            (28.6%)
+                        </td>
+                                    </tr>
+            </table>
+        </td>
+    </tr>
+
+                                    
+
+    <tr>
+        <td class="graphItemGainer" title="org.apache.commons.cli.PatternOptionBuilderTest">
+                            <a target="classPane"  href="org/apache/commons/cli/PatternOptionBuilderTest.html" >
+                        org.apache.commons.cli.PatternOptionBuilderTest
+                            </a>
+                    </td>
+        <td>
+            <table class="barGraph" cellspacing="0">
+                <tr>
+                                            <td>
+                            <div title="71.4 less than Maximum" class="barNegative" style="width: 300px">
+                                <div title="28.6% (% TOTAL Coverage)" class="barPositive" style="width: 85px"/>
+                            </div>
+                        </td>
+                        <td class="gainerBarGraphFigure">
+                            (28.6%)
+                        </td>
+                                    </tr>
+            </table>
+        </td>
+    </tr>
+
+                                    
+
+    <tr>
+        <td class="graphItemGainer" title="org.apache.commons.cli.HelpFormatterExamples">
+                            <a target="classPane"  href="org/apache/commons/cli/HelpFormatterExamples.html" >
+                        org.apache.commons.cli.HelpFormatterExamples
+                            </a>
+                    </td>
+        <td>
+            <table class="barGraph" cellspacing="0">
+                <tr>
+                                            <td>
+                            <div title="100 less than Maximum" class="barNegative" style="width: 300px">
+                                <div title="0% (% TOTAL Coverage)" class="barPositive" style="width: 0px"/>
+                            </div>
+                        </td>
+                        <td class="gainerBarGraphFigure">
+                            (0%)
+                        </td>
+                                    </tr>
+            </table>
+        </td>
+    </tr>
+
+                                    
+
+    <tr>
+        <td class="graphItemGainer" title="org.apache.commons.cli.LongOptionWithShort">
+                            <a target="classPane"  href="org/apache/commons/cli/LongOptionWithShort.html" >
+                        org.apache.commons.cli.LongOptionWithShort
+                            </a>
+                    </td>
+        <td>
+            <table class="barGraph" cellspacing="0">
+                <tr>
+                                            <td>
+                            <div title="100 less than Maximum" class="barNegative" style="width: 300px">
+                                <div title="0% (% TOTAL Coverage)" class="barPositive" style="width: 0px"/>
+                            </div>
+                        </td>
+                        <td class="gainerBarGraphFigure">
+                            (0%)
+                        </td>
+                                    </tr>
+            </table>
+        </td>
+    </tr>
+
+                                    
+
+    <tr>
+        <td class="graphItemGainer" title="org.apache.commons.cli.ValuesTest">
+                            <a target="classPane"  href="org/apache/commons/cli/ValuesTest.html" >
+                        org.apache.commons.cli.ValuesTest
+                            </a>
+                    </td>
+        <td>
+            <table class="barGraph" cellspacing="0">
+                <tr>
+                                            <td>
+                            <div title="92 less than Maximum" class="barNegative" style="width: 300px">
+                                <div title="8% (% TOTAL Coverage)" class="barPositive" style="width: 24px"/>
+                            </div>
+                        </td>
+                        <td class="gainerBarGraphFigure">
+                            (8%)
+                        </td>
+                                    </tr>
+            </table>
+        </td>
+    </tr>
+
+                            </tbody>
+        </table>
+        
+<a name="changed-classes"></a><h2>Changed classes</h2>
+
+            
+<p>
+    <small>
+                    Table shows classes for which metric has changed (increased or decreased) above the threshold
+            (<b>+/-1</b>) over the last <b>2 minutes</b>.
+                    Actual interval (based on timestamps of history points) is <b>2 minutes</b>.
+            Showing maximum <b>5</b> classes.
+            Metric used: <b>% TOTAL Coverage</b>, max value is <b>100</b>.
+    </small>
+</p>
+
+                        <h3>Gainers</h3>
+            <div class="aui-message">
+                <p>No classes have gained metric's value more than the threshold (<b>+1</b>).</p>
+            </div>
+        
+                    <h3>Losers</h3>
+            <table class="aui">
+            <thead>
+            <tr>
+                <th>% TOTAL Coverage</th>
+                <th>Class</th>
+            </tr>
+            </thead>
+            <tbody>
+                            
+
+    <tr>
+        <td>
+            <table class="barGraph" cellspacing="0">
+                <tr>
+                    <td class="loserBarGraphFigure">(21%) -10.2</td>
+                    <td align="right"><div class="barNegative" style="width: 30px"/></td>
+                </tr>
+            </table>
+        </td>
+        <td class="graphItemLoser" title="org.apache.commons.cli.Option">
+                            <a target="classPane"  href="org/apache/commons/cli/Option.html" >
+                        org.apache.commons.cli.Option
+                            </a>
+                    </td>
+    </tr>
+
+                            
+
+    <tr>
+        <td>
+            <table class="barGraph" cellspacing="0">
+                <tr>
+                    <td class="loserBarGraphFigure">(33.3%) -9.7</td>
+                    <td align="right"><div class="barNegative" style="width: 29px"/></td>
+                </tr>
+            </table>
+        </td>
+        <td class="graphItemLoser" title="org.apache.commons.cli.CommandLine">
+                            <a target="classPane"  href="org/apache/commons/cli/CommandLine.html" >
+                        org.apache.commons.cli.CommandLine
+                            </a>
+                    </td>
+    </tr>
+
+                        </tbody>
+            </table>
+                
+<a name="charts"></a><h2>Charts</h2>
+
+<img alt="coverage" src="img/chart0.jpg" usemap="#chart0.jpg"/>
+<map id="chart0.jpg" name="chart0.jpg">
+<area shape="poly" coords="603,228,603,228,605,230,605,230,607,228,607,228,605,226,605,226,603,228,603,228" title="0. Total Files: 2023-02-01, 34" alt="" nohref="nohref"/>
+<area shape="poly" coords="70,247,70,247,72,249,72,249,74,247,74,247,72,245,72,245,70,247,70,247" title="0. Total Files: 2023-02-01, 20" alt="" nohref="nohref"/>
+<area shape="poly" coords="603,137,603,137,605,139,605,139,607,137,607,137,605,135,605,135,603,137,603,137" title="1. Complexity: 2023-02-01, 442" alt="" nohref="nohref"/>
+<area shape="poly" coords="70,141,70,141,72,143,72,143,74,141,74,141,72,139,72,139,70,141,70,141" title="1. Complexity: 2023-02-01, 397" alt="" nohref="nohref"/>
+<area shape="poly" coords="603,329,603,329,605,331,605,331,607,329,607,329,605,327,605,327,603,329,603,329" title="2. Total Packages: 2023-02-01, 2" alt="" nohref="nohref"/>
+<area shape="poly" coords="70,354,70,354,72,356,72,356,74,354,74,354,72,352,72,352,70,354,70,354" title="2. Total Packages: 2023-02-01, 1" alt="" nohref="nohref"/>
+<area shape="poly" coords="603,78,603,78,605,80,605,80,607,78,607,78,605,76,605,76,603,78,603,78" title="3. NC Lines: 2023-02-01, 2,363" alt="" nohref="nohref"/>
+<area shape="poly" coords="70,85,70,85,72,87,72,87,74,85,74,85,72,83,72,83,70,85,70,85" title="3. NC Lines: 2023-02-01, 1,920" alt="" nohref="nohref"/>
+<area shape="poly" coords="603,47,603,47,605,49,605,49,607,47,607,47,605,45,605,45,603,47,603,47" title="4. Lines: 2023-02-01, 5,648" alt="" nohref="nohref"/>
+<area shape="poly" coords="70,55,70,55,72,57,72,57,74,55,74,55,72,53,72,53,70,55,70,55" title="4. Lines: 2023-02-01, 4,515" alt="" nohref="nohref"/>
+</map>
+<img alt="coverage" src="img/chart1.jpg" usemap="#chart1.jpg"/>
+<map id="chart1.jpg" name="chart1.jpg">
+<area shape="poly" coords="603,377,603,377,605,379,605,379,607,377,607,377,605,375,605,375,603,377,603,377" title="0. % Covered Elements: 2023-02-01, 9.897" alt="" nohref="nohref"/>
+<area shape="poly" coords="78,372,78,372,80,374,80,374,82,372,82,372,80,370,80,370,78,372,78,372" title="0. % Covered Elements: 2023-02-01, 11.156" alt="" nohref="nohref"/>
+<area shape="poly" coords="603,348,603,348,605,350,605,350,607,348,607,348,605,346,605,346,603,348,603,348" title="1. % Covered Methods: 2023-02-01, 17.431" alt="" nohref="nohref"/>
+<area shape="poly" coords="78,340,78,340,80,342,80,342,82,340,82,340,80,338,80,338,78,340,78,340" title="1. % Covered Methods: 2023-02-01, 19.429" alt="" nohref="nohref"/>
+<area shape="poly" coords="603,379,603,379,605,381,605,381,607,379,607,379,605,377,605,377,603,379,603,379" title="2. % Covered Statements: 2023-02-01, 9.446" alt="" nohref="nohref"/>
+<area shape="poly" coords="78,374,78,374,80,376,80,376,82,374,82,374,80,372,80,372,78,374,78,374" title="2. % Covered Statements: 2023-02-01, 10.709" alt="" nohref="nohref"/>
+<area shape="poly" coords="603,391,603,391,605,393,605,393,607,391,607,391,605,389,605,389,603,391,603,391" title="3. % Covered Branches: 2023-02-01, 6.25" alt="" nohref="nohref"/>
+<area shape="poly" coords="78,385,78,385,80,387,80,387,82,385,82,385,80,383,80,383,78,385,78,385" title="3. % Covered Branches: 2023-02-01, 7.955" alt="" nohref="nohref"/>
+</map>
+
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Wed Feb 1 2023 18:20:14 MST using coverage data from Wed Feb 1 2023 18:17:29 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

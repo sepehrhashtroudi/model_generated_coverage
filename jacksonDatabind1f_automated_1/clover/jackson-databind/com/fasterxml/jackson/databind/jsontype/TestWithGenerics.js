@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":133,"id":32263,"methods":[],"name":"TestWithGenerics","sl":16},{"el":22,"id":32263,"methods":[],"name":"TestWithGenerics.Animal","sl":20},{"el":32,"id":32263,"methods":[{"el":31,"sc":9,"sl":27}],"name":"TestWithGenerics.Dog","sl":24},{"el":40,"id":32267,"methods":[{"el":37,"sc":9,"sl":37},{"el":39,"sc":9,"sl":39}],"name":"TestWithGenerics.ContainerWithGetter","sl":34},{"el":46,"id":32271,"methods":[{"el":45,"sc":9,"sl":45}],"name":"TestWithGenerics.ContainerWithField","sl":42},{"el":53,"id":32273,"methods":[],"name":"TestWithGenerics.MyClass","sl":51},{"el":61,"id":32273,"methods":[{"el":59,"sc":9,"sl":59},{"el":60,"sc":9,"sl":60}],"name":"TestWithGenerics.MyParam","sl":56},{"el":66,"id":32276,"methods":[],"name":"TestWithGenerics.SomeObject","sl":63},{"el":101,"id":32276,"methods":[{"el":75,"sc":9,"sl":75},{"el":82,"sc":9,"sl":77},{"el":85,"sc":9,"sl":84},{"el":92,"sc":9,"sl":87},{"el":100,"sc":9,"sl":94}],"name":"TestWithGenerics.CustomJsonSerializer","sl":70},{"el":115,"id":32289,"methods":[{"el":106,"sc":9,"sl":106},{"el":114,"sc":9,"sl":108}],"name":"TestWithGenerics.CustomJsonSerializerFactory","sl":104}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]

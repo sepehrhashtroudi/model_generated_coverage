@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":108,"id":36199,"methods":[{"el":41,"sc":1,"sl":33},{"el":52,"sc":1,"sl":44},{"el":63,"sc":1,"sl":55},{"el":76,"sc":1,"sl":66},{"el":107,"sc":5,"sl":95}],"name":"TestDefaultForArrays","sl":7},{"el":20,"id":36199,"methods":[{"el":18,"sc":9,"sl":18},{"el":19,"sc":9,"sl":19}],"name":"TestDefaultForArrays.ArrayBean","sl":15}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_343":{"methods":[{"sl":55},{"sl":95}],"name":"testArraysOfArrays275","pass":true,"statements":[{"sl":56},{"sl":57},{"sl":58},{"sl":59},{"sl":60},{"sl":61},{"sl":62},{"sl":98},{"sl":99},{"sl":100},{"sl":101},{"sl":102},{"sl":103},{"sl":104},{"sl":105},{"sl":106}]},"test_410":{"methods":[{"sl":66}],"name":"testNodeInArray377","pass":true,"statements":[{"sl":67},{"sl":68},{"sl":69},{"sl":70},{"sl":71},{"sl":72},{"sl":73},{"sl":74},{"sl":75}]},"test_481":{"methods":[{"sl":18},{"sl":19},{"sl":33}],"name":"testArrayTypingNested206","pass":true,"statements":[{"sl":18},{"sl":19},{"sl":34},{"sl":35},{"sl":36},{"sl":37},{"sl":38},{"sl":39},{"sl":40}]},"test_590":{"methods":[{"sl":18},{"sl":19},{"sl":44}],"name":"testArrayTypingSimple219","pass":true,"statements":[{"sl":18},{"sl":19},{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":49},{"sl":50},{"sl":51}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [481, 590], [481, 590], [], [], [], [], [], [], [], [], [], [], [], [], [], [481], [481], [481], [481], [481], [481], [481], [481], [], [], [], [590], [590], [590], [590], [590], [590], [590], [590], [], [], [], [343], [343], [343], [343], [343], [343], [343], [343], [], [], [], [410], [410], [410], [410], [410], [410], [410], [410], [410], [410], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [343], [], [], [343], [343], [343], [343], [343], [343], [343], [343], [343], [], []]

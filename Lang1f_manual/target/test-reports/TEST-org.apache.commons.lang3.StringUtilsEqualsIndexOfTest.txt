@@ -1,0 +1,43 @@
+Testsuite: org.apache.commons.lang3.StringUtilsEqualsIndexOfTest
+Tests run: 10, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec
+
+Testcase: testContainsAny_StringWithSupplementaryChars112 took 0.033 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testContainsAny_StringWithSupplementaryChars112(StringUtilsEqualsIndexOfTest.java:125)
+
+Testcase: testContainsAny_StringWithSupplementaryChars442 took 0 sec
+Testcase: testContainsAny_StringWithSupplementaryChars445 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testContainsAny_StringWithSupplementaryChars445(StringUtilsEqualsIndexOfTest.java:219)
+
+Testcase: testContainsAny_StringWithBadSupplementaryChars444 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testContainsAny_StringWithBadSupplementaryChars444(StringUtilsEqualsIndexOfTest.java:204)
+
+Testcase: testIndexOfAny_StringStringArray220 took 0 sec
+	FAILED
+expected:<3> but was:<2>
+junit.framework.AssertionFailedError: expected:<3> but was:<2>
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testIndexOfAny_StringStringArray220(StringUtilsEqualsIndexOfTest.java:137)
+
+Testcase: testContainsNone_StringWithBadSupplementaryChars29 took 0 sec
+Testcase: testIndexOfAny_StringStringArray27 took 0 sec
+	FAILED
+expected:<3> but was:<2>
+junit.framework.AssertionFailedError: expected:<3> but was:<2>
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testIndexOfAny_StringStringArray27(StringUtilsEqualsIndexOfTest.java:73)
+
+Testcase: testEscapeSurrogatePairs221 took 0.01 sec
+Testcase: testIndexOfIgnoreCase_StringInt52 took 0 sec
+Testcase: testContainsAny_String447 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testContainsAny_String447(StringUtilsEqualsIndexOfTest.java:252)
+

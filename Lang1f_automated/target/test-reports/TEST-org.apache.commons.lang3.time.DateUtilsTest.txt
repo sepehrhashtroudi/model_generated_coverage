@@ -1,0 +1,16 @@
+Testsuite: org.apache.commons.lang3.time.DateUtilsTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec
+------------- Standard Output ---------------
+DateUtilsTest: Default Locale=en_US
+------------- ---------------- ---------------
+
+Testcase: testIsSameDay_Cal511 took 0.033 sec
+Testcase: testIsSameDay_Cal512 took 0.005 sec
+Testcase: testSetSeconds420 took 0.005 sec
+	FAILED
+expected:<2> but was:<0>
+junit.framework.AssertionFailedError: expected:<2> but was:<0>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:293)
+	at org.apache.commons.lang3.time.DateUtilsTest.testSetSeconds420(DateUtilsTest.java:172)
+
+Testcase: testIsSameDay_Date137 took 0.003 sec

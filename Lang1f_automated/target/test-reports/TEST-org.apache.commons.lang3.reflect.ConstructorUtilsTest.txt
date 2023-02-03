@@ -1,0 +1,13 @@
+Testsuite: org.apache.commons.lang3.reflect.ConstructorUtilsTest
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.05 sec
+
+Testcase: testInvokeExactConstructor2 took 0.032 sec
+Testcase: testInvokeExactConstructor140 took 0.002 sec
+	Caused an ERROR
+No such accessible constructor on object: org.apache.commons.lang3.reflect.ConstructorUtilsTest$TestBean
+java.lang.NoSuchMethodException: No such accessible constructor on object: org.apache.commons.lang3.reflect.ConstructorUtilsTest$TestBean
+	at org.apache.commons.lang3.reflect.ConstructorUtils.invokeExactConstructor(ConstructorUtils.java:183)
+	at org.apache.commons.lang3.reflect.ConstructorUtils.invokeExactConstructor(ConstructorUtils.java:149)
+	at org.apache.commons.lang3.reflect.ConstructorUtilsTest.testInvokeExactConstructor140(ConstructorUtilsTest.java:124)
+
+Testcase: testGetAccessibleConstructorFromDescription139 took 0 sec

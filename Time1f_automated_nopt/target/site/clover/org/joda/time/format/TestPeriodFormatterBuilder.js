@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":220,"id":25607,"methods":[{"el":64,"sc":5,"sl":62},{"el":68,"sc":5,"sl":66},{"el":72,"sc":5,"sl":70},{"el":84,"sc":5,"sl":74},{"el":94,"sc":5,"sl":86},{"el":97,"sc":1,"sl":97},{"el":98,"sc":1,"sl":98},{"el":99,"sc":1,"sl":99},{"el":100,"sc":1,"sl":100},{"el":102,"sc":1,"sl":101}],"name":"TestPeriodFormatterBuilder","sl":35}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_12":{"methods":[{"sl":99}],"name":"testAppendMinutes135","pass":false,"statements":[{"sl":99}]},"test_14":{"methods":[{"sl":101}],"name":"testPeriodFormatter631","pass":false,"statements":[{"sl":101}]},"test_22":{"methods":[{"sl":98}],"name":"testAppendMinutes116","pass":false,"statements":[{"sl":98}]},"test_27":{"methods":[{"sl":97}],"name":"testAppendYears10","pass":false,"statements":[{"sl":97}]},"test_3":{"methods":[{"sl":100}],"name":"testAppendHours624","pass":false,"statements":[{"sl":100}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [27], [22], [12], [3], [14], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]

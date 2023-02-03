@@ -1,0 +1,18 @@
+Testsuite: org.apache.commons.lang3.text.ExtendedMessageFormatTest
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.507 sec
+
+Testcase: testExtendedFormats174 took 0.024 sec
+Testcase: testBuiltInChoiceFormat170 took 0.219 sec
+Testcase: testExtendedAndBuiltInFormats171 took 0.221 sec
+Testcase: testLANG799_EN_WITH_DE_LOCALE176 took 0.022 sec
+Testcase: testSeekNonWs175 took 0 sec
+Testcase: testEscapedQuote_LANG_47753 took 0.001 sec
+Testcase: testEquals11 took 0 sec
+Testcase: testEquals173 took 0.002 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.text.ExtendedMessageFormatTest.testEquals173(ExtendedMessageFormatTest.java:140)
+
+Testcase: testSeek172 took 0 sec
+Testcase: testSeek177 took 0 sec

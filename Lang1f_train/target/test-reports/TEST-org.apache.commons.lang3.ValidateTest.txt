@@ -1,0 +1,31 @@
+Testsuite: org.apache.commons.lang3.ValidateTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
+
+Testcase: testConstructor1065 took 0.021 sec
+Testcase: testNotBlankMsgBlankStringShouldThrow65 took 0.007 sec
+Testcase: testIsTrue243 took 0.001 sec
+Testcase: testNotEmptyMap1390 took 0 sec
+Testcase: testValidIndex_charSequence260 took 0 sec
+Testcase: testIsAssignableExceptionMessage492 took 0 sec
+Testcase: testMatchesPattern_withMessage896 took 0 sec
+Testcase: testValidIndex_collection68 took 0 sec
+Testcase: testExclusiveBetween_withMessage560 took 0 sec
+Testcase: testNotEmptyString1499 took 0 sec
+Testcase: testNotEmptyString2592 took 0 sec
+Testcase: testInclusiveBetween1205 took 0 sec
+Testcase: testNoNullElementsCollection1275 took 0.005 sec
+Testcase: testIsInstanceOfExceptionMessage959 took 0 sec
+Testcase: testNoNullElementsArray21057 took 0 sec
+Testcase: testIsTrue1964 took 0 sec
+Testcase: testIsTrue4871 took 0 sec
+Testcase: testIsTrue5818 took 0 sec
+Testcase: testNotBlankNullStringShouldThrow35 took 0 sec
+Testcase: testNotEmptyCollection1454 took 0 sec
+Testcase: testNotBlankMsgNotBlankStringShouldNotThrow939 took 0 sec
+Testcase: testIsAssignable_withMessage1129 took 0 sec
+Testcase: testInclusiveBetween_withMessage502 took 0 sec
+Testcase: testIsInstanceOf_withMessage515 took 0.001 sec
+Testcase: testValidIndex_withMessage_collection534 took 0 sec
+Testcase: testValidIndex_array470 took 0 sec
+Testcase: testMatchesPattern684 took 0.001 sec
+Testcase: testNotEmptyArray11 took 0 sec

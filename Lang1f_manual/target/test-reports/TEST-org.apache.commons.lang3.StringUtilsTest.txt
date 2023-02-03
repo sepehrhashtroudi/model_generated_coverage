@@ -1,0 +1,141 @@
+Testsuite: org.apache.commons.lang3.StringUtilsTest
+Tests run: 35, Failures: 17, Errors: 3, Skipped: 0, Time elapsed: 0.115 sec
+
+Testcase: testSplitByWholeString_StringStringBooleanInt426 took 0.029 sec
+	FAILED
+expected:<3> but was:<1>
+junit.framework.AssertionFailedError: expected:<3> but was:<1>
+	at org.apache.commons.lang3.StringUtilsTest.testSplitByWholeString_StringStringBooleanInt426(StringUtilsTest.java:813)
+
+Testcase: testSplitByWholeString_StringStringBooleanInt427 took 0.001 sec
+	FAILED
+expected:<3> but was:<2>
+junit.framework.AssertionFailedError: expected:<3> but was:<2>
+	at org.apache.commons.lang3.StringUtilsTest.testSplitByWholeString_StringStringBooleanInt427(StringUtilsTest.java:822)
+
+Testcase: testSplitByWholeString_StringStringBooleanInt99 took 0.001 sec
+	FAILED
+expected:<3> but was:<2>
+junit.framework.AssertionFailedError: expected:<3> but was:<2>
+	at org.apache.commons.lang3.StringUtilsTest.testSplitByWholeString_StringStringBooleanInt99(StringUtilsTest.java:299)
+
+Testcase: testJoin_IterableChar70 took 0.001 sec
+	FAILED
+expected:<foo[;bar;]baz> but was:<foo[bar]baz>
+junit.framework.AssertionFailedError: expected:<foo[;bar;]baz> but was:<foo[bar]baz>
+	at org.apache.commons.lang3.StringUtilsTest.testJoin_IterableChar70(StringUtilsTest.java:270)
+
+Testcase: testJoin_IterableString376 took 0.002 sec
+Testcase: testRightPad_StringIntString36 took 0.001 sec
+Testcase: testReverseDelimited_StringChar156 took 0.001 sec
+	FAILED
+expected:<[]> but was:<[ab]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[ab]>
+	at org.apache.commons.lang3.StringUtilsTest.testReverseDelimited_StringChar156(StringUtilsTest.java:326)
+
+Testcase: testReverseDelimited_StringChar158 took 0 sec
+	FAILED
+expected:<[]> but was:<[ab]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[ab]>
+	at org.apache.commons.lang3.StringUtilsTest.testReverseDelimited_StringChar158(StringUtilsTest.java:385)
+
+Testcase: testReverseDelimited_StringChar159 took 0 sec
+	FAILED
+expected:<[]> but was:<[ab]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[ab]>
+	at org.apache.commons.lang3.StringUtilsTest.testReverseDelimited_StringChar159(StringUtilsTest.java:407)
+
+Testcase: testReverseDelimited_StringChar160 took 0.001 sec
+	FAILED
+expected:<[]> but was:<[ab]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[ab]>
+	at org.apache.commons.lang3.StringUtilsTest.testReverseDelimited_StringChar160(StringUtilsTest.java:427)
+
+Testcase: testSplitPreserveAllTokens_StringString_StringStringInt25 took 0 sec
+Testcase: testReplace_StringStringArrayStringArray404 took 0 sec
+	FAILED
+expected:<[t]cte> but was:<[d]cte>
+junit.framework.AssertionFailedError: expected:<[t]cte> but was:<[d]cte>
+	at org.apache.commons.lang3.StringUtilsTest.testReplace_StringStringArrayStringArray404(StringUtilsTest.java:776)
+
+Testcase: testGetLevenshteinDistance_StringString276 took 0 sec
+	Caused an ERROR
+Strings must not be null
+java.lang.IllegalArgumentException: Strings must not be null
+	at org.apache.commons.lang3.StringUtils.getLevenshteinDistance(StringUtils.java:6745)
+	at org.apache.commons.lang3.StringUtilsTest.testGetLevenshteinDistance_StringString276(StringUtilsTest.java:660)
+
+Testcase: testGetLevenshteinDistance_StringString277 took 0 sec
+	Caused an ERROR
+Strings must not be null
+java.lang.IllegalArgumentException: Strings must not be null
+	at org.apache.commons.lang3.StringUtils.getLevenshteinDistance(StringUtils.java:6745)
+	at org.apache.commons.lang3.StringUtilsTest.testGetLevenshteinDistance_StringString277(StringUtilsTest.java:687)
+
+Testcase: testGetLevenshteinDistance_StringString278 took 0 sec
+	Caused an ERROR
+Strings must not be null
+java.lang.IllegalArgumentException: Strings must not be null
+	at org.apache.commons.lang3.StringUtils.getLevenshteinDistance(StringUtils.java:6636)
+	at org.apache.commons.lang3.StringUtilsTest.testGetLevenshteinDistance_StringString278(StringUtilsTest.java:714)
+
+Testcase: testDifference_StringString166 took 0 sec
+	FAILED
+expected:<null> but was:<any>
+junit.framework.AssertionFailedError: expected:<null> but was:<any>
+	at org.apache.commons.lang3.StringUtilsTest.testDifference_StringString166(StringUtilsTest.java:442)
+
+Testcase: testDifference_StringString167 took 0 sec
+	FAILED
+expected:<null> but was:<any>
+junit.framework.AssertionFailedError: expected:<null> but was:<any>
+	at org.apache.commons.lang3.StringUtilsTest.testDifference_StringString167(StringUtilsTest.java:459)
+
+Testcase: testDifference_StringString168 took 0 sec
+	FAILED
+expected:<null> but was:<any>
+junit.framework.AssertionFailedError: expected:<null> but was:<any>
+	at org.apache.commons.lang3.StringUtilsTest.testDifference_StringString168(StringUtilsTest.java:476)
+
+Testcase: testDifference_StringString169 took 0.001 sec
+	FAILED
+expected:<null> but was:<any>
+junit.framework.AssertionFailedError: expected:<null> but was:<any>
+	at org.apache.commons.lang3.StringUtilsTest.testDifference_StringString169(StringUtilsTest.java:494)
+
+Testcase: testReplace_StringStringArrayStringArray79 took 0 sec
+Testcase: testSplitPreserveAllTokens_StringString_StringStringInt216 took 0 sec
+Testcase: testJoin_ArrayOfDoubles113 took 0.002 sec
+Testcase: testCenter_StringInt244 took 0 sec
+Testcase: testSplitPreserveAllTokens_StringChar6 took 0.001 sec
+Testcase: testEndsWithIgnoreCase258 took 0 sec
+	FAILED
+endsWithIgnoreCase(FOOBAR, null)
+junit.framework.AssertionFailedError: endsWithIgnoreCase(FOOBAR, null)
+	at org.apache.commons.lang3.StringUtilsTest.testEndsWithIgnoreCase258(StringUtilsTest.java:643)
+
+Testcase: testDifferenceAt_StringString10 took 0 sec
+Testcase: testSplit_StringString_StringStringInt217 took 0.022 sec
+Testcase: testSplit_StringString_StringStringInt218 took 0.011 sec
+Testcase: testLeftPad_StringIntChar245 took 0.003 sec
+Testcase: testJoin_IteratorString375 took 0 sec
+Testcase: testGetLevenshteinDistance_StringString46 took 0 sec
+Testcase: testRemoveEndIgnoreCase39 took 0.002 sec
+	FAILED
+removeEndIgnoreCase("www.domain.com", "www.") expected:<[www.]domain.com> but was:<[]domain.com>
+junit.framework.AssertionFailedError: removeEndIgnoreCase("www.domain.com", "www.") expected:<[www.]domain.com> but was:<[]domain.com>
+	at org.apache.commons.lang3.StringUtilsTest.testRemoveEndIgnoreCase39(StringUtilsTest.java:236)
+
+Testcase: testSplit_StringChar157 took 0 sec
+	FAILED
+expected:<4> but was:<3>
+junit.framework.AssertionFailedError: expected:<4> but was:<3>
+	at org.apache.commons.lang3.StringUtilsTest.testSplit_StringChar157(StringUtilsTest.java:352)
+
+Testcase: testSwapCase_String19 took 0 sec
+Testcase: testReplaceEachRepeatedly_StringStringArrayStringArray405 took 0.001 sec
+	FAILED
+expected:<[b]> but was:<[aba]>
+junit.framework.AssertionFailedError: expected:<[b]> but was:<[aba]>
+	at org.apache.commons.lang3.StringUtilsTest.testReplaceEachRepeatedly_StringStringArrayStringArray405(StringUtilsTest.java:787)
+

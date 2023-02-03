@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5e623a5b-08d2-4c93-a62e-f3b0a308d9f8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/maven-build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestAbstractPartial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestAbstractPartial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestBasePartial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestBasePartial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestBaseSingleFieldPeriod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestBaseSingleFieldPeriod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestChronology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestChronology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateMidnight_Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateMidnight_Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateMidnight_Constructors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateMidnight_Constructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateMidnight_Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateMidnight_Properties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTimeComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTimeComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTimeComparator.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTimeConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTimeConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTimeFieldType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTimeFieldType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTimeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTimeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTimeUtils.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTimeZone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTimeZone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTimeZone.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTimeZoneCutover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTimeZoneCutover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTime_Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTime_Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTime_Constructors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTime_Constructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTime_Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTime_Properties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDurationField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDurationField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDurationFieldType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDurationFieldType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDuration_Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDuration_Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDuration_Constructors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDuration_Constructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestHours.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestHours.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestIllegalFieldValueException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestIllegalFieldValueException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestInstant_Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestInstant_Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestInstant_Constructors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestInstant_Constructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestInterval_Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestInterval_Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestInterval_Constructors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestInterval_Constructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestLocalDateTime_Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestLocalDateTime_Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestLocalDateTime_Constructors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestLocalDateTime_Constructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestLocalDateTime_Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestLocalDateTime_Properties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestLocalDate_Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestLocalDate_Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestLocalDate_Constructors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestLocalDate_Constructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestLocalDate_Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestLocalDate_Properties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestLocalTime_Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestLocalTime_Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestLocalTime_Constructors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestLocalTime_Constructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestLocalTime_Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestLocalTime_Properties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMinutes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMinutes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMonthDay_Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMonthDay_Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMonthDay_Constructors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMonthDay_Constructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMonthDay_Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMonthDay_Properties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMonths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMonths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutableDateTime_Adds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutableDateTime_Adds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutableDateTime_Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutableDateTime_Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutableDateTime_Constructors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutableDateTime_Constructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutableDateTime_Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutableDateTime_Properties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutableDateTime_Sets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutableDateTime_Sets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutableInterval_Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutableInterval_Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutableInterval_Constructors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutableInterval_Constructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutableInterval_Updates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutableInterval_Updates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutablePeriod_Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutablePeriod_Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutablePeriod_Constructors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutablePeriod_Constructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutablePeriod_Updates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestMutablePeriod_Updates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestPartial_Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestPartial_Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestPartial_Constructors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestPartial_Constructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestPartial_Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestPartial_Match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestPartial_Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestPartial_Properties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestPeriodType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestPeriodType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestPeriod_Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestPeriod_Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestPeriod_Constructors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestPeriod_Constructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestSeconds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestSeconds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestSerialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestSerialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestStringConvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestStringConvert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestTimeOfDay_Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestTimeOfDay_Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestTimeOfDay_Constructors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestTimeOfDay_Constructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestTimeOfDay_Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestTimeOfDay_Properties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestWeeks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestWeeks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestYearMonthDay_Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestYearMonthDay_Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestYearMonthDay_Constructors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestYearMonthDay_Constructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestYearMonthDay_Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestYearMonthDay_Properties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestYearMonth_Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestYearMonth_Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestYearMonth_Constructors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestYearMonth_Constructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestYearMonth_Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestYearMonth_Properties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestYears.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestYears.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestBuddhistChronology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestBuddhistChronology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestCopticChronology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestCopticChronology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestEthiopicChronology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestEthiopicChronology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestGJChronology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestGJChronology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestGJDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestGJDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestGregorianChronology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestGregorianChronology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestISOChronology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestISOChronology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestIslamicChronology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestIslamicChronology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestJulianChronology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestJulianChronology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestLenientChronology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/TestLenientChronology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/gj/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/chrono/gj/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestCalendarConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestCalendarConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestConverterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestConverterManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestConverterSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestConverterSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestDateConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestDateConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestLongConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestLongConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestNullConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestNullConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestReadableDurationConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestReadableDurationConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestReadableInstantConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestReadableInstantConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestReadableIntervalConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestReadableIntervalConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestReadablePartialConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestReadablePartialConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestReadablePeriodConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestReadablePeriodConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestStringConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/convert/TestStringConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/field/TestBaseDateTimeField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/field/TestBaseDateTimeField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/field/TestFieldUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/field/TestFieldUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/field/TestMillisDurationField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/field/TestMillisDurationField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/field/TestOffsetDateTimeField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/field/TestPreciseDateTimeField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/field/TestPreciseDateTimeField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/field/TestPreciseDurationDateTimeField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/field/TestPreciseDurationDateTimeField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/field/TestPreciseDurationField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/field/TestPreciseDurationField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/field/TestScaledDurationField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/field/TestScaledDurationField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/field/TestUnsupportedDateTimeField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/field/TestUnsupportedDateTimeField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestDateTimeFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestDateTimeFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestDateTimeFormat.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestDateTimeFormatStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestDateTimeFormatStyle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestDateTimeFormatStyle.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestDateTimeFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestDateTimeFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestDateTimeFormatter.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestDateTimeFormatterBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestDateTimeFormatterBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestDateTimeFormatterBuilder.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestISODateTimeFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestISODateTimeFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestISODateTimeFormatParsing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestISODateTimeFormatParsing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestISODateTimeFormat_Fields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestISODateTimeFormat_Fields.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestISOPeriodFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestISOPeriodFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestISOPeriodFormatParsing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestISOPeriodFormatParsing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestPeriodFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestPeriodFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestPeriodFormatParsing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestPeriodFormatParsing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestPeriodFormatParsing.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestPeriodFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestPeriodFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestPeriodFormatterBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestPeriodFormatterBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestTextFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/format/TestTextFields.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/tz/TestBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/tz/TestBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/tz/TestCachedDateTimeZone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/tz/TestCachedDateTimeZone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/tz/TestCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/tz/TestCompiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/tz/TestFixedDateTimeZone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/tz/TestFixedDateTimeZone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/tz/TestUTCProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/tz/TestUTCProvider.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Ct3r4m8yutBr7rmpBvEc6NpCyO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/sepehr/masters/test_generation/model_generated_coverage/Codec1f_automated_empty"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.org.joda.time in joda-time">
+    <configuration name="All in joda-time" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="joda-time" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.joda.time in joda-time" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="joda-time" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.joda.time.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.joda.time" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.org.joda.time in joda-time" />
+        <item itemvalue="JUnit.All in joda-time" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e623a5b-08d2-4c93-a62e-f3b0a308d9f8" name="Changes" comment="" />
+      <created>1659608249452</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659608249452</updated>
+      <workItem from="1659608252457" duration="651000" />
+      <workItem from="1659647739960" duration="2507000" />
+      <workItem from="1659652921795" duration="2105000" />
+      <workItem from="1659670504361" duration="2195000" />
+      <workItem from="1659733065260" duration="30000" />
+      <workItem from="1660010531088" duration="1450000" />
+      <workItem from="1660013101093" duration="3436000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

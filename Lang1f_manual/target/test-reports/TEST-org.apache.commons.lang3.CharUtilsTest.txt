@@ -1,0 +1,40 @@
+Testsuite: org.apache.commons.lang3.CharUtilsTest
+Tests run: 7, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+
+Testcase: testToIntValue_Character_int89 took 0.024 sec
+	FAILED
+expected:<3> but was:<2>
+junit.framework.AssertionFailedError: expected:<3> but was:<2>
+	at org.apache.commons.lang3.CharUtilsTest.testToIntValue_Character_int89(CharUtilsTest.java:44)
+
+Testcase: testToUnicodeEscaped_Character98 took 0 sec
+Testcase: testIsAsciiNumeric_char413 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.CharUtilsTest.testIsAsciiNumeric_char413(CharUtilsTest.java:62)
+
+Testcase: testToIntValue_Character_int414 took 0 sec
+	FAILED
+expected:<3> but was:<2>
+junit.framework.AssertionFailedError: expected:<3> but was:<2>
+	at org.apache.commons.lang3.CharUtilsTest.testToIntValue_Character_int414(CharUtilsTest.java:79)
+
+Testcase: testToIntValue_Character_int415 took 0.001 sec
+	FAILED
+expected:<3> but was:<4>
+junit.framework.AssertionFailedError: expected:<3> but was:<4>
+	at org.apache.commons.lang3.CharUtilsTest.testToIntValue_Character_int415(CharUtilsTest.java:95)
+
+Testcase: testToIntValue_Character_int416 took 0 sec
+	FAILED
+expected:<3> but was:<4>
+junit.framework.AssertionFailedError: expected:<3> but was:<4>
+	at org.apache.commons.lang3.CharUtilsTest.testToIntValue_Character_int416(CharUtilsTest.java:103)
+
+Testcase: testToIntValue_Character_int417 took 0.001 sec
+	FAILED
+expected:<3> but was:<0>
+junit.framework.AssertionFailedError: expected:<3> but was:<0>
+	at org.apache.commons.lang3.CharUtilsTest.testToIntValue_Character_int417(CharUtilsTest.java:109)
+

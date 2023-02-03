@@ -1,0 +1,2174 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../../../style.css');
+        @import url('../../../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../../../cloud.js" type="text/javascript"></script>
+
+            <title>jackson-databind</title>
+    </head>
+
+<body  onload="onLoad('jackson-databind: com.fasterxml.jackson.databind.deser.impl.NullProvider.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../../../historical.html">jackson-databind-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        jackson-databind
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../../../" data-package-name="com.fasterxml.jackson.databind.deser.impl">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../../../../dashboard.html">Project Clover database Sun Jan 15 2023 17:03:36 MST</a></li> 
+        <li><a href="pkg-summary.html">        Package com.fasterxml.jackson.databind.deser.impl</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File NullProvider.java
+    </h1>
+
+
+
+
+
+
+
+
+    
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../../../../../img/srcFileCovDistChart8.png" alt="../../../../../../img/srcFileCovDistChart8.png"
+                         usemap="#srcFileCovDistChart8.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart8.png" name="srcFileCovDistChart8.png">
+<area shape="rect" coords="100,34,107,66" title="35 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,32,98,66" title="37 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,8,89,65" title="62 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,13,80,66" title="57 files have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,43,71,66" title="25 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,45,63,66" title="23 files have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,46,54,66" title="22 files have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,65,45,66" title="1 file has 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,63,36,66" title="4 files have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,64,27,65" title="2 files have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,9,18,66" title="61 files have 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>21% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">6</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">39</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">26</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.67</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">3</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">6</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">39</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">26</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.67</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">3</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="NullProvider">
+        <span><a href="#12" title="NullProvider" onclick="closeDialogAndScrollTo('dialog-NullProvider', '12');">NullProvider</a></span>
+</td>
+<td>12<a name="sl-12"></a></td>
+    <td class="">6</td>
+    <td class="">4</td>
+    <td class="">2</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8</span>80%</div><div style="display: table-cell">
+ <div title="80% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:80%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-NullProvider" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-NullProvider" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class NullProvider</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-NullProvider-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-NullProvider-methods-body', 'dialog-NullProvider-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                
+                    <thead>
+                                                 <tr> <th id="NullProvider">
+    Class<br/>    <span><a href="#12" title="NullProvider" onclick="closeDialogAndScrollTo('dialog-NullProvider', '12');">NullProvider</a></span>
+</th>
+<th>Line #<br/>12<a name="sl-12"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>6</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>4</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>2</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8</span>80%</div><div style="display: table-cell">
+ <div title="80% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:80%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-NullProvider-methods-body">
+                                                                                                            <tr id="NullProvider-1">
+<td id="summary-23-5">
+ <span class="sortValue">NullProvider(JavaType,Object)</span>
+&#160;&#160;<a href="?line=29#23" title="NullProvider(JavaType,Object)" name="sl-23" onclick="closeDialogAndScrollTo('dialog-NullProvider', '23');">NullProvider(JavaType,Object)</a>
+</td>
+<td align="right"><span class="sortValue">23</span>23</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="NullProvider-2">
+<td id="summary-31-5">
+ <span class="sortValue">nullValue(DeserializationContext)&#160;:&#160;Object</span>
+&#160;&#160;<a href="?line=29#31" title="nullValue(DeserializationContext)&#160;:&#160;Object" name="sl-31" onclick="closeDialogAndScrollTo('dialog-NullProvider', '31');">nullValue(DeserializationContext)&#160;:&#160;Object</a>
+</td>
+<td align="right"><span class="sortValue">31</span>31</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.6</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6</span>60%</div><div style="display: table-cell">
+ <div title="60% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:60%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-NullProvider">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 85 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-429">
+<td><a name="testA-429"></a><input type="checkbox" id="cb-429" value="429" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/deser/TestSimpleTypes_testIntPrimitive335_bx.html';">
+<span class="sortValue">0.8</span>
+<div>
+<div title="80% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:80%"></div></div></div></td>
+<td id="tc-429">  <span class="sortValue">com.fasterxml.jackson.databind.deser.TestSimpleTypes.testIntPrimitive335</span><a href="../../../../../../com/fasterxml/jackson/databind/deser/TestSimpleTypes_testIntPrimitive335_bx.html" title="View Test Summary Page">com.fasterxml.jackson.databind.deser.TestSimpleTypes.testIntPrimitive335</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/deser/TestSimpleTypes.html?line=93#src-93" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/deser/TestSimpleTypes_testIntPrimitive335_bx.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-131">
+<td><a name="testA-131"></a><input type="checkbox" id="cb-131" value="131" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/deser/TestSimpleTypes_testBooleanPrimitive331_3n.html';">
+<span class="sortValue">0.8</span>
+<div>
+<div title="80% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:80%"></div></div></div></td>
+<td id="tc-131">  <span class="sortValue">com.fasterxml.jackson.databind.deser.TestSimpleTypes.testBooleanPrimitive331</span><a href="../../../../../../com/fasterxml/jackson/databind/deser/TestSimpleTypes_testBooleanPrimitive331_3n.html" title="View Test Summary Page">com.fasterxml.jackson.databind.deser.TestSimpleTypes.testBooleanPrimitive331</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/deser/TestSimpleTypes.html?line=70#src-70" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/deser/TestSimpleTypes_testBooleanPrimitive331_3n.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-288">
+<td><a name="testA-288"></a><input type="checkbox" id="cb-288" value="288" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/deser/TestSimpleTypes_testDoublePrimitive343_80.html';">
+<span class="sortValue">0.8</span>
+<div>
+<div title="80% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:80%"></div></div></div></td>
+<td id="tc-288">  <span class="sortValue">com.fasterxml.jackson.databind.deser.TestSimpleTypes.testDoublePrimitive343</span><a href="../../../../../../com/fasterxml/jackson/databind/deser/TestSimpleTypes_testDoublePrimitive343_80.html" title="View Test Summary Page">com.fasterxml.jackson.databind.deser.TestSimpleTypes.testDoublePrimitive343</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/deser/TestSimpleTypes.html?line=142#src-142" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/deser/TestSimpleTypes_testDoublePrimitive343_80.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-15">
+<td><a name="testA-15"></a><input type="checkbox" id="cb-15" value="15" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestVisibleTypeId_testVisibleWithWrapperArray121_f.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-15">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestVisibleTypeId.testVisibleWithWrapperArray121</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestVisibleTypeId_testVisibleWithWrapperArray121_f.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestVisibleTypeId.testVisibleWithWrapperArray121</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestVisibleTypeId.html?line=128#src-128" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestVisibleTypeId_testVisibleWithWrapperArray121_f.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-565">
+<td><a name="testA-565"></a><input type="checkbox" id="cb-565" value="565" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization_testUnknownHandlingIgnoreWithHandler59_fp.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-565">  <span class="sortValue">com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization.testUnknownHandlingIgnoreWithHandler59</span><a href="../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization_testUnknownHandlingIgnoreWithHandler59_fp.html" title="View Test Summary Page">com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization.testUnknownHandlingIgnoreWithHandler59</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization.html?line=131#src-131" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization_testUnknownHandlingIgnoreWithHandler59_fp.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-555">
+<td><a name="testA-555"></a><input type="checkbox" id="cb-555" value="555" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestExternalId_testMultipleTypeIdsDeserialization195_ff.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-555">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestExternalId.testMultipleTypeIdsDeserialization195</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestExternalId_testMultipleTypeIdsDeserialization195_ff.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestExternalId.testMultipleTypeIdsDeserialization195</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestExternalId.html?line=258#src-258" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestExternalId_testMultipleTypeIdsDeserialization195_ff.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-400">
+<td><a name="testA-400"></a><input type="checkbox" id="cb-400" value="400" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestSubtypes_testDefaultImplViaModule64_b4.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-400">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestSubtypes.testDefaultImplViaModule64</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestSubtypes_testDefaultImplViaModule64_b4.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestSubtypes.testDefaultImplViaModule64</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestSubtypes.html?line=86#src-86" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestSubtypes_testDefaultImplViaModule64_b4.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-295">
+<td><a name="testA-295"></a><input type="checkbox" id="cb-295" value="295" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/TestJDKSerialization_testObjectReader180_87.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-295">  <span class="sortValue">com.fasterxml.jackson.databind.TestJDKSerialization.testObjectReader180</span><a href="../../../../../../com/fasterxml/jackson/databind/TestJDKSerialization_testObjectReader180_87.html" title="View Test Summary Page">com.fasterxml.jackson.databind.TestJDKSerialization.testObjectReader180</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/TestJDKSerialization.html?line=55#src-55" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/TestJDKSerialization_testObjectReader180_87.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-86">
+<td><a name="testA-86"></a><input type="checkbox" id="cb-86" value="86" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdDeserialization_testSimpleDeserializationClass374_2e.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-86">  <span class="sortValue">com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization.testSimpleDeserializationClass374</span><a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdDeserialization_testSimpleDeserializationClass374_2e.html" title="View Test Summary Page">com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization.testSimpleDeserializationClass374</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdDeserialization.html?line=148#src-148" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdDeserialization_testSimpleDeserializationClass374_2e.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-63">
+<td><a name="testA-63"></a><input type="checkbox" id="cb-63" value="63" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/struct/TestUnwrapped_testDeepUnwrapping181_1r.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-63">  <span class="sortValue">com.fasterxml.jackson.databind.struct.TestUnwrapped.testDeepUnwrapping181</span><a href="../../../../../../com/fasterxml/jackson/databind/struct/TestUnwrapped_testDeepUnwrapping181_1r.html" title="View Test Summary Page">com.fasterxml.jackson.databind.struct.TestUnwrapped.testDeepUnwrapping181</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/struct/TestUnwrapped.html?line=86#src-86" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/struct/TestUnwrapped_testDeepUnwrapping181_1r.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-323">
+<td><a name="testA-323"></a><input type="checkbox" id="cb-323" value="323" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestVisibleTypeId_testVisibleWithWrapperObject484_8z.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-323">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestVisibleTypeId.testVisibleWithWrapperObject484</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestVisibleTypeId_testVisibleWithWrapperObject484_8z.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestVisibleTypeId.testVisibleWithWrapperObject484</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestVisibleTypeId.html?line=177#src-177" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestVisibleTypeId_testVisibleWithWrapperObject484_8z.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-588">
+<td><a name="testA-588"></a><input type="checkbox" id="cb-588" value="588" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testMapWithConstructor400_gc.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-588">  <span class="sortValue">com.fasterxml.jackson.databind.creators.TestCreators.testMapWithConstructor400</span><a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testMapWithConstructor400_gc.html" title="View Test Summary Page">com.fasterxml.jackson.databind.creators.TestCreators.testMapWithConstructor400</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators.html?line=351#src-351" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testMapWithConstructor400_gc.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-386">
+<td><a name="testA-386"></a><input type="checkbox" id="cb-386" value="386" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/TestRootName_testRootViaMapper320_aq.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-386">  <span class="sortValue">com.fasterxml.jackson.databind.TestRootName.testRootViaMapper320</span><a href="../../../../../../com/fasterxml/jackson/databind/TestRootName_testRootViaMapper320_aq.html" title="View Test Summary Page">com.fasterxml.jackson.databind.TestRootName.testRootViaMapper320</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/TestRootName.html?line=57#src-57" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/TestRootName_testRootViaMapper320_aq.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-296">
+<td><a name="testA-296"></a><input type="checkbox" id="cb-296" value="296" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestSubtypes_testPropertyWithSubtypes10_88.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-296">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestSubtypes.testPropertyWithSubtypes10</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestSubtypes_testPropertyWithSubtypes10_88.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestSubtypes.testPropertyWithSubtypes10</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestSubtypes.html?line=77#src-77" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestSubtypes_testPropertyWithSubtypes10_88.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-431">
+<td><a name="testA-431"></a><input type="checkbox" id="cb-431" value="431" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/struct/TestPOJOAsArrayWithBuilder_testSimpleBuilder327_bz.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-431">  <span class="sortValue">com.fasterxml.jackson.databind.struct.TestPOJOAsArrayWithBuilder.testSimpleBuilder327</span><a href="../../../../../../com/fasterxml/jackson/databind/struct/TestPOJOAsArrayWithBuilder_testSimpleBuilder327_bz.html" title="View Test Summary Page">com.fasterxml.jackson.databind.struct.TestPOJOAsArrayWithBuilder.testSimpleBuilder327</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/struct/TestPOJOAsArrayWithBuilder.html?line=57#src-57" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/struct/TestPOJOAsArrayWithBuilder_testSimpleBuilder327_bz.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-513">
+<td><a name="testA-513"></a><input type="checkbox" id="cb-513" value="513" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestNoTypeInfo_testWithIdNone37_e9.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-513">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestNoTypeInfo.testWithIdNone37</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestNoTypeInfo_testWithIdNone37_e9.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestNoTypeInfo.testWithIdNone37</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestNoTypeInfo.html?line=27#src-27" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestNoTypeInfo_testWithIdNone37_e9.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-453">
+<td><a name="testA-453"></a><input type="checkbox" id="cb-453" value="453" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization_testUnknownHandlingIgnoreWithHandlerAndObjectReader448_cl.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-453">  <span class="sortValue">com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization.testUnknownHandlingIgnoreWithHandlerAndObjectReader448</span><a href="../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization_testUnknownHandlingIgnoreWithHandlerAndObjectReader448_cl.html" title="View Test Summary Page">com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization.testUnknownHandlingIgnoreWithHandlerAndObjectReader448</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization.html?line=176#src-176" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization_testUnknownHandlingIgnoreWithHandlerAndObjectReader448_cl.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-83">
+<td><a name="testA-83"></a><input type="checkbox" id="cb-83" value="83" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestVisibleTypeId_testVisibleWithExternalId279_2b.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-83">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestVisibleTypeId.testVisibleWithExternalId279</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestVisibleTypeId_testVisibleWithExternalId279_2b.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestVisibleTypeId.testVisibleWithExternalId279</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestVisibleTypeId.html?line=169#src-169" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestVisibleTypeId_testVisibleWithExternalId279_2b.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-247">
+<td><a name="testA-247"></a><input type="checkbox" id="cb-247" value="247" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/deser/TestConfig_testAnnotationsDisabled577_6v.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-247">  <span class="sortValue">com.fasterxml.jackson.databind.deser.TestConfig.testAnnotationsDisabled577</span><a href="../../../../../../com/fasterxml/jackson/databind/deser/TestConfig_testAnnotationsDisabled577_6v.html" title="View Test Summary Page">com.fasterxml.jackson.databind.deser.TestConfig.testAnnotationsDisabled577</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/deser/TestConfig.html?line=53#src-53" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/deser/TestConfig_testAnnotationsDisabled577_6v.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-167">
+<td><a name="testA-167"></a><input type="checkbox" id="cb-167" value="167" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/TestHandlerInstantiation_testTypeIdResolver38_4n.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-167">  <span class="sortValue">com.fasterxml.jackson.databind.TestHandlerInstantiation.testTypeIdResolver38</span><a href="../../../../../../com/fasterxml/jackson/databind/TestHandlerInstantiation_testTypeIdResolver38_4n.html" title="View Test Summary Page">com.fasterxml.jackson.databind.TestHandlerInstantiation.testTypeIdResolver38</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/TestHandlerInstantiation.html?line=239#src-239" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/TestHandlerInstantiation_testTypeIdResolver38_4n.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-369">
+<td><a name="testA-369"></a><input type="checkbox" id="cb-369" value="369" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/views/TestViewDeserialization_testWithoutDefaultInclusion385_a9.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-369">  <span class="sortValue">com.fasterxml.jackson.databind.views.TestViewDeserialization.testWithoutDefaultInclusion385</span><a href="../../../../../../com/fasterxml/jackson/databind/views/TestViewDeserialization_testWithoutDefaultInclusion385_a9.html" title="View Test Summary Page">com.fasterxml.jackson.databind.views.TestViewDeserialization.testWithoutDefaultInclusion385</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/views/TestViewDeserialization.html?line=72#src-72" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/views/TestViewDeserialization_testWithoutDefaultInclusion385_a9.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-35">
+<td><a name="testA-35"></a><input type="checkbox" id="cb-35" value="35" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestVisibleTypeId_testVisibleWithProperty270_z.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-35">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestVisibleTypeId.testVisibleWithProperty270</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestVisibleTypeId_testVisibleWithProperty270_z.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestVisibleTypeId.testVisibleWithProperty270</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestVisibleTypeId.html?line=158#src-158" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestVisibleTypeId_testVisibleWithProperty270_z.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-505">
+<td><a name="testA-505"></a><input type="checkbox" id="cb-505" value="505" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/struct/TestPOJOAsArray_testReadSimpleRootValue523_e1.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-505">  <span class="sortValue">com.fasterxml.jackson.databind.struct.TestPOJOAsArray.testReadSimpleRootValue523</span><a href="../../../../../../com/fasterxml/jackson/databind/struct/TestPOJOAsArray_testReadSimpleRootValue523_e1.html" title="View Test Summary Page">com.fasterxml.jackson.databind.struct.TestPOJOAsArray.testReadSimpleRootValue523</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/struct/TestPOJOAsArray.html?line=132#src-132" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/struct/TestPOJOAsArray_testReadSimpleRootValue523_e1.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-62">
+<td><a name="testA-62"></a><input type="checkbox" id="cb-62" value="62" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/TestRootName_testRootViaWriterAndReader4_1q.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-62">  <span class="sortValue">com.fasterxml.jackson.databind.TestRootName.testRootViaWriterAndReader4</span><a href="../../../../../../com/fasterxml/jackson/databind/TestRootName_testRootViaWriterAndReader4_1q.html" title="View Test Summary Page">com.fasterxml.jackson.databind.TestRootName.testRootViaWriterAndReader4</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/TestRootName.html?line=30#src-30" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/TestRootName_testRootViaWriterAndReader4_1q.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-130">
+<td><a name="testA-130"></a><input type="checkbox" id="cb-130" value="130" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/creators/TestBuilderSimple_testWithCreator384_3m.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-130">  <span class="sortValue">com.fasterxml.jackson.databind.creators.TestBuilderSimple.testWithCreator384</span><a href="../../../../../../com/fasterxml/jackson/databind/creators/TestBuilderSimple_testWithCreator384_3m.html" title="View Test Summary Page">com.fasterxml.jackson.databind.creators.TestBuilderSimple.testWithCreator384</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/creators/TestBuilderSimple.html?line=188#src-188" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/creators/TestBuilderSimple_testWithCreator384_3m.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-145">
+<td><a name="testA-145"></a><input type="checkbox" id="cb-145" value="145" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestExternalId_testExternalTypeWithCreator197_41.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-145">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestExternalId.testExternalTypeWithCreator197</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestExternalId_testExternalTypeWithCreator197_41.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestExternalId.testExternalTypeWithCreator197</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestExternalId.html?line=284#src-284" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestExternalId_testExternalTypeWithCreator197_41.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-277">
+<td><a name="testA-277"></a><input type="checkbox" id="cb-277" value="277" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/views/TestViewDeserialization_testSimple317_7p.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-277">  <span class="sortValue">com.fasterxml.jackson.databind.views.TestViewDeserialization.testSimple317</span><a href="../../../../../../com/fasterxml/jackson/databind/views/TestViewDeserialization_testSimple317_7p.html" title="View Test Summary Page">com.fasterxml.jackson.databind.views.TestViewDeserialization.testSimple317</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/views/TestViewDeserialization.html?line=52#src-52" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/views/TestViewDeserialization_testSimple317_7p.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-326">
+<td><a name="testA-326"></a><input type="checkbox" id="cb-326" value="326" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/TestRootName_testRootUsingExplicitConfig147_92.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-326">  <span class="sortValue">com.fasterxml.jackson.databind.TestRootName.testRootUsingExplicitConfig147</span><a href="../../../../../../com/fasterxml/jackson/databind/TestRootName_testRootUsingExplicitConfig147_92.html" title="View Test Summary Page">com.fasterxml.jackson.databind.TestRootName.testRootUsingExplicitConfig147</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/TestRootName.html?line=39#src-39" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/TestRootName_testRootUsingExplicitConfig147_92.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-132">
+<td><a name="testA-132"></a><input type="checkbox" id="cb-132" value="132" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/deser/TestInnerClass_testSimpleNonStaticInner369_3o.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-132">  <span class="sortValue">com.fasterxml.jackson.databind.deser.TestInnerClass.testSimpleNonStaticInner369</span><a href="../../../../../../com/fasterxml/jackson/databind/deser/TestInnerClass_testSimpleNonStaticInner369_3o.html" title="View Test Summary Page">com.fasterxml.jackson.databind.deser.TestInnerClass.testSimpleNonStaticInner369</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/deser/TestInnerClass.html?line=35#src-35" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/deser/TestInnerClass_testSimpleNonStaticInner369_3o.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-109">
+<td><a name="testA-109"></a><input type="checkbox" id="cb-109" value="109" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/deser/TestArrayDeserialization_testBeanArray254_31.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-109">  <span class="sortValue">com.fasterxml.jackson.databind.deser.TestArrayDeserialization.testBeanArray254</span><a href="../../../../../../com/fasterxml/jackson/databind/deser/TestArrayDeserialization_testBeanArray254_31.html" title="View Test Summary Page">com.fasterxml.jackson.databind.deser.TestArrayDeserialization.testBeanArray254</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/deser/TestArrayDeserialization.html?line=198#src-198" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/deser/TestArrayDeserialization_testBeanArray254_31.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-415">
+<td><a name="testA-415"></a><input type="checkbox" id="cb-415" value="415" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/convert/TestBeanConversions_testIssue11529_bj.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-415">  <span class="sortValue">com.fasterxml.jackson.databind.convert.TestBeanConversions.testIssue11529</span><a href="../../../../../../com/fasterxml/jackson/databind/convert/TestBeanConversions_testIssue11529_bj.html" title="View Test Summary Page">com.fasterxml.jackson.databind.convert.TestBeanConversions.testIssue11529</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/convert/TestBeanConversions.html?line=97#src-97" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/convert/TestBeanConversions_testIssue11529_bj.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-327">
+<td><a name="testA-327"></a><input type="checkbox" id="cb-327" value="327" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestCustomTypeIdResolver_testCustomTypeIdResolver201_93.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-327">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestCustomTypeIdResolver.testCustomTypeIdResolver201</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestCustomTypeIdResolver_testCustomTypeIdResolver201_93.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestCustomTypeIdResolver.testCustomTypeIdResolver201</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestCustomTypeIdResolver.html?line=82#src-82" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestCustomTypeIdResolver_testCustomTypeIdResolver201_93.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-112">
+<td><a name="testA-112"></a><input type="checkbox" id="cb-112" value="112" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/convert/TestPolymorphicUpdateValue_testPolymorphicTest452_34.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-112">  <span class="sortValue">com.fasterxml.jackson.databind.convert.TestPolymorphicUpdateValue.testPolymorphicTest452</span><a href="../../../../../../com/fasterxml/jackson/databind/convert/TestPolymorphicUpdateValue_testPolymorphicTest452_34.html" title="View Test Summary Page">com.fasterxml.jackson.databind.convert.TestPolymorphicUpdateValue.testPolymorphicTest452</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/convert/TestPolymorphicUpdateValue.html?line=36#src-36" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/convert/TestPolymorphicUpdateValue_testPolymorphicTest452_34.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-448">
+<td><a name="testA-448"></a><input type="checkbox" id="cb-448" value="448" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testFactoryAndProps224_cg.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-448">  <span class="sortValue">com.fasterxml.jackson.databind.creators.TestCreators.testFactoryAndProps224</span><a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testFactoryAndProps224_cg.html" title="View Test Summary Page">com.fasterxml.jackson.databind.creators.TestCreators.testFactoryAndProps224</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators.html?line=321#src-321" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testFactoryAndProps224_cg.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-36">
+<td><a name="testA-36"></a><input type="checkbox" id="cb-36" value="36" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/deser/TestParentChildReferences_testIssue708367_10.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-36">  <span class="sortValue">com.fasterxml.jackson.databind.deser.TestParentChildReferences.testIssue708367</span><a href="../../../../../../com/fasterxml/jackson/databind/deser/TestParentChildReferences_testIssue708367_10.html" title="View Test Summary Page">com.fasterxml.jackson.databind.deser.TestParentChildReferences.testIssue708367</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/deser/TestParentChildReferences.html?line=269#src-269" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/deser/TestParentChildReferences_testIssue708367_10.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-157">
+<td><a name="testA-157"></a><input type="checkbox" id="cb-157" value="157" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/creators/TestBuilderSimple_testCustomWith566_4d.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-157">  <span class="sortValue">com.fasterxml.jackson.databind.creators.TestBuilderSimple.testCustomWith566</span><a href="../../../../../../com/fasterxml/jackson/databind/creators/TestBuilderSimple_testCustomWith566_4d.html" title="View Test Summary Page">com.fasterxml.jackson.databind.creators.TestBuilderSimple.testCustomWith566</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/creators/TestBuilderSimple.html?line=197#src-197" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/creators/TestBuilderSimple_testCustomWith566_4d.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-106">
+<td><a name="testA-106"></a><input type="checkbox" id="cb-106" value="106" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/deser/TestInjectables_testSimple9_2y.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-106">  <span class="sortValue">com.fasterxml.jackson.databind.deser.TestInjectables.testSimple9</span><a href="../../../../../../com/fasterxml/jackson/databind/deser/TestInjectables_testSimple9_2y.html" title="View Test Summary Page">com.fasterxml.jackson.databind.deser.TestInjectables.testSimple9</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/deser/TestInjectables.html?line=66#src-66" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/deser/TestInjectables_testSimple9_2y.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-53">
+<td><a name="testA-53"></a><input type="checkbox" id="cb-53" value="53" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testConstructorAndProps94_1h.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-53">  <span class="sortValue">com.fasterxml.jackson.databind.creators.TestCreators.testConstructorAndProps94</span><a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testConstructorAndProps94_1h.html" title="View Test Summary Page">com.fasterxml.jackson.databind.creators.TestCreators.testConstructorAndProps94</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators.html?line=295#src-295" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testConstructorAndProps94_1h.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-160">
+<td><a name="testA-160"></a><input type="checkbox" id="cb-160" value="160" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/TestNamingStrategy_testWithGetterAsSetter126_4g.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-160">  <span class="sortValue">com.fasterxml.jackson.databind.TestNamingStrategy.testWithGetterAsSetter126</span><a href="../../../../../../com/fasterxml/jackson/databind/TestNamingStrategy_testWithGetterAsSetter126_4g.html" title="View Test Summary Page">com.fasterxml.jackson.databind.TestNamingStrategy.testWithGetterAsSetter126</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/TestNamingStrategy.html?line=176#src-176" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/TestNamingStrategy_testWithGetterAsSetter126_4g.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-490">
+<td><a name="testA-490"></a><input type="checkbox" id="cb-490" value="490" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testNoArgsFactory477_dm.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-490">  <span class="sortValue">com.fasterxml.jackson.databind.creators.TestCreators.testNoArgsFactory477</span><a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testNoArgsFactory477_dm.html" title="View Test Summary Page">com.fasterxml.jackson.databind.creators.TestCreators.testNoArgsFactory477</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators.html?line=369#src-369" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testNoArgsFactory477_dm.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-416">
+<td><a name="testA-416"></a><input type="checkbox" id="cb-416" value="416" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/TestNamingStrategy_testPerClassAnnotation443_bk.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-416">  <span class="sortValue">com.fasterxml.jackson.databind.TestNamingStrategy.testPerClassAnnotation443</span><a href="../../../../../../com/fasterxml/jackson/databind/TestNamingStrategy_testPerClassAnnotation443_bk.html" title="View Test Summary Page">com.fasterxml.jackson.databind.TestNamingStrategy.testPerClassAnnotation443</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/TestNamingStrategy.html?line=216#src-216" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/TestNamingStrategy_testPerClassAnnotation443_bk.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-471">
+<td><a name="testA-471"></a><input type="checkbox" id="cb-471" value="471" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/deser/TestJacksonTypes_testJsonLocation326_d3.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-471">  <span class="sortValue">com.fasterxml.jackson.databind.deser.TestJacksonTypes.testJsonLocation326</span><a href="../../../../../../com/fasterxml/jackson/databind/deser/TestJacksonTypes_testJsonLocation326_d3.html" title="View Test Summary Page">com.fasterxml.jackson.databind.deser.TestJacksonTypes.testJsonLocation326</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/deser/TestJacksonTypes.html?line=29#src-29" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/deser/TestJacksonTypes_testJsonLocation326_d3.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-591">
+<td><a name="testA-591"></a><input type="checkbox" id="cb-591" value="591" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/struct/TestUnwrappedWithPrefix_testPrefixedUnwrapping329_gf.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-591">  <span class="sortValue">com.fasterxml.jackson.databind.struct.TestUnwrappedWithPrefix.testPrefixedUnwrapping329</span><a href="../../../../../../com/fasterxml/jackson/databind/struct/TestUnwrappedWithPrefix_testPrefixedUnwrapping329_gf.html" title="View Test Summary Page">com.fasterxml.jackson.databind.struct.TestUnwrappedWithPrefix.testPrefixedUnwrapping329</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/struct/TestUnwrappedWithPrefix.html?line=141#src-141" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/struct/TestUnwrappedWithPrefix_testPrefixedUnwrapping329_gf.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-444">
+<td><a name="testA-444"></a><input type="checkbox" id="cb-444" value="444" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/TestStdNamingStrategies_testLowerCaseTranslations_cc.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-444">  <span class="sortValue">com.fasterxml.jackson.databind.TestStdNamingStrategies.testLowerCaseTranslations</span><a href="../../../../../../com/fasterxml/jackson/databind/TestStdNamingStrategies_testLowerCaseTranslations_cc.html" title="View Test Summary Page">com.fasterxml.jackson.databind.TestStdNamingStrategies.testLowerCaseTranslations</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/TestStdNamingStrategies.html?line=175#src-175" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/TestStdNamingStrategies_testLowerCaseTranslations_cc.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-32">
+<td><a name="testA-32"></a><input type="checkbox" id="cb-32" value="32" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/struct/TestUnwrapped_testUnwrappedDeserializeWithCreator507_w.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-32">  <span class="sortValue">com.fasterxml.jackson.databind.struct.TestUnwrapped.testUnwrappedDeserializeWithCreator507</span><a href="../../../../../../com/fasterxml/jackson/databind/struct/TestUnwrapped_testUnwrappedDeserializeWithCreator507_w.html" title="View Test Summary Page">com.fasterxml.jackson.databind.struct.TestUnwrapped.testUnwrappedDeserializeWithCreator507</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/struct/TestUnwrapped.html?line=111#src-111" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/struct/TestUnwrapped_testUnwrappedDeserializeWithCreator507_w.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-556">
+<td><a name="testA-556"></a><input type="checkbox" id="cb-556" value="556" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdDeserialization_testSimpleUUIDForClassRoundTrip355_fg.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-556">  <span class="sortValue">com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization.testSimpleUUIDForClassRoundTrip355</span><a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdDeserialization_testSimpleUUIDForClassRoundTrip355_fg.html" title="View Test Summary Page">com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization.testSimpleUUIDForClassRoundTrip355</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdDeserialization.html?line=116#src-116" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdDeserialization_testSimpleUUIDForClassRoundTrip355_fg.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-175">
+<td><a name="testA-175"></a><input type="checkbox" id="cb-175" value="175" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/deser/TestExceptionDeserialization_testWithCreator35_4v.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-175">  <span class="sortValue">com.fasterxml.jackson.databind.deser.TestExceptionDeserialization.testWithCreator35</span><a href="../../../../../../com/fasterxml/jackson/databind/deser/TestExceptionDeserialization_testWithCreator35_4v.html" title="View Test Summary Page">com.fasterxml.jackson.databind.deser.TestExceptionDeserialization.testWithCreator35</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/deser/TestExceptionDeserialization.html?line=57#src-57" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/deser/TestExceptionDeserialization_testWithCreator35_4v.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-286">
+<td><a name="testA-286"></a><input type="checkbox" id="cb-286" value="286" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/TestNamingStrategy_testSimpleFields154_7y.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-286">  <span class="sortValue">com.fasterxml.jackson.databind.TestNamingStrategy.testSimpleFields154</span><a href="../../../../../../com/fasterxml/jackson/databind/TestNamingStrategy_testSimpleFields154_7y.html" title="View Test Summary Page">com.fasterxml.jackson.databind.TestNamingStrategy.testSimpleFields154</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/TestNamingStrategy.html?line=189#src-189" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/TestNamingStrategy_testSimpleFields154_7y.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-275">
+<td><a name="testA-275"></a><input type="checkbox" id="cb-275" value="275" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testConstructorCreator84_7n.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-275">  <span class="sortValue">com.fasterxml.jackson.databind.creators.TestCreators.testConstructorCreator84</span><a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testConstructorCreator84_7n.html" title="View Test Summary Page">com.fasterxml.jackson.databind.creators.TestCreators.testConstructorCreator84</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators.html?line=288#src-288" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testConstructorCreator84_7n.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-363">
+<td><a name="testA-363"></a><input type="checkbox" id="cb-363" value="363" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization_testPropertyIgnoralWithClass434_a3.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-363">  <span class="sortValue">com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization.testPropertyIgnoralWithClass434</span><a href="../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization_testPropertyIgnoralWithClass434_a3.html" title="View Test Summary Page">com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization.testPropertyIgnoralWithClass434</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization.html?line=170#src-170" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization_testPropertyIgnoralWithClass434_a3.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-121">
+<td><a name="testA-121"></a><input type="checkbox" id="cb-121" value="121" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/TestObjectMapperBeanDeserializer_testSimpleBean311_3d.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-121">  <span class="sortValue">com.fasterxml.jackson.databind.TestObjectMapperBeanDeserializer.testSimpleBean311</span><a href="../../../../../../com/fasterxml/jackson/databind/TestObjectMapperBeanDeserializer_testSimpleBean311_3d.html" title="View Test Summary Page">com.fasterxml.jackson.databind.TestObjectMapperBeanDeserializer.testSimpleBean311</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/TestObjectMapperBeanDeserializer.html?line=210#src-210" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/TestObjectMapperBeanDeserializer_testSimpleBean311_3d.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-22">
+<td><a name="testA-22"></a><input type="checkbox" id="cb-22" value="22" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdWithPolymorphic_testIssue811144_m.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-22">  <span class="sortValue">com.fasterxml.jackson.databind.struct.TestObjectIdWithPolymorphic.testIssue811144</span><a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdWithPolymorphic_testIssue811144_m.html" title="View Test Summary Page">com.fasterxml.jackson.databind.struct.TestObjectIdWithPolymorphic.testIssue811144</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdWithPolymorphic.html?line=114#src-114" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdWithPolymorphic_testIssue811144_m.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-170">
+<td><a name="testA-170"></a><input type="checkbox" id="cb-170" value="170" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypeNames_testRoundTripMap205_4q.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-170">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestTypeNames.testRoundTripMap205</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypeNames_testRoundTripMap205_4q.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestTypeNames.testRoundTripMap205</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypeNames.html?line=38#src-38" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypeNames_testRoundTripMap205_4q.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-285">
+<td><a name="testA-285"></a><input type="checkbox" id="cb-285" value="285" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/struct/TestUnwrapped_testDoubleUnwrapping379_7x.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-285">  <span class="sortValue">com.fasterxml.jackson.databind.struct.TestUnwrapped.testDoubleUnwrapping379</span><a href="../../../../../../com/fasterxml/jackson/databind/struct/TestUnwrapped_testDoubleUnwrapping379_7x.html" title="View Test Summary Page">com.fasterxml.jackson.databind.struct.TestUnwrapped.testDoubleUnwrapping379</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/struct/TestUnwrapped.html?line=98#src-98" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/struct/TestUnwrapped_testDoubleUnwrapping379_7x.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-440">
+<td><a name="testA-440"></a><input type="checkbox" id="cb-440" value="440" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdDeserialization_testCustomDeserializationClass392_c8.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-440">  <span class="sortValue">com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization.testCustomDeserializationClass392</span><a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdDeserialization_testCustomDeserializationClass392_c8.html" title="View Test Summary Page">com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization.testCustomDeserializationClass392</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdDeserialization.html?line=155#src-155" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdDeserialization_testCustomDeserializationClass392_c8.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-9">
+<td><a name="testA-9"></a><input type="checkbox" id="cb-9" value="9" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/convert/TestUpdateValue_testUpdatingWithViews47_9.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-9">  <span class="sortValue">com.fasterxml.jackson.databind.convert.TestUpdateValue.testUpdatingWithViews47</span><a href="../../../../../../com/fasterxml/jackson/databind/convert/TestUpdateValue_testUpdatingWithViews47_9.html" title="View Test Summary Page">com.fasterxml.jackson.databind.convert.TestUpdateValue.testUpdatingWithViews47</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/convert/TestUpdateValue.html?line=57#src-57" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/convert/TestUpdateValue_testUpdatingWithViews47_9.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-322">
+<td><a name="testA-322"></a><input type="checkbox" id="cb-322" value="322" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/TestRootName_testReconfiguringOfWrapping449_8y.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-322">  <span class="sortValue">com.fasterxml.jackson.databind.TestRootName.testReconfiguringOfWrapping449</span><a href="../../../../../../com/fasterxml/jackson/databind/TestRootName_testReconfiguringOfWrapping449_8y.html" title="View Test Summary Page">com.fasterxml.jackson.databind.TestRootName.testReconfiguringOfWrapping449</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/TestRootName.html?line=71#src-71" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/TestRootName_testReconfiguringOfWrapping449_8y.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-458">
+<td><a name="testA-458"></a><input type="checkbox" id="cb-458" value="458" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/deser/TestCollectionDeserialization_testImplicitArrays223_cq.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-458">  <span class="sortValue">com.fasterxml.jackson.databind.deser.TestCollectionDeserialization.testImplicitArrays223</span><a href="../../../../../../com/fasterxml/jackson/databind/deser/TestCollectionDeserialization_testImplicitArrays223_cq.html" title="View Test Summary Page">com.fasterxml.jackson.databind.deser.TestCollectionDeserialization.testImplicitArrays223</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/deser/TestCollectionDeserialization.html?line=60#src-60" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/deser/TestCollectionDeserialization_testImplicitArrays223_cq.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-441">
+<td><a name="testA-441"></a><input type="checkbox" id="cb-441" value="441" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestPropertyTypeInfo_testSimpleMapField399_c9.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-441">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestPropertyTypeInfo.testSimpleMapField399</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestPropertyTypeInfo_testSimpleMapField399_c9.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestPropertyTypeInfo.testSimpleMapField399</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestPropertyTypeInfo.html?line=110#src-110" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestPropertyTypeInfo_testSimpleMapField399_c9.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-507">
+<td><a name="testA-507"></a><input type="checkbox" id="cb-507" value="507" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testFactoryCreatorWithMixin161_e3.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-507">  <span class="sortValue">com.fasterxml.jackson.databind.creators.TestCreators.testFactoryCreatorWithMixin161</span><a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testFactoryCreatorWithMixin161_e3.html" title="View Test Summary Page">com.fasterxml.jackson.databind.creators.TestCreators.testFactoryCreatorWithMixin161</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators.html?line=303#src-303" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testFactoryCreatorWithMixin161_e3.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-188">
+<td><a name="testA-188"></a><input type="checkbox" id="cb-188" value="188" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/deser/TestIgnoredTypes_testIgnoredType394_58.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-188">  <span class="sortValue">com.fasterxml.jackson.databind.deser.TestIgnoredTypes.testIgnoredType394</span><a href="../../../../../../com/fasterxml/jackson/databind/deser/TestIgnoredTypes_testIgnoredType394_58.html" title="View Test Summary Page">com.fasterxml.jackson.databind.deser.TestIgnoredTypes.testIgnoredType394</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/deser/TestIgnoredTypes.html?line=37#src-37" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/deser/TestIgnoredTypes_testIgnoredType394_58.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-313">
+<td><a name="testA-313"></a><input type="checkbox" id="cb-313" value="313" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/deser/TestSimpleTypes_testFloatPrimitiveNonNumeric340_8p.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-313">  <span class="sortValue">com.fasterxml.jackson.databind.deser.TestSimpleTypes.testFloatPrimitiveNonNumeric340</span><a href="../../../../../../com/fasterxml/jackson/databind/deser/TestSimpleTypes_testFloatPrimitiveNonNumeric340_8p.html" title="View Test Summary Page">com.fasterxml.jackson.databind.deser.TestSimpleTypes.testFloatPrimitiveNonNumeric340</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/deser/TestSimpleTypes.html?line=116#src-116" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/deser/TestSimpleTypes_testFloatPrimitiveNonNumeric340_8p.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-102">
+<td><a name="testA-102"></a><input type="checkbox" id="cb-102" value="102" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdWithPolymorphic_testPolymorphicRoundtrip226_2u.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-102">  <span class="sortValue">com.fasterxml.jackson.databind.struct.TestObjectIdWithPolymorphic.testPolymorphicRoundtrip226</span><a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdWithPolymorphic_testPolymorphicRoundtrip226_2u.html" title="View Test Summary Page">com.fasterxml.jackson.databind.struct.TestObjectIdWithPolymorphic.testPolymorphicRoundtrip226</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdWithPolymorphic.html?line=140#src-140" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdWithPolymorphic_testPolymorphicRoundtrip226_2u.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-168">
+<td><a name="testA-168"></a><input type="checkbox" id="cb-168" value="168" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/ser/TestJsonValue_testPolymorphicSerdeWithDelegate73_4o.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-168">  <span class="sortValue">com.fasterxml.jackson.databind.ser.TestJsonValue.testPolymorphicSerdeWithDelegate73</span><a href="../../../../../../com/fasterxml/jackson/databind/ser/TestJsonValue_testPolymorphicSerdeWithDelegate73_4o.html" title="View Test Summary Page">com.fasterxml.jackson.databind.ser.TestJsonValue.testPolymorphicSerdeWithDelegate73</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/ser/TestJsonValue.html?line=204#src-204" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/ser/TestJsonValue_testPolymorphicSerdeWithDelegate73_4o.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-7">
+<td><a name="testA-7"></a><input type="checkbox" id="cb-7" value="7" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/TestReadValues_testRootBeans466_7.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-7">  <span class="sortValue">com.fasterxml.jackson.databind.TestReadValues.testRootBeans466</span><a href="../../../../../../com/fasterxml/jackson/databind/TestReadValues_testRootBeans466_7.html" title="View Test Summary Page">com.fasterxml.jackson.databind.TestReadValues.testRootBeans466</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/TestReadValues.html?line=64#src-64" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/TestReadValues_testRootBeans466_7.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-114">
+<td><a name="testA-114"></a><input type="checkbox" id="cb-114" value="114" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestSubtypes_testDefaultImpl423_36.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-114">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestSubtypes.testDefaultImpl423</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestSubtypes_testDefaultImpl423_36.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestSubtypes.testDefaultImpl423</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestSubtypes.html?line=137#src-137" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestSubtypes_testDefaultImpl423_36.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-208">
+<td><a name="testA-208"></a><input type="checkbox" id="cb-208" value="208" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestSubtypes_testSubtypesViaModule241_5s.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-208">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestSubtypes.testSubtypesViaModule241</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestSubtypes_testSubtypesViaModule241_5s.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestSubtypes.testSubtypesViaModule241</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestSubtypes.html?line=109#src-109" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestSubtypes_testSubtypesViaModule241_5s.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-397">
+<td><a name="testA-397"></a><input type="checkbox" id="cb-397" value="397" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedDeserialization_testListAsArray95_b1.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-397">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization.testListAsArray95</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedDeserialization_testListAsArray95_b1.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestTypedDeserialization.testListAsArray95</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedDeserialization.html?line=115#src-115" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedDeserialization_testListAsArray95_b1.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-263">
+<td><a name="testA-263"></a><input type="checkbox" id="cb-263" value="263" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/convert/TestUpdateValue_testUpdateSequence465_7b.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-263">  <span class="sortValue">com.fasterxml.jackson.databind.convert.TestUpdateValue.testUpdateSequence465</span><a href="../../../../../../com/fasterxml/jackson/databind/convert/TestUpdateValue_testUpdateSequence465_7b.html" title="View Test Summary Page">com.fasterxml.jackson.databind.convert.TestUpdateValue.testUpdateSequence465</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/convert/TestUpdateValue.html?line=68#src-68" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/convert/TestUpdateValue_testUpdateSequence465_7b.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-276">
+<td><a name="testA-276"></a><input type="checkbox" id="cb-276" value="276" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/creators/TestPolymorphicCreators_testManualPolymorphicDog83_7o.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-276">  <span class="sortValue">com.fasterxml.jackson.databind.creators.TestPolymorphicCreators.testManualPolymorphicDog83</span><a href="../../../../../../com/fasterxml/jackson/databind/creators/TestPolymorphicCreators_testManualPolymorphicDog83_7o.html" title="View Test Summary Page">com.fasterxml.jackson.databind.creators.TestPolymorphicCreators.testManualPolymorphicDog83</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/creators/TestPolymorphicCreators.html?line=106#src-106" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/creators/TestPolymorphicCreators_testManualPolymorphicDog83_7o.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-148">
+<td><a name="testA-148"></a><input type="checkbox" id="cb-148" value="148" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/struct/TestPOJOAsArray_testReadSimplePropertyValue362_44.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-148">  <span class="sortValue">com.fasterxml.jackson.databind.struct.TestPOJOAsArray.testReadSimplePropertyValue362</span><a href="../../../../../../com/fasterxml/jackson/databind/struct/TestPOJOAsArray_testReadSimplePropertyValue362_44.html" title="View Test Summary Page">com.fasterxml.jackson.databind.struct.TestPOJOAsArray.testReadSimplePropertyValue362</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/struct/TestPOJOAsArray.html?line=121#src-121" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/struct/TestPOJOAsArray_testReadSimplePropertyValue362_44.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-125">
+<td><a name="testA-125"></a><input type="checkbox" id="cb-125" value="125" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/convert/TestBeanConversions_testBeanConvert275_3h.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-125">  <span class="sortValue">com.fasterxml.jackson.databind.convert.TestBeanConversions.testBeanConvert275</span><a href="../../../../../../com/fasterxml/jackson/databind/convert/TestBeanConversions_testBeanConvert275_3h.html" title="View Test Summary Page">com.fasterxml.jackson.databind.convert.TestBeanConversions.testBeanConvert275</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/convert/TestBeanConversions.html?line=72#src-72" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/convert/TestBeanConversions_testBeanConvert275_3h.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-482">
+<td><a name="testA-482"></a><input type="checkbox" id="cb-482" value="482" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/interop/TestFormatDetection_testSimpleWithJSON453_de.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-482">  <span class="sortValue">com.fasterxml.jackson.databind.interop.TestFormatDetection.testSimpleWithJSON453</span><a href="../../../../../../com/fasterxml/jackson/databind/interop/TestFormatDetection_testSimpleWithJSON453_de.html" title="View Test Summary Page">com.fasterxml.jackson.databind.interop.TestFormatDetection.testSimpleWithJSON453</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/interop/TestFormatDetection.html?line=40#src-40" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/interop/TestFormatDetection_testSimpleWithJSON453_de.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-128">
+<td><a name="testA-128"></a><input type="checkbox" id="cb-128" value="128" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/struct/TestPOJOAsArrayAdvanced_testWithView233_3k.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-128">  <span class="sortValue">com.fasterxml.jackson.databind.struct.TestPOJOAsArrayAdvanced.testWithView233</span><a href="../../../../../../com/fasterxml/jackson/databind/struct/TestPOJOAsArrayAdvanced_testWithView233_3k.html" title="View Test Summary Page">com.fasterxml.jackson.databind.struct.TestPOJOAsArrayAdvanced.testWithView233</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/struct/TestPOJOAsArrayAdvanced.html?line=69#src-69" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/struct/TestPOJOAsArrayAdvanced_testWithView233_3k.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-154">
+<td><a name="testA-154"></a><input type="checkbox" id="cb-154" value="154" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdDeserialization_testCustomDeserializationProperty366_4a.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-154">  <span class="sortValue">com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization.testCustomDeserializationProperty366</span><a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdDeserialization_testCustomDeserializationProperty366_4a.html" title="View Test Summary Page">com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization.testCustomDeserializationProperty366</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdDeserialization.html?line=140#src-140" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdDeserialization_testCustomDeserializationProperty366_4a.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-377">
+<td><a name="testA-377"></a><input type="checkbox" id="cb-377" value="377" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization_testUnknownHandlingDefault555_ah.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-377">  <span class="sortValue">com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization.testUnknownHandlingDefault555</span><a href="../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization_testUnknownHandlingDefault555_ah.html" title="View Test Summary Page">com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization.testUnknownHandlingDefault555</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization.html?line=187#src-187" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization_testUnknownHandlingDefault555_ah.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-417">
+<td><a name="testA-417"></a><input type="checkbox" id="cb-417" value="417" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/creators/TestBuilderSimple_testImmutable34_bl.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-417">  <span class="sortValue">com.fasterxml.jackson.databind.creators.TestBuilderSimple.testImmutable34</span><a href="../../../../../../com/fasterxml/jackson/databind/creators/TestBuilderSimple_testImmutable34_bl.html" title="View Test Summary Page">com.fasterxml.jackson.databind.creators.TestBuilderSimple.testImmutable34</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/creators/TestBuilderSimple.html?line=170#src-170" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/creators/TestBuilderSimple_testImmutable34_bl.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-126">
+<td><a name="testA-126"></a><input type="checkbox" id="cb-126" value="126" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization_testClassWithUnknownAndIgnore60_3i.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-126">  <span class="sortValue">com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization.testClassWithUnknownAndIgnore60</span><a href="../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization_testClassWithUnknownAndIgnore60_3i.html" title="View Test Summary Page">com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization.testClassWithUnknownAndIgnore60</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization.html?line=143#src-143" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization_testClassWithUnknownAndIgnore60_3i.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-473">
+<td><a name="testA-473"></a><input type="checkbox" id="cb-473" value="473" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/struct/TestFormatForCollections_testListAsObject77_d5.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-473">  <span class="sortValue">com.fasterxml.jackson.databind.struct.TestFormatForCollections.testListAsObject77</span><a href="../../../../../../com/fasterxml/jackson/databind/struct/TestFormatForCollections_testListAsObject77_d5.html" title="View Test Summary Page">com.fasterxml.jackson.databind.struct.TestFormatForCollections.testListAsObject77</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/struct/TestFormatForCollections.html?line=48#src-48" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/struct/TestFormatForCollections_testListAsObject77_d5.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-356">
+<td><a name="testA-356"></a><input type="checkbox" id="cb-356" value="356" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/creators/TestBuilderSimple_testSimple383_9w.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-356">  <span class="sortValue">com.fasterxml.jackson.databind.creators.TestBuilderSimple.testSimple383</span><a href="../../../../../../com/fasterxml/jackson/databind/creators/TestBuilderSimple_testSimple383_9w.html" title="View Test Summary Page">com.fasterxml.jackson.databind.creators.TestBuilderSimple.testSimple383</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/creators/TestBuilderSimple.html?line=177#src-177" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/creators/TestBuilderSimple_testSimple383_9w.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-442">
+<td><a name="testA-442"></a><input type="checkbox" id="cb-442" value="442" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/deser/TestJdkTypes_testLongToBoolean333_ca.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-442">  <span class="sortValue">com.fasterxml.jackson.databind.deser.TestJdkTypes.testLongToBoolean333</span><a href="../../../../../../com/fasterxml/jackson/databind/deser/TestJdkTypes_testLongToBoolean333_ca.html" title="View Test Summary Page">com.fasterxml.jackson.databind.deser.TestJdkTypes.testLongToBoolean333</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/deser/TestJdkTypes.html?line=115#src-115" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/deser/TestJdkTypes_testLongToBoolean333_ca.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-306">
+<td><a name="testA-306"></a><input type="checkbox" id="cb-306" value="306" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testSimpleFactory536_8i.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-306">  <span class="sortValue">com.fasterxml.jackson.databind.creators.TestCreators.testSimpleFactory536</span><a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testSimpleFactory536_8i.html" title="View Test Summary Page">com.fasterxml.jackson.databind.creators.TestCreators.testSimpleFactory536</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators.html?line=386#src-386" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testSimpleFactory536_8i.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-79">
+<td><a name="testA-79"></a><input type="checkbox" id="cb-79" value="79" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testFactoryCreatorWithRenamingMixin421_27.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-79">  <span class="sortValue">com.fasterxml.jackson.databind.creators.TestCreators.testFactoryCreatorWithRenamingMixin421</span><a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testFactoryCreatorWithRenamingMixin421_27.html" title="View Test Summary Page">com.fasterxml.jackson.databind.creators.TestCreators.testFactoryCreatorWithRenamingMixin421</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators.html?line=361#src-361" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/creators/TestCreators_testFactoryCreatorWithRenamingMixin421_27.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-404">
+<td><a name="testA-404"></a><input type="checkbox" id="cb-404" value="404" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/TestObjectMapperBeanDeserializer_testUnknownFields506_b8.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-404">  <span class="sortValue">com.fasterxml.jackson.databind.TestObjectMapperBeanDeserializer.testUnknownFields506</span><a href="../../../../../../com/fasterxml/jackson/databind/TestObjectMapperBeanDeserializer_testUnknownFields506_b8.html" title="View Test Summary Page">com.fasterxml.jackson.databind.TestObjectMapperBeanDeserializer.testUnknownFields506</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/TestObjectMapperBeanDeserializer.html?line=235#src-235" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/TestObjectMapperBeanDeserializer_testUnknownFields506_b8.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-179">
+<td><a name="testA-179"></a><input type="checkbox" id="cb-179" value="179" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization_testUnknownHandlingIgnoreWithFeature61_4z.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-179">  <span class="sortValue">com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization.testUnknownHandlingIgnoreWithFeature61</span><a href="../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization_testUnknownHandlingIgnoreWithFeature61_4z.html" title="View Test Summary Page">com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization.testUnknownHandlingIgnoreWithFeature61</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization.html?line=154#src-154" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/filter/TestUnknownPropertyDeserialization_testUnknownHandlingIgnoreWithFeature61_4z.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="keyword">package</span> com.fasterxml.jackson.<a href="../../../databind/pkg-summary.html">databind</a>.<a href="../../deser/pkg-summary.html">deser</a>.<a href="../impl/pkg-summary.html">impl</a>;</span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="keyword">import</span> com.fasterxml.jackson.core.JsonProcessingException;</span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="keyword">import</span> com.fasterxml.jackson.<a href="../../../databind/pkg-summary.html">databind</a>.<a href="../../../../../../com/fasterxml/jackson/databind/DeserializationContext.html#DeserializationContext">DeserializationContext</a>;</span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="keyword">import</span> com.fasterxml.jackson.<a href="../../../databind/pkg-summary.html">databind</a>.<a href="../../../../../../com/fasterxml/jackson/databind/DeserializationFeature.html#DeserializationFeature">DeserializationFeature</a>;</span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="keyword">import</span> com.fasterxml.jackson.<a href="../../../databind/pkg-summary.html">databind</a>.<a href="../../../../../../com/fasterxml/jackson/databind/JavaType.html#JavaType">JavaType</a>;</span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"></span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"><span class="comment"> * To support [JACKSON-420] we need bit more indirection; this is used to produce</span></span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"><span class="comment"> * artificial failure for primitives that don't accept JSON null as value.</span></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="12" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-12' onclick="toggleInlineStats(this, 'inlinestats-12');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-12" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-12'), 'inlinestats-12');return true;">
+                <td><div>
+<div title="80% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:80%"></div></div></div></td><td>80%</td>
+                <td class="inlineStat">Uncovered Elements: 2 (10)</td>
+                <td class="inlineStat">Complexity: 4</td>
+                <td class="inlineStat">Complexity Density: 0.67</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 12, 'Tests that hit NullProvider');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-12"><span class="spacer"></span><span id="src-12" class="srcLine"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <a href="../../../../../../com/fasterxml/jackson/databind/deser/impl/NullProvider.html#NullProvider">NullProvider</a></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine">    <span class="keyword">implements</span> java.io.Serializable</span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine">{</span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">long</span> serialVersionUID = 1L;</span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"></span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine">    <span class="keyword">private</span> <span class="keyword">final</span> Object _nullValue;</span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"></span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine">    <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">boolean</span> _isPrimitive;</span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine">    </span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine">    <span class="keyword">private</span> <span class="keyword">final</span> Class&lt;?&gt; _rawType;</span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine">    </span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="23" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-23' onclick="toggleInlineStats(this, 'inlinestats-23');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-23" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-23'), 'inlinestats-23');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (3)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.33</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l23">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 23, 'Tests that hit NullProvider(JavaType,Object)');" ><span title="Line 23, Col 5: method entered 144 times." class="nolink">&#160;144</span></td>
+<td class=" methodStart  srcCell" id="id-23"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 23,29);" id="img-23" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-23" class="srcLine"><span class="nolink" title="Line 23, Col 5: method entered 144 times.">    <span class="keyword">public</span> <a href="../../../../../../com/fasterxml/jackson/databind/deser/impl/NullProvider.html#NullProvider">NullProvider</a>(<a href="../../../../../../com/fasterxml/jackson/databind/JavaType.html#JavaType">JavaType</a> type, Object nullValue)</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-23'), 23,29);" id="e23" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine">    {</span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 25, 'Tests that hit line # 25');" ><span title="Line 25, Col 9: statement executed 144 times." class="nolink">&#160;144</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLine"><span class="nolink" title="Line 25, Col 9: statement executed 144 times.">        _nullValue = nullValue;</span></span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine">        <span class="comment">// [JACKSON-420]</span></span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 27, 'Tests that hit line # 27');" ><span title="Line 27, Col 9: statement executed 144 times." class="nolink">&#160;144</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLine"><span class="nolink" title="Line 27, Col 9: statement executed 144 times.">        _isPrimitive = type.isPrimitive();</span></span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 28, 'Tests that hit line # 28');" ><span title="Line 28, Col 9: statement executed 144 times." class="nolink">&#160;144</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine"><span class="nolink" title="Line 28, Col 9: statement executed 144 times.">        _rawType = type.getRawClass();</span></span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-30" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="31" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-31' onclick="toggleInlineStats(this, 'inlinestats-31');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-31" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-31'), 'inlinestats-31');return true;">
+                <td><div>
+<div title="60% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:60%"></div></div></div></td><td>60%</td>
+                <td class="inlineStat">Uncovered Elements: 2 (5)</td>
+                <td class="inlineStat">Complexity: 3</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l31">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 31, 'Tests that hit nullValue(DeserializationContext)&#160;:&#160;Object');" ><span title="Line 31, Col 5: method entered 3 times." class="nolink">&#160;3</span></td>
+<td class=" methodStart  srcCell" id="id-31"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 31,38);" id="img-31" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-31" class="srcLine"><span class="nolink" title="Line 31, Col 5: method entered 3 times.">    <span class="keyword">public</span> Object nullValue(<a href="../../../../../../com/fasterxml/jackson/databind/DeserializationContext.html#DeserializationContext">DeserializationContext</a> ctxt) <span class="keyword">throws</span> JsonProcessingException</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-31'), 31,38);" id="e31" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l32">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-32" class="srcLine">    {</span></td>
+</tr>
+ <tr id="l33">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 33, 'Tests that hit line # 33');" ><span title="Line 33, Col 12: true branch executed 0 times, false branch executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-33" class="srcLineHilight"><span class="nolink" title="Line 33, Col 12: true branch executed 0 times, false branch executed 3 times.">        <span class="keyword">if</span> (_isPrimitive &amp;&amp; ctxt.isEnabled(<a href="../../../../../../com/fasterxml/jackson/databind/DeserializationFeature.html#DeserializationFeature">DeserializationFeature</a>.FAIL_ON_NULL_FOR_PRIMITIVES)) {</span></span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 34, Col 13: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLineHilight"><span class="nolink" title="Line 34, Col 13: statement not executed.">            <span class="keyword">throw</span> ctxt.mappingException(<span class="string">&quot;Can not map JSON null into type &quot;</span>+_rawType.getName()</span></span></td>
+</tr>
+ <tr id="l35">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLine">                    +<span class="string">&quot; (set DeserializationConfig.DeserializationFeature.FAIL_ON_NULL_FOR_PRIMITIVES to 'false' to allow)&quot;</span>);</span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 37, 'Tests that hit line # 37');" ><span title="Line 37, Col 9: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLine"><span class="nolink" title="Line 37, Col 9: statement executed 3 times.">        <span class="keyword">return</span> _nullValue;</span></span></td>
+</tr>
+ <tr id="l38">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../../../../';
+    var testsPerFile = -1;
+</script>
+<script src="NullProvider.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Sun Jan 15 2023 17:05:15 MST using coverage data from Sun Jan 15 2023 17:05:13 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

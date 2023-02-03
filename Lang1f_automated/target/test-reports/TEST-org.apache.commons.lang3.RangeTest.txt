@@ -1,0 +1,29 @@
+Testsuite: org.apache.commons.lang3.RangeTest
+Tests run: 6, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+
+Testcase: testIsBeforeRange96 took 0.02 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.RangeTest.testIsBeforeRange96(RangeTest.java:86)
+
+Testcase: testBetween73 took 0.001 sec
+	FAILED
+should not contain 11
+junit.framework.AssertionFailedError: should not contain 11
+	at org.apache.commons.lang3.RangeTest.testBetween73(RangeTest.java:77)
+
+Testcase: testFormatDurationWords381 took 0.001 sec
+	FAILED
+expected:<[between(50 seconds, 75 seconds)]> but was:<[50 seconds]>
+junit.framework.AssertionFailedError: expected:<[between(50 seconds, 75 seconds)]> but was:<[50 seconds]>
+	at org.apache.commons.lang3.RangeTest.testFormatDurationWords381(RangeTest.java:124)
+
+Testcase: testFormatDurationWords383 took 0 sec
+	FAILED
+expected:<[between(50 seconds, 75 seconds)]> but was:<[yyyy-MM-dd hh a mm:ss]>
+junit.framework.AssertionFailedError: expected:<[between(50 seconds, 75 seconds)]> but was:<[yyyy-MM-dd hh a mm:ss]>
+	at org.apache.commons.lang3.RangeTest.testFormatDurationWords383(RangeTest.java:133)
+
+Testcase: testComparableConstructors379 took 0 sec
+Testcase: testBetween380 took 0 sec

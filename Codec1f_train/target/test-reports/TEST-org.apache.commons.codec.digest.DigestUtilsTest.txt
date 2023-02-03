@@ -1,0 +1,9 @@
+Testsuite: org.apache.commons.codec.digest.DigestUtilsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.213 sec
+
+Testcase: testInternalNoSuchAlgorithmException99 took 0.071 sec
+Testcase: testSha25658 took 0.049 sec
+Testcase: testSha38418 took 0.031 sec
+Testcase: testShaHex29 took 0.038 sec
+Testcase: testMD5HexLength39 took 0.004 sec
+Testcase: testMd5Hex80 took 0.014 sec

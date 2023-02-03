@@ -1,0 +1,41 @@
+Testsuite: org.apache.commons.lang3.ClassUtilsTest
+Tests run: 28, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
+
+Testcase: test_getAllInterfaces_Class759 took 0.019 sec
+Testcase: test_getShortClassName_Class632 took 0.007 sec
+Testcase: test_getSimpleName_Object46 took 0 sec
+Testcase: testToClass_object549 took 0.005 sec
+Testcase: test_isAssignable_Unboxing_Widening539 took 0.001 sec
+Testcase: testWithInterleavingWhitespace746 took 0 sec
+Testcase: testWrappersToPrimitivesNull957 took 0 sec
+Testcase: test_getShortClassName_Object823 took 0.003 sec
+	FAILED
+expected:<ClassUtilsTest.[1]> but was:<ClassUtilsTest.[4]>
+junit.framework.AssertionFailedError: expected:<ClassUtilsTest.[1]> but was:<ClassUtilsTest.[4]>
+	at org.apache.commons.lang3.ClassUtilsTest.test_getShortClassName_Object823(ClassUtilsTest.java:419)
+
+Testcase: testGetClassInvalidArguments99 took 0.001 sec
+Testcase: testGetClassClassNotFound405 took 0 sec
+Testcase: testGetClassWithArrayClasses757 took 0 sec
+Testcase: test_getAllSuperclasses_Class18 took 0 sec
+Testcase: test_getPackageCanonicalName_Class557 took 0.002 sec
+Testcase: test_getSimpleName_Class1296 took 0 sec
+Testcase: testPrimitivesToWrappers132 took 0 sec
+Testcase: test_isAssignable_ClassArray_ClassArray_NoAutoboxing395 took 0 sec
+Testcase: test_isAssignable312 took 0.002 sec
+Testcase: test_getShortCanonicalName_Class803 took 0.001 sec
+	FAILED
+expected:<ClassUtilsTest.[7]> but was:<ClassUtilsTest.[3]>
+junit.framework.AssertionFailedError: expected:<ClassUtilsTest.[7]> but was:<ClassUtilsTest.[3]>
+	at org.apache.commons.lang3.ClassUtilsTest.test_getShortCanonicalName_Class803(ClassUtilsTest.java:406)
+
+Testcase: test_convertClassNamesToClasses_List101 took 0.001 sec
+Testcase: test_isAssignable_ClassArray_ClassArray1019 took 0 sec
+Testcase: test_convertClassesToClassNames_List630 took 0 sec
+Testcase: testIsPrimitiveOrWrapper155 took 0 sec
+Testcase: testGetPublicMethod337 took 0.001 sec
+Testcase: test_isInnerClass_Class1255 took 0 sec
+Testcase: test_getPackageName_String351 took 0 sec
+Testcase: test_getPackageName_Object1088 took 0 sec
+Testcase: test_getShortClassName_String1176 took 0 sec
+Testcase: testGetClassRawPrimitives1000 took 0 sec

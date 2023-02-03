@@ -1,0 +1,22 @@
+Testsuite: org.apache.commons.lang3.reflect.TypeUtilsTest
+Tests run: 9, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+
+Testcase: testTypeVariableAssignments318 took 0.025 sec
+Testcase: testDetermineTypeVariableAssignments331 took 0 sec
+Testcase: testDetermineTypeVariableAssignments336 took 0 sec
+Testcase: testGetRawType_PrimitiveArray150 took 0.002 sec
+	FAILED
+expected:<boolean> but was:<class [Z>
+junit.framework.AssertionFailedError: expected:<boolean> but was:<class [Z>
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetRawType_PrimitiveArray150(TypeUtilsTest.java:135)
+
+Testcase: testGetRawType_GenericArray149 took 0 sec
+	FAILED
+expected:<boolean> but was:<class [Z>
+junit.framework.AssertionFailedError: expected:<boolean> but was:<class [Z>
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetRawType_GenericArray149(TypeUtilsTest.java:116)
+
+Testcase: test_isAssignable320 took 0 sec
+Testcase: test_isAssignable339 took 0.001 sec
+Testcase: test_isAssignable343 took 0 sec
+Testcase: testDetermineTypeVariableAssignments85 took 0 sec

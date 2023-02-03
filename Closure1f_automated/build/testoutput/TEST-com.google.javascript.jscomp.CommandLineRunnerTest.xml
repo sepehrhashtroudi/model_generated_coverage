@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="4" hostname="sepehr-UX310UQK" name="com.google.javascript.jscomp.CommandLineRunnerTest" skipped="0" tests="22" time="0.638" timestamp="2023-01-12T08:54:08">
+  <properties>
+    <property name="java.vendor" value="Private Build" />
+    <property name="lib.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/lib" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Linux" />
+    <property name="clover.historical.json" value="true" />
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes" />
+    <property name="build.svnVersion" value="Unversioned directory" />
+    <property name="sun.desktop" value="gnome" />
+    <property name="maven-repository-id" value="sonatype-nexus-staging" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="jsonml-jarfile" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/build/secure_compiler.jar" />
+    <property name="java.runtime.version" value="1.8.0_352-8u352-ga-1~20.04-b08" />
+    <property name="gen.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/gen" />
+    <property name="clover.project.historydir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/.cloverhistory/compiler" />
+    <property name="clover.flushinterval" value="100" />
+    <property name="user.name" value="sepehr" />
+    <property name="ant.file.compiler" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/build.xml" />
+    <property name="build.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/build" />
+    <property name="jsonml.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/src/com/google/javascript/jscomp/jsonml" />
+    <property name="ant.build.javac.target" value="1.6" />
+    <property name="stylesheetfile" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/build/javadoc/dev_javadoc.css" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64" />
+    <property name="ant.project.default-target" value="jar" />
+    <property name="ant.project.name" value="compiler" />
+    <property name="java.version" value="1.8.0_352" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="protoc.executable" value="protoc" />
+    <property name="classes.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/build/classes" />
+    <property name="clover.initstring" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/.clover/clover4_4_1.db" />
+    <property name="java.class.version" value="52.0" />
+    <property name="testClasses.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/build/test" />
+    <property name="user.country" value="US" />
+    <property name="jsonml-classes.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/build/jsonml-classes" />
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre" />
+    <property name="clover.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/clover" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="externs.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/externs" />
+    <property name="ant.file" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/build.xml" />
+    <property name="os.version" value="5.15.0-57-generic" />
+    <property name="javac.debug" value="on" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="25.352-b08" />
+    <property name="num-fuzz-tests" value="10000" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="clover.jar" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/${clover.home}/clover.jar" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="webservice-jarfile" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/build/webservice.jar" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="test.fork" value="true" />
+    <property name="webservice.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/src/com/google/javascript/jscomp/webservice" />
+    <property name="java.specification.maintenance.version" value="4" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="buildlib.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/build/lib" />
+    <property name="ant.build.javac.source" value="1.6" />
+    <property name="user.home" value="/home/sepehr" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="test.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/test" />
+    <property name="clover.dest" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/clover/compiler" />
+    <property name="clover.span" value="1day" />
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="test.target" value="test" />
+    <property name="java.vm.vendor" value="Private Build" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.7 compiled on October 24 2019" />
+    <property name="java.class.path" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/build/classes:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/lib/ant-launcher.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/lib/ant.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/lib/args4j.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/lib/caja-r4314.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/lib/guava.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/lib/jarjar.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/lib/json.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/lib/jsr305.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/lib/junit.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/lib/protobuf-java.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/build/lib/rhino.jar:/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/build/test:/home/sepehr/.ant/lib/clover.jar:/home/sepehr/.ant/lib/evosuite-1.0.6.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/junittestcases8513822732837338648.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/build/testoutput/IGNORETHIS.xml crashfile=/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/junitvmwatcher7509918879697969352.properties propsfile=/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/junit2943028831606717450.properties" />
+    <property name="project.name" value="compiler" />
+    <property name="test.class" value="*Test" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="clover.snapshot.file" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/.cloverhistory/compiler/clover.snapshot" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="project.title" value="compiler" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="os.arch" value="amd64" />
+    <property name="clover.jarpath" value="/home/sepehr/.ant/lib/clover.jar" />
+    <property name="maven-repository-url" value="https://oss.sonatype.org/service/local/staging/deploy/maven2/" />
+    <property name="webservice-classes.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/build/webservice-classes" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="user.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated" />
+    <property name="ant.file.type.compiler" value="file" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="basedir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="closure.build.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/build" />
+    <property name="build.compiler" value="com.atlassian.clover.ant.taskdefs.CloverCompilerAdapter" />
+    <property name="compiler-jarfile" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/build/compiler.jar" />
+    <property name="clover.historydir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/.cloverhistory" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="src.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/src" />
+    <property name="ant.project.invoked-targets" value="with.clover,test,clover.report" />
+    <property name="javadoc.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/build/javadoc" />
+    <property name="tools.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Closure1f_automated/tools" />
+    <property name="clover.flushpolicy" value="directed" />
+  </properties>
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testCodeBuilderAppend103" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testProcessCJSWithModuleOutput400" time="0.161" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testIssue817" time="0.072" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testPrintAstFlag401" time="0.018" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testModuleWrapperBaseNameExpansion406" time="0.027" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testNoSrCFilesWithManifest403" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testTypeParsingOnWithVerbose408" time="0.088" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testVersionFlag2409" time="0.014" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testDefineFlag411" time="0.02" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testCharSetExpansion412" time="0.026" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testNameMapExpansion3413" time="0.023" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testStaticFunction7416" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testModuleWrapperBaseNameExpansion417" time="0.018" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testPrintTree418" time="0.016">
+    <failure message="expected:&lt;[digraph AST {&#xa;  node [color=lightblue2, style=filled];&#xa;  node0 [label=&quot;BLOCK&quot;];&#xa;  node1 [label=&quot;SCRIPT&quot;];&#xa;  node0 -&gt; node1 [weight=1];&#xa;  node1 -&gt; RETURN [label=&quot;UNCOND&quot;, fontcolor=&quot;red&quot;, weight=0.01, color=&quot;red&quot;];&#xa;  node0 -&gt; RETURN [label=&quot;SYN_BLOCK&quot;, fontcolor=&quot;red&quot;, weight=0.01, color=&quot;red&quot;];&#xa;  node0 -&gt; node1 [label=&quot;UNCOND&quot;, fontcolor=&quot;red&quot;, weight=0.01, color=&quot;red&quot;];&#xa;}]&#xa;&#xa;&gt; but was:&lt;[BLOCK [synthetic: 1]&#xa;    BLOCK [synthetic: 1]&#xa;        SCRIPT 1 [synthetic: 1] [source_file: externs] [input_id: InputId: externs]&#xa;            VAR 1 [source_file: externs]&#xa;                NAME arguments 1 [source_file: externs]&#xa;            FUNCTION Function 7 [jsdoc_info: JSDocInfo] [source_file: externs]&#xa;                NAME Function 7 [source_file: externs]&#xa;                PARAM_LIST 7 [source_file: externs]&#xa;                    NAME var_args 7 [source_file: externs]&#xa;                BLOCK 7 [source_file: externs]&#xa;            EXPR_RESULT 12 [source_file: externs]&#xa;                ASSIGN 12 [jsdoc_info: JSDocInfo] [source_file: externs]&#xa;                    GETPROP 12 [source_file: externs]&#xa;                        GETPROP 12 [source_file: externs]&#xa;                            NAME Function 12 [source_file: externs]&#xa;                            STRING prototype 12 [source_file: externs]&#xa;                        STRING call 12 [source_file: externs]&#xa;                    FUNCTION  12 [source_file: externs]&#xa;                        NAME  12 [source_file: externs]&#xa;                        PARAM_LIST 12 [source_file: externs]&#xa;                            NAME var_args$$1 12 [source_file: externs]&#xa;                        BLOCK 12 [source_file: externs]&#xa;            FUNCTION Array 17 [jsdoc_info: JSDocInfo] [source_file: externs]&#xa;                NAME Array 17 [source_file: externs]&#xa;                PARAM_LIST 17 [source_file: externs]&#xa;                    NAME var_args$$2 17 [source_file: externs]&#xa;                BLOCK 17 [source_file: externs]&#xa;            EXPR_RESULT 23 [source_file: externs]&#xa;                ASSIGN 23 [jsdoc_info: JSDocInfo] [source_file: externs]&#xa;                    GETPROP 23 [source_file: externs]&#xa;                        GETPROP 23 [source_file: externs]&#xa;                            NAME Array 23 [source_file: externs]&#xa;                            STRING prototype 23 [source_file: externs]&#xa;                        STRING slice 23 [source_file: externs]&#xa;                    FUNCTION  23 [source_file: externs]&#xa;                        NAME  23 [source_file: externs]&#xa;                        PARAM_LIST 23 [source_file: externs]&#xa;                            NAME opt_begin 23 [source_file: externs]&#xa;                            NAME opt_end 23 [source_file: externs]&#xa;                        BLOCK 23 [source_file: externs]&#xa;            FUNCTION Window 23 [jsdoc_info: JSDocInfo] [source_file: externs]&#xa;                NAME Window 23 [source_file: externs]&#xa;                PARAM_LIST 23 [source_file: externs]&#xa;                BLOCK 23 [source_file: externs]&#xa;            EXPR_RESULT 24 [source_file: externs]&#xa;                GETPROP 24 [jsdoc_info: JSDocInfo] [source_file: externs]&#xa;                    GETPROP 24 [source_file: externs]&#xa;                        NAME Window 24 [source_file: externs]&#xa;                        STRING prototype 24 [source_file: externs]&#xa;                    STRING name 24 [source_file: externs]&#xa;            VAR 25 [jsdoc_info: JSDocInfo] [source_file: externs]&#xa;                NAME window 25 [source_file: externs]&#xa;            FUNCTION Element 25 [jsdoc_info: JSDocInfo] [source_file: externs]&#xa;                NAME Element 25 [source_file: externs]&#xa;                PARAM_LIST 25 [source_file: externs]&#xa;                BLOCK 25 [source_file: externs]&#xa;            EXPR_RESULT 25 [source_file: externs]&#xa;                GETPROP 25 [source_file: externs]&#xa;                    GETPROP 25 [source_file: externs]&#xa;                        NAME Element 25 [source_file: externs]&#xa;                        STRING prototype 25 [source_file: externs]&#xa;                    STRING offsetWidth 25 [source_file: externs]&#xa;            FUNCTION noSideEffects 25 [jsdoc_info: JSDocInfo] [source_file: externs]&#xa;                NAME noSideEffects 25 [source_file: externs]&#xa;                PARAM_LIST 25 [source_file: externs]&#xa;                BLOCK 25 [source_file: externs]&#xa;            FUNCTION alert 26 [jsdoc_info: JSDocInfo] [source_file: externs]&#xa;                NAME alert 26 [source_file: externs]&#xa;                PARAM_LIST 26 [source_file: externs]&#xa;                    NAME x 26 [source_file: externs]&#xa;                BLOCK 26 [source_file: externs]&#xa;    BLOCK [synthetic: 1]&#xa;        SCRIPT 1 [synthetic: 1] [source_file: input0] [input_id: InputId: input0]]&#xa;&#xa;&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;[digraph AST {
+  node [color=lightblue2, style=filled];
+  node0 [label=&quot;BLOCK&quot;];
+  node1 [label=&quot;SCRIPT&quot;];
+  node0 -&gt; node1 [weight=1];
+  node1 -&gt; RETURN [label=&quot;UNCOND&quot;, fontcolor=&quot;red&quot;, weight=0.01, color=&quot;red&quot;];
+  node0 -&gt; RETURN [label=&quot;SYN_BLOCK&quot;, fontcolor=&quot;red&quot;, weight=0.01, color=&quot;red&quot;];
+  node0 -&gt; node1 [label=&quot;UNCOND&quot;, fontcolor=&quot;red&quot;, weight=0.01, color=&quot;red&quot;];
+}]
+
+&gt; but was:&lt;[BLOCK [synthetic: 1]
+    BLOCK [synthetic: 1]
+        SCRIPT 1 [synthetic: 1] [source_file: externs] [input_id: InputId: externs]
+            VAR 1 [source_file: externs]
+                NAME arguments 1 [source_file: externs]
+            FUNCTION Function 7 [jsdoc_info: JSDocInfo] [source_file: externs]
+                NAME Function 7 [source_file: externs]
+                PARAM_LIST 7 [source_file: externs]
+                    NAME var_args 7 [source_file: externs]
+                BLOCK 7 [source_file: externs]
+            EXPR_RESULT 12 [source_file: externs]
+                ASSIGN 12 [jsdoc_info: JSDocInfo] [source_file: externs]
+                    GETPROP 12 [source_file: externs]
+                        GETPROP 12 [source_file: externs]
+                            NAME Function 12 [source_file: externs]
+                            STRING prototype 12 [source_file: externs]
+                        STRING call 12 [source_file: externs]
+                    FUNCTION  12 [source_file: externs]
+                        NAME  12 [source_file: externs]
+                        PARAM_LIST 12 [source_file: externs]
+                            NAME var_args$$1 12 [source_file: externs]
+                        BLOCK 12 [source_file: externs]
+            FUNCTION Array 17 [jsdoc_info: JSDocInfo] [source_file: externs]
+                NAME Array 17 [source_file: externs]
+                PARAM_LIST 17 [source_file: externs]
+                    NAME var_args$$2 17 [source_file: externs]
+                BLOCK 17 [source_file: externs]
+            EXPR_RESULT 23 [source_file: externs]
+                ASSIGN 23 [jsdoc_info: JSDocInfo] [source_file: externs]
+                    GETPROP 23 [source_file: externs]
+                        GETPROP 23 [source_file: externs]
+                            NAME Array 23 [source_file: externs]
+                            STRING prototype 23 [source_file: externs]
+                        STRING slice 23 [source_file: externs]
+                    FUNCTION  23 [source_file: externs]
+                        NAME  23 [source_file: externs]
+                        PARAM_LIST 23 [source_file: externs]
+                            NAME opt_begin 23 [source_file: externs]
+                            NAME opt_end 23 [source_file: externs]
+                        BLOCK 23 [source_file: externs]
+            FUNCTION Window 23 [jsdoc_info: JSDocInfo] [source_file: externs]
+                NAME Window 23 [source_file: externs]
+                PARAM_LIST 23 [source_file: externs]
+                BLOCK 23 [source_file: externs]
+            EXPR_RESULT 24 [source_file: externs]
+                GETPROP 24 [jsdoc_info: JSDocInfo] [source_file: externs]
+                    GETPROP 24 [source_file: externs]
+                        NAME Window 24 [source_file: externs]
+                        STRING prototype 24 [source_file: externs]
+                    STRING name 24 [source_file: externs]
+            VAR 25 [jsdoc_info: JSDocInfo] [source_file: externs]
+                NAME window 25 [source_file: externs]
+            FUNCTION Element 25 [jsdoc_info: JSDocInfo] [source_file: externs]
+                NAME Element 25 [source_file: externs]
+                PARAM_LIST 25 [source_file: externs]
+                BLOCK 25 [source_file: externs]
+            EXPR_RESULT 25 [source_file: externs]
+                GETPROP 25 [source_file: externs]
+                    GETPROP 25 [source_file: externs]
+                        NAME Element 25 [source_file: externs]
+                        STRING prototype 25 [source_file: externs]
+                    STRING offsetWidth 25 [source_file: externs]
+            FUNCTION noSideEffects 25 [jsdoc_info: JSDocInfo] [source_file: externs]
+                NAME noSideEffects 25 [source_file: externs]
+                PARAM_LIST 25 [source_file: externs]
+                BLOCK 25 [source_file: externs]
+            FUNCTION alert 26 [jsdoc_info: JSDocInfo] [source_file: externs]
+                NAME alert 26 [source_file: externs]
+                PARAM_LIST 26 [source_file: externs]
+                    NAME x 26 [source_file: externs]
+                BLOCK 26 [source_file: externs]
+    BLOCK [synthetic: 1]
+        SCRIPT 1 [synthetic: 1] [source_file: input0] [input_id: InputId: input0]]
+
+&gt;
+	at com.google.javascript.jscomp.CommandLineRunnerTest.__CLR4_4_1rha72h1nf0(CommandLineRunnerTest.java:239)
+	at com.google.javascript.jscomp.CommandLineRunnerTest.testPrintTree418(CommandLineRunnerTest.java:236)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testModuleJSON420" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testDefineFlag3421" time="0.018">
+    <failure message="&#xa;Expected: var FOO=!0,BAR=5,CCC=!0,DDD=!0&#xa;Result: var FOO=&quot;x&apos;&quot;,BAR=5,CCC=!0,DDD=!0&#xa;Node tree inequality:&#xa;Tree1:&#xa;BLOCK [synthetic: 1]&#xa;    SCRIPT 1 [synthetic: 1] [source_file: input0] [input_id: InputId: input0]&#xa;        VAR 1 [source_file: input0]&#xa;            NAME FOO 1 [source_file: input0]&#xa;                NOT 1 [source_file: input0]&#xa;                    NUMBER 0.0 1 [source_file: input0]&#xa;            NAME BAR 1 [source_file: input0]&#xa;                NUMBER 5.0 1 [source_file: input0]&#xa;            NAME CCC 1 [source_file: input0]&#xa;                NOT 1 [source_file: input0]&#xa;                    NUMBER 0.0 1 [source_file: input0]&#xa;            NAME DDD 1 [source_file: input0]&#xa;                NOT 1 [source_file: input0]&#xa;                    NUMBER 0.0 1 [source_file: input0]&#xa;&#xa;&#xa;Tree2:&#xa;BLOCK [synthetic: 1]&#xa;    SCRIPT 1 [synthetic: 1] [source_file: input0] [input_id: InputId: input0]&#xa;        VAR 1 [source_file: input0]&#xa;            NAME FOO 1 [is_constant_name: 1] [source_file: input0]&#xa;                STRING x&apos; 1 [source_file: input0]&#xa;            NAME BAR 1 [is_constant_name: 1] [source_file: input0]&#xa;                NUMBER 5.0 1 [source_file: input0]&#xa;            NAME CCC 1 [is_constant_name: 1] [source_file: input0]&#xa;                NOT 1 [source_file: input0]&#xa;                    NUMBER 0.0 1 [source_file: input0]&#xa;            NAME DDD 1 [is_constant_name: 1] [source_file: input0]&#xa;                NOT 1 [source_file: input0]&#xa;                    NUMBER 0.0 1 [source_file: input0]&#xa;&#xa;&#xa;Subtree1: NOT 1 [source_file: input0]&#xa;    NUMBER 0.0 1 [source_file: input0]&#xa;&#xa;&#xa;Subtree2: STRING x&apos; 1 [source_file: input0]&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
+Expected: var FOO=!0,BAR=5,CCC=!0,DDD=!0
+Result: var FOO=&quot;x&apos;&quot;,BAR=5,CCC=!0,DDD=!0
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: input0] [input_id: InputId: input0]
+        VAR 1 [source_file: input0]
+            NAME FOO 1 [source_file: input0]
+                NOT 1 [source_file: input0]
+                    NUMBER 0.0 1 [source_file: input0]
+            NAME BAR 1 [source_file: input0]
+                NUMBER 5.0 1 [source_file: input0]
+            NAME CCC 1 [source_file: input0]
+                NOT 1 [source_file: input0]
+                    NUMBER 0.0 1 [source_file: input0]
+            NAME DDD 1 [source_file: input0]
+                NOT 1 [source_file: input0]
+                    NUMBER 0.0 1 [source_file: input0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: input0] [input_id: InputId: input0]
+        VAR 1 [source_file: input0]
+            NAME FOO 1 [is_constant_name: 1] [source_file: input0]
+                STRING x&apos; 1 [source_file: input0]
+            NAME BAR 1 [is_constant_name: 1] [source_file: input0]
+                NUMBER 5.0 1 [source_file: input0]
+            NAME CCC 1 [is_constant_name: 1] [source_file: input0]
+                NOT 1 [source_file: input0]
+                    NUMBER 0.0 1 [source_file: input0]
+            NAME DDD 1 [is_constant_name: 1] [source_file: input0]
+                NOT 1 [source_file: input0]
+                    NUMBER 0.0 1 [source_file: input0]
+
+
+Subtree1: NOT 1 [source_file: input0]
+    NUMBER 0.0 1 [source_file: input0]
+
+
+Subtree2: STRING x&apos; 1 [source_file: input0]
+
+	at com.google.javascript.jscomp.CommandLineRunnerTest.test(CommandLineRunnerTest.java:560)
+	at com.google.javascript.jscomp.CommandLineRunnerTest.test(CommandLineRunnerTest.java:531)
+	at com.google.javascript.jscomp.CommandLineRunnerTest.test(CommandLineRunnerTest.java:523)
+	at com.google.javascript.jscomp.CommandLineRunnerTest.__CLR4_4_18z20w01nfc(CommandLineRunnerTest.java:257)
+	at com.google.javascript.jscomp.CommandLineRunnerTest.testDefineFlag3421(CommandLineRunnerTest.java:250)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testPrintPassGraph423" time="0.015">
+    <failure message="expected:&lt;digraph [AST {&#xa;  node [color=lightblue2, style=filled];&#xa;  node0 [label=&quot;BLOCK&quot;];&#xa;  node1 [label=&quot;SCRIPT&quot;];&#xa;  node0 -&gt; node1 [weight=1];&#xa;  node1 -&gt; RETURN [label=&quot;UNCOND&quot;, fontcolor=&quot;red&quot;, weight=0.01, color=&quot;red&quot;];&#xa;  node0 -&gt; RETURN [label=&quot;SYN_BLOCK&quot;, fontcolor=&quot;red&quot;, weight=0.01, color=&quot;red&quot;];&#xa;  node0 -&gt; node1 [label=&quot;UNCOND&quot;, fontcolor=&quot;red&quot;, weight=0.01, color=&quot;red&quot;]];&#xa;}&#xa;&#xa;&gt; but was:&lt;digraph [ LinkedGraph {&#xa;  node [color=lightblue2, style=filled];&#xa;  LDN1045567253 [label=&quot;checkSideEffects&quot; color=&quot;white&quot;];&#xa;  LDN1046056441 [label=&quot;beforeMainOptimizations&quot; color=&quot;white&quot;];&#xa;  LDN1120670624 [label=&quot;beforeStandardOptimizations&quot; color=&quot;white&quot;];&#xa;  LDN1255445356 [label=&quot;collapseVariableDeclarations&quot; color=&quot;white&quot;];&#xa;  LDN1273879638 [label=&quot;renameLabels&quot; color=&quot;white&quot;];&#xa;  LDN1340086277 [label=&quot;sanityCheckAst&quot; color=&quot;white&quot;];&#xa;  LDN1345293143 [label=&quot;processDefines&quot; color=&quot;white&quot;];&#xa;  LDN136312946 [label=&quot;closureReplaceGetCssName&quot; color=&quot;white&quot;];&#xa;  LDN1427247001 [label=&quot;sanityCheckVars&quot; color=&quot;white&quot;];&#xa;  LDN1444494461 [label=&quot;closurePrimitives&quot; color=&quot;white&quot;];&#xa;  LDN1447685190 [label=&quot;inlineVariables&quot; color=&quot;white&quot;];&#xa;  LDN1448277333 [label=&quot;peepholeOptimizations1&quot; color=&quot;white&quot;];&#xa;  LDN1562950869 [label=&quot;deadAssignmentsElimination&quot; color=&quot;white&quot;];&#xa;  LDN1602785474 [label=&quot;beforeStandardChecks&quot; color=&quot;white&quot;];&#xa;  LDN161113555 [label=&quot;denormalize&quot; color=&quot;white&quot;];&#xa;  LDN1618683794 [label=&quot;removeUnusedVars&quot; color=&quot;white&quot;];&#xa;  LDN1693003105 [label=&quot;convertToDottedProperties&quot; color=&quot;white&quot;];&#xa;  LDN1746117425 [label=&quot;latePeepholeOptimizations&quot; color=&quot;white&quot;];&#xa;  LDN2006842965 [label=&quot;removeUnusedVars1&quot; color=&quot;white&quot;];&#xa;  LDN2021835850 [label=&quot;renameVars&quot; color=&quot;white&quot;];&#xa;  LDN2027701910 [label=&quot;closureOptimizePrimitives&quot; color=&quot;white&quot;];&#xa;  LDN2034975583 [label=&quot;checkControlStructures&quot; color=&quot;white&quot;];&#xa;  LDN2041996211 [label=&quot;checkConsts&quot; color=&quot;white&quot;];&#xa;  LDN2117193231 [label=&quot;markUnnormalized&quot; color=&quot;white&quot;];&#xa;  LDN2141066548 [label=&quot;flowSensitiveInlineVariables&quot; color=&quot;white&quot;];&#xa;  LDN286658790 [label=&quot;checkVars&quot; color=&quot;white&quot;];&#xa;  LDN289711450 [label=&quot;peepholeOptimizations&quot; color=&quot;white&quot;];&#xa;  LDN327840833 [label=&quot;closureRewriteGoogClass&quot; color=&quot;white&quot;];&#xa;  LDN461448225 [label=&quot;afterModuleMotion&quot; color=&quot;white&quot;];&#xa;  LDN467146800 [label=&quot;afterStandardChecks&quot; color=&quot;white&quot;];&#xa;  LDN550572371 [label=&quot;optimizeArgumentsArray&quot; color=&quot;white&quot;];&#xa;  LDN634156144 [label=&quot;invertContextualRenaming&quot; color=&quot;white&quot;];&#xa;  LDN643587433 [label=&quot;inlineFunctions&quot; color=&quot;white&quot;];&#xa;  LDN648358364 [label=&quot;minimizeExitPoints&quot; color=&quot;white&quot;];&#xa;  LDN684230144 [label=&quot;removeUnreachableCode&quot; color=&quot;white&quot;];&#xa;  LDN701724503 [label=&quot;stripSideEffectProtection&quot; color=&quot;white&quot;];&#xa;  LDN814245389 [label=&quot;exploitAssign&quot; color=&quot;white&quot;];&#xa;  LDN828447060 [label=&quot;closureCodeRemoval&quot; color=&quot;white&quot;];&#xa;  LDN83674409 [label=&quot;checkControlFlow&quot; color=&quot;white&quot;];&#xa;  LDN842422776 [label=&quot;collapseObjectLiterals&quot; color=&quot;white&quot;];&#xa;  LDN845388562 [label=&quot;garbageCollectChecks&quot; color=&quot;white&quot;];&#xa;  LDN855501888 [label=&quot;beforeModuleMotion&quot; color=&quot;white&quot;];&#xa;  LDN948424584 [label=&quot;suspiciousCode&quot; color=&quot;white&quot;];&#xa;  LDN955443582 [label=&quot;coalesceVariableNames&quot; color=&quot;white&quot;];&#xa;  LDN967531000 [label=&quot;closureGoogScopeAliases&quot; color=&quot;white&quot;];&#xa;  LDN1045567253 -&gt; LDN948424584;&#xa;  LDN1046056441 -&gt; LDN842422776;&#xa;  LDN1120670624 -&gt; LDN550572371;&#xa;  LDN1255445356 -&gt; LDN161113555;&#xa;  LDN1273879638 -&gt; LDN1746117425;&#xa;  LDN1340086277 -&gt; LDN1427247001;&#xa;  LDN1345293143 -&gt; LDN467146800;&#xa;  LDN136312946 -&gt; LDN1345293143;&#xa;  LDN1444494461 -&gt; LDN286658790;&#xa;  LDN1447685190 -&gt; LDN648358364;&#xa;  LDN1448277333 -&gt; LDN1448277333;&#xa;  LDN1448277333 -&gt; LDN814245389;&#xa;  LDN1562950869 -&gt; LDN1618683794;&#xa;  LDN1602785474 -&gt; LDN967531000;&#xa;  LDN161113555 -&gt; LDN634156144;&#xa;  LDN1618683794 -&gt; LDN842422776;&#xa;  LDN1618683794 -&gt; LDN855501888;&#xa;  LDN1693003105 -&gt; LDN2117193231;&#xa;  LDN1746117425 -&gt; LDN701724503;&#xa;  LDN2006842965 -&gt; LDN1693003105;&#xa;  LDN2006842965 -&gt; LDN2006842965;&#xa;  LDN2021835850 -&gt; LDN1273879638;&#xa;  LDN2027701910 -&gt; LDN1046056441;&#xa;  LDN2034975583 -&gt; LDN1444494461;&#xa;  LDN2041996211 -&gt; LDN2027701910;&#xa;  LDN2117193231 -&gt; LDN955443582;&#xa;  LDN2141066548 -&gt; LDN2006842965;&#xa;  LDN286658790 -&gt; LDN83674409;&#xa;  LDN289711450 -&gt; LDN684230144;&#xa;  LDN327840833 -&gt; LDN1045567253;&#xa;  LDN461448225 -&gt; LDN2141066548;&#xa;  LDN467146800 -&gt; LDN845388562;&#xa;  LDN550572371 -&gt; LDN828447060;&#xa;  LDN634156144 -&gt; LDN2021835850;&#xa;  LDN643587433 -&gt; LDN1562950869;&#xa;  LDN648358364 -&gt; LDN289711450;&#xa;  LDN684230144 -&gt; LDN643587433;&#xa;  LDN701724503 -&gt; LDN1340086277;&#xa;  LDN814245389 -&gt; LDN1255445356;&#xa;  LDN828447060 -&gt; LDN2041996211;&#xa;  LDN83674409 -&gt; LDN136312946;&#xa;  LDN842422776 -&gt; LDN1447685190;&#xa;  LDN845388562 -&gt; LDN1120670624;&#xa;  LDN855501888 -&gt; LDN461448225;&#xa;  LDN948424584 -&gt; LDN2034975583;&#xa;  LDN955443582 -&gt; LDN1448277333;&#xa;  LDN967531000 -&gt; LDN327840833];&#xa;}&#xa;&#xa;&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;digraph [AST {
+  node [color=lightblue2, style=filled];
+  node0 [label=&quot;BLOCK&quot;];
+  node1 [label=&quot;SCRIPT&quot;];
+  node0 -&gt; node1 [weight=1];
+  node1 -&gt; RETURN [label=&quot;UNCOND&quot;, fontcolor=&quot;red&quot;, weight=0.01, color=&quot;red&quot;];
+  node0 -&gt; RETURN [label=&quot;SYN_BLOCK&quot;, fontcolor=&quot;red&quot;, weight=0.01, color=&quot;red&quot;];
+  node0 -&gt; node1 [label=&quot;UNCOND&quot;, fontcolor=&quot;red&quot;, weight=0.01, color=&quot;red&quot;]];
+}
+
+&gt; but was:&lt;digraph [ LinkedGraph {
+  node [color=lightblue2, style=filled];
+  LDN1045567253 [label=&quot;checkSideEffects&quot; color=&quot;white&quot;];
+  LDN1046056441 [label=&quot;beforeMainOptimizations&quot; color=&quot;white&quot;];
+  LDN1120670624 [label=&quot;beforeStandardOptimizations&quot; color=&quot;white&quot;];
+  LDN1255445356 [label=&quot;collapseVariableDeclarations&quot; color=&quot;white&quot;];
+  LDN1273879638 [label=&quot;renameLabels&quot; color=&quot;white&quot;];
+  LDN1340086277 [label=&quot;sanityCheckAst&quot; color=&quot;white&quot;];
+  LDN1345293143 [label=&quot;processDefines&quot; color=&quot;white&quot;];
+  LDN136312946 [label=&quot;closureReplaceGetCssName&quot; color=&quot;white&quot;];
+  LDN1427247001 [label=&quot;sanityCheckVars&quot; color=&quot;white&quot;];
+  LDN1444494461 [label=&quot;closurePrimitives&quot; color=&quot;white&quot;];
+  LDN1447685190 [label=&quot;inlineVariables&quot; color=&quot;white&quot;];
+  LDN1448277333 [label=&quot;peepholeOptimizations1&quot; color=&quot;white&quot;];
+  LDN1562950869 [label=&quot;deadAssignmentsElimination&quot; color=&quot;white&quot;];
+  LDN1602785474 [label=&quot;beforeStandardChecks&quot; color=&quot;white&quot;];
+  LDN161113555 [label=&quot;denormalize&quot; color=&quot;white&quot;];
+  LDN1618683794 [label=&quot;removeUnusedVars&quot; color=&quot;white&quot;];
+  LDN1693003105 [label=&quot;convertToDottedProperties&quot; color=&quot;white&quot;];
+  LDN1746117425 [label=&quot;latePeepholeOptimizations&quot; color=&quot;white&quot;];
+  LDN2006842965 [label=&quot;removeUnusedVars1&quot; color=&quot;white&quot;];
+  LDN2021835850 [label=&quot;renameVars&quot; color=&quot;white&quot;];
+  LDN2027701910 [label=&quot;closureOptimizePrimitives&quot; color=&quot;white&quot;];
+  LDN2034975583 [label=&quot;checkControlStructures&quot; color=&quot;white&quot;];
+  LDN2041996211 [label=&quot;checkConsts&quot; color=&quot;white&quot;];
+  LDN2117193231 [label=&quot;markUnnormalized&quot; color=&quot;white&quot;];
+  LDN2141066548 [label=&quot;flowSensitiveInlineVariables&quot; color=&quot;white&quot;];
+  LDN286658790 [label=&quot;checkVars&quot; color=&quot;white&quot;];
+  LDN289711450 [label=&quot;peepholeOptimizations&quot; color=&quot;white&quot;];
+  LDN327840833 [label=&quot;closureRewriteGoogClass&quot; color=&quot;white&quot;];
+  LDN461448225 [label=&quot;afterModuleMotion&quot; color=&quot;white&quot;];
+  LDN467146800 [label=&quot;afterStandardChecks&quot; color=&quot;white&quot;];
+  LDN550572371 [label=&quot;optimizeArgumentsArray&quot; color=&quot;white&quot;];
+  LDN634156144 [label=&quot;invertContextualRenaming&quot; color=&quot;white&quot;];
+  LDN643587433 [label=&quot;inlineFunctions&quot; color=&quot;white&quot;];
+  LDN648358364 [label=&quot;minimizeExitPoints&quot; color=&quot;white&quot;];
+  LDN684230144 [label=&quot;removeUnreachableCode&quot; color=&quot;white&quot;];
+  LDN701724503 [label=&quot;stripSideEffectProtection&quot; color=&quot;white&quot;];
+  LDN814245389 [label=&quot;exploitAssign&quot; color=&quot;white&quot;];
+  LDN828447060 [label=&quot;closureCodeRemoval&quot; color=&quot;white&quot;];
+  LDN83674409 [label=&quot;checkControlFlow&quot; color=&quot;white&quot;];
+  LDN842422776 [label=&quot;collapseObjectLiterals&quot; color=&quot;white&quot;];
+  LDN845388562 [label=&quot;garbageCollectChecks&quot; color=&quot;white&quot;];
+  LDN855501888 [label=&quot;beforeModuleMotion&quot; color=&quot;white&quot;];
+  LDN948424584 [label=&quot;suspiciousCode&quot; color=&quot;white&quot;];
+  LDN955443582 [label=&quot;coalesceVariableNames&quot; color=&quot;white&quot;];
+  LDN967531000 [label=&quot;closureGoogScopeAliases&quot; color=&quot;white&quot;];
+  LDN1045567253 -&gt; LDN948424584;
+  LDN1046056441 -&gt; LDN842422776;
+  LDN1120670624 -&gt; LDN550572371;
+  LDN1255445356 -&gt; LDN161113555;
+  LDN1273879638 -&gt; LDN1746117425;
+  LDN1340086277 -&gt; LDN1427247001;
+  LDN1345293143 -&gt; LDN467146800;
+  LDN136312946 -&gt; LDN1345293143;
+  LDN1444494461 -&gt; LDN286658790;
+  LDN1447685190 -&gt; LDN648358364;
+  LDN1448277333 -&gt; LDN1448277333;
+  LDN1448277333 -&gt; LDN814245389;
+  LDN1562950869 -&gt; LDN1618683794;
+  LDN1602785474 -&gt; LDN967531000;
+  LDN161113555 -&gt; LDN634156144;
+  LDN1618683794 -&gt; LDN842422776;
+  LDN1618683794 -&gt; LDN855501888;
+  LDN1693003105 -&gt; LDN2117193231;
+  LDN1746117425 -&gt; LDN701724503;
+  LDN2006842965 -&gt; LDN1693003105;
+  LDN2006842965 -&gt; LDN2006842965;
+  LDN2021835850 -&gt; LDN1273879638;
+  LDN2027701910 -&gt; LDN1046056441;
+  LDN2034975583 -&gt; LDN1444494461;
+  LDN2041996211 -&gt; LDN2027701910;
+  LDN2117193231 -&gt; LDN955443582;
+  LDN2141066548 -&gt; LDN2006842965;
+  LDN286658790 -&gt; LDN83674409;
+  LDN289711450 -&gt; LDN684230144;
+  LDN327840833 -&gt; LDN1045567253;
+  LDN461448225 -&gt; LDN2141066548;
+  LDN467146800 -&gt; LDN845388562;
+  LDN550572371 -&gt; LDN828447060;
+  LDN634156144 -&gt; LDN2021835850;
+  LDN643587433 -&gt; LDN1562950869;
+  LDN648358364 -&gt; LDN289711450;
+  LDN684230144 -&gt; LDN643587433;
+  LDN701724503 -&gt; LDN1340086277;
+  LDN814245389 -&gt; LDN1255445356;
+  LDN828447060 -&gt; LDN2041996211;
+  LDN83674409 -&gt; LDN136312946;
+  LDN842422776 -&gt; LDN1447685190;
+  LDN845388562 -&gt; LDN1120670624;
+  LDN855501888 -&gt; LDN461448225;
+  LDN948424584 -&gt; LDN2034975583;
+  LDN955443582 -&gt; LDN1448277333;
+  LDN967531000 -&gt; LDN327840833];
+}
+
+&gt;
+	at com.google.javascript.jscomp.CommandLineRunnerTest.__CLR4_4_1yxhz8m1nfk(CommandLineRunnerTest.java:262)
+	at com.google.javascript.jscomp.CommandLineRunnerTest.testPrintPassGraph423(CommandLineRunnerTest.java:259)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testVariableMapExpansion3424" time="0.014" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testFormattingSingleQuote426" time="0.014">
+    <failure message="expected:&lt;var x=[&quot;&quot;];&gt; but was:&lt;var x=[&apos;&apos;];&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;var x=[&quot;&quot;];&gt; but was:&lt;var x=[&apos;&apos;];&gt;
+	at com.google.javascript.jscomp.CommandLineRunnerTest.__CLR4_4_1th90ea1nfu(CommandLineRunnerTest.java:274)
+	at com.google.javascript.jscomp.CommandLineRunnerTest.testFormattingSingleQuote426(CommandLineRunnerTest.java:271)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourceMapExpansion3427" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testInlineInFunction5100" time="0.02" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourceMapExpansion1402" time="0.024" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Closure Compiler (http://code.google.com/closure/compiler)
+Version: Unversioned directory
+Built on: 2023/01/12 01:53
+]]></system-err>
+</testsuite>

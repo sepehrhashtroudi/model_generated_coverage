@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":44,"id":6174,"methods":[{"el":33,"sc":5,"sl":25},{"el":43,"sc":5,"sl":35}],"name":"StdConverter","sl":13}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_166":{"methods":[{"sl":35}],"name":"testDelegating129","pass":true,"statements":[{"sl":38},{"sl":39},{"sl":42}]},"test_257":{"methods":[{"sl":25}],"name":"testClassAnnotationForLists26","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":32}]},"test_346":{"methods":[{"sl":25}],"name":"testPropertyAnnotationArrayLC27","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":32}]},"test_36":{"methods":[{"sl":35}],"name":"testPropertyAnnotationForMaps11","pass":true,"statements":[{"sl":38},{"sl":39},{"sl":42}]},"test_384":{"methods":[{"sl":35}],"name":"testPropertyAnnotationForLists135","pass":true,"statements":[{"sl":38},{"sl":39},{"sl":42}]},"test_534":{"methods":[{"sl":25}],"name":"testPropertyAnnotationForArrays335","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":32}]},"test_537":{"methods":[{"sl":35}],"name":"testPropertyAnnotationSimple15","pass":true,"statements":[{"sl":38},{"sl":39},{"sl":42}]},"test_558":{"methods":[{"sl":25}],"name":"testPropertyAnnotationForLists519","pass":true,"statements":[{"sl":28},{"sl":29},{"sl":32}]},"test_562":{"methods":[{"sl":35}],"name":"testClassAnnotationForLists530","pass":true,"statements":[{"sl":38},{"sl":39},{"sl":42}]},"test_582":{"methods":[{"sl":35}],"name":"testPropertyAnnotationForArrays522","pass":true,"statements":[{"sl":38},{"sl":39},{"sl":42}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [257, 558, 534, 346], [], [], [257, 558, 534, 346], [257, 558, 534, 346], [], [], [257, 558, 534, 346], [], [], [384, 537, 582, 166, 562, 36], [], [], [384, 537, 582, 166, 562, 36], [384, 537, 582, 166, 562, 36], [], [], [384, 537, 582, 166, 562, 36], [], []]

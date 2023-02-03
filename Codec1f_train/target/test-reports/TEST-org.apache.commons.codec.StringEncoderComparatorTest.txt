@@ -1,0 +1,7 @@
+Testsuite: org.apache.commons.codec.StringEncoderComparatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec
+
+Testcase: testComparatorNoArgCon41 took 0.03 sec
+Testcase: testComparatorWithDoubleMetaphone56 took 0.005 sec
+Testcase: testComparatorWithDoubleMetaphoneAndInvalidInput88 took 0.001 sec
+Testcase: testComparatorWithSoundex90 took 0.004 sec

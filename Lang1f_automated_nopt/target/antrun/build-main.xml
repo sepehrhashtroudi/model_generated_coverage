@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="/home/sepehr/masters/test_generation/model_generated_coverage/Lang1f_automated_nopt/target/apidocs/META-INF">
+    <fileset dir="/home/sepehr/masters/test_generation/model_generated_coverage/Lang1f_automated_nopt">
+      <include name="LICENSE.txt"/>
+      <include name="NOTICE.txt"/>
+    </fileset>
+  </copy>
+</target>
+</project>

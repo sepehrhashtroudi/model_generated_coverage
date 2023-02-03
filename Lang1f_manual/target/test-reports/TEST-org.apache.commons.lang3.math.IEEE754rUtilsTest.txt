@@ -1,0 +1,32 @@
+Testsuite: org.apache.commons.lang3.math.IEEE754rUtilsTest
+Tests run: 9, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec
+
+Testcase: testEnforceExceptions35 took 0.022 sec
+Testcase: testMinimumDouble236 took 0.004 sec
+	FAILED
+expected:<12.3> but was:<13.3>
+junit.framework.AssertionFailedError: expected:<12.3> but was:<13.3>
+	at org.apache.commons.lang3.math.IEEE754rUtilsTest.testMinimumDouble236(IEEE754rUtilsTest.java:152)
+
+Testcase: testMinimumFloat233 took 0.003 sec
+Testcase: testMinimumFloat235 took 0.001 sec
+	FAILED
+expected:<12.3> but was:<13.3>
+junit.framework.AssertionFailedError: expected:<12.3> but was:<13.3>
+	at org.apache.commons.lang3.math.IEEE754rUtilsTest.testMinimumFloat235(IEEE754rUtilsTest.java:141)
+
+Testcase: testMinimumFloat238 took 0 sec
+Testcase: testMaximumDouble239 took 0.001 sec
+	FAILED
+expected:<14.3> but was:<13.3>
+junit.framework.AssertionFailedError: expected:<14.3> but was:<13.3>
+	at org.apache.commons.lang3.math.IEEE754rUtilsTest.testMaximumDouble239(IEEE754rUtilsTest.java:215)
+
+Testcase: testMaximumDouble240 took 0 sec
+Testcase: testEnforceExceptions234 took 0 sec
+	FAILED
+IllegalArgumentException expected for null input
+junit.framework.AssertionFailedError: IllegalArgumentException expected for null input
+	at org.apache.commons.lang3.math.IEEE754rUtilsTest.testEnforceExceptions234(IEEE754rUtilsTest.java:95)
+
+Testcase: testEnforceExceptions237 took 0 sec

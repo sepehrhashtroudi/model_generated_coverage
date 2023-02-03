@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Thu Jan 12 2023 14:04:05 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class TypedScopeCreatorTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="TypedScopeCreatorTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>TypedScopeCreatorTest</td>
+        <td class="testPasses"><span class="sortValue">41</span>41</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.155</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testFunctionInOr2291</span><a href="TypedScopeCreatorTest_testFunctionInOr2291_lo.html">TypedScopeCreatorTest.testFunctionInOr2291</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467966</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testMethodBeforeFunction11681</span><a href="TypedScopeCreatorTest_testMethodBeforeFunction11681_110.html">TypedScopeCreatorTest.testMethodBeforeFunction11681</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557468033</span>12 Jan 14:04:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testStubProperty1658</span><a href="TypedScopeCreatorTest_testStubProperty1658_3e.html">TypedScopeCreatorTest.testStubProperty1658</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557468029</span>12 Jan 14:04:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testStubsInExterns4631</span><a href="TypedScopeCreatorTest_testStubsInExterns4631_zx.html">TypedScopeCreatorTest.testStubsInExterns4631</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467892</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testTypesInExterns890</span><a href="TypedScopeCreatorTest_testTypesInExterns890_kz.html">TypedScopeCreatorTest.testTypesInExterns890</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467911</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testReturnTypeInference51799</span><a href="TypedScopeCreatorTest_testReturnTypeInference51799_1j9.html">TypedScopeCreatorTest.testReturnTypeInference51799</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557468048</span>12 Jan 14:04:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testBadCtorInit12020</span><a href="TypedScopeCreatorTest_testBadCtorInit12020_1is.html">TypedScopeCreatorTest.testBadCtorInit12020</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557468070</span>12 Jan 14:04:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testTemplateType71515</span><a href="TypedScopeCreatorTest_testTemplateType71515_1mx.html">TypedScopeCreatorTest.testTemplateType71515</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557468011</span>12 Jan 14:04:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testTemplateType62134</span><a href="TypedScopeCreatorTest_testTemplateType62134_1n4.html">TypedScopeCreatorTest.testTemplateType62134</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467955</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testDeclaredCatchExpression2942</span><a href="TypedScopeCreatorTest_testDeclaredCatchExpression2942_11d.html">TypedScopeCreatorTest.testDeclaredCatchExpression2942</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467922</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testBogusPrototypeInit977</span><a href="TypedScopeCreatorTest_testBogusPrototypeInit977_16s.html">TypedScopeCreatorTest.testBogusPrototypeInit977</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467926</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testTemplateType4b2416</span><a href="TypedScopeCreatorTest_testTemplateType4b2416_y.html">TypedScopeCreatorTest.testTemplateType4b2416</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467975</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testPropertiesOnInterface21588</span><a href="TypedScopeCreatorTest_testPropertiesOnInterface21588_14b.html">TypedScopeCreatorTest.testPropertiesOnInterface21588</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557468020</span>12 Jan 14:04:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testTemplateType7b134</span><a href="TypedScopeCreatorTest_testTemplateType7b134_10r.html">TypedScopeCreatorTest.testTemplateType7b134</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467980</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testCollectedCtorProperty1166</span><a href="TypedScopeCreatorTest_testCollectedCtorProperty1166_1g6.html">TypedScopeCreatorTest.testCollectedCtorProperty1166</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467993</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testConstructorProperty1256</span><a href="TypedScopeCreatorTest_testConstructorProperty1256_17s.html">TypedScopeCreatorTest.testConstructorProperty1256</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557468002</span>12 Jan 14:04:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testGlobalQualifiedNameInLocalScope138</span><a href="TypedScopeCreatorTest_testGlobalQualifiedNameInLocalScope138_1il.html">TypedScopeCreatorTest.testGlobalQualifiedNameInLocalScope138</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467988</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testPrototypeInit818</span><a href="TypedScopeCreatorTest_testPrototypeInit818_5h.html">TypedScopeCreatorTest.testPrototypeInit818</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467906</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testGlobalThis2441</span><a href="TypedScopeCreatorTest_testGlobalThis2441_io.html">TypedScopeCreatorTest.testGlobalThis2441</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467880</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testEnumAlias98</span><a href="TypedScopeCreatorTest_testEnumAlias98_14v.html">TypedScopeCreatorTest.testEnumAlias98</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467951</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testBadObjectLiteralCast12072</span><a href="TypedScopeCreatorTest_testBadObjectLiteralCast12072_d0.html">TypedScopeCreatorTest.testBadObjectLiteralCast12072</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557468078</span>12 Jan 14:04:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testClosureParameterTypesWithJSDoc1741</span><a href="TypedScopeCreatorTest_testClosureParameterTypesWithJSDoc1741_uj.html">TypedScopeCreatorTest.testClosureParameterTypesWithJSDoc1741</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557468043</span>12 Jan 14:04:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testInferredProperty42012</span><a href="TypedScopeCreatorTest_testInferredProperty42012_fi.html">TypedScopeCreatorTest.testInferredProperty42012</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557468066</span>12 Jan 14:04:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testNamespacedEnum503</span><a href="TypedScopeCreatorTest_testNamespacedEnum503_1gj.html">TypedScopeCreatorTest.testNamespacedEnum503</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467886</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testNamespacedConstructorAlias752</span><a href="TypedScopeCreatorTest_testNamespacedConstructorAlias752_hu.html">TypedScopeCreatorTest.testNamespacedConstructorAlias752</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467901</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testConstructorNode905</span><a href="TypedScopeCreatorTest_testConstructorNode905_1dq.html">TypedScopeCreatorTest.testConstructorNode905</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467917</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testObjectLiteralCast1140</span><a href="TypedScopeCreatorTest_testObjectLiteralCast1140_st.html">TypedScopeCreatorTest.testObjectLiteralCast1140</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467941</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testBadObjectLiteralCast21132</span><a href="TypedScopeCreatorTest_testBadObjectLiteralCast21132_1np.html">TypedScopeCreatorTest.testBadObjectLiteralCast21132</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467936</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testInferredProperty31607</span><a href="TypedScopeCreatorTest_testInferredProperty31607_c7.html">TypedScopeCreatorTest.testInferredProperty31607</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557468025</span>12 Jan 14:04:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testDeclaredConstType51190</span><a href="TypedScopeCreatorTest_testDeclaredConstType51190_ih.html">TypedScopeCreatorTest.testDeclaredConstType51190</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467998</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testLiteralTypesInferred1855</span><a href="TypedScopeCreatorTest_testLiteralTypesInferred1855_up.html">TypedScopeCreatorTest.testLiteralTypesInferred1855</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557468052</span>12 Jan 14:04:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testAbstractMethod4740</span><a href="TypedScopeCreatorTest_testAbstractMethod4740_1as.html">TypedScopeCreatorTest.testAbstractMethod4740</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467896</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testStubsInExterns2045</span><a href="TypedScopeCreatorTest_testStubsInExterns2045_1l0.html">TypedScopeCreatorTest.testStubsInExterns2045</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557468074</span>12 Jan 14:04:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testPropertyDeclarationOnRecordType2321</span><a href="TypedScopeCreatorTest_testPropertyDeclarationOnRecordType2321_1rm.html">TypedScopeCreatorTest.testPropertyDeclarationOnRecordType2321</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467970</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testDuplicateExternProperty21873</span><a href="TypedScopeCreatorTest_testDuplicateExternProperty21873_hf.html">TypedScopeCreatorTest.testDuplicateExternProperty21873</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557468056</span>12 Jan 14:04:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testDeclaredConstType31095</span><a href="TypedScopeCreatorTest_testDeclaredConstType31095_gd.html">TypedScopeCreatorTest.testDeclaredConstType31095</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467931</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testNamespacedFunctionStubLocal1355</span><a href="TypedScopeCreatorTest_testNamespacedFunctionStubLocal1355_4j.html">TypedScopeCreatorTest.testNamespacedFunctionStubLocal1355</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557468007</span>12 Jan 14:04:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testTemplateType41973</span><a href="TypedScopeCreatorTest_testTemplateType41973_38.html">TypedScopeCreatorTest.testTemplateType41973</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557468061</span>12 Jan 14:04:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testTemplateType11707</span><a href="TypedScopeCreatorTest_testTemplateType11707_1ci.html">TypedScopeCreatorTest.testTemplateType11707</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557468037</span>12 Jan 14:04:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testCollectedFunctionStub94</span><a href="TypedScopeCreatorTest_testCollectedFunctionStub94_1ej.html">TypedScopeCreatorTest.testCollectedFunctionStub94</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467946</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypedScopeCreatorTest.testTemplateType102171</span><a href="TypedScopeCreatorTest_testTemplateType102171_nw.html">TypedScopeCreatorTest.testTemplateType102171</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557467961</span>12 Jan 14:04:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu Jan 12 2023 14:04:35 MST using coverage data from Thu Jan 12 2023 14:04:30 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

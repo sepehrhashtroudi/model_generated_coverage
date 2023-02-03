@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Test set: com.google.gson.stream.JsonWriterTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 0.018 sec <<< FAILURE!
+testValue11(com.google.gson.stream.JsonWriterTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[[
+   true,
+   false,
+   5.0,
+   null,
+   {
+      "a": 6.0,
+      "b": 7.0
+   },
+   [
+      8.0,
+      9.0
+   ]
+]]> but was:<[[true,false,5.0,null,{"a":6.0,"b":7.0},[8.0,9.0]]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.google.gson.stream.JsonWriterTest.__CLR4_4_1ci03zu43w(JsonWriterTest.java:81)
+	at com.google.gson.stream.JsonWriterTest.testValue11(JsonWriterTest.java:64)
+
+testValue10(com.google.gson.stream.JsonWriterTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[[
+   true,
+   false,
+   5.0,
+   null,
+   {
+      "a": 6.0,
+      "b": 7.0
+   },
+   [
+      8.0,
+      9.0
+   ]
+]]> but was:<[[true,false,5.0,null,{"a":6.0,"b":7.0},[8.0,9.0]]]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.google.gson.stream.JsonWriterTest.__CLR4_4_1fr02sb43d(JsonWriterTest.java:62)
+	at com.google.gson.stream.JsonWriterTest.testValue10(JsonWriterTest.java:44)
+
+testNullValue9(com.google.gson.stream.JsonWriterTest)  Time elapsed: 0.003 sec  <<< ERROR!
+java.lang.IllegalStateException: Nesting problem: [NONEMPTY_DOCUMENT, EMPTY_OBJECT]
+	at com.google.gson.stream.JsonWriter.beforeValue(JsonWriter.java:550)
+	at com.google.gson.stream.JsonWriter.nullValue(JsonWriter.java:338)
+	at com.google.gson.stream.JsonWriterTest.__CLR4_4_1a64z3c437(JsonWriterTest.java:41)
+	at com.google.gson.stream.JsonWriterTest.testNullValue9(JsonWriterTest.java:37)
+
+testDeepNestingArrays15(com.google.gson.stream.JsonWriterTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]> but was:<[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.google.gson.stream.JsonWriterTest.__CLR4_4_1rcrze745d(JsonWriterTest.java:132)
+	at com.google.gson.stream.JsonWriterTest.testDeepNestingArrays15(JsonWriterTest.java:123)
+

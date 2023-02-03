@@ -1,0 +1,72 @@
+Testsuite: org.apache.commons.lang3.ConversionTest
+Tests run: 12, Failures: 10, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+
+Testcase: testIntToHexDigitMsb0349 took 0.023 sec
+	FAILED
+expected:<49> but was:<56>
+junit.framework.AssertionFailedError: expected:<49> but was:<56>
+	at org.apache.commons.lang3.ConversionTest.testIntToHexDigitMsb0349(ConversionTest.java:142)
+
+Testcase: testIntToHexDigitMsb0350 took 0 sec
+	FAILED
+expected:<49> but was:<56>
+junit.framework.AssertionFailedError: expected:<49> but was:<56>
+	at org.apache.commons.lang3.ConversionTest.testIntToHexDigitMsb0350(ConversionTest.java:167)
+
+Testcase: testIntToHexDigitMsb0352 took 0 sec
+	FAILED
+expected:<49> but was:<56>
+junit.framework.AssertionFailedError: expected:<49> but was:<56>
+	at org.apache.commons.lang3.ConversionTest.testIntToHexDigitMsb0352(ConversionTest.java:212)
+
+Testcase: testIntToHexDigitMsb0353 took 0.001 sec
+	FAILED
+expected:<49> but was:<56>
+junit.framework.AssertionFailedError: expected:<49> but was:<56>
+	at org.apache.commons.lang3.ConversionTest.testIntToHexDigitMsb0353(ConversionTest.java:237)
+
+Testcase: testIntToHexDigitMsb062 took 0.001 sec
+	FAILED
+expected:<49> but was:<56>
+junit.framework.AssertionFailedError: expected:<49> but was:<56>
+	at org.apache.commons.lang3.ConversionTest.testIntToHexDigitMsb062(ConversionTest.java:62)
+
+Testcase: testHexDigitToBinary86 took 0.001 sec
+	FAILED
+Mismatch at index 0 between:
+0,0,0,1 and
+1,0,0,0
+expected:<false> but was:<true>
+junit.framework.AssertionFailedError: Mismatch at index 0 between:
+0,0,0,1 and
+1,0,0,0
+expected:<false> but was:<true>
+	at org.apache.commons.lang3.ConversionTest.assertBinaryEquals(ConversionTest.java:358)
+	at org.apache.commons.lang3.ConversionTest.testHexDigitToBinary86(ConversionTest.java:97)
+
+Testcase: testBinaryBeMsb0ToHexDigit134 took 0.001 sec
+	FAILED
+expected:<49> but was:<56>
+junit.framework.AssertionFailedError: expected:<49> but was:<56>
+	at org.apache.commons.lang3.ConversionTest.testBinaryBeMsb0ToHexDigit134(ConversionTest.java:125)
+
+Testcase: testBinaryBeMsb0ToHexDigit508 took 0 sec
+	FAILED
+expected:<50> but was:<52>
+junit.framework.AssertionFailedError: expected:<50> but was:<52>
+	at org.apache.commons.lang3.ConversionTest.testBinaryBeMsb0ToHexDigit508(ConversionTest.java:263)
+
+Testcase: testBinaryToHexDigit34 took 0 sec
+Testcase: testByteToHex351 took 0.001 sec
+	FAILED
+expected:<[]> but was:<[0]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[0]>
+	at org.apache.commons.lang3.ConversionTest.testByteToHex351(ConversionTest.java:190)
+
+Testcase: testShortArrayToInt132 took 0 sec
+	FAILED
+expected:<0> but was:<52721>
+junit.framework.AssertionFailedError: expected:<0> but was:<52721>
+	at org.apache.commons.lang3.ConversionTest.testShortArrayToInt132(ConversionTest.java:115)
+
+Testcase: testHexToInt68 took 0 sec

@@ -1,0 +1,16 @@
+Testsuite: org.apache.commons.codec.language.SoundexTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+
+Testcase: testUsEnglishStatic took 0.009 sec
+Testcase: testMaxLength37 took 0 sec
+Testcase: testDifference72 took 0.001 sec
+Testcase: testNewInstance took 0.003 sec
+Testcase: testUsMappingEWithAcute took 0 sec
+Testcase: testHWRuleEx183 took 0 sec
+Testcase: testMaxLengthLessThan3Fix55 took 0.001 sec
+Testcase: testUsMappingEWithAcute33 took 0.001 sec
+Testcase: testUsEnglishStatic2 took 0.001 sec
+Testcase: testLocaleIndependence54 took 0.001 sec
+Testcase: testEncodeWithInvalidObject26 took 0.001 sec
+Testcase: testEncodeNull43 took 0 sec
+Testcase: testEncodeEmpty60 took 0.001 sec

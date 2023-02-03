@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":51,"id":11230,"methods":[{"el":30,"sc":5,"sl":27},{"el":37,"sc":5,"sl":32},{"el":44,"sc":5,"sl":39},{"el":50,"sc":5,"sl":46}],"name":"FailingSerializer","sl":22}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_119":{"methods":[{"sl":27}],"name":"testOverrideMapValid21","pass":true,"statements":[{"sl":28},{"sl":29}]},"test_158":{"methods":[{"sl":27}],"name":"testSimpleGetterInterfaceImpl150","pass":true,"statements":[{"sl":28},{"sl":29}]},"test_184":{"methods":[{"sl":27}],"name":"testComplexObject203","pass":true,"statements":[{"sl":28},{"sl":29}]},"test_314":{"methods":[{"sl":27}],"name":"testExceptionWithMapperAndGenerator486","pass":true,"statements":[{"sl":28},{"sl":29}]},"test_346":{"methods":[{"sl":27}],"name":"testFromMap79","pass":true,"statements":[{"sl":28},{"sl":29}]},"test_366":{"methods":[{"sl":27}],"name":"testReadingArrayAsTree288","pass":true,"statements":[{"sl":28},{"sl":29}]},"test_400":{"methods":[{"sl":27}],"name":"testDouble78","pass":true,"statements":[{"sl":28},{"sl":29}]},"test_432":{"methods":[{"sl":27}],"name":"testSneakySelfRefs247","pass":true,"statements":[{"sl":28},{"sl":29}]},"test_474":{"methods":[{"sl":27}],"name":"testMapperVersions2","pass":true,"statements":[{"sl":28},{"sl":29}]},"test_542":{"methods":[{"sl":27}],"name":"testSimpleObject85","pass":true,"statements":[{"sl":28},{"sl":29}]},"test_554":{"methods":[{"sl":27}],"name":"testSimpleProxied562","pass":true,"statements":[{"sl":28},{"sl":29}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [346, 400, 554, 432, 542, 314, 184, 158, 366, 119, 474], [346, 400, 554, 432, 542, 314, 184, 158, 366, 119, 474], [346, 400, 554, 432, 542, 314, 184, 158, 366, 119, 474], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]

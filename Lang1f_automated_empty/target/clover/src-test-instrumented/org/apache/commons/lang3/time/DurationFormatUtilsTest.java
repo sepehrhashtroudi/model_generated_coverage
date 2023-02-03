@@ -1,0 +1,128 @@
+/* $$ This file has been instrumented by Clover 4.4.1#2019101123313948 $$ *//*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package org.apache.commons.lang3.time;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Modifier;
+import java.util.Calendar;
+import java.util.TimeZone;
+
+/**
+ * TestCase for DurationFormatUtils.
+ * 
+ */
+public class DurationFormatUtilsTest {static class __CLR4_4_1gcugculdnigh0l{public static com_atlassian_clover.CoverageRecorder R;public static com_atlassian_clover.CloverProfile[] profiles = { };@java.lang.SuppressWarnings("unchecked") public static <I, T extends I> I lambdaInc(final int i,final T l,final int si){java.lang.reflect.InvocationHandler h=new java.lang.reflect.InvocationHandler(){public java.lang.Object invoke(java.lang.Object p,java.lang.reflect.Method m,java.lang.Object[] a) throws Throwable{R.inc(i);R.inc(si);try{return m.invoke(l,a);}catch(java.lang.reflect.InvocationTargetException e){throw e.getCause()!=null?e.getCause():new RuntimeException("Clover failed to invoke instrumented lambda",e);}}};return (I)java.lang.reflect.Proxy.newProxyInstance(l.getClass().getClassLoader(),l.getClass().getInterfaces(),h);}static{com_atlassian_clover.CoverageRecorder _R=null;try{com_atlassian_clover.CloverVersionInfo.An_old_version_of_clover_is_on_your_compilation_classpath___Please_remove___Required_version_is___4_4_1();if(2019101123313948L!=com_atlassian_clover.CloverVersionInfo.getBuildStamp()){com_atlassian_clover.Clover.l("[CLOVER] WARNING: The Clover version used in instrumentation does not match the runtime version. You need to run instrumented classes against the same version of Clover that you instrumented with.");com_atlassian_clover.Clover.l("[CLOVER] WARNING: Instr=4.4.1#2019101123313948,Runtime="+com_atlassian_clover.CloverVersionInfo.getReleaseNum()+"#"+com_atlassian_clover.CloverVersionInfo.getBuildStamp());}R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getRecorder("\u002f\u0068\u006f\u006d\u0065\u002f\u0073\u0065\u0070\u0065\u0068\u0072\u002f\u006d\u0061\u0073\u0074\u0065\u0072\u0073\u002f\u0074\u0065\u0073\u0074\u005f\u0067\u0065\u006e\u0065\u0072\u0061\u0074\u0069\u006f\u006e\u002f\u006d\u006f\u0064\u0065\u006c\u005f\u0067\u0065\u006e\u0065\u0072\u0061\u0074\u0065\u0064\u005f\u0063\u006f\u0076\u0065\u0072\u0061\u0067\u0065\u002f\u004c\u0061\u006e\u0067\u0031\u0066\u005f\u0061\u0075\u0074\u006f\u006d\u0061\u0074\u0065\u0064\u005f\u0065\u006d\u0070\u0074\u0079\u002f\u0074\u0061\u0072\u0067\u0065\u0074\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002e\u0064\u0062",1675367339710L,8589935092L,21236,profiles,new java.lang.String[]{"clover.distributed.coverage",null});}catch(java.lang.SecurityException e){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised because it has insufficient security privileges. Please consult the Clover documentation on the security policy file changes required. ("+e.getClass()+":"+e.getMessage()+")");}catch(java.lang.NoClassDefFoundError e){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised. Are you sure you have Clover in the runtime classpath? ("+e.getClass()+":"+e.getMessage()+")");}catch(java.lang.Throwable t){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised because of an unexpected error. ("+t.getClass()+":"+t.getMessage()+")");}R=_R;}}public static final com_atlassian_clover.TestNameSniffer __CLR4_4_1_TEST_NAME_SNIFFER=com_atlassian_clover.TestNameSniffer.NULL_INSTANCE;
+
+    // -----------------------------------------------------------------------
+    
+
+    // -----------------------------------------------------------------------
+    
+
+    /**
+     * Tests that "1 <unit>s" gets converted to "1 <unit>" but that "11 <unit>s" is left alone.
+     */
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    // http://issues.apache.org/bugzilla/show_bug.cgi?id=38401
+    
+
+    // https://issues.apache.org/jira/browse/LANG-281
+    
+
+    
+
+    // Testing the under a day range in DurationFormatUtils.formatPeriod
+    
+
+    // Attempting to test edge cases in DurationFormatUtils.formatPeriod
+    
+    
+    
+    
+    private static final int FOUR_YEARS = 365 * 3 + 366;
+    
+    // Takes a minute to run, so generally turned off
+//    public void testBrutally() {
+//        Calendar c = Calendar.getInstance();
+//        c.set(2004, 0, 1, 0, 0, 0);
+//        for (int i=0; i < FOUR_YEARS; i++) {
+//            bruteForce(c.get(Calendar.YEAR), c.get(Calendar.MONTH), c.get(Calendar.DAY_OF_MONTH), "d", Calendar.DAY_OF_MONTH );
+//            c.add(Calendar.DAY_OF_MONTH, 1);
+//        }
+//    }        
+    
+    private void bruteForce(final int year, final int month, final int day, final String format, final int calendarType) {try{__CLR4_4_1gcugculdnigh0l.R.inc(21198);
+        __CLR4_4_1gcugculdnigh0l.R.inc(21199);final String msg = year + "-" + month + "-" + day + " to ";
+        __CLR4_4_1gcugculdnigh0l.R.inc(21200);final Calendar c = Calendar.getInstance();
+        __CLR4_4_1gcugculdnigh0l.R.inc(21201);c.set(year, month, day, 0, 0, 0);
+        __CLR4_4_1gcugculdnigh0l.R.inc(21202);final int[] array1 = new int[] { year, month, day, 0, 0, 0 };
+        __CLR4_4_1gcugculdnigh0l.R.inc(21203);final int[] array2 = new int[] { year, month, day, 0, 0, 0 };
+        __CLR4_4_1gcugculdnigh0l.R.inc(21204);for (int i=0; (((i < FOUR_YEARS)&&(__CLR4_4_1gcugculdnigh0l.R.iget(21205)!=0|true))||(__CLR4_4_1gcugculdnigh0l.R.iget(21206)==0&false)); i++) {{
+            __CLR4_4_1gcugculdnigh0l.R.inc(21207);array2[0] = c.get(Calendar.YEAR);
+            __CLR4_4_1gcugculdnigh0l.R.inc(21208);array2[1] = c.get(Calendar.MONTH);
+            __CLR4_4_1gcugculdnigh0l.R.inc(21209);array2[2] = c.get(Calendar.DAY_OF_MONTH);
+            __CLR4_4_1gcugculdnigh0l.R.inc(21210);final String tmpMsg = msg + array2[0] + "-" + array2[1] + "-" + array2[2] + " at ";
+            __CLR4_4_1gcugculdnigh0l.R.inc(21211);assertEqualDuration( tmpMsg + i, Integer.toString(i), array1, array2, format );
+            __CLR4_4_1gcugculdnigh0l.R.inc(21212);c.add(calendarType, 1);
+        }
+    }}finally{__CLR4_4_1gcugculdnigh0l.R.flushNeeded();}}
+
+    private void assertEqualDuration(final String expected, final int[] start, final int[] end, final String format) {try{__CLR4_4_1gcugculdnigh0l.R.inc(21213);
+        __CLR4_4_1gcugculdnigh0l.R.inc(21214);assertEqualDuration(null, expected, start, end, format);
+    }finally{__CLR4_4_1gcugculdnigh0l.R.flushNeeded();}}
+    private void assertEqualDuration(final String message, final String expected, final int[] start, final int[] end, final String format) {try{__CLR4_4_1gcugculdnigh0l.R.inc(21215);
+        __CLR4_4_1gcugculdnigh0l.R.inc(21216);final Calendar cal1 = Calendar.getInstance();
+        __CLR4_4_1gcugculdnigh0l.R.inc(21217);cal1.set(start[0], start[1], start[2], start[3], start[4], start[5]);
+        __CLR4_4_1gcugculdnigh0l.R.inc(21218);cal1.set(Calendar.MILLISECOND, 0);
+        __CLR4_4_1gcugculdnigh0l.R.inc(21219);final Calendar cal2 = Calendar.getInstance();
+        __CLR4_4_1gcugculdnigh0l.R.inc(21220);cal2.set(end[0], end[1], end[2], end[3], end[4], end[5]);
+        __CLR4_4_1gcugculdnigh0l.R.inc(21221);cal2.set(Calendar.MILLISECOND, 0);
+        __CLR4_4_1gcugculdnigh0l.R.inc(21222);final long milli1 = cal1.getTime().getTime();
+        __CLR4_4_1gcugculdnigh0l.R.inc(21223);final long milli2 = cal2.getTime().getTime();
+        __CLR4_4_1gcugculdnigh0l.R.inc(21224);final String result = DurationFormatUtils.formatPeriod(milli1, milli2, format);
+        __CLR4_4_1gcugculdnigh0l.R.inc(21225);if ((((message == null)&&(__CLR4_4_1gcugculdnigh0l.R.iget(21226)!=0|true))||(__CLR4_4_1gcugculdnigh0l.R.iget(21227)==0&false))) {{
+            __CLR4_4_1gcugculdnigh0l.R.inc(21228);assertEquals(expected, result);
+        } }else {{
+            __CLR4_4_1gcugculdnigh0l.R.inc(21229);assertEquals(message, expected, result);
+        }
+    }}finally{__CLR4_4_1gcugculdnigh0l.R.flushNeeded();}}
+
+    private void assertArrayEquals(final DurationFormatUtils.Token[] obj1, final DurationFormatUtils.Token[] obj2) {try{__CLR4_4_1gcugculdnigh0l.R.inc(21230);
+        __CLR4_4_1gcugculdnigh0l.R.inc(21231);assertEquals("Arrays are unequal length. ", obj1.length, obj2.length);
+        __CLR4_4_1gcugculdnigh0l.R.inc(21232);for (int i = 0; (((i < obj1.length)&&(__CLR4_4_1gcugculdnigh0l.R.iget(21233)!=0|true))||(__CLR4_4_1gcugculdnigh0l.R.iget(21234)==0&false)); i++) {{
+            __CLR4_4_1gcugculdnigh0l.R.inc(21235);assertTrue("Index " + i + " not equal, " + obj1[i] + " vs " + obj2[i], obj1[i].equals(obj2[i]));
+        }
+    }}finally{__CLR4_4_1gcugculdnigh0l.R.flushNeeded();}}
+
+}

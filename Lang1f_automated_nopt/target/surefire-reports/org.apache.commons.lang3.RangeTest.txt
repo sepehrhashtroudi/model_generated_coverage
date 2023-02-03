@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.lang3.RangeTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.011 sec <<< FAILURE!
+nullElement(org.apache.commons.lang3.RangeTest)  Time elapsed: 0.005 sec  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.AssertionError>
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
+	at org.apache.commons.lang3.RangeTest.__CLR4_4_1qc089wfab(RangeTest.java:69)
+	at org.apache.commons.lang3.RangeTest.nullElement(RangeTest.java:69)
+
+testGetters955(org.apache.commons.lang3.RangeTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
+	at org.apache.commons.lang3.RangeTest.__CLR4_4_1gnxzaif9w(RangeTest.java:66)
+	at org.apache.commons.lang3.RangeTest.testGetters955(RangeTest.java:66)
+

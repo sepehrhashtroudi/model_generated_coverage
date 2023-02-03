@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":104,"id":14508,"methods":[{"el":40,"sc":1,"sl":31},{"el":45,"sc":1,"sl":43},{"el":57,"sc":1,"sl":48},{"el":88,"sc":5,"sl":73},{"el":103,"sc":5,"sl":90}],"name":"TestJsonParserSymbols","sl":14},{"el":26,"id":14508,"methods":[{"el":24,"sc":9,"sl":24},{"el":25,"sc":9,"sl":25}],"name":"TestJsonParserSymbols.MyJsonFactory","sl":22}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_103":{"methods":[{"sl":25},{"sl":48},{"sl":90}],"name":"testCharSymbolsWithEOF113","pass":true,"statements":[{"sl":25},{"sl":49},{"sl":50},{"sl":51},{"sl":52},{"sl":54},{"sl":55},{"sl":56},{"sl":92},{"sl":93},{"sl":98},{"sl":99},{"sl":100},{"sl":102}]},"test_104":{"methods":[{"sl":24},{"sl":31},{"sl":90}],"name":"testByteSymbolsWithEOF31","pass":true,"statements":[{"sl":24},{"sl":32},{"sl":33},{"sl":34},{"sl":35},{"sl":37},{"sl":38},{"sl":39},{"sl":92},{"sl":93},{"sl":94},{"sl":95},{"sl":96},{"sl":102}]},"test_12":{"methods":[{"sl":24},{"sl":43},{"sl":73},{"sl":90}],"name":"testByteSymbolsWithClose56","pass":true,"statements":[{"sl":24},{"sl":44},{"sl":75},{"sl":76},{"sl":78},{"sl":79},{"sl":80},{"sl":81},{"sl":84},{"sl":85},{"sl":87},{"sl":92},{"sl":93},{"sl":94},{"sl":95},{"sl":96},{"sl":102}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [12, 104], [103], [], [], [], [], [], [104], [104], [104], [104], [104], [], [104], [104], [104], [], [], [], [12], [12], [], [], [], [103], [103], [103], [103], [103], [], [103], [103], [103], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [12], [], [12], [12], [], [12], [12], [12], [12], [], [], [12], [12], [], [12], [], [], [12, 103, 104], [], [12, 103, 104], [12, 103, 104], [12, 104], [12, 104], [12, 104], [], [103], [103], [103], [], [12, 103, 104], [], []]

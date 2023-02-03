@@ -1,0 +1,6 @@
+Testsuite: org.apache.commons.lang3.EnumUtilsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+
+Testcase: test_generateBitVector432 took 0.023 sec
+Testcase: test_generateBitVectors_nullClassWithArray106 took 0 sec
+Testcase: test_generateBitVectorsFromArray104 took 0.007 sec

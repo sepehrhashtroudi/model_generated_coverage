@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":124,"id":36121,"methods":[{"el":118,"sc":1,"sl":100}],"name":"TestAbstractTypeNames","sl":17},{"el":22,"id":36121,"methods":[],"name":"TestAbstractTypeNames.Employee","sl":20},{"el":30,"id":36121,"methods":[],"name":"TestAbstractTypeNames.User","sl":27},{"el":49,"id":36121,"methods":[{"el":43,"sc":9,"sl":37},{"el":48,"sc":9,"sl":45}],"name":"TestAbstractTypeNames.DefaultEmployee","sl":33},{"el":77,"id":36126,"methods":[{"el":66,"sc":9,"sl":59},{"el":71,"sc":9,"sl":68},{"el":76,"sc":9,"sl":73}],"name":"TestAbstractTypeNames.DefaultUser","sl":54},{"el":83,"id":36134,"methods":[{"el":82,"sc":9,"sl":82}],"name":"TestAbstractTypeNames.BaseValue","sl":79},{"el":90,"id":36136,"methods":[{"el":88,"sc":13,"sl":87}],"name":"TestAbstractTypeNames.BeanWithAnon","sl":85}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_570":{"methods":[{"sl":37},{"sl":45},{"sl":59},{"sl":68},{"sl":73},{"sl":100}],"name":"testEmptyCollection122","pass":true,"statements":[{"sl":41},{"sl":42},{"sl":47},{"sl":63},{"sl":64},{"sl":65},{"sl":70},{"sl":75},{"sl":101},{"sl":102},{"sl":103},{"sl":104},{"sl":105},{"sl":106},{"sl":107},{"sl":108},{"sl":109},{"sl":110},{"sl":111},{"sl":112},{"sl":113},{"sl":114},{"sl":115},{"sl":116},{"sl":117}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [570], [], [], [], [570], [570], [], [], [570], [], [570], [], [], [], [], [], [], [], [], [], [], [], [570], [], [], [], [570], [570], [570], [], [], [570], [], [570], [], [], [570], [], [570], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [570], [570], [570], [570], [570], [570], [570], [570], [570], [570], [570], [570], [570], [570], [570], [570], [570], [570], [], [], [], [], [], [], []]

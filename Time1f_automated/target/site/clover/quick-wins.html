@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>Joda-Time 2.4-SNAPSHOT</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="http://www.joda.org/joda-time/" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="http://www.joda.org/joda-time/" target="_top">
+                                        Joda-Time 2.4-SNAPSHOT
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Sat Dec 31 2022 15:22:32 MST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+            <li class="menu-item ">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+
+                        <div style="text-align: right; margin-bottom: 10px">
+            
+            
+                                    <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;How to read this chart
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function (content, trigger, showPopup) {
+                var description = quickWinsDescription();
+                var title = 'Quick Wins';
+                content.css({"padding": "20px"}).html(
+                        '<h2>' + title + '</h2>' + description);
+                showPopup();
+                return false;
+            },
+            {
+                width: 600
+            }
+    );
+</script>
+        </div>
+
+        
+
+<div style="padding: 20px; border: 1px solid #cccccc; background-color: #f5f5f5; border-radius: 3px">
+          <div id="deepPackageCloud"  >
+                          
+    
+        
+    
+            <a href="org/joda/time/convert/AbstractConverter.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 13 ">AbstractConverter</a>
+            
+    
+            <a href="org/joda/time/base/AbstractDateTime.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 70 , # Elements Covered - 30 ">AbstractDateTime</a>
+            
+    
+            <a href="org/joda/time/base/AbstractDuration.html" class="tag"
+            style="font-size: 16px;color:#d04437"
+            title="# Elements - 71 , # Elements Covered - 9 ">AbstractDuration</a>
+            
+    
+            <a href="org/joda/time/base/AbstractInstant.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="# Elements - 104 , # Elements Covered - 29 ">AbstractInstant</a>
+            
+    
+            <a href="org/joda/time/base/AbstractInterval.html" class="tag"
+            style="font-size: 20px;color:#d5584c"
+            title="# Elements - 124 , # Elements Covered - 20 ">AbstractInterval</a>
+            
+    
+            <a href="org/joda/time/base/AbstractPartial.html" class="tag"
+            style="font-size: 22px;color:#d9695f"
+            title="# Elements - 151 , # Elements Covered - 63 ">AbstractPartial</a>
+            
+    
+            <a href="org/joda/time/field/AbstractPartialFieldProperty.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 83 , # Elements Covered - 38 ">AbstractPartialFieldProperty</a>
+            
+    
+            <a href="org/joda/time/base/AbstractPeriod.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 73 , # Elements Covered - 40 ">AbstractPeriod</a>
+            
+    
+            <a href="org/joda/time/field/AbstractReadableInstantFieldProperty.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 109 , # Elements Covered - 73 ">AbstractReadableInstantFieldProperty</a>
+            
+    
+            <a href="org/joda/time/chrono/AssembledChronology.html" class="tag"
+            style="font-size: 28px;color:#e28e87"
+            title="# Elements - 236 , # Elements Covered - 154 ">AssembledChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/AssembledChronology.html" class="tag"
+            style="font-size: 22px;color:#d9695f"
+            title="# Elements - 152 , # Elements Covered - 79 ">AssembledChronology.Fields</a>
+            
+    
+            <a href="org/joda/time/chrono/BaseChronology.html" class="tag"
+            style="font-size: 24px;color:#de7b72"
+            title="# Elements - 184 , # Elements Covered - 98 ">BaseChronology</a>
+            
+    
+            <a href="org/joda/time/base/BaseDateTime.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 46 , # Elements Covered - 31 ">BaseDateTime</a>
+            
+    
+            <a href="org/joda/time/field/BaseDateTimeField.html" class="tag"
+            style="font-size: 31px;color:#de7b72"
+            title="# Elements - 282 , # Elements Covered - 107 ">BaseDateTimeField</a>
+            
+    
+            <a href="org/joda/time/base/BaseDuration.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 41 , # Elements Covered - 8 ">BaseDuration</a>
+            
+    
+            <a href="org/joda/time/field/BaseDurationField.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 39 , # Elements Covered - 25 ">BaseDurationField</a>
+            
+    
+            <a href="org/joda/time/base/BaseInterval.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 86 , # Elements Covered - 25 ">BaseInterval</a>
+            
+    
+            <a href="org/joda/time/base/BaseLocal.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">BaseLocal</a>
+            
+    
+            <a href="org/joda/time/base/BasePartial.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 64 , # Elements Covered - 23 ">BasePartial</a>
+            
+    
+            <a href="org/joda/time/base/BasePeriod.html" class="tag"
+            style="font-size: 27px;color:#e28e87"
+            title="# Elements - 228 , # Elements Covered - 134 ">BasePeriod</a>
+            
+    
+            <a href="org/joda/time/base/BaseSingleFieldPeriod.html" class="tag"
+            style="font-size: 20px;color:#d5584c"
+            title="# Elements - 119 , # Elements Covered - 24 ">BaseSingleFieldPeriod</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicChronology.html" class="tag"
+            style="font-size: 30px;color:#fae1a0"
+            title="# Elements - 271 , # Elements Covered - 252 ">BasicChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicChronology.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 4 ">BasicChronology.HalfdayField</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicChronology.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 3 ">BasicChronology.YearInfo</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicDayOfMonthDateTimeField.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 48 , # Elements Covered - 31 ">BasicDayOfMonthDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicDayOfYearDateTimeField.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 39 , # Elements Covered - 17 ">BasicDayOfYearDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicFixedMonthChronology.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 58 , # Elements Covered - 8 ">BasicFixedMonthChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicGJChronology.html" class="tag"
+            style="font-size: 20px;color:#de7b72"
+            title="# Elements - 129 , # Elements Covered - 127 ">BasicGJChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicMonthOfYearDateTimeField.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 173 , # Elements Covered - 105 ">BasicMonthOfYearDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicSingleEraDateTimeField.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 38 , # Elements Covered - 7 ">BasicSingleEraDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicWeekOfWeekyearDateTimeField.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 44 , # Elements Covered - 22 ">BasicWeekOfWeekyearDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicWeekyearDateTimeField.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 93 , # Elements Covered - 85 ">BasicWeekyearDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicYearDateTimeField.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 64 , # Elements Covered - 57 ">BasicYearDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/BuddhistChronology.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 79 , # Elements Covered - 45 ">BuddhistChronology</a>
+            
+    
+            <a href="org/joda/time/tz/CachedDateTimeZone.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 80 , # Elements Covered - 63 ">CachedDateTimeZone</a>
+            
+    
+            <a href="org/joda/time/tz/CachedDateTimeZone.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 33 , # Elements Covered - 22 ">CachedDateTimeZone.Info</a>
+            
+    
+            <a href="org/joda/time/convert/CalendarConverter.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 38 , # Elements Covered - 2 ">CalendarConverter</a>
+            
+    
+            <a href="org/joda/time/convert/ConverterManager.html" class="tag"
+            style="font-size: 26px;color:#d5584c"
+            title="# Elements - 215 , # Elements Covered - 26 ">ConverterManager</a>
+            
+    
+            <a href="org/joda/time/convert/ConverterSet.html" class="tag"
+            style="font-size: 25px;color:#d9695f"
+            title="# Elements - 195 , # Elements Covered - 66 ">ConverterSet</a>
+            
+    
+            <a href="org/joda/time/convert/ConverterSet.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 3 ">ConverterSet.Entry</a>
+            
+    
+            <a href="org/joda/time/chrono/CopticChronology.html" class="tag"
+            style="font-size: 18px;color:#d5584c"
+            title="# Elements - 90 , # Elements Covered - 50 ">CopticChronology</a>
+            
+    
+            <a href="org/joda/time/convert/DateConverter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">DateConverter</a>
+            
+    
+            <a href="org/joda/time/DateMidnight.html" class="tag"
+            style="font-size: 28px;color:#d5584c"
+            title="# Elements - 239 , # Elements Covered - 37 ">DateMidnight</a>
+            
+    
+            <a href="org/joda/time/DateTime.html" class="tag"
+            style="font-size: 37px;color:#d5584c"
+            title="# Elements - 378 , # Elements Covered - 53 ">DateTime</a>
+            
+    
+            <a href="org/joda/time/DateTime.html" class="tag"
+            style="font-size: 16px;color:#d04437"
+            title="# Elements - 59 , # Elements Covered - 10 ">DateTime.Property</a>
+            
+    
+            <a href="org/joda/time/DateTimeComparator.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 83 , # Elements Covered - 48 ">DateTimeComparator</a>
+            
+    
+            <a href="org/joda/time/DateTimeFieldType.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 55 , # Elements Covered - 53 ">DateTimeFieldType</a>
+            
+    
+            <a href="org/joda/time/DateTimeFieldType.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="# Elements - 122 , # Elements Covered - 58 ">DateTimeFieldType.StandardDateTimeFieldType</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormat.html" class="tag"
+            style="font-size: 34px;color:#f6c342"
+            title="# Elements - 334 , # Elements Covered - 213 ">DateTimeFormat</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormat.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 56 , # Elements Covered - 36 ">DateTimeFormat.StyleFormatter</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatter.html" class="tag"
+            style="font-size: 33px;color:#e7a19b"
+            title="# Elements - 306 , # Elements Covered - 168 ">DateTimeFormatter</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 36px;color:#e7a19b"
+            title="# Elements - 351 , # Elements Covered - 169 ">DateTimeFormatterBuilder</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 37 , # Elements Covered - 29 ">DateTimeFormatterBuilder.CharacterLiteral</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="# Elements - 140 , # Elements Covered - 79 ">DateTimeFormatterBuilder.Composite</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 26px;color:#d9695f"
+            title="# Elements - 204 , # Elements Covered - 67 ">DateTimeFormatterBuilder.Fraction</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 71 , # Elements Covered - 55 ">DateTimeFormatterBuilder.MatchingParser</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 63 , # Elements Covered - 43 ">DateTimeFormatterBuilder.NumberFormatter</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 9 ">DateTimeFormatterBuilder.PaddedNumber</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 13 ">DateTimeFormatterBuilder.StringLiteral</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 102 , # Elements Covered - 63 ">DateTimeFormatterBuilder.TextField</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 34px;color:#de7b72"
+            title="# Elements - 321 , # Elements Covered - 120 ">DateTimeFormatterBuilder.TimeZoneOffset</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 22px;color:#d9695f"
+            title="# Elements - 159 , # Elements Covered - 86 ">DateTimeFormatterBuilder.TwoDigitYear</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 30 , # Elements Covered - 8 ">DateTimeFormatterBuilder.UnpaddedNumber</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeParserBucket.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 166 , # Elements Covered - 118 ">DateTimeParserBucket</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeParserBucket.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 29 , # Elements Covered - 27 ">DateTimeParserBucket.SavedField</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeParserBucket.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 17 ">DateTimeParserBucket.SavedState</a>
+            
+    
+            <a href="org/joda/time/DateTimeUtils.html" class="tag"
+            style="font-size: 22px;color:#d9695f"
+            title="# Elements - 157 , # Elements Covered - 85 ">DateTimeUtils</a>
+            
+    
+            <a href="org/joda/time/DateTimeUtils.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">DateTimeUtils.FixedMillisProvider</a>
+            
+    
+            <a href="org/joda/time/DateTimeUtils.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">DateTimeUtils.SystemMillisProvider</a>
+            
+    
+            <a href="org/joda/time/DateTimeZone.html" class="tag"
+            style="font-size: 48px;color:#89c495"
+            title="# Elements - 524 , # Elements Covered - 332 ">DateTimeZone</a>
+            
+    
+            <a href="org/joda/time/tz/DateTimeZoneBuilder.html" class="tag"
+            style="font-size: 27px;color:#e7a19b"
+            title="# Elements - 222 , # Elements Covered - 195 ">DateTimeZoneBuilder</a>
+            
+    
+            <a href="org/joda/time/tz/DateTimeZoneBuilder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 95 , # Elements Covered - 67 ">DateTimeZoneBuilder.DSTZone</a>
+            
+    
+            <a href="org/joda/time/tz/DateTimeZoneBuilder.html" class="tag"
+            style="font-size: 23px;color:#e28e87"
+            title="# Elements - 174 , # Elements Covered - 151 ">DateTimeZoneBuilder.OfYear</a>
+            
+    
+            <a href="org/joda/time/tz/DateTimeZoneBuilder.html" class="tag"
+            style="font-size: 35px;color:#fae1a0"
+            title="# Elements - 335 , # Elements Covered - 257 ">DateTimeZoneBuilder.PrecalculatedZone</a>
+            
+    
+            <a href="org/joda/time/tz/DateTimeZoneBuilder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 35 , # Elements Covered - 29 ">DateTimeZoneBuilder.Recurrence</a>
+            
+    
+            <a href="org/joda/time/tz/DateTimeZoneBuilder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 39 , # Elements Covered - 34 ">DateTimeZoneBuilder.Rule</a>
+            
+    
+            <a href="org/joda/time/tz/DateTimeZoneBuilder.html" class="tag"
+            style="font-size: 20px;color:#de7b72"
+            title="# Elements - 122 , # Elements Covered - 113 ">DateTimeZoneBuilder.RuleSet</a>
+            
+    
+            <a href="org/joda/time/tz/DateTimeZoneBuilder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 31 , # Elements Covered - 31 ">DateTimeZoneBuilder.Transition</a>
+            
+    
+            <a href="org/joda/time/Days.html" class="tag"
+            style="font-size: 20px;color:#d04437"
+            title="# Elements - 118 , # Elements Covered - 14 ">Days</a>
+            
+    
+            <a href="org/joda/time/field/DecoratedDateTimeField.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 29 , # Elements Covered - 21 ">DecoratedDateTimeField</a>
+            
+    
+            <a href="org/joda/time/field/DecoratedDurationField.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 13 ">DecoratedDurationField</a>
+            
+    
+            <a href="org/joda/time/tz/DefaultNameProvider.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 54 , # Elements Covered - 33 ">DefaultNameProvider</a>
+            
+    
+            <a href="org/joda/time/field/DelegatedDateTimeField.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="# Elements - 121 , # Elements Covered - 59 ">DelegatedDateTimeField</a>
+            
+    
+            <a href="org/joda/time/field/DividedDateTimeField.html" class="tag"
+            style="font-size: 18px;color:#d5584c"
+            title="# Elements - 90 , # Elements Covered - 29 ">DividedDateTimeField</a>
+            
+    
+            <a href="org/joda/time/Duration.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="# Elements - 116 , # Elements Covered - 24 ">Duration</a>
+            
+    
+            <a href="org/joda/time/DurationField.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 4 ">DurationField</a>
+            
+    
+            <a href="org/joda/time/DurationFieldType.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 33 , # Elements Covered - 33 ">DurationFieldType</a>
+            
+    
+            <a href="org/joda/time/DurationFieldType.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 72 , # Elements Covered - 46 ">DurationFieldType.StandardDurationFieldType</a>
+            
+    
+            <a href="org/joda/time/chrono/EthiopicChronology.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 86 , # Elements Covered - 51 ">EthiopicChronology</a>
+            
+    
+            <a href="org/joda/time/field/FieldUtils.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="# Elements - 132 , # Elements Covered - 86 ">FieldUtils</a>
+            
+    
+            <a href="org/joda/time/tz/FixedDateTimeZone.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 39 , # Elements Covered - 26 ">FixedDateTimeZone</a>
+            
+    
+            <a href="org/joda/time/format/FormatUtils.html" class="tag"
+            style="font-size: 29px;color:#d9695f"
+            title="# Elements - 253 , # Elements Covered - 70 ">FormatUtils</a>
+            
+    
+            <a href="org/joda/time/chrono/GJChronology.html" class="tag"
+            style="font-size: 27px;color:#e28e87"
+            title="# Elements - 230 , # Elements Covered - 131 ">GJChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/GJChronology.html" class="tag"
+            style="font-size: 27px;color:#d9695f"
+            title="# Elements - 227 , # Elements Covered - 82 ">GJChronology.CutoverField</a>
+            
+    
+            <a href="org/joda/time/chrono/GJChronology.html" class="tag"
+            style="font-size: 20px;color:#d5584c"
+            title="# Elements - 126 , # Elements Covered - 21 ">GJChronology.ImpreciseCutoverField</a>
+            
+    
+            <a href="org/joda/time/chrono/GJChronology.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 5 ">GJChronology.LinkedDurationField</a>
+            
+    
+            <a href="org/joda/time/chrono/GJDayOfWeekDateTimeField.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 15 ">GJDayOfWeekDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/GJEraDateTimeField.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 54 , # Elements Covered - 15 ">GJEraDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/GJLocaleSymbols.html" class="tag"
+            style="font-size: 22px;color:#de7b72"
+            title="# Elements - 155 , # Elements Covered - 123 ">GJLocaleSymbols</a>
+            
+    
+            <a href="org/joda/time/chrono/GJMonthOfYearDateTimeField.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 10 ">GJMonthOfYearDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/GJYearOfEraDateTimeField.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 43 , # Elements Covered - 16 ">GJYearOfEraDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/GregorianChronology.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 89 , # Elements Covered - 68 ">GregorianChronology</a>
+            
+    
+            <a href="org/joda/time/Hours.html" class="tag"
+            style="font-size: 20px;color:#d04437"
+            title="# Elements - 120 , # Elements Covered - 14 ">Hours</a>
+            
+    
+            <a href="org/joda/time/chrono/ISOChronology.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 73 , # Elements Covered - 60 ">ISOChronology</a>
+            
+    
+            <a href="org/joda/time/format/ISODateTimeFormat.html" class="tag"
+            style="font-size: 35px;color:#d04437"
+            title="# Elements - 345 , # Elements Covered - 8 ">ISODateTimeFormat</a>
+            
+    
+            <a href="org/joda/time/format/ISOPeriodFormat.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 6 ">ISOPeriodFormat</a>
+            
+    
+            <a href="org/joda/time/chrono/ISOYearOfEraDateTimeField.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 8 ">ISOYearOfEraDateTimeField</a>
+            
+    
+            <a href="org/joda/time/IllegalFieldValueException.html" class="tag"
+            style="font-size: 21px;color:#d5584c"
+            title="# Elements - 133 , # Elements Covered - 20 ">IllegalFieldValueException</a>
+            
+    
+            <a href="org/joda/time/field/ImpreciseDateTimeField.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 32 , # Elements Covered - 28 ">ImpreciseDateTimeField</a>
+            
+    
+            <a href="org/joda/time/field/ImpreciseDateTimeField.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 10 ">ImpreciseDateTimeField.LinkedDurationField</a>
+            
+    
+            <a href="org/joda/time/Instant.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 55 , # Elements Covered - 12 ">Instant</a>
+            
+    
+            <a href="org/joda/time/Interval.html" class="tag"
+            style="font-size: 20px;color:#d5584c"
+            title="# Elements - 117 , # Elements Covered - 19 ">Interval</a>
+            
+    
+            <a href="org/joda/time/chrono/IslamicChronology.html" class="tag"
+            style="font-size: 25px;color:#d9695f"
+            title="# Elements - 199 , # Elements Covered - 67 ">IslamicChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/IslamicChronology.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 4 ">IslamicChronology.LeapYearPatternType</a>
+            
+    
+            <a href="org/joda/time/chrono/JulianChronology.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 105 , # Elements Covered - 81 ">JulianChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/LenientChronology.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 73 , # Elements Covered - 46 ">LenientChronology</a>
+            
+    
+            <a href="org/joda/time/field/LenientDateTimeField.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 16 ">LenientDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/LimitChronology.html" class="tag"
+            style="font-size: 23px;color:#d9695f"
+            title="# Elements - 173 , # Elements Covered - 88 ">LimitChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/LimitChronology.html" class="tag"
+            style="font-size: 18px;color:#d5584c"
+            title="# Elements - 99 , # Elements Covered - 19 ">LimitChronology.LimitDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/LimitChronology.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 7 ">LimitChronology.LimitDurationField</a>
+            
+    
+            <a href="org/joda/time/LocalDate.html" class="tag"
+            style="font-size: 45px;color:#d9695f"
+            title="# Elements - 487 , # Elements Covered - 83 ">LocalDate</a>
+            
+    
+            <a href="org/joda/time/LocalDate.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 43 , # Elements Covered - 16 ">LocalDate.Property</a>
+            
+    
+            <a href="org/joda/time/LocalDateTime.html" class="tag"
+            style="font-size: 47px;color:#e28e87"
+            title="# Elements - 521 , # Elements Covered - 130 ">LocalDateTime</a>
+            
+    
+            <a href="org/joda/time/LocalDateTime.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 45 , # Elements Covered - 10 ">LocalDateTime.Property</a>
+            
+    
+            <a href="org/joda/time/LocalTime.html" class="tag"
+            style="font-size: 36px;color:#de7b72"
+            title="# Elements - 352 , # Elements Covered - 100 ">LocalTime</a>
+            
+    
+            <a href="org/joda/time/LocalTime.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 53 , # Elements Covered - 14 ">LocalTime.Property</a>
+            
+    
+            <a href="org/joda/time/convert/LongConverter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">LongConverter</a>
+            
+    
+            <a href="org/joda/time/field/MillisDurationField.html" class="tag"
+            style="font-size: 16px;color:#d04437"
+            title="# Elements - 60 , # Elements Covered - 18 ">MillisDurationField</a>
+            
+    
+            <a href="org/joda/time/Minutes.html" class="tag"
+            style="font-size: 19px;color:#d04437"
+            title="# Elements - 110 , # Elements Covered - 14 ">Minutes</a>
+            
+    
+            <a href="org/joda/time/MonthDay.html" class="tag"
+            style="font-size: 23px;color:#d04437"
+            title="# Elements - 166 , # Elements Covered - 16 ">MonthDay</a>
+            
+    
+            <a href="org/joda/time/Months.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 114 , # Elements Covered - 58 ">Months</a>
+            
+    
+            <a href="org/joda/time/MutableDateTime.html" class="tag"
+            style="font-size: 32px;color:#d5584c"
+            title="# Elements - 298 , # Elements Covered - 50 ">MutableDateTime</a>
+            
+    
+            <a href="org/joda/time/MutableDateTime.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 52 , # Elements Covered - 13 ">MutableDateTime.Property</a>
+            
+    
+            <a href="org/joda/time/MutableInterval.html" class="tag"
+            style="font-size: 17px;color:#d04437"
+            title="# Elements - 83 , # Elements Covered - 11 ">MutableInterval</a>
+            
+    
+            <a href="org/joda/time/MutablePeriod.html" class="tag"
+            style="font-size: 23px;color:#d5584c"
+            title="# Elements - 167 , # Elements Covered - 53 ">MutablePeriod</a>
+            
+    
+            <a href="org/joda/time/convert/NullConverter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 6 ">NullConverter</a>
+            
+    
+            <a href="org/joda/time/field/OffsetDateTimeField.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 62 , # Elements Covered - 33 ">OffsetDateTimeField</a>
+            
+    
+            <a href="org/joda/time/Partial.html" class="tag"
+            style="font-size: 36px;color:#de7b72"
+            title="# Elements - 361 , # Elements Covered - 123 ">Partial</a>
+            
+    
+            <a href="org/joda/time/Period.html" class="tag"
+            style="font-size: 39px;color:#e28e87"
+            title="# Elements - 403 , # Elements Covered - 139 ">Period</a>
+            
+    
+            <a href="org/joda/time/format/PeriodFormatter.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 86 , # Elements Covered - 56 ">PeriodFormatter</a>
+            
+    
+            <a href="org/joda/time/format/PeriodFormatterBuilder.html" class="tag"
+            style="font-size: 30px;color:#e7a19b"
+            title="# Elements - 271 , # Elements Covered - 171 ">PeriodFormatterBuilder</a>
+            
+    
+            <a href="org/joda/time/format/PeriodFormatterBuilder.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 87 , # Elements Covered - 71 ">PeriodFormatterBuilder.Composite</a>
+            
+    
+            <a href="org/joda/time/format/PeriodFormatterBuilder.html" class="tag"
+            style="font-size: 41px;color:#fae1a0"
+            title="# Elements - 434 , # Elements Covered - 272 ">PeriodFormatterBuilder.FieldFormatter</a>
+            
+    
+            <a href="org/joda/time/format/PeriodFormatterBuilder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 12 ">PeriodFormatterBuilder.Literal</a>
+            
+    
+            <a href="org/joda/time/format/PeriodFormatterBuilder.html" class="tag"
+            style="font-size: 22px;color:#de7b72"
+            title="# Elements - 155 , # Elements Covered - 109 ">PeriodFormatterBuilder.Separator</a>
+            
+    
+            <a href="org/joda/time/format/PeriodFormatterBuilder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 46 , # Elements Covered - 32 ">PeriodFormatterBuilder.SimpleAffix</a>
+            
+    
+            <a href="org/joda/time/PeriodType.html" class="tag"
+            style="font-size: 35px;color:#14892c"
+            title="# Elements - 344 , # Elements Covered - 307 ">PeriodType</a>
+            
+    
+            <a href="org/joda/time/field/PreciseDateTimeField.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 32 , # Elements Covered - 26 ">PreciseDateTimeField</a>
+            
+    
+            <a href="org/joda/time/field/PreciseDurationDateTimeField.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 45 , # Elements Covered - 39 ">PreciseDurationDateTimeField</a>
+            
+    
+            <a href="org/joda/time/field/PreciseDurationField.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 38 , # Elements Covered - 25 ">PreciseDurationField</a>
+            
+    
+            <a href="org/joda/time/convert/ReadableDurationConverter.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 4 ">ReadableDurationConverter</a>
+            
+    
+            <a href="org/joda/time/convert/ReadableInstantConverter.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 2 ">ReadableInstantConverter</a>
+            
+    
+            <a href="org/joda/time/convert/ReadableIntervalConverter.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 10 ">ReadableIntervalConverter</a>
+            
+    
+            <a href="org/joda/time/convert/ReadablePartialConverter.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 2 ">ReadablePartialConverter</a>
+            
+    
+            <a href="org/joda/time/convert/ReadablePeriodConverter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">ReadablePeriodConverter</a>
+            
+    
+            <a href="org/joda/time/field/RemainderDateTimeField.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 73 , # Elements Covered - 24 ">RemainderDateTimeField</a>
+            
+    
+            <a href="org/joda/time/field/ScaledDurationField.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 58 , # Elements Covered - 13 ">ScaledDurationField</a>
+            
+    
+            <a href="org/joda/time/Seconds.html" class="tag"
+            style="font-size: 19px;color:#d04437"
+            title="# Elements - 110 , # Elements Covered - 14 ">Seconds</a>
+            
+    
+            <a href="org/joda/time/field/SkipDateTimeField.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 38 , # Elements Covered - 28 ">SkipDateTimeField</a>
+            
+    
+            <a href="org/joda/time/field/SkipUndoDateTimeField.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 34 , # Elements Covered - 19 ">SkipUndoDateTimeField</a>
+            
+    
+            <a href="org/joda/time/convert/StringConverter.html" class="tag"
+            style="font-size: 21px;color:#d04437"
+            title="# Elements - 138 , # Elements Covered - 4 ">StringConverter</a>
+            
+    
+            <a href="org/joda/time/TimeOfDay.html" class="tag"
+            style="font-size: 24px;color:#d04437"
+            title="# Elements - 175 , # Elements Covered - 16 ">TimeOfDay</a>
+            
+    
+            <a href="org/joda/time/tz/UTCProvider.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">UTCProvider</a>
+            
+    
+            <a href="org/joda/time/field/UnsupportedDurationField.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 75 , # Elements Covered - 26 ">UnsupportedDurationField</a>
+            
+    
+            <a href="org/joda/time/YearMonthDay.html" class="tag"
+            style="font-size: 23px;color:#d5584c"
+            title="# Elements - 173 , # Elements Covered - 53 ">YearMonthDay</a>
+            
+    
+            <a href="org/joda/time/YearMonthDay.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 16 ">YearMonthDay.Property</a>
+            
+    
+            <a href="org/joda/time/field/ZeroIsMaxDateTimeField.html" class="tag"
+            style="font-size: 16px;color:#d04437"
+            title="# Elements - 67 , # Elements Covered - 11 ">ZeroIsMaxDateTimeField</a>
+            
+    
+            <a href="org/joda/time/tz/ZoneInfoCompiler.html" class="tag"
+            style="font-size: 37px;color:#14892c"
+            title="# Elements - 375 , # Elements Covered - 300 ">ZoneInfoCompiler</a>
+            
+    
+            <a href="org/joda/time/tz/ZoneInfoCompiler.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 75 , # Elements Covered - 62 ">ZoneInfoCompiler.DateTimeOfYear</a>
+            
+    
+            <a href="org/joda/time/tz/ZoneInfoCompiler.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 41 , # Elements Covered - 37 ">ZoneInfoCompiler.Rule</a>
+            
+    
+            <a href="org/joda/time/tz/ZoneInfoCompiler.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 13 ">ZoneInfoCompiler.RuleSet</a>
+            
+    
+            <a href="org/joda/time/tz/ZoneInfoCompiler.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 57 , # Elements Covered - 47 ">ZoneInfoCompiler.Zone</a>
+            
+    
+            <a href="org/joda/time/tz/ZoneInfoProvider.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="# Elements - 125 , # Elements Covered - 80 ">ZoneInfoProvider</a>
+            
+    
+            <a href="org/joda/time/chrono/ZonedChronology.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="# Elements - 128 , # Elements Covered - 85 ">ZonedChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/ZonedChronology.html" class="tag"
+            style="font-size: 23px;color:#d5584c"
+            title="# Elements - 161 , # Elements Covered - 55 ">ZonedChronology.ZonedDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/ZonedChronology.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 76 , # Elements Covered - 47 ">ZonedChronology.ZonedDurationField</a>
+           </div>
+   
+   </div>
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Sat Dec 31 2022 15:22:53 MST using coverage data from Sat Dec 31 2022 15:22:48 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

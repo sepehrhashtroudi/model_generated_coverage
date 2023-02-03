@@ -1,0 +1,65 @@
+Testsuite: org.apache.commons.lang3.math.FractionTest
+Tests run: 16, Failures: 4, Errors: 4, Skipped: 0, Time elapsed: 0.049 sec
+
+Testcase: testReducedFactory_double469 took 0.022 sec
+Testcase: testReduce119 took 0 sec
+Testcase: testToString161 took 0.001 sec
+	FAILED
+expected same:<3/5> was not:<3/5>
+junit.framework.AssertionFailedError: expected same:<3/5> was not:<3/5>
+	at org.apache.commons.lang3.math.FractionTest.testToString161(FractionTest.java:169)
+
+Testcase: testInvert471 took 0 sec
+Testcase: testCompareTo41 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.math.Fraction.compareTo(Fraction.java:887)
+	at org.apache.commons.lang3.math.FractionTest.testCompareTo41(FractionTest.java:84)
+
+Testcase: testReducedFactory_int_int465 took 0.001 sec
+	Caused an ERROR
+java.lang.ArithmeticException: The denominator must not be zero
+java.lang.RuntimeException: java.lang.ArithmeticException: The denominator must not be zero
+	at org.apache.commons.lang3.math.FractionTest.testReducedFactory_int_int465(FractionTest.java:282)
+Caused by: java.lang.ArithmeticException: The denominator must not be zero
+	at org.apache.commons.lang3.math.Fraction.getReducedFraction(Fraction.java:211)
+	at org.apache.commons.lang3.math.FractionTest.testReducedFactory_int_int465(FractionTest.java:280)
+
+Testcase: testDivide121 took 0 sec
+Testcase: testFactory_double466 took 0 sec
+Testcase: testFactory_double468 took 0 sec
+	FAILED
+expecting ArithmeticException
+junit.framework.AssertionFailedError: expecting ArithmeticException
+	at org.apache.commons.lang3.math.FractionTest.testFactory_double468(FractionTest.java:392)
+
+Testcase: testFactory_String_proper467 took 0 sec
+Testcase: testToProperString163 took 0 sec
+	FAILED
+expected same:<3/5> was not:<3/5>
+junit.framework.AssertionFailedError: expected same:<3/5> was not:<3/5>
+	at org.apache.commons.lang3.math.FractionTest.testToProperString163(FractionTest.java:199)
+
+Testcase: testToProperString164 took 0.001 sec
+	FAILED
+expected:<[0]/5> but was:<[3]/5>
+junit.framework.AssertionFailedError: expected:<[0]/5> but was:<[3]/5>
+	at org.apache.commons.lang3.math.FractionTest.testToProperString164(FractionTest.java:218)
+
+Testcase: testCompareTo259 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.math.Fraction.compareTo(Fraction.java:887)
+	at org.apache.commons.lang3.math.FractionTest.testCompareTo259(FractionTest.java:239)
+
+Testcase: testCompareTo470 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.math.Fraction.compareTo(Fraction.java:887)
+	at org.apache.commons.lang3.math.FractionTest.testCompareTo470(FractionTest.java:454)
+
+Testcase: testHashCode162 took 0 sec
+Testcase: testFactory_int_int_int8 took 0.001 sec

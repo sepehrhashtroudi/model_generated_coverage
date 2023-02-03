@@ -1,0 +1,4 @@
+Testsuite: org.apache.commons.lang3.LocaleUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec
+
+Testcase: testToLocale_1Part81 took 0.034 sec

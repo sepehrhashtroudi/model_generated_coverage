@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="73158054-ca59-4a53-a321-23c7fd8428ab" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/ant/build-swt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ant/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/CategoryLineAnnotationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/CategoryLineAnnotationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/CategoryPointerAnnotationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/CategoryPointerAnnotationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/CategoryTextAnnotationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/CategoryTextAnnotationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/TextAnnotationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/TextAnnotationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/XYBoxAnnotationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/XYBoxAnnotationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/XYDrawableAnnotationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/XYDrawableAnnotationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/XYImageAnnotationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/XYImageAnnotationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/XYLineAnnotationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/XYLineAnnotationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/XYPointerAnnotationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/XYPointerAnnotationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/XYPolygonAnnotationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/XYPolygonAnnotationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/XYShapeAnnotationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/XYShapeAnnotationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/XYTextAnnotationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/XYTextAnnotationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/XYTitleAnnotationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/XYTitleAnnotationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/annotations/junit/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/AxisLocationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/AxisLocationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/AxisSpaceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/AxisSpaceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/AxisTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/AxisTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/CategoryAnchorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/CategoryAnchorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/CategoryAxis3DTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/CategoryAxis3DTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/CategoryAxisTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/CategoryAxisTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/CategoryLabelPositionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/CategoryLabelPositionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/CategoryLabelPositionsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/CategoryLabelPositionsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/CategoryLabelWidthTypeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/CategoryLabelWidthTypeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/CategoryTickTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/CategoryTickTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/CyclicNumberAxisTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/CyclicNumberAxisTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/DateAxisTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/DateAxisTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/DateTickMarkPositionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/DateTickMarkPositionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/DateTickTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/DateTickTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/DateTickUnitTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/DateTickUnitTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/ExtendedCategoryAxisTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/ExtendedCategoryAxisTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/LogAxisTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/LogAxisTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/LogarithmicAxisTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/LogarithmicAxisTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/MarkerAxisBandTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/MarkerAxisBandTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/ModuloAxisTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/ModuloAxisTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/MonthDateFormatTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/MonthDateFormatTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/NumberAxis3DTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/NumberAxis3DTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/NumberAxisTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/NumberAxisTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/NumberTickUnitTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/NumberTickUnitTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/PeriodAxisLabelInfoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/PeriodAxisLabelInfoTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/PeriodAxisTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/PeriodAxisTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/PeriodAxisTests.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/QuarterDateFormatTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/QuarterDateFormatTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/SegmentedTimelineTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/SegmentedTimelineTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/SegmentedTimelineTests2.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/SegmentedTimelineTests2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/StandardTickUnitSourceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/StandardTickUnitSourceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/SubCategoryAxisTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/SubCategoryAxisTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/SymbolAxisTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/SymbolAxisTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/TickUnitsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/TickUnitsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/ValueAxisTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/ValueAxisTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/axis/junit/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/AbstractBlockTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/AbstractBlockTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/BlockBorderTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/BlockBorderTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/BlockContainerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/BlockContainerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/BorderArrangementTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/BorderArrangementTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/ColorBlockTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/ColorBlockTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/ColumnArrangementTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/ColumnArrangementTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/EmptyBlockTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/EmptyBlockTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/FlowArrangementTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/FlowArrangementTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/GridArrangementTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/GridArrangementTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/LabelBlockTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/LabelBlockTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/LineBorderTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/LineBorderTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/RectangleConstraintTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/block/junit/RectangleConstraintTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/entity/junit/CategoryItemEntityTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/entity/junit/CategoryItemEntityTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/entity/junit/CategoryLabelEntityTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/entity/junit/CategoryLabelEntityTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/entity/junit/LegendItemEntityTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/entity/junit/LegendItemEntityTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/entity/junit/PieSectionEntityTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/entity/junit/PieSectionEntityTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/entity/junit/StandardEntityCollectionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/entity/junit/StandardEntityCollectionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/entity/junit/TickLabelEntityTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/entity/junit/TickLabelEntityTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/entity/junit/XYItemEntityTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/entity/junit/XYItemEntityTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/imagemap/junit/DynamicDriveToolTipTagFragmentGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/imagemap/junit/DynamicDriveToolTipTagFragmentGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/imagemap/junit/ImageMapPackageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/imagemap/junit/ImageMapPackageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/imagemap/junit/ImageMapUtilitiesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/imagemap/junit/ImageMapUtilitiesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/imagemap/junit/OverLIBToolTipTagFragmentGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/imagemap/junit/OverLIBToolTipTagFragmentGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/imagemap/junit/StandardToolTipTagFragmentGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/imagemap/junit/StandardToolTipTagFragmentGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/imagemap/junit/StandardURLTagFragmentGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/imagemap/junit/StandardURLTagFragmentGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/AreaChartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/AreaChartTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/BarChart3DTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/BarChart3DTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/BarChartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/BarChartTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/ChartPanelTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/ChartPanelTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/ChartRenderingInfoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/ChartRenderingInfoTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/GanttChartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/GanttChartTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/JFreeChartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/JFreeChartTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/LegendItemCollectionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/LegendItemCollectionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/LegendItemTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/LegendItemTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/LineChart3DTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/LineChart3DTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/LineChartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/LineChartTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/MeterChartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/MeterChartTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/PieChart3DTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/PieChart3DTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/PieChartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/PieChartTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/ScatterPlotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/ScatterPlotTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/StackedAreaChartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/StackedAreaChartTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/StackedBarChart3DTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/StackedBarChart3DTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/StackedBarChartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/StackedBarChartTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/StandardChartThemeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/StandardChartThemeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/TimeSeriesChartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/TimeSeriesChartTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/WaterfallChartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/WaterfallChartTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/XYAreaChartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/XYAreaChartTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/XYBarChartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/XYBarChartTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/XYLineChartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/XYLineChartTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/XYStepAreaChartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/XYStepAreaChartTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/XYStepChartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/junit/XYStepChartTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/junit/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/BoxAndWhiskerToolTipGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/BoxAndWhiskerToolTipGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/BoxAndWhiskerXYToolTipGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/BoxAndWhiskerXYToolTipGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/BubbleXYItemLabelGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/BubbleXYItemLabelGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/CustomXYItemLabelGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/CustomXYItemLabelGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/HighLowItemLabelGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/HighLowItemLabelGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/IntervalCategoryItemLabelGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/IntervalCategoryItemLabelGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/IntervalCategoryToolTipGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/IntervalCategoryToolTipGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/ItemLabelAnchorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/ItemLabelAnchorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/ItemLabelPositionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/ItemLabelPositionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/MultipleXYSeriesLabelGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/MultipleXYSeriesLabelGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/StandardCategoryItemLabelGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/StandardCategoryItemLabelGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/StandardCategorySeriesLabelGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/StandardCategorySeriesLabelGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/StandardCategoryToolTipGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/StandardCategoryToolTipGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/StandardPieSectionLabelGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/StandardPieSectionLabelGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/StandardPieToolTipGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/StandardPieToolTipGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/StandardXYItemLabelGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/StandardXYItemLabelGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/StandardXYSeriesLabelGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/StandardXYSeriesLabelGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/StandardXYToolTipGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/StandardXYToolTipGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/StandardXYZToolTipGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/StandardXYZToolTipGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/SymbolicXYItemLabelGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/SymbolicXYItemLabelGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/labels/junit/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/ArrowNeedleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/ArrowNeedleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/LineNeedleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/LineNeedleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/LongNeedleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/LongNeedleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/MeterNeedleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/MeterNeedleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/MiddlePinNeedleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/MiddlePinNeedleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/PinNeedleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/PinNeedleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/PlumNeedleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/PlumNeedleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/PointerNeedleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/PointerNeedleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/ShipNeedleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/ShipNeedleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/WindNeedleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/needle/junit/WindNeedleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/AbstractDialLayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/AbstractDialLayerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/ArcDialFrameTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/ArcDialFrameTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/DialBackgroundTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/DialBackgroundTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/DialCapTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/DialCapTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/DialPlotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/DialPlotTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/DialPointerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/DialPointerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/DialTextAnnotationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/DialTextAnnotationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/DialValueIndicatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/DialValueIndicatorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/StandardDialFrameTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/StandardDialFrameTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/StandardDialRangeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/StandardDialRangeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/StandardDialScaleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/dial/junit/StandardDialScaleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/CategoryMarkerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/CategoryMarkerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/CategoryPlotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/CategoryPlotTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/CombinedDomainCategoryPlotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/CombinedDomainCategoryPlotTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/CombinedDomainXYPlotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/CombinedDomainXYPlotTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/CombinedRangeCategoryPlotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/CombinedRangeCategoryPlotTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/CombinedRangeXYPlotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/CombinedRangeXYPlotTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/CompassPlotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/CompassPlotTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/DefaultDrawingSupplierTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/DefaultDrawingSupplierTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/FastScatterPlotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/FastScatterPlotTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/IntervalMarkerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/IntervalMarkerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/MarkerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/MarkerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/MeterIntervalTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/MeterIntervalTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/MeterPlotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/MeterPlotTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/MultiplePiePlotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/MultiplePiePlotTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/PieLabelRecordTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/PieLabelRecordTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/PiePlot3DTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/PiePlot3DTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/PiePlotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/PiePlotTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/PlotOrientationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/PlotOrientationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/PlotRenderingInfoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/PlotRenderingInfoTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/PlotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/PlotTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/PolarPlotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/PolarPlotTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/RingPlotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/RingPlotTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/SpiderWebPlotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/SpiderWebPlotTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/ThermometerPlotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/ThermometerPlotTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/ValueMarkerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/ValueMarkerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/XYPlotTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/XYPlotTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/plot/junit/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/AbstractCategoryItemRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/AbstractCategoryItemRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/AreaRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/AreaRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/BarRenderer3DTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/BarRenderer3DTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/BarRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/BarRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/BoxAndWhiskerRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/BoxAndWhiskerRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/CategoryStepRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/CategoryStepRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/DefaultCategoryItemRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/DefaultCategoryItemRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/GanttRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/GanttRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/GradientBarPainterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/GradientBarPainterTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/GroupedStackedBarRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/GroupedStackedBarRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/IntervalBarRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/IntervalBarRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/LayeredBarRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/LayeredBarRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/LevelRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/LevelRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/LineAndShapeRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/LineAndShapeRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/LineRenderer3DTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/LineRenderer3DTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/MinMaxCategoryRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/MinMaxCategoryRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/ScatterRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/ScatterRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/StackedAreaRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/StackedAreaRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/StackedBarRenderer3DTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/StackedBarRenderer3DTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/StackedBarRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/StackedBarRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/StandardBarPainterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/StandardBarPainterTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/StatisticalBarRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/StatisticalBarRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/StatisticalLineAndShapeRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/StatisticalLineAndShapeRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/WaterfallBarRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/category/junit/WaterfallBarRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/junit/AbstractRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/junit/AbstractRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/junit/AreaRendererEndTypeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/junit/AreaRendererEndTypeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/junit/DefaultPolarItemRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/junit/DefaultPolarItemRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/junit/GrayPaintScaleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/junit/GrayPaintScaleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/junit/LookupPaintScaleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/junit/LookupPaintScaleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/junit/OutlierTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/junit/OutlierTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/junit/RendererUtilitiesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/junit/RendererUtilitiesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/junit/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/AbstractXYItemRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/AbstractXYItemRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/CandlestickRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/CandlestickRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/ClusteredXYBarRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/ClusteredXYBarRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/DeviationRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/DeviationRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/GradientXYBarPainterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/GradientXYBarPainterTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/HighLowRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/HighLowRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/StackedXYAreaRenderer2Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/StackedXYAreaRenderer2Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/StackedXYAreaRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/StackedXYAreaRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/StackedXYBarRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/StackedXYBarRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/StandardXYBarPainterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/StandardXYBarPainterTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/StandardXYItemRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/StandardXYItemRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/VectorRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/VectorRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/WindItemRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/WindItemRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYAreaRenderer2Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYAreaRenderer2Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYAreaRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYAreaRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYBarRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYBarRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYBlockRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYBlockRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYBoxAndWhiskerRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYBoxAndWhiskerRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYBubbleRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYBubbleRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYDifferenceRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYDifferenceRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYDotRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYDotRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYErrorRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYErrorRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYLine3DRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYLine3DRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYLineAndShapeRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYLineAndShapeRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYShapeRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYShapeRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYSplineRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYSplineRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYStepAreaRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYStepAreaRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYStepRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/XYStepRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/YIntervalRendererTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/renderer/xy/junit/YIntervalRendererTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/title/junit/CompositeTitleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/title/junit/CompositeTitleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/title/junit/DateTitleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/title/junit/DateTitleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/title/junit/ImageTitleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/title/junit/ImageTitleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/title/junit/LegendGraphicTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/title/junit/LegendGraphicTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/title/junit/LegendTitleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/title/junit/LegendTitleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/title/junit/PaintScaleLegendTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/title/junit/PaintScaleLegendTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/title/junit/ShortTextTitleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/title/junit/ShortTextTitleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/title/junit/TextTitleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/title/junit/TextTitleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/title/junit/TitleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/title/junit/TitleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/urls/junit/CustomCategoryURLGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/urls/junit/CustomCategoryURLGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/urls/junit/CustomPieURLGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/urls/junit/CustomPieURLGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/urls/junit/CustomXYURLGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/urls/junit/CustomXYURLGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/urls/junit/StandardCategoryURLGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/urls/junit/StandardCategoryURLGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/urls/junit/StandardPieURLGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/urls/junit/StandardPieURLGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/urls/junit/StandardXYURLGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/urls/junit/StandardXYURLGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/urls/junit/TimeSeriesURLGeneratorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/urls/junit/TimeSeriesURLGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/urls/junit/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/BooleanListTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/BooleanListTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/HashUtilitiesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/HashUtilitiesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/LineUtilitiesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/LineUtilitiesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/LogFormatTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/LogFormatTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/PaintListTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/PaintListTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/PaintMapTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/PaintMapTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/RelativeDateFormatTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/RelativeDateFormatTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/SerialUtilitiesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/SerialUtilitiesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/ShapeListTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/ShapeListTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/ShapeUtilitiesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/ShapeUtilitiesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/StrokeListTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/StrokeListTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/StrokeMapTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/org/jfree/chart/util/junit/StrokeMapTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/category/junit/CategoryToPieDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/category/junit/DataCategoryPackageTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/category/junit/DefaultCategoryDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/category/junit/DefaultIntervalCategoryDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/category/junit/SlidingCategoryDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/function/junit/DataFunctionPackageTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/function/junit/LineFunction2DTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/function/junit/NormalDistributionFunction2DTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/function/junit/PolynomialFunction2DTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/function/junit/PowerFunction2DTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/gantt/junit/DataGanttPackageTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/gantt/junit/SlidingGanttCategoryDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/gantt/junit/TaskSeriesCollectionTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/gantt/junit/TaskSeriesTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/gantt/junit/TaskTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/gantt/junit/XYTaskDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/general/junit/DataGeneralPackageTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/general/junit/DatasetGroupTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/general/junit/DatasetUtilitiesTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/general/junit/DatasetUtilitiesTests.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/general/junit/DefaultHeatMapDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/general/junit/DefaultKeyedValueDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/general/junit/DefaultKeyedValues2DDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/general/junit/DefaultKeyedValuesDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/general/junit/DefaultPieDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/general/junit/IntervalDataItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/general/junit/TestIntervalCategoryDataset.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/junit/ComparableObjectItemTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/junit/ComparableObjectSeriesTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/junit/DataPackageTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/junit/DataUtilitiesTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/junit/DefaultKeyedValueTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/junit/DefaultKeyedValues2DTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/junit/DefaultKeyedValuesTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/junit/DomainOrderTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/junit/KeyToGroupMapTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/junit/KeyedObjectTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/junit/KeyedObjects2DTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/junit/KeyedObjectsTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/junit/RangeTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/junit/RangeTypeTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/junit/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/statistics/junit/BoxAndWhiskerCalculatorTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/statistics/junit/BoxAndWhiskerItemTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/statistics/junit/DataStatisticsPackageTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/statistics/junit/DefaultBoxAndWhiskerCategoryDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/statistics/junit/DefaultBoxAndWhiskerXYDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/statistics/junit/DefaultMultiValueCategoryDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/statistics/junit/DefaultStatisticalCategoryDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/statistics/junit/HistogramBinTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/statistics/junit/HistogramDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/statistics/junit/MeanAndStandardDeviationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/statistics/junit/RegressionTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/statistics/junit/SimpleHistogramBinTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/statistics/junit/SimpleHistogramDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/statistics/junit/StatisticsTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/statistics/junit/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/DataTimePackageTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/DateRangeTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/DayTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/FixedMillisecondTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/HourTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/MillisecondTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/MinuteTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/MonthTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/MovingAverageTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/QuarterTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/SecondTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/SimpleTimePeriodTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/TimePeriodAnchorTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/TimePeriodValueTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/TimePeriodValuesCollectionTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/TimePeriodValuesTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/TimeSeriesCollectionTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/TimeSeriesCollectionTests.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/TimeSeriesDataItemTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/TimeSeriesTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/TimeTableXYDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/WeekTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/YearTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/junit/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/ohlc/junit/OHLCItemTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/ohlc/junit/OHLCPackageTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/ohlc/junit/OHLCSeriesCollectionTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/ohlc/junit/OHLCSeriesTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/time/ohlc/junit/OHLCTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/CategoryTableXYDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/DataXYPackageTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/DefaultHighLowDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/DefaultIntervalXYDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/DefaultOHLCDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/DefaultTableXYDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/DefaultWindDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/DefaultXYDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/DefaultXYZDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/IntervalXYDelegateTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/MatrixSeriesCollectionTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/MatrixSeriesTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/OHLCDataItemTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/TableXYDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/VectorDataItemTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/VectorSeriesCollectionTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/VectorSeriesTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/VectorTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/XIntervalDataItemTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/XIntervalSeriesCollectionTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/XIntervalSeriesTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/XYBarDatasetTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/XYCoordinateTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/XYDataItemTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/XYIntervalDataItemTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/XYIntervalSeriesCollectionTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/XYIntervalSeriesTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/XYIntervalTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/XYSeriesCollectionTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/XYSeriesTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/YIntervalDataItemTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/YIntervalSeriesCollectionTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/YIntervalSeriesTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/YIntervalTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/org/jfree/data/xy/junit/YWithXIntervalTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Kil0HmUKkd8CE54Q82g1392fAs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/sepehr/masters/test_generation/model_generated_coverage/Compress1f_automated_0"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73158054-ca59-4a53-a321-23c7fd8428ab" name="Changes" comment="" />
+      <created>1674465060049</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674465060049</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

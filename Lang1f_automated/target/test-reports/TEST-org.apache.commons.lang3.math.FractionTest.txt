@@ -1,0 +1,46 @@
+Testsuite: org.apache.commons.lang3.math.FractionTest
+Tests run: 10, Failures: 3, Errors: 3, Skipped: 0, Time elapsed: 0.044 sec
+
+Testcase: testReducedFactory_double469 took 0.021 sec
+Testcase: testReduce119 took 0 sec
+Testcase: testToString161 took 0.002 sec
+	FAILED
+expected same:<3/5> was not:<3/5>
+junit.framework.AssertionFailedError: expected same:<3/5> was not:<3/5>
+	at org.apache.commons.lang3.math.FractionTest.testToString161(FractionTest.java:96)
+
+Testcase: testInvert471 took 0 sec
+Testcase: testCompareTo41 took 0.001 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.math.Fraction.compareTo(Fraction.java:887)
+	at org.apache.commons.lang3.math.FractionTest.testCompareTo41(FractionTest.java:45)
+
+Testcase: testToProperString163 took 0 sec
+	FAILED
+expected same:<3/5> was not:<3/5>
+junit.framework.AssertionFailedError: expected same:<3/5> was not:<3/5>
+	at org.apache.commons.lang3.math.FractionTest.testToProperString163(FractionTest.java:126)
+
+Testcase: testToProperString164 took 0.001 sec
+	FAILED
+expected:<[0]/5> but was:<[3]/5>
+junit.framework.AssertionFailedError: expected:<[0]/5> but was:<[3]/5>
+	at org.apache.commons.lang3.math.FractionTest.testToProperString164(FractionTest.java:145)
+
+Testcase: testCompareTo259 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.math.Fraction.compareTo(Fraction.java:887)
+	at org.apache.commons.lang3.math.FractionTest.testCompareTo259(FractionTest.java:166)
+
+Testcase: testCompareTo470 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.math.Fraction.compareTo(Fraction.java:887)
+	at org.apache.commons.lang3.math.FractionTest.testCompareTo470(FractionTest.java:219)
+
+Testcase: testHashCode162 took 0 sec

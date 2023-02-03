@@ -1,0 +1,17 @@
+Testsuite: org.apache.commons.lang3.builder.EqualsBuilderTest
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+
+Testcase: testDoubleArrayHiddenByObject356 took 0.018 sec
+Testcase: testBoolean357 took 0.002 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.builder.EqualsBuilderTest.testBoolean357(EqualsBuilderTest.java:284)
+
+Testcase: testObjectArrayHiddenByObject49 took 0 sec
+Testcase: testLong358 took 0 sec
+Testcase: testCharArray207 took 0 sec
+Testcase: testObjectArray105 took 0 sec
+Testcase: testMultiCharArray20 took 0 sec
+Testcase: testDoubleArray64 took 0.001 sec
+Testcase: testLongArray355 took 0 sec

@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":133,"id":15987,"methods":[{"el":103,"sc":1,"sl":93},{"el":119,"sc":1,"sl":106}],"name":"TestGeneratorClosing","sl":21},{"el":41,"id":15987,"methods":[{"el":33,"sc":9,"sl":33},{"el":39,"sc":9,"sl":35},{"el":40,"sc":9,"sl":40}],"name":"TestGeneratorClosing.MyWriter","sl":29},{"el":55,"id":15993,"methods":[{"el":47,"sc":9,"sl":47},{"el":53,"sc":9,"sl":49},{"el":54,"sc":9,"sl":54}],"name":"TestGeneratorClosing.MyStream","sl":43},{"el":67,"id":15999,"methods":[{"el":66,"sc":9,"sl":61}],"name":"TestGeneratorClosing.MyBytes","sl":57},{"el":79,"id":16002,"methods":[{"el":78,"sc":9,"sl":73}],"name":"TestGeneratorClosing.MyChars","sl":69}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_64":{"methods":[{"sl":106}],"name":"testAutoCloseArraysAndObjects120","pass":true,"statements":[{"sl":107},{"sl":108},{"sl":109},{"sl":110},{"sl":111},{"sl":112},{"sl":113},{"sl":114},{"sl":115},{"sl":116},{"sl":117},{"sl":118}]},"test_86":{"methods":[{"sl":47},{"sl":54},{"sl":93}],"name":"testNoAutoCloseOutputStream98","pass":true,"statements":[{"sl":54},{"sl":94},{"sl":95},{"sl":96},{"sl":98},{"sl":99},{"sl":100},{"sl":101},{"sl":102}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [86], [], [], [], [], [], [], [86], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [86], [86], [86], [86], [], [86], [86], [86], [86], [86], [], [], [], [64], [64], [64], [64], [64], [64], [64], [64], [64], [64], [64], [64], [64], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]

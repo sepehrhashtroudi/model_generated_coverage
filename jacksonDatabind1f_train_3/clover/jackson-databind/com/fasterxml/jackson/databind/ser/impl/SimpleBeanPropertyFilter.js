@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":145,"id":29691,"methods":[{"el":26,"sc":5,"sl":26},{"el":34,"sc":5,"sl":32},{"el":40,"sc":5,"sl":36},{"el":44,"sc":5,"sl":42},{"el":50,"sc":5,"sl":46},{"el":71,"sc":5,"sl":64},{"el":81,"sc":5,"sl":73},{"el":91,"sc":5,"sl":83}],"name":"SimpleBeanPropertyFilter","sl":17},{"el":122,"id":29719,"methods":[{"el":116,"sc":9,"sl":114},{"el":121,"sc":9,"sl":118}],"name":"SimpleBeanPropertyFilter.FilterExceptFilter","sl":103},{"el":144,"id":29723,"methods":[{"el":138,"sc":9,"sl":136},{"el":143,"sc":9,"sl":140}],"name":"SimpleBeanPropertyFilter.SerializeExceptFilter","sl":128}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_334":{"methods":[{"sl":73},{"sl":118}],"name":"testGeneratingJsonSchemaWithFilters179","pass":true,"statements":[{"sl":78},{"sl":79},{"sl":120}]},"test_511":{"methods":[{"sl":26},{"sl":36},{"sl":64},{"sl":114},{"sl":118}],"name":"testSimpleInclusionFilter6","pass":true,"statements":[{"sl":37},{"sl":38},{"sl":39},{"sl":68},{"sl":69},{"sl":115},{"sl":120}]},"test_84":{"methods":[{"sl":26},{"sl":46},{"sl":64},{"sl":136},{"sl":140}],"name":"testSimpleExclusionFilter178","pass":true,"statements":[{"sl":47},{"sl":48},{"sl":49},{"sl":68},{"sl":69},{"sl":137},{"sl":142}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [84, 511], [], [], [], [], [], [], [], [], [], [511], [511], [511], [511], [], [], [], [], [], [], [84], [84], [84], [84], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [84, 511], [], [], [], [84, 511], [84, 511], [], [], [], [334], [], [], [], [], [334], [334], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [511], [511], [], [], [334, 511], [], [334, 511], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [84], [84], [], [], [84], [], [84], [], [], []]

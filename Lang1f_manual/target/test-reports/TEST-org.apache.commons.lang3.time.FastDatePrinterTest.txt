@@ -1,0 +1,81 @@
+Testsuite: org.apache.commons.lang3.time.FastDatePrinterTest
+Tests run: 18, Failures: 2, Errors: 7, Skipped: 0, Time elapsed: 0.181 sec
+
+Testcase: testShortDateStyleWithLocales24 took 0.03 sec
+Testcase: testPaddedNumberField225 took 0.002 sec
+	Caused an ERROR
+org.apache.commons.lang3.time.FastDatePrinter cannot be cast to org.apache.commons.lang3.time.DateParser
+java.lang.ClassCastException: org.apache.commons.lang3.time.FastDatePrinter cannot be cast to org.apache.commons.lang3.time.DateParser
+	at org.apache.commons.lang3.time.FastDatePrinterTest.testPaddedNumberField225(FastDatePrinterTest.java:276)
+
+Testcase: testDayOf193 took 0 sec
+	Caused an ERROR
+org.apache.commons.lang3.time.FastDatePrinter cannot be cast to org.apache.commons.lang3.time.DateParser
+java.lang.ClassCastException: org.apache.commons.lang3.time.FastDatePrinter cannot be cast to org.apache.commons.lang3.time.DateParser
+	at org.apache.commons.lang3.time.FastDatePrinterTest.testDayOf193(FastDatePrinterTest.java:207)
+
+Testcase: testAmPm117 took 0 sec
+	Caused an ERROR
+org.apache.commons.lang3.time.FastDatePrinter cannot be cast to org.apache.commons.lang3.time.DateParser
+java.lang.ClassCastException: org.apache.commons.lang3.time.FastDatePrinter cannot be cast to org.apache.commons.lang3.time.DateParser
+	at org.apache.commons.lang3.time.FastDatePrinterTest.testAmPm117(FastDatePrinterTest.java:125)
+
+Testcase: testMilleniumBug279 took 0.001 sec
+Testcase: testHashCode31 took 0.008 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.time.FastDatePrinterTest.testHashCode31(FastDatePrinterTest.java:108)
+
+Testcase: testTimeISO196 took 0.099 sec
+	FAILED
+expected:<[P32Y1M22DT9H11M12.001S]> but was:<[2002-02-23T09:11:12-03:00]>
+junit.framework.AssertionFailedError: expected:<[P32Y1M22DT9H11M12.001S]> but was:<[2002-02-23T09:11:12-03:00]>
+	at org.apache.commons.lang3.time.FastDatePrinterTest.testTimeISO196(FastDatePrinterTest.java:248)
+
+Testcase: testTimeZone190 took 0.001 sec
+	Caused an ERROR
+Illegal pattern component: u
+java.lang.IllegalArgumentException: Illegal pattern component: u
+	at org.apache.commons.lang3.time.FastDatePrinter.parsePattern(FastDatePrinter.java:281)
+	at org.apache.commons.lang3.time.FastDatePrinter.init(FastDatePrinter.java:148)
+	at org.apache.commons.lang3.time.FastDatePrinter.<init>(FastDatePrinter.java:141)
+	at org.apache.commons.lang3.time.FastDateFormat.<init>(FastDateFormat.java:369)
+	at org.apache.commons.lang3.time.FastDateFormat$1.createInstance(FastDateFormat.java:91)
+	at org.apache.commons.lang3.time.FastDateFormat$1.createInstance(FastDateFormat.java:88)
+	at org.apache.commons.lang3.time.FormatCache.getInstance(FormatCache.java:82)
+	at org.apache.commons.lang3.time.FastDateFormat.getInstance(FastDateFormat.java:165)
+	at org.apache.commons.lang3.time.DateFormatUtils.format(DateFormatUtils.java:303)
+	at org.apache.commons.lang3.time.DateFormatUtils.format(DateFormatUtils.java:188)
+	at org.apache.commons.lang3.time.FastDatePrinterTest.testTimeZone190(FastDatePrinterTest.java:172)
+
+Testcase: testUnpaddedAmPm194 took 0 sec
+	Caused an ERROR
+org.apache.commons.lang3.time.FastDatePrinter cannot be cast to org.apache.commons.lang3.time.DateParser
+java.lang.ClassCastException: org.apache.commons.lang3.time.FastDatePrinter cannot be cast to org.apache.commons.lang3.time.DateParser
+	at org.apache.commons.lang3.time.FastDatePrinterTest.testUnpaddedAmPm194(FastDatePrinterTest.java:214)
+
+Testcase: test_getInstance_String_Locale14 took 0.002 sec
+Testcase: testSMTP189 took 0.005 sec
+Testcase: testEquals48 took 0.001 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.time.FastDatePrinter.parsePattern(FastDatePrinter.java:178)
+	at org.apache.commons.lang3.time.FastDatePrinter.init(FastDatePrinter.java:148)
+	at org.apache.commons.lang3.time.FastDatePrinter.<init>(FastDatePrinter.java:141)
+	at org.apache.commons.lang3.time.FastDatePrinterTest.getInstance(FastDatePrinterTest.java:73)
+	at org.apache.commons.lang3.time.FastDatePrinterTest.getInstance(FastDatePrinterTest.java:50)
+	at org.apache.commons.lang3.time.FastDatePrinterTest.testEquals48(FastDatePrinterTest.java:115)
+
+Testcase: testEquals192 took 0 sec
+Testcase: testLang645191 took 0 sec
+Testcase: testTimeZoneDisplay188 took 0.001 sec
+Testcase: testMultipartKey226 took 0 sec
+Testcase: testMultipartKey227 took 0.001 sec
+Testcase: testLocaleMatches195 took 0.001 sec
+	FAILED
+expected:<sun.util.calendar.ZoneInfo[id="America/New_York",offset=-18000000,dstSavings=3600000,useDaylight=true,transitions=235,lastRule=java.util.SimpleTimeZone[id=America/New_York,offset=-18000000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]> but was:<en_US>
+junit.framework.AssertionFailedError: expected:<sun.util.calendar.ZoneInfo[id="America/New_York",offset=-18000000,dstSavings=3600000,useDaylight=true,transitions=235,lastRule=java.util.SimpleTimeZone[id=America/New_York,offset=-18000000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]> but was:<en_US>
+	at org.apache.commons.lang3.time.FastDatePrinterTest.testLocaleMatches195(FastDatePrinterTest.java:233)
+

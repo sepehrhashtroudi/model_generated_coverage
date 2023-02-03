@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":120,"id":5533,"methods":[{"el":44,"sc":3,"sl":40},{"el":51,"sc":1,"sl":47},{"el":62,"sc":1,"sl":54},{"el":70,"sc":1,"sl":65}],"name":"NamingPolicyTest","sl":36},{"el":100,"id":5553,"methods":[{"el":99,"sc":5,"sl":97}],"name":"NamingPolicyTest.UpperCaseNamingStrategy","sl":96},{"el":119,"id":5555,"methods":[{"el":109,"sc":5,"sl":107},{"el":113,"sc":5,"sl":111},{"el":118,"sc":5,"sl":115}],"name":"NamingPolicyTest.ClassWithDuplicateFields","sl":103}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_121":{"methods":[{"sl":65},{"sl":97},{"sl":107},{"sl":115}],"name":"testDeprecatedNamingStrategy185","pass":true,"statements":[{"sl":66},{"sl":67},{"sl":68},{"sl":69},{"sl":98},{"sl":108},{"sl":116},{"sl":117}]},"test_217":{"methods":[{"sl":54},{"sl":107},{"sl":111},{"sl":115}],"name":"testGsonDuplicateNameUsingSerializedNameFieldNamingPolicySerialization115","pass":true,"statements":[{"sl":55},{"sl":56},{"sl":57},{"sl":58},{"sl":59},{"sl":60},{"sl":61},{"sl":108},{"sl":112},{"sl":116},{"sl":117}]},"test_51":{"methods":[{"sl":47}],"name":"testGsonWithNonDefaultFieldNamingPolicySerialization29","pass":true,"statements":[{"sl":48},{"sl":49},{"sl":50}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [51], [51], [51], [51], [], [], [], [217], [217], [217], [217], [217], [217], [217], [217], [], [], [], [121], [121], [121], [121], [121], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [121], [121], [], [], [], [], [], [], [], [], [121, 217], [121, 217], [], [], [217], [217], [], [], [121, 217], [121, 217], [121, 217], [], [], []]

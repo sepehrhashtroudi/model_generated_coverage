@@ -1,0 +1,36 @@
+Testsuite: org.apache.commons.lang3.time.FastDateParserTest
+Tests run: 13, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.223 sec
+
+Testcase: testDayOf143 took 0.025 sec
+Testcase: testFormatPeriodISO18 took 0.108 sec
+Testcase: testBasicQuotedTrimmed1202 took 0.006 sec
+Testcase: testBasicQuotedTrimmed1204 took 0.005 sec
+Testcase: testLANG_831200 took 0.003 sec
+Testcase: testParseLongShort87 took 0.005 sec
+Testcase: testLang5383 took 0.002 sec
+	Caused an ERROR
+org.apache.commons.lang3.time.FastDateParser cannot be cast to org.apache.commons.lang3.time.DatePrinter
+java.lang.ClassCastException: org.apache.commons.lang3.time.FastDateParser cannot be cast to org.apache.commons.lang3.time.DatePrinter
+	at org.apache.commons.lang3.time.FastDateParserTest.testLang5383(FastDateParserTest.java:90)
+
+Testcase: testSpecialCharacters47 took 0.002 sec
+Testcase: test_LocaleMatches201 took 0.02 sec
+Testcase: testTimeDefaults206 took 0.019 sec
+Testcase: test_formatPeriodISO203 took 0 sec
+Testcase: test_ISO_8859_1205 took 0.001 sec
+	Caused an ERROR
+Illegal pattern component: I
+java.lang.IllegalArgumentException: Illegal pattern component: I
+	at org.apache.commons.lang3.time.FastDatePrinter.parsePattern(FastDatePrinter.java:281)
+	at org.apache.commons.lang3.time.FastDatePrinter.init(FastDatePrinter.java:148)
+	at org.apache.commons.lang3.time.FastDatePrinter.<init>(FastDatePrinter.java:141)
+	at org.apache.commons.lang3.time.FastDateFormat.<init>(FastDateFormat.java:369)
+	at org.apache.commons.lang3.time.FastDateFormat$1.createInstance(FastDateFormat.java:91)
+	at org.apache.commons.lang3.time.FastDateFormat$1.createInstance(FastDateFormat.java:88)
+	at org.apache.commons.lang3.time.FormatCache.getInstance(FormatCache.java:82)
+	at org.apache.commons.lang3.time.FastDateFormat.getInstance(FastDateFormat.java:165)
+	at org.apache.commons.lang3.time.DateFormatUtils.format(DateFormatUtils.java:303)
+	at org.apache.commons.lang3.time.DateFormatUtils.format(DateFormatUtils.java:225)
+	at org.apache.commons.lang3.time.FastDateParserTest.test_ISO_8859_1205(FastDateParserTest.java:239)
+
+Testcase: testLocaleMatches142 took 0.001 sec

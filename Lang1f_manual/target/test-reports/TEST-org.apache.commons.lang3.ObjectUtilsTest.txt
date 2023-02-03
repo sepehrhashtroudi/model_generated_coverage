@@ -1,0 +1,42 @@
+Testsuite: org.apache.commons.lang3.ObjectUtilsTest
+Tests run: 9, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec
+
+Testcase: testHashCode50 took 0.022 sec
+	FAILED
+expected:<null> but was:<0>
+junit.framework.AssertionFailedError: expected:<null> but was:<0>
+	at org.apache.commons.lang3.ObjectUtilsTest.testHashCode50(ObjectUtilsTest.java:46)
+
+Testcase: testNumerator285 took 0 sec
+Testcase: testJoin_IterableChar131 took 0.013 sec
+Testcase: testHashCode286 took 0 sec
+	FAILED
+expected:<true> but was:<1231>
+junit.framework.AssertionFailedError: expected:<true> but was:<1231>
+	at org.apache.commons.lang3.ObjectUtilsTest.testHashCode286(ObjectUtilsTest.java:95)
+
+Testcase: testHashCode289 took 0 sec
+Testcase: testHashCode293 took 0 sec
+	FAILED
+expected:<true> but was:<88558700>
+junit.framework.AssertionFailedError: expected:<true> but was:<88558700>
+	at org.apache.commons.lang3.ObjectUtilsTest.testHashCode293(ObjectUtilsTest.java:210)
+
+Testcase: testHashCode294 took 0 sec
+	FAILED
+expected:<null> but was:<0>
+junit.framework.AssertionFailedError: expected:<null> but was:<0>
+	at org.apache.commons.lang3.ObjectUtilsTest.testHashCode294(ObjectUtilsTest.java:219)
+
+Testcase: testHashCode295 took 0 sec
+	FAILED
+expected:<null> but was:<0>
+junit.framework.AssertionFailedError: expected:<null> but was:<0>
+	at org.apache.commons.lang3.ObjectUtilsTest.testHashCode295(ObjectUtilsTest.java:242)
+
+Testcase: testHashCode296 took 0 sec
+	FAILED
+expected:<null> but was:<0>
+junit.framework.AssertionFailedError: expected:<null> but was:<0>
+	at org.apache.commons.lang3.ObjectUtilsTest.testHashCode296(ObjectUtilsTest.java:269)
+

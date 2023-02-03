@@ -1,0 +1,96 @@
+Testsuite: org.apache.commons.lang3.ArrayUtilsTest
+Tests run: 29, Failures: 10, Errors: 2, Skipped: 0, Time elapsed: 0.063 sec
+
+Testcase: testIndexOfBoolean101 took 0.023 sec
+	FAILED
+expected:<2> but was:<0>
+junit.framework.AssertionFailedError: expected:<2> but was:<0>
+	at org.apache.commons.lang3.ArrayUtilsTest.testIndexOfBoolean101(ArrayUtilsTest.java:124)
+
+Testcase: testIndexOfBoolean430 took 0 sec
+Testcase: testToStringIfNull479 took 0 sec
+	FAILED
+expected: java.lang.String<null> but was: null<null>
+junit.framework.AssertionFailedError: expected: java.lang.String<null> but was: null<null>
+	at org.apache.commons.lang3.ArrayUtilsTest.testToStringIfNull479(ArrayUtilsTest.java:302)
+
+Testcase: testToStringIfNull484 took 0 sec
+	FAILED
+expected: java.lang.String<null> but was: null<null>
+junit.framework.AssertionFailedError: expected: java.lang.String<null> but was: null<null>
+	at org.apache.commons.lang3.ArrayUtilsTest.testToStringIfNull484(ArrayUtilsTest.java:365)
+
+Testcase: testGetSystemProperty481 took 0.002 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsTest.testGetSystemProperty481(ArrayUtilsTest.java:324)
+
+Testcase: testToString487 took 0.006 sec
+	FAILED
+expected:<[a]> but was:<[{a,b,c}]>
+junit.framework.AssertionFailedError: expected:<[a]> but was:<[{a,b,c}]>
+	at org.apache.commons.lang3.ArrayUtilsTest.testToString487(ArrayUtilsTest.java:415)
+
+Testcase: testOneArgNull486 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.ArrayUtilsTest.testOneArgNull486(ArrayUtilsTest.java:409)
+
+Testcase: testNullToEmptyLongObject76 took 0.001 sec
+Testcase: testIndexOfFloat262 took 0.001 sec
+Testcase: testNullToEmptyByteObject58 took 0 sec
+Testcase: testToString_Object492 took 0 sec
+	FAILED
+expected:<null> but was:<{}>
+junit.framework.AssertionFailedError: expected:<null> but was:<{}>
+	at org.apache.commons.lang3.ArrayUtilsTest.testToString_Object492(ArrayUtilsTest.java:490)
+
+Testcase: testToString_Object494 took 0 sec
+	FAILED
+expected:<[0:1:2:3]> but was:<[{0,1,2,3,<null>,0}]>
+junit.framework.AssertionFailedError: expected:<[0:1:2:3]> but was:<[{0,1,2,3,<null>,0}]>
+	at org.apache.commons.lang3.ArrayUtilsTest.testToString_Object494(ArrayUtilsTest.java:533)
+
+Testcase: testNullToEmptyShortObject54 took 0 sec
+Testcase: testJavaVersionMatches476 took 0 sec
+Testcase: testToObject_byte15 took 0 sec
+Testcase: testToPrimitive_long_long66 took 0 sec
+Testcase: testNullToEmptyByteObject347 took 0 sec
+Testcase: testToStringObject485 took 0 sec
+	FAILED
+expected:<[0:1:2:3]> but was:<[{0,1,2,3,<null>,0}]>
+junit.framework.AssertionFailedError: expected:<[0:1:2:3]> but was:<[{0,1,2,3,<null>,0}]>
+	at org.apache.commons.lang3.ArrayUtilsTest.testToStringObject485(ArrayUtilsTest.java:383)
+
+Testcase: testContainsBoolean429 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsTest.testContainsBoolean429(ArrayUtilsTest.java:219)
+
+Testcase: testRemoveElementLongArray118 took 0 sec
+Testcase: testOSMatchesNameAndVersion123 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at java.lang.String.startsWith(String.java:1405)
+	at java.lang.String.startsWith(String.java:1434)
+	at org.apache.commons.lang3.SystemUtils.isOSMatch(SystemUtils.java:1426)
+	at org.apache.commons.lang3.SystemUtils.getOSMatches(SystemUtils.java:1293)
+	at org.apache.commons.lang3.ArrayUtilsTest.testOSMatchesNameAndVersion123(ArrayUtilsTest.java:152)
+
+Testcase: testOSMatchesNameAndVersion495 took 0 sec
+Testcase: testOSMatchesName483 took 0 sec
+Testcase: testJavaAwtHeadless491 took 0 sec
+Testcase: testGetSet477 took 0 sec
+Testcase: testGetSet493 took 0.001 sec
+	FAILED
+expected: org.apache.commons.lang3.JavaVersion<1.2> but was: java.lang.String<1.2>
+junit.framework.AssertionFailedError: expected: org.apache.commons.lang3.JavaVersion<1.2> but was: java.lang.String<1.2>
+	at org.apache.commons.lang3.ArrayUtilsTest.testGetSet493(ArrayUtilsTest.java:519)
+
+Testcase: testToPrimitive_double_double33 took 0 sec
+Testcase: testIndexOfFloat43 took 0 sec
+Testcase: testLastIndexOfShortWithStartIndex125 took 0 sec

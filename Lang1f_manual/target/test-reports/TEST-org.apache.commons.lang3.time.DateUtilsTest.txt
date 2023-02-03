@@ -1,0 +1,37 @@
+Testsuite: org.apache.commons.lang3.time.DateUtilsTest
+Tests run: 7, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec
+------------- Standard Output ---------------
+DateUtilsTest: Default Locale=en_US
+------------- ---------------- ---------------
+
+Testcase: testIsSameDay_Cal511 took 0.029 sec
+Testcase: testIsSameDay_Cal512 took 0.005 sec
+Testcase: testSetSeconds420 took 0.006 sec
+	FAILED
+expected:<2> but was:<0>
+junit.framework.AssertionFailedError: expected:<2> but was:<0>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:344)
+	at org.apache.commons.lang3.time.DateUtilsTest.testSetSeconds420(DateUtilsTest.java:206)
+
+Testcase: testIsSameDay_Date137 took 0.003 sec
+Testcase: testSetLenient421 took 0.003 sec
+	FAILED
+expected:<5> but was:<19>
+junit.framework.AssertionFailedError: expected:<5> but was:<19>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:341)
+	at org.apache.commons.lang3.time.DateUtilsTest.testSetLenient421(DateUtilsTest.java:223)
+
+Testcase: testSetTime91 took 0.003 sec
+	FAILED
+expected:<5> but was:<19>
+junit.framework.AssertionFailedError: expected:<5> but was:<19>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:341)
+	at org.apache.commons.lang3.time.DateUtilsTest.testSetTime91(DateUtilsTest.java:155)
+
+Testcase: testSet419 took 0.003 sec
+	FAILED
+expected:<5> but was:<10>
+junit.framework.AssertionFailedError: expected:<5> but was:<10>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:341)
+	at org.apache.commons.lang3.time.DateUtilsTest.testSet419(DateUtilsTest.java:189)
+

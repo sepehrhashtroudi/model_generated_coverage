@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a000a888-cc71-4da7-96f9-edac01f82e26" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/debugging/sourcemap/Base64Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/debugging/sourcemap/Base64Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/debugging/sourcemap/Base64VLQTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/debugging/sourcemap/Base64VLQTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/debugging/sourcemap/Base64VLQTest.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/debugging/sourcemap/SourceMapConsumerV1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/debugging/sourcemap/SourceMapConsumerV1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/debugging/sourcemap/SourceMapConsumerV2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/debugging/sourcemap/SourceMapConsumerV2Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/debugging/sourcemap/SourceMapGeneratorV1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/debugging/sourcemap/SourceMapGeneratorV1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/debugging/sourcemap/SourceMapGeneratorV2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/debugging/sourcemap/SourceMapGeneratorV2Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/debugging/sourcemap/SourceMapGeneratorV3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/debugging/sourcemap/SourceMapGeneratorV3Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/AliasExternalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/AliasExternalsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/AliasKeywordsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/AliasKeywordsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/AliasStringsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/AliasStringsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/AmbiguatePropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/AmbiguatePropertiesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/AstParallelizerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/AstParallelizerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/AstValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/AstValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/BasicErrorManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/BasicErrorManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CallGraphTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CallGraphTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ChainCallsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ChainCallsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckAccessControlsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckAccessControlsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckDebuggerStatementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckDebuggerStatementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckGlobalNamesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckGlobalNamesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckGlobalThisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckGlobalThisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckMissingGetCssNameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckMissingGetCssNameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckMissingReturnTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckMissingReturnTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckPathsBetweenNodesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckPathsBetweenNodesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckProvidesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckProvidesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckRegExpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckRegExpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckRequiresForConstructorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckRequiresForConstructorsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckSideEffectsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckSideEffectsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckSuspiciousCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckSuspiciousCodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckUnreachableCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CheckUnreachableCodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CleanupPassesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CleanupPassesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ClosureCodeRemovalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ClosureCodeRemovalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ClosureCodingConventionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ClosureCodingConventionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ClosureOptimizePrimitivesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ClosureOptimizePrimitivesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ClosureReverseAbstractInterpreterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ClosureReverseAbstractInterpreterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ClosureRewriteClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ClosureRewriteClassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CoalesceVariableNamesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CoalesceVariableNamesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CodePrinterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CodePrinterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CollapseAnonymousFunctionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CollapseAnonymousFunctionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CollapsePropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CollapsePropertiesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CollapseVariableDeclarationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CollapseVariableDeclarationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CombinedCompilerPassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CombinedCompilerPassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CommandLineRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CommandLineRunnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CompilerOptionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CompilerOptionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CompilerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CompilerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CompilerTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CompilerTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ConcreteTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ConcreteTypeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ConstCheckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ConstCheckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ControlFlowAnalysisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ControlFlowAnalysisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ControlStructureCheckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ControlStructureCheckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ConvertToDottedPropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ConvertToDottedPropertiesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CreateSyntheticBlocksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CreateSyntheticBlocksTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CrossModuleCodeMotionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CrossModuleCodeMotionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CrossModuleMethodMotionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CrossModuleMethodMotionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/CrossModuleMethodMotionTest.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/DataFlowAnalysisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/DataFlowAnalysisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/DeadAssignmentsEliminationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/DeadAssignmentsEliminationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/DefaultCodingConventionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/DefaultCodingConventionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/DefinitionsRemoverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/DefinitionsRemoverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/DenormalizeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/DenormalizeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/DevirtualizePrototypeMethodsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/DevirtualizePrototypeMethodsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/DiagnosticGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/DiagnosticGroupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/DisambiguatePropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/DisambiguatePropertiesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/DotFormatterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/DotFormatterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ExpandJqueryAliasesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ExpandJqueryAliasesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ExploitAssignsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ExploitAssignsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ExportTestFunctionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ExportTestFunctionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ExpressionDecomposerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ExpressionDecomposerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ExternExportsPassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ExternExportsPassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ExtractPrototypeMemberDeclarationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ExtractPrototypeMemberDeclarationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/FixedPointGraphTraversalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/FixedPointGraphTraversalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/FlowSensitiveInlineVariablesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/FlowSensitiveInlineVariablesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/FunctionArgumentInjectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/FunctionArgumentInjectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/FunctionInjectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/FunctionInjectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/FunctionNamesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/FunctionNamesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/FunctionRewriterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/FunctionRewriterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/FunctionToBlockMutatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/FunctionToBlockMutatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/FunctionTypeBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/FunctionTypeBuilderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/GatherRawExportsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/GatherRawExportsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/GatherSideEffectSubexpressionsCallbackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/GatherSideEffectSubexpressionsCallbackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/GenerateExportsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/GenerateExportsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/GlobalNamespaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/GlobalNamespaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/GlobalVarReferenceMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/GlobalVarReferenceMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/GoogleCodingConventionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/GoogleCodingConventionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/GroupVariableDeclarationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/GroupVariableDeclarationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/IgnoreCajaPropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/IgnoreCajaPropertiesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/InferJSDocInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/InferJSDocInfoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/InlineCostEstimatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/InlineCostEstimatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/InlineFunctionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/InlineFunctionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/InlineObjectLiteralsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/InlineObjectLiteralsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/InlinePropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/InlinePropertiesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/InlineSimpleMethodsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/InlineSimpleMethodsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/InlineVariablesConstantsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/InlineVariablesConstantsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/InlineVariablesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/InlineVariablesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/InstrumentFunctionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/InstrumentFunctionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/IntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/IntegrationTest.java.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/JSModuleGraphTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/JSModuleGraphTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/JSModuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/JSModuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/JsMessageExtractorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/JsMessageExtractorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/JsMessageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/JsMessageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/JsMessageVisitorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/JsMessageVisitorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/LightweightMessageFormatterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/LightweightMessageFormatterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/LinkedFlowScopeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/LinkedFlowScopeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/LiveVariableAnalysisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/LiveVariableAnalysisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/LooseTypeCheckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/LooseTypeCheckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/MakeDeclaredNamesUniqueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/MakeDeclaredNamesUniqueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/MarkNoSideEffectCallsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/MarkNoSideEffectCallsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/MaybeReachingVariableUseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/MaybeReachingVariableUseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/MemoizedScopeCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/MemoizedScopeCreatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/MinimizeExitPointsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/MinimizeExitPointsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/MoveFunctionDeclarationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/MoveFunctionDeclarationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/MustBeReachingVariableDefTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/MustBeReachingVariableDefTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/NameAnalyzerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/NameAnalyzerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/NameAnonymousFunctionsMappedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/NameAnonymousFunctionsMappedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/NameAnonymousFunctionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/NameAnonymousFunctionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/NodeIteratorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/NodeIteratorsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/NodeTraversalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/NodeTraversalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/NodeUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/NodeUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/NormalizeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/NormalizeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ObjectPropertyStringPostprocessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ObjectPropertyStringPostprocessTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ObjectPropertyStringPreprocessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ObjectPropertyStringPreprocessTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/OptimizeArgumentsArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/OptimizeArgumentsArrayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/OptimizeCallsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/OptimizeCallsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/OptimizeParametersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/OptimizeParametersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/OptimizeReturnsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/OptimizeReturnsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PeepholeFoldConstantsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PeepholeFoldConstantsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PeepholeFoldWithTypesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PeepholeFoldWithTypesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PeepholeIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PeepholeIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PeepholeOptimizationsPassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PeepholeOptimizationsPassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PeepholeRemoveDeadCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PeepholeRemoveDeadCodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PeepholeReplaceKnownMethodsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PeepholeReplaceKnownMethodsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntaxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntaxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PhaseOptimizerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PhaseOptimizerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PrepareAstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PrepareAstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ProcessClosurePrimitivesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ProcessClosurePrimitivesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ProcessCommonJSModulesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ProcessCommonJSModulesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ProcessDefinesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ProcessDefinesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ProcessTweaksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ProcessTweaksTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PureFunctionIdentifierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/PureFunctionIdentifierTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RecordFunctionInformationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RecordFunctionInformationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RemoveTryCatchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RemoveTryCatchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RemoveUnusedNamesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RemoveUnusedNamesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RemoveUnusedPrototypePropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RemoveUnusedPrototypePropertiesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RemoveUnusedVarsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RemoveUnusedVarsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RenameLabelsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RenameLabelsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RenameLocalVarsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RenameLocalVarsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RenamePropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RenamePropertiesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RenamePrototypesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RenamePrototypesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RenameVarsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RenameVarsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ReorderConstantExpressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ReorderConstantExpressionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ReplaceCssNamesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ReplaceCssNamesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ReplaceIdGeneratorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ReplaceIdGeneratorsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ReplaceMessagesForChromeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ReplaceMessagesForChromeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ReplaceMessagesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ReplaceMessagesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ReplaceStringsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ReplaceStringsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RescopeGlobalSymbolsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RescopeGlobalSymbolsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RhinoErrorReporterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RhinoErrorReporterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RuntimeTypeCheckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/RuntimeTypeCheckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SanityCheckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SanityCheckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ScopedAliasesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ScopedAliasesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SemanticReverseAbstractInterpreterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SemanticReverseAbstractInterpreterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ShadowVariablesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/ShadowVariablesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SideEffectsAnalysisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SideEffectsAnalysisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SimpleDefinitionFinderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SimpleDefinitionFinderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SimpleFunctionAliasAnalysisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SimpleFunctionAliasAnalysisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SourceInformationAnnotatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SourceInformationAnnotatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SourceMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SourceMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SpecializeModuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SpecializeModuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/StatementFusionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/StatementFusionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/StrictModeCheckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/StrictModeCheckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/StripCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/StripCodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SymbolTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SymbolTableTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SyntacticScopeCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/SyntacticScopeCreatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/TightenTypesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/TightenTypesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/TransformAMDToCJSModuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/TransformAMDToCJSModuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/TypeCheckFunctionCheckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/TypeCheckFunctionCheckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/TypeCheckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/TypeCheckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/TypeInferenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/TypeInferenceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/TypeValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/TypeValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/TypedScopeCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/TypedScopeCreatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/UnreachableCodeEliminationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/UnreachableCodeEliminationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/VarCheckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/VarCheckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/VariableMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/VariableMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/VariableReferenceCheckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/VariableReferenceCheckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/VariableVisibilityAnalysisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/VariableVisibilityAnalysisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/XtbMessageBundleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/XtbMessageBundleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/deps/DepsFileParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/deps/DepsFileParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/deps/JsFileLineParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/deps/JsFileLineParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/deps/JsFileParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/deps/JsFileParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/deps/JsFunctionParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/deps/JsFunctionParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/deps/SortedDependenciesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/deps/SortedDependenciesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/graph/GraphColoringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/graph/GraphColoringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/graph/GraphPrunerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/graph/GraphPrunerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/graph/GraphReachabilityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/graph/GraphReachabilityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/graph/GraphTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/graph/GraphTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/graph/StandardUnionFindTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/graph/StandardUnionFindTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/jsonml/JsonMLConversionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/jsonml/JsonMLConversionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/jsonml/JsonMLValidationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/jsonml/JsonMLValidationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/jsonml/SecureCompilerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/jsonml/SecureCompilerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/parsing/IRFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/parsing/IRFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/parsing/JsDocInfoParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/parsing/JsDocInfoParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/parsing/JsDocTokenStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/parsing/JsDocTokenStreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/jscomp/parsing/ParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/jscomp/parsing/ParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/rhino/IRTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/rhino/IRTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/rhino/JSDocInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/rhino/JSDocInfoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/rhino/NodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/rhino/NodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/BooleanLiteralSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/BooleanLiteralSetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/EnumElementTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/EnumElementTypeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/FunctionParamBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/FunctionParamBuilderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/FunctionTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/FunctionTypeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/JSTypeRegistryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/JSTypeRegistryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/JSTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/JSTypeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/NamedTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/NamedTypeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/ParameterizedTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/ParameterizedTypeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/PrototypeObjectTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/PrototypeObjectTypeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/RecordTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/RecordTypeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/TernaryValueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/TernaryValueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/UnionTypeBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/UnionTypeBuilderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/UnionTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/google/javascript/rhino/jstype/UnionTypeTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2JnU2SjANUFkwrro99aDuVY0O3x" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a000a888-cc71-4da7-96f9-edac01f82e26" name="Changes" comment="" />
+      <created>1672713133448</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672713133448</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

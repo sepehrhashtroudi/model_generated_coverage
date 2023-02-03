@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../../style.css');
+        @import url('../../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../../" data-package-name="com.google.javascript.jscomp.parsing">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../../dashboard.html"> Project Clover database Thu Jan 12 2023 14:04:05 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp.parsing</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class JsDocInfoParserTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="JsDocInfoParserTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>JsDocInfoParserTest</td>
+        <td class="testPasses"><span class="sortValue">132</span>132</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.023</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testBadSuppress11297</span><a href="JsDocInfoParserTest_testBadSuppress11297_xh.html">JsDocInfoParserTest.testBadSuppress11297</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469462</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testUnsupportedJsDocSyntax12079</span><a href="JsDocInfoParserTest_testUnsupportedJsDocSyntax12079_h2.html">JsDocInfoParserTest.testUnsupportedJsDocSyntax12079</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469596</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseFunctionalTypeError41680</span><a href="JsDocInfoParserTest_testParseFunctionalTypeError41680_172.html">JsDocInfoParserTest.testParseFunctionalTypeError41680</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469568</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testBadSuppress61921</span><a href="JsDocInfoParserTest_testBadSuppress61921_95.html">JsDocInfoParserTest.testBadSuppress61921</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469587</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseParam141514</span><a href="JsDocInfoParserTest_testParseParam141514_qo.html">JsDocInfoParserTest.testParseParam141514</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469554</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testTypeTagConflict290</span><a href="JsDocInfoParserTest_testTypeTagConflict290_z7.html">JsDocInfoParserTest.testTypeTagConflict290</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469492</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseBlockComment2555</span><a href="JsDocInfoParserTest_testParseBlockComment2555_mt.html">JsDocInfoParserTest.testParseBlockComment2555</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469522</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testStableIdGeneratorConflict1857</span><a href="JsDocInfoParserTest_testStableIdGeneratorConflict1857_2i.html">JsDocInfoParserTest.testStableIdGeneratorConflict1857</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469583</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseFunctionalTypeError61662</span><a href="JsDocInfoParserTest_testParseFunctionalTypeError61662_cs.html">JsDocInfoParserTest.testParseFunctionalTypeError61662</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469565</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseExport2553</span><a href="JsDocInfoParserTest_testParseExport2553_be.html">JsDocInfoParserTest.testParseExport2553</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469521</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseImplementsSameTwice1142</span><a href="JsDocInfoParserTest_testParseImplementsSameTwice1142_bp.html">JsDocInfoParserTest.testParseImplementsSameTwice1142</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469450</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testSingleTagsReordered1641</span><a href="JsDocInfoParserTest_testSingleTagsReordered1641_fy.html">JsDocInfoParserTest.testSingleTagsReordered1641</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469563</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testTypeTagConflict171366</span><a href="JsDocInfoParserTest_testTypeTagConflict171366_132.html">JsDocInfoParserTest.testTypeTagConflict171366</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469535</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseNoCheck2300</span><a href="JsDocInfoParserTest_testParseNoCheck2300_lw.html">JsDocInfoParserTest.testParseNoCheck2300</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469500</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseRecordType191167</span><a href="JsDocInfoParserTest_testParseRecordType191167_c5.html">JsDocInfoParserTest.testParseRecordType191167</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469454</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseExtends52110</span><a href="JsDocInfoParserTest_testParseExtends52110_17m.html">JsDocInfoParserTest.testParseExtends52110</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469601</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseDesc968</span><a href="JsDocInfoParserTest_testParseDesc968_1r3.html">JsDocInfoParserTest.testParseDesc968</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469421</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testSeeMissing1737</span><a href="JsDocInfoParserTest_testSeeMissing1737_144.html">JsDocInfoParserTest.testSeeMissing1737</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469573</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testBadSuppress71441</span><a href="JsDocInfoParserTest_testBadSuppress71441_1l9.html">JsDocInfoParserTest.testBadSuppress71441</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469547</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testInterfaceExtends1367</span><a href="JsDocInfoParserTest_testInterfaceExtends1367_us.html">JsDocInfoParserTest.testInterfaceExtends1367</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469536</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseDeprecated21702</span><a href="JsDocInfoParserTest_testParseDeprecated21702_1h9.html">JsDocInfoParserTest.testParseDeprecated21702</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469571</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseParam112163</span><a href="JsDocInfoParserTest_testParseParam112163_v6.html">JsDocInfoParserTest.testParseParam112163</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469603</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testBadTypeDefInterfaceAndConstructor11086</span><a href="JsDocInfoParserTest_testBadTypeDefInterfaceAndConstructor11086_7g.html">JsDocInfoParserTest.testBadTypeDefInterfaceAndConstructor11086</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469443</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseParam181931</span><a href="JsDocInfoParserTest_testParseParam181931_1pt.html">JsDocInfoParserTest.testParseParam181931</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469588</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseDefineErrors51830</span><a href="JsDocInfoParserTest_testParseDefineErrors51830_n6.html">JsDocInfoParserTest.testParseDefineErrors51830</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469578</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseReturnType21073</span><a href="JsDocInfoParserTest_testParseReturnType21073_fv.html">JsDocInfoParserTest.testParseReturnType21073</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469441</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseFunctionalType181952</span><a href="JsDocInfoParserTest_testParseFunctionalType181952_fe.html">JsDocInfoParserTest.testParseFunctionalType181952</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469589</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testBadClassMultiExtends945</span><a href="JsDocInfoParserTest_testBadClassMultiExtends945_19j.html">JsDocInfoParserTest.testBadClassMultiExtends945</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469425</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testTypeTagConflict81544</span><a href="JsDocInfoParserTest_testTypeTagConflict81544_154.html">JsDocInfoParserTest.testTypeTagConflict81544</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469555</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParserWithTemplateDuplicated2222</span><a href="JsDocInfoParserTest_testParserWithTemplateDuplicated2222_b1.html">JsDocInfoParserTest.testParserWithTemplateDuplicated2222</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469608</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testVersionDuplication1249</span><a href="JsDocInfoParserTest_testVersionDuplication1249_o3.html">JsDocInfoParserTest.testVersionDuplication1249</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469461</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseDesc82400</span><a href="JsDocInfoParserTest_testParseDesc82400_ne.html">JsDocInfoParserTest.testParseDesc82400</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469475</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testBadSuppress41054</span><a href="JsDocInfoParserTest_testBadSuppress41054_1lq.html">JsDocInfoParserTest.testBadSuppress41054</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469438</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testDocumentationMultipleParameter21882</span><a href="JsDocInfoParserTest_testDocumentationMultipleParameter21882_ts.html">JsDocInfoParserTest.testDocumentationMultipleParameter21882</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469584</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testSuppress11007</span><a href="JsDocInfoParserTest_testSuppress11007_1db.html">JsDocInfoParserTest.testSuppress11007</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469433</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseUnionType91053</span><a href="JsDocInfoParserTest_testParseUnionType91053_ul.html">JsDocInfoParserTest.testParseUnionType91053</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469437</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testSourceName177</span><a href="JsDocInfoParserTest_testSourceName177_2b.html">JsDocInfoParserTest.testSourceName177</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469496</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseExterns2405</span><a href="JsDocInfoParserTest_testParseExterns2405_di.html">JsDocInfoParserTest.testParseExterns2405</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469507</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseExtendsNullable21396</span><a href="JsDocInfoParserTest_testParseExtendsNullable21396_bd.html">JsDocInfoParserTest.testParseExtendsNullable21396</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469538</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseFunctionalTypeError11957</span><a href="JsDocInfoParserTest_testParseFunctionalTypeError11957_do.html">JsDocInfoParserTest.testParseFunctionalTypeError11957</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469591</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseNullableModifiers41660</span><a href="JsDocInfoParserTest_testParseNullableModifiers41660_1c8.html">JsDocInfoParserTest.testParseNullableModifiers41660</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469564</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseOptionalModifier310</span><a href="JsDocInfoParserTest_testParseOptionalModifier310_vk.html">JsDocInfoParserTest.testParseOptionalModifier310</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469501</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseLicenseWithAnnotation908</span><a href="JsDocInfoParserTest_testParseLicenseWithAnnotation908_1b7.html">JsDocInfoParserTest.testParseLicenseWithAnnotation908</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469533</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testRegression8955</span><a href="JsDocInfoParserTest_testRegression8955_12l.html">JsDocInfoParserTest.testRegression8955</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469427</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseFunctionalType191418</span><a href="JsDocInfoParserTest_testParseFunctionalType191418_bs.html">JsDocInfoParserTest.testParseFunctionalType191418</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469540</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseMeaning31479</span><a href="JsDocInfoParserTest_testParseMeaning31479_bl.html">JsDocInfoParserTest.testParseMeaning31479</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469551</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseFunctionalTypeError71689</span><a href="JsDocInfoParserTest_testParseFunctionalTypeError71689_1g2.html">JsDocInfoParserTest.testParseFunctionalTypeError71689</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469569</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseNewline3158</span><a href="JsDocInfoParserTest_testParseNewline3158_1bf.html">JsDocInfoParserTest.testParseNewline3158</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469494</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseArrayType3656</span><a href="JsDocInfoParserTest_testParseArrayType3656_5q.html">JsDocInfoParserTest.testParseArrayType3656</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469526</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseNamedType11887</span><a href="JsDocInfoParserTest_testParseNamedType11887_cj.html">JsDocInfoParserTest.testParseNamedType11887</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469586</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseExpose1478</span><a href="JsDocInfoParserTest_testParseExpose1478_1f1.html">JsDocInfoParserTest.testParseExpose1478</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469515</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testReferences1553</span><a href="JsDocInfoParserTest_testReferences1553_h0.html">JsDocInfoParserTest.testReferences1553</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469556</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseFunctionalTypeError51345</span><a href="JsDocInfoParserTest_testParseFunctionalTypeError51345_q3.html">JsDocInfoParserTest.testParseFunctionalTypeError51345</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469466</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testTypeTagConflict12103</span><a href="JsDocInfoParserTest_testTypeTagConflict12103_ay.html">JsDocInfoParserTest.testTypeTagConflict12103</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469599</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseUndefinedType31025</span><a href="JsDocInfoParserTest_testParseUndefinedType31025_19h.html">JsDocInfoParserTest.testParseUndefinedType31025</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469435</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseInvalidTypeViaStatic1732</span><a href="JsDocInfoParserTest_testParseInvalidTypeViaStatic1732_1sb.html">JsDocInfoParserTest.testParseInvalidTypeViaStatic1732</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469572</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testBadModifies71101</span><a href="JsDocInfoParserTest_testBadModifies71101_57.html">JsDocInfoParserTest.testBadModifies71101</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469447</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testVersionMissing2214</span><a href="JsDocInfoParserTest_testVersionMissing2214_mf.html">JsDocInfoParserTest.testVersionMissing2214</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469607</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testTypeTagConflict101578</span><a href="JsDocInfoParserTest_testTypeTagConflict101578_127.html">JsDocInfoParserTest.testTypeTagConflict101578</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469560</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseMeaning42257</span><a href="JsDocInfoParserTest_testParseMeaning42257_eq.html">JsDocInfoParserTest.testParseMeaning42257</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469611</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseLends52413</span><a href="JsDocInfoParserTest_testParseLends52413_1s5.html">JsDocInfoParserTest.testParseLends52413</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469477</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseParam7215</span><a href="JsDocInfoParserTest_testParseParam7215_1bt.html">JsDocInfoParserTest.testParseParam7215</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469498</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseRecordType12881</span><a href="JsDocInfoParserTest_testParseRecordType12881_z6.html">JsDocInfoParserTest.testParseRecordType12881</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469531</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseArrayTypeError42186</span><a href="JsDocInfoParserTest_testParseArrayTypeError42186_1ls.html">JsDocInfoParserTest.testParseArrayTypeError42186</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469606</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseDefineErrors72429</span><a href="JsDocInfoParserTest_testParseDefineErrors72429_1lo.html">JsDocInfoParserTest.testParseDefineErrors72429</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469479</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseExpose22121</span><a href="JsDocInfoParserTest_testParseExpose22121_14.html">JsDocInfoParserTest.testParseExpose22121</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469602</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testModifies61020</span><a href="JsDocInfoParserTest_testModifies61020_1jo.html">JsDocInfoParserTest.testModifies61020</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469434</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseNoCheck1569</span><a href="JsDocInfoParserTest_testParseNoCheck1569_if.html">JsDocInfoParserTest.testParseNoCheck1569</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469524</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseParamError51806</span><a href="JsDocInfoParserTest_testParseParamError51806_dp.html">JsDocInfoParserTest.testParseParamError51806</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469577</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testBadModifies81425</span><a href="JsDocInfoParserTest_testBadModifies81425_vb.html">JsDocInfoParserTest.testBadModifies81425</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469542</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseDesc121411</span><a href="JsDocInfoParserTest_testParseDesc121411_128.html">JsDocInfoParserTest.testParseDesc121411</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469539</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseLends61752</span><a href="JsDocInfoParserTest_testParseLends61752_qz.html">JsDocInfoParserTest.testParseLends61752</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469575</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseThrows21129</span><a href="JsDocInfoParserTest_testParseThrows21129_1cd.html">JsDocInfoParserTest.testParseThrows21129</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469449</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseJavaDispatch21960</span><a href="JsDocInfoParserTest_testParseJavaDispatch21960_1ka.html">JsDocInfoParserTest.testParseJavaDispatch21960</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469592</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseFunctionalType131459</span><a href="JsDocInfoParserTest_testParseFunctionalType131459_168.html">JsDocInfoParserTest.testParseFunctionalType131459</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469549</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testTypeTagConflict22432</span><a href="JsDocInfoParserTest_testTypeTagConflict22432_1e3.html">JsDocInfoParserTest.testTypeTagConflict22432</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469509</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseInheritDoc32090</span><a href="JsDocInfoParserTest_testParseInheritDoc32090_13.html">JsDocInfoParserTest.testParseInheritDoc32090</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469598</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testSuppress22452</span><a href="JsDocInfoParserTest_testSuppress22452_8o.html">JsDocInfoParserTest.testSuppress22452</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469480</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testTypeTagConflict18151</span><a href="JsDocInfoParserTest_testTypeTagConflict18151_a2.html">JsDocInfoParserTest.testTypeTagConflict18151</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469493</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testBadModifies4483</span><a href="JsDocInfoParserTest_testBadModifies4483_1gg.html">JsDocInfoParserTest.testBadModifies4483</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469517</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testRegression1615</span><a href="JsDocInfoParserTest_testRegression1615_1t.html">JsDocInfoParserTest.testRegression1615</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469525</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testFileOverviewDuplicate2047</span><a href="JsDocInfoParserTest_testFileOverviewDuplicate2047_1ot.html">JsDocInfoParserTest.testFileOverviewDuplicate2047</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469593</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testTypeTagConflict91472</span><a href="JsDocInfoParserTest_testTypeTagConflict91472_120.html">JsDocInfoParserTest.testTypeTagConflict91472</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469550</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseUnionType131438</span><a href="JsDocInfoParserTest_testParseUnionType131438_gs.html">JsDocInfoParserTest.testParseUnionType131438</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469545</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseWithMarkerNames31159</span><a href="JsDocInfoParserTest_testParseWithMarkerNames31159_1qo.html">JsDocInfoParserTest.testParseWithMarkerNames31159</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469452</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testGetOriginalCommentString391</span><a href="JsDocInfoParserTest_testGetOriginalCommentString391_pt.html">JsDocInfoParserTest.testGetOriginalCommentString391</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469505</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseFunctionalType10516</span><a href="JsDocInfoParserTest_testParseFunctionalType10516_i.html">JsDocInfoParserTest.testParseFunctionalType10516</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469518</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseTypeViaStatic31500</span><a href="JsDocInfoParserTest_testParseTypeViaStatic31500_139.html">JsDocInfoParserTest.testParseTypeViaStatic31500</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469552</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParsePreserve1670</span><a href="JsDocInfoParserTest_testParsePreserve1670_wh.html">JsDocInfoParserTest.testParsePreserve1670</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469567</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testRegression41352</span><a href="JsDocInfoParserTest_testRegression41352_1dv.html">JsDocInfoParserTest.testRegression41352</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469467</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testMalformedThisAnnotation913</span><a href="JsDocInfoParserTest_testMalformedThisAnnotation913_61.html">JsDocInfoParserTest.testMalformedThisAnnotation913</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469534</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseThisType32320</span><a href="JsDocInfoParserTest_testParseThisType32320_3g.html">JsDocInfoParserTest.testParseThisType32320</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469471</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testBug909468785</span><a href="JsDocInfoParserTest_testBug909468785_9h.html">JsDocInfoParserTest.testBug909468785</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469488</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testTypeTagConflict112409</span><a href="JsDocInfoParserTest_testTypeTagConflict112409_at.html">JsDocInfoParserTest.testTypeTagConflict112409</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469476</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseRecordType21973</span><a href="JsDocInfoParserTest_testParseRecordType21973_v8.html">JsDocInfoParserTest.testParseRecordType21973</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469428</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testWhitelistedNewAnnotations1837</span><a href="JsDocInfoParserTest_testWhitelistedNewAnnotations1837_1km.html">JsDocInfoParserTest.testWhitelistedNewAnnotations1837</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469580</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseFunctionalType81213</span><a href="JsDocInfoParserTest_testParseFunctionalType81213_1tl.html">JsDocInfoParserTest.testParseFunctionalType81213</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469457</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParserWithTwoTemplates250</span><a href="JsDocInfoParserTest_testParserWithTwoTemplates250_ea.html">JsDocInfoParserTest.testParserWithTwoTemplates250</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469499</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testWhitelistedAnnotations466</span><a href="JsDocInfoParserTest_testWhitelistedAnnotations466_i8.html">JsDocInfoParserTest.testWhitelistedAnnotations466</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469513</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseFunctionalTypeError82237</span><a href="JsDocInfoParserTest_testParseFunctionalTypeError82237_kd.html">JsDocInfoParserTest.testParseFunctionalTypeError82237</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469610</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseInvalidTypeViaStatic21225</span><a href="JsDocInfoParserTest_testParseInvalidTypeViaStatic21225_1ku.html">JsDocInfoParserTest.testParseInvalidTypeViaStatic21225</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469459</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseFunctionalType51623</span><a href="JsDocInfoParserTest_testParseFunctionalType51623_83.html">JsDocInfoParserTest.testParseFunctionalType51623</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469561</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testRegression51312</span><a href="JsDocInfoParserTest_testRegression51312_1mc.html">JsDocInfoParserTest.testRegression51312</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469463</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseDefine4916</span><a href="JsDocInfoParserTest_testParseDefine4916_1az.html">JsDocInfoParserTest.testParseDefine4916</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469423</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testFullRegression31746</span><a href="JsDocInfoParserTest_testFullRegression31746_1g3.html">JsDocInfoParserTest.testFullRegression31746</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469574</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseParamError2456</span><a href="JsDocInfoParserTest_testParseParamError2456_u7.html">JsDocInfoParserTest.testParseParamError2456</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469511</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseNoAlias22166</span><a href="JsDocInfoParserTest_testParseNoAlias22166_1ij.html">JsDocInfoParserTest.testParseNoAlias22166</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469605</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testTypeTagConflict31070</span><a href="JsDocInfoParserTest_testTypeTagConflict31070_j3.html">JsDocInfoParserTest.testTypeTagConflict31070</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469440</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseExtendsGenerics1098</span><a href="JsDocInfoParserTest_testParseExtendsGenerics1098_ga.html">JsDocInfoParserTest.testParseExtendsGenerics1098</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469446</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseArrayTypeError32077</span><a href="JsDocInfoParserTest_testParseArrayTypeError32077_ot.html">JsDocInfoParserTest.testParseArrayTypeError32077</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469595</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testBadModifies32299</span><a href="JsDocInfoParserTest_testBadModifies32299_15k.html">JsDocInfoParserTest.testBadModifies32299</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469469</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseOverride2678</span><a href="JsDocInfoParserTest_testParseOverride2678_1pk.html">JsDocInfoParserTest.testParseOverride2678</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469528</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseNoCompile2984</span><a href="JsDocInfoParserTest_testParseNoCompile2984_1t7.html">JsDocInfoParserTest.testParseNoCompile2984</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469430</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseWithMarkerNames2316</span><a href="JsDocInfoParserTest_testParseWithMarkerNames2316_1u5.html">JsDocInfoParserTest.testParseWithMarkerNames2316</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469503</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testBadImplementsWithNullable1848</span><a href="JsDocInfoParserTest_testBadImplementsWithNullable1848_xy.html">JsDocInfoParserTest.testBadImplementsWithNullable1848</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469581</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testFileOverviewSingleLine1087</span><a href="JsDocInfoParserTest_testFileOverviewSingleLine1087_188.html">JsDocInfoParserTest.testFileOverviewSingleLine1087</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469444</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseDefine21577</span><a href="JsDocInfoParserTest_testParseDefine21577_1fb.html">JsDocInfoParserTest.testParseDefine21577</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469559</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testAuthors1283</span><a href="JsDocInfoParserTest_testAuthors1283_1aj.html">JsDocInfoParserTest.testAuthors1283</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469490</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseRecordType784</span><a href="JsDocInfoParserTest_testParseRecordType784_1hp.html">JsDocInfoParserTest.testParseRecordType784</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469614</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseJavaDispatch31173</span><a href="JsDocInfoParserTest_testParseJavaDispatch31173_um.html">JsDocInfoParserTest.testParseJavaDispatch31173</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469456</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseWithMarkers5672</span><a href="JsDocInfoParserTest_testParseWithMarkers5672_o2.html">JsDocInfoParserTest.testParseWithMarkers5672</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469527</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testUnsupportedJsDocSyntax21851</span><a href="JsDocInfoParserTest_testUnsupportedJsDocSyntax21851_m7.html">JsDocInfoParserTest.testUnsupportedJsDocSyntax21851</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469582</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseParam192459</span><a href="JsDocInfoParserTest_testParseParam192459_na.html">JsDocInfoParserTest.testParseParam192459</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469481</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParserWithTemplateTypeNameMissing1566</span><a href="JsDocInfoParserTest_testParserWithTemplateTypeNameMissing1566_xv.html">JsDocInfoParserTest.testParserWithTemplateTypeNameMissing1566</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469558</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseLends3336</span><a href="JsDocInfoParserTest_testParseLends3336_l7.html">JsDocInfoParserTest.testParseLends3336</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469504</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseWithMarkers11165</span><a href="JsDocInfoParserTest_testParseWithMarkers11165_rf.html">JsDocInfoParserTest.testParseWithMarkers11165</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469453</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseEnum12362</span><a href="JsDocInfoParserTest_testParseEnum12362_158.html">JsDocInfoParserTest.testParseEnum12362</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469472</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testAuthorMissing697</span><a href="JsDocInfoParserTest_testAuthorMissing697_1sa.html">JsDocInfoParserTest.testAuthorMissing697</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469530</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseDuplicateImplicitCast1001</span><a href="JsDocInfoParserTest_testParseDuplicateImplicitCast1001_vl.html">JsDocInfoParserTest.testParseDuplicateImplicitCast1001</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469431</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testBadModifies62372</span><a href="JsDocInfoParserTest_testBadModifies62372_1rv.html">JsDocInfoParserTest.testBadModifies62372</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469473</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseArrayTypeError12297</span><a href="JsDocInfoParserTest_testParseArrayTypeError12297_1ry.html">JsDocInfoParserTest.testParseArrayTypeError12297</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469612</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsDocInfoParserTest.testParseParam151434</span><a href="JsDocInfoParserTest_testParseParam151434_1dy.html">JsDocInfoParserTest.testParseParam151434</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557469543</span>12 Jan 14:04:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu Jan 12 2023 14:04:35 MST using coverage data from Thu Jan 12 2023 14:04:30 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

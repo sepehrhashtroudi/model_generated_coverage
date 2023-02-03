@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Thu Jan 12 2023 14:04:05 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class DisambiguatePropertiesTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="DisambiguatePropertiesTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>DisambiguatePropertiesTest</td>
+        <td class="testPasses"><span class="sortValue">28</span>28</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.378</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testBadCast841</span><a href="DisambiguatePropertiesTest_testBadCast841_106.html">DisambiguatePropertiesTest.testBadCast841</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454764</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testMismatchForbiddenInvalidation311</span><a href="DisambiguatePropertiesTest_testMismatchForbiddenInvalidation311_2m.html">DisambiguatePropertiesTest.testMismatchForbiddenInvalidation311</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454701</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testStringFunction1740</span><a href="DisambiguatePropertiesTest_testStringFunction1740_111.html">DisambiguatePropertiesTest.testStringFunction1740</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454893</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testIgnoreUnknownType1131</span><a href="DisambiguatePropertiesTest_testIgnoreUnknownType1131_13u.html">DisambiguatePropertiesTest.testIgnoreUnknownType1131</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454809</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testErrorOnProtectedProperty1458</span><a href="DisambiguatePropertiesTest_testErrorOnProtectedProperty1458_wp.html">DisambiguatePropertiesTest.testErrorOnProtectedProperty1458</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454878</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testScopedType165</span><a href="DisambiguatePropertiesTest_testScopedType165_1df.html">DisambiguatePropertiesTest.testScopedType165</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454672</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testObjectLiteralNotRenamed1917</span><a href="DisambiguatePropertiesTest_testObjectLiteralNotRenamed1917_97.html">DisambiguatePropertiesTest.testObjectLiteralNotRenamed1917</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454946</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testStaticProperty2326</span><a href="DisambiguatePropertiesTest_testStaticProperty2326_4k.html">DisambiguatePropertiesTest.testStaticProperty2326</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455013</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testObjectLiteralReflected1201</span><a href="DisambiguatePropertiesTest_testObjectLiteralReflected1201_14h.html">DisambiguatePropertiesTest.testObjectLiteralReflected1201</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454849</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testNamedType1508</span><a href="DisambiguatePropertiesTest_testNamedType1508_sj.html">DisambiguatePropertiesTest.testNamedType1508</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454881</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnionTypeInvalidation1867</span><a href="DisambiguatePropertiesTest_testUnionTypeInvalidation1867_r8.html">DisambiguatePropertiesTest.testUnionTypeInvalidation1867</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454908</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testOneType3869</span><a href="DisambiguatePropertiesTest_testOneType3869_1sz.html">DisambiguatePropertiesTest.testOneType3869</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454772</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testEnumOfObjects21868</span><a href="DisambiguatePropertiesTest_testEnumOfObjects21868_vy.html">DisambiguatePropertiesTest.testEnumOfObjects21868</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454925</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testInvalidatingInterface2175</span><a href="DisambiguatePropertiesTest_testInvalidatingInterface2175_1rp.html">DisambiguatePropertiesTest.testInvalidatingInterface2175</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454990</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnknownType333</span><a href="DisambiguatePropertiesTest_testUnknownType333_w7.html">DisambiguatePropertiesTest.testUnknownType333</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454706</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.024</span>0.024</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testClosureInherits96</span><a href="DisambiguatePropertiesTest_testClosureInherits96_1ri.html">DisambiguatePropertiesTest.testClosureInherits96</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454613</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.039</span>0.039</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testInterfaceUnionWithCtor543</span><a href="DisambiguatePropertiesTest_testInterfaceUnionWithCtor543_ma.html">DisambiguatePropertiesTest.testInterfaceUnionWithCtor543</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454731</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testEnum1039</span><a href="DisambiguatePropertiesTest_testEnum1039_146.html">DisambiguatePropertiesTest.testEnum1039</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454787</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testMismatchInvalidation2153</span><a href="DisambiguatePropertiesTest_testMismatchInvalidation2153_98.html">DisambiguatePropertiesTest.testMismatchInvalidation2153</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454979</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnionType1877</span><a href="DisambiguatePropertiesTest_testUnionType1877_1fz.html">DisambiguatePropertiesTest.testUnionType1877</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454933</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUntypedExterns2140</span><a href="DisambiguatePropertiesTest_testUntypedExterns2140_xi.html">DisambiguatePropertiesTest.testUntypedExterns2140</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454953</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.025</span>0.025</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSkipNativeObjectMethod208</span><a href="DisambiguatePropertiesTest_testSkipNativeObjectMethod208_eu.html">DisambiguatePropertiesTest.testSkipNativeObjectMethod208</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454689</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnionTypeTwoFields2191</span><a href="DisambiguatePropertiesTest_testUnionTypeTwoFields2191_52.html">DisambiguatePropertiesTest.testUnionTypeTwoFields2191</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557455000</span>12 Jan 14:04:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSupertypeReferenceOfSubtypeProperty1051</span><a href="DisambiguatePropertiesTest_testSupertypeReferenceOfSubtypeProperty1051_1kl.html">DisambiguatePropertiesTest.testSupertypeReferenceOfSubtypeProperty1051</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454801</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testEnumOfObjects1265</span><a href="DisambiguatePropertiesTest_testEnumOfObjects1265_1y.html">DisambiguatePropertiesTest.testEnumOfObjects1265</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454869</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testInterfaceOfSuperclass114</span><a href="DisambiguatePropertiesTest_testInterfaceOfSuperclass114_19.html">DisambiguatePropertiesTest.testInterfaceOfSuperclass114</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454653</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testMultipleInterfaces1191</span><a href="DisambiguatePropertiesTest_testMultipleInterfaces1191_wu.html">DisambiguatePropertiesTest.testMultipleInterfaces1191</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454832</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testExtendNativeType718</span><a href="DisambiguatePropertiesTest_testExtendNativeType718_4f.html">DisambiguatePropertiesTest.testExtendNativeType718</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1673557454751</span>12 Jan 14:04:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu Jan 12 2023 14:04:35 MST using coverage data from Thu Jan 12 2023 14:04:30 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

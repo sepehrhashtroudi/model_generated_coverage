@@ -1,0 +1,11 @@
+Testsuite: org.apache.commons.lang3.ValidateTest
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.042 sec
+
+Testcase: testExclusiveBetween94 took 0.019 sec
+	Caused an ERROR
+The value 2 is not in the specified exclusive range of 0 to 2
+java.lang.IllegalArgumentException: The value 2 is not in the specified exclusive range of 0 to 2
+	at org.apache.commons.lang3.Validate.exclusiveBetween(Validate.java:950)
+	at org.apache.commons.lang3.ValidateTest.testExclusiveBetween94(ValidateTest.java:62)
+
+Testcase: testNotBlankMsgBlankStringShouldThrow82 took 0.006 sec

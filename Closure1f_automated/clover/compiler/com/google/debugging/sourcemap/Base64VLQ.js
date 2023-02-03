@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":127,"id":13271,"methods":[{"el":45,"sc":3,"sl":45},{"el":69,"sc":3,"sl":63},{"el":81,"sc":3,"sl":77},{"el":98,"sc":3,"sl":87},{"el":126,"sc":3,"sl":112}],"name":"Base64VLQ","sl":43},{"el":107,"id":13296,"methods":[],"name":"Base64VLQ.CharIterator","sl":104}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_11":{"methods":[{"sl":63},{"sl":87}],"name":"testSourceMapExpansion3427","pass":true,"statements":[{"sl":64},{"sl":67},{"sl":89},{"sl":90},{"sl":91},{"sl":92},{"sl":93},{"sl":96}]},"test_126":{"methods":[{"sl":63},{"sl":87}],"name":"testNameMapExpansion3413","pass":true,"statements":[{"sl":64},{"sl":67},{"sl":89},{"sl":90},{"sl":91},{"sl":92},{"sl":93},{"sl":96}]},"test_2":{"methods":[{"sl":63},{"sl":87}],"name":"testVariableMapExpansion3424","pass":true,"statements":[{"sl":64},{"sl":67},{"sl":89},{"sl":90},{"sl":91},{"sl":92},{"sl":93},{"sl":96}]},"test_223":{"methods":[{"sl":63},{"sl":87}],"name":"testSourceMapExpansion1402","pass":true,"statements":[{"sl":64},{"sl":67},{"sl":89},{"sl":90},{"sl":91},{"sl":92},{"sl":93},{"sl":96}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [11, 2, 223, 126], [11, 2, 223, 126], [], [], [11, 2, 223, 126], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [11, 2, 223, 126], [], [11, 2, 223, 126], [11, 2, 223, 126], [11, 2, 223, 126], [11, 2, 223, 126], [11, 2, 223, 126], [], [], [11, 2, 223, 126], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]

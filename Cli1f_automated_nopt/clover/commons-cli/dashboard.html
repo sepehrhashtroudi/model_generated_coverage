@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>commons-cli</title>
+    </head>
+
+<body onresize="processTreeMapDashJson(treeMapJson);" >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="historical.html">commons-cli-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        commons-cli
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Wed Feb 1 2023 18:20:12 MST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+        <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+
+
+
+
+
+<div class="aui-group">
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                
+                <h3>
+                    Code coverage
+                    <small style="float:right; font-weight: normal">
+                        35 classes,
+                        135 /
+                        1,364 elements
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.09897361</span>9.9%</div><div style="display: table-cell">
+ <div title="9.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:9.9%"></div></div></div></div>
+                <p><a href="pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    Test results
+                    <small style="float:right; font-weight: normal">
+                        5 /
+                        15 tests
+                        0.01 secs
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                                    
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">0.33333334</span>33.3%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="33.3% of tests passed&lt;br/&gt;66.7% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 33.3%"></div></div>
+            </div>
+        </div>
+    </div>                                <p><a href="test-pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Code metrics</h3>
+            </header>
+                         
+
+<div id="$statsId" class="aui-item" style="display: ${display}">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">352</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">794</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">218</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">35</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">34</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">2</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">5,648</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">2,363</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">442</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.56</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">3.64</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">6.23</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">17.5</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">2.03</div>
+    </div>
+</div>
+
+</div>        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Coverage Distribution</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">                     <img src="img/classDistrubutionChart.png" alt="img/classDistrubutionChart.png" usemap="#classDistrubutionChart.png"/>
+                </div>
+                <map id="classDistrubutionChart.png" name="classDistrubutionChart.png">
+<area shape="rect" coords="288,179,310,206" title="2 classes have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="188,193,210,206" title="1 class has 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="138,138,160,206" title="5 classes have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="113,124,135,206" title="6 classes have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="88,179,110,206" title="2 classes have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="63,179,85,206" title="2 classes have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,15,60,206" title="14 classes have 0% coverage" alt="" nohref="nohref"/>
+</map>
+            </div>
+        </div>
+        
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Complexity</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">
+                    <img src="img/classComplexityChart.png" alt="img/classComplexityChart.png" usemap="#classComplexityChart.png"/>
+                </div>
+                <map id="classComplexityChart.png" name="classComplexityChart.png">
+<area shape="poly" coords="54,205,52,207,49,205,52,202,54,205,54,205" title="Complexity: 2; Coverage: 0%; Class: LongOptionWithShort" alt="" href="org/apache/commons/cli/LongOptionWithShort.html#LongOptionWithShort"/>
+<area shape="poly" coords="117,200,114,203,112,200,114,198,117,200,117,200" title="Complexity: 4; Coverage: 25%; Class: ArgumentIsOptionTest" alt="" href="org/apache/commons/cli/ArgumentIsOptionTest.html#ArgumentIsOptionTest"/>
+<area shape="poly" coords="77,198,74,201,72,198,74,196,77,198,77,198" title="Complexity: 5; Coverage: 9%; Class: ValueTest" alt="" href="org/apache/commons/cli/ValueTest.html#ValueTest"/>
+<area shape="poly" coords="137,200,134,203,132,200,134,198,137,200,137,200" title="Complexity: 4; Coverage: 33%; Class: BuildTest" alt="" href="org/apache/commons/cli/BuildTest.html#BuildTest"/>
+<area shape="poly" coords="124,200,122,203,119,200,122,198,124,200,124,200" title="Complexity: 4; Coverage: 28%; Class: ParseRequiredTest" alt="" href="org/apache/commons/cli/ParseRequiredTest.html#ParseRequiredTest"/>
+<area shape="poly" coords="124,202,122,205,119,202,122,200,124,202,124,202" title="Complexity: 3; Coverage: 28%; Class: TestHelpFormatter" alt="" href="org/apache/commons/cli/TestHelpFormatter.html#TestHelpFormatter"/>
+<area shape="poly" coords="137,202,134,205,132,202,134,200,137,202,137,202" title="Complexity: 3; Coverage: 33%; Class: OptionBuilderTest" alt="" href="org/apache/commons/cli/OptionBuilderTest.html#OptionBuilderTest"/>
+<area shape="poly" coords="74,198,72,201,69,198,72,196,74,198,74,198" title="Complexity: 5; Coverage: 8%; Class: ValuesTest" alt="" href="org/apache/commons/cli/ValuesTest.html#ValuesTest"/>
+<area shape="poly" coords="124,202,122,205,119,202,122,200,124,202,124,202" title="Complexity: 3; Coverage: 28%; Class: TestHelpFormatter" alt="" href="org/apache/commons/cli/TestHelpFormatter.html#TestHelpFormatter"/>
+<area shape="poly" coords="117,200,114,203,112,200,114,198,117,200,117,200" title="Complexity: 4; Coverage: 25%; Class: ArgumentIsOptionTest" alt="" href="org/apache/commons/cli/ArgumentIsOptionTest.html#ArgumentIsOptionTest"/>
+<area shape="poly" coords="137,200,134,203,132,200,134,198,137,200,137,200" title="Complexity: 4; Coverage: 33%; Class: BuildTest" alt="" href="org/apache/commons/cli/BuildTest.html#BuildTest"/>
+<area shape="poly" coords="54,200,52,203,49,200,52,198,54,200,54,200" title="Complexity: 4; Coverage: 0%; Class: HelpFormatterExamples" alt="" href="org/apache/commons/cli/HelpFormatterExamples.html#HelpFormatterExamples"/>
+<area shape="poly" coords="194,192,192,194,189,192,192,189,194,192,194,192" title="Complexity: 8; Coverage: 56%; Class: OptionValidator" alt="" href="org/apache/commons/cli/OptionValidator.html#OptionValidator"/>
+<area shape="poly" coords="54,155,52,157,49,155,52,152,54,155,54,155" title="Complexity: 25; Coverage: 0%; Class: TypeHandler" alt="" href="org/apache/commons/cli/TypeHandler.html#TypeHandler"/>
+<area shape="poly" coords="54,161,52,164,49,161,52,159,54,161,54,161" title="Complexity: 22; Coverage: 0%; Class: OptionBuilder" alt="" href="org/apache/commons/cli/OptionBuilder.html#OptionBuilder"/>
+<area shape="poly" coords="104,72,102,74,99,72,102,69,104,72,104,72" title="Complexity: 63; Coverage: 20%; Class: Option" alt="" href="org/apache/commons/cli/Option.html#Option"/>
+<area shape="poly" coords="54,207,52,209,49,207,52,204,54,207,54,207" title="Complexity: 1; Coverage: 0%; Class: MissingArgumentException" alt="" href="org/apache/commons/cli/MissingArgumentException.html#MissingArgumentException"/>
+<area shape="poly" coords="54,207,52,209,49,207,52,204,54,207,54,207" title="Complexity: 1; Coverage: 0%; Class: MissingArgumentException" alt="" href="org/apache/commons/cli/MissingArgumentException.html#MissingArgumentException"/>
+<area shape="poly" coords="54,207,52,209,49,207,52,204,54,207,54,207" title="Complexity: 1; Coverage: 0%; Class: MissingArgumentException" alt="" href="org/apache/commons/cli/MissingArgumentException.html#MissingArgumentException"/>
+<area shape="poly" coords="94,181,92,183,89,181,92,178,94,181,94,181" title="Complexity: 13; Coverage: 16%; Class: OptionGroup" alt="" href="org/apache/commons/cli/OptionGroup.html#OptionGroup"/>
+<area shape="poly" coords="54,148,52,151,49,148,52,146,54,148,54,148" title="Complexity: 28; Coverage: 0%; Class: PosixParser" alt="" href="org/apache/commons/cli/PosixParser.html#PosixParser"/>
+<area shape="poly" coords="304,207,302,209,299,207,302,204,304,207,304,207" title="Complexity: 1; Coverage: 100%; Class: ParseException" alt="" href="org/apache/commons/cli/ParseException.html#ParseException"/>
+<area shape="poly" coords="137,163,134,166,132,163,134,161,137,163,137,163" title="Complexity: 21; Coverage: 33%; Class: Options" alt="" href="org/apache/commons/cli/Options.html#Options"/>
+<area shape="poly" coords="54,150,52,153,49,150,52,148,54,150,54,150" title="Complexity: 27; Coverage: 0%; Class: PatternOptionBuilder" alt="" href="org/apache/commons/cli/PatternOptionBuilder.html#PatternOptionBuilder"/>
+<area shape="poly" coords="54,207,52,209,49,207,52,204,54,207,54,207" title="Complexity: 1; Coverage: 0%; Class: MissingArgumentException" alt="" href="org/apache/commons/cli/MissingArgumentException.html#MissingArgumentException"/>
+<area shape="poly" coords="54,207,52,209,49,207,52,204,54,207,54,207" title="Complexity: 1; Coverage: 0%; Class: MissingArgumentException" alt="" href="org/apache/commons/cli/MissingArgumentException.html#MissingArgumentException"/>
+<area shape="poly" coords="54,18,52,20,49,18,52,15,54,18,54,18" title="Complexity: 88; Coverage: 0%; Class: HelpFormatter" alt="" href="org/apache/commons/cli/HelpFormatter.html#HelpFormatter"/>
+<area shape="poly" coords="304,207,302,209,299,207,302,204,304,207,304,207" title="Complexity: 1; Coverage: 100%; Class: ParseException" alt="" href="org/apache/commons/cli/ParseException.html#ParseException"/>
+<area shape="poly" coords="129,196,127,198,124,196,127,193,129,196,129,196" title="Complexity: 6; Coverage: 30%; Class: Util" alt="" href="org/apache/commons/cli/Util.html#Util"/>
+<area shape="poly" coords="54,165,52,168,49,165,52,163,54,165,54,165" title="Complexity: 20; Coverage: 0%; Class: GnuParser" alt="" href="org/apache/commons/cli/GnuParser.html#GnuParser"/>
+<area shape="poly" coords="137,152,134,155,132,152,134,150,137,152,137,152" title="Complexity: 26; Coverage: 33%; Class: CommandLine" alt="" href="org/apache/commons/cli/CommandLine.html#CommandLine"/>
+<area shape="poly" coords="54,115,52,118,49,115,52,113,54,115,54,115" title="Complexity: 43; Coverage: 0%; Class: Parser" alt="" href="org/apache/commons/cli/Parser.html#Parser"/>
+</map>
+            </div>
+        </div>
+        
+                    <div class="dashboard-widget">
+                <header class="dashboard-widget-header">
+                    <h3>Coverage tree map</h3>
+                </header>
+                <div class="dashboard-widget-content">
+                    <div id="infovis" style="width:100%; height:250px;">
+                        <div id="treemap-loader" style="position:relative;top:50px;">
+                            <p>
+                                Generating Coverage Tree Map. Please wait...
+                            </p>
+                            <p>
+                                <img src="img/ajax-loader.gif" alt="Loading Treemap"/>
+                            </p>
+                        </div>
+                    </div>
+                    <p><a href="treemap.html">See more</a></p>
+                </div>
+
+            </div>
+            </div>
+
+
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Top 20 project risks</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                                                                <a class="tag" href="org/apache/commons/cli/OptionValidator.html"
+                            style="font-size: 16px;color:#89c495"
+                            title="Average Method Complexity - 2.667 , Coverage - 56% ">OptionValidator</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/Options.html"
+                            style="font-size: 14px;color:#e7a19b"
+                            title="Average Method Complexity - 1.615 , Coverage - 33.3% ">Options</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/Util.html"
+                            style="font-size: 16px;color:#e7a19b"
+                            title="Average Method Complexity - 3 , Coverage - 30% ">Util</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/CommandLine.html"
+                            style="font-size: 14px;color:#e7a19b"
+                            title="Average Method Complexity - 1.444 , Coverage - 33.3% ">CommandLine</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/GnuParser.html"
+                            style="font-size: 28px;color:#d04437"
+                            title="Average Method Complexity - 10 , Coverage - 0% ">GnuParser</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/BugsTest.html"
+                            style="font-size: 13px;color:#e7a19b"
+                            title="Average Method Complexity - 1 , Coverage - 33.3% ">BugsTest</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/PatternOptionBuilder.html"
+                            style="font-size: 26px;color:#d04437"
+                            title="Average Method Complexity - 9 , Coverage - 0% ">PatternOptionBuilder</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/OptionBuilderTest.html"
+                            style="font-size: 13px;color:#e7a19b"
+                            title="Average Method Complexity - 1 , Coverage - 33.3% ">OptionBuilderTest</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/Parser.html"
+                            style="font-size: 20px;color:#d04437"
+                            title="Average Method Complexity - 5.375 , Coverage - 0% ">Parser</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/OptionGroup.html"
+                            style="font-size: 14px;color:#de7b72"
+                            title="Average Method Complexity - 1.625 , Coverage - 16.7% ">OptionGroup</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/BuildTest.html"
+                            style="font-size: 13px;color:#e7a19b"
+                            title="Average Method Complexity - 1 , Coverage - 33.3% ">BuildTest</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/Option.html"
+                            style="font-size: 14px;color:#de7b72"
+                            title="Average Method Complexity - 1.615 , Coverage - 21% ">Option</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/PosixParser.html"
+                            style="font-size: 18px;color:#d04437"
+                            title="Average Method Complexity - 4 , Coverage - 0% ">PosixParser</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/PatternOptionBuilderTest.html"
+                            style="font-size: 13px;color:#e7a19b"
+                            title="Average Method Complexity - 1 , Coverage - 28.6% ">PatternOptionBuilderTest</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/TypeHandler.html"
+                            style="font-size: 16px;color:#d04437"
+                            title="Average Method Complexity - 2.778 , Coverage - 0% ">TypeHandler</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/ValueTest.html"
+                            style="font-size: 14px;color:#d5584c"
+                            title="Average Method Complexity - 1.25 , Coverage - 9.1% ">ValueTest</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/TestHelpFormatter.html"
+                            style="font-size: 13px;color:#e7a19b"
+                            title="Average Method Complexity - 1 , Coverage - 28.6% ">TestHelpFormatter</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/ValuesTest.html"
+                            style="font-size: 14px;color:#d5584c"
+                            title="Average Method Complexity - 1.25 , Coverage - 8% ">ValuesTest</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/HelpFormatter.html"
+                            style="font-size: 15px;color:#d04437"
+                            title="Average Method Complexity - 2.444 , Coverage - 0% ">HelpFormatter</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/cli/ParseRequiredTest.html"
+                            style="font-size: 13px;color:#e7a19b"
+                            title="Average Method Complexity - 1 , Coverage - 28.6% ">ParseRequiredTest</a>
+                                                    <p><a href="top-risks.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex packages</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.09897361</span>9.9%</div><div style="display: table-cell">
+ <div title="9.9% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:9.9%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/cli/pkg-summary.html">org.apache.commons.cli</a>
+                                <span class="aui-badge" title="Package complexity">442</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">-1.0</span> - </div><div style="display: table-cell">
+<div title="Empty" class="barEmpty" style="min-width:40px;"></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/cli/bug/pkg-summary.html">org.apache.commons.cli.bug</a>
+                                <span class="aui-badge" title="Package complexity">0</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex classes</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/cli/HelpFormatter.html"  title="org.apache.commons.cli.HelpFormatter">HelpFormatter</a>
+                                <span class="aui-badge" title="Class complexity">88</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.20958084</span>21%</div><div style="display: table-cell">
+ <div title="21% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:21%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/cli/Option.html"  title="org.apache.commons.cli.Option">Option</a>
+                                <span class="aui-badge" title="Class complexity">63</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/cli/Parser.html"  title="org.apache.commons.cli.Parser">Parser</a>
+                                <span class="aui-badge" title="Class complexity">43</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/cli/PosixParser.html"  title="org.apache.commons.cli.PosixParser">PosixParser</a>
+                                <span class="aui-badge" title="Class complexity">28</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/cli/PatternOptionBuilder.html"  title="org.apache.commons.cli.PatternOptionBuilder">PatternOptionBuilder</a>
+                                <span class="aui-badge" title="Class complexity">27</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Least tested methods</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+
+                    <tr>
+                        <td align="right">1.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="GnuParser.flatten(Options,String[],boolean)&#160;:&#160;String[]" href="org/apache/commons/cli/GnuParser.html?line=61#src-61">GnuParser.flatten(Options,String[],boolean)&#160;:&#160;String[]</a>
+                            <span class="aui-badge" title="Method complexity">19</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">2.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="HelpFormatter.renderOptions(StringBuffer,int,Options,int,int)&#160;:&#160;StringBuffer" href="org/apache/commons/cli/HelpFormatter.html?line=643#src-643">HelpFormatter.renderOptions(StringBuffer,int,Options,int,int)&#160;:&#160;StringBuffer</a>
+                            <span class="aui-badge" title="Method complexity">11</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">3.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Parser.parse(Options,String[],Properties,boolean)&#160;:&#160;CommandLine" href="org/apache/commons/cli/Parser.html?line=129#src-129">Parser.parse(Options,String[],Properties,boolean)&#160;:&#160;CommandLine</a>
+                            <span class="aui-badge" title="Method complexity">13</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">4.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="PosixParser.flatten(Options,String[],boolean)&#160;:&#160;String[]" href="org/apache/commons/cli/PosixParser.html?line=94#src-94">PosixParser.flatten(Options,String[],boolean)&#160;:&#160;String[]</a>
+                            <span class="aui-badge" title="Method complexity">9</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">5.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="PatternOptionBuilder.getValueClass(char)&#160;:&#160;Object" href="org/apache/commons/cli/PatternOptionBuilder.html?line=87#src-87">PatternOptionBuilder.getValueClass(char)&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">10</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">6.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TypeHandler.createValue(String,Class)&#160;:&#160;Object" href="org/apache/commons/cli/TypeHandler.html?line=61#src-61">TypeHandler.createValue(String,Class)&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">10</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">7.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="PatternOptionBuilder.parsePattern(String)&#160;:&#160;Options" href="org/apache/commons/cli/PatternOptionBuilder.html?line=155#src-155">PatternOptionBuilder.parsePattern(String)&#160;:&#160;Options</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">8.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="HelpFormatter.findWrapPos(String,int,int)&#160;:&#160;int" href="org/apache/commons/cli/HelpFormatter.html?line=789#src-789">HelpFormatter.findWrapPos(String,int,int)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">16</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">9.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Parser.processProperties(Properties)&#160;:&#160;void" href="org/apache/commons/cli/Parser.html?line=228#src-228">Parser.processProperties(Properties)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">11</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">10.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Parser.processOption(String,ListIterator)&#160;:&#160;void" href="org/apache/commons/cli/Parser.html?line=360#src-360">Parser.processOption(String,ListIterator)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">11.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Option.equals(Object)&#160;:&#160;boolean" href="org/apache/commons/cli/Option.html?line=600#src-600">Option.equals(Object)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">8</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">12.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="HelpFormatter.printUsage(PrintWriter,int,String,Options)&#160;:&#160;void" href="org/apache/commons/cli/HelpFormatter.html?line=431#src-431">HelpFormatter.printUsage(PrintWriter,int,String,Options)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">13.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="OptionGroup.toString()&#160;:&#160;String" href="org/apache/commons/cli/OptionGroup.html?line=126#src-126">OptionGroup.toString()&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">14.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="PosixParser.burstToken(String,boolean)&#160;:&#160;void" href="org/apache/commons/cli/PosixParser.html?line=278#src-278">PosixParser.burstToken(String,boolean)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">15.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ValuesTest.setUp()&#160;:&#160;void" href="org/apache/commons/cli/ValuesTest.html?line=39#src-39">ValuesTest.setUp()&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">2</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">16.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="HelpFormatter.printHelp(PrintWriter,int,String,String,Options,int,int,String,boolean)&#160;:&#160;void" href="org/apache/commons/cli/HelpFormatter.html?line=391#src-391">HelpFormatter.printHelp(PrintWriter,int,String,String,Options,int,int,String,boolean)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">8</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">17.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Option.toString()&#160;:&#160;String" href="org/apache/commons/cli/Option.html?line=560#src-560">Option.toString()&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">18.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Parser.processArgs(Option,ListIterator)&#160;:&#160;void" href="org/apache/commons/cli/Parser.html?line=314#src-314">Parser.processArgs(Option,ListIterator)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">7</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">19.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="HelpFormatter.appendOption(StringBuffer,Option,boolean)&#160;:&#160;void" href="org/apache/commons/cli/HelpFormatter.html?line=530#src-530">HelpFormatter.appendOption(StringBuffer,Option,boolean)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">20.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="HelpFormatter.renderWrappedText(StringBuffer,int,int,String)&#160;:&#160;StringBuffer" href="org/apache/commons/cli/HelpFormatter.html?line=743#src-743">HelpFormatter.renderWrappedText(StringBuffer,int,int,String)&#160;:&#160;StringBuffer</a>
+                            <span class="aui-badge" title="Method complexity">3</span>
+
+                        </td>
+                    </tr>
+                                    </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+                            </div> <!-- tabs-pane active-pane -->
+                        </div>
+
+    <script type="text/javascript" src="jit.js" ></script>
+    <script type="text/javascript" src="treemap-dash-json.js" ></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Wed Feb 1 2023 18:20:13 MST using coverage data from Wed Feb 1 2023 18:20:12 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>
