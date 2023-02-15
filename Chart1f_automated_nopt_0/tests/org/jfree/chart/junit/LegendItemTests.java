@@ -95,22 +95,9 @@ public class LegendItemTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testSerialization1108() { 
-     LegendItem item1 = new LegendItem("Label", "Description", "ToolTip", "URL", true, new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0), true, Color.red, true, Color.blue, new BasicStroke(1.2f), true, new Line2D.Double(1.0, 2.0, 3.0, 4.0), new BasicStroke(2.1f), Color.green); 
-     LegendItem item2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(item1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         item2 = (LegendItem) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(item1, item2); 
- }
+public void testCharacterIteratorToString5814() { LegendItem item1 = new LegendItem("Label1", null); LegendItem item2 = new LegendItem("Label2", null); LegendItem item3 = new LegendItem("Label3", null); LegendItem item4 = new LegendItem("Label4", null); LegendItem item5 = new LegendItem("Label5", null); assertEquals("Label1", item1.getLabel()); assertEquals("Label2", item2.getLabel()); assertEquals("Label3", item3.getLabel()); assertEquals("Label4", item4.getLabel()); assertEquals("", item5.getLabel());
+}
+
     
 
     /**

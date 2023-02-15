@@ -81,30 +81,10 @@ public class StandardDialRangeTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testHashCode1079() { 
-     StandardDialRange r1 = new StandardDialRange(); 
-     StandardDialRange r2 = new StandardDialRange(); 
-     assertTrue(r1.equals(r2)); 
-     int h1 = r1.hashCode(); 
-     int h2 = r2.hashCode(); 
-     assertEquals(h1, h2); 
- }
-public void testSerialization1080() { 
-     StandardDialRange r1 = new StandardDialRange(); 
-     StandardDialRange r2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(r1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         r2 = (StandardDialRange) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(r1, r2); 
- }
+public void testStandardDialRange5642() { StandardDialRange r1 = new StandardDialRange(); assertEquals(0.0, r1.getLowerBound(), 0.001); assertEquals(100.0, r1.getUpperBound(), 0.001); assertEquals(Color.white, r1.getPaint()); StandardDialRange r2 = new StandardDialRange(); assertEquals(0.0, r2.getLowerBound(), 0.001); assertEquals(100.0, r2.getUpperBound(), 0.001); assertEquals(Color.white, r2.getPaint()); }
+public void testStandardDialRange5643() { StandardDialRange r1 = new StandardDialRange(); assertEquals(0.0, r1.getLowerBound(), 0.001); assertEquals(100.0, r1.getUpperBound(), 0.001); assertEquals(Color.WHITE, r1.getPaint()); StandardDialRange r2 = new StandardDialRange(); assertEquals(0.0, r2.getLowerBound(), 0.001); assertEquals(100.0, r2.getUpperBound(), 0.001); assertEquals(Color.WHITE, r2.getPaint()); }
+public void testHashCode5656() { StandardDialRange l1 = new StandardDialRange(); StandardDialRange l2 = new StandardDialRange(); assertEquals(l1, l2); int h1 = l1.hashCode(); int h2 = l2.hashCode(); assertEquals(h1, h2); }
+public void testHashCode5657() { StandardDialRange r1 = new StandardDialRange(); StandardDialRange r2 = new StandardDialRange(); assertEquals(r1, r2); int h1 = r1.hashCode(); int h2 = r2.hashCode(); assertEquals(h1, h2); }
     
 
     /**

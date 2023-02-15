@@ -1,7 +1,7 @@
 var clover = new Object();
 
 // JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
-clover.pageData = {"classes":[{"el":167,"id":86099,"methods":[{"el":84,"sc":5,"sl":82},{"el":93,"sc":5,"sl":91},{"el":100,"sc":5,"sl":98},{"el":145,"sc":5,"sl":130}],"name":"LineChart3DTests","sl":72},{"el":165,"id":86109,"methods":[{"el":163,"sc":9,"sl":161}],"name":"LineChart3DTests.LocalListener","sl":151}]}
+clover.pageData = {"classes":[{"el":167,"id":84725,"methods":[{"el":84,"sc":5,"sl":82},{"el":93,"sc":5,"sl":91},{"el":100,"sc":5,"sl":98},{"el":145,"sc":5,"sl":130}],"name":"LineChart3DTests","sl":72},{"el":165,"id":84735,"methods":[{"el":163,"sc":9,"sl":161}],"name":"LineChart3DTests.LocalListener","sl":151}]}
 
 // JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
 clover.testTargets = {}

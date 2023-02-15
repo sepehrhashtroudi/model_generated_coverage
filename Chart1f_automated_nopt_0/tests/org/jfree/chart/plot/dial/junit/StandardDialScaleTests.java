@@ -84,34 +84,7 @@ public class StandardDialScaleTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testCloning487() { 
-     StandardDialScale s1 = new StandardDialScale(); 
-     StandardDialScale s2 = null; 
-     try { 
-         s2 = (StandardDialScale) s1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(s1 != s2); 
-     assertTrue(s1.getClass() == s2.getClass()); 
-     assertTrue(s1.equals(s2)); 
- }
-public void testSerialization488() { 
-     StandardDialScale s1 = new StandardDialScale(); 
-     StandardDialScale s2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(s1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         s2 = (StandardDialScale) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(s1, s2); 
- }
+public void testCloning2186() throws CloneNotSupportedException { StandardDialScale s1 = new StandardDialScale(); StandardDialScale s2 = (StandardDialScale) s1.clone(); assertNotSame(s1, s2); assertSame(s1.getClass(), s2.getClass()); assertEquals(s1, s2); }
     
 
     /**

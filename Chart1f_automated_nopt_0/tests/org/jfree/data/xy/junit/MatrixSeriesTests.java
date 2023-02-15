@@ -79,6 +79,10 @@ public class MatrixSeriesTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
+public void testGetItem5304() { MatrixSeries m = new MatrixSeries("test", 3, 2); assertEquals(0.0, m.getItem(0).doubleValue(), 0.0); assertEquals(1.0, m.getItem(1).doubleValue(), 0.0); assertEquals(2.0, m.getItem(2).doubleValue(), 0.0); assertEquals(3.0, m.getItem(3).doubleValue(), 0.0); }
+public void testGetItemColumn5306() { MatrixSeries m = new MatrixSeries("foo", 3, 2); assertEquals(0, m.getItemColumn(0)); assertEquals(1, m.getItemColumn(1)); assertEquals(2, m.getItemColumn(2)); assertEquals(3, m.getItemColumn(3)); }
+public void testGetItemRow5307() { MatrixSeries m = new MatrixSeries("foo", 3, 2); assertEquals(0, m.getItemRow(0)); assertEquals(1, m.getItemRow(1)); assertEquals(2, m.getItemRow(2)); assertEquals(3, m.getItemRow(3)); }
+public void testGetItemRow5308() { MatrixSeries m = new MatrixSeries("foo", 5, 2); assertEquals(0, m.getItemRow(0)); assertEquals(1, m.getItemRow(1)); assertEquals(2, m.getItemRow(2)); assertEquals(3, m.getItemRow(3)); assertEquals(4, m.getItemRow(4)); assertEquals(5, m.getItemRow(5)); }
     
 
     /**

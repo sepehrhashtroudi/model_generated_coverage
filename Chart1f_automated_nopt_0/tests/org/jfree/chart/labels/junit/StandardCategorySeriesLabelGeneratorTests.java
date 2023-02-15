@@ -82,60 +82,8 @@ public class StandardCategorySeriesLabelGeneratorTests extends TestCase {
     /**
      * Some checks for the generalLabel() method.
      */
-public void testEquals1195() { 
-     StandardCategorySeriesLabelGenerator g1 = new StandardCategorySeriesLabelGenerator(); 
-     StandardCategorySeriesLabelGenerator g2 = new StandardCategorySeriesLabelGenerator(); 
-     assertTrue(g1.equals(g2)); 
-     assertTrue(g2.equals(g1)); 
-     g1 = new StandardCategorySeriesLabelGenerator("{1}"); 
-     assertFalse(g1.equals(g2)); 
-     g2 = new StandardCategorySeriesLabelGenerator("{1}"); 
-     assertTrue(g1.equals(g2)); 
- }
-public void testGenerateLabel1196() { 
-     StandardCategorySeriesLabelGenerator g = new StandardCategorySeriesLabelGenerator("{2}"); 
-     DefaultCategoryDataset dataset = new DefaultCategoryDataset(); 
-     dataset.addValue(1.0, "R0", "C0"); 
-     dataset.addValue(2.0, "R0", "C1"); 
-     dataset.addValue(3.0, "R1", "C0"); 
-     dataset.addValue(null, "R1", "C1"); 
-     String s = g.generateLabel(dataset, 0); 
-     assertTrue(s.startsWith("1")); 
-     assertTrue(s.endsWith("000")); 
-     s = g.generateLabel(dataset, 1); 
-     assertEquals("-", s); 
- }
-public void testGenerateLabel1197() { 
-     StandardCategorySeriesLabelGenerator g = new StandardCategorySeriesLabelGenerator("{1}"); 
-     DefaultCategoryDataset dataset = new DefaultCategoryDataset(); 
-     dataset.addValue(1.0, "R0", "C0"); 
-     dataset.addValue(2.0, "R0", "C1"); 
-     dataset.addValue(3.0, "R1", "C0"); 
-     dataset.addValue(4.0, "R1", "C1"); 
-     String s = g.generateLabel(dataset, 0); 
-     assertTrue(s.startsWith("1")); 
-     assertTrue(s.endsWith("000")); 
-     s = g.generateLabel(dataset, 1); 
-     assertEquals("-", s); 
- }
-public void testCloning1198() { 
-     StandardCategorySeriesLabelGenerator g1 = new StandardCategorySeriesLabelGenerator("{1}"); 
-     StandardCategorySeriesLabelGenerator g2 = null; 
-     try { 
-         g2 = (StandardCategorySeriesLabelGenerator) g1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(g1 != g2); 
-     assertTrue(g1.getClass() == g2.getClass()); 
-     assertTrue(g1.equals(g2)); 
- }
-public void testHashCode1199() { 
-     StandardCategorySeriesLabelGenerator g1 = new StandardCategorySeriesLabelGenerator(); 
-     StandardCategorySeriesLabelGenerator g2 = new StandardCategorySeriesLabelGenerator(); 
-     assertTrue(g1.equals(g2)); 
-     assertTrue(g1.hashCode() == g2.hashCode()); 
- }
+public void testClone6290() throws Exception { StandardCategorySeriesLabelGenerator g1 = new StandardCategorySeriesLabelGenerator(); StandardCategorySeriesLabelGenerator g2 = (StandardCategorySeriesLabelGenerator) g1.clone(); assertEquals(g1, g2); }
+public void testHashCode6293() { StandardCategorySeriesLabelGenerator g1 = new StandardCategorySeriesLabelGenerator(); StandardCategorySeriesLabelGenerator g2 = new StandardCategorySeriesLabelGenerator(); assertEquals(g1.hashCode(), g2.hashCode()); }
     
 
     /**

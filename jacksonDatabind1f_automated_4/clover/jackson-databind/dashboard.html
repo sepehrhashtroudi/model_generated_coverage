@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>jackson-databind</title>
+    </head>
+
+<body onresize="processTreeMapDashJson(treeMapJson);" >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="historical.html">jackson-databind-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        jackson-databind
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Fri Feb 3 2023 15:43:11 MST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+        <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+
+
+
+
+
+<div class="aui-group">
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                
+                <h3>
+                    Code coverage
+                    <small style="float:right; font-weight: normal">
+                        507 classes,
+                        10,414 /
+                        30,356 elements
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.34306234</span>34.3%</div><div style="display: table-cell">
+ <div title="34.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:34.3%"></div></div></div></div>
+                <p><a href="pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    Test results
+                    <small style="float:right; font-weight: normal">
+                        0 /
+                        0 tests
+                        0 secs
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                                    
+
+<div style="display: table; width: 100%">
+            <div title="Empty" class="barEmpty" style="min-width: 40px;"></div>
+    </div>                                <p><a href="test-pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Code metrics</h3>
+            </header>
+                         
+
+<div id="$statsId" class="aui-item" style="display: ${display}">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">8,200</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">17,685</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">4,471</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">507</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">331</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">20</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">74,913</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">42,929</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">9,407</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.53</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">3.96</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">8.82</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">25.35</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">2.1</div>
+    </div>
+</div>
+
+</div>        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Coverage Distribution</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">                     <img src="img/classDistrubutionChart.png" alt="img/classDistrubutionChart.png" usemap="#classDistrubutionChart.png"/>
+                </div>
+                <map id="classDistrubutionChart.png" name="classDistrubutionChart.png">
+<area shape="rect" coords="282,184,304,206" title="22 classes have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="258,198,280,206" title="8 classes have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="233,190,255,206" title="16 classes have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="209,181,231,206" title="25 classes have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="184,172,206,206" title="33 classes have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="160,168,182,206" title="37 classes have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="135,157,157,206" title="48 classes have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="111,179,133,206" title="27 classes have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="87,186,109,206" title="20 classes have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="62,186,84,206" title="20 classes have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,15,60,206" title="185 classes have 0% coverage" alt="" nohref="nohref"/>
+</map>
+            </div>
+        </div>
+        
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Complexity</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">
+                    <img src="img/classComplexityChart.png" alt="img/classComplexityChart.png" usemap="#classComplexityChart.png"/>
+                </div>
+                <map id="classComplexityChart.png" name="classComplexityChart.png">
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="134,207,132,210,129,207,132,205,134,207,134,207" title="Complexity: 3; Coverage: 33%; Class: StdScalarDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/StdScalarDeserializer.html#StdScalarDeserializer"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: ContainerDeserializerBase" alt="" href="com/fasterxml/jackson/databind/deser/std/ContainerDeserializerBase.html#ContainerDeserializerBase"/>
+<area shape="poly" coords="147,158,144,160,142,158,144,155,147,158,147,158" title="Complexity: 77; Coverage: 38%; Class: MapDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/MapDeserializer.html#MapDeserializer"/>
+<area shape="poly" coords="149,192,147,195,144,192,147,190,149,192,149,192" title="Complexity: 25; Coverage: 39%; Class: ThrowableDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ThrowableDeserializer.html#ThrowableDeserializer"/>
+<area shape="poly" coords="196,193,193,196,191,193,193,191,196,193,196,193" title="Complexity: 24; Coverage: 58%; Class: EnumMapDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/EnumMapDeserializer.html#EnumMapDeserializer"/>
+<area shape="poly" coords="122,192,120,194,117,192,120,189,122,192,122,192" title="Complexity: 26; Coverage: 28%; Class: StringArrayDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/StringArrayDeserializer.html#StringArrayDeserializer"/>
+<area shape="poly" coords="176,205,174,208,171,205,174,203,176,205,176,205" title="Complexity: 6; Coverage: 50%; Class: EnumDeserializer.FactoryBasedDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/EnumDeserializer.html#EnumDeserializer.FactoryBasedDeserializer"/>
+<area shape="poly" coords="210,195,208,198,205,195,208,193,210,195,210,195" title="Complexity: 21; Coverage: 64%; Class: EnumDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/EnumDeserializer.html#EnumDeserializer"/>
+<area shape="poly" coords="66,202,63,205,61,202,63,200,66,202,66,202" title="Complexity: 10; Coverage: 5%; Class: JdkDeserializers.StackTraceElementDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.StackTraceElementDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 5; Coverage: 0%; Class: JdkDeserializers.AtomicReferenceDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicReferenceDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 5; Coverage: 0%; Class: JdkDeserializers.AtomicReferenceDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicReferenceDeserializer"/>
+<area shape="poly" coords="176,198,174,201,171,198,174,196,176,198,176,198" title="Complexity: 16; Coverage: 50%; Class: JdkDeserializers" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers"/>
+<area shape="poly" coords="54,198,51,200,49,198,51,195,54,198,54,198" title="Complexity: 17; Coverage: 0%; Class: ArrayBlockingQueueDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ArrayBlockingQueueDeserializer.html#ArrayBlockingQueueDeserializer"/>
+<area shape="poly" coords="196,185,193,188,191,185,193,183,196,185,196,185" title="Complexity: 36; Coverage: 58%; Class: BaseNodeDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer.html#BaseNodeDeserializer"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 5; Coverage: 0%; Class: JdkDeserializers.AtomicReferenceDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicReferenceDeserializer"/>
+<area shape="poly" coords="245,204,242,207,240,204,242,202,245,204,245,204" title="Complexity: 7; Coverage: 78%; Class: JsonNodeDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer.html#JsonNodeDeserializer"/>
+<area shape="poly" coords="154,189,151,192,149,189,151,187,154,189,154,189" title="Complexity: 30; Coverage: 41%; Class: CollectionDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.html#CollectionDeserializer"/>
+<area shape="poly" coords="54,198,51,200,49,198,51,195,54,198,54,198" title="Complexity: 17; Coverage: 0%; Class: ArrayBlockingQueueDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ArrayBlockingQueueDeserializer.html#ArrayBlockingQueueDeserializer"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 7; Coverage: 0%; Class: NumberDeserializers.BigDecimalDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BigDecimalDeserializer"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 9; Coverage: 0%; Class: NumberDeserializers.BigIntegerDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BigIntegerDeserializer"/>
+<area shape="poly" coords="54,198,51,200,49,198,51,195,54,198,54,198" title="Complexity: 17; Coverage: 0%; Class: ArrayBlockingQueueDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ArrayBlockingQueueDeserializer.html#ArrayBlockingQueueDeserializer"/>
+<area shape="poly" coords="215,207,213,210,210,207,213,205,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: NumberDeserializers.DoubleDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.DoubleDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="215,207,213,210,210,207,213,205,215,207,215,207" title="Complexity: 3; Coverage: 66%; Class: NumberDeserializers.DoubleDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.DoubleDeserializer"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 8; Coverage: 0%; Class: NumberDeserializers.CharacterDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.CharacterDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 3; Coverage: 0%; Class: NumberDeserializers.BooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BooleanDeserializer"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 2; Coverage: 100%; Class: NumberDeserializers.PrimitiveOrWrapperDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.PrimitiveOrWrapperDeserializer"/>
+<area shape="poly" coords="139,193,137,196,134,193,137,191,139,193,139,193" title="Complexity: 24; Coverage: 35%; Class: NumberDeserializers" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers"/>
+<area shape="poly" coords="76,180,73,182,71,180,73,177,76,180,76,180" title="Complexity: 44; Coverage: 9%; Class: UntypedObjectDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/UntypedObjectDeserializer.html#UntypedObjectDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 5; Coverage: 0%; Class: JdkDeserializers.AtomicReferenceDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicReferenceDeserializer"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 9; Coverage: 0%; Class: NumberDeserializers.BigIntegerDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BigIntegerDeserializer"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 15; Coverage: 0%; Class: DateDeserializers.DateBasedDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/DateDeserializers.html#DateDeserializers.DateBasedDeserializer"/>
+<area shape="poly" coords="107,202,105,205,102,202,105,200,107,202,107,202" title="Complexity: 10; Coverage: 22%; Class: DateDeserializers" alt="" href="com/fasterxml/jackson/databind/deser/std/DateDeserializers.html#DateDeserializers"/>
+<area shape="poly" coords="139,202,137,204,134,202,137,199,139,202,139,202" title="Complexity: 11; Coverage: 35%; Class: FromStringDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/FromStringDeserializer.html#FromStringDeserializer"/>
+<area shape="poly" coords="54,190,51,192,49,190,51,187,54,190,54,190" title="Complexity: 29; Coverage: 0%; Class: StringCollectionDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/StringCollectionDeserializer.html#StringCollectionDeserializer"/>
+<area shape="poly" coords="149,192,147,195,144,192,147,190,149,192,149,192" title="Complexity: 25; Coverage: 39%; Class: ThrowableDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ThrowableDeserializer.html#ThrowableDeserializer"/>
+<area shape="poly" coords="188,202,186,205,183,202,186,200,188,202,188,202" title="Complexity: 10; Coverage: 55%; Class: PrimitiveArrayDeserializers.DoubleDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.DoubleDeser"/>
+<area shape="poly" coords="188,202,186,205,183,202,186,200,188,202,188,202" title="Complexity: 10; Coverage: 55%; Class: PrimitiveArrayDeserializers.DoubleDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.DoubleDeser"/>
+<area shape="poly" coords="54,202,51,205,49,202,51,200,54,202,54,202" title="Complexity: 10; Coverage: 0%; Class: PrimitiveArrayDeserializers.LongDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.LongDeser"/>
+<area shape="poly" coords="247,202,245,205,242,202,245,200,247,202,247,202" title="Complexity: 10; Coverage: 79%; Class: PrimitiveArrayDeserializers.IntDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.IntDeser"/>
+<area shape="poly" coords="54,202,51,205,49,202,51,200,54,202,54,202" title="Complexity: 10; Coverage: 0%; Class: PrimitiveArrayDeserializers.LongDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.LongDeser"/>
+<area shape="poly" coords="54,196,51,198,49,196,51,193,54,196,54,196" title="Complexity: 20; Coverage: 0%; Class: PrimitiveArrayDeserializers.ByteDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.ByteDeser"/>
+<area shape="poly" coords="54,202,51,205,49,202,51,200,54,202,54,202" title="Complexity: 10; Coverage: 0%; Class: PrimitiveArrayDeserializers.LongDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.LongDeser"/>
+<area shape="poly" coords="54,201,51,204,49,201,51,199,54,201,54,201" title="Complexity: 12; Coverage: 0%; Class: PrimitiveArrayDeserializers.CharDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.CharDeser"/>
+<area shape="poly" coords="181,202,178,204,176,202,178,199,181,202,181,202" title="Complexity: 11; Coverage: 52%; Class: PrimitiveArrayDeserializers" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers"/>
+<area shape="poly" coords="139,205,137,208,134,205,137,203,139,205,139,205" title="Complexity: 6; Coverage: 35%; Class: NullifyingDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NullifyingDeserializer.html#NullifyingDeserializer"/>
+<area shape="poly" coords="98,97,95,100,93,97,95,95,98,97,98,97" title="Complexity: 168; Coverage: 18%; Class: StdDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/StdDeserializer.html#StdDeserializer"/>
+<area shape="poly" coords="54,196,51,198,49,196,51,193,54,196,54,196" title="Complexity: 20; Coverage: 0%; Class: PrimitiveArrayDeserializers.ByteDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.ByteDeser"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 9; Coverage: 0%; Class: NumberDeserializers.BigIntegerDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BigIntegerDeserializer"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 5; Coverage: 0%; Class: JdkDeserializers.AtomicReferenceDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicReferenceDeserializer"/>
+<area shape="poly" coords="188,205,186,208,183,205,186,203,188,205,188,205" title="Complexity: 6; Coverage: 55%; Class: JacksonDeserializers" alt="" href="com/fasterxml/jackson/databind/deser/std/JacksonDeserializers.html#JacksonDeserializers"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 3; Coverage: 0%; Class: NumberDeserializers.BooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="181,205,178,208,176,205,178,203,181,205,181,205" title="Complexity: 6; Coverage: 52%; Class: StdKeyDeserializer.EnumKD" alt="" href="com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer.html#StdKeyDeserializer.EnumKD"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 6; Coverage: 0%; Class: StdKeyDeserializer.DelegatingKD" alt="" href="com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer.html#StdKeyDeserializer.DelegatingKD"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 3; Coverage: 0%; Class: NumberDeserializers.BooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 3; Coverage: 0%; Class: NumberDeserializers.BooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BooleanDeserializer"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="227,206,225,208,222,206,225,203,227,206,227,206" title="Complexity: 5; Coverage: 71%; Class: StdKeyDeserializer.StringKD" alt="" href="com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer.html#StdKeyDeserializer.StringKD"/>
+<area shape="poly" coords="144,202,142,204,139,202,142,199,144,202,144,202" title="Complexity: 11; Coverage: 37%; Class: StdKeyDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer.html#StdKeyDeserializer"/>
+<area shape="poly" coords="215,200,213,202,210,200,213,197,215,200,215,200" title="Complexity: 14; Coverage: 66%; Class: EnumSetDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/EnumSetDeserializer.html#EnumSetDeserializer"/>
+<area shape="poly" coords="127,160,125,162,122,160,125,157,127,160,127,160" title="Complexity: 74; Coverage: 30%; Class: StdValueInstantiator" alt="" href="com/fasterxml/jackson/databind/deser/std/StdValueInstantiator.html#StdValueInstantiator"/>
+<area shape="poly" coords="169,189,166,192,164,189,166,187,169,189,169,189" title="Complexity: 30; Coverage: 47%; Class: ObjectArrayDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ObjectArrayDeserializer.html#ObjectArrayDeserializer"/>
+<area shape="poly" coords="122,204,120,207,117,204,120,202,122,204,122,204" title="Complexity: 7; Coverage: 28%; Class: StringDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/StringDeserializer.html#StringDeserializer"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: JsonSerializerMap.Bucket" alt="" href="com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.html#JsonSerializerMap.Bucket"/>
+<area shape="poly" coords="200,202,198,205,195,202,198,200,200,202,200,202" title="Complexity: 10; Coverage: 60%; Class: JsonSerializerMap" alt="" href="com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.html#JsonSerializerMap"/>
+<area shape="poly" coords="54,201,51,204,49,201,51,199,54,201,54,201" title="Complexity: 12; Coverage: 0%; Class: PrimitiveArrayDeserializers.CharDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.CharDeser"/>
+<area shape="poly" coords="54,193,51,196,49,193,51,191,54,193,54,193" title="Complexity: 24; Coverage: 0%; Class: BeanAsArraySerializer" alt="" href="com/fasterxml/jackson/databind/ser/impl/BeanAsArraySerializer.html#BeanAsArraySerializer"/>
+<area shape="poly" coords="54,201,51,204,49,201,51,199,54,201,54,201" title="Complexity: 12; Coverage: 0%; Class: PrimitiveArrayDeserializers.CharDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.CharDeser"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 6; Coverage: 0%; Class: StdKeyDeserializer.DelegatingKD" alt="" href="com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer.html#StdKeyDeserializer.DelegatingKD"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 5; Coverage: 0%; Class: JdkDeserializers.AtomicReferenceDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicReferenceDeserializer"/>
+<area shape="poly" coords="208,206,205,209,203,206,205,204,208,206,208,206" title="Complexity: 4; Coverage: 63%; Class: PropertySerializerMap.Single" alt="" href="com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap.html#PropertySerializerMap.Single"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 2; Coverage: 100%; Class: NumberDeserializers.PrimitiveOrWrapperDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.PrimitiveOrWrapperDeserializer"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: JsonSerializerMap.Bucket" alt="" href="com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.html#JsonSerializerMap.Bucket"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: ContainerDeserializerBase" alt="" href="com/fasterxml/jackson/databind/deser/std/ContainerDeserializerBase.html#ContainerDeserializerBase"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 3; Coverage: 100%; Class: PropertySerializerMap" alt="" href="com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap.html#PropertySerializerMap"/>
+<area shape="poly" coords="259,205,257,208,254,205,257,203,259,205,259,205" title="Complexity: 6; Coverage: 84%; Class: ObjectIdWriter" alt="" href="com/fasterxml/jackson/databind/ser/impl/ObjectIdWriter.html#ObjectIdWriter"/>
+<area shape="poly" coords="76,204,73,206,71,204,73,201,76,204,76,204" title="Complexity: 8; Coverage: 9%; Class: UnknownSerializer" alt="" href="com/fasterxml/jackson/databind/ser/impl/UnknownSerializer.html#UnknownSerializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 11; Coverage: 0%; Class: SimpleBeanPropertyFilter" alt="" href="com/fasterxml/jackson/databind/ser/impl/SimpleBeanPropertyFilter.html#SimpleBeanPropertyFilter"/>
+<area shape="poly" coords="134,206,132,209,129,206,132,204,134,206,134,206" title="Complexity: 4; Coverage: 33%; Class: FailingSerializer" alt="" href="com/fasterxml/jackson/databind/ser/impl/FailingSerializer.html#FailingSerializer"/>
+<area shape="poly" coords="54,200,51,202,49,200,51,197,54,200,54,200" title="Complexity: 14; Coverage: 0%; Class: FilteredBeanPropertyWriter.MultiView" alt="" href="com/fasterxml/jackson/databind/ser/impl/FilteredBeanPropertyWriter.html#FilteredBeanPropertyWriter.MultiView"/>
+<area shape="poly" coords="54,202,51,205,49,202,51,200,54,202,54,202" title="Complexity: 10; Coverage: 0%; Class: PrimitiveArrayDeserializers.LongDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.LongDeser"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="240,202,237,204,235,202,237,199,240,202,240,202" title="Complexity: 11; Coverage: 76%; Class: ReadOnlyClassToSerializerMap" alt="" href="com/fasterxml/jackson/databind/ser/impl/ReadOnlyClassToSerializerMap.html#ReadOnlyClassToSerializerMap"/>
+<area shape="poly" coords="54,190,51,193,49,190,51,188,54,190,54,190" title="Complexity: 28; Coverage: 0%; Class: StringArraySerializer" alt="" href="com/fasterxml/jackson/databind/ser/impl/StringArraySerializer.html#StringArraySerializer"/>
+<area shape="poly" coords="134,190,132,193,129,190,132,188,134,190,134,190" title="Complexity: 28; Coverage: 33%; Class: IndexedListSerializer" alt="" href="com/fasterxml/jackson/databind/ser/impl/IndexedListSerializer.html#IndexedListSerializer"/>
+<area shape="poly" coords="54,201,51,204,49,201,51,199,54,201,54,201" title="Complexity: 12; Coverage: 0%; Class: PrimitiveArrayDeserializers.CharDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.CharDeser"/>
+<area shape="poly" coords="54,201,51,204,49,201,51,199,54,201,54,201" title="Complexity: 12; Coverage: 0%; Class: PrimitiveArrayDeserializers.CharDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.CharDeser"/>
+<area shape="poly" coords="54,190,51,192,49,190,51,187,54,190,54,190" title="Complexity: 29; Coverage: 0%; Class: StringCollectionDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/StringCollectionDeserializer.html#StringCollectionDeserializer"/>
+<area shape="poly" coords="200,206,198,209,195,206,198,204,200,206,200,206" title="Complexity: 4; Coverage: 60%; Class: TypeWrappedSerializer" alt="" href="com/fasterxml/jackson/databind/ser/impl/TypeWrappedSerializer.html#TypeWrappedSerializer"/>
+<area shape="poly" coords="54,190,51,193,49,190,51,188,54,190,54,190" title="Complexity: 28; Coverage: 0%; Class: StringArraySerializer" alt="" href="com/fasterxml/jackson/databind/ser/impl/StringArraySerializer.html#StringArraySerializer"/>
+<area shape="poly" coords="156,204,154,206,151,204,154,201,156,204,156,204" title="Complexity: 8; Coverage: 42%; Class: WritableObjectId" alt="" href="com/fasterxml/jackson/databind/ser/impl/WritableObjectId.html#WritableObjectId"/>
+<area shape="poly" coords="54,196,51,198,49,196,51,193,54,196,54,196" title="Complexity: 20; Coverage: 0%; Class: PrimitiveArrayDeserializers.ByteDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.ByteDeser"/>
+<area shape="poly" coords="178,202,176,204,173,202,176,199,178,202,178,202" title="Complexity: 11; Coverage: 51%; Class: ObjectMapper.DefaultTypeResolverBuilder" alt="" href="com/fasterxml/jackson/databind/ObjectMapper.html#ObjectMapper.DefaultTypeResolverBuilder"/>
+<area shape="poly" coords="112,18,110,20,107,18,110,15,112,18,112,18" title="Complexity: 288; Coverage: 24%; Class: ObjectMapper" alt="" href="com/fasterxml/jackson/databind/ObjectMapper.html#ObjectMapper"/>
+<area shape="poly" coords="122,162,120,164,117,162,120,159,122,162,122,162" title="Complexity: 71; Coverage: 28%; Class: SerializationConfig" alt="" href="com/fasterxml/jackson/databind/SerializationConfig.html#SerializationConfig"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="281,202,279,205,276,202,279,200,281,202,281,202" title="Complexity: 10; Coverage: 93%; Class: PropertyNamingStrategy.LowerCaseWithUnderscoresStrategy" alt="" href="com/fasterxml/jackson/databind/PropertyNamingStrategy.html#PropertyNamingStrategy.LowerCaseWithUnderscoresStrategy"/>
+<area shape="poly" coords="115,206,112,209,110,206,112,204,115,206,115,206" title="Complexity: 4; Coverage: 25%; Class: PropertyNamingStrategy.PropertyNamingStrategyBase" alt="" href="com/fasterxml/jackson/databind/PropertyNamingStrategy.html#PropertyNamingStrategy.PropertyNamingStrategyBase"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="176,156,174,159,171,156,174,154,176,156,176,156" title="Complexity: 79; Coverage: 50%; Class: SerializerProvider" alt="" href="com/fasterxml/jackson/databind/SerializerProvider.html#SerializerProvider"/>
+<area shape="poly" coords="169,204,166,206,164,204,166,201,169,204,169,204" title="Complexity: 8; Coverage: 47%; Class: MappingJsonFactory" alt="" href="com/fasterxml/jackson/databind/MappingJsonFactory.html#MappingJsonFactory"/>
+<area shape="poly" coords="144,201,142,204,139,201,142,199,144,201,144,201" title="Complexity: 12; Coverage: 37%; Class: BeanProperty.Std" alt="" href="com/fasterxml/jackson/databind/BeanProperty.html#BeanProperty.Std"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 9; Coverage: 0%; Class: NumberDeserializers.BigIntegerDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BigIntegerDeserializer"/>
+<area shape="poly" coords="73,186,71,189,68,186,71,184,73,186,73,186" title="Complexity: 34; Coverage: 8%; Class: PropertyName" alt="" href="com/fasterxml/jackson/databind/PropertyName.html#PropertyName"/>
+<area shape="poly" coords="105,93,102,96,100,93,102,91,105,93,105,93" title="Complexity: 174; Coverage: 21%; Class: ObjectReader" alt="" href="com/fasterxml/jackson/databind/ObjectReader.html#ObjectReader"/>
+<area shape="poly" coords="125,167,122,170,120,167,122,165,125,167,125,167" title="Complexity: 63; Coverage: 29%; Class: JsonNode" alt="" href="com/fasterxml/jackson/databind/JsonNode.html#JsonNode"/>
+<area shape="poly" coords="196,162,193,165,191,162,193,160,196,162,196,162" title="Complexity: 70; Coverage: 58%; Class: DeserializationContext" alt="" href="com/fasterxml/jackson/databind/DeserializationContext.html#DeserializationContext"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 11; Coverage: 0%; Class: SimpleBeanPropertyFilter" alt="" href="com/fasterxml/jackson/databind/ser/impl/SimpleBeanPropertyFilter.html#SimpleBeanPropertyFilter"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 3; Coverage: 100%; Class: PropertySerializerMap" alt="" href="com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap.html#PropertySerializerMap"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 3; Coverage: 0%; Class: NumberDeserializers.BooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BooleanDeserializer"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 3; Coverage: 100%; Class: PropertySerializerMap" alt="" href="com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap.html#PropertySerializerMap"/>
+<area shape="poly" coords="176,186,174,189,171,186,174,184,176,186,176,186" title="Complexity: 34; Coverage: 50%; Class: MappingIterator" alt="" href="com/fasterxml/jackson/databind/MappingIterator.html#MappingIterator"/>
+<area shape="poly" coords="139,160,137,163,134,160,137,158,139,160,139,160" title="Complexity: 73; Coverage: 35%; Class: DeserializationConfig" alt="" href="com/fasterxml/jackson/databind/DeserializationConfig.html#DeserializationConfig"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: JsonSerializerMap.Bucket" alt="" href="com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.html#JsonSerializerMap.Bucket"/>
+<area shape="poly" coords="103,202,100,205,98,202,100,200,103,202,103,202" title="Complexity: 10; Coverage: 20%; Class: JsonDeserializer" alt="" href="com/fasterxml/jackson/databind/JsonDeserializer.html#JsonDeserializer"/>
+<area shape="poly" coords="115,144,112,146,110,144,112,141,115,144,115,144" title="Complexity: 98; Coverage: 25%; Class: ObjectWriter" alt="" href="com/fasterxml/jackson/databind/ObjectWriter.html#ObjectWriter"/>
+<area shape="poly" coords="178,182,176,185,173,182,176,180,178,182,178,182" title="Complexity: 40; Coverage: 51%; Class: JavaType" alt="" href="com/fasterxml/jackson/databind/JavaType.html#JavaType"/>
+<area shape="poly" coords="137,198,134,201,132,198,134,196,137,198,137,198" title="Complexity: 16; Coverage: 34%; Class: DatabindContext" alt="" href="com/fasterxml/jackson/databind/DatabindContext.html#DatabindContext"/>
+<area shape="poly" coords="164,198,161,201,159,198,161,196,164,198,164,198" title="Complexity: 16; Coverage: 45%; Class: JsonMappingException.Reference" alt="" href="com/fasterxml/jackson/databind/JsonMappingException.html#JsonMappingException.Reference"/>
+<area shape="poly" coords="193,186,191,189,188,186,191,184,193,186,193,186" title="Complexity: 34; Coverage: 57%; Class: JsonMappingException" alt="" href="com/fasterxml/jackson/databind/JsonMappingException.html#JsonMappingException"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 3; Coverage: 100%; Class: PropertySerializerMap" alt="" href="com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap.html#PropertySerializerMap"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 3; Coverage: 100%; Class: PropertySerializerMap" alt="" href="com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap.html#PropertySerializerMap"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: JsonSerializerMap.Bucket" alt="" href="com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.html#JsonSerializerMap.Bucket"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 7; Coverage: 0%; Class: NumberDeserializers.BigDecimalDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BigDecimalDeserializer"/>
+<area shape="poly" coords="58,159,56,162,53,159,56,157,58,159,58,159" title="Complexity: 75; Coverage: 2%; Class: AnnotationIntrospector" alt="" href="com/fasterxml/jackson/databind/AnnotationIntrospector.html#AnnotationIntrospector"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: JsonSerializerMap.Bucket" alt="" href="com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.html#JsonSerializerMap.Bucket"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: JsonSerializerMap.Bucket" alt="" href="com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.html#JsonSerializerMap.Bucket"/>
+<area shape="poly" coords="54,196,51,199,49,196,51,194,54,196,54,196" title="Complexity: 19; Coverage: 0%; Class: ManagedReferenceProperty" alt="" href="com/fasterxml/jackson/databind/deser/impl/ManagedReferenceProperty.html#ManagedReferenceProperty"/>
+<area shape="poly" coords="54,200,51,202,49,200,51,197,54,200,54,200" title="Complexity: 14; Coverage: 0%; Class: FilteredBeanPropertyWriter.MultiView" alt="" href="com/fasterxml/jackson/databind/ser/impl/FilteredBeanPropertyWriter.html#FilteredBeanPropertyWriter.MultiView"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,174,51,176,49,174,51,171,54,174,54,174" title="Complexity: 53; Coverage: 0%; Class: BeanAsArrayDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/impl/BeanAsArrayDeserializer.html#BeanAsArrayDeserializer"/>
+<area shape="poly" coords="200,206,198,209,195,206,198,204,200,206,200,206" title="Complexity: 4; Coverage: 60%; Class: TypeWrappedSerializer" alt="" href="com/fasterxml/jackson/databind/ser/impl/TypeWrappedSerializer.html#TypeWrappedSerializer"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 6; Coverage: 0%; Class: StdKeyDeserializer.DelegatingKD" alt="" href="com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer.html#StdKeyDeserializer.DelegatingKD"/>
+<area shape="poly" coords="54,200,51,202,49,200,51,197,54,200,54,200" title="Complexity: 14; Coverage: 0%; Class: FilteredBeanPropertyWriter.MultiView" alt="" href="com/fasterxml/jackson/databind/ser/impl/FilteredBeanPropertyWriter.html#FilteredBeanPropertyWriter.MultiView"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 3; Coverage: 0%; Class: NumberDeserializers.BooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BooleanDeserializer"/>
+<area shape="poly" coords="264,203,262,206,259,203,262,201,264,203,264,203" title="Complexity: 9; Coverage: 86%; Class: BeanPropertyMap.IteratorImpl" alt="" href="com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.html#BeanPropertyMap.IteratorImpl"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: ContainerDeserializerBase" alt="" href="com/fasterxml/jackson/databind/deser/std/ContainerDeserializerBase.html#ContainerDeserializerBase"/>
+<area shape="poly" coords="159,182,156,185,154,182,156,180,159,182,159,182" title="Complexity: 40; Coverage: 43%; Class: BeanPropertyMap" alt="" href="com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.html#BeanPropertyMap"/>
+<area shape="poly" coords="54,172,51,175,49,172,51,170,54,172,54,172" title="Complexity: 55; Coverage: 0%; Class: BeanAsArrayBuilderDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/impl/BeanAsArrayBuilderDeserializer.html#BeanAsArrayBuilderDeserializer"/>
+<area shape="poly" coords="164,189,161,192,159,189,161,187,164,189,164,189" title="Complexity: 30; Coverage: 45%; Class: CreatorCollector" alt="" href="com/fasterxml/jackson/databind/deser/impl/CreatorCollector.html#CreatorCollector"/>
+<area shape="poly" coords="152,206,149,209,147,206,149,204,152,206,152,206" title="Complexity: 4; Coverage: 40%; Class: NullProvider" alt="" href="com/fasterxml/jackson/databind/deser/impl/NullProvider.html#NullProvider"/>
+<area shape="poly" coords="144,204,142,206,139,204,142,201,144,204,144,204" title="Complexity: 8; Coverage: 37%; Class: UnwrappedPropertyHandler" alt="" href="com/fasterxml/jackson/databind/deser/impl/UnwrappedPropertyHandler.html#UnwrappedPropertyHandler"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: JsonSerializerMap.Bucket" alt="" href="com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.html#JsonSerializerMap.Bucket"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 15; Coverage: 0%; Class: DateDeserializers.DateBasedDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/DateDeserializers.html#DateDeserializers.DateBasedDeserializer"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 7; Coverage: 0%; Class: NumberDeserializers.BigDecimalDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BigDecimalDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,188,51,190,49,188,51,185,54,188,54,188" title="Complexity: 32; Coverage: 0%; Class: ExternalTypeHandler" alt="" href="com/fasterxml/jackson/databind/deser/impl/ExternalTypeHandler.html#ExternalTypeHandler"/>
+<area shape="poly" coords="161,198,159,201,156,198,159,196,161,198,161,198" title="Complexity: 16; Coverage: 44%; Class: FieldProperty" alt="" href="com/fasterxml/jackson/databind/deser/impl/FieldProperty.html#FieldProperty"/>
+<area shape="poly" coords="235,196,232,199,230,196,232,194,235,196,235,196" title="Complexity: 19; Coverage: 74%; Class: PropertyBasedCreator" alt="" href="com/fasterxml/jackson/databind/deser/impl/PropertyBasedCreator.html#PropertyBasedCreator"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 3; Coverage: 0%; Class: NumberDeserializers.BooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BooleanDeserializer"/>
+<area shape="poly" coords="142,194,139,197,137,194,139,192,142,194,142,194" title="Complexity: 22; Coverage: 36%; Class: PropertyValueBuffer" alt="" href="com/fasterxml/jackson/databind/deser/impl/PropertyValueBuffer.html#PropertyValueBuffer"/>
+<area shape="poly" coords="152,198,149,201,147,198,149,196,152,198,152,198" title="Complexity: 16; Coverage: 40%; Class: MethodProperty" alt="" href="com/fasterxml/jackson/databind/deser/impl/MethodProperty.html#MethodProperty"/>
+<area shape="poly" coords="193,189,191,192,188,189,191,187,193,189,193,189" title="Complexity: 30; Coverage: 57%; Class: MapperConfig" alt="" href="com/fasterxml/jackson/databind/cfg/MapperConfig.html#MapperConfig"/>
+<area shape="poly" coords="139,184,137,186,134,184,137,181,139,184,139,184" title="Complexity: 38; Coverage: 35%; Class: BaseSettings" alt="" href="com/fasterxml/jackson/databind/cfg/BaseSettings.html#BaseSettings"/>
+<area shape="poly" coords="223,191,220,194,218,191,220,189,223,191,223,191" title="Complexity: 27; Coverage: 69%; Class: DeserializerFactoryConfig" alt="" href="com/fasterxml/jackson/databind/cfg/DeserializerFactoryConfig.html#DeserializerFactoryConfig"/>
+<area shape="poly" coords="178,198,176,200,173,198,176,195,178,198,178,198" title="Complexity: 17; Coverage: 51%; Class: SerializerFactoryConfig" alt="" href="com/fasterxml/jackson/databind/cfg/SerializerFactoryConfig.html#SerializerFactoryConfig"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: JsonSerializerMap.Bucket" alt="" href="com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.html#JsonSerializerMap.Bucket"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="183,199,181,202,178,199,181,197,183,199,183,199" title="Complexity: 15; Coverage: 53%; Class: MapperConfigBase" alt="" href="com/fasterxml/jackson/databind/cfg/MapperConfigBase.html#MapperConfigBase"/>
+<area shape="poly" coords="139,187,137,190,134,187,137,185,139,187,139,187" title="Complexity: 33; Coverage: 35%; Class: PropertyBuilder" alt="" href="com/fasterxml/jackson/databind/ser/PropertyBuilder.html#PropertyBuilder"/>
+<area shape="poly" coords="203,151,200,153,198,151,200,148,203,151,203,151" title="Complexity: 88; Coverage: 61%; Class: BeanSerializerFactory" alt="" href="com/fasterxml/jackson/databind/ser/BeanSerializerFactory.html#BeanSerializerFactory"/>
+<area shape="poly" coords="171,193,169,196,166,193,169,191,171,193,171,193" title="Complexity: 24; Coverage: 48%; Class: BeanSerializerBuilder" alt="" href="com/fasterxml/jackson/databind/ser/BeanSerializerBuilder.html#BeanSerializerBuilder"/>
+<area shape="poly" coords="183,196,181,199,178,196,181,194,183,196,183,196" title="Complexity: 19; Coverage: 53%; Class: SerializerCache.TypeKey" alt="" href="com/fasterxml/jackson/databind/ser/SerializerCache.html#SerializerCache.TypeKey"/>
+<area shape="poly" coords="254,196,252,199,249,196,252,194,254,196,254,196" title="Complexity: 19; Coverage: 82%; Class: SerializerCache" alt="" href="com/fasterxml/jackson/databind/ser/SerializerCache.html#SerializerCache"/>
+<area shape="poly" coords="178,125,176,128,173,125,176,123,178,125,178,125" title="Complexity: 126; Coverage: 51%; Class: BasicSerializerFactory" alt="" href="com/fasterxml/jackson/databind/ser/BasicSerializerFactory.html#BasicSerializerFactory"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 11; Coverage: 0%; Class: SimpleBeanPropertyFilter" alt="" href="com/fasterxml/jackson/databind/ser/impl/SimpleBeanPropertyFilter.html#SimpleBeanPropertyFilter"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 3; Coverage: 100%; Class: PropertySerializerMap" alt="" href="com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap.html#PropertySerializerMap"/>
+<area shape="poly" coords="134,172,132,175,129,172,132,170,134,172,134,172" title="Complexity: 55; Coverage: 33%; Class: DefaultSerializerProvider" alt="" href="com/fasterxml/jackson/databind/ser/DefaultSerializerProvider.html#DefaultSerializerProvider"/>
+<area shape="poly" coords="132,151,129,154,127,151,129,149,132,151,132,151" title="Complexity: 87; Coverage: 32%; Class: BeanPropertyWriter" alt="" href="com/fasterxml/jackson/databind/ser/BeanPropertyWriter.html#BeanPropertyWriter"/>
+<area shape="poly" coords="164,198,161,201,159,198,161,196,164,198,164,198" title="Complexity: 16; Coverage: 45%; Class: JsonMappingException.Reference" alt="" href="com/fasterxml/jackson/databind/JsonMappingException.html#JsonMappingException.Reference"/>
+<area shape="poly" coords="210,203,208,206,205,203,208,201,210,203,210,203" title="Complexity: 9; Coverage: 64%; Class: ContainerSerializer" alt="" href="com/fasterxml/jackson/databind/ser/ContainerSerializer.html#ContainerSerializer"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 5; Coverage: 0%; Class: JdkDeserializers.AtomicReferenceDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicReferenceDeserializer"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 6; Coverage: 0%; Class: StdKeyDeserializer.DelegatingKD" alt="" href="com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer.html#StdKeyDeserializer.DelegatingKD"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,202,51,205,49,202,51,200,54,202,54,202" title="Complexity: 10; Coverage: 0%; Class: PrimitiveArrayDeserializers.LongDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.LongDeser"/>
+<area shape="poly" coords="54,201,51,204,49,201,51,199,54,201,54,201" title="Complexity: 12; Coverage: 0%; Class: PrimitiveArrayDeserializers.CharDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.CharDeser"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 5; Coverage: 0%; Class: JdkDeserializers.AtomicReferenceDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicReferenceDeserializer"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 6; Coverage: 0%; Class: StdKeyDeserializer.DelegatingKD" alt="" href="com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer.html#StdKeyDeserializer.DelegatingKD"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 5; Coverage: 0%; Class: JdkDeserializers.AtomicReferenceDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicReferenceDeserializer"/>
+<area shape="poly" coords="90,195,88,198,85,195,88,193,90,195,90,195" title="Complexity: 21; Coverage: 15%; Class: NameTransformer" alt="" href="com/fasterxml/jackson/databind/util/NameTransformer.html#NameTransformer"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 15; Coverage: 0%; Class: DateDeserializers.DateBasedDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/DateDeserializers.html#DateDeserializers.DateBasedDeserializer"/>
+<area shape="poly" coords="139,138,137,140,134,138,137,135,139,138,139,138" title="Complexity: 107; Coverage: 35%; Class: ClassUtil" alt="" href="com/fasterxml/jackson/databind/util/ClassUtil.html#ClassUtil"/>
+<area shape="poly" coords="61,204,58,207,56,204,58,202,61,204,61,204" title="Complexity: 7; Coverage: 3%; Class: RootNameLookup" alt="" href="com/fasterxml/jackson/databind/util/RootNameLookup.html#RootNameLookup"/>
+<area shape="poly" coords="240,205,237,208,235,205,237,203,240,205,240,205" title="Complexity: 6; Coverage: 76%; Class: PrimitiveArrayBuilder.Node" alt="" href="com/fasterxml/jackson/databind/util/PrimitiveArrayBuilder.html#PrimitiveArrayBuilder.Node"/>
+<area shape="poly" coords="269,202,267,204,264,202,267,199,269,202,269,202" title="Complexity: 11; Coverage: 88%; Class: PrimitiveArrayBuilder" alt="" href="com/fasterxml/jackson/databind/util/PrimitiveArrayBuilder.html#PrimitiveArrayBuilder"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 3; Coverage: 0%; Class: NumberDeserializers.BooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BooleanDeserializer"/>
+<area shape="poly" coords="183,196,181,198,178,196,181,193,183,196,183,196" title="Complexity: 20; Coverage: 53%; Class: TokenBuffer.Segment" alt="" href="com/fasterxml/jackson/databind/util/TokenBuffer.html#TokenBuffer.Segment"/>
+<area shape="poly" coords="93,153,90,155,88,153,90,150,93,153,93,153" title="Complexity: 85; Coverage: 16%; Class: TokenBuffer.Parser" alt="" href="com/fasterxml/jackson/databind/util/TokenBuffer.html#TokenBuffer.Parser"/>
+<area shape="poly" coords="85,127,83,129,80,127,83,124,85,127,85,127" title="Complexity: 124; Coverage: 13%; Class: TokenBuffer" alt="" href="com/fasterxml/jackson/databind/util/TokenBuffer.html#TokenBuffer"/>
+<area shape="poly" coords="232,205,230,208,227,205,230,203,232,205,232,205" title="Complexity: 6; Coverage: 73%; Class: ArrayBuilders.ArrayIterator" alt="" href="com/fasterxml/jackson/databind/util/ArrayBuilders.html#ArrayBuilders.ArrayIterator"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 2; Coverage: 100%; Class: NumberDeserializers.PrimitiveOrWrapperDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.PrimitiveOrWrapperDeserializer"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 2; Coverage: 100%; Class: NumberDeserializers.PrimitiveOrWrapperDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.PrimitiveOrWrapperDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 2; Coverage: 100%; Class: NumberDeserializers.PrimitiveOrWrapperDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.PrimitiveOrWrapperDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="105,180,102,182,100,180,102,177,105,180,105,180" title="Complexity: 44; Coverage: 21%; Class: ArrayBuilders" alt="" href="com/fasterxml/jackson/databind/util/ArrayBuilders.html#ArrayBuilders"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 5; Coverage: 0%; Class: JdkDeserializers.AtomicReferenceDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicReferenceDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: JsonSerializerMap.Bucket" alt="" href="com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.html#JsonSerializerMap.Bucket"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="196,206,193,209,191,206,193,204,196,206,196,206" title="Complexity: 4; Coverage: 58%; Class: ISO8601DateFormat" alt="" href="com/fasterxml/jackson/databind/util/ISO8601DateFormat.html#ISO8601DateFormat"/>
+<area shape="poly" coords="198,197,196,200,193,197,196,195,198,197,198,197" title="Complexity: 18; Coverage: 59%; Class: EnumResolver" alt="" href="com/fasterxml/jackson/databind/util/EnumResolver.html#EnumResolver"/>
+<area shape="poly" coords="156,184,154,186,151,184,154,181,156,184,156,184" title="Complexity: 38; Coverage: 42%; Class: BeanUtil" alt="" href="com/fasterxml/jackson/databind/util/BeanUtil.html#BeanUtil"/>
+<area shape="poly" coords="154,202,151,205,149,202,151,200,154,202,154,202" title="Complexity: 10; Coverage: 41%; Class: EnumValues" alt="" href="com/fasterxml/jackson/databind/util/EnumValues.html#EnumValues"/>
+<area shape="poly" coords="257,206,254,208,252,206,254,203,257,206,257,206" title="Complexity: 5; Coverage: 83%; Class: ObjectBuffer.Node" alt="" href="com/fasterxml/jackson/databind/util/ObjectBuffer.html#ObjectBuffer.Node"/>
+<area shape="poly" coords="210,196,208,198,205,196,208,193,210,196,210,196" title="Complexity: 20; Coverage: 64%; Class: ObjectBuffer" alt="" href="com/fasterxml/jackson/databind/util/ObjectBuffer.html#ObjectBuffer"/>
+<area shape="poly" coords="134,186,132,189,129,186,132,184,134,186,134,186" title="Complexity: 34; Coverage: 33%; Class: SimpleBeanPropertyDefinition" alt="" href="com/fasterxml/jackson/databind/util/SimpleBeanPropertyDefinition.html#SimpleBeanPropertyDefinition"/>
+<area shape="poly" coords="181,205,178,208,176,205,178,203,181,205,181,205" title="Complexity: 6; Coverage: 52%; Class: StdKeyDeserializer.EnumKD" alt="" href="com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer.html#StdKeyDeserializer.EnumKD"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 9; Coverage: 0%; Class: NumberDeserializers.BigIntegerDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BigIntegerDeserializer"/>
+<area shape="poly" coords="117,189,115,192,112,189,115,187,117,189,117,189" title="Complexity: 30; Coverage: 26%; Class: ISO8601Utils" alt="" href="com/fasterxml/jackson/databind/util/ISO8601Utils.html#ISO8601Utils"/>
+<area shape="poly" coords="164,206,161,208,159,206,161,203,164,206,164,206" title="Complexity: 5; Coverage: 45%; Class: LRUMap" alt="" href="com/fasterxml/jackson/databind/util/LRUMap.html#LRUMap"/>
+<area shape="poly" coords="98,170,95,172,93,170,95,167,98,170,98,170" title="Complexity: 59; Coverage: 18%; Class: StdDateFormat" alt="" href="com/fasterxml/jackson/databind/util/StdDateFormat.html#StdDateFormat"/>
+<area shape="poly" coords="166,205,164,208,161,205,164,203,166,205,166,205" title="Complexity: 6; Coverage: 46%; Class: StringSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/StringSerializer.html#StringSerializer"/>
+<area shape="poly" coords="71,199,68,202,66,199,68,197,71,199,71,199" title="Complexity: 15; Coverage: 7%; Class: SerializableSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/SerializableSerializer.html#SerializableSerializer"/>
+<area shape="poly" coords="68,201,66,204,63,201,66,199,68,201,68,201" title="Complexity: 12; Coverage: 6%; Class: StdArraySerializers.DoubleArraySerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/StdArraySerializers.html#StdArraySerializers.DoubleArraySerializer"/>
+<area shape="poly" coords="63,199,61,202,58,199,61,197,63,199,63,199" title="Complexity: 15; Coverage: 4%; Class: StdArraySerializers.FloatArraySerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/StdArraySerializers.html#StdArraySerializers.FloatArraySerializer"/>
+<area shape="poly" coords="63,199,61,202,58,199,61,197,63,199,63,199" title="Complexity: 15; Coverage: 4%; Class: StdArraySerializers.FloatArraySerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/StdArraySerializers.html#StdArraySerializers.FloatArraySerializer"/>
+<area shape="poly" coords="68,201,66,204,63,201,66,199,68,201,68,201" title="Complexity: 12; Coverage: 6%; Class: StdArraySerializers.DoubleArraySerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/StdArraySerializers.html#StdArraySerializers.DoubleArraySerializer"/>
+<area shape="poly" coords="63,201,61,204,58,201,61,199,63,201,63,201" title="Complexity: 12; Coverage: 4%; Class: StdArraySerializers.CharArraySerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/StdArraySerializers.html#StdArraySerializers.CharArraySerializer"/>
+<area shape="poly" coords="63,199,61,202,58,199,61,197,63,199,63,199" title="Complexity: 15; Coverage: 4%; Class: StdArraySerializers.FloatArraySerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/StdArraySerializers.html#StdArraySerializers.FloatArraySerializer"/>
+<area shape="poly" coords="73,204,71,206,68,204,71,201,73,204,73,204" title="Complexity: 8; Coverage: 8%; Class: StdArraySerializers.ByteArraySerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/StdArraySerializers.html#StdArraySerializers.ByteArraySerializer"/>
+<area shape="poly" coords="68,201,66,204,63,201,66,199,68,201,68,201" title="Complexity: 12; Coverage: 6%; Class: StdArraySerializers.DoubleArraySerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/StdArraySerializers.html#StdArraySerializers.DoubleArraySerializer"/>
+<area shape="poly" coords="176,208,174,210,171,208,174,205,176,208,176,208" title="Complexity: 2; Coverage: 50%; Class: StdArraySerializers.TypedPrimitiveArraySerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/StdArraySerializers.html#StdArraySerializers.TypedPrimitiveArraySerializer"/>
+<area shape="poly" coords="276,207,274,210,271,207,274,205,276,207,276,207" title="Complexity: 3; Coverage: 91%; Class: StdArraySerializers" alt="" href="com/fasterxml/jackson/databind/ser/std/StdArraySerializers.html#StdArraySerializers"/>
+<area shape="poly" coords="115,206,112,208,110,206,112,203,115,206,115,206" title="Complexity: 5; Coverage: 25%; Class: BooleanSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/BooleanSerializer.html#BooleanSerializer"/>
+<area shape="poly" coords="215,206,213,208,210,206,213,203,215,206,215,206" title="Complexity: 5; Coverage: 66%; Class: StdScalarSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/StdScalarSerializer.html#StdScalarSerializer"/>
+<area shape="poly" coords="88,185,85,188,83,185,85,183,88,185,88,185" title="Complexity: 36; Coverage: 14%; Class: StdSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/StdSerializer.html#StdSerializer"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 2; Coverage: 100%; Class: NumberDeserializers.PrimitiveOrWrapperDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.PrimitiveOrWrapperDeserializer"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 6; Coverage: 0%; Class: StdKeyDeserializer.DelegatingKD" alt="" href="com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer.html#StdKeyDeserializer.DelegatingKD"/>
+<area shape="poly" coords="139,164,137,167,134,164,137,162,139,164,139,164" title="Complexity: 67; Coverage: 35%; Class: ObjectArraySerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/ObjectArraySerializer.html#ObjectArraySerializer"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="129,129,127,131,124,129,127,126,129,129,129,129" title="Complexity: 121; Coverage: 31%; Class: BeanSerializerBase" alt="" href="com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.html#BeanSerializerBase"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 5; Coverage: 0%; Class: JdkDeserializers.AtomicReferenceDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicReferenceDeserializer"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 5; Coverage: 0%; Class: JdkDeserializers.AtomicReferenceDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicReferenceDeserializer"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: ContainerDeserializerBase" alt="" href="com/fasterxml/jackson/databind/deser/std/ContainerDeserializerBase.html#ContainerDeserializerBase"/>
+<area shape="poly" coords="76,195,73,198,71,195,73,193,76,195,76,195" title="Complexity: 21; Coverage: 9%; Class: DateTimeSerializerBase" alt="" href="com/fasterxml/jackson/databind/ser/std/DateTimeSerializerBase.html#DateTimeSerializerBase"/>
+<area shape="poly" coords="54,180,51,182,49,180,51,177,54,180,54,180" title="Complexity: 44; Coverage: 0%; Class: JsonValueSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/JsonValueSerializer.html#JsonValueSerializer"/>
+<area shape="poly" coords="152,203,149,206,147,203,149,201,152,203,152,203" title="Complexity: 9; Coverage: 40%; Class: DateSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/DateSerializer.html#DateSerializer"/>
+<area shape="poly" coords="63,200,61,202,58,200,61,197,63,200,63,200" title="Complexity: 14; Coverage: 4%; Class: NumberSerializers.NumberSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/NumberSerializers.html#NumberSerializers.NumberSerializer"/>
+<area shape="poly" coords="93,206,90,208,88,206,90,203,93,206,93,206" title="Complexity: 5; Coverage: 16%; Class: NumberSerializers.DoubleSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/NumberSerializers.html#NumberSerializers.DoubleSerializer"/>
+<area shape="poly" coords="93,206,90,208,88,206,90,203,93,206,93,206" title="Complexity: 5; Coverage: 16%; Class: NumberSerializers.DoubleSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/NumberSerializers.html#NumberSerializers.DoubleSerializer"/>
+<area shape="poly" coords="93,206,90,208,88,206,90,203,93,206,93,206" title="Complexity: 5; Coverage: 16%; Class: NumberSerializers.DoubleSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/NumberSerializers.html#NumberSerializers.DoubleSerializer"/>
+<area shape="poly" coords="93,206,90,208,88,206,90,203,93,206,93,206" title="Complexity: 5; Coverage: 16%; Class: NumberSerializers.DoubleSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/NumberSerializers.html#NumberSerializers.DoubleSerializer"/>
+<area shape="poly" coords="134,206,132,208,129,206,132,203,134,206,134,206" title="Complexity: 5; Coverage: 33%; Class: NumberSerializers.IntegerSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/NumberSerializers.html#NumberSerializers.IntegerSerializer"/>
+<area shape="poly" coords="93,206,90,208,88,206,90,203,93,206,93,206" title="Complexity: 5; Coverage: 16%; Class: NumberSerializers.DoubleSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/NumberSerializers.html#NumberSerializers.DoubleSerializer"/>
+<area shape="poly" coords="281,208,279,210,276,208,279,205,281,208,281,208" title="Complexity: 2; Coverage: 93%; Class: NumberSerializers" alt="" href="com/fasterxml/jackson/databind/ser/std/NumberSerializers.html#NumberSerializers"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 5; Coverage: 0%; Class: JdkDeserializers.AtomicReferenceDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicReferenceDeserializer"/>
+<area shape="poly" coords="142,180,139,183,137,180,139,178,142,180,142,180" title="Complexity: 43; Coverage: 36%; Class: AsArraySerializerBase" alt="" href="com/fasterxml/jackson/databind/ser/std/AsArraySerializerBase.html#AsArraySerializerBase"/>
+<area shape="poly" coords="54,201,51,204,49,201,51,199,54,201,54,201" title="Complexity: 12; Coverage: 0%; Class: PrimitiveArrayDeserializers.CharDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.CharDeser"/>
+<area shape="poly" coords="93,203,90,206,88,203,90,201,93,203,93,203" title="Complexity: 9; Coverage: 16%; Class: CalendarSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/CalendarSerializer.html#CalendarSerializer"/>
+<area shape="poly" coords="76,204,73,206,71,204,73,201,76,204,76,204" title="Complexity: 8; Coverage: 9%; Class: UnknownSerializer" alt="" href="com/fasterxml/jackson/databind/ser/impl/UnknownSerializer.html#UnknownSerializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="176,208,174,210,171,208,174,205,176,208,176,208" title="Complexity: 2; Coverage: 50%; Class: StdArraySerializers.TypedPrimitiveArraySerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/StdArraySerializers.html#StdArraySerializers.TypedPrimitiveArraySerializer"/>
+<area shape="poly" coords="144,204,142,207,139,204,142,202,144,204,144,204" title="Complexity: 7; Coverage: 37%; Class: StdKeySerializers" alt="" href="com/fasterxml/jackson/databind/ser/std/StdKeySerializers.html#StdKeySerializers"/>
+<area shape="poly" coords="54,192,51,195,49,192,51,190,54,192,54,192" title="Complexity: 25; Coverage: 0%; Class: StdDelegatingSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/StdDelegatingSerializer.html#StdDelegatingSerializer"/>
+<area shape="poly" coords="200,204,198,206,195,204,198,201,200,204,200,204" title="Complexity: 8; Coverage: 60%; Class: ArraySerializerBase" alt="" href="com/fasterxml/jackson/databind/ser/std/ArraySerializerBase.html#ArraySerializerBase"/>
+<area shape="poly" coords="122,188,120,190,117,188,120,185,122,188,122,188" title="Complexity: 32; Coverage: 28%; Class: EnumSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/EnumSerializer.html#EnumSerializer"/>
+<area shape="poly" coords="85,204,83,206,80,204,83,201,85,204,85,204" title="Complexity: 8; Coverage: 13%; Class: StdContainerSerializers" alt="" href="com/fasterxml/jackson/databind/ser/std/StdContainerSerializers.html#StdContainerSerializers"/>
+<area shape="poly" coords="120,173,117,176,115,173,117,171,120,173,120,173" title="Complexity: 54; Coverage: 27%; Class: EnumMapSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/EnumMapSerializer.html#EnumMapSerializer"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 3; Coverage: 0%; Class: NumberDeserializers.BooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BooleanDeserializer"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 6; Coverage: 0%; Class: StdKeyDeserializer.DelegatingKD" alt="" href="com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer.html#StdKeyDeserializer.DelegatingKD"/>
+<area shape="poly" coords="176,206,174,208,171,206,174,203,176,206,176,206" title="Complexity: 5; Coverage: 50%; Class: StdKeySerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/StdKeySerializer.html#StdKeySerializer"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 8; Coverage: 0%; Class: NumberDeserializers.CharacterDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.CharacterDeserializer"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 22; Coverage: 0%; Class: CollectionSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/CollectionSerializer.html#CollectionSerializer"/>
+<area shape="poly" coords="152,155,149,158,147,155,149,153,152,155,152,155" title="Complexity: 81; Coverage: 40%; Class: MapSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/MapSerializer.html#MapSerializer"/>
+<area shape="poly" coords="115,206,112,209,110,206,112,204,115,206,115,206" title="Complexity: 4; Coverage: 25%; Class: PropertyNamingStrategy.PropertyNamingStrategyBase" alt="" href="com/fasterxml/jackson/databind/PropertyNamingStrategy.html#PropertyNamingStrategy.PropertyNamingStrategyBase"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 5; Coverage: 0%; Class: JdkDeserializers.AtomicReferenceDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicReferenceDeserializer"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 5; Coverage: 0%; Class: JdkDeserializers.AtomicReferenceDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicReferenceDeserializer"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 2; Coverage: 100%; Class: NumberDeserializers.PrimitiveOrWrapperDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.PrimitiveOrWrapperDeserializer"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="156,205,154,208,151,205,154,203,156,205,156,205" title="Complexity: 6; Coverage: 42%; Class: CoreXMLDeserializers" alt="" href="com/fasterxml/jackson/databind/ext/CoreXMLDeserializers.html#CoreXMLDeserializers"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 7; Coverage: 0%; Class: NumberDeserializers.BigDecimalDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BigDecimalDeserializer"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="218,189,215,192,213,189,215,187,218,189,218,189" title="Complexity: 30; Coverage: 67%; Class: OptionalHandlerFactory" alt="" href="com/fasterxml/jackson/databind/ext/OptionalHandlerFactory.html#OptionalHandlerFactory"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 15; Coverage: 0%; Class: DateDeserializers.DateBasedDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/DateDeserializers.html#DateDeserializers.DateBasedDeserializer"/>
+<area shape="poly" coords="156,196,154,198,151,196,154,193,156,196,156,196" title="Complexity: 20; Coverage: 42%; Class: TypeDeserializerBase" alt="" href="com/fasterxml/jackson/databind/jsontype/impl/TypeDeserializerBase.html#TypeDeserializerBase"/>
+<area shape="poly" coords="220,204,218,206,215,204,218,201,220,204,220,204" title="Complexity: 8; Coverage: 68%; Class: MinimalClassNameIdResolver" alt="" href="com/fasterxml/jackson/databind/jsontype/impl/MinimalClassNameIdResolver.html#MinimalClassNameIdResolver"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 5; Coverage: 0%; Class: JdkDeserializers.AtomicReferenceDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicReferenceDeserializer"/>
+<area shape="poly" coords="54,192,51,194,49,192,51,189,54,192,54,192" title="Complexity: 26; Coverage: 0%; Class: AsExternalTypeSerializer" alt="" href="com/fasterxml/jackson/databind/jsontype/impl/AsExternalTypeSerializer.html#AsExternalTypeSerializer"/>
+<area shape="poly" coords="164,206,161,208,159,206,161,203,164,206,164,206" title="Complexity: 5; Coverage: 45%; Class: LRUMap" alt="" href="com/fasterxml/jackson/databind/util/LRUMap.html#LRUMap"/>
+<area shape="poly" coords="164,196,161,199,159,196,161,194,164,196,164,196" title="Complexity: 19; Coverage: 45%; Class: AsArrayTypeDeserializer" alt="" href="com/fasterxml/jackson/databind/jsontype/impl/AsArrayTypeDeserializer.html#AsArrayTypeDeserializer"/>
+<area shape="poly" coords="107,194,105,196,102,194,105,191,107,194,107,194" title="Complexity: 23; Coverage: 22%; Class: StdSubtypeResolver" alt="" href="com/fasterxml/jackson/databind/jsontype/impl/StdSubtypeResolver.html#StdSubtypeResolver"/>
+<area shape="poly" coords="129,196,127,199,124,196,127,194,129,196,129,196" title="Complexity: 19; Coverage: 31%; Class: AsArrayTypeSerializer" alt="" href="com/fasterxml/jackson/databind/jsontype/impl/AsArrayTypeSerializer.html#AsArrayTypeSerializer"/>
+<area shape="poly" coords="117,202,115,205,112,202,115,200,117,202,117,202" title="Complexity: 10; Coverage: 26%; Class: AsPropertyTypeSerializer" alt="" href="com/fasterxml/jackson/databind/jsontype/impl/AsPropertyTypeSerializer.html#AsPropertyTypeSerializer"/>
+<area shape="poly" coords="181,194,178,196,176,194,178,191,181,194,181,194" title="Complexity: 23; Coverage: 52%; Class: AsPropertyTypeDeserializer" alt="" href="com/fasterxml/jackson/databind/jsontype/impl/AsPropertyTypeDeserializer.html#AsPropertyTypeDeserializer"/>
+<area shape="poly" coords="200,208,198,210,195,208,198,205,200,208,200,208" title="Complexity: 2; Coverage: 60%; Class: FailingDeserializer" alt="" href="com/fasterxml/jackson/databind/jsontype/impl/FailingDeserializer.html#FailingDeserializer"/>
+<area shape="poly" coords="176,207,174,210,171,207,174,205,176,207,176,207" title="Complexity: 3; Coverage: 50%; Class: TypeIdResolverBase" alt="" href="com/fasterxml/jackson/databind/jsontype/impl/TypeIdResolverBase.html#TypeIdResolverBase"/>
+<area shape="poly" coords="159,195,156,198,154,195,156,193,159,195,159,195" title="Complexity: 21; Coverage: 43%; Class: ClassNameIdResolver" alt="" href="com/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver.html#ClassNameIdResolver"/>
+<area shape="poly" coords="149,194,147,197,144,194,147,192,149,194,149,194" title="Complexity: 22; Coverage: 39%; Class: TypeNameIdResolver" alt="" href="com/fasterxml/jackson/databind/jsontype/impl/TypeNameIdResolver.html#TypeNameIdResolver"/>
+<area shape="poly" coords="203,186,200,189,198,186,200,184,203,186,203,186" title="Complexity: 34; Coverage: 61%; Class: StdTypeResolverBuilder" alt="" href="com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder.html#StdTypeResolverBuilder"/>
+<area shape="poly" coords="54,196,51,199,49,196,51,194,54,196,54,196" title="Complexity: 19; Coverage: 0%; Class: ManagedReferenceProperty" alt="" href="com/fasterxml/jackson/databind/deser/impl/ManagedReferenceProperty.html#ManagedReferenceProperty"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 6; Coverage: 0%; Class: StdKeyDeserializer.DelegatingKD" alt="" href="com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer.html#StdKeyDeserializer.DelegatingKD"/>
+<area shape="poly" coords="54,202,51,205,49,202,51,200,54,202,54,202" title="Complexity: 10; Coverage: 0%; Class: PrimitiveArrayDeserializers.LongDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.LongDeser"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 6; Coverage: 0%; Class: StdKeyDeserializer.DelegatingKD" alt="" href="com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer.html#StdKeyDeserializer.DelegatingKD"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: JsonSerializerMap.Bucket" alt="" href="com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.html#JsonSerializerMap.Bucket"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 13; Coverage: 0%; Class: JsonValueFormat" alt="" href="com/fasterxml/jackson/databind/jsonFormatVisitors/JsonValueFormat.html#JsonValueFormat"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: JsonSerializerMap.Bucket" alt="" href="com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.html#JsonSerializerMap.Bucket"/>
+<area shape="poly" coords="117,194,115,196,112,194,115,191,117,194,117,194" title="Complexity: 23; Coverage: 26%; Class: FloatNode" alt="" href="com/fasterxml/jackson/databind/node/FloatNode.html#FloatNode"/>
+<area shape="poly" coords="156,160,154,162,151,160,154,157,156,160,156,160" title="Complexity: 74; Coverage: 42%; Class: TreeTraversingParser" alt="" href="com/fasterxml/jackson/databind/node/TreeTraversingParser.html#TreeTraversingParser"/>
+<area shape="poly" coords="144,142,142,144,139,142,142,139,144,142,144,142" title="Complexity: 101; Coverage: 37%; Class: ArrayNode" alt="" href="com/fasterxml/jackson/databind/node/ArrayNode.html#ArrayNode"/>
+<area shape="poly" coords="134,186,132,188,129,186,132,183,134,186,134,186" title="Complexity: 35; Coverage: 33%; Class: JsonNodeFactory" alt="" href="com/fasterxml/jackson/databind/node/JsonNodeFactory.html#JsonNodeFactory"/>
+<area shape="poly" coords="210,194,208,196,205,194,208,191,210,194,210,194" title="Complexity: 23; Coverage: 64%; Class: DoubleNode" alt="" href="com/fasterxml/jackson/databind/node/DoubleNode.html#DoubleNode"/>
+<area shape="poly" coords="80,193,78,196,75,193,78,191,80,193,80,193" title="Complexity: 24; Coverage: 11%; Class: LongNode" alt="" href="com/fasterxml/jackson/databind/node/LongNode.html#LongNode"/>
+<area shape="poly" coords="183,204,181,207,178,204,181,202,183,204,183,204" title="Complexity: 7; Coverage: 53%; Class: NullNode" alt="" href="com/fasterxml/jackson/databind/node/NullNode.html#NullNode"/>
+<area shape="poly" coords="54,193,51,196,49,193,51,191,54,193,54,193" title="Complexity: 24; Coverage: 0%; Class: BeanAsArraySerializer" alt="" href="com/fasterxml/jackson/databind/ser/impl/BeanAsArraySerializer.html#BeanAsArraySerializer"/>
+<area shape="poly" coords="169,176,166,179,164,176,166,174,169,176,169,176" title="Complexity: 49; Coverage: 47%; Class: TextNode" alt="" href="com/fasterxml/jackson/databind/node/TextNode.html#TextNode"/>
+<area shape="poly" coords="129,198,127,200,124,198,127,195,129,198,129,198" title="Complexity: 17; Coverage: 31%; Class: ValueNode" alt="" href="com/fasterxml/jackson/databind/node/ValueNode.html#ValueNode"/>
+<area shape="poly" coords="156,193,154,196,151,193,154,191,156,193,156,193" title="Complexity: 24; Coverage: 42%; Class: BooleanNode" alt="" href="com/fasterxml/jackson/databind/node/BooleanNode.html#BooleanNode"/>
+<area shape="poly" coords="264,204,262,206,259,204,262,201,264,204,264,204" title="Complexity: 8; Coverage: 86%; Class: NumericNode" alt="" href="com/fasterxml/jackson/databind/node/NumericNode.html#NumericNode"/>
+<area shape="poly" coords="54,193,51,196,49,193,51,191,54,193,54,193" title="Complexity: 24; Coverage: 0%; Class: BeanAsArraySerializer" alt="" href="com/fasterxml/jackson/databind/ser/impl/BeanAsArraySerializer.html#BeanAsArraySerializer"/>
+<area shape="poly" coords="220,202,218,205,215,202,218,200,220,202,220,202" title="Complexity: 10; Coverage: 68%; Class: MissingNode" alt="" href="com/fasterxml/jackson/databind/node/MissingNode.html#MissingNode"/>
+<area shape="poly" coords="107,150,105,152,102,150,105,147,107,150,107,150" title="Complexity: 89; Coverage: 22%; Class: ObjectNode" alt="" href="com/fasterxml/jackson/databind/node/ObjectNode.html#ObjectNode"/>
+<area shape="poly" coords="132,190,129,193,127,190,129,188,132,190,132,190" title="Complexity: 28; Coverage: 32%; Class: IntNode" alt="" href="com/fasterxml/jackson/databind/node/IntNode.html#IntNode"/>
+<area shape="poly" coords="193,205,191,208,188,205,191,203,193,205,193,205" title="Complexity: 6; Coverage: 57%; Class: BaseJsonNode" alt="" href="com/fasterxml/jackson/databind/node/BaseJsonNode.html#BaseJsonNode"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 22; Coverage: 0%; Class: CollectionSerializer" alt="" href="com/fasterxml/jackson/databind/ser/std/CollectionSerializer.html#CollectionSerializer"/>
+<area shape="poly" coords="54,194,51,196,49,194,51,191,54,194,54,194" title="Complexity: 23; Coverage: 0%; Class: DecimalNode" alt="" href="com/fasterxml/jackson/databind/node/DecimalNode.html#DecimalNode"/>
+<area shape="poly" coords="58,192,56,194,53,192,56,189,58,192,58,192" title="Complexity: 26; Coverage: 2%; Class: POJONode" alt="" href="com/fasterxml/jackson/databind/node/POJONode.html#POJONode"/>
+<area shape="poly" coords="196,198,193,200,191,198,193,195,196,198,196,198" title="Complexity: 17; Coverage: 58%; Class: ContainerNode" alt="" href="com/fasterxml/jackson/databind/node/ContainerNode.html#ContainerNode"/>
+<area shape="poly" coords="237,202,235,204,232,202,235,199,237,202,237,202" title="Complexity: 11; Coverage: 75%; Class: NodeCursor.Object" alt="" href="com/fasterxml/jackson/databind/node/NodeCursor.html#NodeCursor.Object"/>
+<area shape="poly" coords="272,204,269,207,267,204,269,202,272,204,272,204" title="Complexity: 7; Coverage: 89%; Class: NodeCursor.Array" alt="" href="com/fasterxml/jackson/databind/node/NodeCursor.html#NodeCursor.Array"/>
+<area shape="poly" coords="237,204,235,206,232,204,235,201,237,204,237,204" title="Complexity: 8; Coverage: 75%; Class: NodeCursor.RootValue" alt="" href="com/fasterxml/jackson/databind/node/NodeCursor.html#NodeCursor.RootValue"/>
+<area shape="poly" coords="240,204,237,206,235,204,237,201,240,204,240,204" title="Complexity: 8; Coverage: 76%; Class: NodeCursor" alt="" href="com/fasterxml/jackson/databind/node/NodeCursor.html#NodeCursor"/>
+<area shape="poly" coords="120,195,117,198,115,195,117,193,120,195,120,195" title="Complexity: 21; Coverage: 27%; Class: SimpleDeserializers" alt="" href="com/fasterxml/jackson/databind/module/SimpleDeserializers.html#SimpleDeserializers"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 7; Coverage: 0%; Class: NumberDeserializers.BigDecimalDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BigDecimalDeserializer"/>
+<area shape="poly" coords="142,175,139,178,137,175,139,173,142,175,142,175" title="Complexity: 51; Coverage: 36%; Class: SimpleModule" alt="" href="com/fasterxml/jackson/databind/module/SimpleModule.html#SimpleModule"/>
+<area shape="poly" coords="274,206,271,209,269,206,271,204,274,206,274,206" title="Complexity: 4; Coverage: 90%; Class: SimpleValueInstantiators" alt="" href="com/fasterxml/jackson/databind/module/SimpleValueInstantiators.html#SimpleValueInstantiators"/>
+<area shape="poly" coords="132,188,129,190,127,188,129,185,132,188,132,188" title="Complexity: 32; Coverage: 32%; Class: SimpleSerializers" alt="" href="com/fasterxml/jackson/databind/module/SimpleSerializers.html#SimpleSerializers"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 5; Coverage: 0%; Class: JdkDeserializers.AtomicReferenceDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicReferenceDeserializer"/>
+<area shape="poly" coords="103,200,100,203,98,200,100,198,103,200,103,200" title="Complexity: 13; Coverage: 20%; Class: TypeDeserializer" alt="" href="com/fasterxml/jackson/databind/jsontype/TypeDeserializer.html#TypeDeserializer"/>
+<area shape="poly" coords="142,199,139,202,137,199,139,197,142,199,142,199" title="Complexity: 15; Coverage: 36%; Class: NamedType" alt="" href="com/fasterxml/jackson/databind/jsontype/NamedType.html#NamedType"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 3; Coverage: 0%; Class: NumberDeserializers.BooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.BooleanDeserializer"/>
+<area shape="poly" coords="147,188,144,191,142,188,144,186,147,188,147,188" title="Complexity: 31; Coverage: 38%; Class: CollectionLikeType" alt="" href="com/fasterxml/jackson/databind/type/CollectionLikeType.html#CollectionLikeType"/>
+<area shape="poly" coords="132,196,129,198,127,196,129,193,132,196,132,196" title="Complexity: 20; Coverage: 32%; Class: MapType" alt="" href="com/fasterxml/jackson/databind/type/MapType.html#MapType"/>
+<area shape="poly" coords="154,200,151,202,149,200,151,197,154,200,154,200" title="Complexity: 14; Coverage: 41%; Class: CollectionType" alt="" href="com/fasterxml/jackson/databind/type/CollectionType.html#CollectionType"/>
+<area shape="poly" coords="220,113,218,116,215,113,218,111,220,113,220,113" title="Complexity: 144; Coverage: 68%; Class: TypeFactory" alt="" href="com/fasterxml/jackson/databind/type/TypeFactory.html#TypeFactory"/>
+<area shape="poly" coords="164,182,161,185,159,182,161,180,164,182,164,182" title="Complexity: 40; Coverage: 45%; Class: MapLikeType" alt="" href="com/fasterxml/jackson/databind/type/MapLikeType.html#MapLikeType"/>
+<area shape="poly" coords="90,194,88,197,85,194,88,192,90,194,90,194" title="Complexity: 22; Coverage: 15%; Class: TypeBase" alt="" href="com/fasterxml/jackson/databind/type/TypeBase.html#TypeBase"/>
+<area shape="poly" coords="215,172,213,174,210,172,213,169,215,172,215,172" title="Complexity: 56; Coverage: 66%; Class: TypeBindings" alt="" href="com/fasterxml/jackson/databind/type/TypeBindings.html#TypeBindings"/>
+<area shape="poly" coords="110,184,107,187,105,184,107,182,110,184,110,184" title="Complexity: 37; Coverage: 23%; Class: ArrayType" alt="" href="com/fasterxml/jackson/databind/type/ArrayType.html#ArrayType"/>
+<area shape="poly" coords="193,202,191,205,188,202,191,200,193,202,193,202" title="Complexity: 10; Coverage: 57%; Class: ClassKey" alt="" href="com/fasterxml/jackson/databind/type/ClassKey.html#ClassKey"/>
+<area shape="poly" coords="232,198,230,201,227,198,230,196,232,198,232,198" title="Complexity: 16; Coverage: 73%; Class: HierarchicType" alt="" href="com/fasterxml/jackson/databind/type/HierarchicType.html#HierarchicType"/>
+<area shape="poly" coords="237,204,235,206,232,204,235,201,237,204,237,204" title="Complexity: 8; Coverage: 75%; Class: NodeCursor.RootValue" alt="" href="com/fasterxml/jackson/databind/node/NodeCursor.html#NodeCursor.RootValue"/>
+<area shape="poly" coords="220,198,218,201,215,198,218,196,220,198,220,198" title="Complexity: 16; Coverage: 68%; Class: TypeParser" alt="" href="com/fasterxml/jackson/databind/type/TypeParser.html#TypeParser"/>
+<area shape="poly" coords="156,177,154,180,151,177,154,175,156,177,156,177" title="Complexity: 48; Coverage: 42%; Class: SimpleType" alt="" href="com/fasterxml/jackson/databind/type/SimpleType.html#SimpleType"/>
+<area shape="poly" coords="186,158,183,160,181,158,183,155,186,158,186,158" title="Complexity: 77; Coverage: 54%; Class: DeserializerCache" alt="" href="com/fasterxml/jackson/databind/deser/DeserializerCache.html#DeserializerCache"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: JsonSerializerMap.Bucket" alt="" href="com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.html#JsonSerializerMap.Bucket"/>
+<area shape="poly" coords="208,31,205,33,203,31,205,28,208,31,208,31" title="Complexity: 268; Coverage: 63%; Class: BasicDeserializerFactory" alt="" href="com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.html#BasicDeserializerFactory"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 8; Coverage: 0%; Class: NumberDeserializers.CharacterDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/NumberDeserializers.html#NumberDeserializers.CharacterDeserializer"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 11; Coverage: 0%; Class: SimpleBeanPropertyFilter" alt="" href="com/fasterxml/jackson/databind/ser/impl/SimpleBeanPropertyFilter.html#SimpleBeanPropertyFilter"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 4; Coverage: 0%; Class: ClassDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/ClassDeserializer.html#ClassDeserializer"/>
+<area shape="poly" coords="54,192,51,194,49,192,51,189,54,192,54,192" title="Complexity: 26; Coverage: 0%; Class: AsExternalTypeSerializer" alt="" href="com/fasterxml/jackson/databind/jsontype/impl/AsExternalTypeSerializer.html#AsExternalTypeSerializer"/>
+<area shape="poly" coords="54,120,51,122,49,120,51,117,54,120,54,120" title="Complexity: 134; Coverage: 0%; Class: BuilderBasedDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/BuilderBasedDeserializer.html#BuilderBasedDeserializer"/>
+<area shape="poly" coords="298,206,296,208,293,206,296,203,298,206,298,206" title="Complexity: 5; Coverage: 100%; Class: DefaultDeserializationContext.Impl" alt="" href="com/fasterxml/jackson/databind/deser/DefaultDeserializationContext.html#DefaultDeserializationContext.Impl"/>
+<area shape="poly" coords="90,192,88,194,85,192,88,189,90,192,90,192" title="Complexity: 26; Coverage: 15%; Class: DefaultDeserializationContext" alt="" href="com/fasterxml/jackson/databind/deser/DefaultDeserializationContext.html#DefaultDeserializationContext"/>
+<area shape="poly" coords="125,83,122,85,120,83,122,80,125,83,125,83" title="Complexity: 190; Coverage: 29%; Class: BeanDeserializerBase" alt="" href="com/fasterxml/jackson/databind/deser/BeanDeserializerBase.html#BeanDeserializerBase"/>
+<area shape="poly" coords="144,177,142,180,139,177,142,175,144,177,144,177" title="Complexity: 48; Coverage: 37%; Class: SettableBeanProperty" alt="" href="com/fasterxml/jackson/databind/deser/SettableBeanProperty.html#SettableBeanProperty"/>
+<area shape="poly" coords="127,179,125,182,122,179,125,177,127,179,127,179" title="Complexity: 45; Coverage: 30%; Class: BeanDeserializerBuilder" alt="" href="com/fasterxml/jackson/databind/deser/BeanDeserializerBuilder.html#BeanDeserializerBuilder"/>
+<area shape="poly" coords="54,196,51,198,49,196,51,193,54,196,54,196" title="Complexity: 20; Coverage: 0%; Class: PrimitiveArrayDeserializers.ByteDeser" alt="" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html#PrimitiveArrayDeserializers.ByteDeser"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: JsonSerializerMap.Bucket" alt="" href="com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.html#JsonSerializerMap.Bucket"/>
+<area shape="poly" coords="95,194,93,196,90,194,93,191,95,194,95,194" title="Complexity: 23; Coverage: 17%; Class: ValueInstantiator" alt="" href="com/fasterxml/jackson/databind/deser/ValueInstantiator.html#ValueInstantiator"/>
+<area shape="poly" coords="191,145,188,148,186,145,188,143,191,145,191,145" title="Complexity: 96; Coverage: 56%; Class: BeanDeserializerFactory" alt="" href="com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.html#BeanDeserializerFactory"/>
+<area shape="poly" coords="120,193,117,196,115,193,117,191,120,193,120,193" title="Complexity: 24; Coverage: 27%; Class: AbstractDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/AbstractDeserializer.html#AbstractDeserializer"/>
+<area shape="poly" coords="78,202,76,205,73,202,76,200,78,202,78,202" title="Complexity: 10; Coverage: 10%; Class: BeanDeserializerModifier" alt="" href="com/fasterxml/jackson/databind/deser/BeanDeserializerModifier.html#BeanDeserializerModifier"/>
+<area shape="poly" coords="110,108,107,110,105,108,107,105,110,108,110,108" title="Complexity: 152; Coverage: 23%; Class: BeanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/BeanDeserializer.html#BeanDeserializer"/>
+<area shape="poly" coords="139,196,137,199,134,196,137,194,139,196,139,196" title="Complexity: 19; Coverage: 35%; Class: CreatorProperty" alt="" href="com/fasterxml/jackson/databind/deser/CreatorProperty.html#CreatorProperty"/>
+<area shape="poly" coords="176,200,174,202,171,200,174,197,176,200,176,200" title="Complexity: 14; Coverage: 50%; Class: UnrecognizedPropertyException" alt="" href="com/fasterxml/jackson/databind/exc/UnrecognizedPropertyException.html#UnrecognizedPropertyException"/>
+<area shape="poly" coords="156,206,154,208,151,206,154,203,156,206,156,206" title="Complexity: 5; Coverage: 42%; Class: InvalidFormatException" alt="" href="com/fasterxml/jackson/databind/exc/InvalidFormatException.html#InvalidFormatException"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: JdkDeserializers.AtomicBooleanDeserializer" alt="" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html#JdkDeserializers.AtomicBooleanDeserializer"/>
+<area shape="poly" coords="218,190,215,193,213,190,215,188,218,190,218,190" title="Complexity: 28; Coverage: 67%; Class: BasicClassIntrospector" alt="" href="com/fasterxml/jackson/databind/introspect/BasicClassIntrospector.html#BasicClassIntrospector"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: ContainerDeserializerBase" alt="" href="com/fasterxml/jackson/databind/deser/std/ContainerDeserializerBase.html#ContainerDeserializerBase"/>
+<area shape="poly" coords="227,198,225,201,222,198,225,196,227,198,227,198" title="Complexity: 16; Coverage: 71%; Class: MemberKey" alt="" href="com/fasterxml/jackson/databind/introspect/MemberKey.html#MemberKey"/>
+<area shape="poly" coords="54,113,51,115,49,113,51,110,54,113,54,113" title="Complexity: 145; Coverage: 0%; Class: AnnotationIntrospectorPair" alt="" href="com/fasterxml/jackson/databind/introspect/AnnotationIntrospectorPair.html#AnnotationIntrospectorPair"/>
+<area shape="poly" coords="156,147,154,150,151,147,154,145,156,147,156,147" title="Complexity: 93; Coverage: 42%; Class: BasicBeanDescription" alt="" href="com/fasterxml/jackson/databind/introspect/BasicBeanDescription.html#BasicBeanDescription"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: JsonSerializerMap.Bucket" alt="" href="com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.html#JsonSerializerMap.Bucket"/>
+<area shape="poly" coords="169,184,166,186,164,184,166,181,169,184,169,184" title="Complexity: 38; Coverage: 47%; Class: AnnotatedMethod" alt="" href="com/fasterxml/jackson/databind/introspect/AnnotatedMethod.html#AnnotatedMethod"/>
+<area shape="poly" coords="230,92,227,95,225,92,227,90,230,92,230,92" title="Complexity: 176; Coverage: 72%; Class: JacksonAnnotationIntrospector" alt="" href="com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.html#JacksonAnnotationIntrospector"/>
+<area shape="poly" coords="142,192,139,194,137,192,139,189,142,192,142,192" title="Complexity: 26; Coverage: 36%; Class: POJOPropertyBuilder.Linked" alt="" href="com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.html#POJOPropertyBuilder.Linked"/>
+<area shape="poly" coords="225,131,222,133,220,131,222,128,225,131,225,131" title="Complexity: 118; Coverage: 70%; Class: POJOPropertyBuilder" alt="" href="com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.html#POJOPropertyBuilder"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: JsonSerializerMap.Bucket" alt="" href="com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.html#JsonSerializerMap.Bucket"/>
+<area shape="poly" coords="142,191,139,194,137,191,139,189,142,191,142,191" title="Complexity: 27; Coverage: 36%; Class: AnnotatedConstructor" alt="" href="com/fasterxml/jackson/databind/introspect/AnnotatedConstructor.html#AnnotatedConstructor"/>
+<area shape="poly" coords="240,195,237,198,235,195,237,193,240,195,240,195" title="Complexity: 21; Coverage: 76%; Class: AnnotationMap" alt="" href="com/fasterxml/jackson/databind/introspect/AnnotationMap.html#AnnotationMap"/>
+<area shape="poly" coords="208,206,205,208,203,206,205,203,208,206,208,206" title="Complexity: 5; Coverage: 63%; Class: AnnotatedMember" alt="" href="com/fasterxml/jackson/databind/introspect/AnnotatedMember.html#AnnotatedMember"/>
+<area shape="poly" coords="237,199,235,202,232,199,235,197,237,199,237,199" title="Complexity: 15; Coverage: 75%; Class: AnnotatedMethodMap" alt="" href="com/fasterxml/jackson/databind/introspect/AnnotatedMethodMap.html#AnnotatedMethodMap"/>
+<area shape="poly" coords="137,196,134,199,132,196,134,194,137,196,137,196" title="Complexity: 19; Coverage: 34%; Class: AnnotatedParameter" alt="" href="com/fasterxml/jackson/databind/introspect/AnnotatedParameter.html#AnnotatedParameter"/>
+<area shape="poly" coords="115,204,112,206,110,204,112,201,115,204,115,204" title="Complexity: 8; Coverage: 25%; Class: BeanPropertyDefinition" alt="" href="com/fasterxml/jackson/databind/introspect/BeanPropertyDefinition.html#BeanPropertyDefinition"/>
+<area shape="poly" coords="188,206,186,208,183,206,186,203,188,206,188,206" title="Complexity: 5; Coverage: 55%; Class: Annotated" alt="" href="com/fasterxml/jackson/databind/introspect/Annotated.html#Annotated"/>
+<area shape="poly" coords="225,202,222,204,220,202,222,199,225,202,225,202" title="Complexity: 11; Coverage: 70%; Class: ObjectIdInfo" alt="" href="com/fasterxml/jackson/databind/introspect/ObjectIdInfo.html#ObjectIdInfo"/>
+<area shape="poly" coords="208,101,205,104,203,101,205,99,208,101,208,101" title="Complexity: 162; Coverage: 63%; Class: AnnotatedClass" alt="" href="com/fasterxml/jackson/databind/introspect/AnnotatedClass.html#AnnotatedClass"/>
+<area shape="poly" coords="210,111,208,113,205,111,208,108,210,111,210,111" title="Complexity: 148; Coverage: 64%; Class: POJOPropertiesCollector" alt="" href="com/fasterxml/jackson/databind/introspect/POJOPropertiesCollector.html#POJOPropertiesCollector"/>
+<area shape="poly" coords="152,198,149,201,147,198,149,196,152,198,152,198" title="Complexity: 16; Coverage: 40%; Class: MethodProperty" alt="" href="com/fasterxml/jackson/databind/deser/impl/MethodProperty.html#MethodProperty"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: JsonSerializerMap.Bucket" alt="" href="com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.html#JsonSerializerMap.Bucket"/>
+<area shape="poly" coords="134,194,132,196,129,194,132,191,134,194,134,194" title="Complexity: 23; Coverage: 33%; Class: AnnotatedField" alt="" href="com/fasterxml/jackson/databind/introspect/AnnotatedField.html#AnnotatedField"/>
+<area shape="poly" coords="98,181,95,184,93,181,95,179,98,181,98,181" title="Complexity: 42; Coverage: 18%; Class: VisibilityChecker.Std" alt="" href="com/fasterxml/jackson/databind/introspect/VisibilityChecker.html#VisibilityChecker.Std"/>
+</map>
+            </div>
+        </div>
+        
+                    <div class="dashboard-widget">
+                <header class="dashboard-widget-header">
+                    <h3>Coverage tree map</h3>
+                </header>
+                <div class="dashboard-widget-content">
+                    <div id="infovis" style="width:100%; height:250px;">
+                        <div id="treemap-loader" style="position:relative;top:50px;">
+                            <p>
+                                Generating Coverage Tree Map. Please wait...
+                            </p>
+                            <p>
+                                <img src="img/ajax-loader.gif" alt="Loading Treemap"/>
+                            </p>
+                        </div>
+                    </div>
+                    <p><a href="treemap.html">See more</a></p>
+                </div>
+
+            </div>
+            </div>
+
+
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Top 20 project risks</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/PropertyNamingStrategy.html"
+                            style="font-size: 28px;color:#89c495"
+                            title="Average Method Complexity - 10 , Coverage - 93.8% ">PropertyNamingStrategy.LowerCaseWithUnderscoresStrategy</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/deser/std/EnumDeserializer.html"
+                            style="font-size: 20px;color:#f6c342"
+                            title="Average Method Complexity - 5.25 , Coverage - 64.5% ">EnumDeserializer</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.html"
+                            style="font-size: 21px;color:#f6c342"
+                            title="Average Method Complexity - 5.826 , Coverage - 63.7% ">BasicDeserializerFactory</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/introspect/POJOPropertiesCollector.html"
+                            style="font-size: 19px;color:#f6c342"
+                            title="Average Method Complexity - 4.774 , Coverage - 64.9% ">POJOPropertiesCollector</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html"
+                            style="font-size: 17px;color:#14892c"
+                            title="Average Method Complexity - 3.333 , Coverage - 79.4% ">PrimitiveArrayDeserializers.IntDeser</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/type/TypeBindings.html"
+                            style="font-size: 18px;color:#f6c342"
+                            title="Average Method Complexity - 4 , Coverage - 66.3% ">TypeBindings</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/ext/OptionalHandlerFactory.html"
+                            style="font-size: 18px;color:#f6c342"
+                            title="Average Method Complexity - 3.75 , Coverage - 67.6% ">OptionalHandlerFactory</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer.html"
+                            style="font-size: 19px;color:#f6c342"
+                            title="Average Method Complexity - 4.5 , Coverage - 58.6% ">BaseNodeDeserializer</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.html"
+                            style="font-size: 18px;color:#e7a19b"
+                            title="Average Method Complexity - 4.364 , Coverage - 56.7% ">BeanDeserializerFactory</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/ser/BeanSerializerFactory.html"
+                            style="font-size: 17px;color:#f6c342"
+                            title="Average Method Complexity - 3.667 , Coverage - 61.2% ">BeanSerializerFactory</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/deser/std/JdkDeserializers.html"
+                            style="font-size: 20px;color:#e7a19b"
+                            title="Average Method Complexity - 5.333 , Coverage - 50% ">JdkDeserializers</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/deser/DeserializerCache.html"
+                            style="font-size: 18px;color:#e7a19b"
+                            title="Average Method Complexity - 4.053 , Coverage - 54% ">DeserializerCache</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/deser/impl/PropertyBasedCreator.html"
+                            style="font-size: 16px;color:#fae1a0"
+                            title="Average Method Complexity - 2.714 , Coverage - 74.3% ">PropertyBasedCreator</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/type/TypeFactory.html"
+                            style="font-size: 16px;color:#fae1a0"
+                            title="Average Method Complexity - 2.769 , Coverage - 68.1% ">TypeFactory</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.html"
+                            style="font-size: 16px;color:#fae1a0"
+                            title="Average Method Complexity - 2.708 , Coverage - 72.5% ">JacksonAnnotationIntrospector</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/introspect/AnnotatedClass.html"
+                            style="font-size: 17px;color:#f6c342"
+                            title="Average Method Complexity - 3.176 , Coverage - 63% ">AnnotatedClass</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/introspect/MemberKey.html"
+                            style="font-size: 16px;color:#fae1a0"
+                            title="Average Method Complexity - 2.667 , Coverage - 71.2% ">MemberKey</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer.html"
+                            style="font-size: 15px;color:#14892c"
+                            title="Average Method Complexity - 2.333 , Coverage - 78.9% ">JsonNodeDeserializer</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/introspect/AnnotationMap.html"
+                            style="font-size: 15px;color:#fae1a0"
+                            title="Average Method Complexity - 2.333 , Coverage - 76.6% ">AnnotationMap</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/databind/type/TypeParser.html"
+                            style="font-size: 16px;color:#fae1a0"
+                            title="Average Method Complexity - 2.667 , Coverage - 68.4% ">TypeParser</a>
+                                                    <p><a href="top-risks.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex packages</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.31151974</span>31.2%</div><div style="display: table-cell">
+ <div title="31.2% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:31.2%"></div></div></div></div></td>
+                            <td>
+                                <a href="com/fasterxml/jackson/databind/pkg-summary.html">com.fasterxml.jackson.databind</a>
+                                <span class="aui-badge" title="Package complexity">1274</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.35924995</span>35.9%</div><div style="display: table-cell">
+ <div title="35.9% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:35.9%"></div></div></div></div></td>
+                            <td>
+                                <a href="com/fasterxml/jackson/databind/deser/pkg-summary.html">com.fasterxml.jackson.databind.deser</a>
+                                <span class="aui-badge" title="Package complexity">1188</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5197846</span>52%</div><div style="display: table-cell">
+ <div title="52% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:52%"></div></div></div></div></td>
+                            <td>
+                                <a href="com/fasterxml/jackson/databind/introspect/pkg-summary.html">com.fasterxml.jackson.databind.introspect</a>
+                                <span class="aui-badge" title="Package complexity">1148</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.26074818</span>26.1%</div><div style="display: table-cell">
+ <div title="26.1% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:26.1%"></div></div></div></div></td>
+                            <td>
+                                <a href="com/fasterxml/jackson/databind/deser/std/pkg-summary.html">com.fasterxml.jackson.databind.deser.std</a>
+                                <span class="aui-badge" title="Package complexity">1110</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.2377021</span>23.8%</div><div style="display: table-cell">
+ <div title="23.8% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:23.8%"></div></div></div></div></td>
+                            <td>
+                                <a href="com/fasterxml/jackson/databind/ser/std/pkg-summary.html">com.fasterxml.jackson.databind.ser.std</a>
+                                <span class="aui-badge" title="Package complexity">876</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex classes</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.24701671</span>24.7%</div><div style="display: table-cell">
+ <div title="24.7% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:24.7%"></div></div></div></div></td>
+                            <td>
+                                <a  href="com/fasterxml/jackson/databind/ObjectMapper.html"  title="com.fasterxml.jackson.databind.ObjectMapper">ObjectMapper</a>
+                                <span class="aui-badge" title="Class complexity">288</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.63746226</span>63.7%</div><div style="display: table-cell">
+ <div title="63.7% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:63.7%"></div></div></div></div></td>
+                            <td>
+                                <a  href="com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.html"  title="com.fasterxml.jackson.databind.deser.BasicDeserializerFactory">BasicDeserializerFactory</a>
+                                <span class="aui-badge" title="Class complexity">268</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.29078948</span>29.1%</div><div style="display: table-cell">
+ <div title="29.1% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:29.1%"></div></div></div></div></td>
+                            <td>
+                                <a  href="com/fasterxml/jackson/databind/deser/BeanDeserializerBase.html"  title="com.fasterxml.jackson.databind.deser.BeanDeserializerBase">BeanDeserializerBase</a>
+                                <span class="aui-badge" title="Class complexity">190</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7254902</span>72.5%</div><div style="display: table-cell">
+ <div title="72.5% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:72.5%"></div></div></div></div></td>
+                            <td>
+                                <a  href="com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.html"  title="com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector">JacksonAnnotationIntrospector</a>
+                                <span class="aui-badge" title="Class complexity">176</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.21891418</span>21.9%</div><div style="display: table-cell">
+ <div title="21.9% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:21.9%"></div></div></div></div></td>
+                            <td>
+                                <a  href="com/fasterxml/jackson/databind/ObjectReader.html"  title="com.fasterxml.jackson.databind.ObjectReader">ObjectReader</a>
+                                <span class="aui-badge" title="Class complexity">174</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Least tested methods</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+
+                    <tr>
+                        <td align="right">1.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TokenBuffer.serialize(JsonGenerator)&#160;:&#160;void" href="com/fasterxml/jackson/databind/util/TokenBuffer.html?line=203#src-203">TokenBuffer.serialize(JsonGenerator)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">27</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">2.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BuilderBasedDeserializer._deserializeUsingPropertyBased(JsonParser,DeserializationContext)&#160;:&#160;Object" href="com/fasterxml/jackson/databind/deser/BuilderBasedDeserializer.html?line=339#src-339">BuilderBasedDeserializer._deserializeUsingPropertyBased(JsonParser,DeserializationContext)&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">16</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">3.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BeanDeserializer.deserializeUsingPropertyBasedWithExternalTypeId(JsonParser,DeserializationContext)&#160;:&#160;Object" href="com/fasterxml/jackson/databind/deser/BeanDeserializer.html?line=718#src-718">BeanDeserializer.deserializeUsingPropertyBasedWithExternalTypeId(JsonParser,DeserializationContext)&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">15</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">4.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="StdDateFormat.parseAsISO8601(String,ParsePosition)&#160;:&#160;Date" href="com/fasterxml/jackson/databind/util/StdDateFormat.html?line=283#src-283">StdDateFormat.parseAsISO8601(String,ParsePosition)&#160;:&#160;Date</a>
+                            <span class="aui-badge" title="Method complexity">15</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">5.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BeanDeserializer.deserializeUsingPropertyBasedWithUnwrapped(JsonParser,DeserializationContext)&#160;:&#160;Object" href="com/fasterxml/jackson/databind/deser/BeanDeserializer.html?line=570#src-570">BeanDeserializer.deserializeUsingPropertyBasedWithUnwrapped(JsonParser,DeserializationContext)&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">13</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">6.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BuilderBasedDeserializer.deserializeUsingPropertyBasedWithUnwrapped(JsonParser,DeserializationContext)&#160;:&#160;Object" href="com/fasterxml/jackson/databind/deser/BuilderBasedDeserializer.html?line=584#src-584">BuilderBasedDeserializer.deserializeUsingPropertyBasedWithUnwrapped(JsonParser,DeserializationContext)&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">13</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">7.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TypeBase._classSignature(Class&lt;?&gt;,StringBuilder,boolean)&#160;:&#160;StringBuilder" href="com/fasterxml/jackson/databind/type/TypeBase.html?line=101#src-101">TypeBase._classSignature(Class&lt;?&gt;,StringBuilder,boolean)&#160;:&#160;StringBuilder</a>
+                            <span class="aui-badge" title="Method complexity">14</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">8.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BeanAsArrayBuilderDeserializer._deserializeUsingPropertyBased(JsonParser,DeserializationContext)&#160;:&#160;Object" href="com/fasterxml/jackson/databind/deser/impl/BeanAsArrayBuilderDeserializer.html?line=279#src-279">BeanAsArrayBuilderDeserializer._deserializeUsingPropertyBased(JsonParser,DeserializationContext)&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">13</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">9.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BeanAsArrayDeserializer._deserializeUsingPropertyBased(JsonParser,DeserializationContext)&#160;:&#160;Object" href="com/fasterxml/jackson/databind/deser/impl/BeanAsArrayDeserializer.html?line=269#src-269">BeanAsArrayDeserializer._deserializeUsingPropertyBased(JsonParser,DeserializationContext)&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">13</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">10.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BuilderBasedDeserializer.deserializeWithUnwrapped(JsonParser,DeserializationContext)&#160;:&#160;Object" href="com/fasterxml/jackson/databind/deser/BuilderBasedDeserializer.html?line=482#src-482">BuilderBasedDeserializer.deserializeWithUnwrapped(JsonParser,DeserializationContext)&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">14</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">11.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="MapDeserializer._deserializeUsingCreator(JsonParser,DeserializationContext)&#160;:&#160;Map&lt;Object,Object&gt;" href="com/fasterxml/jackson/databind/deser/std/MapDeserializer.html?line=440#src-440">MapDeserializer._deserializeUsingCreator(JsonParser,DeserializationContext)&#160;:&#160;Map&lt;Object,Object&gt;</a>
+                            <span class="aui-badge" title="Method complexity">11</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">12.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BuilderBasedDeserializer.deserializeFromObject(JsonParser,DeserializationContext)&#160;:&#160;Object" href="com/fasterxml/jackson/databind/deser/BuilderBasedDeserializer.html?line=275#src-275">BuilderBasedDeserializer.deserializeFromObject(JsonParser,DeserializationContext)&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">14</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">13.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BuilderBasedDeserializer._deserialize(JsonParser,DeserializationContext,Object)&#160;:&#160;Object" href="com/fasterxml/jackson/databind/deser/BuilderBasedDeserializer.html?line=192#src-192">BuilderBasedDeserializer._deserialize(JsonParser,DeserializationContext,Object)&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">13</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">14.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="PrimitiveArrayDeserializers.CharDeser.deserialize(JsonParser,DeserializationContext)&#160;:&#160;char[]" href="com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers.html?line=78#src-78">PrimitiveArrayDeserializers.CharDeser.deserialize(JsonParser,DeserializationContext)&#160;:&#160;char[]</a>
+                            <span class="aui-badge" title="Method complexity">11</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">15.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ISO8601Utils.parse(String)&#160;:&#160;Date" href="com/fasterxml/jackson/databind/util/ISO8601Utils.html?line=123#src-123">ISO8601Utils.parse(String)&#160;:&#160;Date</a>
+                            <span class="aui-badge" title="Method complexity">9</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">16.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BasicDeserializerFactory._handleSingleArgumentFactory(DeserializationConfig,BeanDescription,VisibilityChecker&lt;?&gt;,AnnotationIntrospector,CreatorCollector,AnnotatedMethod,boolean)&#160;:&#160;boolean" href="com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.html?line=580#src-580">BasicDeserializerFactory._handleSingleArgumentFactory(DeserializationConfig,BeanDescription,VisibilityChecker&lt;?&gt;,AnnotationIntrospector,CreatorCollector,AnnotatedMethod,boolean)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">21</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">17.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BeanAsArrayBuilderDeserializer._deserializeNonVanilla(JsonParser,DeserializationContext)&#160;:&#160;Object" href="com/fasterxml/jackson/databind/deser/impl/BeanAsArrayBuilderDeserializer.html?line=205#src-205">BeanAsArrayBuilderDeserializer._deserializeNonVanilla(JsonParser,DeserializationContext)&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">12</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">18.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BeanAsArrayDeserializer._deserializeNonVanilla(JsonParser,DeserializationContext)&#160;:&#160;Object" href="com/fasterxml/jackson/databind/deser/impl/BeanAsArrayDeserializer.html?line=196#src-196">BeanAsArrayDeserializer._deserializeNonVanilla(JsonParser,DeserializationContext)&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">12</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">19.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BeanPropertyWriter.serializeAsColumn(Object,JsonGenerator,SerializerProvider)&#160;:&#160;void" href="com/fasterxml/jackson/databind/ser/BeanPropertyWriter.html?line=582#src-582">BeanPropertyWriter.serializeAsColumn(Object,JsonGenerator,SerializerProvider)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">11</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">20.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BeanDeserializer.deserializeWithExternalTypeId(JsonParser,DeserializationContext,Object)&#160;:&#160;Object" href="com/fasterxml/jackson/databind/deser/BeanDeserializer.html?line=667#src-667">BeanDeserializer.deserializeWithExternalTypeId(JsonParser,DeserializationContext,Object)&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">13</span>
+
+                        </td>
+                    </tr>
+                                    </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+                            </div> <!-- tabs-pane active-pane -->
+                        </div>
+
+    <script type="text/javascript" src="jit.js" ></script>
+    <script type="text/javascript" src="treemap-dash-json.js" ></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Fri Feb 3 2023 15:44:25 MST using coverage data from Fri Feb 3 2023 15:44:23 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

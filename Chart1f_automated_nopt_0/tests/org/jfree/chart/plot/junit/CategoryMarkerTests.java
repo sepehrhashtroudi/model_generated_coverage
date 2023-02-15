@@ -96,79 +96,10 @@ public class CategoryMarkerTests extends TestCase
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testGetSetKey940() { 
-     CategoryMarker m = new CategoryMarker("X"); 
-     m.addChangeListener(this); 
-     this.lastEvent = null; 
-     assertEquals("X", m.getKey()); 
-     m.setKey("Y"); 
-     assertEquals("Y", m.getKey()); 
-     assertEquals(m, this.lastEvent.getMarker()); 
-     try { 
-         m.setKey(null); 
-         fail("Expected an IllegalArgumentException for null."); 
-     } catch (IllegalArgumentException e) { 
-         assertTrue(true); 
-     } 
- }
-public void testEquals942() { 
-     CategoryMarker m1 = new CategoryMarker("X"); 
-     CategoryMarker m2 = new CategoryMarker("X"); 
-     assertTrue(m1.equals(m2)); 
-     assertTrue(m2.equals(m1)); 
-     m1.setPaint(new GradientPaint(1.0f, 2.0f, Color.green, 3.0f, 4.0f, Color.red)); 
-     assertFalse(m1.equals(m2)); 
-     m2.setPaint(new GradientPaint(1.0f, 2.0f, Color.green, 3.0f, 4.0f, Color.red)); 
-     assertTrue(m1.equals(m2)); 
-     BasicStroke stroke = new BasicStroke(2.2f); 
-     m1.setStroke(stroke); 
-     assertFalse(m1.equals(m2)); 
-     m2.setStroke(stroke); 
-     assertTrue(m1.equals(m2)); 
-     m1.setOutlinePaint(new GradientPaint(4.0f, 3.0f, Color.yellow, 2.0f, 1.0f, Color.white)); 
-     assertFalse(m1.equals(m2)); 
-     m2.setOutlinePaint(new GradientPaint(4.0f, 3.0f, Color.yellow, 2.0f, 1.0f, Color.white)); 
-     assertTrue(m1.equals(m2)); 
-     m1.setOutlineStroke(stroke); 
-     assertFalse(m1.equals(m2)); 
-     m2.setOutlineStroke(stroke); 
-     assertTrue(m1.equals(m2)); 
-     m1.setAlpha(0.1f); 
-     assertFalse(m1.equals(m2)); 
-     m2.setAlpha(0.1f); 
-     assertTrue(m1.equals(m2)); 
-     m1.setKey("New Key");
-}
-
-public void testEquals943() { 
-     CategoryMarker m1 = new CategoryMarker("X"); 
-     CategoryMarker m2 = new CategoryMarker("X"); 
-     assertTrue(m1.equals(m2)); 
-     assertTrue(m2.equals(m1)); 
-     m1.setPaint(new GradientPaint(1.0f, 2.0f, Color.green, 3.0f, 4.0f, Color.red)); 
-     assertFalse(m1.equals(m2)); 
-     m2.setPaint(new GradientPaint(1.0f, 2.0f, Color.green, 3.0f, 4.0f, Color.red)); 
-     assertTrue(m1.equals(m2)); 
-     BasicStroke stroke = new BasicStroke(2.2f); 
-     m1.setStroke(stroke); 
-     assertFalse(m1.equals(m2)); 
-     m2.setStroke(stroke); 
-     assertTrue(m1.equals(m2)); 
-     m1.setOutlinePaint(new GradientPaint(4.0f, 3.0f, Color.yellow, 2.0f, 1.0f, Color.white)); 
-     assertFalse(m1.equals(m2)); 
-     m2.setOutlinePaint(new GradientPaint(4.0f, 3.0f, Color.yellow, 2.0f, 1.0f, Color.white)); 
-     assertTrue(m1.equals(m2)); 
-     m1.setOutlineStroke(stroke); 
-     assertFalse(m1.equals(m2)); 
-     m2.setOutlineStroke(stroke); 
-     assertTrue(m1.equals(m2)); 
-     m1.setAlpha(0.1f); 
-     assertFalse(m1.equals(m2)); 
-     m2.setAlpha(0.1f); 
-     assertTrue(m1.equals(m2)); 
-     m1.setLabel("New Label");
-}
-
+public void testCategoryMarker4967() { CategoryMarker m1 = new CategoryMarker("A"); assertEquals("A", m1.getKey()); assertEquals(Color.gray, m1.getPaint()); assertEquals(new BasicStroke(1.0f), m1.getStroke()); CategoryMarker m2 = new CategoryMarker("B"); assertEquals("B", m2.getKey()); assertEquals(Color.gray, m2.getPaint()); assertEquals(new BasicStroke(1.0f), m2.getStroke()); }
+public void testGetDrawAsLine4972() { CategoryMarker m1 = new CategoryMarker("A"); m1.setDrawAsLine(true); assertTrue(m1.getDrawAsLine()); CategoryMarker m2 = new CategoryMarker("B"); m2.setDrawAsLine(false); assertFalse(m2.getDrawAsLine()); }
+public void testSetDrawAsLine4973() { CategoryMarker m1 = new CategoryMarker("A"); m1.setDrawAsLine(true); assertTrue(m1.getDrawAsLine()); m1.setDrawAsLine(false); assertFalse(m1.getDrawAsLine()); }
+public void testNotifyListeners4974() { CategoryMarker m1 = new CategoryMarker("A"); m1.setDrawAsLine(false); m1.notifyListeners(new MarkerChangeEvent(m1)); }
     
 
     /**

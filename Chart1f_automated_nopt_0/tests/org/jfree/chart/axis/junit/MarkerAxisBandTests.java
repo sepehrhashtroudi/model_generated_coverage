@@ -81,6 +81,9 @@ public class MarkerAxisBandTests extends TestCase {
     /**
      * Test that the equals() method can distinguish all fields.
      */
+public void testEquals6988() { MarkerAxisBand a1 = new MarkerAxisBand(null, 1.0, 2.0, 3.0, 4.0, new Font("Serif", Font.PLAIN, 12)); MarkerAxisBand a2 = new MarkerAxisBand(null, 1.0, 2.0, 3.0, 4.0, new Font("Serif", Font.PLAIN, 12)); assertEquals(a1, a2); a1 = new MarkerAxisBand(null, 1.0, 2.0, 3.0, 4.0, new Font("Serif", Font.PLAIN, 12)); assertFalse(a1.equals(a2));
+}
+
     
 
     /**

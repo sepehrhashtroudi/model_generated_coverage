@@ -80,6 +80,7 @@ public class GradientXYBarPainterTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
+public void testGradientXYBarPainter6077() { GradientXYBarPainter p1 = new GradientXYBarPainter(1.0, 2.0, 3.0); GradientXYBarPainter p2 = new GradientXYBarPainter(1.0, 2.0, 3.0); GradientXYBarPainter p3 = new GradientXYBarPainter(1.0, 2.0, 3.0); GradientXYBarPainter p4 = new GradientXYBarPainter(1.0, 2.0, 3.0); assertEquals(p1, p2); assertEquals(p1, p3); assertEquals(p1, p4); }
     
 
     /**

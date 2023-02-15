@@ -82,48 +82,8 @@ public class DefaultMultiValueCategoryDatasetTests extends TestCase {
     /**
      * Some checks for the getValue() method.
      */
-public void testAddValue902() { 
-     DefaultMultiValueCategoryDataset d1 = new DefaultMultiValueCategoryDataset(); 
-     boolean pass = false; 
-     try { 
-         d1.add(null, "R1", "C1"); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
-     List values = new ArrayList(); 
-     d1.add(values, "R2", "C1"); 
-     assertEquals(values, d1.getValues("R2", "C1")); 
-     pass = false; 
-     try { 
-         d1.add(values, null, "C2"); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
-public void testCloning905() { 
-     DefaultMultiValueCategoryDataset d1 = new DefaultMultiValueCategoryDataset(); 
-     DefaultMultiValueCategoryDataset d2 = null; 
-     try { 
-         d2 = (DefaultMultiValueCategoryDataset) d1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(d1 != d2); 
-     assertTrue(d1.getClass() == d2.getClass()); 
-     assertTrue(d1.equals(d2)); 
-     List values = new ArrayList(); 
-     d1.add(values, "R1", "C1"); 
-     assertFalse(d1.equals(d2)); 
-     d2.add(values, "R1", "C1"); 
-     assertTrue(d1.equals(d2)); 
-     values.add(new Integer(99)); 
-     d1.add(values, "R1", "C1"); 
-     assertFalse(d1.equals(d2)); 
-     d2.add(values, "R1", "C1"); 
-     assertTrue(d1.equals(d2)); 
- }
+public void testClone4794() throws CloneNotSupportedException { DefaultMultiValueCategoryDataset d1 = new DefaultMultiValueCategoryDataset(); d1.add(new ArrayList(), "R1", "C1"); DefaultMultiValueCategoryDataset d2 = (DefaultMultiValueCategoryDataset) d1.clone(); assertEquals(d1.getValues("R1", "C1"), d2.getValues("R1", "C1")); assertEquals(d1.getValues("R1", "C2"), d2.getValues("R1", "C2")); }
+public void testClone4795() throws CloneNotSupportedException { DefaultMultiValueCategoryDataset d1 = new DefaultMultiValueCategoryDataset(); d1.add(new ArrayList(), "R1", "C1"); DefaultMultiValueCategoryDataset d2 = (DefaultMultiValueCategoryDataset) d1.clone(); assertEquals(d1, d2); List values = new ArrayList(); d1.add(values, "R1", "C1"); d2.add(values, "R1", "C2"); assertEquals(d1, d2); }
     
 
     /**

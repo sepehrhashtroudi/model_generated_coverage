@@ -89,18 +89,7 @@ public class StandardPieToolTipGeneratorTests extends TestCase {
     /**
      * Test that the equals() method distinguishes all fields.
      */
-public void testCloning1392() { 
-     StandardPieToolTipGenerator g1 = new StandardPieToolTipGenerator(); 
-     StandardPieToolTipGenerator g2 = null; 
-     try { 
-         g2 = (StandardPieToolTipGenerator) g1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(g1 != g2); 
-     assertTrue(g1.getClass() == g2.getClass()); 
-     assertTrue(g1.equals(g2)); 
- }
+public void testClone8012() throws CloneNotSupportedException { StandardPieToolTipGenerator g1 = new StandardPieToolTipGenerator(); StandardPieToolTipGenerator g2 = (StandardPieToolTipGenerator) g1.clone(); assertEquals(g1, g2); }
     
 
     /**

@@ -79,6 +79,10 @@ public class SimpleHistogramBinTests extends TestCase {
     /**
      * Some checks for the accepts() method.
      */
+public void testSimpleHistogramBin7913() { SimpleHistogramBin bin = new SimpleHistogramBin(1.0, 2.0); assertEquals(1.0, bin.getLowerBound(), 0.001); assertEquals(2.0, bin.getUpperBound(), 0.001); assertEquals(true, bin.isSelected()); assertEquals(0, bin.getItemCount()); assertEquals(1.0, bin.getLowerBound(), 0.001); assertEquals(2.0, bin.getUpperBound(), 0.001); assertEquals(true, bin.isSelected()); assertEquals(1, bin.getItemCount()); assertEquals(1.0, bin.getLowerBound(), 0.001);
+}
+
+public void testEquals7924() { SimpleHistogramBin bin1 = new SimpleHistogramBin(1.0, 2.0); SimpleHistogramBin bin2 = new SimpleHistogramBin(1.0, 2.0); assertTrue(bin1.equals(bin2)); }
     
 
     /**

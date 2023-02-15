@@ -78,6 +78,21 @@ public class RelativeDateFormatTests extends TestCase {
     /**
      * Some checks for the formatting.
      */
+public void testSetShowZeroDays88() { RelativeDateFormat df = new RelativeDateFormat(); df.setShowZeroDays(true); assertTrue(df.getShowZeroDays()); df.setShowZeroDays(false); assertFalse(df.getShowZeroDays()); df.setShowZeroDays(true); assertTrue(df.getShowZeroDays()); }
+public void testSetShowZeroHours89() { RelativeDateFormat df = new RelativeDateFormat(); df.setShowZeroHours(true); assertTrue(df.getShowZeroHours()); df.setShowZeroHours(false); assertFalse(df.getShowZeroHours()); df.setShowZeroHours(true); assertTrue(df.getShowZeroHours()); }
+public void testGetHourSuffix91() { RelativeDateFormat df = new RelativeDateFormat(); assertEquals("#", df.getHourSuffix()); df.setHourSuffix("#"); assertEquals("#", df.getHourSuffix()); df.setHourSuffix("#"); assertEquals("#", df.getHourSuffix()); }
+public void testGetHourSuffix92() { RelativeDateFormat df = new RelativeDateFormat(); assertEquals(".", df.getHourSuffix()); }
+public void testHourSuffix93() { RelativeDateFormat df = new RelativeDateFormat(); assertNull(df.getHourSuffix()); df.setHourSuffix(null); assertEquals("", df.getHourSuffix()); df.setHourSuffix(" "); assertEquals(" " + df.getHourSuffix(), " " + df.getHourSuffix()); df.setHourSuffix(" "); assertEquals(" " + df.getHourSuffix(), " " + df.getHourSuffix()); df.setHourSuffix(" "); assertEquals(" " + df.getHourSuffix(), " " + df.getHourSuffix()); }
+public void testSetHourSuffix94() { RelativeDateFormat df = new RelativeDateFormat(); assertNull(df.getHourSuffix()); df.setHourSuffix("a"); assertEquals("a", df.getHourSuffix()); df.setHourSuffix(null); assertEquals(null, df.getHourSuffix()); }
+public void testSetHourSuffix95() { RelativeDateFormat df = new RelativeDateFormat(); assertNull(df.getHourSuffix()); df.setHourSuffix("s"); assertEquals("s", df.getHourSuffix()); df.setHourSuffix(null); assertEquals("", df.getHourSuffix()); }
+public void testGetMinuteSuffix99() { RelativeDateFormat df = new RelativeDateFormat(); assertEquals(":", df.getMinuteSuffix()); df.setMinuteSuffix(":"); assertEquals(":", df.getMinuteSuffix()); df.setMinuteSuffix(":"); assertEquals(":", df.getMinuteSuffix()); }
+public void testGetMinuteSuffix100() { RelativeDateFormat df = new RelativeDateFormat(); assertEquals(":", df.getMinuteSuffix()); }
+public void testMinuteSuffix101() { RelativeDateFormat df = new RelativeDateFormat(); assertNull(df.getMinuteSuffix()); df.setMinuteSuffix("s"); assertEquals("s", df.getMinuteSuffix()); df.setMinuteSuffix(null); assertEquals("", df.getMinuteSuffix()); }
+public void testMinuteSuffix102() { RelativeDateFormat df = new RelativeDateFormat(); df.setMinuteSuffix("s"); assertEquals("s", df.getMinuteSuffix()); df.setMinuteSuffix(null); assertEquals("", df.getMinuteSuffix()); }
+public void testGetSecondSuffix103() { RelativeDateFormat df = new RelativeDateFormat(); df.setSecondSuffix(".txt"); assertEquals(".txt", df.getSecondSuffix()); }
+public void testSetSecondSuffix104() { RelativeDateFormat df = new RelativeDateFormat(); assertNull(df.getSecondSuffix()); df.setSecondSuffix("."); assertEquals(".", df.getSecondSuffix()); df.setSecondSuffix(null); assertEquals(".", df.getSecondSuffix()); }
+public void testSetSecondSuffix105() { RelativeDateFormat df = new RelativeDateFormat(); df.setSecondSuffix("+"); assertEquals("+", df.getSecondSuffix()); df.setSecondSuffix(null); assertEquals("+", df.getSecondSuffix()); }
+public void testSetSecondSuffix106() { RelativeDateFormat df = new RelativeDateFormat(); df.setSecondSuffix(".txt"); assertEquals(".txt", df.getSecondSuffix()); df.setSecondSuffix(null); assertEquals(".txt", df.getSecondSuffix()); }
     
 
     /**

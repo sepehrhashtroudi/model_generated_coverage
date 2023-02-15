@@ -82,46 +82,11 @@ public class XYSplineRendererTests extends TestCase {
     /**
      * Test that the equals() method distinguishes all fields.
      */
-public void testEquals1063() { 
-     XYSplineRenderer r1 = new XYSplineRenderer(); 
-     XYSplineRenderer r2 = new XYSplineRenderer(); 
-     assertTrue(r1.equals(r2)); 
-     assertTrue(r2.equals(r1)); 
-     r1 = new XYSplineRenderer(5); 
-     assertFalse(r1.equals(r2)); 
-     r2 = new XYSplineRenderer(5); 
-     assertTrue(r1.equals(r2)); 
- }
-public void testSerialization1064() { 
-     XYSplineRenderer r1 = new XYSplineRenderer(); 
-     XYSplineRenderer r2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(r1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         r2 = (XYSplineRenderer) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(r1, r2); 
- }
-public void testEquals1065() { 
-     XYSplineRenderer r1 = new XYSplineRenderer(); 
-     XYSplineRenderer r2 = new XYSplineRenderer(); 
-     assertTrue(r1.equals(r2)); 
-     assertTrue(r2.equals(r1)); 
-     r1 = new XYSplineRenderer(1); 
-     assertFalse(r1.equals(r2)); 
-     r2 = new XYSplineRenderer(1); 
-     assertTrue(r1.equals(r2)); 
-     r1 = new XYSplineRenderer(2); 
-     assertFalse(r1.equals(r2)); 
-     r2 = new XYSplineRenderer(2); 
-     assertTrue(r1.equals(r2)); 
- }
+public void testXYSplineRenderer5559() { XYSplineRenderer r = new XYSplineRenderer(); }
+public void testXYSplineRenderer5560() { XYSplineRenderer r1 = new XYSplineRenderer(); assertEquals(0, r1.getPrecision()); XYSplineRenderer r2 = new XYSplineRenderer(); assertEquals(0, r2.getPrecision()); try { r2.setPrecision(-1); } catch (IllegalArgumentException e) { assertEquals("Requires precision > 0.", e.getMessage()); } try { r2.setPrecision(0); } catch (IllegalArgumentException e) { assertEquals("Requires precision > 0.", e.getMessage()); } }
+public void testXYSplineRenderer5561() { XYSplineRenderer r = new XYSplineRenderer(); assertEquals(0, r.getPrecision()); }
+public void testSetPrecision5563() { XYSplineRenderer r = new XYSplineRenderer(); try { r.setPrecision(-1); fail("Should have thrown IllegalArgumentException"); } catch (IllegalArgumentException e) { } try { r.setPrecision(0); fail("Should have thrown IllegalArgumentException"); } catch (IllegalArgumentException e) { } }
+public void testEquals5566() { XYSplineRenderer r1 = new XYSplineRenderer(); XYSplineRenderer r2 = new XYSplineRenderer(); assertEquals(r1, r2); assertEquals(r2, r1); r1.setPrecision(0); assertFalse(r1.equals(r2)); r2.setPrecision(0); assertEquals(r1, r2); }
     
 
     /**

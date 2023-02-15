@@ -82,34 +82,27 @@ public class ScatterRendererTests extends TestCase {
     /**
      * Test that the equals() method distinguishes all fields.
      */
-public void testCloning318() { 
-     ScatterRenderer r1 = new ScatterRenderer(); 
-     ScatterRenderer r2 = null; 
-     try { 
-         r2 = (ScatterRenderer) r1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         System.err.println("Failed to clone."); 
-     } 
-     assertTrue(r1 != r2); 
-     assertTrue(r1.getClass() == r2.getClass()); 
-     assertTrue(r1.equals(r2)); 
- }
-public void testSerialization319() { 
-     ScatterRenderer r1 = new ScatterRenderer(); 
-     ScatterRenderer r2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(r1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         r2 = (ScatterRenderer) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(r1, r2); 
- }
+public void testFireChangeEvent1291() { ScatterRenderer r = new ScatterRenderer(); r.setUseSeriesOffset(true); assertTrue(r.getUseSeriesOffset()); r.setUseSeriesOffset(false); assertFalse(r.getUseSeriesOffset()); r.setUseSeriesOffset(true); assertTrue(r.getUseSeriesOffset()); }
+public void testFireChangeEvent1293() { ScatterRenderer r = new ScatterRenderer(); r.setDrawOutlines(true); assertTrue(r.getDrawOutlines()); r.setDrawOutlines(false); assertFalse(r.getDrawOutlines()); }
+public void testFireChangeEvent1296() { ScatterRenderer r = new ScatterRenderer(); assertFalse(r.getUseOutlinePaint()); r.setUseOutlinePaint(true); assertTrue(r.getUseOutlinePaint()); r.setUseOutlinePaint(false); assertFalse(r.getUseOutlinePaint()); r.setUseOutlinePaint(true); assertTrue(r.getUseOutlinePaint()); r.setUseOutlinePaint(false); assertFalse(r.getUseOutlinePaint()); }
+public void testFireChangeEvent1300() { ScatterRenderer r = new ScatterRenderer(); r.setBaseShapesFilled(true); assertTrue(r.getBaseShapesFilled()); r.setBaseShapesFilled(false); assertFalse(r.getBaseShapesFilled()); r.setBaseShapesFilled(true); assertTrue(r.getBaseShapesFilled()); }
+public void testFireChangeEvent1302() { ScatterRenderer r = new ScatterRenderer(); assertFalse(r.getUseFillPaint()); r.setUseFillPaint(true); assertTrue(r.getUseFillPaint()); r.setUseFillPaint(false); assertFalse(r.getUseFillPaint()); r.setUseFillPaint(true); assertTrue(r.getUseFillPaint()); }
+public void testEquals1303() { ScatterRenderer r1 = new ScatterRenderer(); ScatterRenderer r2 = new ScatterRenderer(); assertEquals(r1, r2); r1.setSeriesShapesFilled(1, true); assertFalse(r1.equals(r2)); r2.setSeriesShapesFilled(1, true); assertEquals(r1, r2); r1.setBaseShapesFilled(true); assertFalse(r1.equals(r2)); r2.setBaseShapesFilled(true); assertEquals(r1, r2); r1.setUseFillPaint(true); assertFalse(r1.equals(r2));
+}
+
+public void testEquals1304() { ScatterRenderer r1 = new ScatterRenderer(); ScatterRenderer r2 = new ScatterRenderer(); assertEquals(r1, r2); r1.setBaseShapesFilled(true); assertFalse(r1.equals(r2)); r2.setBaseShapesFilled(true); assertEquals(r1, r2); r1.setSeriesShapesFilled(0, true); assertFalse(r1.equals(r2)); r2.setSeriesShapesFilled(0, true); assertEquals(r1, r2); r1.setUseFillPaint(true); assertFalse(r1.equals(r2));
+}
+
+public void testEquals1305() { ScatterRenderer r1 = new ScatterRenderer(); ScatterRenderer r2 = new ScatterRenderer(); assertEquals(r1, r2); r1.setUseFillPaint(true); assertFalse(r1.equals(r2)); r2.setUseFillPaint(true); assertEquals(r1, r2); r1.setSeriesShapesFilled(0, true); assertFalse(r1.equals(r2)); r2.setSeriesShapesFilled(0, true); assertEquals(r1, r2); r1.setBaseShapesFilled(true); assertFalse(r1.equals(r2));
+}
+
+public void testEquals1307() { ScatterRenderer r1 = new ScatterRenderer(); ScatterRenderer r2 = new ScatterRenderer(); assertEquals(r1, r2); r1.setUseOutlinePaint(true); assertFalse(r1.equals(r2)); r2.setUseOutlinePaint(true); assertEquals(r1, r2); r1.setSeriesShapesFilled(0, true); assertFalse(r1.equals(r2)); r2.setSeriesShapesFilled(0, true); assertEquals(r1, r2); r1.setBaseShapesFilled(true); assertFalse(r1.equals(r2));
+}
+
+public void testEquals1308() { ScatterRenderer r1 = new ScatterRenderer(); ScatterRenderer r2 = new ScatterRenderer(); assertEquals(r1, r2); r1.setUseSeriesOffset(true); assertFalse(r1.equals(r2)); r2.setUseSeriesOffset(true); assertEquals(r1, r2); r1.setSeriesShapesFilled(2, true); assertFalse(r1.equals(r2)); r2.setSeriesShapesFilled(2, true); assertEquals(r1, r2); r1.setBaseShapesFilled(true); assertFalse(r1.equals(r2));
+}
+
+public void testCloning1310() throws CloneNotSupportedException { ScatterRenderer r1 = new ScatterRenderer(); ScatterRenderer r2 = (ScatterRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
     
 
     /**

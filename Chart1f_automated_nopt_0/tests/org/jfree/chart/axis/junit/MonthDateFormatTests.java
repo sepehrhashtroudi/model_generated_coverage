@@ -82,6 +82,7 @@ public class MonthDateFormatTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
+public void testEquals3268() { MonthDateFormat m1 = new MonthDateFormat(); MonthDateFormat m2 = new MonthDateFormat(); assertTrue(m1.equals(m2)); }
     
 
     /**

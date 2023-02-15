@@ -80,22 +80,8 @@ public class CategoryAnchorTests extends TestCase {
     /**
      * Check that the equals() method distinguishes known instances.
      */
-public void testSerialization838() { 
-     CategoryAnchor a1 = CategoryAnchor.START; 
-     CategoryAnchor a2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(a1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         a2 = (CategoryAnchor) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(a1, a2); 
- }
+void equals() { CategoryAnchor a = CategoryAnchor.START; CategoryAnchor b = CategoryAnchor.MIDDLE; CategoryAnchor c = CategoryAnchor.END; assertTrue(a.equals(b)); assertTrue(b.equals(a)); assertFalse(a.equals(c)); assertFalse(c.equals(a)); }
+//void equals() { CategoryAnchor a = CategoryAnchor.START; CategoryAnchor b = CategoryAnchor.MIDDLE; assertTrue(a.equals(b)); assertTrue(b.equals(a)); }
     
 
     /**

@@ -88,6 +88,15 @@ public class StandardXYItemLabelGeneratorTests extends TestCase {
     /**
      * A series of tests for the equals() method.
      */
+public void testGetXFormat795() { }
+public void testGetXDateFormat797() { DateFormat xFormat = new SimpleDateFormat("yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'"); DateFormat xFormat1 = new SimpleDateFormat("yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'"); DateFormat xFormat2 = new SimpleDateFormat("yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'"); DateFormat xFormat3 = new SimpleDateFormat("yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'"); DateFormat yFormat = new SimpleDateFormat("yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'");
+}
+
+public void testGetYFormat799() { }
+public void testGetYDateFormat800() { }
+public void testClone7428() throws CloneNotSupportedException { StandardXYItemLabelGenerator g1 = new StandardXYItemLabelGenerator(); StandardXYItemLabelGenerator g2 = (StandardXYItemLabelGenerator) g1.clone(); assertEquals(g1, g2); }
+public void testCloning7429() throws CloneNotSupportedException { StandardXYItemLabelGenerator g1 = new StandardXYItemLabelGenerator(); StandardXYItemLabelGenerator g2 = (StandardXYItemLabelGenerator) g1.clone(); assertNotSame(g1, g2); assertSame(g1.getClass(), g2.getClass()); assertEquals(g1, g2); }
+public void testEquals7431() { StandardXYItemLabelGenerator g1 = new StandardXYItemLabelGenerator(); StandardXYItemLabelGenerator g2 = new StandardXYItemLabelGenerator(); assertEquals(g1, g2); }
     
 
     /**

@@ -80,30 +80,14 @@ public class RangeTests extends TestCase {
     /**
      * Confirm that the constructor initializes all the required fields.
      */
-public void testScale1384() { 
-     Range r1 = new Range(0.0, 1.0); 
-     Range r2 = Range.scale(r1, 0.5); 
-     assertEquals(-2.0, r2.getLowerBound(), 0.001); 
-     assertEquals(2.0, r2.getUpperBound(), 0.001); 
-     r2 = Range.scale(r1, 0.0); 
-     assertEquals(r1, r2); 
-     try { 
-         Range.scale(null, 0.1); 
-         fail("Null value is accepted"); 
-     } catch (Exception e) { 
-     } 
-     r2 = Range.scale(r1, -0.8); 
-     assertEquals(65.0, r2.getLowerBound(), 0.001); 
-     assertEquals(65.0, r2.getUpperBound(), 0.001); 
- }
-public void testHashCode1385() { 
-     Range r1 = new Range(0.0, 1.0); 
-     Range r2 = new Range(0.0, 1.0); 
-     assertTrue(r1.equals(r2)); 
-     int h1 = r1.hashCode(); 
-     int h2 = r2.hashCode(); 
-     assertEquals(h1, h2); 
- }
+public void testScale7950() { Range r1 = new Range(0.0, 10.0); Range r2 = Range.scale(r1, 0.5); assertEquals(0.0, r2.getLowerBound(), 0.001); assertEquals(10.0, r2.getUpperBound(), 0.001); r1 = new Range(0.0, 10.0); r2 = Range.scale(r1, 0.5); assertEquals(0.0, r2.getLowerBound(), 0.001); assertEquals(10.0, r2.getUpperBound(), 0.001); r1 = new Range(0.0, 10.0);
+}
+
+public void testScale7952() { Range r1 = new Range(0.0, 10.0); Range r2 = Range.scale(r1, 0.5); assertEquals(0.0, r2.getLowerBound(), 0.001); assertEquals(10.0, r2.getUpperBound(), 0.001); r1 = new Range(0.0, 10.0); r2 = Range.scale(r1, 0.5); assertEquals(0.5, r2.getLowerBound(), 0.001); assertEquals(10.0, r2.getUpperBound(), 0.001); r1 = new Range(0.0, 10.0);
+}
+
+public void testHashCode7955() { Range r1 = new Range(0.0, 100.0); Range r2 = new Range(0.0, 100.0); assertEquals(0, r1.hashCode()); assertEquals(0, r2.hashCode()); }
+public void testHashCode7956() { Range r1 = new Range(0.0, 1.0); Range r2 = new Range(0.0, 1.0); assertEquals(r1.hashCode(), r2.hashCode()); }
     
 
     /**

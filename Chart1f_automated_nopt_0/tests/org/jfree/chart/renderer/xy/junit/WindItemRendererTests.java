@@ -81,18 +81,7 @@ public class WindItemRendererTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
-public void testCloning12() { 
-     WindItemRenderer r1 = new WindItemRenderer(); 
-     WindItemRenderer r2 = null; 
-     try { 
-         r2 = (WindItemRenderer) r1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(r1 != r2); 
-     assertTrue(r1.getClass() == r2.getClass()); 
-     assertTrue(r1.equals(r2)); 
- }
+public void testCloning48() throws CloneNotSupportedException { WindItemRenderer r1 = new WindItemRenderer(); WindItemRenderer r2 = (WindItemRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
     
 
     /**

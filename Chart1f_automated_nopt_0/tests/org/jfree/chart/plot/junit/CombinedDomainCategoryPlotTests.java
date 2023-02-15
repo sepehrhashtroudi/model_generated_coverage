@@ -108,18 +108,8 @@ public class CombinedDomainCategoryPlotTests extends TestCase
     /**
      * This is a test to replicate the bug report 987080.
      */
-public void testCloning4() { 
-     CombinedDomainCategoryPlot plot1 = createPlot(); 
-     CombinedDomainCategoryPlot plot2 = null; 
-     try { 
-         plot2 = (CombinedDomainCategoryPlot) plot1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(plot1 != plot2); 
-     assertTrue(plot1.getClass() == plot2.getClass()); 
-     assertTrue(plot1.equals(plot2)); 
- }
+public void testCloning22() throws CloneNotSupportedException { CombinedDomainCategoryPlot plot1 = createPlot(); CombinedDomainCategoryPlot plot2 = (CombinedDomainCategoryPlot) plot1.clone(); assertNotSame(plot1, plot2); assertSame(plot1.getClass(), plot2.getClass()); assertEquals(plot1, plot2); }
+public void testCloning7673() throws CloneNotSupportedException { CategoryAxis p1 = new CategoryAxis(); CategoryAxis p2 = (CategoryAxis) p1.clone(); assertNotSame(p1, p2); assertSame(p1.getClass(), p2.getClass()); assertEquals(p1, p2); }
     
 
     /**

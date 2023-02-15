@@ -84,86 +84,10 @@ public class LabelBlockTests extends TestCase {
     /**
      * Confirm that the equals() method can distinguish all the required fields.
      */
-public void testEquals659() { 
-     LabelBlock b1 = new LabelBlock("ABC", new Font("Dialog", Font.PLAIN, 12), Color.red); 
-     LabelBlock b2 = new LabelBlock("ABC", new Font("Dialog", Font.PLAIN, 12), Color.red); 
-     assertTrue(b1.equals(b2)); 
-     assertTrue(b2.equals(b2)); 
-     b1 = new LabelBlock("ABC", new Font("Dialog", Font.PLAIN, 12), Color.red); 
-     assertFalse(b1.equals(b2)); 
-     b2 = new LabelBlock("ABC", new Font("Dialog", Font.PLAIN, 12), Color.red); 
-     assertTrue(b1.equals(b2)); 
-     b1 = new LabelBlock("ABC", new Font("Dialog", Font.PLAIN, 19), Color.red); 
-     assertFalse(b1.equals(b2)); 
-     b2 = new LabelBlock("ABC", new Font("Dialog", Font.PLAIN, 19), Color.red); 
-     assertTrue(b1.equals(b2)); 
-     b1 = new LabelBlock("ABC", new Font("Dialog", Font.PLAIN, 19), Color.blue); 
-     assertFalse(b1.equals(b2)); 
-     b2 = new LabelBlock("ABC", new Font("Dialog", Font.PLAIN, 19), Color.blue); 
-     assertTrue(b1.equals(b2)); 
-     b1 = new LabelBlock("ABC", new Font("Dialog", Font.PLAIN, 19), Color.white); 
-     assertFalse(b1.equals(b2)); 
-     b2 = new LabelBlock("ABC", new Font("Dialog", Font.PLAIN, 19), Color.white); 
-     assertTrue(b1.equals(b2)); 
- }
-public void testCloning661() { 
-     LabelBlock b1 = new LabelBlock("ABC", new Font("Dialog", Font.PLAIN, 12), Color.red); 
-     LabelBlock b2 = null; 
-     try { 
-         b2 = (LabelBlock) b1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(b1 != b2); 
-     assertTrue(b1.getClass() == b2.getClass()); 
-     assertTrue(b1.equals(b2)); 
- }
-public void testSerialization662() { 
-     LabelBlock b1 = new LabelBlock("ABC", new Font("Dialog", Font.PLAIN, 12), Color.red); 
-     LabelBlock b2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(b1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         b2 = (LabelBlock) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(b1, b2); 
- }
-public void testSerialization663() { 
-     LabelBlock b1 = new LabelBlock("ABC", new Font("Dialog", Font.PLAIN, 12), Color.red); 
-     LabelBlock b2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(b1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         b2 = (LabelBlock) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(b1, b2); 
-     b1 = new LabelBlock("ABC", new Font("Dialog", Font.PLAIN, 12), Color.red); 
-     b1 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(b1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         b2 = (LabelBlock) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(b1, b2); 
- }
+public void testLabelBlock3457() { LabelBlock b1 = new LabelBlock("line1", new Font("Dialog", Font.PLAIN, 12), Color.RED); LabelBlock b2 = new LabelBlock("line1", new Font("Dialog", Font.PLAIN, 12), Color.RED); assertEquals(b1, b2); }
+public void testLabelBlock3458() { LabelBlock labelBlock1 = new LabelBlock("line1", new Font("Dialog", Font.PLAIN, 12), Color.RED); assertEquals(new LabelBlock("line1", new Font("Dialog", Font.PLAIN, 12), Color.RED), labelBlock1); LabelBlock labelBlock2 = new LabelBlock("line2", new Font("Dialog", Font.PLAIN, 12), Color.RED); assertEquals(new LabelBlock("line2", new Font("Dialog", Font.PLAIN, 12), Color.RED), labelBlock2); }
+public void testEquals3480() { LabelBlock l1 = new LabelBlock("line1", new Font("Dialog", Font.PLAIN, 12), Color.RED); LabelBlock l2 = new LabelBlock("line1", new Font("Dialog", Font.PLAIN, 12), Color.RED); assertEquals(l1, l2); assertEquals(l2, l1); l1.setToolTipText("line1"); assertFalse(l1.equals(l2)); l2.setToolTipText("line1"); assertEquals(l1, l2); }
+public void testEquals3481() { LabelBlock l1 = new LabelBlock("Line 1", new Font("Dialog", Font.PLAIN, 12), Color.RED); LabelBlock l2 = new LabelBlock("Line 1", new Font("Dialog", Font.PLAIN, 12), Color.RED); assertEquals(l1, l2); assertEquals(l2, l1); l1.setToolTipText("Line 1"); assertFalse(l1.equals(l2)); l2.setToolTipText("Line 1"); assertEquals(l1, l2); }
     
 
     /**

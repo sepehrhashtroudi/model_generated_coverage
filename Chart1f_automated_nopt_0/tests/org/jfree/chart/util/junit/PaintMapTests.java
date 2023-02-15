@@ -82,24 +82,8 @@ public class PaintMapTests extends TestCase {
     /**
      * Some checks for the getPaint() method.
      */
-public void testSerialization213() { 
-     PaintMap m1 = new PaintMap(); 
-     m1.put("K1", Color.red); 
-     m1.put("K2", new GradientPaint(1.0f, 2.0f, Color.green, 3.0f, 4.0f, Color.yellow)); 
-     PaintMap m2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(m1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         m2 = (PaintMap) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(m1, m2); 
- }
+public void testGetPaint49() { PaintMap store = new PaintMap(); store.put("A", Color.RED); assertEquals(Color.RED, store.getPaint("A")); try { store.getPaint(null); fail("IllegalArgumentException should have been thrown on null key"); } catch (IllegalArgumentException e) { assertEquals("Null \'key\' argument.", e.getMessage()); } try { store.getPaint(""); fail("IllegalArgumentException should have been thrown on null key"); } catch (IllegalArgumentException e) { assertEquals("Null \'key\' argument.", e.getMessage()); } }
+public void testEquals53() { PaintMap m1 = new PaintMap(); PaintMap m2 = new PaintMap(); assertTrue(m1.equals(m1)); assertTrue(m1.equals(m2)); m1.clear(); assertFalse(m1.equals(m2)); m2.clear(); assertFalse(m1.equals(m2)); }
     
 
     /**

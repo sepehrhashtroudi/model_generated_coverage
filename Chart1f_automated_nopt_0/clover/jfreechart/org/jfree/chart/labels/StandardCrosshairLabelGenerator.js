@@ -1,7 +1,7 @@
 var clover = new Object();
 
 // JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
-clover.pageData = {"classes":[{"el":158,"id":68960,"methods":[{"el":67,"sc":5,"sl":65},{"el":90,"sc":5,"sl":77},{"el":99,"sc":5,"sl":97},{"el":108,"sc":5,"sl":106},{"el":122,"sc":5,"sl":117},{"el":147,"sc":5,"sl":131},{"el":156,"sc":5,"sl":154}],"name":"StandardCrosshairLabelGenerator","sl":53}]}
+clover.pageData = {"classes":[{"el":158,"id":68034,"methods":[{"el":67,"sc":5,"sl":65},{"el":90,"sc":5,"sl":77},{"el":99,"sc":5,"sl":97},{"el":108,"sc":5,"sl":106},{"el":122,"sc":5,"sl":117},{"el":147,"sc":5,"sl":131},{"el":156,"sc":5,"sl":154}],"name":"StandardCrosshairLabelGenerator","sl":53}]}
 
 // JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
 clover.testTargets = {}

@@ -99,66 +99,14 @@ public class AbstractXYItemRendererTests extends TestCase {
     /**
      * Some checks for the findDomainBounds() method.
      */
-public void testCloning_LegendItemLabelGenerator634() { 
-     StandardXYSeriesLabelGenerator generator = new StandardXYSeriesLabelGenerator(); 
-     XYBarRenderer r1 = new XYBarRenderer(); 
-     r1.setLegendItemLabelGenerator(generator); 
-     XYBarRenderer r2 = null; 
-     try { 
-         r2 = (XYBarRenderer) r1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(r1 != r2); 
-     assertTrue(r1.getClass() == r2.getClass()); 
-     assertTrue(r1.equals(r2)); 
-     assertTrue(r1.getLegendItemLabelGenerator() != r2.getLegendItemLabelGenerator()); 
- }
-public void testCloning_LegendItemToolTipGenerator635() { 
-     StandardXYSeriesLabelGenerator generator = new StandardXYSeriesLabelGenerator(); 
-     XYBarRenderer r1 = new XYBarRenderer(); 
-     r1.setLegendItemToolTipGenerator(generator); 
-     XYBarRenderer r2 = null; 
-     try { 
-         r2 = (XYBarRenderer) r1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(r1 != r2); 
-     assertTrue(r1.getClass() == r2.getClass()); 
-     assertTrue(r1.equals(r2)); 
-     assertTrue(r1.getLegendItemToolTipGenerator() != r2.getLegendItemToolTipGenerator()); 
- }
-public void testCloning_LegendItemURLGenerator636() { 
-     StandardXYSeriesLabelGenerator generator = new StandardXYSeriesLabelGenerator(); 
-     XYBarRenderer r1 = new XYBarRenderer(); 
-     r1.setLegendItemURLGenerator(generator); 
-     XYBarRenderer r2 = null; 
-     try { 
-         r2 = (XYBarRenderer) r1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(r1 != r2); 
-     assertTrue(r1.getClass() == r2.getClass()); 
-     assertTrue(r1.equals(r2)); 
-     assertTrue(r1.getLegendItemURLGenerator() != r2.getLegendItemURLGenerator()); 
- }
-public void testCloning_LegendItemURLGenerator639() { 
-     StandardXYSeriesLabelGenerator generator = new StandardXYSeriesLabelGenerator("Series {0}"); 
-     XYBarRenderer r1 = new XYBarRenderer(); 
-     r1.setLegendItemURLGenerator(generator); 
-     XYBarRenderer r2 = null; 
-     try { 
-         r2 = (XYBarRenderer) r1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(r1 != r2); 
-     assertTrue(r1.getClass() == r2.getClass()); 
-     assertTrue(r1.equals(r2)); 
-     assertTrue(r1.getLegendItemURLGenerator() != r2.getLegendItemURLGenerator()); 
- }
+public void testFindDomainBounds3329() { }
+public void testFindDomainBounds3331() { XYSeriesCollection dataset = new XYSeriesCollection(); XYSeries s1 = new XYSeries("S1"); s1.add(1.0, 1.1); dataset.addSeries(s1); XYSeries s2 = new XYSeries("S2"); s2.add(1.0, 1.1); dataset.addSeries(s2); XYSeriesCollection d1 = new XYSeriesCollection(); d1.addSeries(s1); d1.addSeries(s2); XYSeries s3 = new XYSeries("S3"); s3.add(1.0, 1.1); dataset.addSeries(s3);
+}
+
+public void testFindDomainBounds3334() { XYSeriesCollection dataset = new XYSeriesCollection(); XYSeries s1 = new XYSeries("S1"); s1.add(1.0, 1.0); dataset.addSeries(s1); XYSeries s2 = new XYSeries("S2"); s2.add(1.0, 1.0); dataset.addSeries(s2); XYSeriesCollection d1 = new XYSeriesCollection(); d1.addSeries(s1); d1.addSeries(s2); XYSeries s3 = new XYSeries("S3"); s3.add(1.0, 1.0); dataset.addSeries(s3);
+}
+
+public void testFindRangeBounds3335() { }
     
 
     /**

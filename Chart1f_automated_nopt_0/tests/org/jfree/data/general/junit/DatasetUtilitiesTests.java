@@ -116,226 +116,40 @@ public class DatasetUtilitiesTests extends TestCase {
     /**
      * Some tests to verify that Java does what I think it does!
      */
-public void testConstructor496() { 
-     DefaultBoxAndWhiskerXYDataset dataset = new DefaultBoxAndWhiskerXYDataset("S1"); 
-     assertEquals(1, dataset.getSeriesCount()); 
-     assertEquals(0, dataset.getItemCount(0)); 
-     assertTrue(Double.isNaN(dataset.getRangeLowerBound(false))); 
-     assertTrue(Double.isNaN(dataset.getRangeUpperBound(false))); 
- }
-public void testFindDomainBounds_NaN847() { 
-     DefaultIntervalXYDataset dataset = new DefaultIntervalXYDataset(); 
-     double[] x1 = new double[] { 1.0, 2.0, Double.NaN }; 
-     double[] x1Start = new double[] { 0.9, 1.1, Double.NaN }; 
-     double[] x1End = new double[] { 1.1, 2.1, Double.NaN }; 
-     double[] y1 = new double[] { 4.0, 5.0, 6.0 }; 
-     double[] y1End = new double[] { 1.09, 2.09, 3.09 }; 
-     double[][] data1 = new double[][] { x1, x1Start, x1End, y1End }; 
-     dataset.addSeries("S1", data1); 
-     Range r = DatasetUtilities.findDomainBounds(dataset); 
-     assertEquals(0.9, r.getLowerBound(), EPSILON); 
-     assertEquals(3.09, r.getUpperBound(), EPSILON); 
- }
-public void testFindRangeBounds850() { 
-     CategoryDataset dataset = createCategoryDataset1(); 
-     Range r = DatasetUtilities.findRangeBounds(dataset); 
-     assertEquals(1.0, r.getLowerBound(), EPSILON); 
-     assertEquals(3.0, r.getUpperBound(), EPSILON); 
- }
-public void testFindRangeBounds_CategoryDataset851() { 
-     CategoryDataset dataset = createCategoryDataset1(); 
-     Range r = DatasetUtilities.findRangeBounds(dataset, false); 
-     assertEquals(1.0, r.getLowerBound(), EPSILON); 
-     assertEquals(3.0, r.getUpperBound(), EPSILON); 
- }
-public void testFindRangeBounds_CategoryDataset852() { 
-     CategoryDataset dataset = createCategoryDataset1(); 
-     Range r = DatasetUtilities.findRangeBounds(dataset); 
-     assertEquals(1.0, r.getLowerBound(), EPSILON); 
-     assertEquals(3.0, r.getUpperBound(), EPSILON); 
- }
-public void testFindRangeBounds853() { 
-     XYDataset dataset = createXYDataset1(); 
-     Range r = DatasetUtilities.findRangeBounds(dataset); 
-     assertEquals(1.0, r.getLowerBound(), EPSILON); 
-     assertEquals(3.0, r.getUpperBound(), EPSILON); 
- }
-public void testIterateRangeBounds_CategoryDataset854() { 
-     CategoryDataset dataset = createCategoryDataset1(); 
-     Range r = DatasetUtilities.iterateRangeBounds(dataset, false); 
-     assertEquals(1.0, r.getLowerBound(), EPSILON); 
-     assertEquals(6.0, r.getUpperBound(), EPSILON); 
- }
-public void testFindStackedRangeBoundsForTableXYDataset1858() { 
-     TableXYDataset d2 = createTableXYDataset1(); 
-     Range r = DatasetUtilities.findStackedRangeBounds(d2); 
-     assertEquals(-2.0, r.getLowerBound(), EPSILON); 
-     assertEquals(2.0, r.getUpperBound(), EPSILON); 
- }
-public void testFindMinimumStackedRangeValue860() { 
-     DefaultCategoryDataset dataset = new DefaultCategoryDataset(); 
-     dataset.addValue(100.0, "Series 1", "Type 1"); 
-     dataset.addValue(101.1, "Series 1", "Type 2"); 
-     Number min = DatasetUtilities.findMinimumStackedRangeValue(dataset); 
-     assertTrue(min.doubleValue() < 100.1); 
-     Number max = DatasetUtilities.findMaximumStackedRangeValue(dataset); 
-     assertTrue(max.doubleValue() > 101.0); 
- }
-public void testFindMinimumStackedRangeValueForCategoryDataset1861() { 
-     DefaultCategoryDataset dataset = new DefaultCategoryDataset(); 
-     dataset.addValue(1.0, "Series 1", "Type 1"); 
-     dataset.addValue(2.0, "Series 1", "Type 2"); 
-     Number min = DatasetUtilities.findMinimumStackedRangeValue(dataset); 
-     assertTrue(min.doubleValue() < 2.0); 
-     Number max = DatasetUtilities.findMaximumStackedRangeValue(dataset); 
-     assertTrue(max.doubleValue() > 0.0); 
- }
-public void testFindMinimumStackedRangeValue_CategoryDataset862() { 
-     DefaultCategoryDataset dataset = new DefaultCategoryDataset(); 
-     dataset.addValue(15.76, "Product 1", "Labour"); 
-     dataset.addValue(8.66, "Product 1", "Administration"); 
-     dataset.addValue(4.71, "Product 1", "Marketing"); 
-     dataset.addValue(3.51, "Product 1", "Distribution"); 
-     dataset.addValue(32.64, "Product 1", "Total Expense"); 
-     Number min = DatasetUtilities.findMinimumStackedRangeValue(dataset); 
-     assertEquals(0.0, min.doubleValue(), EPSILON); 
-     assertEquals(65.28, min.doubleValue(), EPSILON); 
- }
-public void testFindMinimumStackedRangeValue863() { 
-     DefaultCategoryDataset dataset = new DefaultCategoryDataset(); 
-     dataset.addValue(15.76, "Product 1", "Labour"); 
-     dataset.addValue(8.66, "Product 1", "Administration"); 
-     dataset.addValue(4.71, "Product 1", "Marketing"); 
-     Number min = DatasetUtilities.findMinimumStackedRangeValue(dataset); 
-     assertEquals(0.0, min.doubleValue(), EPSILON); 
-     assertEquals(65.28, min.doubleValue(), EPSILON); 
-     dataset.addValue(3.51, "Product 1", "Distribution"); 
-     Number max = DatasetUtilities.findMinimumStackedRangeValue(dataset); 
-     assertEquals(65.28, max.doubleValue(), EPSILON); 
- }
-public void testMinMaxRange864() { 
-     DefaultCategoryDataset dataset = new DefaultCategoryDataset(); 
-     dataset.addValue(100.0, "Series 1", "Type 1"); 
-     dataset.addValue(101.1, "Series 1", "Type 2"); 
-     Number min = DatasetUtilities.findMinimumStackedRangeValue(dataset); 
-     assertTrue(min.doubleValue() < 100.1); 
-     Number max = DatasetUtilities.findMaximumStackedRangeValue(dataset); 
-     assertTrue(max.doubleValue() > 101.0); 
- }
-public void testMinMaxStackedRange866() { 
-     DefaultCategoryDataset dataset = new DefaultCategoryDataset(); 
-     dataset.addValue(100.0, "Series 1", "Type 1"); 
-     dataset.addValue(101.1, "Series 1", "Type 2"); 
-     Number min = DatasetUtilities.findMinimumStackedRangeValue(dataset); 
-     assertTrue(min.doubleValue() < 100.1); 
-     Number max = DatasetUtilities.findMaximumStackedRangeValue(dataset); 
-     assertTrue(max.doubleValue() > 101.0); 
- }
-public void testFindMaximumStackedRangeValue_CategoryDataset867() { 
-     DefaultCategoryDataset dataset = new DefaultCategoryDataset(); 
-     dataset.addValue(15.76, "Product 1", "Labour"); 
-     dataset.addValue(8.66, "Product 1", "Administration"); 
-     dataset.addValue(4.71, "Product 1", "Marketing"); 
-     dataset.addValue(3.51, "Product 1", "Distribution"); 
-     dataset.addValue(32.64, "Product 1", "Total Expense"); 
-     Number min = DatasetUtilities.findMinimumStackedRangeValue(dataset); 
-     assertEquals(0.0, min.doubleValue(), EPSILON); 
-     Number max = DatasetUtilities.findMaximumStackedRangeValue(dataset); 
-     assertEquals(65.28, max.doubleValue(), EPSILON); 
- }
-public void testGetValue21147() { 
-     DefaultIntervalCategoryDataset empty = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     boolean pass = true; 
-     try { 
-         empty.getValue(0, 0); 
-     } catch (IllegalArgumentException e) { 
-         pass = false; 
-     } 
-     assertTrue(pass); 
- }
-public void testGetStartX1261() { 
-     XYSeriesCollection c = new XYSeriesCollection(); 
-     XYSeries s1 = new XYSeries("s1"); 
-     c.addSeries(s1); 
-     assertEquals(0.0, c.getStartXValue(0, 0), EPSILON); 
-     assertEquals(1.0, c.getStartXValue(0, 1), EPSILON); 
-     assertEquals(2.0, c.getStartXValue(0, 2), EPSILON); 
-     assertEquals(3.0, c.getStartXValue(1, 0), EPSILON); 
-     assertEquals(4.0, c.getStartXValue(1, 1), EPSILON); 
-     assertEquals(5.0, c.getStartXValue(1, 2), EPSILON); 
-     assertEquals(6.0, c.getStartXValue(1, 3), EPSILON); 
-     assertEquals(7.0, c.getStartXValue(1, 4), EPSILON); 
-     assertEquals(8.0, c.getStartXValue(1, 5), EPSILON); 
-     assertEquals(9.0, c.getStartXValue(1, 6), EPSILON); 
- }
-public void testIterateRangeBounds1262() { 
-     XYDataset dataset = createXYDataset1(); 
-     Range r = DatasetUtilities.iterateRangeBounds(dataset); 
-     assertEquals(100.0, r.getLowerBound(), EPSILON); 
-     assertEquals(105.0, r.getUpperBound(), EPSILON); 
- }
-public void testGetDomainBounds1264() { 
-     XYSeriesCollection dataset = new XYSeriesCollection(); 
-     Range r = dataset.getDomainBounds(false); 
-     assertNull(r); 
-     r = dataset.getDomainBounds(true); 
-     assertNull(r); 
-     XYSeries series = new XYSeries("S1"); 
-     dataset.addSeries(series); 
-     r = dataset.getDomainBounds(false); 
-     assertNull(r); 
-     r = dataset.getDomainBounds(true); 
-     assertNull(r); 
-     series.add(1.0, 1.1); 
-     r = dataset.getDomainBounds(false); 
-     assertEquals(new Range(1.0, 1.0), r); 
-     r = dataset.getDomainBounds(true); 
-     assertEquals(new Range(0.5, 1.5), r); 
-     series.add(-1.0, -1.1); 
-     r = dataset.getDomainBounds(false); 
-     assertEquals(new Range(-1.0, -1.0), r); 
-     r = dataset.getDomainBounds(true); 
-     assertEquals(new Range(-1.5, -1.5), r); 
- }
-public void testGetDomainBounds1265() { 
-     XYSeriesCollection dataset = new XYSeriesCollection(); 
-     Range r = dataset.getDomainBounds(false); 
-     assertNull(r); 
-     r = dataset.getDomainBounds(true); 
-     assertNull(r); 
-     XYSeries series = new XYSeries("S1"); 
-     dataset.addSeries(series); 
-     r = dataset.getDomainBounds(false); 
-     assertNull(r); 
-     r = dataset.getDomainBounds(true); 
-     assertNull(r); 
-     series.add(1.0, 1.1); 
-     r = dataset.getDomainBounds(false); 
-     assertEquals(new Range(1.0, 1.0), r); 
-     r = dataset.getDomainBounds(true); 
-     assertEquals(new Range(0.5, 1.5), r); 
-     series.add(-1.0, -1.1); 
-     r = dataset.getDomainBounds(false); 
-     assertEquals(new Range(-1.0, 1.0), r); 
-     r = dataset.getDomainBounds(true); 
-     assertEquals(new Range(-1.5, 1.5), r); 
- }
-public void testFindStackedRangeBoundsForTableXYDataset21381() { 
-     DefaultTableXYDataset d = new DefaultTableXYDataset(); 
-     Range r = DatasetUtilities.findStackedRangeBounds(d); 
-     assertEquals(r, new Range(0.0, 0.0)); 
- }
-public void test11708251396() { 
-     XYIntervalSeries s1 = new XYIntervalSeries("Series1"); 
-     XYIntervalSeriesCollection dataset = new XYIntervalSeriesCollection(); 
-     dataset.addSeries(s1); 
-     try { 
-         dataset.getSeries(1); 
-     } catch (IllegalArgumentException e) { 
-     } catch (IndexOutOfBoundsException e) { 
-         assertTrue(false); 
-     } 
- }
+public void testGetMaxRegularValue2757() throws Exception { assertEquals(Double.valueOf(1.0), new BoxAndWhiskerItem(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, new ArrayList()).getMaxRegularValue()); }
+public void testGetMaxRegularValue2758() throws Exception { assertEquals(Double.valueOf(3.0), new BoxAndWhiskerItem(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, new ArrayList()).getMaxRegularValue()); }
+public void testIterateDomainBounds4536() { XYDataset dataset = createXYDataset1(); Range r = DatasetUtilities.iterateDomainBounds(dataset); assertEquals(1.0, r.getLowerBound(), EPSILON); assertEquals(3.0, r.getUpperBound(), EPSILON); }
+public void testFindRangeBoundsXYDataset4562() { XYDataset dataset = createXYDataset1(); Range r = DatasetUtilities.findRangeBounds(dataset); assertEquals(1.0, r.getLowerBound(), EPSILON); assertEquals(3.0, r.getUpperBound(), EPSILON); }
+public void testFindRangeBounds4564() { XYDataset dataset = createXYDataset1(); Range r = DatasetUtilities.findRangeBounds(dataset, true); assertEquals(1.0, r.getLowerBound(), EPSILON); assertEquals(3.0, r.getUpperBound(), EPSILON); }
+public void testIterateRangeBounds4584() { XYDataset dataset = createXYDataset1(); Range r = DatasetUtilities.iterateRangeBounds(dataset); assertEquals(1.0, r.getLowerBound(), EPSILON); assertEquals(3.0, r.getUpperBound(), EPSILON); }
+public void testFindMaximumDomainValue4621() { XYDataset dataset = createXYDataset1(); Number max = DatasetUtilities.findMaximumDomainValue(dataset); assertNull(max); }
+public void testGetValues4787() { DefaultMultiValueCategoryDataset dataset = new DefaultMultiValueCategoryDataset(); dataset.add(new ArrayList(), "R1", "C1"); dataset.add(new ArrayList(), "R2", "C2"); dataset.add(new ArrayList(), "R3", "C3"); List values = dataset.getValues(0, 0); assertEquals(2, values.size()); assertTrue(values.contains("R1")); assertTrue(values.contains("R2")); assertTrue(values.contains("R3")); }
+public void testGetValues4788() { DefaultMultiValueCategoryDataset dataset = new DefaultMultiValueCategoryDataset(); dataset.add(new ArrayList(), "R1", "C1"); dataset.add(new ArrayList(), "R2", "C2"); dataset.add(new ArrayList(), "R3", "C3"); dataset.add(new ArrayList(), "R4", "C4"); List values = dataset.getValues(0, 0); assertEquals(2, values.size()); assertTrue(values.contains("R1")); assertTrue(values.contains("R2")); assertTrue(values.contains("R3")); assertTrue(values.contains("R4"));
+}
+
+public void testGetDomainLowerBound6639() { XYSeries s1 = new XYSeries("S1"); s1.add(1.0, 1.1); s1.add(2.0, 2.2); XYSeries s2 = new XYSeries("S2"); s2.add(1.0, 1.1); s2.add(2.0, 2.2); XYSeriesCollection dataset = new XYSeriesCollection(); dataset.addSeries(s1); dataset.addSeries(s2); assertEquals(1.0, dataset.getDomainLowerBound(false), EPSILON); assertEquals(1.0, dataset.getDomainLowerBound(true), EPSILON);
+}
+
+public void testGetDomainLowerBound6640() { XYSeries s1 = new XYSeries("S1"); s1.add(1.0, 1.1); s1.add(2.0, 2.2); XYSeries s2 = new XYSeries("S2"); s2.add(1.0, 1.1); s2.add(2.0, 2.2); XYSeriesCollection dataset = new XYSeriesCollection(); dataset.addSeries(s1); dataset.addSeries(s2); assertEquals(1.0, dataset.getDomainLowerBound(true), EPSILON); assertEquals(1.0, dataset.getDomainLowerBound(false), EPSILON);
+}
+
+public void testGetDomainLowerBound6641() { XYSeries s1 = new XYSeries("S1"); s1.add(1.0, 1.1); s1.add(2.0, 2.2); XYSeries s2 = new XYSeries("S2"); s2.add(1.0, 1.1); s2.add(2.0, 2.2); XYSeriesCollection dataset = new XYSeriesCollection(); dataset.addSeries(s1); dataset.addSeries(s2); double x1 = dataset.getDomainLowerBound(true); double x2 = dataset.getDomainLowerBound(false); assertEquals(x1, x2, EPSILON);
+}
+
+public void testGetDomainUpperBound6643() { XYSeries s1 = new XYSeries("S1"); s1.add(1.0, 1.1); s1.add(2.0, 2.2); XYSeries s2 = new XYSeries("S2"); s2.add(1.0, 1.1); s2.add(2.0, 2.2); XYSeriesCollection dataset = new XYSeriesCollection(); dataset.addSeries(s1); dataset.addSeries(s2); assertEquals(2.5, dataset.getDomainUpperBound(true), EPSILON); assertEquals(2.5, dataset.getDomainUpperBound(false), EPSILON);
+}
+
+public void testGetUpperBound7939() { System.out.println("getUpperBound"); Range r1 = new Range(0.0, 1.0); assertEquals(1.0, r1.getUpperBound(), 0.001); r1 = new Range(1.0, 2.0); assertEquals(2.0, r1.getUpperBound(), 0.001); r1 = new Range(2.0, 3.0); assertEquals(3.0, r1.getUpperBound(), 0.001); }
+public void testGetYLowValue8600() { YIntervalSeries s1 = new YIntervalSeries("S1"); s1.add(1.0, 2.0, 3.0, 4.0); s1.add(2.0, 4.0, 5.0, 6.0); assertEquals(3.0, s1.getYLowValue(0), EPSILON); assertEquals(5.0, s1.getYLowValue(1), EPSILON); assertEquals(6.0, s1.getYLowValue(2), EPSILON); }
+public void testGetYLowValue8601() { YIntervalSeries s1 = new YIntervalSeries("S1"); s1.add(0.0, 0.5, 0.5, 0.5); assertEquals(0.5, s1.getYLowValue(0), EPSILON); s1.add(1.0, 1.5, 1.5, 1.5); assertEquals(1.5, s1.getYLowValue(0), EPSILON); s1.add(2.0, 2.5, 2.5, 2.5); assertEquals(2.5, s1.getYLowValue(1), EPSILON);
+}
+
+public void testGetYHighValue8602() { YIntervalSeries s1 = new YIntervalSeries("S1"); s1.add(0.0, 0.5, 0.5, 0.5); s1.add(1.0, 1.5, 1.5, 1.5); s1.add(2.0, 2.5, 2.5, 2.5); assertEquals(0.5, s1.getYHighValue(0), EPSILON); assertEquals(1.5, s1.getYHighValue(1), EPSILON); assertEquals(2.5, s1.getYHighValue(2), EPSILON);
+}
+
+public void testGetYHighValue8603() { YIntervalSeries s1 = new YIntervalSeries("S1"); s1.add(0.0, 0.5, 0.5, 0.5); assertEquals(0.5, s1.getYHighValue(0), EPSILON); s1.add(1.0, 1.5, 1.5, 1.5); assertEquals(1.5, s1.getYHighValue(0), EPSILON); s1.add(2.0, 2.5, 2.5, 2.5); assertEquals(2.5, s1.getYHighValue(1), EPSILON);
+}
+
     
 
     /**

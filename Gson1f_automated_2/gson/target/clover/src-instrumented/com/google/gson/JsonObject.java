@@ -29,7 +29,7 @@ import java.util.Set;
  * @author Inderjeet Singh
  * @author Joel Leitch
  */
-public final class JsonObject extends JsonElement {public static class __CLR4_4_111w11wld3n62lc{public static com_atlassian_clover.CoverageRecorder R;public static com_atlassian_clover.CloverProfile[] profiles = { };@java.lang.SuppressWarnings("unchecked") public static <I, T extends I> I lambdaInc(final int i,final T l,final int si){java.lang.reflect.InvocationHandler h=new java.lang.reflect.InvocationHandler(){public java.lang.Object invoke(java.lang.Object p,java.lang.reflect.Method m,java.lang.Object[] a) throws Throwable{R.inc(i);R.inc(si);try{return m.invoke(l,a);}catch(java.lang.reflect.InvocationTargetException e){throw e.getCause()!=null?e.getCause():new RuntimeException("Clover failed to invoke instrumented lambda",e);}}};return (I)java.lang.reflect.Proxy.newProxyInstance(l.getClass().getClassLoader(),l.getClass().getInterfaces(),h);}static{com_atlassian_clover.CoverageRecorder _R=null;try{com_atlassian_clover.CloverVersionInfo.An_old_version_of_clover_is_on_your_compilation_classpath___Please_remove___Required_version_is___4_4_1();if(2019101123313948L!=com_atlassian_clover.CloverVersionInfo.getBuildStamp()){com_atlassian_clover.Clover.l("[CLOVER] WARNING: The Clover version used in instrumentation does not match the runtime version. You need to run instrumented classes against the same version of Clover that you instrumented with.");com_atlassian_clover.Clover.l("[CLOVER] WARNING: Instr=4.4.1#2019101123313948,Runtime="+com_atlassian_clover.CloverVersionInfo.getReleaseNum()+"#"+com_atlassian_clover.CloverVersionInfo.getBuildStamp());}R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getRecorder("\u002f\u0068\u006f\u006d\u0065\u002f\u0073\u0065\u0070\u0065\u0068\u0072\u002f\u006d\u0061\u0073\u0074\u0065\u0072\u0073\u002f\u0074\u0065\u0073\u0074\u005f\u0067\u0065\u006e\u0065\u0072\u0061\u0074\u0069\u006f\u006e\u002f\u006d\u006f\u0064\u0065\u006c\u005f\u0067\u0065\u006e\u0065\u0072\u0061\u0074\u0065\u0064\u005f\u0063\u006f\u0076\u0065\u0072\u0061\u0067\u0065\u002f\u0047\u0073\u006f\u006e\u0031\u0066\u005f\u0061\u0075\u0074\u006f\u006d\u0061\u0074\u0065\u0064\u005f\u0032\u002f\u0067\u0073\u006f\u006e\u002f\u0074\u0061\u0072\u0067\u0065\u0074\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002e\u0064\u0062",1674165928902L,8589935092L,1420,profiles,new java.lang.String[]{"clover.distributed.coverage",null});}catch(java.lang.SecurityException e){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised because it has insufficient security privileges. Please consult the Clover documentation on the security policy file changes required. ("+e.getClass()+":"+e.getMessage()+")");}catch(java.lang.NoClassDefFoundError e){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised. Are you sure you have Clover in the runtime classpath? ("+e.getClass()+":"+e.getMessage()+")");}catch(java.lang.Throwable t){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised because of an unexpected error. ("+t.getClass()+":"+t.getMessage()+")");}R=_R;}}public static final com_atlassian_clover.TestNameSniffer __CLR4_4_1_TEST_NAME_SNIFFER=com_atlassian_clover.TestNameSniffer.NULL_INSTANCE;
+public final class JsonObject extends JsonElement {public static class __CLR4_4_111w11wldqypc7g{public static com_atlassian_clover.CoverageRecorder R;public static com_atlassian_clover.CloverProfile[] profiles = { };@java.lang.SuppressWarnings("unchecked") public static <I, T extends I> I lambdaInc(final int i,final T l,final int si){java.lang.reflect.InvocationHandler h=new java.lang.reflect.InvocationHandler(){public java.lang.Object invoke(java.lang.Object p,java.lang.reflect.Method m,java.lang.Object[] a) throws Throwable{R.inc(i);R.inc(si);try{return m.invoke(l,a);}catch(java.lang.reflect.InvocationTargetException e){throw e.getCause()!=null?e.getCause():new RuntimeException("Clover failed to invoke instrumented lambda",e);}}};return (I)java.lang.reflect.Proxy.newProxyInstance(l.getClass().getClassLoader(),l.getClass().getInterfaces(),h);}static{com_atlassian_clover.CoverageRecorder _R=null;try{com_atlassian_clover.CloverVersionInfo.An_old_version_of_clover_is_on_your_compilation_classpath___Please_remove___Required_version_is___4_4_1();if(2019101123313948L!=com_atlassian_clover.CloverVersionInfo.getBuildStamp()){com_atlassian_clover.Clover.l("[CLOVER] WARNING: The Clover version used in instrumentation does not match the runtime version. You need to run instrumented classes against the same version of Clover that you instrumented with.");com_atlassian_clover.Clover.l("[CLOVER] WARNING: Instr=4.4.1#2019101123313948,Runtime="+com_atlassian_clover.CloverVersionInfo.getReleaseNum()+"#"+com_atlassian_clover.CloverVersionInfo.getBuildStamp());}R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getRecorder("\u002f\u0068\u006f\u006d\u0065\u002f\u0073\u0065\u0070\u0065\u0068\u0072\u002f\u006d\u0061\u0073\u0074\u0065\u0072\u0073\u002f\u0074\u0065\u0073\u0074\u005f\u0067\u0065\u006e\u0065\u0072\u0061\u0074\u0069\u006f\u006e\u002f\u006d\u006f\u0064\u0065\u006c\u005f\u0067\u0065\u006e\u0065\u0072\u0061\u0074\u0065\u0064\u005f\u0063\u006f\u0076\u0065\u0072\u0061\u0067\u0065\u002f\u0047\u0073\u006f\u006e\u0031\u0066\u005f\u0061\u0075\u0074\u006f\u006d\u0061\u0074\u0065\u0064\u005f\u0032\u002f\u0067\u0073\u006f\u006e\u002f\u0074\u0061\u0072\u0067\u0065\u0074\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002e\u0064\u0062",1675576025686L,8589935092L,1420,profiles,new java.lang.String[]{"clover.distributed.coverage",null});}catch(java.lang.SecurityException e){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised because it has insufficient security privileges. Please consult the Clover documentation on the security policy file changes required. ("+e.getClass()+":"+e.getMessage()+")");}catch(java.lang.NoClassDefFoundError e){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised. Are you sure you have Clover in the runtime classpath? ("+e.getClass()+":"+e.getMessage()+")");}catch(java.lang.Throwable t){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised because of an unexpected error. ("+t.getClass()+":"+t.getMessage()+")");}R=_R;}}public static final com_atlassian_clover.TestNameSniffer __CLR4_4_1_TEST_NAME_SNIFFER=com_atlassian_clover.TestNameSniffer.NULL_INSTANCE;
   // We are using a linked hash map because it is important to preserve
   // the order in which elements are inserted. This is needed to ensure
   // that the fields of an object are inserted in the order they were
@@ -39,9 +39,9 @@ public final class JsonObject extends JsonElement {public static class __CLR4_4_
   /**
    * Creates an empty JsonObject.
    */
-  public JsonObject() {try{__CLR4_4_111w11wld3n62lc.R.inc(1364);
-    __CLR4_4_111w11wld3n62lc.R.inc(1365);members = new LinkedHashMap<String, JsonElement>();
-  }finally{__CLR4_4_111w11wld3n62lc.R.flushNeeded();}}
+  public JsonObject() {try{__CLR4_4_111w11wldqypc7g.R.inc(1364);
+    __CLR4_4_111w11wldqypc7g.R.inc(1365);members = new LinkedHashMap<String, JsonElement>();
+  }finally{__CLR4_4_111w11wldqypc7g.R.flushNeeded();}}
 
   /**
    * Adds a member, which is a name-value pair, to self. The name must be a String, but the value
@@ -51,13 +51,13 @@ public final class JsonObject extends JsonElement {public static class __CLR4_4_
    * @param property name of the member.
    * @param value the member object.
    */
-  public void add(String property, JsonElement value) {try{__CLR4_4_111w11wld3n62lc.R.inc(1366);
-    __CLR4_4_111w11wld3n62lc.R.inc(1367);Preconditions.checkArgument(property != null);
-    __CLR4_4_111w11wld3n62lc.R.inc(1368);if ((((value == null)&&(__CLR4_4_111w11wld3n62lc.R.iget(1369)!=0|true))||(__CLR4_4_111w11wld3n62lc.R.iget(1370)==0&false))) {{
-      __CLR4_4_111w11wld3n62lc.R.inc(1371);value = JsonNull.createJsonNull();
+  public void add(String property, JsonElement value) {try{__CLR4_4_111w11wldqypc7g.R.inc(1366);
+    __CLR4_4_111w11wldqypc7g.R.inc(1367);Preconditions.checkArgument(property != null);
+    __CLR4_4_111w11wldqypc7g.R.inc(1368);if ((((value == null)&&(__CLR4_4_111w11wldqypc7g.R.iget(1369)!=0|true))||(__CLR4_4_111w11wldqypc7g.R.iget(1370)==0&false))) {{
+      __CLR4_4_111w11wldqypc7g.R.inc(1371);value = JsonNull.createJsonNull();
     }
-    }__CLR4_4_111w11wld3n62lc.R.inc(1372);members.put(property, value);
-  }finally{__CLR4_4_111w11wld3n62lc.R.flushNeeded();}}
+    }__CLR4_4_111w11wldqypc7g.R.inc(1372);members.put(property, value);
+  }finally{__CLR4_4_111w11wldqypc7g.R.flushNeeded();}}
 
   /**
    * Removes the {@code property} from this {@link JsonObject}.
@@ -66,9 +66,9 @@ public final class JsonObject extends JsonElement {public static class __CLR4_4_
    * @return the {@link JsonElement} object that is being removed.
    * @since 1.3
    */
-  public JsonElement remove(String property) {try{__CLR4_4_111w11wld3n62lc.R.inc(1373);
-    __CLR4_4_111w11wld3n62lc.R.inc(1374);return members.remove(property);
-  }finally{__CLR4_4_111w11wld3n62lc.R.flushNeeded();}}
+  public JsonElement remove(String property) {try{__CLR4_4_111w11wldqypc7g.R.inc(1373);
+    __CLR4_4_111w11wldqypc7g.R.inc(1374);return members.remove(property);
+  }finally{__CLR4_4_111w11wldqypc7g.R.flushNeeded();}}
 
   /**
    * Convenience method to add a primitive member. The specified value is converted to a
@@ -77,9 +77,9 @@ public final class JsonObject extends JsonElement {public static class __CLR4_4_
    * @param property name of the member.
    * @param value the string value associated with the member.
    */
-  public void addProperty(String property, String value) {try{__CLR4_4_111w11wld3n62lc.R.inc(1375);
-    __CLR4_4_111w11wld3n62lc.R.inc(1376);add(property, createJsonElement(value));
-  }finally{__CLR4_4_111w11wld3n62lc.R.flushNeeded();}}
+  public void addProperty(String property, String value) {try{__CLR4_4_111w11wldqypc7g.R.inc(1375);
+    __CLR4_4_111w11wldqypc7g.R.inc(1376);add(property, createJsonElement(value));
+  }finally{__CLR4_4_111w11wldqypc7g.R.flushNeeded();}}
 
   /**
    * Convenience method to add a primitive member. The specified value is converted to a
@@ -88,9 +88,9 @@ public final class JsonObject extends JsonElement {public static class __CLR4_4_
    * @param property name of the member.
    * @param value the number value associated with the member.
    */
-  public void addProperty(String property, Number value) {try{__CLR4_4_111w11wld3n62lc.R.inc(1377);
-    __CLR4_4_111w11wld3n62lc.R.inc(1378);add(property, createJsonElement(value));
-  }finally{__CLR4_4_111w11wld3n62lc.R.flushNeeded();}}
+  public void addProperty(String property, Number value) {try{__CLR4_4_111w11wldqypc7g.R.inc(1377);
+    __CLR4_4_111w11wldqypc7g.R.inc(1378);add(property, createJsonElement(value));
+  }finally{__CLR4_4_111w11wldqypc7g.R.flushNeeded();}}
 
   /**
    * Convenience method to add a boolean member. The specified value is converted to a
@@ -99,9 +99,9 @@ public final class JsonObject extends JsonElement {public static class __CLR4_4_
    * @param property name of the member.
    * @param value the number value associated with the member.
    */
-  public void addProperty(String property, Boolean value) {try{__CLR4_4_111w11wld3n62lc.R.inc(1379);
-    __CLR4_4_111w11wld3n62lc.R.inc(1380);add(property, createJsonElement(value));
-  }finally{__CLR4_4_111w11wld3n62lc.R.flushNeeded();}}
+  public void addProperty(String property, Boolean value) {try{__CLR4_4_111w11wldqypc7g.R.inc(1379);
+    __CLR4_4_111w11wldqypc7g.R.inc(1380);add(property, createJsonElement(value));
+  }finally{__CLR4_4_111w11wldqypc7g.R.flushNeeded();}}
 
   /**
    * Convenience method to add a char member. The specified value is converted to a
@@ -110,9 +110,9 @@ public final class JsonObject extends JsonElement {public static class __CLR4_4_
    * @param property name of the member.
    * @param value the number value associated with the member.
    */
-  public void addProperty(String property, Character value) {try{__CLR4_4_111w11wld3n62lc.R.inc(1381);
-    __CLR4_4_111w11wld3n62lc.R.inc(1382);add(property, createJsonElement(value));
-  }finally{__CLR4_4_111w11wld3n62lc.R.flushNeeded();}}
+  public void addProperty(String property, Character value) {try{__CLR4_4_111w11wldqypc7g.R.inc(1381);
+    __CLR4_4_111w11wldqypc7g.R.inc(1382);add(property, createJsonElement(value));
+  }finally{__CLR4_4_111w11wldqypc7g.R.flushNeeded();}}
 
   /**
    * Creates the proper {@link JsonElement} object from the given {@code value} object.
@@ -120,9 +120,9 @@ public final class JsonObject extends JsonElement {public static class __CLR4_4_
    * @param value the object to generate the {@link JsonElement} for
    * @return a {@link JsonPrimitive} if the {@code value} is not null, otherwise a {@link JsonNull}
    */
-  private JsonElement createJsonElement(Object value) {try{__CLR4_4_111w11wld3n62lc.R.inc(1383);
-    __CLR4_4_111w11wld3n62lc.R.inc(1384);return (((value == null )&&(__CLR4_4_111w11wld3n62lc.R.iget(1385)!=0|true))||(__CLR4_4_111w11wld3n62lc.R.iget(1386)==0&false))? JsonNull.createJsonNull() : new JsonPrimitive(value);
-  }finally{__CLR4_4_111w11wld3n62lc.R.flushNeeded();}}
+  private JsonElement createJsonElement(Object value) {try{__CLR4_4_111w11wldqypc7g.R.inc(1383);
+    __CLR4_4_111w11wldqypc7g.R.inc(1384);return (((value == null )&&(__CLR4_4_111w11wldqypc7g.R.iget(1385)!=0|true))||(__CLR4_4_111w11wldqypc7g.R.iget(1386)==0&false))? JsonNull.createJsonNull() : new JsonPrimitive(value);
+  }finally{__CLR4_4_111w11wldqypc7g.R.flushNeeded();}}
 
   /**
    * Returns a set of members of this object. The set is ordered, and the order is in which the
@@ -130,9 +130,9 @@ public final class JsonObject extends JsonElement {public static class __CLR4_4_
    *
    * @return a set of members of this object.
    */
-  public Set<Map.Entry<String, JsonElement>> entrySet() {try{__CLR4_4_111w11wld3n62lc.R.inc(1387);
-    __CLR4_4_111w11wld3n62lc.R.inc(1388);return members.entrySet();
-  }finally{__CLR4_4_111w11wld3n62lc.R.flushNeeded();}}
+  public Set<Map.Entry<String, JsonElement>> entrySet() {try{__CLR4_4_111w11wldqypc7g.R.inc(1387);
+    __CLR4_4_111w11wldqypc7g.R.inc(1388);return members.entrySet();
+  }finally{__CLR4_4_111w11wldqypc7g.R.flushNeeded();}}
 
   /**
    * Convenience method to check if a member with the specified name is present in this object.
@@ -140,9 +140,9 @@ public final class JsonObject extends JsonElement {public static class __CLR4_4_
    * @param memberName name of the member that is being checked for presence.
    * @return true if there is a member with the specified name, false otherwise.
    */
-  public boolean has(String memberName) {try{__CLR4_4_111w11wld3n62lc.R.inc(1389);
-    __CLR4_4_111w11wld3n62lc.R.inc(1390);return members.containsKey(memberName);
-  }finally{__CLR4_4_111w11wld3n62lc.R.flushNeeded();}}
+  public boolean has(String memberName) {try{__CLR4_4_111w11wldqypc7g.R.inc(1389);
+    __CLR4_4_111w11wldqypc7g.R.inc(1390);return members.containsKey(memberName);
+  }finally{__CLR4_4_111w11wldqypc7g.R.flushNeeded();}}
 
   /**
    * Returns the member with the specified name.
@@ -150,13 +150,13 @@ public final class JsonObject extends JsonElement {public static class __CLR4_4_
    * @param memberName name of the member that is being requested.
    * @return the member matching the name. Null if no such member exists.
    */
-  public JsonElement get(String memberName) {try{__CLR4_4_111w11wld3n62lc.R.inc(1391);
-    __CLR4_4_111w11wld3n62lc.R.inc(1392);if ((((members.containsKey(memberName))&&(__CLR4_4_111w11wld3n62lc.R.iget(1393)!=0|true))||(__CLR4_4_111w11wld3n62lc.R.iget(1394)==0&false))) {{
-      __CLR4_4_111w11wld3n62lc.R.inc(1395);JsonElement member = members.get(memberName);
-      __CLR4_4_111w11wld3n62lc.R.inc(1396);return (((member == null )&&(__CLR4_4_111w11wld3n62lc.R.iget(1397)!=0|true))||(__CLR4_4_111w11wld3n62lc.R.iget(1398)==0&false))? JsonNull.createJsonNull() : member;
+  public JsonElement get(String memberName) {try{__CLR4_4_111w11wldqypc7g.R.inc(1391);
+    __CLR4_4_111w11wldqypc7g.R.inc(1392);if ((((members.containsKey(memberName))&&(__CLR4_4_111w11wldqypc7g.R.iget(1393)!=0|true))||(__CLR4_4_111w11wldqypc7g.R.iget(1394)==0&false))) {{
+      __CLR4_4_111w11wldqypc7g.R.inc(1395);JsonElement member = members.get(memberName);
+      __CLR4_4_111w11wldqypc7g.R.inc(1396);return (((member == null )&&(__CLR4_4_111w11wldqypc7g.R.iget(1397)!=0|true))||(__CLR4_4_111w11wldqypc7g.R.iget(1398)==0&false))? JsonNull.createJsonNull() : member;
     }
-    }__CLR4_4_111w11wld3n62lc.R.inc(1399);return null;
-  }finally{__CLR4_4_111w11wld3n62lc.R.flushNeeded();}}
+    }__CLR4_4_111w11wldqypc7g.R.inc(1399);return null;
+  }finally{__CLR4_4_111w11wldqypc7g.R.flushNeeded();}}
 
   /**
    * Convenience method to get the specified member as a JsonPrimitive element.
@@ -164,9 +164,9 @@ public final class JsonObject extends JsonElement {public static class __CLR4_4_
    * @param memberName name of the member being requested.
    * @return the JsonPrimitive corresponding to the specified member.
    */
-  public JsonPrimitive getAsJsonPrimitive(String memberName) {try{__CLR4_4_111w11wld3n62lc.R.inc(1400);
-    __CLR4_4_111w11wld3n62lc.R.inc(1401);return (JsonPrimitive) members.get(memberName);
-  }finally{__CLR4_4_111w11wld3n62lc.R.flushNeeded();}}
+  public JsonPrimitive getAsJsonPrimitive(String memberName) {try{__CLR4_4_111w11wldqypc7g.R.inc(1400);
+    __CLR4_4_111w11wldqypc7g.R.inc(1401);return (JsonPrimitive) members.get(memberName);
+  }finally{__CLR4_4_111w11wldqypc7g.R.flushNeeded();}}
 
   /**
    * Convenience method to get the specified member as a JsonArray.
@@ -174,9 +174,9 @@ public final class JsonObject extends JsonElement {public static class __CLR4_4_
    * @param memberName name of the member being requested.
    * @return the JsonArray corresponding to the specified member.
    */
-  public JsonArray getAsJsonArray(String memberName) {try{__CLR4_4_111w11wld3n62lc.R.inc(1402);
-    __CLR4_4_111w11wld3n62lc.R.inc(1403);return (JsonArray) members.get(memberName);
-  }finally{__CLR4_4_111w11wld3n62lc.R.flushNeeded();}}
+  public JsonArray getAsJsonArray(String memberName) {try{__CLR4_4_111w11wldqypc7g.R.inc(1402);
+    __CLR4_4_111w11wldqypc7g.R.inc(1403);return (JsonArray) members.get(memberName);
+  }finally{__CLR4_4_111w11wldqypc7g.R.flushNeeded();}}
 
   /**
    * Convenience method to get the specified member as a JsonObject.
@@ -184,25 +184,25 @@ public final class JsonObject extends JsonElement {public static class __CLR4_4_
    * @param memberName name of the member being requested.
    * @return the JsonObject corresponding to the specified member.
    */
-  public JsonObject getAsJsonObject(String memberName) {try{__CLR4_4_111w11wld3n62lc.R.inc(1404);
-    __CLR4_4_111w11wld3n62lc.R.inc(1405);return (JsonObject) members.get(memberName);
-  }finally{__CLR4_4_111w11wld3n62lc.R.flushNeeded();}}
+  public JsonObject getAsJsonObject(String memberName) {try{__CLR4_4_111w11wldqypc7g.R.inc(1404);
+    __CLR4_4_111w11wldqypc7g.R.inc(1405);return (JsonObject) members.get(memberName);
+  }finally{__CLR4_4_111w11wldqypc7g.R.flushNeeded();}}
 
   @Override
-  protected void toString(Appendable sb, Escaper escaper) throws IOException {try{__CLR4_4_111w11wld3n62lc.R.inc(1406);
-    __CLR4_4_111w11wld3n62lc.R.inc(1407);sb.append('{');
-    __CLR4_4_111w11wld3n62lc.R.inc(1408);boolean first = true;
-    __CLR4_4_111w11wld3n62lc.R.inc(1409);for (Map.Entry<String, JsonElement> entry : members.entrySet()) {{
-      __CLR4_4_111w11wld3n62lc.R.inc(1410);if ((((first)&&(__CLR4_4_111w11wld3n62lc.R.iget(1411)!=0|true))||(__CLR4_4_111w11wld3n62lc.R.iget(1412)==0&false))) {{
-        __CLR4_4_111w11wld3n62lc.R.inc(1413);first = false;
+  protected void toString(Appendable sb, Escaper escaper) throws IOException {try{__CLR4_4_111w11wldqypc7g.R.inc(1406);
+    __CLR4_4_111w11wldqypc7g.R.inc(1407);sb.append('{');
+    __CLR4_4_111w11wldqypc7g.R.inc(1408);boolean first = true;
+    __CLR4_4_111w11wldqypc7g.R.inc(1409);for (Map.Entry<String, JsonElement> entry : members.entrySet()) {{
+      __CLR4_4_111w11wldqypc7g.R.inc(1410);if ((((first)&&(__CLR4_4_111w11wldqypc7g.R.iget(1411)!=0|true))||(__CLR4_4_111w11wldqypc7g.R.iget(1412)==0&false))) {{
+        __CLR4_4_111w11wldqypc7g.R.inc(1413);first = false;
       } }else {{
-        __CLR4_4_111w11wld3n62lc.R.inc(1414);sb.append(',');
+        __CLR4_4_111w11wldqypc7g.R.inc(1414);sb.append(',');
       }
-      }__CLR4_4_111w11wld3n62lc.R.inc(1415);sb.append('\"');
-      __CLR4_4_111w11wld3n62lc.R.inc(1416);sb.append(escaper.escapeJsonString(entry.getKey()));
-      __CLR4_4_111w11wld3n62lc.R.inc(1417);sb.append("\":");
-      __CLR4_4_111w11wld3n62lc.R.inc(1418);entry.getValue().toString(sb, escaper);
+      }__CLR4_4_111w11wldqypc7g.R.inc(1415);sb.append('\"');
+      __CLR4_4_111w11wldqypc7g.R.inc(1416);sb.append(escaper.escapeJsonString(entry.getKey()));
+      __CLR4_4_111w11wldqypc7g.R.inc(1417);sb.append("\":");
+      __CLR4_4_111w11wldqypc7g.R.inc(1418);entry.getValue().toString(sb, escaper);
     }
-    }__CLR4_4_111w11wld3n62lc.R.inc(1419);sb.append('}');
-  }finally{__CLR4_4_111w11wld3n62lc.R.flushNeeded();}}
+    }__CLR4_4_111w11wldqypc7g.R.inc(1419);sb.append('}');
+  }finally{__CLR4_4_111w11wldqypc7g.R.flushNeeded();}}
 }

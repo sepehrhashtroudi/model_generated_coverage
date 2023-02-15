@@ -83,22 +83,8 @@ public class CategoryLineAnnotationTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testSerialization1235() { 
-     CategoryLineAnnotation a1 = new CategoryLineAnnotation("Category 1", 1.0, "Category 2", 2.0, Color.red, new BasicStroke(1.0f)); 
-     CategoryLineAnnotation a2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(a1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         a2 = (CategoryLineAnnotation) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(a1, a2); 
- }
+public void testCloning6481() throws CloneNotSupportedException { CategoryLineAnnotation a1 = new CategoryLineAnnotation("Category 1", 1.0, "Category 2", 2.0, Color.RED, new BasicStroke(1.0f)); CategoryLineAnnotation a2 = (CategoryLineAnnotation) a1.clone(); assertNotSame(a1, a2); assertSame(a1.getClass(), a2.getClass()); assertEquals(a1, a2); }
+public void testCloning6482() throws CloneNotSupportedException { CategoryLineAnnotation a1 = new CategoryLineAnnotation("Category 1", 1.0, "Category 2", 2.0, Color.RED, new BasicStroke(1.5f)); CategoryLineAnnotation a2 = (CategoryLineAnnotation) a1.clone(); assertNotSame(a1, a2); assertSame(a1.getClass(), a2.getClass()); assertEquals(a1, a2); }
     
 
     /**

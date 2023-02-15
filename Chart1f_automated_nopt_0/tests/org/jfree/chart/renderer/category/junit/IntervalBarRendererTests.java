@@ -87,6 +87,7 @@ public class IntervalBarRendererTests extends TestCase {
     /**
      * Problem that the equals() method distinguishes all fields.
      */
+public void testEquals6080() { IntervalBarRenderer r1 = new IntervalBarRenderer(); IntervalBarRenderer r2 = new IntervalBarRenderer(); assertEquals(r1, r2); }
     
 
     /**

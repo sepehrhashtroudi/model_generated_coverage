@@ -73,18 +73,7 @@ public class AxisSpaceTests extends TestCase {
     /**
      * Check that the equals() method can distinguish all fields.
      */
-public void testCloning566() { 
-     AxisSpace a1 = new AxisSpace(); 
-     AxisSpace a2 = null; 
-     try { 
-         a2 = (AxisSpace) a1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(a1 != a2); 
-     assertTrue(a1.getClass() == a2.getClass()); 
-     assertTrue(a1.equals(a2)); 
- }
+public void testCloning2839() throws CloneNotSupportedException { AxisSpace s = new AxisSpace(); s.setTop(1.0); s.setBottom(2.0); s.setLeft(3.0); s.setRight(4.0); AxisSpace clone = (AxisSpace) s.clone(); assertNotSame(s, clone); assertEquals(s.getTop(), clone.getTop(), 0.0); assertEquals(s.getBottom(), clone.getBottom(), 0.0); assertEquals(s.getLeft(), clone.getLeft(), 0.0); assertEquals(s.getRight(), clone.getRight(), 0.0); }
     
 
     /**

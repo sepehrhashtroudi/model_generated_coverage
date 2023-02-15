@@ -80,30 +80,9 @@ public class GradientBarPainterTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
-public void testSerialization356() { 
-     GradientBarPainter p1 = new GradientBarPainter(0.1, 0.2, 0.3); 
-     GradientBarPainter p2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(p1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         p2 = (GradientBarPainter) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(p1, p2); 
- }
-public void testHashcode357() { 
-     GradientBarPainter p1 = new GradientBarPainter(0.1, 0.2, 0.3); 
-     GradientBarPainter p2 = new GradientBarPainter(0.1, 0.2, 0.3); 
-     assertTrue(p1.equals(p2)); 
-     int h1 = p1.hashCode(); 
-     int h2 = p2.hashCode(); 
-     assertEquals(h1, h2); 
- }
+public void testGradientBarPainter1489() { GradientBarPainter p1 = new GradientBarPainter(1.0, 2.0, 3.0); GradientBarPainter p2 = new GradientBarPainter(1.0, 2.0, 3.0); GradientBarPainter p3 = new GradientBarPainter(1.0, 2.0, 3.0); GradientBarPainter p4 = new GradientBarPainter(1.0, 2.0, 3.0); assertEquals(p1, p2); assertEquals(p1, p3); assertEquals(p1, p4); }
+public void testGradientBarPainter1490() { GradientBarPainter p1 = new GradientBarPainter(0.1, 0.2, 0.3); GradientBarPainter p2 = new GradientBarPainter(0.1, 0.2, 0.3); assertEquals(p1, p2); }
+public void testHashcode1535() { GradientBarPainter p1 = new GradientBarPainter(0.1, 0.2, 0.3); GradientBarPainter p2 = new GradientBarPainter(0.1, 0.2, 0.3); assertEquals(p1, p2); int h1 = p1.hashCode(); int h2 = p2.hashCode(); assertEquals(h1, h2); }
     
 
     /**

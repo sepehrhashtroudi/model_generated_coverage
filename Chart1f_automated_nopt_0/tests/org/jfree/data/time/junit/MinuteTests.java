@@ -104,77 +104,15 @@ public class MinuteTests extends TestCase {
      *
      * SourceForge Bug ID: 558850.
      */
-public void testSerialization1293() { 
-     Minute m1 = new Minute(); 
-     Minute m2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(m1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         m2 = (Minute) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         System.out.println(e.toString()); 
-     } 
-     assertEquals(m1, m2); 
- }
-public void testDateConstructor21294() { 
-     TimeZone zone = TimeZone.getTimeZone("America/Los_Angeles"); 
-     Calendar c = new GregorianCalendar(zone); 
-     Minute m1 = new Minute(new Date(1016722559122L), zone); 
-     Minute m2 = new Minute(new Date(1016722559123L), zone); 
-     assertEquals(122, m1.getMinute()); 
-     assertEquals(1016722559122L, m1.getLastMillisecond(c)); 
-     assertEquals(123, m2.getMinute()); 
-     assertEquals(1016722559123L, m2.getFirstMillisecond(c)); 
- }
-public void testSerialization1298() { 
-     Minute m1 = new Minute(45, 5, 1, 2, 2003); 
-     Minute m2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(m1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         m2 = (Minute) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         System.out.println(e.toString()); 
-     } 
-     assertEquals(m1, m2); 
- }
-public void testGetSerialIndex1299() { 
-     Minute m = new Minute(1, 1, 1, 1, 2000); 
-     assertEquals(3155850061L, m.getSerialIndex()); 
-     m = new Minute(1, 1, 1, 1, 1900); 
-     assertEquals(176461L, m.getSerialIndex()); 
- }
-public void testGetFirstMillisecondWithCalendar1300() { 
-     Minute m = new Minute(45, 5, 1, 2, 2003); 
-     GregorianCalendar calendar = new GregorianCalendar(Locale.GERMANY); 
-     calendar.setTimeZone(TimeZone.getTimeZone("Europe/Frankfurt")); 
-     assertEquals(955766455500L, m.getFirstMillisecond(calendar)); 
-     boolean pass = false; 
-     try { 
-         m.getFirstMillisecond((Calendar) null); 
-     } catch (NullPointerException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
-public void testDateConstructor21303() { 
-     TimeZone zone = TimeZone.getTimeZone("Europe/Tallinn"); 
-     Calendar c = new GregorianCalendar(zone); 
-     Minute m1 = new Minute(new Date(1016722559122L), zone); 
-     Minute m2 = new Minute(new Date(1016722559123L), zone); 
-     assertEquals(122, m1.getMinute()); 
-     assertEquals(1016722559122L, m1.getLastMillisecond(c)); 
-     assertEquals(123, m2.getMinute()); 
-     assertEquals(1016722559123L, m2.getFirstMillisecond(c)); 
- }
+public void testGetMinute7049() { Minute m = new Minute(1, 1, 1, 1, 2000); assertEquals(1, m.getMinute()); m = new Minute(1, 1, 1, 1, 1900); assertEquals(1, m.getMinute()); m = new Minute(1, 1, 1, 1, 1900); assertEquals(1, m.getMinute()); m = new Minute(1, 1, 1, 1, 1900); assertEquals(1, m.getMinute()); m = new Minute(1, 1, 1, 1, 1900); assertEquals(1, m.getMinute()); }
+public void testGetMinute7050() { Minute m = new Minute(1, 1, 1, 1, 1900); assertEquals(1, m.getMinute()); m = new Minute(1, 1, 1, 1, 1900); assertEquals(1, m.getMinute()); m = new Minute(1, 1, 1, 1, 1900); assertEquals(1, m.getMinute()); m = new Minute(1, 1, 1, 1, 1900); assertEquals(1, m.getMinute()); m = new Minute(1, 1, 1, 1, 1900); assertEquals(1, m.getMinute()); }
+public void testGetLastMillisecond7051() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Minute m = new Minute(1, 1, 1, 1, 1970); assertEquals(0, m.getLastMillisecond()); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testGetFirstMillisecond7054() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Minute m = new Minute(0, 0, 0, 0, 2006); GregorianCalendar calendar = new GregorianCalendar(saved); calendar.setTimeZone(TimeZone.getTimeZone("Europe/London")); assertEquals(0, m.getFirstMillisecond(calendar)); try { m.getFirstMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } }
+public void testGetFirstMillisecond7055() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Minute m = new Minute(0, 0, 0, 0, 2006); Calendar c = new GregorianCalendar(saved); assertEquals(0, m.getFirstMillisecond(c)); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testGetFirstMillisecond7057() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Minute m = new Minute(0, 0, 0, 0, 1970); Calendar c = new GregorianCalendar(saved); assertEquals(0, m.getFirstMillisecond(c)); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testGetLastMillisecond7058() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Minute m = new Minute(0, 0, 0, 0, 2006); Calendar c = new GregorianCalendar(saved); assertEquals(0, m.getLastMillisecond(c)); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testGetLastMillisecond7060() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Minute m = new Minute(0, 0, 0, 0, 1970); GregorianCalendar calendar = new GregorianCalendar(saved); calendar.setTimeZone(TimeZone.getTimeZone("Europe/London")); assertEquals(0, m.getLastMillisecond(calendar)); try { m.getLastMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } }
+public void testGetLastMillisecond7061() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Minute m = new Minute(0, 0, 0, 0, 1970); assertEquals(0, m.getLastMillisecond(null)); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
     
 
     /**

@@ -82,155 +82,21 @@ public class DefaultIntervalCategoryDatasetTests extends TestCase {
     /**
      * Some checks for the getValue() method.
      */
-public void testGetRowIndex1143() { 
-     DefaultIntervalCategoryDataset empty = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     assertEquals(-1, empty.getRowIndex("ABC")); 
- }
-public void testGetCategoryCount1144() { 
-     DefaultIntervalCategoryDataset empty = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     assertEquals(0, empty.getCategoryCount()); 
- }
-public void testEquals1145() { 
-     DefaultIntervalCategoryDataset d1 = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     DefaultIntervalCategoryDataset d2 = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     assertTrue(d1.equals(d2)); 
-     assertTrue(d2.equals(d1)); 
-     d1 = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     assertFalse(d1.equals(d2)); 
-     d2 = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     assertTrue(d1.equals(d2)); 
-     d1 = new DefaultIntervalCategoryDataset(new double[0][1], new double[0][1]); 
-     assertFalse(d1.equals(d2)); 
-     d2 = new DefaultIntervalCategoryDataset(new double[0][1], new double[0][1]); 
-     assertTrue(d1.equals(d2)); 
-     d1 = new DefaultIntervalCategoryDataset(new double[0][2], new double[0][2]); 
-     assertFalse(d1.equals(d2)); 
-     d2 = new DefaultIntervalCategoryDataset(new double[0][2], new double[0][2]); 
-     assertTrue(d1.equals(d2)); 
- }
-public void testGetValue1146() { 
-     DefaultIntervalCategoryDataset empty = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     assertEquals(new Double(0.0), empty.getValue("S1", "C1")); 
-     boolean pass = true; 
-     try { 
-         empty.getValue("S1", "C2"); 
-     } catch (UnknownKeyException e) { 
-         pass = false; 
-     } 
-     assertTrue(pass); 
- }
-public void testGetStartValue1149() { 
-     DefaultIntervalCategoryDataset empty = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     assertEquals(new Double(0.0), empty.getStartValue("S1", "C1")); 
-     boolean pass = true; 
-     try { 
-         empty.getStartValue(0, 0); 
-     } catch (UnknownKeyException e) { 
-         pass = false; 
-     } 
-     assertTrue(pass); 
- }
-public void testGetEndValue21153() { 
-     DefaultIntervalCategoryDataset empty = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     boolean pass = true; 
-     try { 
-         empty.getEndValue(0, 0); 
-     } catch (UnknownKeyException e) { 
-         pass = false; 
-     } 
-     assertTrue(pass); 
- }
-public void testGetStartValue1154() { 
-     DefaultIntervalCategoryDataset empty = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     assertEquals(new Double(0.0), empty.getStartValue(0, 0)); 
-     assertEquals(new Double(1.0), empty.getStartValue(0, 1)); 
-     assertEquals(new Double(2.0), empty.getStartValue(0, 2)); 
-     assertEquals(new Double(3.0), empty.getStartValue(0, 3)); 
-     boolean pass = false; 
-     try { 
-         empty.getStartValue(-1, 0); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
-     pass = false; 
-     try { 
-         empty.getStartValue(1, 1); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
-public void testGetEndValue21156() { 
-     DefaultIntervalCategoryDataset empty = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     boolean pass = true; 
-     try { 
-         empty.getEndValue(0, 0); 
-     } catch (IllegalArgumentException e) { 
-         pass = false; 
-     } 
-     assertTrue(pass); 
- }
-public void testSetSeriesKeys1160() { 
-     DefaultIntervalCategoryDataset empty = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     boolean pass = true; 
-     try { 
-         empty.setSeriesKeys(new String[0]); 
-     } catch (RuntimeException e) { 
-         pass = false; 
-     } 
-     assertTrue(pass); 
- }
-public void testGetRowAndColumnCount1161() { 
-     double[] starts_S1 = new double[] { 0.1, 0.2, 0.3 }; 
-     double[] starts_S2 = new double[] { 0.3, 0.4, 0.5 }; 
-     double[] ends_S1 = new double[] { 0.5, 0.6, 0.7 }; 
-     double[] ends_S2 = new double[] { 0.7, 0.8, 0.9 }; 
-     double[][] starts = new double[][] { starts_S1, starts_S2 }; 
-     double[][] ends = new double[][] { ends_S1, ends_S2 }; 
-     DefaultIntervalCategoryDataset d = new DefaultIntervalCategoryDataset(starts, ends); 
-     assertEquals(2, d.getRowCount()); 
-     assertEquals(3, d.getColumnCount()); 
- }
-public void testGetCategoryIndex1162() { 
-     DefaultIntervalCategoryDataset empty = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     assertEquals(-1, empty.getCategoryIndex("ABC")); 
- }
-public void testGetRowKeys1163() { 
-     DefaultIntervalCategoryDataset empty = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     List keys = empty.getRowKeys(); 
-     assertEquals(0, keys.size()); 
- }
-public void testGetColumnCount1164() { 
-     DefaultIntervalCategoryDataset empty = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     assertEquals(0, empty.getColumnCount()); 
- }
-public void testEquals1165() { 
-     DefaultIntervalCategoryDataset d1 = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     DefaultIntervalCategoryDataset d2 = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     assertTrue(d1.equals(d2)); 
-     assertTrue(d2.equals(d1)); 
-     d1 = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     assertFalse(d1.equals(d2)); 
-     d2 = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     assertTrue(d1.equals(d2)); 
-     d1 = new DefaultIntervalCategoryDataset(new double[0][1], new double[0][1]); 
-     assertFalse(d1.equals(d2)); 
-     d2 = new DefaultIntervalCategoryDataset(new double[0][1], new double[0][1]); 
-     assertTrue(d1.equals(d2)); 
- }
-public void testCloning21166() { 
-     DefaultIntervalCategoryDataset d1 = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); 
-     DefaultIntervalCategoryDataset d2 = null; 
-     try { 
-         d2 = (DefaultIntervalCategoryDataset) d1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(d1 != d2); 
-     assertTrue(d1.getClass() == d2.getClass()); 
-     assertTrue(d1.equals(d2)); 
- }
+public void testGetSeriesIndex6098() { DefaultIntervalCategoryDataset empty = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); assertEquals(-1, empty.getSeriesIndex("ABC")); }
+public void testSetStartValue6113() { double[] starts_S1 = new double[] {0.1, 0.2, 0.3}; double[] starts_S2 = new double[] {0.1, 0.2, 0.3}; double[] starts_S3 = new double[] {0.1, 0.2, 0.3}; double[] ends_S1 = new double[] {0.1, 0.2, 0.3}; double[] ends_S2 = new double[] {0.1, 0.2, 0.3}; double[] ends_S3 = new double[] {0.1, 0.2, 0.3};
+}
+
+public void testSetStartValue6114() { double[] starts_S1 = new double[] {0.0, 1.0, 2.0}; double[] starts_S2 = new double[] {0.0, 1.0, 2.0}; double[] starts_S3 = new double[] {0.0, 1.0, 2.0}; double[] ends_S1 = new double[] {0.0, 1.0, 2.0}; double[] ends_S2 = new double[] {0.0, 1.0, 2.0}; double[] ends_S3 = new double[] {0.0, 1.0, 2.0};
+}
+
+public void testFireDatasetChanged6115() { double[] starts_S1 = new double[] {0.1, 0.2, 0.3}; double[] starts_S2 = new double[] {0.1, 0.2, 0.3}; double[] starts_S3 = new double[] {0.1, 0.2, 0.3}; double[] ends_S1 = new double[] {0.1, 0.2, 0.3}; double[] ends_S2 = new double[] {0.1, 0.2, 0.3}; double[] ends_S3 = new double[] {0.1, 0.2, 0.3};
+}
+
+public void testGetColumnIndex6122() { DefaultIntervalCategoryDataset d = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); assertEquals(0, d.getColumnIndex("A")); assertEquals(0, d.getColumnIndex("B")); assertEquals(0, d.getColumnIndex("C")); try { d.getColumnIndex(null); fail("IllegalArgumentException should have been thrown on null key"); } catch (IllegalArgumentException e) { assertEquals("Null \'columnKey\' argument.", e.getMessage()); } }
+public void testGetColumnIndex6123() { DefaultIntervalCategoryDataset d = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); try { d.getColumnIndex(null); fail("IllegalArgumentException should have been thrown on null column"); } catch (IllegalArgumentException e) { assertEquals("Null \'columnKey\' argument.", e.getMessage()); } try { d.getColumnIndex(""); fail("IllegalArgumentException should have been thrown on null column"); } catch (IllegalArgumentException e) { assertEquals("Null \'columnKey\' argument.", e.getMessage()); } }
+public void testGetRowKeys6125() { DefaultIntervalCategoryDataset d = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); List keys = d.getRowKeys(); assertEquals(0, keys.size()); d.setSeriesKeys(null); keys = d.getRowKeys(); keys = d.getRowKeys(); assertEquals(0, keys.size()); }
+public void testGetRowKeys6126() { DefaultIntervalCategoryDataset d = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); List keys = d.getRowKeys(); assertEquals(0, keys.size()); d.setSeriesKeys(null); keys = d.getRowKeys(); assertEquals(0, keys.size()); }
+public void testGetColumnCount6128() { DefaultIntervalCategoryDataset empty = new DefaultIntervalCategoryDataset(new double[0][0], new double[0][0]); assertEquals(0, empty.getColumnCount()); }
     
 
 

@@ -81,28 +81,7 @@ public class PowerFunction2DTests extends TestCase {
     /**
      * Some tests for the constructor.
      */
-public void testEquals629() { 
-     PowerFunction2D f1 = new PowerFunction2D(1.0, 2.0); 
-     PowerFunction2D f2 = new PowerFunction2D(1.0, 2.0); 
-     assertTrue(f1.equals(f2)); 
-     assertTrue(f2.equals(f1)); 
-     f1 = new PowerFunction2D(1.1, 2.0); 
-     assertFalse(f1.equals(f2)); 
-     f2 = new PowerFunction2D(1.1, 2.0); 
-     assertTrue(f1.equals(f2)); 
-     f1 = new PowerFunction2D(1.1, 2.2); 
-     assertFalse(f1.equals(f2)); 
-     f2 = new PowerFunction2D(1.1, 2.2); 
-     assertTrue(f1.equals(f2)); 
- }
-public void testHashCode630() { 
-     PowerFunction2D f1 = new PowerFunction2D(1.0, 2.0); 
-     PowerFunction2D f2 = new PowerFunction2D(1.0, 2.0); 
-     assertTrue(f1.equals(f2)); 
-     int h1 = f1.hashCode(); 
-     int h2 = f2.hashCode(); 
-     assertEquals(h1, h2); 
- }
+public void testHashCode3265() { PowerFunction2D p1 = new PowerFunction2D(1.0, 2.0); PowerFunction2D p2 = new PowerFunction2D(1.0, 2.0); PowerFunction2D p3 = new PowerFunction2D(1.0, 2.0); assertEquals(p1.hashCode(), p2.hashCode()); assertEquals(p1.hashCode(), p3.hashCode()); }
     
 
     /**

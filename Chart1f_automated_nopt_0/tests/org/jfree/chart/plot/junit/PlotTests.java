@@ -90,6 +90,7 @@ public class PlotTests extends TestCase {
      * Check that the equals() method can distinguish all fields (note that
      * the dataset is NOT considered in the equals() method).
      */
+public void testCloning1690() throws CloneNotSupportedException { PiePlot p1 = new PiePlot(); p1.setNoDataMessagePaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); PiePlot p2 = (PiePlot) p1.clone(); assertNotSame(p1, p2); assertSame(p1.getNoDataMessagePaint(), p2.getNoDataMessagePaint()); }
     
 
 }

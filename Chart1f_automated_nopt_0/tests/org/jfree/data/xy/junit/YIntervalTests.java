@@ -79,6 +79,7 @@ public class YIntervalTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
+public void equalsTest() { final YInterval i1 = new YInterval(1.0, 1.0, 2.0); final YInterval i2 = new YInterval(1.0, 1.0, 2.0); final YInterval i3 = new YInterval(1.0, 1.0, 2.0); final YInterval i4 = new YInterval(1.0, 1.0, 2.0); assertTrue(i1.equals(i1)); assertTrue(i1.equals(i2)); assertFalse(i1.equals(i3)); assertFalse(i1.equals(i4)); }
     
 
     /**

@@ -82,39 +82,9 @@ public class LegendItemEntityTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testCloning811() { 
-     LegendItemEntity e1 = new LegendItemEntity(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0)); 
-     LegendItemEntity e2 = null; 
-     try { 
-         e2 = (LegendItemEntity) e1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(e1 != e2); 
-     assertTrue(e1.getClass() == e2.getClass()); 
-     assertTrue(e1.equals(e2)); 
- }
-public void testEquals813() { 
-     LegendItemEntity e1 = new LegendItemEntity(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0)); 
-     LegendItemEntity e2 = new LegendItemEntity(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0)); 
-     assertTrue(e1.equals(e2)); 
-     e1 = new LegendItemEntity(new Rectangle2D.Double(4.0, 3.0, 2.0, 1.0)); 
-     assertFalse(e1.equals(e2)); 
-     e2 = new LegendItemEntity(new Rectangle2D.Double(4.0, 3.0, 2.0, 1.0)); 
-     assertTrue(e1.equals(e2)); 
-     e1 = new LegendItemEntity(new Rectangle2D.Double(4.0, 3.0, 2.0, 1.0)); 
-     assertFalse(e1.equals(e2)); 
-     e2 = new LegendItemEntity(new Rectangle2D.Double(4.0, 3.0, 2.0, 1.0)); 
-     assertTrue(e1.equals(e2)); 
-     e1 = new LegendItemEntity(new Rectangle2D.Double(4.0, 3.0, 2.0, 1.0)); 
-     assertFalse(e1.equals(e2)); 
-     e2 = new LegendItemEntity(new Rectangle2D.Double(4.0, 3.0, 2.0, 1.0)); 
-     assertTrue(e1.equals(e2)); 
-     e1 = new LegendItemEntity(new Rectangle2D.Double(4.0, 3.0, 4.0, 1.0)); 
-     assertFalse(e1.equals(e2)); 
-     e2 = new LegendItemEntity(new Rectangle2D.Double(4.0, 3.0, 4.0, 1.0));
-}
-
+public void testLegendItemEntity4372() { LegendItemEntity e1 = new LegendItemEntity(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0)); LegendItemEntity e2 = new LegendItemEntity(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0)); assertEquals(e1, e2); }
+public void testClone4380() throws CloneNotSupportedException { LegendItemEntity e1 = new LegendItemEntity(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0)); LegendItemEntity e2 = (LegendItemEntity) e1.clone(); assertEquals(e1, e2); }
+public void testCloning4381() throws CloneNotSupportedException { LegendItemEntity e1 = new LegendItemEntity(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0)); LegendItemEntity e2 = (LegendItemEntity) e1.clone(); assertNotSame(e1, e2); assertSame(e1.getArea(), e2.getArea()); }
     
 
     /**

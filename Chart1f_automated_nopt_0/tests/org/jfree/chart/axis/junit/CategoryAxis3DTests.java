@@ -79,6 +79,8 @@ public class CategoryAxis3DTests extends TestCase {
     /**
      * Confirm that cloning works.
      */
+public void testCategoryAxis3D5090() { CategoryAxis3D a1 = new CategoryAxis3D("Test"); CategoryAxis3D a2 = new CategoryAxis3D("Test"); assertEquals(a1, a2); }
+public void testCloning5091() throws CloneNotSupportedException { CategoryAxis3D p1 = new CategoryAxis3D("Test"); CategoryAxis3D p2 = (CategoryAxis3D) p1.clone(); assertNotSame(p1, p2); assertSame(p1.getClass(), p2.getClass()); assertEquals(p1, p2); }
     
 
     /**

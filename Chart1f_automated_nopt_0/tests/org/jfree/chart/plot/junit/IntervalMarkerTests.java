@@ -97,36 +97,11 @@ public class IntervalMarkerTests extends TestCase
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testCloning292() { 
-     IntervalMarker m1 = new IntervalMarker(45.0, 50.0); 
-     IntervalMarker m2 = null; 
-     try { 
-         m2 = (IntervalMarker) m1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(m1 != m2); 
-     assertTrue(m1.getClass() == m2.getClass()); 
-     assertTrue(m1.equals(m2)); 
- }
-public void testGetSetEndValue293() { 
-     IntervalMarker m = new IntervalMarker(1.0, 2.0); 
-     m.addChangeListener(this); 
-     this.lastEvent = null; 
-     assertEquals(2.0, m.getEndValue(), EPSILON); 
-     m.setEndValue(0.5); 
-     assertEquals(0.5, m.getEndValue(), EPSILON); 
-     assertEquals(m, this.lastEvent.getMarker()); 
- }
-public void testGetSetEndValue294() { 
-     IntervalMarker m = new IntervalMarker(1.0, 2.0); 
-     m.addChangeListener(this); 
-     this.lastEvent = null; 
-     assertEquals(1.0, m.getStartValue(), EPSILON); 
-     m.setEndValue(0.5); 
-     assertEquals(0.5, m.getStartValue(), EPSILON); 
-     assertEquals(m, this.lastEvent.getMarker()); 
- }
+public void testIntervalMarker1217() { IntervalMarker m1 = new IntervalMarker(10.0, 20.0); assertEquals(10.0, m1.getStartValue(), 0.001); assertEquals(20.0, m1.getEndValue(), 0.001); }
+public void testGetEndValue1220() { IntervalMarker m1 = new IntervalMarker(1.0, 2.0); assertEquals(3.0, m1.getEndValue(), EPSILON); }
+public void testConstructor1221() { IntervalMarker m1 = new IntervalMarker(10.0, 20.0); assertEquals(10.0, m1.getStartValue(), EPSILON); assertEquals(20.0, m1.getEndValue(), EPSILON); }
+public void testNotifyListeners1227() { IntervalMarker m1 = new IntervalMarker(1.0, 2.0); m1.notifyListeners(new MarkerChangeEvent(m1)); assertEquals(1.0, m1.getStartValue(), EPSILON); assertEquals(2.0, m1.getEndValue(), EPSILON); m1.setGradientPaintTransformer(null); m1.notifyListeners(new MarkerChangeEvent(m1)); assertEquals(1.0, m1.getStartValue(), EPSILON); assertEquals(2.0, m1.getEndValue(), EPSILON); }
+public void testEquals1228() { IntervalMarker m1 = new IntervalMarker(45.0, 50.0); IntervalMarker m2 = new IntervalMarker(45.0, 50.0); assertEquals(m1, m2); assertEquals(m2, m1); m1 = new IntervalMarker(45.0, 50.0); assertFalse(m1.equals(m2)); m2 = new IntervalMarker(45.0, 50.0); assertEquals(m1, m2); }
     
 
     /**

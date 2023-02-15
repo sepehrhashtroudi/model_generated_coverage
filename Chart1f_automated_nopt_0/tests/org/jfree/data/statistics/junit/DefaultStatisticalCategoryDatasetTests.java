@@ -85,63 +85,11 @@ public class DefaultStatisticalCategoryDatasetTests extends TestCase {
     /**
      * Some checks for the getRangeBounds() method.
      */
-public void testRemove333() { 
-     DefaultStatisticalCategoryDataset data = new DefaultStatisticalCategoryDataset(); 
-     boolean pass = false; 
-     try { 
-         data.remove("R1", "R2"); 
-     } catch (UnknownKeyException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
-     data.add(1.0, 0.5, "R1", "C1"); 
-     assertEquals(new Range(1.0, 1.0), data.getRangeBounds(false)); 
-     assertEquals(new Range(0.5, 1.5), data.getRangeBounds(true)); 
-     data.add(1.4, 0.2, "R2", "C1"); 
-     assertEquals(1.0, data.getRangeLowerBound(false), EPSILON); 
-     assertEquals(1.4, data.getRangeUpperBound(false), EPSILON); 
-     assertEquals(0.5, data.getRangeLowerBound(true), EPSILON); 
-     assertEquals(1.6, data.getRangeUpperBound(true), EPSILON); 
-     data.remove("R1", "C1"); 
-     assertEquals(1.4, data.getRangeLowerBound(false), EPSILON); 
-     assertEquals(1.4, data.getRangeUpperBound(false), EPSILON); 
-     assertEquals(1.2, data.getRangeLowerBound(true), EPSILON); 
-     assertEquals(1.6, data.getRangeUpperBound(true), EPSILON); 
- }
-public void testEquals338() { 
-     DefaultStatisticalCategoryDataset d1 = new DefaultStatisticalCategoryDataset(); 
-     DefaultStatisticalCategoryDataset d2 = new DefaultStatisticalCategoryDataset(); 
-     assertTrue(d1.equals(d2)); 
-     assertTrue(d2.equals(d1)); 
-     d1.add(1.0, 0.5, "R1", "C1"); 
-     assertFalse(d1.equals(d2)); 
-     d2.add(1.0, 0.5, "R1", "C1"); 
-     assertTrue(d1.equals(d2)); 
-     d1.add(2.0, 0.5, "R1", "C2"); 
-     assertFalse(d1.equals(d2)); 
-     d2.add(2.0, 0.5, "R1", "C2"); 
-     assertTrue(d1.equals(d2)); 
-     d1.remove("R1", "C1"); 
-     assertFalse(d1.equals(d2)); 
-     d2.remove("R1", "C1"); 
-     assertTrue(d1.equals(d2)); 
- }
-public void testCloning339() { 
-     DefaultStatisticalCategoryDataset d1 = new DefaultStatisticalCategoryDataset(); 
-     DefaultStatisticalCategoryDataset d2 = null; 
-     try { 
-         d2 = (DefaultStatisticalCategoryDataset) d1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(d1 != d2); 
-     assertTrue(d1.getClass() == d2.getClass()); 
-     assertTrue(d1.equals(d2)); 
-     d1.add(1.0, 0.5, "R1", "C1"); 
-     assertFalse(d1.equals(d2)); 
-     d2.add(1.0, 0.5, "R1", "C1"); 
-     assertTrue(d1.equals(d2)); 
- }
+public void testGetMeanValue1383() { DefaultStatisticalCategoryDataset dataset = new DefaultStatisticalCategoryDataset(); dataset.add(1.0, 1.0, "R1", "C1"); dataset.add(2.0, 2.0, "R2", "C1"); dataset.add(3.0, 3.0, "R3", "C1"); Number mean = dataset.getMeanValue("R1", "C1"); Number standard = dataset.getMeanValue("R2", "C2"); assertEquals(1.0, mean.doubleValue(), EPSILON); assertEquals(2.0, standard.doubleValue(), EPSILON);
+}
+
+public void testEquals1417() { DefaultStatisticalCategoryDataset d1 = new DefaultStatisticalCategoryDataset(); d1.add(1.0, 2.0, "R1", "C1"); assertEquals(d1, d1); DefaultStatisticalCategoryDataset d2 = new DefaultStatisticalCategoryDataset(); d2.add(1.0, 2.0, "R1", "C1"); assertEquals(d1, d2); }
+public void testEquals1418() { DefaultStatisticalCategoryDataset d1 = new DefaultStatisticalCategoryDataset(); d1.add(1.0, 2.0, "R1", "C1"); assertTrue(d1.equals(d1)); DefaultStatisticalCategoryDataset d2 = new DefaultStatisticalCategoryDataset(); d2.add(1.0, 2.0, "R1", "C1"); assertFalse(d1.equals(d2)); }
     
 
     /**

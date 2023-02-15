@@ -80,6 +80,7 @@ public class StandardBarPainterTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
+public void testEquals7503() { StandardBarPainter p1 = new StandardBarPainter(); StandardBarPainter p2 = new StandardBarPainter(); assertEquals(p1, p2); }
     
 
     /**

@@ -85,6 +85,10 @@ public class CategoryAxisTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
+public void testSetCategoryLabelPositionOffset240() { CategoryAxis a1 = new CategoryAxis(); a1.setCategoryLabelPositionOffset(0); assertEquals(0, a1.getCategoryLabelPositionOffset()); a1.setCategoryLabelPositionOffset(1); assertEquals(1, a1.getCategoryLabelPositionOffset()); a1.setCategoryLabelPositionOffset(2); assertEquals(2, a1.getCategoryLabelPositionOffset()); a1.setCategoryLabelPositionOffset(3); assertEquals(3, a1.getCategoryLabelPositionOffset()); }
+public void testSetCategoryLabelPositionOffset241() { CategoryAxis a1 = new CategoryAxis(); a1.setCategoryLabelPositionOffset(0); assertEquals(0, a1.getCategoryLabelPositionOffset()); a1.setCategoryLabelPositionOffset(1); assertEquals(1, a1.getCategoryLabelPositionOffset()); a1.setCategoryLabelPositionOffset(2); assertEquals(2, a1.getCategoryLabelPositionOffset()); }
+public void testSetCategoryLabelPositions244() { CategoryAxis a1 = new CategoryAxis(); CategoryLabelPositions positions = new CategoryLabelPositions(); a1.setCategoryLabelPositions(positions); assertSame(positions, a1.getCategoryLabelPositions()); try { a1.setCategoryLabelPositions(null); fail("IllegalArgumentException should have been thrown on null categoryLabelPositions"); } catch (IllegalArgumentException e) { assertEquals("Null \'positions\' argument.", e.getMessage()); } }
+public void testCloning315() throws CloneNotSupportedException { CategoryAxis a1 = new CategoryAxis("Test"); CategoryAxis a2 = (CategoryAxis) a1.clone(); assertNotSame(a1, a2); assertSame(a1.getClass(), a2.getClass()); assertEquals(a1, a2); }
     
 
     /**

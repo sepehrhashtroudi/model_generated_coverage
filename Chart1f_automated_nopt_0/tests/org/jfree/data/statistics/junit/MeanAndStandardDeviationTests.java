@@ -79,37 +79,9 @@ public class MeanAndStandardDeviationTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testEquals159() { 
-     MeanAndStandardDeviation m1 = new MeanAndStandardDeviation(1.2, 3.4); 
-     MeanAndStandardDeviation m2 = new MeanAndStandardDeviation(1.2, 3.4); 
-     assertTrue(m1.equals(m2)); 
-     assertTrue(m2.equals(m1)); 
-     m1 = new MeanAndStandardDeviation(1.0, 3.4); 
-     assertFalse(m1.equals(m2)); 
-     m2 = new MeanAndStandardDeviation(1.0, 3.4); 
-     assertTrue(m1.equals(m2)); 
-     m1 = new MeanAndStandardDeviation(1.0, 3.0); 
-     assertFalse(m1.equals(m2)); 
-     m2 = new MeanAndStandardDeviation(1.0, 3.0); 
-     assertTrue(m1.equals(m2)); 
- }
-public void testSerialization161() { 
-     MeanAndStandardDeviation m1 = new MeanAndStandardDeviation(1.2, 3.4); 
-     MeanAndStandardDeviation m2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(m1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         m2 = (MeanAndStandardDeviation) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         System.out.println(e.toString()); 
-     } 
-     boolean b = m1.equals(m2); 
-     assertTrue(b); 
- }
+public void testEquals685() { MeanAndStandardDeviation m1 = new MeanAndStandardDeviation(1.0, 2.0); MeanAndStandardDeviation m2 = new MeanAndStandardDeviation(1.0, 2.0); assertTrue(m1.equals(m1)); assertTrue(m1.equals(m2)); }
+public void testEquals686() { MeanAndStandardDeviation m1 = new MeanAndStandardDeviation(1.0, 2.0); MeanAndStandardDeviation m2 = new MeanAndStandardDeviation(1.0, 2.0); assertEquals(m1, m2); assertEquals(m1.hashCode(), m2.hashCode()); }
+public void testEquals687() { MeanAndStandardDeviation m1 = new MeanAndStandardDeviation(1.0, 2.0); MeanAndStandardDeviation m2 = new MeanAndStandardDeviation(1.0, 2.0); assertEquals(m1, m2); assertEquals(m2, m1); m1 = new MeanAndStandardDeviation(2.0, 3.0); assertFalse(m1.equals(m2)); m2 = new MeanAndStandardDeviation(2.0, 3.0); assertEquals(m1, m2); }
     
 
     /**

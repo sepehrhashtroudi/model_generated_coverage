@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="sepehr-UX310UQK" name="org.jsoup.select.ElementsTest" skipped="0" tests="14" time="0.131" timestamp="2023-01-06T06:53:34">
+<testsuite errors="0" failures="2" hostname="sepehr-UX310UQK" name="org.jsoup.select.ElementsTest" skipped="0" tests="6" time="0.111" timestamp="2023-02-08T22:21:59">
   <properties>
     <property name="java.vendor" value="Private Build" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -15,7 +15,7 @@
     <property name="java.runtime.version" value="1.8.0_352-8u352-ga-1~20.04-b08" />
     <property name="maven.build.resourceDir.0" value="src/main/resources" />
     <property name="project.build.sourceEncoding" value="UTF-8" />
-    <property name="clover.project.historydir" value="/home/sepehr/masters/test_generation/all_projects_coverage/jsoup1f/.cloverhistory/jsoup" />
+    <property name="clover.project.historydir" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_automated_0/.cloverhistory/jsoup" />
     <property name="clover.flushinterval" value="100" />
     <property name="user.name" value="sepehr" />
     <property name="maven.build.outputDir" value="target/classes" />
@@ -36,21 +36,21 @@
     <property name="file.encoding.pkg" value="sun.io" />
     <property name="file.separator" value="/" />
     <property name="java.specification.name" value="Java Platform API Specification" />
-    <property name="clover.initstring" value="/home/sepehr/masters/test_generation/all_projects_coverage/jsoup1f/.clover/clover4_4_1.db" />
+    <property name="clover.initstring" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_automated_0/.clover/clover4_4_1.db" />
     <property name="java.class.version" value="52.0" />
     <property name="user.country" value="US" />
     <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre" />
-    <property name="clover.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/jsoup1f/clover" />
+    <property name="clover.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_automated_0/clover" />
     <property name="java.vm.info" value="mixed mode" />
-    <property name="ant.file" value="/home/sepehr/masters/test_generation/all_projects_coverage/jsoup1f/build.xml" />
-    <property name="os.version" value="5.15.0-56-generic" />
+    <property name="ant.file" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_automated_0/build.xml" />
+    <property name="os.version" value="5.15.0-58-generic" />
     <property name="maven.build.testOutputDir" value="target/test-classes" />
     <property name="path.separator" value=":" />
     <property name="java.vm.version" value="25.352-b08" />
     <property name="maven.build.dir" value="target" />
     <property name="maven.test.reports" value="target/test-reports" />
     <property name="ant.library.dir" value="/usr/share/ant/lib" />
-    <property name="clover.jar" value="/home/sepehr/masters/test_generation/all_projects_coverage/jsoup1f/${clover.home}/clover.jar" />
+    <property name="clover.jar" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_automated_0/${clover.home}/clover.jar" />
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
     <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
     <property name="java.specification.maintenance.version" value="4" />
@@ -58,7 +58,7 @@
     <property name="project.build.outputDirectory" value="target/classes" />
     <property name="user.home" value="/home/sepehr" />
     <property name="java.specification.vendor" value="Oracle Corporation" />
-    <property name="clover.dest" value="/home/sepehr/masters/test_generation/all_projects_coverage/jsoup1f/clover/jsoup" />
+    <property name="clover.dest" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_automated_0/clover/jsoup" />
     <property name="clover.span" value="1day" />
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
     <property name="java.vendor.url" value="http://java.oracle.com/" />
@@ -67,13 +67,13 @@
     <property name="java.vm.vendor" value="Private Build" />
     <property name="maven.settings.interactiveMode" value="true" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner org.jsoup.select.ElementsTest skipNonTests=false filtertrace=true haltOnError=true haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/all_projects_coverage/jsoup1f/target/test-reports/TEST-org.jsoup.select.ElementsTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/all_projects_coverage/jsoup1f/junitvmwatcher3252563560725228435.properties propsfile=/home/sepehr/masters/test_generation/all_projects_coverage/jsoup1f/junit3933135106709822182.properties" />
-    <property name="java.class.path" value="/home/sepehr/.ant/lib/clover.jar:/home/sepehr/.m2/repository/junit/junit/4.5/junit-4.5.jar:/home/sepehr/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/home/sepehr/masters/test_generation/all_projects_coverage/jsoup1f/target/classes:/home/sepehr/masters/test_generation/all_projects_coverage/jsoup1f/target/test-classes:/home/sepehr/.ant/lib/evosuite-1.0.6.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner org.jsoup.select.ElementsTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_automated_0/target/test-reports/TEST-org.jsoup.select.ElementsTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_automated_0/junitvmwatcher168403479385082842.properties propsfile=/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_automated_0/junit8679678492793290382.properties" />
+    <property name="java.class.path" value="/home/sepehr/.ant/lib/clover.jar:/home/sepehr/.m2/repository/junit/junit/4.5/junit-4.5.jar:/home/sepehr/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_automated_0/target/classes:/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_automated_0/target/test-classes:/home/sepehr/.ant/lib/evosuite-1.0.6.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.7 compiled on October 24 2019" />
     <property name="project.name" value="jsoup" />
     <property name="project.build.directory" value="target" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
-    <property name="clover.snapshot.file" value="/home/sepehr/masters/test_generation/all_projects_coverage/jsoup1f/.cloverhistory/jsoup/clover.snapshot" />
+    <property name="clover.snapshot.file" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_automated_0/.cloverhistory/jsoup/clover.snapshot" />
     <property name="ant.file.type" value="file" />
     <property name="java.vm.specification.version" value="1.8" />
     <property name="sun.os.patch.level" value="unknown" />
@@ -82,13 +82,13 @@
     <property name="junit.present" value="true" />
     <property name="project.title" value="jsoup" />
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
-    <property name="ant.file.jsoup-from-maven" value="/home/sepehr/masters/test_generation/all_projects_coverage/jsoup1f/maven-build.xml" />
+    <property name="ant.file.jsoup-from-maven" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_automated_0/maven-build.xml" />
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
     <property name="os.arch" value="amd64" />
     <property name="clover.jarpath" value="/home/sepehr/.ant/lib/clover.jar" />
     <property name="maven.build.testResourceDir.0" value="src/test/resources" />
     <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
-    <property name="user.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/jsoup1f" />
+    <property name="user.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_automated_0" />
     <property name="line.separator" value="&#xa;" />
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
     <property name="basedir" value="." />
@@ -96,27 +96,27 @@
     <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
     <property name="file.encoding" value="UTF-8" />
     <property name="build.compiler" value="com.atlassian.clover.ant.taskdefs.CloverCompilerAdapter" />
-    <property name="clover.historydir" value="/home/sepehr/masters/test_generation/all_projects_coverage/jsoup1f/.cloverhistory" />
+    <property name="clover.historydir" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_automated_0/.cloverhistory" />
     <property name="ant.file.type.jsoup" value="file" />
     <property name="java.specification.version" value="1.8" />
     <property name="ant.project.invoked-targets" value="with.clover,test,clover.report" />
-    <property name="ant.file.jsoup" value="/home/sepehr/masters/test_generation/all_projects_coverage/jsoup1f/build.xml" />
+    <property name="ant.file.jsoup" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_automated_0/build.xml" />
     <property name="clover.flushpolicy" value="directed" />
   </properties>
-  <testcase classname="org.jsoup.select.ElementsTest" name="is" time="0.053" />
-  <testcase classname="org.jsoup.select.ElementsTest" name="attributes" time="0.003" />
-  <testcase classname="org.jsoup.select.ElementsTest" name="classes" time="0.004" />
-  <testcase classname="org.jsoup.select.ElementsTest" name="wrap" time="0.002" />
-  <testcase classname="org.jsoup.select.ElementsTest" name="attr" time="0.001" />
-  <testcase classname="org.jsoup.select.ElementsTest" name="eq" time="0.002" />
-  <testcase classname="org.jsoup.select.ElementsTest" name="filter" time="0.002" />
-  <testcase classname="org.jsoup.select.ElementsTest" name="val" time="0.002" />
-  <testcase classname="org.jsoup.select.ElementsTest" name="hasAttr" time="0.001" />
+  <testcase classname="org.jsoup.select.ElementsTest" name="val" time="0.052">
+    <failure message="expected:&lt;[Hello]&gt; but was:&lt;[]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[Hello]&gt; but was:&lt;[]&gt;
+	at org.jsoup.select.ElementsTest.val(ElementsTest.java:18)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.ElementsTest" name="attributes" time="0.002">
+    <failure message="expected:&lt;0&gt; but was:&lt;2&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;0&gt; but was:&lt;2&gt;
+	at org.jsoup.select.ElementsTest.attributes(ElementsTest.java:32)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.ElementsTest" name="attributes3" time="0.001" />
+  <testcase classname="org.jsoup.select.ElementsTest" name="testSetHtml11" time="0.008" />
   <testcase classname="org.jsoup.select.ElementsTest" name="hasText" time="0.001" />
-  <testcase classname="org.jsoup.select.ElementsTest" name="text" time="0.001" />
-  <testcase classname="org.jsoup.select.ElementsTest" name="html" time="0.002" />
-  <testcase classname="org.jsoup.select.ElementsTest" name="outerHtml" time="0.002" />
-  <testcase classname="org.jsoup.select.ElementsTest" name="setHtml" time="0.004" />
+  <testcase classname="org.jsoup.select.ElementsTest" name="hasText2" time="0.001" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

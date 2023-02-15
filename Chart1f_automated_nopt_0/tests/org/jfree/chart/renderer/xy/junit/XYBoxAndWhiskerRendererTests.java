@@ -85,35 +85,7 @@ public class XYBoxAndWhiskerRendererTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
-public void testSerialization399() { 
-     XYBoxAndWhiskerRenderer r1 = new XYBoxAndWhiskerRenderer(); 
-     r1.setArtifactPaint(new GradientPaint(1.0f, 2.0f, Color.green, 3.0f, 4.0f, Color.red)); 
-     XYBoxAndWhiskerRenderer r2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(r1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         r2 = (XYBoxAndWhiskerRenderer) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(r1, r2); 
- }
-public void testCloning400() { 
-     XYBoxAndWhiskerRenderer r1 = new XYBoxAndWhiskerRenderer(); 
-     XYBoxAndWhiskerRenderer r2 = null; 
-     try { 
-         r2 = (XYBoxAndWhiskerRenderer) r1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(r1 != r2); 
-     assertTrue(r1.getClass() == r2.getClass()); 
-     assertTrue(r1.equals(r2)); 
- }
+public void testCloning1814() throws CloneNotSupportedException { XYBoxAndWhiskerRenderer r1 = new XYBoxAndWhiskerRenderer(); XYBoxAndWhiskerRenderer r2 = (XYBoxAndWhiskerRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
     
 
     /**

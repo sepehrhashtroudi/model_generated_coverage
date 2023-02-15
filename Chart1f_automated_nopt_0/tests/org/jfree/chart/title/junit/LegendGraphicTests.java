@@ -89,18 +89,7 @@ public class LegendGraphicTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
-public void testCloning1288() { 
-     LegendGraphic g1 = new LegendGraphic(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0), Color.black); 
-     LegendGraphic g2 = null; 
-     try { 
-         g2 = (LegendGraphic) g1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         System.err.println("Failed to clone."); 
-     } 
-     assertTrue(g1 != g2); 
-     assertTrue(g1.getClass() == g2.getClass()); 
-     assertTrue(g1.equals(g2)); 
- }
+public void testCloning6987() throws CloneNotSupportedException { LegendGraphic g1 = new LegendGraphic(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0), Color.RED); LegendGraphic g2 = (LegendGraphic) g1.clone(); assertNotSame(g1, g2); assertSame(g1.getClass(), g2.getClass()); assertEquals(g1, g2); }
     
 
     /**

@@ -95,6 +95,9 @@ public class XYDifferenceRendererTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
+public void testSetPositivePaint5036() { XYDifferenceRenderer r = new XYDifferenceRenderer(); try { r.setPositivePaint(null); fail(); } catch (IllegalArgumentException e) { } try { r.setPositivePaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); fail(); } catch (IllegalArgumentException e) { } try { r.setPositivePaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); fail(); } catch (IllegalArgumentException e) { } }
+public void testEquals5037() { XYDifferenceRenderer r1 = new XYDifferenceRenderer(); r1.setPositivePaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); XYDifferenceRenderer r2 = new XYDifferenceRenderer(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE), new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE), false); assertEquals(r1, r2); }
+public void testSetNegativePaint5040() { XYDifferenceRenderer r = new XYDifferenceRenderer(); try { r.setNegativePaint(null); fail(); } catch (IllegalArgumentException e) { } try { r.setNegativePaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); fail(); } catch (IllegalArgumentException e) { } try { r.setNegativePaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); fail(); } catch (IllegalArgumentException e) { } }
     
 
     /**

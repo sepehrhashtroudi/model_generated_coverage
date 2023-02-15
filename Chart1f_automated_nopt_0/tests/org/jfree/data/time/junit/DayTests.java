@@ -106,33 +106,10 @@ public class DayTests extends TestCase {
      *
      * SourceForge Bug ID: 558850.
      */
-public void test1Jan1900Next590() { 
-     Day jan1st1900 = new Day(1, MonthConstants.JANUARY, 1900); 
-     Day next = (Day) jan1st1900.next(); 
-     assertEquals(2, next.getDayOfMonth()); 
- }
-public void testEquals595() { 
-     Day d1 = new Day(1, 1, 1900); 
-     Day d2 = new Day(1, 1, 1900); 
-     assertTrue(d1.equals(d2)); 
-     assertTrue(d2.equals(d1)); 
-     d1 = new Day(2, 2, 1900); 
-     assertFalse(d1.equals(d2)); 
-     d2 = new Day(2, 2, 1900); 
-     assertTrue(d1.equals(d2)); 
-     d1 = new Day(2, 2, 1900); 
-     assertFalse(d1.equals(d2)); 
-     d2 = new Day(2, 2, 1900); 
-     assertTrue(d1.equals(d2)); 
- }
-public void testHashcode596() { 
-     Day d1 = new Day(1, 1, 1900); 
-     Day d2 = new Day(1, 1, 1900); 
-     assertTrue(d1.equals(d2)); 
-     int h1 = d1.hashCode(); 
-     int h2 = d2.hashCode(); 
-     assertEquals(h1, h2); 
- }
+public void testDay2918() { Day d = new Day(1, 4, 1970); assertEquals(1, d.getDayOfMonth()); assertEquals(4, d.getMonth()); assertEquals(1970, d.getYear()); assertEquals(4, d.getDayOfMonth()); }
+public void testDay2920() { Day d = new Day(1, 12, 1970); assertEquals(1, d.getDayOfMonth()); assertEquals(12, d.getMonth()); assertEquals(1970, d.getYear()); assertEquals(12, d.getDayOfMonth()); assertEquals(1970, d.getFirstMillisecond()); }
+public void testGetMonth2922() { Day d = new Day(1, 1, 1900); assertEquals(1, d.getMonth()); d = new Day(1, 2, 1900); assertEquals(2, d.getMonth()); d = new Day(1, 3, 1900); assertEquals(3, d.getMonth()); d = new Day(1, 4, 1900); assertEquals(4, d.getMonth()); d = new Day(1, 5, 1900); assertEquals(5, d.getMonth()); }
+public void testGetMonth2923() { Day d = new Day(); assertEquals(0, d.getMonth()); d = new Day(1, 1, 1900); assertEquals(1, d.getMonth()); d = new Day(1, 2, 1900); assertEquals(2, d.getMonth()); d = new Day(1, 3, 1900); assertEquals(3, d.getMonth()); d = new Day(1, 4, 1900); assertEquals(4, d.getMonth()); d = new Day(1, 5, 1900); assertEquals(5, d.getMonth()); }
     
 
     /**

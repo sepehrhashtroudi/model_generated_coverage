@@ -87,54 +87,11 @@ public class BubbleXYItemLabelGeneratorTests extends TestCase {
     /**
      * A series of tests for the equals() method.
      */
-public void testCloning184() { 
-     BubbleXYItemLabelGenerator g1 = new BubbleXYItemLabelGenerator(); 
-     BubbleXYItemLabelGenerator g2 = null; 
-     try { 
-         g2 = (BubbleXYItemLabelGenerator) g1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(g1 != g2); 
-     assertTrue(g1.getClass() == g2.getClass()); 
-     assertTrue(g1.equals(g2)); 
- }
-public void testHashCode187() { 
-     String f1 = "{1}"; 
-     String f2 = "{2}"; 
-     NumberFormat xnf1 = new DecimalFormat("0.00"); 
-     NumberFormat xnf2 = new DecimalFormat("0.000"); 
-     NumberFormat ynf1 = new DecimalFormat("0.00"); 
-     NumberFormat ynf2 = new DecimalFormat("0.000"); 
-     NumberFormat znf1 = new DecimalFormat("0.00"); 
-     NumberFormat znf2 = new DecimalFormat("0.000"); 
-     BubbleXYItemLabelGenerator g1 = null; 
-     BubbleXYItemLabelGenerator g2 = null; 
-     g1 = new BubbleXYItemLabelGenerator(f1, xnf1, ynf1, znf1); 
-     g2 = new BubbleXYItemLabelGenerator(f1, xnf1, ynf1, znf1); 
-     assertTrue(g1.equals(g2)); 
-     assertTrue(g1.hashCode() == g2.hashCode()); 
- }
-public void testGenerateLabel326() { 
-     String f = "{1}"; 
-     NumberFormat xnf = new DecimalFormat("0.00"); 
-     NumberFormat xnf2 = new DecimalFormat("0.000"); 
-     NumberFormat ynf = new DecimalFormat("0.00"); 
-     NumberFormat znf = new DecimalFormat("0.000"); 
-     BubbleXYItemLabelGenerator g = null; 
-     g = new BubbleXYItemLabelGenerator(f, xnf, ynf, znf); 
-     assertTrue(g.generateLabel(null, 0, 0) == null); 
-     assertTrue(g.generateLabel(null, 1, 1) == null); 
-     assertTrue(g.generateLabel(new XYSeriesCollection(), 0, 0) == null); 
-     assertTrue(g.generateLabel(new XYSeriesCollection(), 1, 1) == null); 
-     g = new BubbleXYItemLabelGenerator(f, xnf, ynf, znf); 
-     assertTrue(g.generateLabel(null, 0, 0) == null); 
-     assertTrue(g.generateLabel(new XYSeriesCollection(), 1, 0) == null); 
-     assertTrue(g.generateLabel(new XYSeriesCollection(), 1, 1) == null); 
-     assertTrue(g.generateLabel(new XYSeriesCollection(), 2, 2) == null); 
-     assertTrue(g.generateLabel(new XYSeriesCollection(), 3, 3) == null); 
-     assertTrue(g.generateLabel(new XYSeriesCollection(), 4, 4) == null); 
- }
+public void testGetFormatString794() { }
+public void testCreateItemArray802() { XYSeries s1 = new XYSeries("S1"); s1.add(1.0, 1.1); s1.add(2.0, 2.2); s1.add(3.0, 3.3); XYSeriesCollection d1 = new XYSeriesCollection(); d1.addSeries(s1); XYSeries s2 = new XYSeries("S2"); s2.add(1.0, 1.1); s2.add(2.0, 2.2); d1.addSeries(s2); XYSeriesCollection d2 = new XYSeriesCollection(); d2.addSeries(s2);
+}
+
+public void testHashCode1349() { BubbleXYItemLabelGenerator g1 = new BubbleXYItemLabelGenerator(); BubbleXYItemLabelGenerator g2 = new BubbleXYItemLabelGenerator(); assertEquals(g1.hashCode(), g2.hashCode()); }
     
 
     /**

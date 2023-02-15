@@ -84,26 +84,8 @@ public class DateTickTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testCloning233() { 
-     DateTick t1 = new DateTick(new Date(0L), "Label", TextAnchor.CENTER, TextAnchor.CENTER, 10.0); 
-     DateTick t2 = null; 
-     try { 
-         t2 = (DateTick) t1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(t1 != t2); 
-     assertTrue(t1.getClass() == t2.getClass()); 
-     assertTrue(t1.equals(t2)); 
- }
-public void testHashCode234() { 
-     DateTick t1 = new DateTick(new Date(0L), "Label", TextAnchor.CENTER, TextAnchor.CENTER, 10.0); 
-     DateTick t2 = new DateTick(new Date(0L), "Label", TextAnchor.CENTER, TextAnchor.CENTER, 10.0); 
-     assertTrue(t1.equals(t2)); 
-     int h1 = t1.hashCode(); 
-     int h2 = t2.hashCode(); 
-     assertEquals(h1, h2); 
- }
+public void testHashCode962() { Date d1 = new Date(1); Date d2 = new Date(1); String l1 = "Label 1"; String l2 = "Label 2"; TextAnchor ta1 = TextAnchor.CENTER; TextAnchor ta2 = TextAnchor.CENTER; DateTick t1 = new DateTick(d1, l1, ta1, ta1, Math.PI / 2.0); DateTick t2 = new DateTick(d2, l1, ta1, ta2, Math.PI / 2.0); assertEquals(t1.hashCode(), t2.hashCode()); }
+public void testHashCode963() { Date d1 = new Date(1); Date d2 = new Date(1); String l1 = "Label 1"; String l2 = "Label 2"; TextAnchor ta1 = TextAnchor.CENTER; TextAnchor ta2 = TextAnchor.CENTER; DateTick t1 = new DateTick(d1, l1, ta1, ta1, Math.PI / 2.0); DateTick t2 = new DateTick(d2, l1, ta1, ta1, Math.PI / 2.0); assertEquals(t1.hashCode(), t2.hashCode()); }
     
 
     /**

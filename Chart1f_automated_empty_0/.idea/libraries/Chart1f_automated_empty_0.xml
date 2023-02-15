@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Chart1f_automated_empty_0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jfreechart-1.2.0-ea1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfreechart-1.2.0-ea1.zip!/" />
+      <root url="jar://$PROJECT_DIR$/jfreechart-1.2.0-ea1-javadocs.zip!/" />
+      <root url="jar://$PROJECT_DIR$/jfreechart-1.2.0-ea1-experimental.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfreechart-1.2.0-ea1-bundle.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

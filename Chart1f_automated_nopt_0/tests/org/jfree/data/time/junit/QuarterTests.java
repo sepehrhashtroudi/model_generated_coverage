@@ -115,81 +115,20 @@ public class QuarterTests extends TestCase {
      *
      * SourceForge Bug ID: 558850.
      */
-public void testDateConstructor11421() { 
-     TimeZone zone = TimeZone.getTimeZone("GMT"); 
-     Calendar c = new GregorianCalendar(zone); 
-     Quarter q1 = new Quarter(new Date(1017619199999L), zone, Locale.getDefault()); 
-     Quarter q2 = new Quarter(new Date(1017619200000L), zone, Locale.getDefault()); 
-     assertEquals(1, q1.getQuarter()); 
-     assertEquals(1017619199999L, q1.getLastMillisecond(c)); 
-     assertEquals(2, q2.getQuarter()); 
-     assertEquals(1017619200000L, q2.getFirstMillisecond(c)); 
- }
-public void testQ4Y9999Previous1437() { 
-     Quarter previous = (Quarter) this.q4Y9999.previous(); 
-     assertEquals(this.q3Y9999, previous); 
- }
-public void testParseQuarter1438() { 
-     Quarter quarter = null; 
-     try { 
-         quarter = Quarter.parseQuarter("Q1-2000"); 
-     } catch (TimePeriodFormatException e) { 
-         quarter = new Quarter(1, 1900); 
-     } 
-     assertEquals(1, quarter.getQuarter()); 
-     assertEquals(2000, quarter.getYear().getYear()); 
-     try { 
-         quarter = Quarter.parseQuarter("2001-Q2"); 
-     } catch (TimePeriodFormatException e) { 
-         quarter = new Quarter(1, 1900); 
-     } 
-     assertEquals(2, quarter.getQuarter()); 
-     assertEquals(2001, quarter.getYear().getYear()); 
-     try { 
-         quarter = Quarter.parseQuarter("Q3, 2002"); 
-     } catch (TimePeriodFormatException e) { 
-         quarter = new Quarter(1, 1900); 
-     } 
-     assertEquals(3, quarter.getQuarter()); 
-     assertEquals(2002, quarter.getYear().getYear()); 
- }
-public void testGetLastMillisecond1439() { 
-     Locale saved = Locale.getDefault(); 
-     Locale.setDefault(Locale.UK); 
-     TimeZone savedZone = TimeZone.getDefault(); 
-     TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); 
-     Quarter q = new Quarter(3, 1970); 
-     assertEquals(15634800000L, q.getLastMillisecond()); 
-     Locale.setDefault(saved); 
-     TimeZone.setDefault(savedZone); 
- }
-public void testGetSerialIndex1440() { 
-     Quarter q = new Quarter(1, 2000); 
-     assertEquals(3155850061500L, q.getSerialIndex()); 
-     q = new Quarter(1, 1900); 
-     assertEquals(176461500L, q.getSerialIndex()); 
- }
-public void testHashcode1441() { 
-     Quarter q1 = new Quarter(1, 1900); 
-     Quarter q2 = new Quarter(1, 1900); 
-     assertTrue(q1.equals(q2)); 
-     int h1 = q1.hashCode(); 
-     int h2 = q2.hashCode(); 
-     assertEquals(h1, h2); 
- }
-public void testGetFirstMillisecondWithCalendar1442() { 
-     Quarter q = new Quarter(3, 1970); 
-     GregorianCalendar calendar = new GregorianCalendar(Locale.GERMANY); 
-     calendar.setTimeZone(TimeZone.getTimeZone("Europe/Frankfurt")); 
-     assertEquals(15634800000L, q.getFirstMillisecond(calendar)); 
-     boolean pass = false; 
-     try { 
-         q.getFirstMillisecond((Calendar) null); 
-     } catch (NullPointerException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
+public void testQuarter8613() { Quarter q1 = new Quarter(1, 2001); assertEquals(1, q1.getQuarter()); q1 = new Quarter(2, 2001); assertEquals(2, q1.getQuarter()); q1 = new Quarter(3, 2001); assertEquals(3, q1.getQuarter()); q1 = new Quarter(4, 2001); assertEquals(4, q1.getQuarter()); q1 = new Quarter(5, 2001); assertEquals(5, q1.getQuarter()); }
+public void testGetLastMillisecond8627() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Quarter q = new Quarter(0, 1970); assertEquals(0, q.getLastMillisecond()); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testGetSerialIndex8630() { Quarter q = new Quarter(1, 2001); assertEquals(1, q.getSerialIndex()); q = new Quarter(2, 2001); assertEquals(2, q.getSerialIndex()); q = new Quarter(3, 2001); assertEquals(3, q.getSerialIndex()); q = new Quarter(4, 2001); assertEquals(4, q.getSerialIndex()); q = new Quarter(5, 2001); assertEquals(5, q.getSerialIndex()); }
+public void testGetSerialIndex8631() { Quarter q1 = new Quarter(1, 2001); assertEquals(1L, q1.getSerialIndex()); q1 = new Quarter(2, 2001); assertEquals(2L, q1.getSerialIndex()); q1 = new Quarter(3, 2001); assertEquals(3L, q1.getSerialIndex()); q1 = new Quarter(4, 2001); assertEquals(4L, q1.getSerialIndex()); q1 = new Quarter(5, 2001); assertEquals(5L, q1.getSerialIndex()); }
+public void testHashCode8632() { Quarter q1 = new Quarter(1, 2001); Quarter q2 = new Quarter(1, 2001); int h1 = q1.hashCode(); int h2 = q2.hashCode(); assertEquals(h1, h2); }
+public void testHashCode8633() { Quarter q1 = new Quarter(1, 2001); Quarter q2 = new Quarter(1, 2001); assertEquals(q1, q2); int h1 = q1.hashCode(); int h2 = q2.hashCode(); assertEquals(h1, h2); }
+public void testGetFirstMillisecond8635() { Quarter q1 = new Quarter(1, 1950); Calendar c = new GregorianCalendar(Locale.GERMANY); assertEquals(0, q1.getFirstMillisecond(c)); try { q1.getFirstMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } try { q1.getFirstMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } }
+public void testGetFirstMillisecond8636() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Quarter q1 = new Quarter(1, 1970); Calendar c1 = new GregorianCalendar(saved); assertEquals(0, q1.getFirstMillisecond(c1)); Locale.setDefault(saved); TimeZone.setDefault(savedZone); Calendar c2 = new GregorianCalendar(saved); assertEquals(0, q1.getFirstMillisecond(c2)); }
+public void testGetFirstMillisecond8637() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Quarter q1 = new Quarter(1, 1970); Calendar c1 = new GregorianCalendar(saved); assertEquals(0, q1.getFirstMillisecond(c1)); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testGetFirstMillisecond8638() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Quarter q = new Quarter(1, 1970); Calendar c = new GregorianCalendar(saved); assertEquals(0, q.getFirstMillisecond(c)); try { q.getFirstMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } }
+public void testGetLastMillisecond8640() { Quarter q1 = new Quarter(1, 1950); Calendar c = new GregorianCalendar(Locale.GERMANY); assertEquals(0, q1.getLastMillisecond(c)); try { q1.getLastMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } try { q1.getLastMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } }
+public void testGetLastMillisecond8642() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Quarter q1 = new Quarter(1, 1970); Calendar c1 = new GregorianCalendar(saved); assertEquals(0, q1.getLastMillisecond(c1)); Locale.setDefault(saved); TimeZone.setDefault(savedZone); Calendar c2 = new GregorianCalendar(saved); assertEquals(0, q1.getLastMillisecond(c2)); }
+public void testGetLastMillisecond8643() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Quarter q1 = new Quarter(1, 1970); Calendar c1 = new GregorianCalendar(saved); assertEquals(999, q1.getLastMillisecond(c1)); Locale.setDefault(saved); TimeZone.setDefault(savedZone); Calendar c2 = new GregorianCalendar(saved); assertEquals(999, q1.getLastMillisecond(c2)); }
+public void testGetLastMillisecond8644() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Quarter q1 = new Quarter(1, 1970); Calendar c = new GregorianCalendar(saved); assertEquals(0, q1.getLastMillisecond(c)); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
     
 
     /**

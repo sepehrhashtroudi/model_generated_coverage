@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="20" hostname="sepehr-UX310UQK" name="org.jsoup.select.SelectorTest" skipped="0" tests="23" time="0.171" timestamp="2023-02-09T19:41:59">
+  <properties>
+    <property name="java.vendor" value="Private Build" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="ant.file.type.jsoup-from-maven" value="file" />
+    <property name="maven.build.srcDir.0" value="src/main/java" />
+    <property name="os.name" value="Linux" />
+    <property name="clover.historical.json" value="true" />
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes" />
+    <property name="sun.desktop" value="gnome" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="java.runtime.version" value="1.8.0_352-8u352-ga-1~20.04-b08" />
+    <property name="maven.build.resourceDir.0" value="src/main/resources" />
+    <property name="project.build.sourceEncoding" value="UTF-8" />
+    <property name="clover.project.historydir" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/.cloverhistory/jsoup" />
+    <property name="clover.flushinterval" value="100" />
+    <property name="user.name" value="sepehr" />
+    <property name="maven.build.outputDir" value="target/classes" />
+    <property name="maven.repo.local" value="/home/sepehr/.m2/repository" />
+    <property name="maven.build.finalName" value="jsoup-1.1.2-SNAPSHOT" />
+    <property name="maven.build.testDir.0" value="src/test/java" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64" />
+    <property name="ant.project.default-target" value="package" />
+    <property name="maven.reporting.outputDirectory" value="target/site" />
+    <property name="ant.project.name" value="jsoup" />
+    <property name="java.version" value="1.8.0_352" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="clover.initstring" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/.clover/clover4_4_1.db" />
+    <property name="java.class.version" value="52.0" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre" />
+    <property name="clover.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/clover" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/build.xml" />
+    <property name="os.version" value="5.15.0-58-generic" />
+    <property name="maven.build.testOutputDir" value="target/test-classes" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="25.352-b08" />
+    <property name="maven.build.dir" value="target" />
+    <property name="maven.test.reports" value="target/test-reports" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="clover.jar" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/${clover.home}/clover.jar" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="java.specification.maintenance.version" value="4" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="project.build.outputDirectory" value="target/classes" />
+    <property name="user.home" value="/home/sepehr" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="clover.dest" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/clover/jsoup" />
+    <property name="clover.span" value="1day" />
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="test.target" value="test" />
+    <property name="maven.settings.offline" value="false" />
+    <property name="java.vm.vendor" value="Private Build" />
+    <property name="maven.settings.interactiveMode" value="true" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner org.jsoup.select.SelectorTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/target/test-reports/TEST-org.jsoup.select.SelectorTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/junitvmwatcher1767156865263939452.properties propsfile=/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/junit5582884961709247594.properties" />
+    <property name="java.class.path" value="/home/sepehr/.ant/lib/clover.jar:/home/sepehr/.m2/repository/junit/junit/4.5/junit-4.5.jar:/home/sepehr/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/target/classes:/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/target/test-classes:/home/sepehr/.ant/lib/evosuite-1.0.6.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.7 compiled on October 24 2019" />
+    <property name="project.name" value="jsoup" />
+    <property name="project.build.directory" value="target" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="clover.snapshot.file" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/.cloverhistory/jsoup/clover.snapshot" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="junit.present" value="true" />
+    <property name="project.title" value="jsoup" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="ant.file.jsoup-from-maven" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/maven-build.xml" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="os.arch" value="amd64" />
+    <property name="clover.jarpath" value="/home/sepehr/.ant/lib/clover.jar" />
+    <property name="maven.build.testResourceDir.0" value="src/test/resources" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="user.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="basedir" value="." />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="build.compiler" value="com.atlassian.clover.ant.taskdefs.CloverCompilerAdapter" />
+    <property name="clover.historydir" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/.cloverhistory" />
+    <property name="ant.file.type.jsoup" value="file" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="ant.project.invoked-targets" value="with.clover,test,clover.report" />
+    <property name="ant.file.jsoup" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/build.xml" />
+    <property name="clover.flushpolicy" value="directed" />
+  </properties>
+  <testcase classname="org.jsoup.select.SelectorTest" name="findElements" time="0.058">
+    <failure message="expected:&lt;Hello []&gt; but was:&lt;Hello [there]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;Hello []&gt; but was:&lt;Hello [there]&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_195cr8p1vp(SelectorTest.java:19)
+	at org.jsoup.select.SelectorTest.findElements(SelectorTest.java:19)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="findElements3" time="0.006">
+    <failure message="expected:&lt;2&gt; but was:&lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;2&gt; but was:&lt;0&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_1oh735i1vv(SelectorTest.java:21)
+	at org.jsoup.select.SelectorTest.findElements3(SelectorTest.java:21)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="findElements2" time="0.003">
+    <failure message="expected:&lt;1&gt; but was:&lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;1&gt; but was:&lt;0&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_1rq71xz1w4(SelectorTest.java:23)
+	at org.jsoup.select.SelectorTest.findElements2(SelectorTest.java:23)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="findElements1" time="0.003">
+    <failure message="expected:&lt;1&gt; but was:&lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;1&gt; but was:&lt;0&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_1uz70qg1wc(SelectorTest.java:25)
+	at org.jsoup.select.SelectorTest.findElements1(SelectorTest.java:25)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="byAttribute" time="0.002">
+    <failure message="expected:&lt;2&gt; but was:&lt;1&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;2&gt; but was:&lt;1&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_1ma15m41wk(SelectorTest.java:27)
+	at org.jsoup.select.SelectorTest.byAttribute(SelectorTest.java:27)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="indexLessThan" time="0.003">
+    <failure message="expected:&lt;3&gt; but was:&lt;2&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;3&gt; but was:&lt;2&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_1kyumc31wq(SelectorTest.java:29)
+	at org.jsoup.select.SelectorTest.indexLessThan(SelectorTest.java:29)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="indexGreaterThan" time="0.002">
+    <failure message="expected:&lt;3&gt; but was:&lt;1&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;3&gt; but was:&lt;1&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_1gg3tcg1wx(SelectorTest.java:31)
+	at org.jsoup.select.SelectorTest.indexGreaterThan(SelectorTest.java:31)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="consumeIndex5" time="0.003">
+    <failure message="expected:&lt;3&gt; but was:&lt;2&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;3&gt; but was:&lt;2&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_1pm19gm1x4(SelectorTest.java:33)
+	at org.jsoup.select.SelectorTest.consumeIndex5(SelectorTest.java:33)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="consumeIndex4" time="0.003">
+    <failure message="expected:&lt;3&gt; but was:&lt;1&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;3&gt; but was:&lt;1&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_1md1ao51xd(SelectorTest.java:35)
+	at org.jsoup.select.SelectorTest.consumeIndex4(SelectorTest.java:35)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="consumeIndex3" time="0.003">
+    <failure message="expected:&lt;3&gt; but was:&lt;2&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;3&gt; but was:&lt;2&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_1j41bvo1xk(SelectorTest.java:37)
+	at org.jsoup.select.SelectorTest.consumeIndex3(SelectorTest.java:37)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="consumeIndex2" time="0.003">
+    <error message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at org.jsoup.select.Elements.get(Elements.java:354)
+	at org.jsoup.select.SelectorTest.__CLR4_4_1fv1d371xs(SelectorTest.java:39)
+	at org.jsoup.select.SelectorTest.consumeIndex2(SelectorTest.java:39)
+</error>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="consumeIndex1" time="0.002">
+    <failure message="expected:&lt;1&gt; but was:&lt;2&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;1&gt; but was:&lt;2&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_1cm1eaq1xz(SelectorTest.java:41)
+	at org.jsoup.select.SelectorTest.consumeIndex1(SelectorTest.java:41)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="filterForAdjacentSiblings1" time="0.003">
+    <failure message="expected:&lt;3&gt; but was:&lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;3&gt; but was:&lt;0&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_1nsdpkk1y8(SelectorTest.java:43)
+	at org.jsoup.select.SelectorTest.filterForAdjacentSiblings1(SelectorTest.java:43)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="testFilterForAdjacentSiblings65" time="0.003">
+    <failure message="expected:&lt;3&gt; but was:&lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;3&gt; but was:&lt;0&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_1o9oqs81yf(SelectorTest.java:45)
+	at org.jsoup.select.SelectorTest.testFilterForAdjacentSiblings65(SelectorTest.java:45)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="filterForAdjacentSiblings" time="0.002" />
+  <testcase classname="org.jsoup.select.SelectorTest" name="testFilterForAdjacentSiblings67" time="0.002" />
+  <testcase classname="org.jsoup.select.SelectorTest" name="testFilterForAdjacentSiblings68" time="0.002">
+    <failure message="expected:&lt;3&gt; but was:&lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;3&gt; but was:&lt;0&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_1y0on5n1z0(SelectorTest.java:51)
+	at org.jsoup.select.SelectorTest.testFilterForAdjacentSiblings68(SelectorTest.java:51)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="testGetElementsByAttributeValueNot113" time="0.002">
+    <failure message="expected:&lt;2&gt; but was:&lt;8&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;2&gt; but was:&lt;8&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_11zyziq1z7(SelectorTest.java:53)
+	at org.jsoup.select.SelectorTest.testGetElementsByAttributeValueNot113(SelectorTest.java:53)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="testGetElementsByAttributeValueEnding114" time="0.002">
+    <failure message="expected:&lt;2&gt; but was:&lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;2&gt; but was:&lt;0&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_1d650z71zd(SelectorTest.java:55)
+	at org.jsoup.select.SelectorTest.testGetElementsByAttributeValueEnding114(SelectorTest.java:55)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="testCollect116" time="0.002">
+    <failure message="expected:&lt;2&gt; but was:&lt;3&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;2&gt; but was:&lt;3&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_1i3ejxh1zr(SelectorTest.java:59)
+	at org.jsoup.select.SelectorTest.testCollect116(SelectorTest.java:59)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="combinator" time="0.002">
+    <failure message="expected:&lt;3&gt; but was:&lt;2&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;3&gt; but was:&lt;2&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_1r7vfgd1va(SelectorTest.java:15)
+	at org.jsoup.select.SelectorTest.combinator(SelectorTest.java:15)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="combinator1" time="0.002">
+    <failure message="expected:&lt;[One]&gt; but was:&lt;[p]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[One]&gt; but was:&lt;[p]&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_1mwdfj81vh(SelectorTest.java:17)
+	at org.jsoup.select.SelectorTest.combinator1(SelectorTest.java:17)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.select.SelectorTest" name="collect" time="0.003">
+    <failure message="expected:&lt;Three[]&gt; but was:&lt;Three[p&gt;]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;Three[]&gt; but was:&lt;Three[p&gt;]&gt;
+	at org.jsoup.select.SelectorTest.__CLR4_4_1fq6hfz1zk(SelectorTest.java:57)
+	at org.jsoup.select.SelectorTest.collect(SelectorTest.java:57)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -87,32 +87,10 @@ public class PiePlot3DTests extends TestCase {
     /**
      * Some checks for the equals() method.
      */
-public void testCloning955() { 
-     PiePlot3D p1 = new PiePlot3D(); 
-     PiePlot3D p2 = null; 
-     try { 
-         p2 = (PiePlot3D) p1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(p1 != p2); 
-     assertTrue(p1.getClass() == p2.getClass()); 
-     assertTrue(p1.equals(p2)); 
- }
-public void testEquals956() { 
-     PiePlot3D p1 = new PiePlot3D(null); 
-     PiePlot3D p2 = new PiePlot3D(null); 
-     assertTrue(p1.equals(p2)); 
-     assertTrue(p2.equals(p1)); 
-     p1.setDepthFactor(0.123); 
-     assertFalse(p1.equals(p2)); 
-     p2.setDepthFactor(0.123); 
-     assertTrue(p1.equals(p2)); 
-     p1.setDarkerSides(true); 
-     assertFalse(p1.equals(p2)); 
-     p2.setDarkerSides(true); 
-     assertTrue(p1.equals(p2)); 
- }
+public void testSetDarkerSides5030() { PiePlot3D p1 = new PiePlot3D(); p1.setDarkerSides(true); assertEquals(true, p1.getDarkerSides()); p1.setDarkerSides(false); assertEquals(false, p1.getDarkerSides()); p1.setDarkerSides(true); assertEquals(true, p1.getDarkerSides()); p1.setDarkerSides(true); assertEquals(true, p1.getDarkerSides()); }
+public void testEquals5032() { PiePlot3D p1 = new PiePlot3D(); PiePlot3D p2 = new PiePlot3D(); assertEquals(p1, p2); assertEquals(p2, p1); p1.setDepthFactor(0.5); assertFalse(p1.equals(p2)); p2.setDepthFactor(0.5); assertEquals(p1, p2); }
+public void testEquals5033() { PiePlot3D p1 = new PiePlot3D(); PiePlot3D p2 = new PiePlot3D(); assertEquals(p1, p2); p1.setDepthFactor(0.5); assertFalse(p1.equals(p2)); p2.setDepthFactor(0.5); assertEquals(p1, p2); }
+public void testEquals5034() { PiePlot3D p1 = new PiePlot3D(); PiePlot3D p2 = new PiePlot3D(); assertEquals(p1, p2); p1.setDepthFactor(0.5); assertFalse(p1.equals(p2)); p2.setDepthFactor(0.5); assertEquals(p1, p2); p1.setDarkerSides(true); assertFalse(p1.equals(p2)); p2.setDarkerSides(true); assertEquals(p1, p2); }
     
 
     /**

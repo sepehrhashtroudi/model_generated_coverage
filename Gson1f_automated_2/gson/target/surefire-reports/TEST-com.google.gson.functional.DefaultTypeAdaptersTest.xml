@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="com.google.gson.functional.DefaultTypeAdaptersTest" time="0.019" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="com.google.gson.functional.DefaultTypeAdaptersTest" time="0.016" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -66,8 +66,8 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase classname="com.google.gson.functional.DefaultTypeAdaptersTest" name="testUuidDeserialization40" time="0.003"/>
-  <testcase classname="com.google.gson.functional.DefaultTypeAdaptersTest" name="testLocaleDeserializationWithLanguage41" time="0.005"/>
+  <testcase classname="com.google.gson.functional.DefaultTypeAdaptersTest" name="testLocaleDeserializationWithLanguage41" time="0.001"/>
   <testcase classname="com.google.gson.functional.DefaultTypeAdaptersTest" name="testBigIntegerFieldDeserialization43" time="0.003"/>
-  <testcase classname="com.google.gson.functional.DefaultTypeAdaptersTest" name="testPropertiesSerialization47" time="0.007"/>
+  <testcase classname="com.google.gson.functional.DefaultTypeAdaptersTest" name="testPropertiesSerialization47" time="0.008"/>
   <testcase classname="com.google.gson.functional.DefaultTypeAdaptersTest" name="testUuidDeserialization39" time="0.001"/>
 </testsuite>

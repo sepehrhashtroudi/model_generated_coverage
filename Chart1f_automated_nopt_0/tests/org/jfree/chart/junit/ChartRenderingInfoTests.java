@@ -84,51 +84,8 @@ public class ChartRenderingInfoTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testCloning1172() { 
-     ChartRenderingInfo i1 = new ChartRenderingInfo(); 
-     ChartRenderingInfo i2 = null; 
-     try { 
-         i2 = (ChartRenderingInfo) i1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(i1 != i2); 
-     assertTrue(i1.getClass() == i2.getClass()); 
-     assertTrue(i1.equals(i2)); 
-     i1.getChartArea().setRect(4.0, 3.0, 2.0, 1.0); 
-     assertFalse(i1.equals(i2)); 
-     i2.getChartArea().setRect(4.0, 3.0, 2.0, 1.0); 
-     assertTrue(i1.equals(i2)); 
-     i1.getEntityCollection().add(new ChartEntity(new Rectangle(1, 2, 2, 1))); 
-     assertFalse(i1.equals(i2)); 
-     i2.getEntityCollection().add(new ChartEntity(new Rectangle(1, 2, 2, 1))); 
-     assertTrue(i1.equals(i2)); 
- }
-public void testSerialization1173() { 
-     ChartRenderingInfo i1 = new ChartRenderingInfo(); 
-     ChartRenderingInfo i2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(i1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         i2 = (ChartRenderingInfo) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         System.out.println(e.toString()); 
-     } 
-     assertEquals(i1, i2); 
-     assertEquals(i2, i2); 
-     i1.getChartArea().setRect(4.0, 3.0, 2.0, 1.0); 
-     assertFalse(i1.equals(i2)); 
-     i2.getChartArea().setRect(4.0, 3.0, 2.0, 1.0); 
-     assertTrue(i1.equals(i2)); 
-     i1.getEntityCollection().add(new ChartEntity(new Rectangle(1, 2, 2, 1))); 
-     assertFalse(i1.equals(i2)); 
-     i2.getEntityCollection().add(new ChartEntity(new Rectangle(1, 2, 2, 1))); 
-     assertTrue(i1.equals(i2)); 
- }
+public void testSetChartArea6161() { System.out.println("setChartArea"); Rectangle2D area = new Rectangle2D.Double(0.0, 0.0, 50.0, 50.0); ChartRenderingInfo instance = new ChartRenderingInfo(); instance.setChartArea(area); Rectangle2D expResult = new Rectangle2D.Double(0.0, 0.0, 50.0, 50.0); instance.setChartArea(expResult); Rectangle2D result = instance.getChartArea(); assertEquals(expResult, result); }
+public void testEquals6170() { ChartRenderingInfo e1 = new ChartRenderingInfo(); ChartRenderingInfo e2 = new ChartRenderingInfo(); assertEquals(e1, e2); e1.setChartArea(new Rectangle2D.Double(1, 2, 3, 4)); assertFalse(e1.equals(e2)); e2.setChartArea(new Rectangle2D.Double(1, 2, 3, 4)); assertEquals(e1, e2); }
     
 
     /**

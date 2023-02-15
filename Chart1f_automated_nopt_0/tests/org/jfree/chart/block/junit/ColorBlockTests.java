@@ -82,40 +82,11 @@ public class ColorBlockTests extends TestCase {
     /**
      * Confirm that the equals() method can distinguish all the required fields.
      */
-public void testEquals1277() { 
-     ColorBlock b1 = new ColorBlock(Color.red, 1.0, 2.0); 
-     ColorBlock b2 = new ColorBlock(Color.red, 1.0, 2.0); 
-     assertTrue(b1.equals(b2)); 
-     assertTrue(b2.equals(b2)); 
-     b1 = new ColorBlock(Color.blue, 1.0, 2.0); 
-     assertFalse(b1.equals(b2)); 
-     b2 = new ColorBlock(Color.blue, 1.0, 2.0); 
-     assertTrue(b1.equals(b2)); 
-     b1 = new ColorBlock(Color.blue, 1.1, 2.0); 
-     assertFalse(b1.equals(b2)); 
-     b2 = new ColorBlock(Color.blue, 1.1, 2.0); 
-     assertTrue(b1.equals(b2)); 
-     b1 = new ColorBlock(Color.blue, 1.1, 2.0); 
-     assertFalse(b1.equals(b2)); 
-     b2 = new ColorBlock(Color.blue, 1.1, 2.0); 
-     assertTrue(b1.equals(b2)); 
- }
-public void testSerialization1278() { 
-     ColorBlock b1 = new ColorBlock(Color.red, 1.0, 2.0); 
-     ColorBlock b2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(b1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         b2 = (ColorBlock) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(b1, b2); 
- }
+public void testColorBlock6883() { ColorBlock cm = new ColorBlock(Color.RED, 10.0, 20.0); assertEquals(Color.RED, cm.getPaint()); assertEquals(10.0, cm.getWidth(), 0.0); assertEquals(20.0, cm.getHeight(), 0.0); cm = new ColorBlock(Color.BLUE, 10.0, 20.0); assertEquals(Color.BLUE, cm.getPaint()); assertEquals(10.0, cm.getWidth(), 0.0); assertEquals(20.0, cm.getHeight(), 0.0); }
+public void testCloning6885() throws CloneNotSupportedException { ColorBlock cm1 = new ColorBlock(Color.RED, 10.0, 20.0); ColorBlock cm2 = (ColorBlock) cm1.clone(); assertNotSame(cm1, cm2); assertSame(cm1.getPaint(), cm2.getPaint()); assertEquals(cm1.getWidth(), cm2.getWidth(), 0.01); assertEquals(cm1.getHeight(), cm2.getHeight(), 0.01); }
+public void testEquals6888() { ColorBlock b1 = new ColorBlock(Color.RED, 1.0, 2.0); ColorBlock b2 = new ColorBlock(Color.RED, 1.0, 2.0); assertEquals(b1, b2); assertEquals(b2, b2); b1 = new ColorBlock(Color.BLUE, 1.0, 2.0); assertFalse(b1.equals(b2)); b2 = new ColorBlock(Color.BLUE, 1.0, 2.0); assertEquals(b1, b2); b1 = new ColorBlock(Color.BLUE, 1.0, 2.0);
+}
+
     
 
     /**

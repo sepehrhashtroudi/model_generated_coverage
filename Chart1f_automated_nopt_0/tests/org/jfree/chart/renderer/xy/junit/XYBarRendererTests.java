@@ -102,6 +102,9 @@ public class XYBarRendererTests extends TestCase {
     /**
      * Test that the equals() method distinguishes all fields.
      */
+public void testXYBarRenderer3088() { XYBarRenderer r = new XYBarRenderer(); }
+public void testXYBarRenderer3089() { XYBarRenderer r = new XYBarRenderer(); assertEquals(0.0, r.getMargin(), 0.001); }
+public void testCloning3109() throws CloneNotSupportedException { XYBarRenderer r1 = new XYBarRenderer(); XYBarRenderer r2 = (XYBarRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
     
 
     /**

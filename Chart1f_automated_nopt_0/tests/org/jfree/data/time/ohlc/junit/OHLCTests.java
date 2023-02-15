@@ -79,6 +79,8 @@ public class OHLCTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
+public void testOHLC4442() { OHLC line = new OHLC(1.0, 2.0, 3.0, 4.0); assertEquals(1.0, line.getOpen(), 0.01); assertEquals(2.0, line.getHigh(), 0.01); assertEquals(3.0, line.getLow(), 0.01); assertEquals(4.0, line.getClose(), 0.01); }
+public void testEquals4448() { OHLC line1 = new OHLC(1.0, 2.0, 3.0, 4.0); OHLC line2 = new OHLC(1.0, 2.0, 3.0, 4.0); assertTrue(line1.equals(line2)); }
     
 
     /**

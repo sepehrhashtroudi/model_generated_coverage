@@ -112,119 +112,38 @@ public class PeriodAxisTests extends TestCase implements AxisChangeListener {
     /**
      * Confirm that the equals() method can distinguish all the required fields.
      */
-public void testCloning737() { 
-     PeriodAxisLabelInfo info1 = new PeriodAxisLabelInfo(Day.class, new SimpleDateFormat("d")); 
-     PeriodAxisLabelInfo info2 = null; 
-     try { 
-         info2 = (PeriodAxisLabelInfo) info1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(info1 != info2); 
-     assertTrue(info1.getClass() == info2.getClass()); 
-     assertTrue(info1.equals(info2)); 
- }
-public void testHashCode831() { 
-     PeriodAxis a1 = new PeriodAxis("Test"); 
-     PeriodAxis a2 = new PeriodAxis("Test"); 
-     assertTrue(a1.equals(a2)); 
-     int h1 = a1.hashCode(); 
-     int h2 = a2.hashCode(); 
-     assertEquals(h1, h2); 
- }
-public void testSerialization908() { 
-     PeriodAxis a1 = new PeriodAxis("Test Axis"); 
-     PeriodAxis a2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(a1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         a2 = (PeriodAxis) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(a1, a2); 
- }
-public void testEquals911() { 
-     PeriodAxis a1 = new PeriodAxis("Test"); 
-     PeriodAxis a2 = new PeriodAxis("Test"); 
-     assertTrue(a1.equals(a2)); 
-     assertTrue(a2.equals(a1)); 
-     a1 = new PeriodAxis("Test 1"); 
-     assertFalse(a1.equals(a2)); 
-     a2 = new PeriodAxis("Test 1"); 
-     assertTrue(a1.equals(a2)); 
-     a1 = new PeriodAxis("Test 2"); 
-     assertFalse(a1.equals(a2)); 
-     a2 = new PeriodAxis("Test 2"); 
-     assertTrue(a1.equals(a2)); 
-     a1 = new PeriodAxis("Test", new Year(2000), new Year(2001)); 
-     assertFalse(a1.equals(a2)); 
-     a2 = new PeriodAxis("Test", new Year(2000), new Year(2001)); 
-     assertTrue(a1.equals(a2)); 
-     a1 = new PeriodAxis("Test", new Year(2002), new Year(2003)); 
-     assertFalse(a1.equals(a2)); 
-     a2 = new PeriodAxis("Test", new Year(2002), new Year(2003)); 
-     assertTrue(a1.equals(a2)); 
- }
-public void testCloning931() { 
-     PeriodAxis a1 = new PeriodAxis("Test"); 
-     PeriodAxis a2 = null; 
-     try { 
-         a2 = (PeriodAxis) a1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(a1 != a2); 
-     assertTrue(a1.getClass() == a2.getClass()); 
-     assertTrue(a1.equals(a2)); 
-     a1 = new PeriodAxis("Test 1"); 
-     assertFalse(a1.equals(a2)); 
-     a2 = null; 
-     try { 
-         a2 = (PeriodAxis) a1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(a1 != a2); 
-     assertTrue(a1.getClass() == a2.getClass()); 
-     assertTrue(a1.equals(a2)); 
-     a1.setTickMarksVisible(false); 
-     assertFalse(a1.equals(a2)); 
-     a2.setTickMarksVisible(false); 
-     assertTrue(a1.equals(a2)); 
- }
-public void testCloning932() { 
-     PeriodAxis a1 = new PeriodAxis("Test"); 
-     PeriodAxis a2 = null; 
-     try { 
-         a2 = (PeriodAxis) a1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(a1 != a2); 
-     assertTrue(a1.getClass() == a2.getClass()); 
-     assertTrue(a1.equals(a2)); 
-     a1.setTickMarksVisible(false); 
-     assertFalse(a1.equals(a2)); 
-     a2.setTickMarksVisible(false); 
-     assertTrue(a1.equals(a2)); 
- }
-public void testConstructor933() { 
-     PeriodAxis a1 = new PeriodAxis("Test Axis"); 
-     PeriodAxis a2 = null; 
-     try { 
-         a2 = (PeriodAxis) a1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(a1 != a2); 
-     assertTrue(a1.getClass() == a2.getClass()); 
-     assertTrue(a1.equals(a2)); 
- }
+public void testPeriodAxis4841() { PeriodAxis axis = new PeriodAxis("Test"); assertEquals("Test", axis.getLabel()); }
+public void testPeriodAxis4844() { PeriodAxis a1 = new PeriodAxis("Test"); assertEquals("Test", a1.getLabel()); assertEquals(new Year(2000), a1.getFirst()); assertEquals(new Year(2001), a1.getLast()); PeriodAxis a2 = new PeriodAxis("Test", new Year(2001), new Year(2001)); assertEquals("Test", a2.getLabel()); assertEquals(new Year(2001), a2.getFirst()); assertEquals(new Year(2001), a2.getLast()); }
+public void testPeriodAxis4846() { PeriodAxis axis = new PeriodAxis("Test", new Year(2000), new Year(2000), TimeZone.getTimeZone("GMT"), Locale.GERMANY); assertEquals(new Year(2000), axis.getFirst()); assertEquals(new Year(2000), axis.getLast()); assertEquals(TimeZone.getTimeZone("GMT"), axis.getTimeZone()); axis.setFirst(new Year(2000)); assertEquals(new Year(2000), axis.getFirst()); assertEquals(new Year(2000), axis.getLast()); assertEquals(TimeZone.getTimeZone("GMT"), axis.getTimeZone()); }
+public void testPeriodAxis4847() { PeriodAxis axis = new PeriodAxis("Test", new Year(2000), new Year(2000), TimeZone.getTimeZone("GMT"), Locale.UK); assertEquals(new Year(2000), axis.getFirst()); assertEquals(new Year(2000), axis.getLast()); assertEquals(TimeZone.getTimeZone("GMT"), axis.getTimeZone()); }
+public void testPeriodAxis4849() { PeriodAxis a = new PeriodAxis("Test", new Year(2000), new Year(2000), TimeZone.getTimeZone("Europe/London"), Locale.GERMANY); assertEquals(new Year(2000), a.getFirst()); assertEquals(new Year(2000), a.getLast()); assertEquals(TimeZone.getTimeZone("Europe/London"), a.getTimeZone()); }
+public void testPeriodAxis4851() { PeriodAxis axis = new PeriodAxis("Test", new Year(2000), new Year(2000), TimeZone.getTimeZone("GMT"), Locale.ENGLISH); assertEquals(new Year(2000), axis.getFirst()); assertEquals(new Year(2000), axis.getLast()); assertEquals(TimeZone.getTimeZone("GMT"), axis.getTimeZone()); axis.setFirst(new Year(2000)); assertEquals(new Year(2000), axis.getFirst()); assertEquals(new Year(2000), axis.getLast()); assertEquals(TimeZone.getTimeZone("GMT"), axis.getTimeZone()); }
+public void testPeriodAxis4854() { PeriodAxis axis = new PeriodAxis("Test", new Year(2000), new Year(2000), TimeZone.getTimeZone("Europe/London"), Locale.GERMANY); assertEquals(new Year(2000), axis.getFirst()); assertEquals(new Year(2000), axis.getLast()); assertEquals(TimeZone.getTimeZone("Europe/London"), axis.getTimeZone()); assertEquals(true, axis.isMinorTickMarksVisible()); }
+public void testSetAutoRange4856() { PeriodAxis axis = new PeriodAxis("Test", new Year(2000), new Year(2000), TimeZone.getTimeZone("GMT"), Locale.getDefault()); assertEquals(new Year(2000), axis.getFirst()); assertEquals(new Year(2000), axis.getLast()); axis.setAutoRange(true); assertEquals(new Year(2000), axis.getFirst()); assertEquals(new Year(2000), axis.getLast()); }
+public void testPeriodAxis4858() { PeriodAxis axis = new PeriodAxis("Test", new Year(2000), new Year(2000)); assertEquals(new Year(2000), axis.getFirst()); assertEquals(new Year(2000), axis.getLast()); assertEquals(new Year(2000), axis.getTimeZone()); PeriodAxisLabelInfo[] labelInfo = axis.getLabelInfo(); assertEquals(2, labelInfo.length); assertEquals(Month.class, labelInfo[0].getClass()); assertEquals(Month.class, labelInfo[1].getClass()); assertEquals(new Year(2000), axis.getFirst()); assertEquals(new Year(2000), axis.getLast());
+}
+
+public void testPeriodAxis4859() { PeriodAxis a1 = new PeriodAxis("Test"); PeriodAxis a2 = new PeriodAxis("Test"); PeriodAxis a3 = new PeriodAxis("Test"); PeriodAxis a4 = new PeriodAxis("Test"); PeriodAxis a5 = new PeriodAxis("Test"); PeriodAxis a6 = new PeriodAxis("Test"); PeriodAxis a7 = new PeriodAxis("Test"); PeriodAxis a8 = new PeriodAxis("Test"); PeriodAxis a9 = new PeriodAxis("Test"); PeriodAxis b = new PeriodAxis("Test"); PeriodAxis c = new PeriodAxis("Test"); PeriodAxis d = new PeriodAxis("Test"); PeriodAxis e = new PeriodAxis("Test");
+}
+
+public void testSetFirst4860() { PeriodAxis a = new PeriodAxis("Test"); a.setFirst(new Year(2000)); assertEquals(new Year(2000), a.getFirst()); try { a.setFirst(null); fail("IllegalArgumentException expected"); } catch (IllegalArgumentException e) { } }
+public void testSetFirst4861() { PeriodAxis a1 = new PeriodAxis("Test"); a1.setFirst(new Year(2000)); assertEquals(new Year(2000), a1.getFirst()); try { a1.setFirst(null); fail(); } catch (IllegalArgumentException e) { } }
+public void testSetFirst4862() { PeriodAxis a1 = new PeriodAxis("Test"); a1.setFirst(new Year(2000)); PeriodAxis a2 = new PeriodAxis("Test"); a2.setFirst(new Year(2000)); try { a1.setFirst(null); fail(); } catch (IllegalArgumentException expected) { } try { a2.setFirst(null); fail(); } catch (IllegalArgumentException expected) { } }
+public void testSetLast4864() { PeriodAxis a = new PeriodAxis("Test"); a.setLast(new Year(2000)); assertEquals(new Year(2000), a.getLast()); try { a.setLast(null); fail("Expected IllegalArgumentException"); } catch (IllegalArgumentException e) { } }
+public void testSetLast4865() { PeriodAxis a = new PeriodAxis("Test"); assertNull(a.getLast()); a.setLast(new Year(2000)); assertEquals(new Year(2000), a.getLast()); try { a.setLast(null); fail("Expected IllegalArgumentException"); } catch (IllegalArgumentException e) { } }
+public void testSetLast4867() { PeriodAxis a1 = new PeriodAxis("Test"); a1.setFirst(new Year(2000)); a1.setLast(new Year(2002)); PeriodAxis a2 = new PeriodAxis("Test", new Year(2000), new Year(2002)); a2.setLast(new Year(2002)); assertEquals(new Year(2002), a1.getLast()); assertEquals(new Year(2002), a2.getFirst()); assertEquals(new Year(2002), a2.getLast()); try { a1.setLast(null); fail(); } catch (IllegalArgumentException e) { } }
+public void testSetTimeZone4869() { Locale locale = Locale.getDefault(); TimeZone tz = TimeZone.getTimeZone("America/Los_Angeles"); PeriodAxis axis = new PeriodAxis("Test", new Year(2000), new Year(2000), tz, locale); axis.setTimeZone(tz); assertEquals(tz, axis.getTimeZone()); }
+public void testSetTimeZone4870() { PeriodAxis a1 = new PeriodAxis("Test"); a1.setTimeZone(TimeZone.getTimeZone("PST")); assertEquals(TimeZone.getTimeZone("PST"), a1.getTimeZone()); try { a1.setTimeZone(null); fail("IllegalArgumentException expected"); } catch (IllegalArgumentException e) { } }
+public void testSetTimeZone4871() { PeriodAxis a1 = new PeriodAxis("Test"); a1.setTimeZone(TimeZone.getTimeZone("PST")); assertEquals(TimeZone.getTimeZone("PST"), a1.getTimeZone()); try { a1.setTimeZone(null); fail("IllegalArgumentException expected"); } catch (IllegalArgumentException expected) { } }
+public void testSetTimeZone4872() { PeriodAxis a1 = new PeriodAxis("Test"); a1.setTimeZone(TimeZone.getTimeZone("PST")); PeriodAxis a2 = new PeriodAxis("Test"); a2.setTimeZone(TimeZone.getTimeZone("PST")); assertEquals(TimeZone.getTimeZone("PST"), a1.getTimeZone()); assertEquals(TimeZone.getTimeZone("PST"), a2.getTimeZone()); }
+public void testSetTimeZone4873() { Locale locale = Locale.US; TimeZone tz = TimeZone.getTimeZone("America/Los_Angeles"); PeriodAxis a = new PeriodAxis("Test", new Year(2000), new Year(2000), tz, locale); assertEquals(TimeZone.getTimeZone("America/Los_Angeles"), a.getTimeZone()); a.setTimeZone(tz); assertEquals(TimeZone.getTimeZone("America/Los_Angeles"), a.getTimeZone()); }
+public void testSetAutoRangeTimePeriodClass4876() { PeriodAxis a = new PeriodAxis("Test"); try { a.setAutoRangeTimePeriodClass(null); fail(); } catch (IllegalArgumentException e) { } try { a.setAutoRangeTimePeriodClass(Class.class); fail(); } catch (IllegalArgumentException e) { } }
+public void testMinorTickMarksVisible4883() { PeriodAxis axis = new PeriodAxis("Test"); axis.setMinorTickMarksVisible(true); assertTrue(axis.isMinorTickMarksVisible()); axis.setMinorTickMarksVisible(false); assertFalse(axis.isMinorTickMarksVisible()); }
+public void testSetMinorTickMarksVisible4885() { PeriodAxis axis = new PeriodAxis("Test"); axis.setMinorTickMarksVisible(true); assertTrue(axis.isMinorTickMarksVisible()); axis.setMinorTickMarksVisible(false); assertFalse(axis.isMinorTickMarksVisible()); axis.setMinorTickMarksVisible(true); assertTrue(axis.isMinorTickMarksVisible()); }
+public void testMinorTickMarksVisible4886() { PeriodAxis a1 = new PeriodAxis("Test"); a1.setMinorTickMarksVisible(true); assertEquals(true, a1.isMinorTickMarksVisible()); PeriodAxis a2 = new PeriodAxis("Test"); a2.setMinorTickMarksVisible(false); assertEquals(false, a2.isMinorTickMarksVisible()); }
+public void testSetMinorTickTimePeriodClass4889() { PeriodAxis a = new PeriodAxis("Test"); try { a.setMinorTickTimePeriodClass(null); fail(); } catch (IllegalArgumentException e) { } try { a.setMinorTickTimePeriodClass(Class.class); fail(); } catch (IllegalArgumentException e) { } }
+public void testCloning4916() throws CloneNotSupportedException { PeriodAxis a1 = new PeriodAxis("Test"); PeriodAxis a2 = (PeriodAxis) a1.clone(); assertNotSame(a1, a2); assertSame(a1.getClass(), a2.getClass()); assertEquals(a1, a2); }
+public void testCreateInstance4921() { PeriodAxis a = new PeriodAxis("Test"); assertEquals(new Year(2000), a.getFirst()); assertEquals(new Year(2001), a.getLast()); assertEquals(new Year(2002), a.getFirst()); assertEquals(new Year(2003), a.getLast()); assertEquals(new Year(2004), a.getFirst()); assertEquals(new Year(2005), a.getLast()); assertEquals(new Year(2006), a.getFirst()); assertEquals(new Year(2007), a.getLast()); }
     
 
     /**

@@ -82,79 +82,12 @@ public class PaintListTests extends TestCase {
     /**
      * Tests the equals() method.
      */
-public void testCloning1167() { 
-     PaintList l1 = new PaintList(); 
-     l1.setPaint(0, Color.red); 
-     l1.setPaint(1, Color.blue); 
-     l1.setPaint(2, null); 
-     PaintList l2 = null; 
-     try { 
-         l2 = (PaintList) l1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(l1 != l2); 
-     assertTrue(l1.getClass() == l2.getClass()); 
-     assertTrue(l1.equals(l2)); 
-     l2.setPaint(0, Color.red); 
-     assertFalse(l1.equals(l2)); 
- }
-public void testSerialization1168() { 
-     PaintList l1 = new PaintList(); 
-     l1.setPaint(0, Color.red); 
-     l1.setPaint(1, Color.blue); 
-     l1.setPaint(2, null); 
-     PaintList l2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(l1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         l2 = (PaintList) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(l1, l2); 
- }
-public void testEquals1169() { 
-     PaintList l1 = new PaintList(); 
-     PaintList l2 = new PaintList(); 
-     assertTrue(l1.equals(l2)); 
-     assertTrue(l2.equals(l1)); 
-     l1.setPaint(0, Color.red); 
-     assertFalse(l1.equals(l2)); 
-     l2.setPaint(0, Color.red); 
-     assertTrue(l1.equals(l2)); 
- }
-public void testEquals1170() { 
-     PaintList l1 = new PaintList(); 
-     PaintList l2 = new PaintList(); 
-     assertTrue(l1.equals(l2)); 
-     assertTrue(l2.equals(l1)); 
-     l1.setPaint(0, Color.red); 
-     assertFalse(l1.equals(l2)); 
-     l2.setPaint(0, Color.red); 
-     assertTrue(l1.equals(l2)); 
-     l1.setPaint(1, Color.blue); 
-     assertFalse(l1.equals(l2)); 
-     l2.setPaint(1, Color.blue); 
-     assertTrue(l1.equals(l2)); 
-     l1.setPaint(2, null); 
-     assertFalse(l1.equals(l2)); 
-     l2.setPaint(2, null); 
-     assertTrue(l1.equals(l2)); 
- }
-public void testHashCode1171() { 
-     PaintList l1 = new PaintList(); 
-     PaintList l2 = new PaintList(); 
-     assertTrue(l1.hashCode() == l2.hashCode()); 
-     l1.setPaint(0, Color.red); 
-     assertFalse(l1.hashCode() == l2.hashCode()); 
-     l2.setPaint(0, Color.red); 
-     assertTrue(l1.hashCode() == l2.hashCode()); 
- }
+public void testPaintList6133() { PaintList line1 = new PaintList(); PaintList line2 = new PaintList(); line1.setPaint(0, Color.RED); line2.setPaint(0, Color.GREEN); line1.setPaint(1, Color.BLUE); line2.setPaint(1, Color.BLUE); assertEquals(Color.RED, line1.getPaint(0)); assertEquals(Color.GREEN, line1.getPaint(1)); assertEquals(Color.BLUE, line2.getPaint(2)); }
+public void testPaintList6134() { PaintList pl = new PaintList(); pl.setPaint(0, Color.RED); assertEquals(Color.RED, pl.getPaint(0)); pl.setPaint(1, Color.BLUE); assertEquals(Color.BLUE, pl.getPaint(1)); pl.setPaint(2, Color.RED); assertEquals(Color.RED, pl.getPaint(2)); pl.setPaint(3, Color.BLUE); assertEquals(Color.BLUE, pl.getPaint(3)); pl.setPaint(4, Color.RED); assertEquals(Color.RED, pl.getPaint(4)); }
+public void testHashCode6143() { PaintList l1 = new PaintList(); PaintList l2 = new PaintList(); assertEquals(l1.hashCode(), l2.hashCode()); }
+public void testReadLine6157() { PaintList line = new PaintList(); line.setPaint(0, Color.RED); assertEquals(Color.RED, line.getPaint(0)); line.setPaint(1, Color.BLUE); assertEquals(Color.BLUE, line.getPaint(1)); line.setPaint(2, Color.RED); assertEquals(Color.RED, line.getPaint(2)); line.setPaint(3, Color.BLUE); assertEquals(Color.BLUE, line.getPaint(3)); line.setPaint(4, Color.BLUE); assertEquals(Color.BLUE, line.getPaint(4));
+}
+
     
 
     /**

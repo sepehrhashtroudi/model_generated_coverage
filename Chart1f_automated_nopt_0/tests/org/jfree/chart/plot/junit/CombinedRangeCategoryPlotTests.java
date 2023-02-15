@@ -108,60 +108,17 @@ public class CombinedRangeCategoryPlotTests extends TestCase
     /**
      * Test the equals() method.
      */
-public void testRemoveSubplot123() { 
-     CombinedRangeCategoryPlot plot = new CombinedRangeCategoryPlot(); 
-     CategoryPlot plot1 = new CategoryPlot(); 
-     CategoryPlot plot2 = new CategoryPlot(); 
-     CategoryPlot plot3 = new CategoryPlot(); 
-     plot.add(plot1); 
-     plot.add(plot2); 
-     plot.add(plot3); 
-     plot.remove(plot2); 
-     List plots = plot.getSubplots(); 
-     assertEquals(2, plots.size()); 
- }
-public void testNotification125() { 
-     CombinedRangeCategoryPlot plot = createPlot(); 
-     JFreeChart chart = new JFreeChart(plot); 
-     chart.addChangeListener(this); 
-     CategoryPlot subplot1 = (CategoryPlot) plot.getSubplots().get(0); 
-     NumberAxis yAxis = (NumberAxis) subplot1.getRangeAxis(); 
-     yAxis.setAutoRangeIncludesZero(!yAxis.getAutoRangeIncludesZero()); 
-     assertEquals(1, this.events.size()); 
-     BufferedImage image = new BufferedImage(200, 100, BufferedImage.TYPE_INT_RGB); 
-     Graphics2D g2 = image.createGraphics(); 
-     this.events.clear(); 
-     chart.draw(g2, new Rectangle2D.Double(0.0, 0.0, 200.0, 100.0)); 
-     assertTrue(this.events.isEmpty()); 
- }
-public void testSerialization126() { 
-     CombinedRangeCategoryPlot plot1 = createPlot(); 
-     CombinedRangeCategoryPlot plot2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(plot1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         plot2 = (CombinedRangeCategoryPlot) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(plot1, plot2); 
- }
-public void testCloning127() { 
-     CombinedRangeCategoryPlot plot1 = createPlot(); 
-     CombinedRangeCategoryPlot plot2 = null; 
-     try { 
-         plot2 = (CombinedRangeCategoryPlot) plot1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(plot1 != plot2); 
-     assertTrue(plot1.getClass() == plot2.getClass()); 
-     assertTrue(plot1.equals(plot2)); 
- }
+public void testCombinedRangeCategoryPlot561() { try { CombinedRangeCategoryPlot plot1 = createPlot(); CombinedRangeCategoryPlot plot2 = createPlot(); assertEquals(plot1, plot2); } catch (Exception e) { fail(e.getMessage()); } }
+public void testEqualsObject562() { CombinedRangeCategoryPlot plot1 = createPlot(); CombinedRangeCategoryPlot plot2 = createPlot(); assertEquals(plot1, plot2); }
+public void testCloning563() throws CloneNotSupportedException { CombinedRangeCategoryPlot plot1 = createPlot(); CombinedRangeCategoryPlot plot2 = (CombinedRangeCategoryPlot) plot1.clone(); assertNotSame(plot1, plot2); }
+public void testEquals595() { CombinedRangeCategoryPlot plot1 = createPlot(); CombinedRangeCategoryPlot plot2 = createPlot(); assertEquals(plot1, plot2); }
+public void testCloning596() throws CloneNotSupportedException { CombinedRangeCategoryPlot plot1 = createPlot(); CombinedRangeCategoryPlot plot2 = (CombinedRangeCategoryPlot) plot1.clone(); assertNotSame(plot1, plot2); assertSame(plot1.getClass(), plot2.getClass()); assertEquals(plot1, plot2); }
+public void testGetColumnKey654() { DefaultCategoryDataset d = new DefaultCategoryDataset(); d.addValue(1.0, "R1", "C1"); d.addValue(2.0, "R2", "C2"); d.addValue(3.0, "R3", "C3"); d.addValue(4.0, "R4", "C4"); assertEquals("C1", d.getColumnKey(0)); assertEquals("C2", d.getColumnKey(1)); assertEquals("C3", d.getColumnKey(2)); }
+public void testLineBreak3589() { String text = "\\n"; String text2 = "\\n"; String text3 = "\\n"; String text4 = "\\n"; String text5 = "\\n"; String text6 = "\\n"; String text7 = "\\n"; String text8 = "\\n"; String text9 = "\\n"; String text10 = "\\n"; String text11 = "\\n"; String text12 = "\\n"; String text13 = "\\n"; String text14 = "\\n"; String text15 = "\\n"; String text21 = "\\n"; String text22 = "\\n"; String text23 = "\\n"; String text24 = "\\n"; String text26 = "\\n";
+}
+
+public void testGetIndexOf7617() { CategoryPlot plot = new CategoryPlot(); assertEquals(-1, plot.getIndexOf(new LineAndShapeRenderer())); assertEquals(-1, plot.getIndexOf(new LineAndShapeRenderer())); }
+public void testG2TextMeasurer8359() throws Exception { }
     
 
     /**

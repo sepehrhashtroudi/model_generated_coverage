@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="sepehr-UX310UQK" name="com.fasterxml.jackson.databind.convert.TestConvertingSerializer" skipped="0" tests="1" time="0.043" timestamp="2023-01-15T08:54:09">
+<testsuite errors="0" failures="1" hostname="sepehr-UX310UQK" name="com.fasterxml.jackson.databind.convert.TestConvertingSerializer" skipped="0" tests="1" time="0.041" timestamp="2023-02-05T09:44:29">
   <properties>
     <property name="java.vendor" value="Private Build" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -50,7 +50,7 @@
     <property name="clover.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/jacksonDatabind1f_automated/clover" />
     <property name="java.vm.info" value="mixed mode" />
     <property name="ant.file" value="/home/sepehr/masters/test_generation/model_generated_coverage/jacksonDatabind1f_automated/build.xml" />
-    <property name="os.version" value="5.15.0-57-generic" />
+    <property name="os.version" value="5.15.0-58-generic" />
     <property name="maven.build.testOutputDir" value="target/test-classes" />
     <property name="project.reporting.outputEncoding" value="UTF-8" />
     <property name="replacer.version" value="1.5.2" />
@@ -82,7 +82,7 @@
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.7 compiled on October 24 2019" />
     <property name="java.class.path" value="/home/sepehr/.ant/lib/clover.jar:/home/sepehr/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.1/jackson-annotations-2.2.1.jar:/home/sepehr/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.1/jackson-core-2.2.1.jar:/home/sepehr/.m2/repository/junit/junit/4.10/junit-4.10.jar:/home/sepehr/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/home/sepehr/.m2/repository/cglib/cglib/2.2.2/cglib-2.2.2.jar:/home/sepehr/.m2/repository/asm/asm/3.3.1/asm-3.3.1.jar:/home/sepehr/.m2/repository/org/codehaus/groovy/groovy/1.7.9/groovy-1.7.9.jar:/home/sepehr/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/sepehr/.m2/repository/asm/asm-commons/3.2/asm-commons-3.2.jar:/home/sepehr/.m2/repository/asm/asm-util/3.2/asm-util-3.2.jar:/home/sepehr/.m2/repository/asm/asm-analysis/3.2/asm-analysis-3.2.jar:/home/sepehr/.m2/repository/asm/asm-tree/3.2/asm-tree-3.2.jar:/home/sepehr/.m2/repository/org/hibernate/hibernate-cglib-repack/2.1_3/hibernate-cglib-repack-2.1_3.jar:/home/sepehr/masters/test_generation/model_generated_coverage/jacksonDatabind1f_automated/target/classes:/home/sepehr/masters/test_generation/model_generated_coverage/jacksonDatabind1f_automated/target/test-classes:/home/sepehr/.ant/lib/evosuite-1.0.6.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.fasterxml.jackson.databind.convert.TestConvertingSerializer skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/model_generated_coverage/jacksonDatabind1f_automated/target/test-reports/TEST-com.fasterxml.jackson.databind.convert.TestConvertingSerializer.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/model_generated_coverage/jacksonDatabind1f_automated/junitvmwatcher459315419194663596.properties propsfile=/home/sepehr/masters/test_generation/model_generated_coverage/jacksonDatabind1f_automated/junit3140940298488837109.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.fasterxml.jackson.databind.convert.TestConvertingSerializer skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/model_generated_coverage/jacksonDatabind1f_automated/target/test-reports/TEST-com.fasterxml.jackson.databind.convert.TestConvertingSerializer.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/model_generated_coverage/jacksonDatabind1f_automated/junitvmwatcher3148691521881663219.properties propsfile=/home/sepehr/masters/test_generation/model_generated_coverage/jacksonDatabind1f_automated/junit1399956286822590537.properties" />
     <property name="project.name" value="jackson-databind" />
     <property name="project.build.directory" value="target" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
@@ -122,7 +122,7 @@
     <property name="osgi.dynamicImport" value="" />
     <property name="clover.flushpolicy" value="directed" />
   </properties>
-  <testcase classname="junit.framework.TestSuite$1" name="warning" time="0.008">
+  <testcase classname="junit.framework.TestSuite$1" name="warning" time="0.006">
     <failure message="No tests found in com.fasterxml.jackson.databind.convert.TestConvertingSerializer" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: No tests found in com.fasterxml.jackson.databind.convert.TestConvertingSerializer
 </failure>
   </testcase>

@@ -91,6 +91,7 @@ public class XYAreaRenderer2Tests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
+public void testCloning8691() throws CloneNotSupportedException { XYAreaRenderer2 r1 = new XYAreaRenderer2(); XYAreaRenderer2 r2 = (XYAreaRenderer2) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
     
 
     /**

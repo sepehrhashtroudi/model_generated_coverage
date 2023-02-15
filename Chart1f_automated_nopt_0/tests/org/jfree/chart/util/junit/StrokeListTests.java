@@ -80,21 +80,7 @@ public class StrokeListTests extends TestCase {
     /**
      * Tests the equals() method.
      */
-public void testCloning1328() { 
-     StrokeList l1 = new StrokeList(); 
-     l1.setStroke(0, new BasicStroke(1.0f)); 
-     l1.setStroke(1, new BasicStroke(1.5f)); 
-     l1.setStroke(2, null); 
-     StrokeList l2 = null; 
-     try { 
-         l2 = (StrokeList) l1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(l1 != l2); 
-     assertTrue(l1.getClass() == l2.getClass()); 
-     assertTrue(l1.equals(l2)); 
- }
+public void testCloning7477() throws CloneNotSupportedException { StrokeList list1 = new StrokeList(); list1.setStroke(0, new BasicStroke(1.5f)); StrokeList list2 = (StrokeList)list1.clone(); assertNotSame(list1, list2); assertSame(list1.getStroke(0), list2.getStroke(0)); }
     
 
     /**

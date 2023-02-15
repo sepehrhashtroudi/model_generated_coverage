@@ -82,45 +82,10 @@ public class StandardDialFrameTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testHashCode219() { 
-     StandardDialFrame f1 = new StandardDialFrame(); 
-     StandardDialFrame f2 = new StandardDialFrame(); 
-     assertTrue(f1.equals(f2)); 
-     int h1 = f1.hashCode(); 
-     int h2 = f2.hashCode(); 
-     assertEquals(h1, h2); 
- }
-public void testEquals223() { 
-     StandardDialFrame f1 = new StandardDialFrame(); 
-     StandardDialFrame f2 = new StandardDialFrame(); 
-     assertTrue(f1.equals(f2)); 
-     assertTrue(f2.equals(f1)); 
-     f1.setRadius(0.5); 
-     assertFalse(f1.equals(f2)); 
-     f2.setRadius(0.5); 
-     assertTrue(f1.equals(f2)); 
-     f1.setBackgroundPaint(new GradientPaint(1.0f, 2.0f, Color.blue, 3.0f, 4.0f, Color.green)); 
-     assertFalse(f1.equals(f2)); 
-     f2.setBackgroundPaint(new GradientPaint(1.0f, 2.0f, Color.blue, 3.0f, 4.0f, Color.green)); 
-     assertTrue(f1.equals(f2)); 
-     BasicStroke s = new BasicStroke(1.23f); 
-     f1.setStroke(s); 
-     assertFalse(f1.equals(f2)); 
-     f2.setStroke(s); 
-     assertTrue(f1.equals(f2)); 
- }
-public void testCloning225() { 
-     StandardDialFrame f1 = new StandardDialFrame(); 
-     StandardDialFrame f2 = null; 
-     try { 
-         f2 = (StandardDialFrame) f1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(f1 != f2); 
-     assertTrue(f1.getClass() == f2.getClass()); 
-     assertTrue(f1.equals(f2)); 
- }
+public void testStandardDialFrame907() { StandardDialFrame f1 = new StandardDialFrame(); StandardDialFrame f2 = new StandardDialFrame(); assertEquals(f1, f2); }
+public void testStandardDialFrame909() { StandardDialFrame f1 = new StandardDialFrame(); f1.setRadius(0.95); StandardDialFrame f2 = new StandardDialFrame(); f2.setRadius(0.95); assertEquals(f1, f2); }
+public void testEquals924() { StandardDialFrame f1 = new StandardDialFrame(); StandardDialFrame f2 = new StandardDialFrame(); assertEquals(f1, f2); f1.setBackgroundPaint(Color.RED); assertFalse(f1.equals(f2)); f2.setBackgroundPaint(Color.RED); assertEquals(f1, f2); f1.setRadius(1.5); assertFalse(f1.equals(f2)); f2.setRadius(1.5); assertEquals(f1, f2); }
+public void testCloning927() throws CloneNotSupportedException { StandardDialFrame f1 = new StandardDialFrame(); StandardDialFrame f2 = (StandardDialFrame) f1.clone(); assertNotSame(f1, f2); assertSame(f1.getClass(), f2.getClass()); assertEquals(f1, f2); }
     
 
     /**

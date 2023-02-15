@@ -131,7 +131,7 @@
                     
                     <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
     
-    <li><a href="../../../../../dashboard.html"> Project Clover database Mon Jan 23 2023 12:59:19 MST</a></li>
+    <li><a href="../../../../../dashboard.html"> Project Clover database Fri Feb 3 2023 02:44:53 MST</a></li>
      <li><a href="test-pkg-summary.html">Package org.jfree.data.xy.junit</a></li>
 </ol></div>
     
@@ -173,18 +173,18 @@
 <tbody>
     <tr>
         <td>VectorSeriesTests</td>
-        <td class="testPasses"><span class="sortValue">2</span>2</td>
+        <td class="testPasses"><span class="sortValue">12</span>12</td>
+<td class="testFailures"><span class="sortValue">8</span>8</td>
 <td class=""><span class="sortValue">0</span>0</td>
-<td class=""><span class="sortValue">0</span>0</td>
-        <td>0.001</td>
+        <td>0.009</td>
         <td class="align-middle">
             
 
 <div style="display: table; width: 100%">
-            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            <div class="barGraphValue"><span class="sortValue">0.33333334</span>33.3%</div>         <div style="display: table-cell">
             
             <div title="0% Errors" style="min-width: 40px;" class="testBarError">
-                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+                <div title="33.3% of tests passed&lt;br/&gt;66.7% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 33.3%"></div></div>
             </div>
         </div>
     </div>        </td>
@@ -212,8 +212,121 @@
 
 
 <tr>
-    <td><span class="sortValue">VectorSeriesTests.testEquals303</span><a href="VectorSeriesTests_testEquals303_5d.html">VectorSeriesTests.testEquals303</a></td>
-    <td style="whitespace:nowrap;"><span class="sortValue">1674503966624</span>23 Jan 12:59:26</td>
+    <td><span class="sortValue">VectorSeriesTests.testGetXValue8656</span><a href="VectorSeriesTests_testGetXValue8656_15l.html">VectorSeriesTests.testGetXValue8656</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1675417500242</span>3 Feb 02:45:00</td>
+    <td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+    <span class="sortValue">Index:&#160;1,&#160;Size:&#160;1</span>
+        <span class="expand" id="togglebut1" onclick="toggleNodeExpansion('togglebut1', 'msgc1', 'msge1');return false;">&#160;</span>
+        <div class="errorMessage" id="msgc1">Index:&#160;1,&#160;Size:&#160;1</div>
+        <div class="errorMessage" id="msge1" style="display:none;"> <div>java.lang.IndexOutOfBoundsException: Index: 1, Size: 1</div><div> at java.util.ArrayList.rangeCheck(ArrayList.java:659)</div><div> at java.util.ArrayList.get(ArrayList.java:435)</div><div>	at <a href="../../../../../org/jfree/data/ComparableObjectSeries.html?line=333#src-333">org.jfree.data.ComparableObjectSeries.getDataItem(ComparableObjectSeries.java:333)</a></div><div>	at <a href="../../../../../org/jfree/data/xy/VectorSeries.html?line=168#src-168">org.jfree.data.xy.VectorSeries.getDataItem(VectorSeries.java:168)</a></div><div>	at <a href="../../../../../org/jfree/data/xy/VectorSeries.html?line=119#src-119">org.jfree.data.xy.VectorSeries.getXValue(VectorSeries.java:119)</a></div><div>	at <a href="../../../../../org/jfree/data/xy/junit/VectorSeriesTests.html?line=101#src-101">org.jfree.data.xy.junit.VectorSeriesTests.testGetXValue8656(VectorSeriesTests.java:101)</a></div></div>
+        </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VectorSeriesTests.testGetVectorXValue8659</span><a href="VectorSeriesTests_testGetVectorXValue8659_11g.html">VectorSeriesTests.testGetVectorXValue8659</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1675417500307</span>3 Feb 02:45:00</td>
+    <td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+    <span class="sortValue">expected:&lt;1.0&gt;&#160;but&#160;was:&lt;3.0&gt;</span>
+        <span class="expand" id="togglebut2" onclick="toggleNodeExpansion('togglebut2', 'msgc2', 'msge2');return false;">&#160;</span>
+        <div class="errorMessage" id="msgc2">expected:&lt;1.0&gt;&#160;but&#160;was:&lt;3.0&gt;</div>
+        <div class="errorMessage" id="msge2" style="display:none;"> <div>junit.framework.AssertionFailedError: expected:&lt;1.0&gt; but was:&lt;3.0&gt;</div><div> at junit.framework.Assert.fail(Assert.java:47)</div><div> at junit.framework.Assert.failNotEquals(Assert.java:282)</div><div>	at <a href="../../../../../org/jfree/data/xy/junit/VectorSeriesTests.html?line=104#src-104">org.jfree.data.xy.junit.VectorSeriesTests.testGetVectorXValue8659(VectorSeriesTests.java:104)</a></div></div>
+        </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VectorSeriesTests.testGetXValue8657</span><a href="VectorSeriesTests_testGetXValue8657_53.html">VectorSeriesTests.testGetXValue8657</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1675417500305</span>3 Feb 02:45:00</td>
+    <td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+    <span class="sortValue">Index:&#160;1,&#160;Size:&#160;1</span>
+        <span class="expand" id="togglebut3" onclick="toggleNodeExpansion('togglebut3', 'msgc3', 'msge3');return false;">&#160;</span>
+        <div class="errorMessage" id="msgc3">Index:&#160;1,&#160;Size:&#160;1</div>
+        <div class="errorMessage" id="msge3" style="display:none;"> <div>java.lang.IndexOutOfBoundsException: Index: 1, Size: 1</div><div> at java.util.ArrayList.rangeCheck(ArrayList.java:659)</div><div> at java.util.ArrayList.get(ArrayList.java:435)</div><div>	at <a href="../../../../../org/jfree/data/ComparableObjectSeries.html?line=333#src-333">org.jfree.data.ComparableObjectSeries.getDataItem(ComparableObjectSeries.java:333)</a></div><div>	at <a href="../../../../../org/jfree/data/xy/VectorSeries.html?line=168#src-168">org.jfree.data.xy.VectorSeries.getDataItem(VectorSeries.java:168)</a></div><div>	at <a href="../../../../../org/jfree/data/xy/VectorSeries.html?line=119#src-119">org.jfree.data.xy.VectorSeries.getXValue(VectorSeries.java:119)</a></div><div>	at <a href="../../../../../org/jfree/data/xy/junit/VectorSeriesTests.html?line=102#src-102">org.jfree.data.xy.junit.VectorSeriesTests.testGetXValue8657(VectorSeriesTests.java:102)</a></div></div>
+        </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VectorSeriesTests.testGetVectorXValue8659</span><a href="VectorSeriesTests_testGetVectorXValue8659_61.html">VectorSeriesTests.testGetVectorXValue8659</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1675417500240</span>3 Feb 02:45:00</td>
+    <td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+    <span class="sortValue">expected:&lt;1.0&gt;&#160;but&#160;was:&lt;3.0&gt;</span>
+        <span class="expand" id="togglebut4" onclick="toggleNodeExpansion('togglebut4', 'msgc4', 'msge4');return false;">&#160;</span>
+        <div class="errorMessage" id="msgc4">expected:&lt;1.0&gt;&#160;but&#160;was:&lt;3.0&gt;</div>
+        <div class="errorMessage" id="msge4" style="display:none;"> <div>junit.framework.AssertionFailedError: expected:&lt;1.0&gt; but was:&lt;3.0&gt;</div><div> at junit.framework.Assert.fail(Assert.java:47)</div><div> at junit.framework.Assert.failNotEquals(Assert.java:282)</div><div>	at <a href="../../../../../org/jfree/data/xy/junit/VectorSeriesTests.html?line=104#src-104">org.jfree.data.xy.junit.VectorSeriesTests.testGetVectorXValue8659(VectorSeriesTests.java:104)</a></div></div>
+        </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VectorSeriesTests.testGetXValue8656</span><a href="VectorSeriesTests_testGetXValue8656_8s.html">VectorSeriesTests.testGetXValue8656</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1675417500309</span>3 Feb 02:45:00</td>
+    <td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+    <span class="sortValue">Index:&#160;1,&#160;Size:&#160;1</span>
+        <span class="expand" id="togglebut5" onclick="toggleNodeExpansion('togglebut5', 'msgc5', 'msge5');return false;">&#160;</span>
+        <div class="errorMessage" id="msgc5">Index:&#160;1,&#160;Size:&#160;1</div>
+        <div class="errorMessage" id="msge5" style="display:none;"> <div>java.lang.IndexOutOfBoundsException: Index: 1, Size: 1</div><div> at java.util.ArrayList.rangeCheck(ArrayList.java:659)</div><div> at java.util.ArrayList.get(ArrayList.java:435)</div><div>	at <a href="../../../../../org/jfree/data/ComparableObjectSeries.html?line=333#src-333">org.jfree.data.ComparableObjectSeries.getDataItem(ComparableObjectSeries.java:333)</a></div><div>	at <a href="../../../../../org/jfree/data/xy/VectorSeries.html?line=168#src-168">org.jfree.data.xy.VectorSeries.getDataItem(VectorSeries.java:168)</a></div><div>	at <a href="../../../../../org/jfree/data/xy/VectorSeries.html?line=119#src-119">org.jfree.data.xy.VectorSeries.getXValue(VectorSeries.java:119)</a></div><div>	at <a href="../../../../../org/jfree/data/xy/junit/VectorSeriesTests.html?line=101#src-101">org.jfree.data.xy.junit.VectorSeriesTests.testGetXValue8656(VectorSeriesTests.java:101)</a></div></div>
+        </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VectorSeriesTests.testGetXValue8657</span><a href="VectorSeriesTests_testGetXValue8657_ro.html">VectorSeriesTests.testGetXValue8657</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1675417500237</span>3 Feb 02:45:00</td>
+    <td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+    <span class="sortValue">Index:&#160;1,&#160;Size:&#160;1</span>
+        <span class="expand" id="togglebut6" onclick="toggleNodeExpansion('togglebut6', 'msgc6', 'msge6');return false;">&#160;</span>
+        <div class="errorMessage" id="msgc6">Index:&#160;1,&#160;Size:&#160;1</div>
+        <div class="errorMessage" id="msge6" style="display:none;"> <div>java.lang.IndexOutOfBoundsException: Index: 1, Size: 1</div><div> at java.util.ArrayList.rangeCheck(ArrayList.java:659)</div><div> at java.util.ArrayList.get(ArrayList.java:435)</div><div>	at <a href="../../../../../org/jfree/data/ComparableObjectSeries.html?line=333#src-333">org.jfree.data.ComparableObjectSeries.getDataItem(ComparableObjectSeries.java:333)</a></div><div>	at <a href="../../../../../org/jfree/data/xy/VectorSeries.html?line=168#src-168">org.jfree.data.xy.VectorSeries.getDataItem(VectorSeries.java:168)</a></div><div>	at <a href="../../../../../org/jfree/data/xy/VectorSeries.html?line=119#src-119">org.jfree.data.xy.VectorSeries.getXValue(VectorSeries.java:119)</a></div><div>	at <a href="../../../../../org/jfree/data/xy/junit/VectorSeriesTests.html?line=102#src-102">org.jfree.data.xy.junit.VectorSeriesTests.testGetXValue8657(VectorSeriesTests.java:102)</a></div></div>
+        </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VectorSeriesTests.testGetXValue8658</span><a href="VectorSeriesTests_testGetXValue8658_33.html">VectorSeriesTests.testGetXValue8658</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1675417500306</span>3 Feb 02:45:00</td>
+    <td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+    <span class="sortValue">expected:&lt;2.0&gt;&#160;but&#160;was:&lt;1.0&gt;</span>
+        <span class="expand" id="togglebut7" onclick="toggleNodeExpansion('togglebut7', 'msgc7', 'msge7');return false;">&#160;</span>
+        <div class="errorMessage" id="msgc7">expected:&lt;2.0&gt;&#160;but&#160;was:&lt;1.0&gt;</div>
+        <div class="errorMessage" id="msge7" style="display:none;"> <div>junit.framework.AssertionFailedError: expected:&lt;2.0&gt; but was:&lt;1.0&gt;</div><div> at junit.framework.Assert.fail(Assert.java:47)</div><div> at junit.framework.Assert.failNotEquals(Assert.java:282)</div><div>	at <a href="../../../../../org/jfree/data/xy/junit/VectorSeriesTests.html?line=103#src-103">org.jfree.data.xy.junit.VectorSeriesTests.testGetXValue8658(VectorSeriesTests.java:103)</a></div></div>
+        </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VectorSeriesTests.testGetXValue8658</span><a href="VectorSeriesTests_testGetXValue8658_6w.html">VectorSeriesTests.testGetXValue8658</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1675417500239</span>3 Feb 02:45:00</td>
+    <td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+    <span class="sortValue">expected:&lt;2.0&gt;&#160;but&#160;was:&lt;1.0&gt;</span>
+        <span class="expand" id="togglebut8" onclick="toggleNodeExpansion('togglebut8', 'msgc8', 'msge8');return false;">&#160;</span>
+        <div class="errorMessage" id="msgc8">expected:&lt;2.0&gt;&#160;but&#160;was:&lt;1.0&gt;</div>
+        <div class="errorMessage" id="msge8" style="display:none;"> <div>junit.framework.AssertionFailedError: expected:&lt;2.0&gt; but was:&lt;1.0&gt;</div><div> at junit.framework.Assert.fail(Assert.java:47)</div><div> at junit.framework.Assert.failNotEquals(Assert.java:282)</div><div>	at <a href="../../../../../org/jfree/data/xy/junit/VectorSeriesTests.html?line=103#src-103">org.jfree.data.xy.junit.VectorSeriesTests.testGetXValue8658(VectorSeriesTests.java:103)</a></div></div>
+        </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VectorSeriesTests.testGetX1247</span><a href="VectorSeriesTests_testGetX1247_12n.html">VectorSeriesTests.testGetX1247</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1675417500236</span>3 Feb 02:45:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VectorSeriesTests.testGetX1246</span><a href="VectorSeriesTests_testGetX1246_3l.html">VectorSeriesTests.testGetX1246</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1675417500309</span>3 Feb 02:45:00</td>
     <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
   </td>
     <td><span class="sortValue">0.0</span>0</td>
@@ -221,11 +334,20 @@
      &#160;     </td>
 </tr>
 <tr>
-    <td><span class="sortValue">VectorSeriesTests.testEquals303</span><a href="VectorSeriesTests_testEquals303_e1.html">VectorSeriesTests.testEquals303</a></td>
-    <td style="whitespace:nowrap;"><span class="sortValue">1674503966549</span>23 Jan 12:59:26</td>
+    <td><span class="sortValue">VectorSeriesTests.testGetX1246</span><a href="VectorSeriesTests_testGetX1246_o6.html">VectorSeriesTests.testGetX1246</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1675417500242</span>3 Feb 02:45:00</td>
     <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
   </td>
-    <td><span class="sortValue">0.001</span>0.001</td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VectorSeriesTests.testGetX1247</span><a href="VectorSeriesTests_testGetX1247_10o.html">VectorSeriesTests.testGetX1247</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1675417500305</span>3 Feb 02:45:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
     <td style="width:50%">
      &#160;     </td>
 </tr>
@@ -242,7 +364,7 @@
         <ul>
             <li>
                 Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
-                on Mon Jan 23 2023 12:59:29 MST using coverage data from Mon Jan 23 2023 12:59:26 MST.
+                on Fri Feb 3 2023 02:45:03 MST using coverage data from Fri Feb 3 2023 02:45:00 MST.
             </li>
         </ul>
         <ul>

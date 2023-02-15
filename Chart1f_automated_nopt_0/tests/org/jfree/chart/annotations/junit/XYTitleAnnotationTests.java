@@ -87,26 +87,9 @@ public class XYTitleAnnotationTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testHashCode1370() { 
-     TextTitle t1 = new TextTitle(); 
-     TextTitle t2 = new TextTitle(); 
-     assertTrue(t1.equals(t2)); 
-     int h1 = t1.hashCode(); 
-     int h2 = t2.hashCode(); 
-     assertEquals(h1, h2); 
- }
-public void testCloning1372() { 
-     XYTitleAnnotation a1 = new XYTitleAnnotation(10.0, 20.0, new TextTitle("T")); 
-     XYTitleAnnotation a2 = null; 
-     try { 
-         a2 = (XYTitleAnnotation) a1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         System.err.println("Failed to clone."); 
-     } 
-     assertTrue(a1 != a2); 
-     assertTrue(a1.getClass() == a2.getClass()); 
-     assertTrue(a1.equals(a2)); 
- }
+public void testHashCode7843() { TextTitle t = new TextTitle(); XYTitleAnnotation a1 = new XYTitleAnnotation(1.0, 2.0, t); XYTitleAnnotation a2 = new XYTitleAnnotation(1.0, 2.0, t); assertEquals(a1, a2); int h1 = a1.hashCode(); int h2 = a2.hashCode(); assertEquals(h1, h2); }
+public void testHashCode7844() { TextTitle t = new TextTitle(); XYTitleAnnotation a1 = new XYTitleAnnotation(1.0, 2.0, t); XYTitleAnnotation a2 = new XYTitleAnnotation(1.0, 2.0, t); assertEquals(a1, a2); assertEquals(a1.hashCode(), a2.hashCode()); }
+public void testCloning7845() throws CloneNotSupportedException { TextTitle t = new TextTitle("Title"); XYTitleAnnotation a1 = new XYTitleAnnotation(1.0, 2.0, t); XYTitleAnnotation a2 = (XYTitleAnnotation) a1.clone(); assertNotSame(a1, a2); assertSame(a1.getClass(), a2.getClass()); assertEquals(a1, a2); }
     
 
     /**

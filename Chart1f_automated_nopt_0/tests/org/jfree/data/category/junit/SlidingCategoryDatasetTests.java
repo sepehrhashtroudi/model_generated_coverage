@@ -83,32 +83,9 @@ public class SlidingCategoryDatasetTests extends TestCase {
     /**
      * Some checks for the equals() method.
      */
-public void testGetRowCount548() { 
-     DefaultCategoryDataset underlying = new DefaultCategoryDataset(); 
-     underlying.addValue(1.0, "R1", "C1"); 
-     underlying.addValue(2.0, "R1", "C2"); 
-     underlying.addValue(3.0, "R1", "C3"); 
-     underlying.addValue(4.0, "R1", "C4"); 
-     SlidingCategoryDataset dataset = new SlidingCategoryDataset(underlying, 1, 2); 
-     assertEquals(2, dataset.getRowCount()); 
-     assertEquals(3, dataset.getRowCount()); 
-     assertEquals(4, dataset.getRowCount()); 
-     dataset.setFirstCategoryIndex(3); 
-     assertEquals(2, dataset.getRowCount()); 
-     assertEquals(1, dataset.getRowCount()); 
-     assertEquals(2, dataset.getRowCount()); 
-     dataset.setFirstCategoryIndex(4); 
-     assertEquals(1, dataset.getRowCount()); 
-     assertEquals(2, dataset.getRowCount()); 
-     dataset.setFirstCategoryIndex(3); 
-     assertEquals(3, dataset.getRowCount()); 
-     assertEquals(4, dataset.getRowCount()); 
-     dataset.setFirstCategoryIndex(4); 
-     assertEquals(4, dataset.getRowCount()); 
-     dataset.setFirstCategoryIndex(5); 
-     assertEquals(2, dataset.getRowCount()); 
-     assertEquals(1, dataset.getRowCount()); 
- }
+public void testGetUnderlyingDataset2737() { DefaultCategoryDataset underlying = new DefaultCategoryDataset(); underlying.addValue(1.0, "R1", "C1"); underlying.addValue(2.0, "R1", "C2"); underlying.addValue(3.0, "R1", "C3"); SlidingCategoryDataset dataset = new SlidingCategoryDataset(underlying, 0, 3); assertSame(underlying, dataset.getUnderlyingDataset()); }
+public void testEquals2744() { SlidingCategoryDataset d1 = new SlidingCategoryDataset(new DefaultCategoryDataset(), 0, 2); SlidingCategoryDataset d2 = new SlidingCategoryDataset(new DefaultCategoryDataset(), 0, 2); assertEquals(d1, d2); d1.setFirstCategoryIndex(0); assertFalse(d1.equals(d2)); d2.setFirstCategoryIndex(0); assertEquals(d1, d2); d1.setMaximumCategoryCount(2); assertFalse(d1.equals(d2)); d2.setMaximumCategoryCount(2); assertEquals(d1, d2); }
+public void testEquals2745() { SlidingCategoryDataset d1 = new SlidingCategoryDataset(new DefaultCategoryDataset(), 1, 2); SlidingCategoryDataset d2 = new SlidingCategoryDataset(new DefaultCategoryDataset(), 1, 2); assertEquals(d1, d2); d1.setFirstCategoryIndex(0); assertFalse(d1.equals(d2)); d2.setFirstCategoryIndex(0); assertEquals(d1, d2); d1.setMaximumCategoryCount(2); assertFalse(d1.equals(d2)); d2.setMaximumCategoryCount(2); assertEquals(d1, d2); }
     
 
     /**

@@ -81,6 +81,7 @@ public class PieSectionEntityTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
+public void testEquals4938() { PieSectionEntity e1 = new PieSectionEntity(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0), new DefaultPieDataset(), 1, 2, "Key", "ToolTip", "URL"); PieSectionEntity e2 = new PieSectionEntity(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0), new DefaultPieDataset(), 1, 2, "Key", "ToolTip", "URL"); assertEquals(e1, e2); }
     
 
     /**

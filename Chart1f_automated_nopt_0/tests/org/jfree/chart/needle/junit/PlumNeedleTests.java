@@ -78,19 +78,7 @@ public class PlumNeedleTests extends TestCase {
     /**
      * Check that the equals() method can distinguish all fields.
      */
-public void testCloning1200() { 
-     PlumNeedle n1 = new PlumNeedle(); 
-     PlumNeedle n2 = null; 
-     try { 
-         n2 = (PlumNeedle) n1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-         System.err.println("Failed to clone."); 
-     } 
-     assertTrue(n1 != n2); 
-     assertTrue(n1.getClass() == n2.getClass()); 
-     assertTrue(n1.equals(n2)); 
- }
+public void testEquals6296() { PlumNeedle n1 = new PlumNeedle(); PlumNeedle n2 = new PlumNeedle(); assertEquals(n1, n2); assertEquals(n2, n1); }
     
 
     /**

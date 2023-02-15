@@ -131,10 +131,16 @@ public class CategoryPlotTests extends TestCase {
     /**
      * Some checks for the constructor.
      */
-public void testRemoveDomainMarker1348() { 
-     CategoryPlot plot = new CategoryPlot(); 
-     assertFalse(plot.removeDomainMarker(new ValueMarker(0.5))); 
- }
+public void testEquals5389() { NumberAxis a1 = new NumberAxis("Test"); NumberAxis a2 = new NumberAxis("Test"); assertEquals(a1, a2); a1.setAutoRangeIncludesZero(false); assertFalse(a1.equals(a2)); a2.setAutoRangeIncludesZero(false); assertEquals(a1, a2); a1.setAutoRangeStickyZero(true); assertFalse(a1.equals(a2)); a2.setAutoRangeStickyZero(true); assertEquals(a1, a2); }
+public void testGetRenderer7612() { CategoryPlot plot = new CategoryPlot(); assertNull(plot.getRenderer()); plot.setRenderer(new LineAndShapeRenderer()); assertNotNull(plot.getRenderer()); }
+public void testRemoveDomainMarker7626() { CategoryPlot plot = new CategoryPlot(); assertTrue(plot.removeDomainMarker(new CategoryMarker("A"))); assertFalse(plot.removeDomainMarker(new CategoryMarker("B"))); }
+public void testRemoveDomainMarker7628() { CategoryPlot plot = new CategoryPlot(); assertTrue(plot.removeDomainMarker(new CategoryMarker("A"), null)); assertTrue(plot.removeDomainMarker(new CategoryMarker("B"), null)); assertFalse(plot.removeDomainMarker(new CategoryMarker("C"), null)); }
+public void testRemoveDomainMarker7629() { CategoryPlot plot = new CategoryPlot(); assertTrue(plot.removeDomainMarker(new CategoryMarker("A"), null)); assertFalse(plot.removeDomainMarker(new CategoryMarker("A"), null)); }
+public void testRemoveDomainMarker7632() { CategoryPlot plot = new CategoryPlot(); assertFalse(plot.removeDomainMarker(0, new CategoryMarker("X"), Layer.FOREGROUND, true)); assertTrue(plot.removeDomainMarker(0, new CategoryMarker("X"), Layer.FOREGROUND, true)); assertFalse(plot.removeDomainMarker(1, new CategoryMarker("X"), Layer.FOREGROUND, true)); assertTrue(plot.removeDomainMarker(1, new CategoryMarker("X"), Layer.FOREGROUND, true)); assertFalse(plot.removeDomainMarker(1, new CategoryMarker("X"), Layer.FOREGROUND, true));
+}
+
+public void testCloning7677() throws CloneNotSupportedException { NumberAxis d1 = new NumberAxis("d1"); NumberAxis d2 = (NumberAxis) d1.clone(); assertNotSame(d1, d2); assertSame(d1.getClass(), d2.getClass()); assertEquals(d1, d2); }
+public void testCloning7694() throws CloneNotSupportedException { AxisSpace p1 = new AxisSpace(); AxisSpace p2 = (AxisSpace) p1.clone(); assertNotSame(p1, p2); assertSame(p1.getClass(), p2.getClass()); assertEquals(p1, p2); }
     
 
     /**

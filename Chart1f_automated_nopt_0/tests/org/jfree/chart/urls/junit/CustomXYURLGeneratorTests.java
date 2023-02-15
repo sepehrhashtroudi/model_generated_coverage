@@ -84,52 +84,7 @@ public class CustomXYURLGeneratorTests extends TestCase {
     /**
      * Some checks for the equals() method.
      */
-public void testPublicCloneable1238() { 
-     CustomXYURLGenerator g1 = new CustomXYURLGenerator(); 
-     assertTrue(g1 instanceof PublicCloneable); 
- }
-public void testCloning1240() { 
-     CustomXYURLGenerator g1 = new CustomXYURLGenerator(); 
-     CustomXYURLGenerator g2 = null; 
-     try { 
-         g2 = (CustomXYURLGenerator) g1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(g1 != g2); 
-     assertTrue(g1.getClass() == g2.getClass()); 
-     assertTrue(g1.equals(g2)); 
-     g1.addURLSeries(new java.util.ArrayList()); 
-     assertFalse(g1.equals(g2)); 
-     g2.addURLSeries(new java.util.ArrayList()); 
-     assertTrue(g1.equals(g2)); 
- }
-public void testSerialization1241() { 
-     List u1 = new java.util.ArrayList(); 
-     u1.add("URL A1"); 
-     u1.add("URL A2"); 
-     u1.add("URL A3"); 
-     List u2 = new java.util.ArrayList(); 
-     u2.add("URL B1"); 
-     u2.add("URL B2"); 
-     u2.add("URL B3"); 
-     CustomXYURLGenerator g1 = new CustomXYURLGenerator(); 
-     g1.addURLSeries(u1); 
-     g1.addURLSeries(u2); 
-     CustomXYURLGenerator g2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(g1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         g2 = (CustomXYURLGenerator) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(g1, g2); 
- }
+public void testCloning6508() throws CloneNotSupportedException { CustomXYURLGenerator g1 = new CustomXYURLGenerator(); CustomXYURLGenerator g2 = (CustomXYURLGenerator) g1.clone(); assertNotSame(g1, g2); assertSame(g1.getClass(), g2.getClass()); assertEquals(g1, g2); }
     
 
     /**

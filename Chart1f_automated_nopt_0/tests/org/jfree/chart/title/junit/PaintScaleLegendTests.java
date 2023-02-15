@@ -87,24 +87,7 @@ public class PaintScaleLegendTests extends TestCase {
     /**
      * Test that the equals() method distinguishes all fields.
      */
-public void testEquals439() { 
-     PaintScaleLegend t1 = new PaintScaleLegend(new GrayPaintScale(), new NumberAxis("Test")); 
-     PaintScaleLegend t2 = new PaintScaleLegend(new GrayPaintScale(), new NumberAxis("Test")); 
-     assertTrue(t1.equals(t2)); 
-     assertTrue(t2.equals(t1)); 
-     t1 = new PaintScaleLegend(new GrayPaintScale(1.0, 2.0), new NumberAxis("Test2")); 
-     assertFalse(t1.equals(t2)); 
-     t2 = new PaintScaleLegend(new GrayPaintScale(1.0, 2.0), new NumberAxis("Test2")); 
-     assertTrue(t1.equals(t2)); 
-     t1 = new PaintScaleLegend(new GrayPaintScale(2.0, 3.0), new NumberAxis("Test3")); 
-     assertFalse(t1.equals(t2)); 
-     t2 = new PaintScaleLegend(new GrayPaintScale(2.0, 3.0), new NumberAxis("Test3")); 
-     assertTrue(t1.equals(t2)); 
-     t1 = new PaintScaleLegend(new GrayPaintScale(3.0, 4.0), new NumberAxis("Test4")); 
-     assertFalse(t1.equals(t2)); 
-     t2 = new PaintScaleLegend(new GrayPaintScale(3.0, 4.0), new NumberAxis("Test4")); 
-     assertTrue(t1.equals(t2)); 
- }
+public void testEquals12() { LookupPaintScale l1 = new LookupPaintScale(); LookupPaintScale l2 = new LookupPaintScale(); assertEquals(l1, l2); assertEquals(l2, l1); l1.add(1.0, Color.RED); assertFalse(l1.equals(l2)); l2.add(1.0, Color.RED); assertEquals(l1, l2); l1.add(2.0, Color.RED); assertFalse(l1.equals(l2)); l2.add(2.0, Color.RED); assertEquals(l1, l2); }
     
 
     /**

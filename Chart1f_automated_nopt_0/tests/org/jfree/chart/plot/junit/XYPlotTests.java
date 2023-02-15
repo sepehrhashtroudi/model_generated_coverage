@@ -143,40 +143,45 @@ public class XYPlotTests extends TestCase {
     /**
      * Some checks for the equals() method.
      */
-public void testCloning239() { 
-     StandardXYToolTipGenerator g1 = new StandardXYToolTipGenerator(); 
-     StandardXYToolTipGenerator g2 = null; 
-     try { 
-         g2 = (StandardXYToolTipGenerator) g1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(g1 != g2); 
-     assertTrue(g1.getClass() == g2.getClass()); 
-     assertTrue(g1.equals(g2)); 
- }
-public void testAddRangeMarker1432() { 
-     XYPlot plot = new XYPlot(); 
-     Marker m = new ValueMarker(1.0); 
-     plot.addRangeMarker(m); 
-     List listeners = Arrays.asList(m.getListeners(MarkerChangeListener.class)); 
-     assertTrue(listeners.contains(plot)); 
-     plot.clearRangeMarkers(); 
-     listeners = Arrays.asList(m.getListeners(MarkerChangeListener.class)); 
-     assertFalse(listeners.contains(plot)); 
- }
-public void testCloning21435() { 
-     XYPlot plot1 = new XYPlot(null, new NumberAxis("Domain Axis"), new NumberAxis("Range Axis"), new StandardXYItemRenderer()); 
-     XYPlot plot2 = null; 
-     try { 
-         plot2 = (XYPlot) plot1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(plot1 != plot2); 
-     assertTrue(plot1.getClass() == plot2.getClass()); 
-     assertTrue(plot1.equals(plot2)); 
- }
+public void testEquals5615() { final DefaultShadowGenerator g1 = new DefaultShadowGenerator(); assertTrue(g1.equals(g1)); final DefaultShadowGenerator g2 = new DefaultShadowGenerator(); assertTrue(g1.equals(g2)); final DefaultShadowGenerator g3 = new DefaultShadowGenerator(); assertFalse(g1.equals(g3)); final DefaultShadowGenerator g4 = new DefaultShadowGenerator(); assertFalse(g1.equals(g4)); final DefaultShadowGenerator g5 = new DefaultShadowGenerator(); assertFalse(g1.equals(g5)); final DefaultShadowGenerator g6 = new DefaultShadowGenerator(); assertFalse(g1.equals(g6)); }
+public void testSetOrientation8376() { XYPlot plot = new XYPlot(); plot.setOrientation(PlotOrientation.VERTICAL); assertEquals(PlotOrientation.VERTICAL, plot.getOrientation()); plot.setOrientation(PlotOrientation.VERTICAL); assertEquals(PlotOrientation.VERTICAL, plot.getOrientation()); plot.setOrientation(PlotOrientation.VERTICAL); assertEquals(PlotOrientation.VERTICAL, plot.getOrientation()); }
+public void testGetDomainAxis8379() { XYPlot plot = new XYPlot(); NumberAxis xAxis = new NumberAxis("X"); NumberAxis yAxis = new NumberAxis("Y"); plot.setDomainAxis(xAxis); plot.setDomainAxis(yAxis); assertEquals(xAxis, plot.getDomainAxis(0)); assertEquals(yAxis, plot.getDomainAxis(1)); }
+public void testSetDomainAxis8380() { XYPlot plot = new XYPlot(); NumberAxis xAxis = new NumberAxis("X"); NumberAxis yAxis = new NumberAxis("Y"); plot.setDomainAxis(xAxis); assertEquals(xAxis, plot.getDomainAxis()); plot.setDomainAxis(yAxis); assertEquals(yAxis, plot.getDomainAxis()); }
+public void testSetDomainAxis8381() { XYPlot plot = new XYPlot(); NumberAxis xAxis = new NumberAxis("X"); NumberAxis yAxis = new NumberAxis("Y"); plot.setDomainAxis(0, xAxis); assertEquals(xAxis, plot.getDomainAxis()); plot.setDomainAxis(1, yAxis); assertEquals(yAxis, plot.getDomainAxis()); }
+public void testSetDomainAxis8382() { XYPlot plot = new XYPlot(); NumberAxis xAxis = new NumberAxis("X"); NumberAxis yAxis = new NumberAxis("Y"); plot.setDomainAxis(0, xAxis); assertEquals(xAxis, plot.getDomainAxis()); plot.setDomainAxis(1, yAxis); assertEquals(yAxis, plot.getDomainAxis()); plot.setDomainAxis(2, yAxis); assertEquals(yAxis, plot.getDomainAxis()); }
+public void testSetDomainAxis8383() { XYPlot plot = new XYPlot(); NumberAxis xAxis = new NumberAxis("X"); NumberAxis yAxis = new NumberAxis("Y"); plot.setDomainAxis(0, xAxis, true); assertEquals(xAxis, plot.getDomainAxis()); plot.setDomainAxis(1, yAxis, true); assertEquals(yAxis, plot.getDomainAxis()); }
+public void testConfigureDomainAxes8387() { XYPlot plot = new XYPlot(); NumberAxis xAxis = new NumberAxis("X"); NumberAxis yAxis = new NumberAxis("Y"); plot.setDomainAxis(xAxis); plot.setDomainAxis(yAxis); plot.configureDomainAxes(); assertEquals(yAxis, plot.getDomainAxis()); }
+public void testSetRangeAxis8393() { XYPlot plot = new XYPlot(); NumberAxis xAxis = new NumberAxis("X"); NumberAxis yAxis = new NumberAxis("Y"); plot.setRangeAxis(xAxis); assertEquals(xAxis, plot.getRangeAxis()); plot.setRangeAxis(yAxis); assertEquals(yAxis, plot.getRangeAxis()); }
+public void testFireChangeEvent8394() { XYPlot plot = new XYPlot(); NumberAxis xAxis = new NumberAxis("X"); NumberAxis yAxis = new NumberAxis("Y"); plot.setRangeAxis(xAxis); plot.setRangeAxis(yAxis); assertEquals(xAxis, plot.getRangeAxis()); assertEquals(yAxis, plot.getRangeAxis()); }
+public void testGetRangeAxis8397() { XYPlot plot = new XYPlot(); NumberAxis xAxis = new NumberAxis("X"); NumberAxis yAxis = new NumberAxis("Y"); plot.setRangeAxis(0, xAxis); assertEquals(xAxis, plot.getRangeAxis(0)); plot.setRangeAxis(1, yAxis); assertEquals(yAxis, plot.getRangeAxis(1)); }
+public void testSetRangeAxis8399() { XYPlot plot = new XYPlot(); NumberAxis xAxis = new NumberAxis("X"); NumberAxis yAxis = new NumberAxis("Y"); plot.setRangeAxis(0, xAxis); assertEquals(xAxis, plot.getRangeAxis()); plot.setRangeAxis(1, yAxis); assertEquals(yAxis, plot.getRangeAxis()); plot.setRangeAxis(2, yAxis); assertEquals(yAxis, plot.getRangeAxis()); plot.setRangeAxis(3, yAxis); assertEquals(yAxis, plot.getRangeAxis()); plot.setRangeAxis(4, yAxis); assertEquals(yAxis, plot.getRangeAxis());
+}
+
+public void testSetRangeAxis8400() { XYPlot plot = new XYPlot(); NumberAxis xAxis = new NumberAxis("X"); NumberAxis yAxis = new NumberAxis("Y"); plot.setRangeAxis(0, xAxis, true); assertEquals(xAxis, plot.getRangeAxis()); plot.setRangeAxis(1, yAxis, true); assertEquals(yAxis, plot.getRangeAxis()); plot.setRangeAxis(2, xAxis, true); assertEquals(xAxis, plot.getRangeAxis()); plot.setRangeAxis(3, yAxis, true); assertEquals(yAxis, plot.getRangeAxis()); }
+public void testSetRangeAxis8401() { XYPlot plot = new XYPlot(); NumberAxis xAxis = new NumberAxis("X"); NumberAxis yAxis = new NumberAxis("Y"); plot.setRangeAxis(0, xAxis); assertEquals(xAxis, plot.getRangeAxis()); plot.setRangeAxis(1, yAxis); assertEquals(yAxis, plot.getRangeAxis()); plot.setRangeAxis(2, null); assertNull(plot.getRangeAxis()); }
+public void testSetRangeAxis8402() { XYPlot plot = new XYPlot(); NumberAxis xAxis = new NumberAxis("X"); NumberAxis yAxis = new NumberAxis("Y"); plot.setRangeAxis(0, xAxis); assertEquals(xAxis, plot.getRangeAxis()); plot.setRangeAxis(1, yAxis); assertEquals(yAxis, plot.getRangeAxis()); }
+public void testSetRangeAxis8403() { XYPlot plot = new XYPlot(); NumberAxis xAxis = new NumberAxis("X"); NumberAxis yAxis = new NumberAxis("Y"); plot.setRangeAxis(0, xAxis); assertEquals(xAxis, plot.getRangeAxis()); plot.setRangeAxis(1, yAxis); assertEquals(yAxis, plot.getRangeAxis()); plot.setRangeAxis(2, yAxis); assertEquals(yAxis, plot.getRangeAxis()); plot.setRangeAxis(3, xAxis); assertEquals(xAxis, plot.getRangeAxis()); plot.setRangeAxis(4, yAxis); assertEquals(yAxis, plot.getRangeAxis());
+}
+
+public void testSetRangeAxis8404() { XYPlot plot = new XYPlot(); NumberAxis xAxis = new NumberAxis("X"); NumberAxis yAxis = new NumberAxis("Y"); plot.setRangeAxis(0, xAxis); assertEquals(xAxis, plot.getRangeAxis()); plot.setRangeAxis(1, yAxis); assertEquals(yAxis, plot.getRangeAxis()); plot.setRangeAxis(2, xAxis); assertEquals(xAxis, plot.getRangeAxis()); plot.setRangeAxis(3, yAxis); assertEquals(yAxis, plot.getRangeAxis()); }
+public void testConfigureRangeAxes8406() { XYPlot plot = new XYPlot(); NumberAxis xAxis = new NumberAxis("X"); NumberAxis yAxis = new NumberAxis("Y"); plot.setDomainAxis(xAxis); plot.setRangeAxis(yAxis); plot.configureRangeAxes(); assertEquals(yAxis, plot.getRangeAxis()); }
+public void testSetRangeAxisLocation8409() { XYPlot plot = new XYPlot(); AxisLocation location1 = AxisLocation.BOTTOM_OR_RIGHT; AxisLocation location2 = AxisLocation.TOP_OR_LEFT; plot.setRangeAxisLocation(0, location1, true); assertEquals(location1, plot.getRangeAxisLocation()); plot.setRangeAxisLocation(1, location2, true); assertEquals(location2, plot.getRangeAxisLocation()); plot.setRangeAxisLocation(2, location2, true); assertEquals(location2, plot.getRangeAxisLocation()); }
+public void testSetWeight8418() { XYPlot plot = new XYPlot(); plot.setWeight(1); assertEquals(1, plot.getWeight()); plot.setWeight(2); assertEquals(2, plot.getWeight()); }
+public void testSetWeight8419() { XYPlot plot = new XYPlot(); plot.setWeight(1); assertEquals(1, plot.getWeight()); }
+public void testFireChangeEvent8420() { XYPlot plot = new XYPlot(); plot.setWeight(0); assertEquals(0, plot.getWeight()); plot.setWeight(1); assertEquals(1, plot.getWeight()); plot.setWeight(-1); assertEquals(-1, plot.getWeight()); plot.setWeight(2); assertEquals(2, plot.getWeight()); plot.setWeight(3); assertEquals(3, plot.getWeight()); }
+public void testSetDomainGridlineStroke8426() { XYPlot plot = new XYPlot(); assertNull(plot.getDomainGridlineStroke()); try { plot.setDomainGridlineStroke(null); fail("IllegalArgumentException expected"); } catch (IllegalArgumentException e) { } }
+public void testFireChangeEvent8427() { XYPlot plot = new XYPlot(); assertNull(plot.getDomainGridlineStroke()); try { plot.setDomainGridlineStroke(null); fail("IllegalArgumentException expected"); } catch (IllegalArgumentException e) { } }
+public void testSetDomainMinorGridlinePaint8428() { XYPlot plot = new XYPlot(); assertNull(plot.getDomainMinorGridlinePaint()); plot.setDomainMinorGridlinePaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); assertEquals(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE), plot.getDomainMinorGridlinePaint()); }
+public void testSetRangeGridlineStroke8434() { XYPlot plot = new XYPlot(); assertNull(plot.getRangeGridlineStroke());Stroke s = new BasicStroke(1.0f); plot.setRangeGridlineStroke(s); assertSame(s, plot.getRangeGridlineStroke()); try { plot.setRangeGridlineStroke(null); fail("IllegalArgumentException expected"); } catch (IllegalArgumentException e) { } try { plot.setRangeGridlineStroke(new BasicStroke(2.0f)); fail("IllegalArgumentException expected"); } catch (IllegalArgumentException e) { } }
+public void testSetRangeMinorGridlineStroke8439() { XYPlot plot = new XYPlot(); assertNull(plot.getRangeMinorGridlineStroke()); try { plot.setRangeMinorGridlineStroke(null); fail("IllegalArgumentException should have been thrown."); } catch (IllegalArgumentException e) { } }
+public void testSetRangeMinorGridlineStroke8440() { XYPlot plot = new XYPlot(); assertNull(plot.getRangeMinorGridlineStroke());Stroke s = new BasicStroke(1.0f); plot.setRangeMinorGridlineStroke(s); assertSame(s, plot.getRangeMinorGridlineStroke()); try { plot.setRangeMinorGridlineStroke(null); fail("IllegalArgumentException should have been thrown."); } catch (IllegalArgumentException e) { } try { plot.setRangeMinorGridlineStroke(new BasicStroke(2.0f)); fail("IllegalArgumentException should have been thrown."); } catch (IllegalArgumentException e) { } }
+public void testSetDomainTickBandPaint8453() { XYPlot plot = new XYPlot(); plot.setDomainTickBandPaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); }
+public void testSetDomainTickBandPaint8454() { XYPlot plot = new XYPlot(); plot.setDomainTickBandPaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); assertEquals(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE), plot.getDomainTickBandPaint()); }
+public void testAddRangeMarker8465() { XYPlot plot = new XYPlot(); Marker m = new ValueMarker(1.0); plot.addRangeMarker(m); }
+public void testGetRangeAxisIndex8526() { XYPlot plot = new XYPlot(); assertEquals(-1, plot.getRangeAxisIndex(new NumberAxis("A"))); plot.setRangeAxis(1, new NumberAxis("B")); assertEquals(0, plot.getRangeAxisIndex(new NumberAxis("A"))); plot.setRangeAxis(2, new NumberAxis("B")); assertEquals(1, plot.getRangeAxisIndex(new NumberAxis("A"))); assertEquals(2, plot.getRangeAxisIndex(new NumberAxis("B"))); }
+public void testCloning8576() throws CloneNotSupportedException { XYPlot p1 = new XYPlot(); XYPlot p2 = (XYPlot) p1.clone(); assertNotSame(p1, p2); assertSame(p1.getClass(), p2.getClass()); assertEquals(p1, p2); }
+public void testCloning8578() throws CloneNotSupportedException { NumberAxis d1 = new NumberAxis("X"); NumberAxis d2 = (NumberAxis) d1.clone(); assertNotSame(d1, d2); assertSame(d1.getClass(), d2.getClass()); assertEquals(d1, d2); }
+public void testCloning8580() throws CloneNotSupportedException { NumberAxis x1 = new NumberAxis("X"); NumberAxis x2 = (NumberAxis) x1.clone(); assertNotSame(x1, x2); assertSame(x1.getClass(), x2.getClass()); assertEquals(x1, x2); }
     
 
     /**

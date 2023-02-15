@@ -86,38 +86,7 @@ public class IntervalCategoryToolTipGeneratorTests extends TestCase {
     /**
      * Tests the equals() method.
      */
-public void testSerialization1020() { 
-     IntervalCategoryToolTipGenerator g1 = new IntervalCategoryToolTipGenerator(); 
-     IntervalCategoryToolTipGenerator g2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(g1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         g2 = (IntervalCategoryToolTipGenerator) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(g1, g2); 
- }
-public void testSerialization1021() { 
-     IntervalCategoryToolTipGenerator g1 = new IntervalCategoryToolTipGenerator("{3} - {4}", DateFormat.getInstance()); 
-     IntervalCategoryToolTipGenerator g2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(g1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         g2 = (IntervalCategoryToolTipGenerator) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(g1, g2); 
- }
+public void testIntervalCategoryToolTipGenerator5285() { IntervalCategoryToolTipGenerator g1 = new IntervalCategoryToolTipGenerator("{0}", new DecimalFormat("0.000")); IntervalCategoryToolTipGenerator g2 = new IntervalCategoryToolTipGenerator("{0}", new DecimalFormat("0.000")); IntervalCategoryToolTipGenerator g3 = new IntervalCategoryToolTipGenerator("{0}", new DecimalFormat("0.000")); IntervalCategoryToolTipGenerator g4 = new IntervalCategoryToolTipGenerator("{0}", new DecimalFormat("0.000")); assertEquals(g1, g2); assertEquals(g1, g3); assertEquals(g1, g4); }
     
 
     /**

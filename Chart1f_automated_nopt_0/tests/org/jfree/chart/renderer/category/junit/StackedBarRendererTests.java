@@ -83,16 +83,8 @@ public class StackedBarRendererTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
-public void testEquals1233() { 
-     StackedBarRenderer r1 = new StackedBarRenderer(); 
-     StackedBarRenderer r2 = new StackedBarRenderer(); 
-     assertTrue(r1.equals(r2)); 
-     assertTrue(r2.equals(r1)); 
-     r1.setRenderAsPercentages(true); 
-     assertFalse(r1.equals(r2)); 
-     r2.setRenderAsPercentages(true); 
-     assertTrue(r1.equals(r2)); 
- }
+public void testEquals26468() { StackedBarRenderer r1 = new StackedBarRenderer(); r1.setRenderAsPercentages(true); StackedBarRenderer r2 = new StackedBarRenderer(); assertEquals(r1, r2); }
+public void testFireChangeEvent6470() { StackedBarRenderer r = new StackedBarRenderer(); r.setRenderAsPercentages(true); assertTrue(r.getRenderAsPercentages()); r.setRenderAsPercentages(false); assertFalse(r.getRenderAsPercentages()); }
     
 
     /**

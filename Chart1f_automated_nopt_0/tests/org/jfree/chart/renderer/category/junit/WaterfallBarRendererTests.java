@@ -83,26 +83,9 @@ public class WaterfallBarRendererTests extends TestCase {
     /**
      * Some tests for the findRangeBounds() method.
      */
-public void testPublicCloneable268() { 
-     WaterfallBarRenderer r1 = new WaterfallBarRenderer(); 
-     assertTrue(r1 instanceof PublicCloneable); 
- }
-public void testSerialization269() { 
-     WaterfallBarRenderer r1 = new WaterfallBarRenderer(); 
-     WaterfallBarRenderer r2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(r1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         r2 = (WaterfallBarRenderer) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         System.out.println(e.toString()); 
-     } 
-     assertEquals(r1, r2); 
- }
+public void testCloning1122() throws CloneNotSupportedException { WaterfallBarRenderer r1 = new WaterfallBarRenderer(); r1.setFirstBarPaint(Color.RED); WaterfallBarRenderer r2 = (WaterfallBarRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getFirstBarPaint(), r2.getFirstBarPaint()); assertEquals(r1.getLastBarPaint(), r2.getLastBarPaint()); }
+public void testCloning1125() throws CloneNotSupportedException { WaterfallBarRenderer r1 = new WaterfallBarRenderer(); r1.setLastBarPaint(Color.RED); WaterfallBarRenderer r2 = (WaterfallBarRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getLastBarPaint(), r2.getLastBarPaint()); }
+public void testCloning21128() throws CloneNotSupportedException { WaterfallBarRenderer r1 = new WaterfallBarRenderer(); r1.setPositiveBarPaint(Color.RED); WaterfallBarRenderer r2 = (WaterfallBarRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
     
 
     /**

@@ -89,26 +89,20 @@ public class XYStepAreaRendererTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
-public void testHashcode286() { 
-     XYStepAreaRenderer r1 = new XYStepAreaRenderer(); 
-     XYStepAreaRenderer r2 = new XYStepAreaRenderer(); 
-     assertTrue(r1.equals(r2)); 
-     int h1 = r1.hashCode(); 
-     int h2 = r2.hashCode(); 
-     assertEquals(h1, h2); 
- }
-public void testCloning288() { 
-     XYStepAreaRenderer r1 = new XYStepAreaRenderer(); 
-     XYStepAreaRenderer r2 = null; 
-     try { 
-         r2 = (XYStepAreaRenderer) r1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         System.err.println("Failed to clone."); 
-     } 
-     assertTrue(r1 != r2); 
-     assertTrue(r1.getClass() == r2.getClass()); 
-     assertTrue(r1.equals(r2)); 
- }
+public void testXYStepAreaRenderer1163() { XYStepAreaRenderer r1 = new XYStepAreaRenderer(); XYStepAreaRenderer r2 = new XYStepAreaRenderer(); assertEquals(r1, r2); }
+public void testXYStepAreaRenderer1164() { XYStepAreaRenderer r = new XYStepAreaRenderer(); assertEquals(r, new XYStepAreaRenderer()); }
+public void testCloning1167() throws CloneNotSupportedException { XYStepAreaRenderer r1 = new XYStepAreaRenderer(); XYStepAreaRenderer r2 = (XYStepAreaRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testIsOutline1170() { XYStepAreaRenderer r = new XYStepAreaRenderer(); assertFalse(r.isOutline()); r.setOutline(true); assertTrue(r.isOutline()); r.setOutline(false); assertFalse(r.isOutline()); }
+public void testCloning1171() throws CloneNotSupportedException { XYStepAreaRenderer r1 = new XYStepAreaRenderer(); r1.setOutline(true); XYStepAreaRenderer r2 = (XYStepAreaRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testFireChangeEvent1172() { XYStepAreaRenderer r = new XYStepAreaRenderer(); assertFalse(r.isOutline()); r.setOutline(true); assertTrue(r.isOutline()); r.setOutline(false); assertFalse(r.isOutline()); r.setOutline(true); assertTrue(r.isOutline()); r.setOutline(false); assertFalse(r.isOutline()); r.setOutline(true); assertTrue(r.isOutline()); }
+public void testGetShapesVisible1173() { XYStepAreaRenderer r = new XYStepAreaRenderer(); assertFalse(r.getShapesVisible()); r.setShapesVisible(true); assertTrue(r.getShapesVisible()); r.setShapesVisible(false); assertFalse(r.getShapesVisible()); }
+public void testCloning1174() throws CloneNotSupportedException { XYStepAreaRenderer r1 = new XYStepAreaRenderer(); r1.setShapesVisible(true); XYStepAreaRenderer r2 = (XYStepAreaRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testFireChangeEvent1176() { XYStepAreaRenderer r = new XYStepAreaRenderer(); r.setShapesVisible(true); assertTrue(r.getShapesVisible()); r.setShapesVisible(false); assertFalse(r.getShapesVisible()); r.setShapesVisible(true); assertTrue(r.getShapesVisible()); r.setShapesVisible(true); assertTrue(r.getShapesVisible()); r.setShapesVisible(false); assertFalse(r.getShapesVisible()); }
+public void testCloning1177() throws CloneNotSupportedException { XYStepAreaRenderer r1 = new XYStepAreaRenderer(); r1.setShapesFilled(true); XYStepAreaRenderer r2 = (XYStepAreaRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testGetPlotArea1179() { XYStepAreaRenderer r = new XYStepAreaRenderer(); assertFalse(r.getPlotArea()); r.setPlotArea(true); assertTrue(r.getPlotArea()); r.setPlotArea(false); assertFalse(r.getPlotArea()); }
+public void testFireChangeEvent1181() { XYStepAreaRenderer r = new XYStepAreaRenderer(); r.setPlotArea(false); assertFalse(r.getPlotArea()); r.setPlotArea(true); assertTrue(r.getPlotArea()); r.setPlotArea(false); assertFalse(r.getPlotArea()); r.setPlotArea(true); assertTrue(r.getPlotArea()); r.setPlotArea(false); assertFalse(r.getPlotArea()); }
+public void testCloning1183() throws CloneNotSupportedException { XYStepAreaRenderer r1 = new XYStepAreaRenderer(); r1.setRangeBase(0.5); XYStepAreaRenderer r2 = (XYStepAreaRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testEquals1208() { XYStepAreaRenderer r1 = new XYStepAreaRenderer(); XYStepAreaRenderer r2 = new XYStepAreaRenderer(); assertEquals(r1, r2); r1.setOutline(true); assertFalse(r1.equals(r2)); r2.setOutline(true); assertEquals(r1, r2); r1.setShapesVisible(true); assertFalse(r1.equals(r2)); r2.setShapesVisible(true); assertEquals(r1, r2); }
     
 
     /**

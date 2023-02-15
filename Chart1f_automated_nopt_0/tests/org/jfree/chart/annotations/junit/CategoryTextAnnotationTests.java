@@ -83,102 +83,18 @@ public class CategoryTextAnnotationTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testPublicCloneable964() { 
-     CategoryTextAnnotation a1 = new CategoryTextAnnotation("Test", "Category", 1.0); 
-     assertTrue(a1 instanceof PublicCloneable); 
- }
-public void testSerialization965() { 
-     CategoryTextAnnotation a1 = new CategoryTextAnnotation("Test", "Category", 1.0); 
-     CategoryTextAnnotation a2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(a1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         a2 = (CategoryTextAnnotation) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(a1, a2); 
- }
-public void testEquals971() { 
-     CategoryTextAnnotation a1 = new CategoryTextAnnotation("Test", "Category", 1.0); 
-     CategoryTextAnnotation a2 = new CategoryTextAnnotation("Test", "Category", 1.0); 
-     assertTrue(a1.equals(a2)); 
-     assertTrue(a2.equals(a1)); 
-     a1 = new CategoryTextAnnotation("Test 1", "Category", 1.0); 
-     assertFalse(a1.equals(a2)); 
-     a2 = new CategoryTextAnnotation("Test", "Category", 1.0); 
-     assertTrue(a1.equals(a2)); 
-     a1 = new CategoryTextAnnotation("Test 2", "Category", 2.0); 
-     assertFalse(a1.equals(a2)); 
-     a2 = new CategoryTextAnnotation("Test 2", "Category", 2.0); 
-     assertTrue(a1.equals(a2)); 
-     a1 = new CategoryTextAnnotation("Test 2", "Category", 3.0); 
-     assertFalse(a1.equals(a2)); 
-     a2 = new CategoryTextAnnotation("Test 2", "Category", 3.0); 
-     assertTrue(a1.equals(a2)); 
- }
-public void testCloning972() { 
-     CategoryTextAnnotation a1 = new CategoryTextAnnotation("Test", "Category", 1.0); 
-     CategoryTextAnnotation a2 = null; 
-     try { 
-         a2 = (CategoryTextAnnotation) a1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         System.err.println("Failed to clone."); 
-     } 
-     assertTrue(a1 != a2); 
-     assertTrue(a1.getClass() == a2.getClass()); 
-     assertTrue(a1.equals(a2)); 
- }
-public void testHashCode1124() { 
-     CategoryTextAnnotation a1 = new CategoryTextAnnotation("Test", "Category", 1.0); 
-     CategoryTextAnnotation a2 = new CategoryTextAnnotation("Test", "Category", 1.0); 
-     assertTrue(a1.equals(a2)); 
-     int h1 = a1.hashCode(); 
-     int h2 = a2.hashCode(); 
-     assertEquals(h1, h2); 
- }
-public void testHashCode1131() { 
-     CategoryTextAnnotation a1 = new CategoryTextAnnotation("Text", "Category", 1.0); 
-     CategoryTextAnnotation a2 = new CategoryTextAnnotation("Text", "Category", 1.0); 
-     assertTrue(a1.equals(a2)); 
-     int h1 = a1.hashCode(); 
-     int h2 = a2.hashCode(); 
-     assertEquals(h1, h2); 
- }
-public void testSerialization1132() { 
-     CategoryTextAnnotation a1 = new CategoryTextAnnotation("Test", "Category", 1.0); 
-     CategoryTextAnnotation a2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(a1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         a2 = (CategoryTextAnnotation) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(a1, a2); 
-     a1 = new CategoryTextAnnotation("Test 2", "Category", 1.0); 
-     a2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(a1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         a2 = (CategoryTextAnnotation) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(a1, a2); 
- }
+public void testCategoryTextAnnotation5066() { CategoryTextAnnotation a1 = new CategoryTextAnnotation("Test", "Category", 1.0); CategoryTextAnnotation a2 = new CategoryTextAnnotation("Test", "Category", 1.0); assertEquals(a1, a2); }
+public void testGetCategory5067() { CategoryTextAnnotation a1 = new CategoryTextAnnotation("Test", "Category", 1.0); assertEquals("Category", a1.getCategory()); CategoryTextAnnotation a2 = new CategoryTextAnnotation("Test", "Category", 2.0); assertEquals("Category", a2.getCategory()); }
+public void testCategoryTextAnnotation5068() { CategoryTextAnnotation a1 = new CategoryTextAnnotation("Test", "Category", 1.0); assertEquals("Category", a1.getCategory()); CategoryTextAnnotation a2 = new CategoryTextAnnotation("Test", "Category", 2.0); assertEquals("Category", a2.getCategory()); }
+public void testCloning5069() throws CloneNotSupportedException { CategoryTextAnnotation a1 = new CategoryTextAnnotation("Text", "Category", 1.0); CategoryTextAnnotation a2 = (CategoryTextAnnotation) a1.clone(); assertNotSame(a1, a2); a1.setCategory(null); assertSame(a1.getClass(), a2.getClass()); assertEquals(a1, a2); }
+public void testCloning5070() throws CloneNotSupportedException { CategoryTextAnnotation a1 = new CategoryTextAnnotation("Text", "Category", 1.0); CategoryTextAnnotation a2 = (CategoryTextAnnotation) a1.clone(); assertNotSame(a1, a2); assertSame(a1.getClass(), a2.getClass()); assertEquals(a1, a2); a1.setCategory(null); assertNotSame(a1.getClass(), a2.getClass()); assertEquals(a1, a2); }
+public void testCloning5074() throws CloneNotSupportedException { CategoryTextAnnotation a1 = new CategoryTextAnnotation("Test", "Category", 1.0); CategoryTextAnnotation a2 = (CategoryTextAnnotation) a1.clone(); assertNotSame(a1, a2); assertSame(a1.getCategoryAnchor(), a2.getCategoryAnchor()); assertEquals(a1, a2); }
+public void testCloning5078() throws CloneNotSupportedException { CategoryTextAnnotation a1 = new CategoryTextAnnotation("Test", "Category", 0.0); CategoryTextAnnotation a2 = (CategoryTextAnnotation) a1.clone(); assertNotSame(a1, a2); a1.setValue(0.0); a2.setValue(0.0); assertSame(a1, a2); }
+public void testCloning5079() throws CloneNotSupportedException { CategoryTextAnnotation a1 = new CategoryTextAnnotation("Test", "Category", 0.5); CategoryTextAnnotation a2 = (CategoryTextAnnotation) a1.clone(); assertNotSame(a1, a2); a1.setValue(0.5); assertSame(a1, a2); }
+public void testEquals5081() { CategoryTextAnnotation a1 = new CategoryTextAnnotation("Test", "Category", 1.0); CategoryTextAnnotation a2 = new CategoryTextAnnotation("Test", "Category", 1.0); assertEquals(a1, a2); a1.setCategory("Category A"); assertFalse(a1.equals(a2)); a2.setCategory("Category A"); assertEquals(a1, a2); a1.setValue(0.5); assertFalse(a1.equals(a2)); a2.setValue(0.5); assertEquals(a1, a2); }
+public void testEquals5082() { CategoryTextAnnotation a1 = new CategoryTextAnnotation("Test", "Category", 1.0); CategoryTextAnnotation a2 = new CategoryTextAnnotation("Test", "Category", 1.0); assertEquals(a1, a2); a1.setCategory("Category A"); assertFalse(a1.equals(a2)); a2.setCategory("Category A"); assertEquals(a1, a2); a1.setValue(2.0); assertFalse(a1.equals(a2)); a2.setValue(2.0); assertEquals(a1, a2); }
+public void testEquals5083() { CategoryTextAnnotation a1 = new CategoryTextAnnotation("Text", "Category", 1.0); CategoryTextAnnotation a2 = new CategoryTextAnnotation("Text", "Category", 1.0); assertEquals(a1, a2); a1.setCategory("Category A"); assertFalse(a1.equals(a2)); a2.setCategory("Category A"); assertEquals(a1, a2); a1.setValue(2.0); assertFalse(a1.equals(a2)); a2.setValue(2.0); assertEquals(a1, a2); }
+public void testCloning5086() throws CloneNotSupportedException { CategoryTextAnnotation a1 = new CategoryTextAnnotation("Test", "Category", 1.0); CategoryTextAnnotation a2 = (CategoryTextAnnotation) a1.clone(); assertNotSame(a1, a2); assertSame(a1.getClass(), a2.getClass()); assertEquals(a1, a2); }
     
 
     /**

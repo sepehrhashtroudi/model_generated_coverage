@@ -104,6 +104,14 @@ public class BarRendererTests extends TestCase {
     /**
      * Test that the equals() method distinguishes all fields.
      */
+public void testFireChangeEvent2616() { BarRenderer r = new BarRenderer(); r.setBase(1.0); assertEquals(1.0, r.getBase(), 0.001); r.setBase(2.0); assertEquals(2.0, r.getBase(), 0.001); r.setBase(3.0); assertEquals(3.0, r.getBase(), 0.001); r.setBase(4.0); assertEquals(4.0, r.getBase(), 0.001); r.setBase(5.0); assertEquals(5.0, r.getBase(), 0.001); }
+public void testDrawBarOutline2621() { BarRenderer r = new BarRenderer(); r.setDrawBarOutline(true); assertTrue(r.isDrawBarOutline()); r.setDrawBarOutline(false); assertFalse(r.isDrawBarOutline()); }
+public void testFireChangeEvent2622() { BarRenderer r = new BarRenderer(); r.setDrawBarOutline(false); assertFalse(r.isDrawBarOutline()); r.setDrawBarOutline(true); assertTrue(r.isDrawBarOutline()); }
+public void testSetShadowVisible2632() { BarRenderer r = new BarRenderer(); r.setShadowVisible(true); assertTrue(r.getShadowsVisible()); r.setShadowVisible(false); assertFalse(r.getShadowsVisible()); r.setShadowVisible(true); assertTrue(r.getShadowsVisible()); r.setShadowVisible(false); assertFalse(r.getShadowsVisible()); }
+public void testSetShadowXOffset2637() { BarRenderer r = new BarRenderer(); r.setShadowXOffset(0.5); assertEquals(0.5, r.getShadowXOffset(), 0.001); r.setShadowXOffset(1.0); assertEquals(1.0, r.getShadowXOffset(), 0.001); r.setShadowXOffset(2.0); assertEquals(2.0, r.getShadowXOffset(), 0.001); r.setShadowXOffset(3.0); assertEquals(3.0, r.getShadowXOffset(), 0.001); }
+public void testFireChangeEvent2638() { BarRenderer r = new BarRenderer(); r.setShadowXOffset(1.0); assertEquals(1.0, r.getShadowXOffset(), 0.001); r.setShadowXOffset(2.0); assertEquals(2.0, r.getShadowXOffset(), 0.001); r.setShadowXOffset(3.0); assertEquals(3.0, r.getShadowXOffset(), 0.001); }
+public void testSetShadowYOffset2639() { BarRenderer r = new BarRenderer(); r.setShadowYOffset(0.5); assertEquals(0.5, r.getShadowYOffset(), 0.001); r.setShadowYOffset(1.0); assertEquals(1.0, r.getShadowYOffset(), 0.001); r.setShadowYOffset(2.0); assertEquals(2.0, r.getShadowYOffset(), 0.001); r.setShadowYOffset(3.0); assertEquals(3.0, r.getShadowYOffset(), 0.001); }
+public void testFireChangeEvent2640() { BarRenderer r = new BarRenderer(); r.setShadowYOffset(1.0); assertEquals(1.0, r.getShadowYOffset(), 0.001); r.setShadowYOffset(2.0); assertEquals(2.0, r.getShadowYOffset(), 0.001); r.setShadowYOffset(3.0); assertEquals(3.0, r.getShadowYOffset(), 0.001); }
     
 
     /**

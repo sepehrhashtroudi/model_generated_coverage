@@ -87,6 +87,7 @@ public class XYPointerAnnotationTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
+public void testAnnotations5393() { XYPointerAnnotation a1 = new XYPointerAnnotation("Label", 10.0, 20.0, Math.PI); a1.setTipRadius(2.0); XYPointerAnnotation a2 = new XYPointerAnnotation("Label", 10.0, 20.0, Math.PI); a2.setTipRadius(2.0); assertEquals(a1, a2); }
     
 
     /**

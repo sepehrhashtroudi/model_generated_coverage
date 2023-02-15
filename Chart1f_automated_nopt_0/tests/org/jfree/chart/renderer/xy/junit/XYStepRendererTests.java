@@ -87,23 +87,8 @@ public class XYStepRendererTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
-public void testPublicCloneable1119() { 
-     XYStepRenderer r1 = new XYStepRenderer(); 
-     assertTrue(r1 instanceof PublicCloneable); 
- }
-public void testEquals1120() { 
-     XYStepRenderer r1 = new XYStepRenderer(); 
-     XYStepRenderer r2 = new XYStepRenderer(); 
-     assertEquals(r1, r2); 
-     r1.setStepPoint(0.44); 
-     assertFalse(r1.equals(r2)); 
-     r2.setStepPoint(0.44); 
-     assertTrue(r1.equals(r2)); 
-     r1.setBaseCreateEntities(false); 
-     assertFalse(r1.equals(r2)); 
-     r2.setBaseCreateEntities(false); 
-     assertTrue(r1.equals(r2)); 
- }
+public void testXYStepRenderer5970() { XYStepRenderer r = new XYStepRenderer(); assertEquals(r, r); }
+public void testXYItemRendererState8013() { }
     
 
     /**

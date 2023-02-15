@@ -81,6 +81,7 @@ public class ShapeUtilitiesTests extends TestCase {
     /**
      * Tests the equal() method.
      */
+public void testIntersects727() { Rectangle2D rect1 = new Rectangle2D.Double(0, 0, 100, 100); Rectangle2D rect2 = new Rectangle2D.Double(50, 50, 100, 100); assertTrue(ShapeUtilities.intersects(rect1, rect2)); }
     
 
     /**

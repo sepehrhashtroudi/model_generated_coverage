@@ -88,16 +88,7 @@ public class GroupedStackedBarRendererTests extends TestCase {
     /**
      * Test that the equals() method distinguishes all fields.
      */
-public void testEquals464() { 
-     KeyToGroupMap m1 = new KeyToGroupMap("Default Group"); 
-     KeyToGroupMap m2 = new KeyToGroupMap("Default Group"); 
-     assertTrue(m1.equals(m2)); 
-     assertTrue(m2.equals(m1)); 
-     m1.mapKeyToGroup("K1", "G1"); 
-     assertFalse(m1.equals(m2)); 
-     m2.mapKeyToGroup("K1", "G1"); 
-     assertTrue(m1.equals(m2)); 
- }
+public void testEquals5445() { GroupedStackedBarRenderer r1 = new GroupedStackedBarRenderer(); GroupedStackedBarRenderer r2 = new GroupedStackedBarRenderer(); assertEquals(r1, r2); assertEquals(r2, r1); r1.setSeriesToGroupMap(new KeyToGroupMap()); assertFalse(r1.equals(r2)); r2.setSeriesToGroupMap(new KeyToGroupMap()); assertEquals(r1, r2); }
     
 
     /**

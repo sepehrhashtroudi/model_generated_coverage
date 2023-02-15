@@ -79,19 +79,8 @@ public class WindNeedleTests extends TestCase {
     /**
      * Check that the equals() method can distinguish all fields.
      */
-public void testCloning620() { 
-     WindNeedle n1 = new WindNeedle(); 
-     WindNeedle n2 = null; 
-     try { 
-         n2 = (WindNeedle) n1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-         System.err.println("Failed to clone."); 
-     } 
-     assertTrue(n1 != n2); 
-     assertTrue(n1.getClass() == n2.getClass()); 
-     assertTrue(n1.equals(n2)); 
- }
+public void testWindNeedle3130() { WindNeedle test = new WindNeedle(); assertNotNull(test); }
+public void testEquals3132() { WindNeedle n1 = new WindNeedle(); WindNeedle n2 = new WindNeedle(); assertEquals(n1, n2); assertEquals(n2, n1); }
     
 
     /**

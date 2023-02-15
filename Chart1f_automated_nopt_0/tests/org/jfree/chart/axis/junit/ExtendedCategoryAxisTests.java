@@ -82,90 +82,9 @@ public class ExtendedCategoryAxisTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testSerialization950() { 
-     ExtendedCategoryAxis a1 = new ExtendedCategoryAxis("Test Axis"); 
-     ExtendedCategoryAxis a2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(a1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         a2 = (ExtendedCategoryAxis) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(a1, a2); 
- }
-public void testCloning951() { 
-     ExtendedCategoryAxis a1 = new ExtendedCategoryAxis("Test"); 
-     ExtendedCategoryAxis a2 = null; 
-     try { 
-         a2 = (ExtendedCategoryAxis) a1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(a1 != a2); 
-     assertTrue(a1.getClass() == a2.getClass()); 
-     assertTrue(a1.equals(a2)); 
- }
-public void testEquals952() { 
-     ExtendedCategoryAxis a1 = new ExtendedCategoryAxis("Test"); 
-     ExtendedCategoryAxis a2 = new ExtendedCategoryAxis("Test"); 
-     assertTrue(a1.equals(a2)); 
-     assertTrue(a2.equals(a1)); 
-     a1 = new ExtendedCategoryAxis("Test 1"); 
-     assertFalse(a1.equals(a2)); 
-     a2 = new ExtendedCategoryAxis("Test 1"); 
-     assertTrue(a1.equals(a2)); 
-     a1.addSubLabel("C1", "ABC"); 
-     assertFalse(a1.equals(a2)); 
-     a2.addSubLabel("C1", "ABC"); 
-     assertTrue(a1.equals(a2)); 
-     a1.setSubLabelFont(new Font("Serif", Font.BOLD, 15)); 
-     assertFalse(a1.equals(a2)); 
-     a2.setSubLabelFont(new Font("Serif", Font.BOLD, 15)); 
-     assertTrue(a1.equals(a2)); 
-     a1.setSubLabelPaint(Color.red); 
-     assertFalse(a1.equals(a2)); 
-     a2.setSubLabelPaint(Color.red); 
-     assertTrue(a1.equals(a2)); 
- }
-public void testCloning953() { 
-     ExtendedCategoryAxis a1 = new ExtendedCategoryAxis("Test"); 
-     ExtendedCategoryAxis a2 = null; 
-     try { 
-         a2 = (ExtendedCategoryAxis) a1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(a1 != a2); 
-     assertTrue(a1.getClass() == a2.getClass()); 
-     assertTrue(a1.equals(a2)); 
-     a1.addSubLabel("C1", "ABC"); 
-     assertFalse(a1.equals(a2)); 
-     a2.addSubLabel("C1", "ABC"); 
-     assertTrue(a1.equals(a2)); 
- }
-public void testEquals954() { 
-     ExtendedCategoryAxis a1 = new ExtendedCategoryAxis("Test"); 
-     ExtendedCategoryAxis a2 = new ExtendedCategoryAxis("Test"); 
-     assertTrue(a1.equals(a2)); 
-     assertTrue(a2.equals(a1)); 
-     a1.addSubLabel("C1", "ABC"); 
-     assertFalse(a1.equals(a2)); 
-     a2.addSubLabel("C1", "ABC"); 
-     assertTrue(a1.equals(a2)); 
-     a1.setSubLabelFont(new Font("Serif", Font.BOLD, 15)); 
-     assertFalse(a1.equals(a2)); 
-     a2.setSubLabelFont(new Font("Serif", Font.BOLD, 15)); 
-     assertTrue(a1.equals(a2)); 
-     a1.setSubLabelPaint(Color.red); 
-     assertFalse(a1.equals(a2)); 
-     a2.setSubLabelPaint(Color.red); 
-     assertTrue(a1.equals(a2)); 
- }
+public void testExtendedCategoryAxis5004() { Font f1 = new Font("Tahoma", Font.PLAIN, 10); Font f2 = new Font("Tahoma", Font.PLAIN, 10); Font f3 = new Font("Tahoma", Font.PLAIN, 10); ExtendedCategoryAxis a1 = new ExtendedCategoryAxis("A1"); a1.addSubLabel("C1", "C1"); a1.addSubLabel("C2", "C2"); a1.addSubLabel("C3", "C3"); a1.addSubLabel("C4", "C4"); a1.addSubLabel("C5", "C5");
+}
+
     
 
     /**

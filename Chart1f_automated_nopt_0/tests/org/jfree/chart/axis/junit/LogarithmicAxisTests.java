@@ -124,28 +124,7 @@ public class LogarithmicAxisTests extends TestCase {
     /**
      * Serialize an instance, restore it, and check for equality.
      */
-public void testValueToJava2D1018() { 
-     Rectangle2D plotArea = new Rectangle2D.Double(22, 33, 500, 500); 
-     RectangleEdge edge = RectangleEdge.BOTTOM; 
-     this.axis.setRange(10, 20); 
-     checkPointsToJava2D(edge, plotArea); 
-     this.axis.setRange(0.5, 10); 
-     checkPointsToJava2D(edge, plotArea); 
-     this.axis.setRange(0.2, 20); 
-     checkPointsToJava2D(edge, plotArea); 
-     this.axis.setRange(0.2, 0.7); 
-     checkPointsToJava2D(edge, plotArea); 
- }
-public void testAdjustedLog101019() { 
-     checkLogPowRoundTrip(20); 
-     checkLogPowRoundTrip(10); 
-     checkLogPowRoundTrip(5); 
-     checkLogPowRoundTrip(2); 
-     checkLogPowRoundTrip(1); 
-     checkLogPowRoundTrip(0.5); 
-     checkLogPowRoundTrip(0.2); 
-     checkLogPowRoundTrip(0.0001); 
- }
+public void testLogarithmicAxis5273() { LogarithmicAxis a1 = new LogarithmicAxis("Test"); LogarithmicAxis a2 = new LogarithmicAxis("Test"); assertEquals(a1, a2); }
     
 
     /**

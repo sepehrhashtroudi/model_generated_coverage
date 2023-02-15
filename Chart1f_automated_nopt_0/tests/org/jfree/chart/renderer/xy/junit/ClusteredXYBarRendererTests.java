@@ -85,34 +85,8 @@ public class ClusteredXYBarRendererTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
-public void testFindDomainBounds718() { 
-     AbstractXYItemRenderer renderer = new ClusteredXYBarRenderer(); 
-     XYDataset dataset = createSampleDataset1(); 
-     Range r = renderer.findDomainBounds(dataset); 
-     assertEquals(0.9, r.getLowerBound(), EPSILON); 
-     assertEquals(13.1, r.getUpperBound(), EPSILON); 
-     renderer = new ClusteredXYBarRenderer(0.8, true); 
-     r = renderer.findDomainBounds(dataset); 
-     assertEquals(0.8, r.getLowerBound(), EPSILON); 
-     assertEquals(13.0, r.getUpperBound(), EPSILON); 
-     assertTrue(renderer.findDomainBounds(null) == null); 
- }
-public void testSerialization719() { 
-     ClusteredXYBarRenderer r1 = new ClusteredXYBarRenderer(); 
-     ClusteredXYBarRenderer r2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(r1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         r2 = (ClusteredXYBarRenderer) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(r1, r2); 
- }
+public void testEquals3800() { ClusteredXYBarRenderer r1 = new ClusteredXYBarRenderer(); ClusteredXYBarRenderer r2 = new ClusteredXYBarRenderer(); assertEquals(r1, r2); assertEquals(r2, r1); r1 = new ClusteredXYBarRenderer(); assertFalse(r1.equals(r2)); r2 = new ClusteredXYBarRenderer(); assertEquals(r1, r2); r1 = new ClusteredXYBarRenderer(); assertFalse(r1.equals(r2)); r2 = new ClusteredXYBarRenderer(); assertEquals(r1, r2); }
+public void testEquals3801() { ClusteredXYBarRenderer r1 = new ClusteredXYBarRenderer(); ClusteredXYBarRenderer r2 = new ClusteredXYBarRenderer(); assertEquals(r1, r2); assertEquals(r2, r1); r1 = new ClusteredXYBarRenderer(0.1, true); assertFalse(r1.equals(r2)); r2 = new ClusteredXYBarRenderer(0.1, true); assertEquals(r1, r2); }
     
 
     /**

@@ -85,6 +85,10 @@ public class CategoryLabelPositionTests extends TestCase {
     /**
      * Check that the equals() method can distinguish all fields.
      */
+public void testCategoryLabelPosition3929() { try { CategoryLabelPosition m = new CategoryLabelPosition(); fail("Expected IllegalArgumentException"); } catch (IllegalArgumentException e) { } try { CategoryLabelPosition m = new CategoryLabelPosition(); fail("Expected IllegalArgumentException"); } catch (IllegalArgumentException e) { } try { CategoryLabelPosition m = new CategoryLabelPosition(); fail("Expected IllegalArgumentException"); } catch (IllegalArgumentException e) { } try { CategoryLabelPosition m = new CategoryLabelPosition(); fail("Expected IllegalArgumentException"); } catch (IllegalArgumentException e) { } }
+public void testEquals3945() { CategoryLabelPosition p1 = new CategoryLabelPosition(); CategoryLabelPosition p2 = new CategoryLabelPosition(); assertEquals(p1, p2); }
+public void testEquals3951() { CategoryLabelPosition p1 = new CategoryLabelPosition(); CategoryLabelPosition p2 = new CategoryLabelPosition(); assertTrue(p1.equals(p2)); }
+public void testHashCode3952() { CategoryLabelPosition p1 = new CategoryLabelPosition(); CategoryLabelPosition p2 = new CategoryLabelPosition(); assertEquals(p1, p2); int h1 = p1.hashCode(); int h2 = p2.hashCode(); assertEquals(h1, h2); }
     
 
     /**

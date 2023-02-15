@@ -127,59 +127,43 @@ public class DateAxisTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testEquals53() { 
-     DateTickMarkPosition a1 = DateTickMarkPosition.END; 
-     DateTickMarkPosition a2 = DateTickMarkPosition.END; 
-     assertTrue(a1.equals(a2)); 
-     assertFalse(a1.equals(null)); 
-     assertFalse(a1.equals("Some non-DateTickMarkPosition object")); 
-     a1 = DateTickMarkPosition.MIDDLE; 
-     assertFalse(a1.equals(a2)); 
-     a2 = DateTickMarkPosition.MIDDLE; 
-     assertTrue(a1.equals(a2)); 
-     a1 = DateTickMarkPosition.END; 
-     assertFalse(a1.equals(a2)); 
-     a2 = DateTickMarkPosition.END; 
-     assertTrue(a1.equals(a2)); 
- }
-public void testGetFirstMillisecondWithCalendar592() { 
-     Day d = new Day(25, 12, 2000); 
-     GregorianCalendar calendar = new GregorianCalendar(Locale.GERMANY); 
-     calendar.setTimeZone(TimeZone.getTimeZone("Europe/Frankfurt")); 
-     assertEquals(955766455500L, d.getFirstMillisecond(calendar)); 
-     boolean pass = false; 
-     try { 
-         d.getFirstMillisecond((Calendar) null); 
-     } catch (NullPointerException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
-public void testCloning601() { 
-     DateAxis a1 = new DateAxis("Test"); 
-     DateAxis a2 = null; 
-     try { 
-         a2 = (DateAxis) a1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(a1 != a2); 
-     assertTrue(a1.getClass() == a2.getClass()); 
-     assertTrue(a1.equals(a2)); 
- }
-public void testSetMaximumDate602() { 
-     DateAxis axis = new DateAxis("Test Axis"); 
-     Date date = new Date(); 
-     axis.setMaximumDate(date); 
-     assertEquals(date, axis.getMaximumDate()); 
-     Date d1 = new Date(); 
-     Date d2 = new Date(d1.getTime()); 
-     Date d0 = new Date(d1.getTime() - 1); 
-     axis.setMaximumDate(d2); 
-     axis.setMinimumDate(d1); 
-     axis.setMaximumDate(d1); 
-     assertEquals(d0, axis.getMinimumDate()); 
- }
+public void testGetFirstMillisecond2924() { Day d = new Day(); assertEquals(0, d.getFirstMillisecond()); Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); assertEquals(0, d.getFirstMillisecond()); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testGetFirstMillisecond2925() { Day d = new Day(); assertEquals(0, d.getFirstMillisecond()); Calendar c = Calendar.getInstance(TimeZone.getTimeZone("Europe/London")); assertEquals(0, d.getFirstMillisecond(c)); try { d.getFirstMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } }
+public void testGetLastMillisecond2926() { Day d = new Day(); assertEquals(0, d.getLastMillisecond()); Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); assertEquals(0, d.getLastMillisecond()); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testGetFirstMillisecond2927() { Day d = new Day(0, 0, 1970); Calendar c = Calendar.getInstance(TimeZone.getTimeZone("Europe/London")); assertEquals(0, d.getFirstMillisecond(c)); try { d.getFirstMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } }
+public void testGetFirstMillisecond2928() { Day d = new Day(0, 0, 1970); Calendar c = new GregorianCalendar(TimeZone.getTimeZone("Europe/London")); assertEquals(0, d.getFirstMillisecond(c)); try { d.getFirstMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } }
+public void testGetFirstMillisecond2929() { Day d = new Day(0, 0, 1970); Calendar c = Calendar.getInstance(TimeZone.getTimeZone("America/Los_Angeles")); assertEquals(0, d.getFirstMillisecond(c)); try { d.getFirstMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } }
+public void testGetFirstMillisecond2930() { Day d = new Day(0, 0, 1970); Calendar c1 = new GregorianCalendar(TimeZone.getTimeZone("America/Los_Angeles")); assertEquals(0, d.getFirstMillisecond(c1)); Calendar c2 = new GregorianCalendar(TimeZone.getTimeZone("America/Los_Angeles")); assertEquals(0, d.getFirstMillisecond(c2)); try { d.getFirstMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } }
+public void testGetFirstMillisecond2933() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Day d = new Day(0, 0, 1970); assertEquals(0, d.getFirstMillisecond(null)); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testGetLastMillisecond2935() { Day d = new Day(0, 0, 1970); Calendar c = new GregorianCalendar(TimeZone.getTimeZone("Europe/London")); assertEquals(0, d.getLastMillisecond(c)); try { d.getLastMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } }
+public void testGetLastMillisecond2936() { Day d = new Day(0, 0, 1970); Calendar c = Calendar.getInstance(TimeZone.getTimeZone("America/Los_Angeles")); assertEquals(0, d.getLastMillisecond(c)); try { d.getLastMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } }
+public void testGetLastMillisecond2939() { Calendar c1 = Calendar.getInstance(); c1.set(Calendar.MILLISECOND, 999); Calendar c2 = Calendar.getInstance(); c2.set(Calendar.MILLISECOND, 999); assertEquals(999, new Day().getLastMillisecond(c1)); assertEquals(999, new Day(0, 0, 0).getLastMillisecond(c2)); try { new Day().getLastMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } }
+public void testGetLastMillisecond2940() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Day d = new Day(0, 0, 1970); assertEquals(0, d.getLastMillisecond(null)); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testDateAxis2960() { DateAxis axis = new DateAxis("Test Axis"); assertEquals("Test Axis", axis.getLabel()); }
+public void testDateAxis2961() { DateAxis axis = new DateAxis("Test Axis", TimeZone.getTimeZone("UTC")); assertEquals("Test Axis", axis.getLabel()); assertEquals(TimeZone.getTimeZone("UTC"), axis.getTimeZone()); }
+public void testDateAxis2963() { DateAxis axis = new DateAxis("Test Axis", TimeZone.getTimeZone("PST"), Locale.UK); assertEquals("Test Axis", axis.getLabel()); }
+public void testSetRange2967() { DateAxis axis = new DateAxis("Test Axis"); Date d1 = new Date(); Date d2 = new Date(); axis.setRange(d1, d2); assertEquals(d1, axis.getMinimumDate()); assertEquals(d2, axis.getMaximumDate()); axis.setRange(d1, d2); assertEquals(d1, axis.getMinimumDate()); assertEquals(d2, axis.getMaximumDate()); }
+public void testGetDateFormatOverride2975() { DateAxis axis = new DateAxis(); Date d1 = new Date(); Date d2 = new Date(); axis.setDateFormatOverride(new SimpleDateFormat("yyyy-MM-dd")); assertEquals("yyyy-MM-dd", axis.getDateFormatOverride().format(d1)); assertEquals("yyyy-MM-dd", axis.getDateFormatOverride().format(d2)); axis.setDateFormatOverride(new SimpleDateFormat("yyyy-MM-dd")); assertEquals("yyyy-MM-dd", axis.getDateFormatOverride().format(d1)); assertEquals("yyyy-MM-dd", axis.getDateFormatOverride().format(d2)); }
+public void testSetRange2979() { DateRange range = new DateRange(new Date(0), new Date(1)); DateAxis axis = new DateAxis("Test Axis"); axis.setRange(range, true, true); assertEquals(new Date(0), axis.getMinimumDate()); assertEquals(new Date(1), axis.getMaximumDate()); range = new DateRange(new Date(2), new Date(3)); axis.setRange(range, true, true); assertEquals(new Date(2), axis.getMinimumDate()); assertEquals(new Date(3), axis.getMaximumDate()); range = new DateRange(new Date(4), new Date(5));
+}
+
+public void testSetRange2981() { Date date = new Date(); DateRange range = new DateRange(date, date); DateAxis axis = new DateAxis("Test Axis"); axis.setRange(range); assertEquals(date, axis.getMinimumDate()); assertEquals(date, axis.getMaximumDate()); range = new DateRange(date, date); axis.setRange(range); assertEquals(date, axis.getMinimumDate()); assertEquals(date, axis.getMaximumDate()); range = new DateRange(date, date); axis.setRange(range); assertEquals(date, axis.getMinimumDate()); assertEquals(date, axis.getMaximumDate()); }
+public void testGetMinimumDate2985() { Date d1 = new Date(); Date d2 = new Date(d1.getTime() + 1000); Date d3 = new Date(d2.getTime() + 1000); DateRange range = new DateRange(d1, d2); DateRange range2 = new DateRange(d3, d1); DateAxis axis = new DateAxis(); axis.setRange(range); axis.setMinimumDate(d1); assertEquals(d1, axis.getMinimumDate()); axis.setRange(range2); assertEquals(d2, axis.getMinimumDate()); }
+public void testGetMaximumDate2997() { Date d = new Date(); Date d1 = new Date(d.getTime() + 1000); Date d2 = new Date(d.getTime() + 2000); DateRange r = new DateRange(d1, d2); DateRange r2 = new DateRange(d2, d1); DateAxis axis = new DateAxis(); axis.setRange(r); axis.setMaximumDate(d1); assertEquals(d1, axis.getMaximumDate()); axis.setRange(r2); assertEquals(d2, axis.getMaximumDate()); }
+public void testIsHiddenValue3010() { Date d1 = new Date(1L); Date d2 = new Date(2L); Date d3 = new Date(3L); Date d4 = new Date(4L); assertTrue(new DateAxis().isHiddenValue(d1.getTime())); assertTrue(new DateAxis().isHiddenValue(d2.getTime())); assertTrue(new DateAxis().isHiddenValue(d3.getTime())); assertTrue(new DateAxis().isHiddenValue(d4.getTime())); }
+public void createStandardDateTickUnits() { Calendar c = Calendar.getInstance(); c.set(Calendar.YEAR, 2015); c.set(Calendar.MONTH, 0); c.set(Calendar.DAY_OF_MONTH, 1); c.set(Calendar.HOUR_OF_DAY, 0); c.set(Calendar.MINUTE, 0); c.set(Calendar.SECOND, 0); Calendar c2 = Calendar.getInstance(); c2.set(Calendar.YEAR, 2015); c2.set(Calendar.MONTH, 0); c2.set(Calendar.DAY_OF_MONTH, 1); c2.set(Calendar.HOUR_OF_DAY, 0);
+}
+
+//public void createStandardDateTickUnits() { Calendar c = Calendar.getInstance(); c.set(2015, Calendar.DECEMBER, 31, 0, 0); c.set(Calendar.MILLISECOND, 0); Calendar c2 = Calendar.getInstance(); c2.set(2015, Calendar.DECEMBER, 31, 0, 0); c2.set(Calendar.MILLISECOND, 0); Calendar c3 = Calendar.getInstance(); c3.set(2015, Calendar.DECEMBER, 31, 0, 0); Calendar c4 = Calendar.getInstance(); c4.set(2015, Calendar.DECEMBER, 31, 0, 0);
+//}
+
+public void testCorrectTickDateForPosition3045() { DateAxis axis = new DateAxis(); Calendar calendar = Calendar.getInstance(); calendar.set(Calendar.HOUR_OF_DAY, 0); calendar.set(Calendar.MINUTE, 0); calendar.set(Calendar.SECOND, 0); calendar.set(Calendar.MILLISECOND, 0); Date d1 = calendar.getTime(); calendar.set(Calendar.HOUR_OF_DAY, 0); calendar.set(Calendar.MINUTE, 0); Date d2 = calendar.getTime(); calendar.set(Calendar.HOUR_OF_DAY, 0); calendar.set(Calendar.MINUTE, 0); Date d3 = calendar.getTime();
+}
+
+public void testEquals3057() { DateAxis a1 = new DateAxis("Test"); DateAxis a2 = new DateAxis("Test"); assertEquals(a1, a2); a1.setDateFormatOverride(new SimpleDateFormat("yyyy-MM-dd")); assertFalse(a1.equals(a2)); a2.setDateFormatOverride(new SimpleDateFormat("yyyy-MM-dd")); assertEquals(a1, a2); }
+public void testClone3058() throws CloneNotSupportedException { DateAxis a1 = new DateAxis(); DateAxis a2 = (DateAxis) a1.clone(); assertNotSame(a1, a2); assertSame(a1.getDateFormatOverride(), a2.getDateFormatOverride()); }
+public void testCloning3059() throws CloneNotSupportedException { DateAxis a1 = new DateAxis("Test"); DateAxis a2 = (DateAxis) a1.clone(); assertNotSame(a1, a2); assertSame(a1.getClass(), a2.getClass()); assertEquals(a1, a2); }
+public void testCloning3060() throws CloneNotSupportedException { DateAxis a1 = new DateAxis("Test"); DateAxis a2 = (DateAxis) a1.clone(); assertNotSame(a1, a2); assertSame(a1.getDateFormatOverride(), a2.getDateFormatOverride()); }
     
 
     /**

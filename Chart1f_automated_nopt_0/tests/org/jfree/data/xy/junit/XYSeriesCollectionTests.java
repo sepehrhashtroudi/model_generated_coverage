@@ -89,44 +89,12 @@ public class XYSeriesCollectionTests extends TestCase {
     /**
      * Some checks for the constructor.
      */
-public void testCloning371() { 
-     XYSeries s1 = new XYSeries("Series"); 
-     s1.add(1.0, 1.1); 
-     s1.add(2.0, 2.2); 
-     XYSeries s2 = null; 
-     try { 
-         s2 = (XYSeries) s1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(s1 != s2); 
-     assertTrue(s1.getClass() == s2.getClass()); 
-     assertTrue(s1.equals(s2)); 
-     s1.add(3.0, 3.3); 
-     assertFalse(s1.equals(s2)); 
- }
-public void testRemoveSeries1260() { 
-     XYSeriesCollection c = new XYSeriesCollection(); 
-     XYSeries s1 = new XYSeries("s1"); 
-     c.addSeries(s1); 
-     c.removeSeries(0); 
-     assertEquals(0, c.getSeriesCount()); 
-     c.addSeries(s1); 
-     boolean pass = false; 
-     try { 
-         c.removeSeries(-1); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
-     pass = false; 
-     try { 
-         c.removeSeries(1); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
+public void testCloning1646() throws CloneNotSupportedException { XYSeries s1 = new XYSeries("S1"); s1.add(1.0, 1.1); XYSeries s2 = (XYSeries) s1.clone(); assertNotSame(s1, s2); assertSame(s1.getClass(), s2.getClass()); assertEquals(s1, s2); }
+public void testEquals6632() { XYSeries s1 = new XYSeries("Series 1", true, false); s1.add(1.0, 1.1); XYSeriesCollection c1 = new XYSeriesCollection(); c1.addSeries(s1); XYSeriesCollection c2 = new XYSeriesCollection(); c2.addSeries(s1); assertEquals(c1, c2); XYSeries s2 = new XYSeries("Series 2", true, false); s2.add(1.0, 1.1); c2.addSeries(s2); assertEquals(c1, c2); }
+public void testClone6634() throws CloneNotSupportedException { XYSeries s1 = new XYSeries("S1"); s1.add(1.0, 1.1); XYSeries s2 = new XYSeries("S2"); s2.add(1.0, 1.1); XYSeriesCollection c1 = new XYSeriesCollection(); c1.addSeries(s1); XYSeriesCollection c2 = (XYSeriesCollection) c1.clone(); assertEquals(c1, c2); }
+public void testGetRangeBounds6646() { XYSeriesCollection dataset = new XYSeriesCollection(); Range r = dataset.getRangeBounds(false); assertNull(r); dataset.addSeries(new XYSeries("s1")); r = dataset.getRangeBounds(false); assertNull(r); dataset.addSeries(new XYSeries("s2")); r = dataset.getRangeBounds(false); assertNull(r); dataset.addSeries(new XYSeries("s3")); r = dataset.getRangeBounds(false); assertNull(r); dataset.addSeries(new XYSeries("s4")); r = dataset.getRangeBounds(false); assertNull(r);
+}
+
     
 
     /**

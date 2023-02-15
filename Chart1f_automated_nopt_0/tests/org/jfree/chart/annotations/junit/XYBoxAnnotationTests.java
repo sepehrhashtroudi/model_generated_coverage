@@ -91,26 +91,9 @@ public class XYBoxAnnotationTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testHashCode641() { 
-     XYBoxAnnotation a1 = new XYBoxAnnotation(1.0, 2.0, 3.0, 4.0, new BasicStroke(1.2f), Color.red, Color.blue); 
-     XYBoxAnnotation a2 = new XYBoxAnnotation(1.0, 2.0, 3.0, 4.0, new BasicStroke(1.2f), Color.red, Color.blue); 
-     assertTrue(a1.equals(a2)); 
-     int h1 = a1.hashCode(); 
-     int h2 = a2.hashCode(); 
-     assertEquals(h1, h2); 
- }
-public void testCloning642() { 
-     XYBoxAnnotation a1 = new XYBoxAnnotation(1.0, 2.0, 3.0, 4.0, new BasicStroke(1.2f), Color.red, Color.blue); 
-     XYBoxAnnotation a2 = null; 
-     try { 
-         a2 = (XYBoxAnnotation) a1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(a1 != a2); 
-     assertTrue(a1.getClass() == a2.getClass()); 
-     assertTrue(a1.equals(a2)); 
- }
+public void testXYBoxAnnotation3351() { XYBoxAnnotation a1 = new XYBoxAnnotation(1.0, 2.0, 3.0, 4.0, new BasicStroke(1.2f), Color.RED, Color.BLUE); XYBoxAnnotation a2 = new XYBoxAnnotation(1.0, 2.0, 3.0, 4.0, new BasicStroke(1.2f), Color.RED, Color.BLUE); assertEquals(a1, a2); }
+public void testXYBoxAnnotation3352() { XYBoxAnnotation a1 = new XYBoxAnnotation(1.0, 2.0, 3.0, 4.0, new BasicStroke(1.2f), Color.RED, Color.BLUE); assertEquals(a1, a1); }
+public void testCloning3365() throws CloneNotSupportedException { XYBoxAnnotation a1 = new XYBoxAnnotation(1.0, 2.0, 3.0, 4.0, new BasicStroke(1.2f), Color.RED, Color.BLUE); XYBoxAnnotation a2 = (XYBoxAnnotation) a1.clone(); assertNotSame(a1, a2); assertSame(a1.getClass(), a2.getClass()); assertEquals(a1, a2); }
     
 
     /**

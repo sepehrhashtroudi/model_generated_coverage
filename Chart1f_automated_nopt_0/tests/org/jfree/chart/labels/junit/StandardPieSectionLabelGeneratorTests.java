@@ -87,6 +87,8 @@ public class StandardPieSectionLabelGeneratorTests extends TestCase {
     /**
      * Test that the equals() method distinguishes all fields.
      */
+public void testClone6537() throws CloneNotSupportedException { StandardPieSectionLabelGenerator g1 = new StandardPieSectionLabelGenerator(); StandardPieSectionLabelGenerator g2 = (StandardPieSectionLabelGenerator) g1.clone(); assertEquals(g1, g2); }
+public void testCloning6538() throws CloneNotSupportedException { StandardPieSectionLabelGenerator g1 = new StandardPieSectionLabelGenerator(); StandardPieSectionLabelGenerator g2 = (StandardPieSectionLabelGenerator) g1.clone(); assertNotSame(g1, g2); assertSame(g1.getClass(), g2.getClass()); assertEquals(g1, g2); }
     
 
     /**

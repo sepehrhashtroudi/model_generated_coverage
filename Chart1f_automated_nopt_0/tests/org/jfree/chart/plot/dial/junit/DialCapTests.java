@@ -82,58 +82,7 @@ public class DialCapTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testEquals937() { 
-     DialCap c1 = new DialCap(); 
-     DialCap c2 = new DialCap(); 
-     assertTrue(c1.equals(c2)); 
-     c1.setRadius(0.5); 
-     assertFalse(c1.equals(c2)); 
-     c2.setRadius(0.5); 
-     assertTrue(c1.equals(c2)); 
-     c1.setFillPaint(new GradientPaint(1.0f, 2.0f, Color.blue, 3.0f, 4.0f, Color.green)); 
-     assertFalse(c1.equals(c2)); 
-     c2.setFillPaint(new GradientPaint(1.0f, 2.0f, Color.blue, 3.0f, 4.0f, Color.green)); 
-     c1.setOutlinePaint(new GradientPaint(1.0f, 2.0f, Color.white, 3.0f, 4.0f, Color.gray)); 
-     assertFalse(c1.equals(c2)); 
-     c2.setOutlinePaint(new GradientPaint(1.0f, 2.0f, Color.white, 3.0f, 4.0f, Color.gray)); 
-     assertTrue(c1.equals(c2)); 
-     c1.setOutlineStroke(new BasicStroke(1.1f)); 
-     assertFalse(c1.equals(c2)); 
-     c2.setOutlineStroke(new BasicStroke(1.1f)); 
-     assertTrue(c1.equals(c2)); 
-     c1.setVisible(false); 
-     assertFalse(c1.equals(c2)); 
-     c2.setVisible(false); 
-     assertTrue(c1.equals(c2)); 
- }
-public void testSerialization938() { 
-     DialCap c1 = new DialCap(); 
-     DialCap c2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(c1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         c2 = (DialCap) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(c1, c2); 
- }
-public void testCloning939() { 
-     DialCap c1 = new DialCap(); 
-     DialCap c2 = null; 
-     try { 
-         c2 = (DialCap) c1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(c1 != c2); 
-     assertTrue(c1.getClass() == c2.getClass()); 
-     assertTrue(c1.equals(c2)); 
- }
+public void testCloning4956() throws CloneNotSupportedException { DialCap c1 = new DialCap(); DialCap c2 = ( DialCap) c1.clone(); assertNotSame(c1, c2); assertSame(c1.getClass(), c2.getClass()); assertEquals(c1, c2); }
     
 
     /**

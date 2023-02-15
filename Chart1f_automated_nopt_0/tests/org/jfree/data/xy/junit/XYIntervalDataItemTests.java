@@ -80,98 +80,12 @@ public class XYIntervalDataItemTests extends TestCase {
     /**
      * Some checks for the constructor.
      */
-public void testConstructor1574() { 
-     XYIntervalDataItem item1 = new XYIntervalDataItem(1.0, 0.5, 1.5, 2.0, 1.5, 2.5); 
-     assertEquals(new Double(1.0), item1.getX()); 
-     assertEquals(5.0, item1.getYValue(), EPSILON); 
-     assertEquals(2.0, item1.getYLowValue(), EPSILON); 
-     assertEquals(2.0, item1.getYHighValue(), EPSILON); 
- }
-public void testConstructor1575() { 
-     XYIntervalDataItem item1 = new XYIntervalDataItem(1.0, 0.5, 1.5, 2.0, 1.5, 2.5); 
-     assertEquals(new Double(1.0), item1.getX()); 
-     assertEquals(5.0, item1.getYValue(), EPSILON); 
-     assertEquals(2.0, item1.getYLowValue(), EPSILON); 
-     assertEquals(1.5, item1.getYHighValue(), EPSILON); 
- }
-public void testAdd576() { 
-     XYIntervalDataItem item1 = new XYIntervalDataItem(1.0, 0.5, 1.5, 2.0, 1.5, 2.5); 
-     assertEquals(new Double(1.0), item1.getX()); 
-     assertEquals(5.0, item1.getYValue(), EPSILON); 
-     assertEquals(2.0, item1.getYLowValue(), EPSILON); 
-     assertEquals(2.0, item1.getYHighValue(), EPSILON); 
-     item1 = new XYIntervalDataItem(1.5, 0.5, 1.5, 2.0, 1.5, 2.5); 
-     assertEquals(new Double(1.5), item1.getX()); 
-     assertEquals(5.0, item1.getYValue(), EPSILON); 
-     assertEquals(2.0, item1.getYLowValue(), EPSILON); 
-     assertEquals(1.5, item1.getYHighValue(), EPSILON); 
- }
-public void testAdd577() { 
-     XYIntervalDataItem item1 = new XYIntervalDataItem(1.0, 0.5, 1.5, 2.0, 1.9, 2.1); 
-     assertEquals(new Double(1.0), item1.getX()); 
-     assertEquals(5.0, item1.getYValue(), EPSILON); 
-     assertEquals(2.0, item1.getYLowValue(), EPSILON); 
-     assertEquals(2.0, item1.getYHighValue(), EPSILON); 
-     item1 = new XYIntervalDataItem(1.5, 0.5, 1.5, 2.0, 1.9, 2.1); 
-     assertEquals(new Double(1.5), item1.getX()); 
-     assertEquals(5.0, item1.getYValue(), EPSILON); 
-     assertEquals(2.0, item1.getYLowValue(), EPSILON); 
-     assertEquals(1.9, item1.getYHighValue(), EPSILON); 
- }
-public void testAdd578() { 
-     XYIntervalDataItem item1 = new XYIntervalDataItem(1.0, 0.5, 1.5, 2.0, 1.9, 2.1); 
-     assertEquals(new Double(1.0), item1.getX()); 
-     assertEquals(5.5, item1.getYValue(), EPSILON); 
-     assertEquals(2.0, item1.getYLowValue(), EPSILON); 
-     assertEquals(2.0, item1.getYHighValue(), EPSILON); 
-     item1 = new XYIntervalDataItem(1.5, 0.5, 1.5, 2.0, 1.9, 2.1); 
-     assertEquals(new Double(1.5), item1.getX()); 
-     assertEquals(5.5, item1.getYValue(), EPSILON); 
-     assertEquals(2.0, item1.getYLowValue(), EPSILON); 
-     assertEquals(1.9, item1.getYHighValue(), EPSILON); 
- }
-public void testValues579() { 
-     XYIntervalDataItem item1 = new XYIntervalDataItem(1.0, 0.5, 1.5, 2.0, 1.5, 2.5); 
-     assertEquals(new Double(1.0), item1.getX()); 
-     assertEquals(5.0, item1.getYValue(), EPSILON); 
-     assertEquals(2.0, item1.getYLowValue(), EPSILON); 
-     assertEquals(1.5, item1.getYHighValue(), EPSILON); 
-     assertEquals(2.0, item1.getYHighValue(), EPSILON); 
- }
-public void testConstructor1581() { 
-     XYIntervalDataItem item1 = new XYIntervalDataItem(1.0, 0.5, 1.5, 2.0, 1.5, 2.5); 
-     assertEquals(new Double(1.0), item1.getX()); 
-     assertEquals(5.0, item1.getXLowValue(), EPSILON); 
-     assertEquals(5.0, item1.getXHighValue(), EPSILON); 
-     assertEquals(2.0, item1.getYValue(), EPSILON); 
-     assertEquals(1.5, item1.getYLowValue(), EPSILON); 
-     assertEquals(2.5, item1.getYHighValue(), EPSILON); 
- }
-public void testValues582() { 
-     XYIntervalDataItem item1 = new XYIntervalDataItem(1.0, 0.5, 1.5, 2.0, 1.5, 2.5); 
-     assertEquals(new Double(1.0), item1.getX()); 
-     assertEquals(5.0, item1.getYValue(), EPSILON); 
-     assertEquals(2.0, item1.getYLowValue(), EPSILON); 
-     assertEquals(1.5, item1.getYHighValue(), EPSILON); 
-     assertEquals(Double.NaN, item1.getYLowValue(), EPSILON); 
-     assertEquals(2.5, item1.getYHighValue(), EPSILON); 
- }
-public void testValues583() { 
-     XYIntervalDataItem item1 = new XYIntervalDataItem(1.0, 0.5, 1.5, 2.0, 1.9, 2.1); 
-     assertEquals(new Double(1.0), item1.getX()); 
-     assertEquals(5.0, item1.getYValue(), EPSILON); 
-     assertEquals(2.0, item1.getYLowValue(), EPSILON); 
-     assertEquals(1.9, item1.getYHighValue(), EPSILON); 
-     assertEquals(2.1, item1.getYLowValue(), EPSILON); 
-     assertEquals(2.9, item1.getYHighValue(), EPSILON); 
- }
-public void testConstructor1584() { 
-     XYIntervalDataItem item1 = new XYIntervalDataItem(1.0, 0.5, 1.5, 2.0, 1.5, 2.5); 
-     assertEquals(new Double(1.0), item1.getX()); 
-     assertEquals(5.5, item1.getYValue(), EPSILON); 
-     assertEquals(2.0, item1.getYLowValue(), EPSILON); 
-     assertEquals(2.5, item1.getYHighValue(), EPSILON); 
- }
+public void testGetYValue_12867() throws Exception { XYIntervalDataItem fixture = new XYIntervalDataItem(1.0, 1.0, 1.0, 1.0, 1.0, 1.0); double result = fixture.getYValue(); assertEquals(1.0, result, 0.0); }
+public void testGetXLowValue_12871() throws Exception { XYIntervalDataItem fixture = new XYIntervalDataItem(1.0, 1.0, 1.0, 1.0, 1.0, 1.0); double result = fixture.getXLowValue(); assertEquals(Double.NaN, result, 0.0); }
+public void testGetXHighValue_12873() throws Exception { XYIntervalDataItem fixture = new XYIntervalDataItem(1.0, 1.0, 1.0, 1.0, 1.0, 1.0); double result = fixture.getXHighValue(); assertEquals(Double.NaN, result, 0.0); }
+public void testGetYLowValue_12876() throws Exception { XYIntervalDataItem fixture = new XYIntervalDataItem(1.0, 1.0, 1.0, 1.0, 1.0, 1.0); double result = fixture.getYLowValue(); assertEquals(Double.NaN, result, 0.0); }
+public void testGetYHighValue_12879() throws Exception { XYIntervalDataItem fixture = new XYIntervalDataItem(1.0, 1.0, 1.0, 1.0, 1.0, 1.0); double result = fixture.getYHighValue(); assertEquals(Double.NaN, result, 0.0); }
+public void testGetYHighValue_12882() throws Exception { XYIntervalDataItem fixture = new XYIntervalDataItem(1.0, 1.0, 1.0, 1.0, 1.0, 1.0); double result = fixture.getYHighValue(); assertEquals(1.0, result, 0.0); }
     
 
     /**

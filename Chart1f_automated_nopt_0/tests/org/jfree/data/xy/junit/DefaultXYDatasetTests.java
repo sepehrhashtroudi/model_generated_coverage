@@ -82,53 +82,8 @@ public class DefaultXYDatasetTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testCloning960() { 
-     DefaultXYDataset d1 = new DefaultXYDataset(); 
-     DefaultXYDataset d2 = null; 
-     try { 
-         d2 = (DefaultXYDataset) d1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(d1 != d2); 
-     assertTrue(d1.getClass() == d2.getClass()); 
-     assertTrue(d1.equals(d2)); 
-     double[] x1 = new double[] { 1.0, 2.0, 3.0 }; 
-     double[] y1 = new double[] { 4.0, 5.0, 6.0 }; 
-     double[][] data1 = new double[][] { x1, y1 }; 
-     d1.addSeries("S1", data1); 
-     try { 
-         d2 = (DefaultXYDataset) d1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(d1 != d2); 
-     assertTrue(d1.getClass() == d2.getClass()); 
-     assertTrue(d1.equals(d2)); 
-     x1[1] = 2.2; 
-     assertFalse(d1.equals(d2)); 
-     x1[1] = 2.0; 
-     assertTrue(d1.equals(d2)); 
- }
-public void testGetSeriesKey961() { 
-     DefaultXYDataset d = createSampleDataset1(); 
-     assertEquals("S1", d.getSeriesKey(0)); 
-     assertEquals("S2", d.getSeriesKey(1)); 
-     boolean pass = false; 
-     try { 
-         d.getSeriesKey(-1); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
-     pass = false; 
-     try { 
-         d.getSeriesKey(2); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
+public void testGetSeriesCount5055() { DefaultXYDataset d = new DefaultXYDataset(); d.addSeries("S1", new double[][] {{1.0, 2.0}, {3.0, 4.0}}); d.addSeries("S2", new double[][] {{5.0, 6.0}, {7.0, 8.0}}); assertEquals(3, d.getSeriesCount()); }
+public void testGetYValue5060() { DefaultXYDataset dataset = new DefaultXYDataset(); dataset.addSeries("S1", new double[][] {{1.0, 2.0}, {3.0, 4.0}, {5.0, 6.0}}); assertEquals(1.0, dataset.getYValue(0, 0), EPSILON); assertEquals(2.0, dataset.getYValue(0, 1), EPSILON); assertEquals(3.0, dataset.getYValue(1, 0), EPSILON); assertEquals(4.0, dataset.getYValue(1, 1), EPSILON); }
     
 
     /**

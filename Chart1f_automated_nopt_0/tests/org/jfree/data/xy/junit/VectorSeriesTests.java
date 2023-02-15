@@ -96,20 +96,12 @@ public class VectorSeriesTests extends TestCase
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testEquals303() { 
-     XYCoordinate v1 = new XYCoordinate(1.0, 2.0); 
-     XYCoordinate v2 = new XYCoordinate(1.0, 2.0); 
-     assertTrue(v1.equals(v2)); 
-     assertTrue(v2.equals(v1)); 
-     v1 = new XYCoordinate(1.1, 2.0); 
-     assertFalse(v1.equals(v2)); 
-     v2 = new XYCoordinate(1.1, 2.0); 
-     assertTrue(v1.equals(v2)); 
-     v1 = new XYCoordinate(1.1, 2.2); 
-     assertFalse(v1.equals(v2)); 
-     v2 = new XYCoordinate(1.1, 2.2); 
-     assertTrue(v1.equals(v2)); 
- }
+public void testGetX1246() { double x = 10.0; double y = 20.0; XYCoordinate coordinate = new XYCoordinate(x, y); assertEquals(x, coordinate.getX(), 0.0); }
+public void testGetX1247() { double x = 1.0; double y = 2.0; XYCoordinate v = new XYCoordinate(x, y); assertEquals(x, v.getX(), 0.01); }
+public void testGetXValue8656() { VectorSeries s1 = new VectorSeries("S1"); s1.add(1.0, 2.0, 3.0, 4.0); assertEquals(1.0, s1.getXValue(0), EPSILON); assertEquals(2.0, s1.getXValue(1), EPSILON); assertEquals(3.0, s1.getXValue(2), EPSILON); assertEquals(4.0, s1.getXValue(3), EPSILON); }
+public void testGetXValue8657() { VectorSeries s1 = new VectorSeries("Series 1"); s1.add(1.0, 2.0, 3.0, 4.0); assertEquals(1.0, s1.getXValue(0), EPSILON); assertEquals(2.0, s1.getXValue(1), EPSILON); assertEquals(3.0, s1.getXValue(2), EPSILON); assertEquals(4.0, s1.getXValue(3), EPSILON); }
+public void testGetXValue8658() { VectorSeries s1 = new VectorSeries("Series 1", false, true); s1.add(1.0, 1.0, 1.0, 1.0); assertEquals(1.0, s1.getXValue(0), EPSILON); s1.add(2.0, 2.0, 2.0, 2.0); assertEquals(2.0, s1.getXValue(0), EPSILON); s1.add(3.0, 3.0, 3.0, 3.0); assertEquals(3.0, s1.getXValue(1), EPSILON); }
+public void testGetVectorXValue8659() { VectorSeries s1 = new VectorSeries("s1"); s1.add(1.0, 2.0, 3.0, 4.0); assertEquals(1.0, s1.getVectorXValue(0), EPSILON); assertEquals(2.0, s1.getVectorXValue(1), EPSILON); assertEquals(3.0, s1.getVectorXValue(2), EPSILON); assertEquals(4.0, s1.getVectorXValue(3), EPSILON); }
     
 
     /**

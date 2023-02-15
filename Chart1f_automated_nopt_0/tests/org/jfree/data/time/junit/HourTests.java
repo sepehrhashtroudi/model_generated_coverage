@@ -102,42 +102,17 @@ public class HourTests extends TestCase {
      *
      * SourceForge Bug ID: 558850.
      */
-public void testGetLastMillisecondWithTimeZone652() { 
-     Hour h = new Hour(2, 7, 7, 1950); 
-     TimeZone zone = TimeZone.getTimeZone("America/Los_Angeles"); 
-     Calendar c = new GregorianCalendar(zone); 
-     assertEquals(-614959200001L, h.getLastMillisecond(c)); 
-     boolean pass = false; 
-     try { 
-         h.getLastMillisecond((Calendar) null); 
-     } catch (NullPointerException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
-public void testLastHourPrevious654() { 
-     Hour last = new Hour(23, new Day(31, MonthConstants.DECEMBER, 9999)); 
-     Hour previous = (Hour) last.previous(); 
-     assertNull(previous); 
- }
-public void testLastHourNext655() { 
-     Hour last = new Hour(23, new Day(31, MonthConstants.DECEMBER, 9999)); 
-     Hour next = (Hour) last.next(); 
-     assertNull(next); 
- }
-public void testGetFirstMillisecondWithCalendar657() { 
-     Hour h = new Hour(2, 7, 7, 1950); 
-     GregorianCalendar calendar = new GregorianCalendar(Locale.GERMANY); 
-     calendar.setTimeZone(TimeZone.getTimeZone("Europe/Frankfurt")); 
-     assertEquals(955766455500L, h.getFirstMillisecond(calendar)); 
-     boolean pass = false; 
-     try { 
-         h.getFirstMillisecond((Calendar) null); 
-     } catch (NullPointerException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
+public void testHour3419() { Hour h = new Hour(1, new Day(1, 1, 1)); assertEquals(1, h.getHour()); assertEquals(1, h.getDayOfMonth()); assertEquals(1, h.getHour()); assertEquals(1, h.getYear()); assertEquals(1, h.getMonth()); assertEquals(1, h.getDayOfMonth()); assertEquals(1, h.getHour()); assertEquals(1, h.getYear()); assertEquals(1, h.getMonth()); assertEquals(1, h.getDayOfMonth()); assertEquals(1, h.getHour()); assertEquals(1, h.getHour());
+}
+
+public void testHour3426() { Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("America/Los_Angeles")); Calendar cal2 = Calendar.getInstance(TimeZone.getTimeZone("America/Los_Angeles")); Calendar cal3 = Calendar.getInstance(TimeZone.getTimeZone("America/Los_Angeles")); cal2.setTimeInMillis(cal.getTimeInMillis()); cal3.setTimeInMillis(cal.getTimeInMillis()); Hour h = new Hour(1, 2, 3, 1970); assertEquals(1, h.getHour()); assertEquals(2, h.getDayOfMonth()); assertEquals(3, h.getHour());
+}
+
+public void testHour3427() { Calendar c = Calendar.getInstance(TimeZone.getTimeZone("America/Los_Angeles")); Hour h = new Hour(0, 0, 0, 1970); assertEquals(0, h.getHour()); assertEquals(0, h.getDayOfMonth()); assertEquals(0, h.getYear()); assertEquals(0, h.getMonth()); assertEquals(0, h.getYear()); assertEquals(0, h.getDayOfMonth()); assertEquals(0, h.getHour()); assertEquals(0, h.getFirstMillisecond()); assertEquals(0, h.getLastMillisecond(c)); }
+public void testFirstHour3441() { Hour a = new Hour(0, new Day(0, 0, 0)); assertEquals(new Day(0, 0, 0), a.previous()); }
+public void testGetFirstMillisecond3448() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Calendar c = new GregorianCalendar(saved); assertEquals(0, new Hour(0, 0, 0, 0).getFirstMillisecond(c)); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testGetLastMillisecond3452() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Calendar c = new GregorianCalendar(saved); assertEquals(0, new Hour().getLastMillisecond(c)); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testGetLastMillisecond3454() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Hour h = new Hour(0, 0, 0, 1970); Calendar c = new GregorianCalendar(saved); assertEquals(0, h.getLastMillisecond(c)); try { h.getLastMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } }
     
 
     /**

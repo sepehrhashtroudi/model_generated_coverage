@@ -80,22 +80,9 @@ public class PieLabelRecordTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testSerialization1174() { 
-     PieLabelRecord p1 = new PieLabelRecord("A", 1.0, 2.0, new TextBox("B"), 3.0, 4.0, 5.0); 
-     PieLabelRecord p2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(p1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         p2 = (PieLabelRecord) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(p1, p2); 
- }
+public void testTextBox6178() { TextBox textBox1 = new TextBox(); TextBox textBox2 = new TextBox(); assertEquals(textBox1, textBox2); }
+public void testTextBox6179() { TextBox box1 = new TextBox(); TextBox box2 = new TextBox(); assertEquals(box1, box2); }
+public void testTextBox6181() { TextBox tf1 = new TextBox(); TextBox tf2 = new TextBox(); assertEquals(tf1, tf2); }
     
 
     /**

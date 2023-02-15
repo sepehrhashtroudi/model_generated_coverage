@@ -91,39 +91,8 @@ public class MeterPlotTests extends TestCase {
      * Test the equals method to ensure that it can distinguish the required
      * fields.  Note that the dataset is NOT considered in the equals test.
      */
-public void testSerialization1270() { 
-     MeterPlot m1 = new MeterPlot(new DefaultValueDataset(15.0)); 
-     MeterPlot m2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(m1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         m2 = (MeterPlot) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         System.out.println(e.toString()); 
-     } 
-     boolean b = m1.equals(m2); 
-     assertTrue(b); 
- }
-public void testCloning1271() { 
-     MeterPlot p1 = new MeterPlot(new DefaultValueDataset(15.0)); 
-     MeterPlot p2 = null; 
-     try { 
-         p2 = (MeterPlot) p1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         System.err.println("Failed to clone."); 
-     } 
-     assertTrue(p1 != p2); 
-     assertTrue(p1.getClass() == p2.getClass()); 
-     assertTrue(p1.equals(p2)); 
-     p1.addInterval(new MeterInterval("Normal", new Range(55.0, 60.0))); 
-     assertFalse(p1.equals(p2)); 
-     p2.addInterval(new MeterInterval("Normal", new Range(55.0, 60.0))); 
-     assertTrue(p1.equals(p2)); 
- }
+public void testCloning6767() throws CloneNotSupportedException { MeterPlot p1 = new MeterPlot(); MeterPlot p2 = (MeterPlot) p1.clone(); assertNotSame(p1, p2); assertSame(p1.getClass(), p2.getClass()); assertEquals(p1, p2); }
+public void testCloning6768() throws CloneNotSupportedException { MeterPlot p1 = new MeterPlot(); MeterPlot p2 = (MeterPlot) p1.clone(); assertNotSame(p1, p2); assertSame(p1.getTickLabelFormat(), p2.getTickLabelFormat()); assertEquals(p1, p2); }
     
 
     /**

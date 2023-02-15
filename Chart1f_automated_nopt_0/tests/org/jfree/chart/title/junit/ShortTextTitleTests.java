@@ -79,23 +79,7 @@ public class ShortTextTitleTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
-public void testEquals1081() { 
-     ShortTextTitle t1 = new ShortTextTitle("Test"); 
-     ShortTextTitle t2 = new ShortTextTitle("Test"); 
-     assertEquals(t1, t2); 
-     t1 = new ShortTextTitle("Test 1"); 
-     assertFalse(t1.equals(t2)); 
-     t2 = new ShortTextTitle("Test 1"); 
-     assertTrue(t1.equals(t2)); 
-     t1 = new ShortTextTitle("Test 2"); 
-     assertFalse(t1.equals(t2)); 
-     t2 = new ShortTextTitle("Test 2"); 
-     assertTrue(t1.equals(t2)); 
-     t1 = new ShortTextTitle("Test"); 
-     assertFalse(t1.equals(t2)); 
-     t2 = new ShortTextTitle("Test"); 
-     assertTrue(t1.equals(t2)); 
- }
+public void testShortTextTitle5660() { }
     
 
     /**

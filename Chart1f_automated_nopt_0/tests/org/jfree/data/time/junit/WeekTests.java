@@ -117,78 +117,12 @@ public class WeekTests extends TestCase {
     /**
      * Tests the equals method.
      */
-public void testConstructor340() { 
-     Locale savedLocale = Locale.getDefault(); 
-     TimeZone savedZone = TimeZone.getDefault(); 
-     Locale.setDefault(new Locale("da", "DK")); 
-     TimeZone.setDefault(TimeZone.getTimeZone("Europe/Copenhagen")); 
-     GregorianCalendar cal = (GregorianCalendar) Calendar.getInstance(TimeZone.getDefault(), Locale.getDefault()); 
-     assertEquals(Calendar.MONDAY, cal.getFirstDayOfWeek()); 
-     cal.set(2007, Calendar.AUGUST, 26, 1, 0, 0); 
-     cal.set(Calendar.MILLISECOND, 0); 
-     Date t = cal.getTime(); 
-     Week w = new Week(t, TimeZone.getTimeZone("Europe/Copenhagen"), Locale.getDefault()); 
-     assertEquals(34, w.getWeek()); 
-     Locale.setDefault(Locale.US); 
-     TimeZone.setDefault(TimeZone.getTimeZone("US/Detroit")); 
-     cal = (GregorianCalendar) Calendar.getInstance(TimeZone.getDefault()); 
-     assertEquals(Calendar.SUNDAY, cal.getFirstDayOfWeek()); 
-     cal.set(2007, Calendar.AUGUST, 26, 1, 0, 0); 
-     cal.set(Calendar.MILLISECOND, 0); 
-     t = cal.getTime(); 
-     w = new Week(t, TimeZone.getTimeZone("Europe/Copenhagen"), Locale.getDefault()); 
-     assertEquals(35, w.getWeek()); 
-     w = new Week(t, TimeZone.getTimeZone("Europe/Copenhagen"), new Locale("da", "DK")); 
-     assertEquals(34, w.getWeek()); 
-     Locale.setDefault(savedLocale); 
-     TimeZone.setDefault(savedZone); 
- }
-public void testSerialization341() { 
-     Week w1 = new Week(24, 1999); 
-     Week w2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(w1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         w2 = (Week) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(w1, w2); 
- }
-public void testGetFirstMillisecond342() { 
-     Locale saved = Locale.getDefault(); 
-     Locale.setDefault(Locale.UK); 
-     TimeZone savedZone = TimeZone.getDefault(); 
-     TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); 
-     Week w = new Week(31, 1970); 
-     assertEquals(18485999999L, w.getFirstMillisecond()); 
-     Locale.setDefault(saved); 
-     TimeZone.setDefault(savedZone); 
- }
-public void testW52Y9999Next343() { 
-     Week next = (Week) this.w52Y9999.next(); 
-     assertEquals(this.w51Y9999, next); 
- }
-public void testNext344() { 
-     Week w = new Week(24, 1999); 
-     w = (Week) w.next(); 
-     assertEquals(2000, w.getYear().getYear()); 
-     assertEquals(12, w.getWeek()); 
-     w = new Week(59, 1999); 
-     assertNull(w.next()); 
- }
-public void testHashcode345() { 
-     Week w1 = new Week(24, 1999); 
-     Week w2 = new Week(24, 1999); 
-     assertTrue(w1.equals(w2)); 
-     int h1 = w1.hashCode(); 
-     int h2 = w2.hashCode(); 
-     assertEquals(h1, h2); 
- }
+public void testGetWeek1430() { assertEquals(1, new Week(1, 2001).getWeek()); assertEquals(2, new Week(2, 2001).getWeek()); assertEquals(3, new Week(3, 2001).getWeek()); assertEquals(4, new Week(4, 2001).getWeek()); assertEquals(5, new Week(5, 2001).getWeek()); assertEquals(6, new Week(6, 2001).getWeek()); assertEquals(7, new Week(7, 2001).getWeek()); }
+public void testGetWeek1431() { Week w = new Week(1, 2001); assertEquals(1, w.getWeek()); w = new Week(2, 2001); assertEquals(2, w.getWeek()); w = new Week(3, 2001); assertEquals(3, w.getWeek()); w = new Week(4, 2001); assertEquals(4, w.getWeek()); w = new Week(5, 2001); assertEquals(5, w.getWeek()); }
+public void testGetFirstMillisecond1432() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Week w = new Week(1, 1970); assertEquals(0, w.getFirstMillisecond()); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testGetFirstMillisecond1433() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Week w = new Week(1, 2001); assertEquals(2001, w.getFirstMillisecond()); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testHashCode1441() { Week w1 = new Week(1, 2001); Week w2 = new Week(1, 2001); assertEquals(w1, w2); int h1 = w1.hashCode(); int h2 = w2.hashCode(); assertEquals(h1, h2); }
+public void testHashCode1442() { Week w1 = new Week(1, 2003); Week w2 = new Week(1, 2003); assertEquals(w1, w2); int h1 = w1.hashCode(); int h2 = w2.hashCode(); assertEquals(h1, h2); }
     
 
     /**

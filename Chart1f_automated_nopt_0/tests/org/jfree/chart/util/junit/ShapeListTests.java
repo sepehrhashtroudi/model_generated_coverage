@@ -81,23 +81,7 @@ public class ShapeListTests extends TestCase {
     /**
      * Tests the equals() method.
      */
-public void testCloning545() { 
-     ShapeList l1 = new ShapeList(); 
-     l1.setShape(0, new Rectangle(1, 2, 3, 4)); 
-     l1.setShape(1, new Line2D.Double(1.0, 2.0, 3.0, 4.0)); 
-     l1.setShape(2, null); 
-     ShapeList l2 = null; 
-     try { 
-         l2 = (ShapeList) l1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(l1 != l2); 
-     assertTrue(l1.getClass() == l2.getClass()); 
-     assertTrue(l1.equals(l2)); 
-     l2.setShape(0, new Rectangle(5, 6, 7, 8)); 
-     assertFalse(l1.equals(l2)); 
- }
+public void testEquals2732() { ShapeList l1 = new ShapeList(); ShapeList l2 = new ShapeList(); assertTrue(l1.equals(l1)); assertTrue(l1.equals(l2)); assertEquals(l1.hashCode(), l2.hashCode()); assertEquals(l1.getShape(0), l2.getShape(0)); assertEquals(l1.getShape(1), l2.getShape(1)); assertEquals(l1.getShape(2), l2.getShape(2)); }
     
 
     /**

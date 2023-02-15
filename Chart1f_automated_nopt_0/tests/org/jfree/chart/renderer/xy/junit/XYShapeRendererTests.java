@@ -81,68 +81,15 @@ public class XYShapeRendererTests extends TestCase {
     /**
      * Some checks for the equals() method.
      */
-public void testHashcode882() { 
-     XYShapeRenderer r1 = new XYShapeRenderer(); 
-     XYShapeRenderer r2 = new XYShapeRenderer(); 
-     assertTrue(r1.equals(r2)); 
-     int h1 = r1.hashCode(); 
-     int h2 = r2.hashCode(); 
-     assertEquals(h1, h2); 
- }
-public void testCloning888() { 
-     XYShapeRenderer r1 = new XYShapeRenderer(); 
-     LookupPaintScale ps1 = new LookupPaintScale(); 
-     r1.setPaintScale(ps1); 
-     XYShapeRenderer r2 = null; 
-     try { 
-         r2 = (XYShapeRenderer) r1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(r1 != r2); 
-     assertTrue(r1.getClass() == r2.getClass()); 
-     assertTrue(r1.equals(r2)); 
-     ps1.add(0.5, Color.red); 
-     assertFalse(r1.equals(r2)); 
-     LookupPaintScale ps2 = (LookupPaintScale) r2.getPaintScale(); 
-     ps2.add(0.5, Color.red); 
-     assertTrue(r1.equals(r2)); 
- }
-public void testCloning890() { 
-     XYShapeRenderer r1 = new XYShapeRenderer(); 
-     LookupPaintScale scale1 = new LookupPaintScale(); 
-     r1.setPaintScale(scale1); 
-     XYShapeRenderer r2 = null; 
-     try { 
-         r2 = (XYShapeRenderer) r1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(r1 != r2); 
-     assertTrue(r1.getClass() == r2.getClass()); 
-     assertTrue(r1.equals(r2)); 
-     scale1.add(0.5, Color.red); 
-     assertFalse(r1.equals(r2)); 
-     LookupPaintScale scale2 = (LookupPaintScale) r2.getPaintScale(); 
-     scale2.add(0.5, Color.red); 
-     assertTrue(r1.equals(r2)); 
- }
-public void testSerialization892() { 
-     XYShapeRenderer r1 = new XYShapeRenderer(); 
-     XYShapeRenderer r2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(r1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         r2 = (XYShapeRenderer) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(r1, r2); 
- }
+public void testXYShapeRenderer4701() { XYShapeRenderer renderer = new XYShapeRenderer(); assertEquals(Color.darkGray, renderer.getPaintScale()); assertEquals(Color.darkGray, renderer.getGuideLinePaint()); assertEquals(Color.darkGray, renderer.getGuideLineStroke()); }
+public void testCloning4705() throws CloneNotSupportedException { XYShapeRenderer r1 = new XYShapeRenderer(); r1.setPaintScale(null); XYShapeRenderer r2 = (XYShapeRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testCloning4707() throws CloneNotSupportedException { XYShapeRenderer r1 = new XYShapeRenderer(); r1.setDrawOutlines(true); XYShapeRenderer r2 = (XYShapeRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testFireChangeEvent4708() { XYShapeRenderer r = new XYShapeRenderer(); r.setDrawOutlines(false); assertFalse(r.getDrawOutlines()); r.setDrawOutlines(true); assertTrue(r.getDrawOutlines()); }
+public void testFireChangeEvent4710() { XYShapeRenderer r = new XYShapeRenderer(); r.setUseFillPaint(false); assertFalse(r.getUseFillPaint()); r.setUseFillPaint(true); assertTrue(r.getUseFillPaint()); }
+public void testCloning4711() throws CloneNotSupportedException { XYShapeRenderer r1 = new XYShapeRenderer(); r1.setUseOutlinePaint(true); XYShapeRenderer r2 = (XYShapeRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testFireChangeEvent4712() { XYShapeRenderer r = new XYShapeRenderer(); assertFalse(r.getUseOutlinePaint()); r.setUseOutlinePaint(true); assertTrue(r.getUseOutlinePaint()); r.setUseOutlinePaint(false); assertFalse(r.getUseOutlinePaint()); }
+public void testFireChangeEvent4714() { XYShapeRenderer r = new XYShapeRenderer(); r.setGuideLinesVisible(true); assertTrue(r.isGuideLinesVisible()); r.setGuideLinesVisible(false); assertFalse(r.isGuideLinesVisible()); }
+public void testCloning4718() throws CloneNotSupportedException { XYShapeRenderer r1 = new XYShapeRenderer(); XYShapeRenderer r2 = (XYShapeRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
     
 
     /**

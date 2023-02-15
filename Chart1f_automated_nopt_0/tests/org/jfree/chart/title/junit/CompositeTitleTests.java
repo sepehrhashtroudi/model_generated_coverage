@@ -88,43 +88,9 @@ public class CompositeTitleTests extends TestCase {
     /**
      * Some checks for the constructor.
      */
-public void testConstructor129() { 
-     CompositeTitle t = new CompositeTitle(); 
-     assertNull(t.getBackgroundPaint()); 
- }
-public void testEquals131() { 
-     CompositeTitle t1 = new CompositeTitle(); 
-     CompositeTitle t2 = new CompositeTitle(); 
-     assertEquals(t1, t2); 
-     t1.setBackgroundPaint(new GradientPaint(1.0f, 2.0f, Color.red, 3.0f, 4.0f, Color.blue)); 
-     assertFalse(t1.equals(t2)); 
-     t2.setBackgroundPaint(new GradientPaint(1.0f, 2.0f, Color.red, 3.0f, 4.0f, Color.blue)); 
-     assertTrue(t1.equals(t2)); 
- }
-public void testHashcode132() { 
-     CompositeTitle t1 = new CompositeTitle(); 
-     CompositeTitle t2 = new CompositeTitle(); 
-     assertTrue(t1.equals(t2)); 
-     int h1 = t1.hashCode(); 
-     int h2 = t2.hashCode(); 
-     assertEquals(h1, h2); 
- }
-public void testSerialization133() { 
-     CompositeTitle t1 = new CompositeTitle(); 
-     CompositeTitle t2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(t1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         t2 = (CompositeTitle) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         System.out.println(e.toString()); 
-     } 
-     assertEquals(t1, t2); 
- }
+public void testCompositeTitle604() { BlockContainer c1 = new BlockContainer(); CompositeTitle t1 = new CompositeTitle(c1); assertEquals(c1, t1.getContainer()); }
+public void testCloning607() throws CloneNotSupportedException { CompositeTitle t1 = new CompositeTitle(); t1.setBackgroundPaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); CompositeTitle t2 = (CompositeTitle) t1.clone(); assertNotSame(t1, t2); assertSame(t1.getBackgroundPaint(), t2.getBackgroundPaint()); }
+public void testEquals611() { CompositeTitle t1 = new CompositeTitle(); CompositeTitle t2 = new CompositeTitle(); assertEquals(t1, t2); assertEquals(t2, t1); t1.setBackgroundPaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); assertFalse(t1.equals(t2)); t2.setBackgroundPaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); assertEquals(t1, t2); }
     
 
     /**

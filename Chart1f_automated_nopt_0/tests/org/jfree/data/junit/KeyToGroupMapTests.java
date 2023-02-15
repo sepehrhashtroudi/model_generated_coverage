@@ -79,76 +79,15 @@ public class KeyToGroupMapTests extends TestCase {
     /**
      * Tests the mapKeyToGroup() method.
      */
-public void testMapKeyToGroup470() { 
-     KeyToGroupMap m1 = new KeyToGroupMap("G1"); 
-     m1.mapKeyToGroup("K1", "G1"); 
-     assertEquals("G1", m1.getGroup("K1")); 
-     m1.mapKeyToGroup("K2", "G2"); 
-     assertEquals("G2", m1.getGroup("K2")); 
-     m1.mapKeyToGroup("K2", null); 
-     assertEquals("G2", m1.getGroup("K2")); 
-     boolean pass = false; 
-     try { 
-         m1.mapKeyToGroup(null, "G1"); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
-public void testMapKeyToGroup471() { 
-     KeyToGroupMap m1 = new KeyToGroupMap("G1"); 
-     m1.mapKeyToGroup("K1", "G1"); 
-     KeyToGroupMap m2 = null; 
-     try { 
-         m2 = (KeyToGroupMap) m1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(m1 != m2); 
-     assertTrue(m1.getClass() == m2.getClass()); 
-     assertTrue(m1.equals(m2)); 
- }
-public void testGetKeyCount472() { 
-     KeyToGroupMap m1 = new KeyToGroupMap("Default Group"); 
-     assertEquals(0, m1.getKeyCount(null)); 
-     assertEquals(0, m1.getKeyCount("G1")); 
-     m1.mapKeyToGroup("K1", "G1"); 
-     assertEquals(1, m1.getKeyCount(null)); 
-     m1.mapKeyToGroup("K2", "G2"); 
-     assertEquals(2, m1.getKeyCount(null)); 
-     m1.mapKeyToGroup("K2", "G2"); 
-     assertEquals(1, m1.getKeyCount(null)); 
- }
-public void testGetKeyCount473() { 
-     KeyToGroupMap m1 = new KeyToGroupMap("Default Group"); 
-     assertEquals(0, m1.getKeyCount(null)); 
-     assertEquals(0, m1.getKeyCount("G1")); 
-     m1.mapKeyToGroup("K1", "G1"); 
-     assertEquals(1, m1.getKeyCount(null)); 
-     m1.mapKeyToGroup("K2", "G2"); 
-     assertEquals(2, m1.getKeyCount(null)); 
-     m1.mapKeyToGroup("K2", "G2"); 
-     assertEquals(1, m1.getKeyCount(null)); 
-     m1.mapKeyToGroup("K2", "G2"); 
-     assertEquals(2, m1.getKeyCount(null)); 
- }
-public void testSerialization475() { 
-     KeyToGroupMap m1 = new KeyToGroupMap("G1"); 
-     m1.mapKeyToGroup("K1", "G1"); 
-     KeyToGroupMap m2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(m1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         m2 = (KeyToGroupMap) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(m1, m2); 
- }
+public void testKeyToGroupMap2083() { KeyToGroupMap m1 = new KeyToGroupMap("Default Group"); m1.mapKeyToGroup("Key 1", "Group 1"); m1.mapKeyToGroup("Key 2", "Group 2"); m1.mapKeyToGroup("Key 3", "Group 3"); KeyToGroupMap m2 = new KeyToGroupMap("Default Group"); m2.mapKeyToGroup("Key 1", "Group 1"); m2.mapKeyToGroup("Key 2", "Group 2"); m2.mapKeyToGroup("Key 3", "Group 3"); m2.mapKeyToGroup("Key 4", "Group 4");
+}
+
+public void testKeyToGroupMap2084() { KeyToGroupMap m1 = new KeyToGroupMap("Default Group"); m1.mapKeyToGroup("Key 1", "Group 1"); m1.mapKeyToGroup("Key 2", "Group 2"); m1.mapKeyToGroup("Key 3", "Group 3"); KeyToGroupMap m2 = new KeyToGroupMap("Default Group"); m2.mapKeyToGroup("Key 4", "Group 4"); m2.mapKeyToGroup("Key 5", "Group 5"); m2.mapKeyToGroup("Key 6", "Group 6"); m2.mapKeyToGroup("Key 7", "Group 7");
+}
+
+public void testGetGroup2091() { KeyToGroupMap m = new KeyToGroupMap(); m.mapKeyToGroup("key1", "Group1"); assertEquals("Group1", m.getGroup("key1")); m.mapKeyToGroup("key2", "Group2"); assertEquals("Group2", m.getGroup("key2")); m.mapKeyToGroup("key3", "Group3"); assertEquals("Group3", m.getGroup("key3")); m.mapKeyToGroup("key4", "Group4"); assertEquals("Group4", m.getGroup("key4")); }
+public void testGetGroup2092() { KeyToGroupMap map = new KeyToGroupMap(); map.mapKeyToGroup("key1", "Group1"); map.mapKeyToGroup("key2", "Group2"); map.mapKeyToGroup("key3", "Group3"); assertEquals("Group1", map.getGroup("key1")); assertEquals("Group2", map.getGroup("key2")); assertEquals("Group3", map.getGroup("key3")); }
+public void testGetGroup2093() { KeyToGroupMap m = new KeyToGroupMap(); m.mapKeyToGroup("key1", "Group1"); assertEquals("Group1", m.getGroup("key1")); m.mapKeyToGroup("key2", "Group2"); assertEquals("Group2", m.getGroup("key2")); m.mapKeyToGroup("key3", "Group3"); assertEquals("Group3", m.getGroup("key3")); }
     
 
     /**

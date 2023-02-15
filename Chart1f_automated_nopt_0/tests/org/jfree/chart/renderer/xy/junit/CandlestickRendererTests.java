@@ -95,74 +95,15 @@ public class CandlestickRendererTests extends TestCase {
     /**
      * Some checks for the constructor.
      */
-public void testHashcode984() { 
-     CandlestickRenderer r1 = new CandlestickRenderer(); 
-     CandlestickRenderer r2 = new CandlestickRenderer(); 
-     assertTrue(r1.equals(r2)); 
-     int h1 = r1.hashCode(); 
-     int h2 = r2.hashCode(); 
-     assertEquals(h1, h2); 
- }
-public void testEquals985() { 
-     CandlestickRenderer r1 = new CandlestickRenderer(); 
-     CandlestickRenderer r2 = new CandlestickRenderer(); 
-     assertTrue(r1.equals(r2)); 
-     assertTrue(r2.equals(r1)); 
-     r1.setAutoWidthFactor(0.123); 
-     assertFalse(r1.equals(r2)); 
-     r2.setAutoWidthFactor(0.123); 
-     assertTrue(r1.equals(r2)); 
-     r1.setAutoWidthGap(1.23); 
-     assertFalse(r1.equals(r2)); 
-     r2.setAutoWidthGap(1.23); 
-     assertTrue(r1.equals(r2)); 
-     r1.setUpPaint(new GradientPaint(1.0f, 2.0f, Color.red, 3.0f, 4.0f, Color.blue)); 
-     assertFalse(r1.equals(r2)); 
-     r2.setUpPaint(new GradientPaint(1.0f, 2.0f, Color.red, 3.0f, 4.0f, Color.blue)); 
-     assertTrue(r2.equals(r1)); 
-     r1.setDownPaint(new GradientPaint(1.0f, 2.0f, Color.red, 3.0f, 4.0f, Color.blue)); 
-     assertFalse(r1.equals(r2)); 
-     r2.setDownPaint(new GradientPaint(1.0f, 2.0f, Color.red, 3.0f, 4.0f, Color.blue)); 
-     assertTrue(r2.equals(r1)); 
- }
-public void testEquals986() { 
-     CandlestickRenderer r1 = new CandlestickRenderer(); 
-     CandlestickRenderer r2 = new CandlestickRenderer(); 
-     assertTrue(r1.equals(r2)); 
-     assertTrue(r2.equals(r1)); 
-     r1.setAutoWidthFactor(0.123); 
-     assertFalse(r1.equals(r2)); 
-     r2.setAutoWidthFactor(0.123); 
-     assertTrue(r1.equals(r2)); 
-     r1.setAutoWidthGap(1.23); 
-     assertFalse(r1.equals(r2)); 
-     r2.setAutoWidthGap(1.23); 
-     assertTrue(r1.equals(r2)); 
-     r1.setUpPaint(new GradientPaint(1.0f, 2.0f, Color.red, 3.0f, 4.0f, Color.blue)); 
-     assertFalse(r1.equals(r2)); 
-     r2.setUpPaint(new GradientPaint(1.0f, 2.0f, Color.red, 3.0f, 4.0f, Color.blue)); 
-     assertTrue(r1.equals(r2)); 
-     r1.setDownPaint(new GradientPaint(1.0f, 2.0f, Color.red, 3.0f, 4.0f, Color.blue)); 
-     assertFalse(r1.equals(r2)); 
-     r2.setDownPaint(new GradientPaint(1.0f, 2.0f, Color.red, 3.0f, 4.0f, Color.blue)); 
-     assertTrue(r1.equals(r2)); 
- }
-public void testSerialization1001() { 
-     CandlestickRenderer r1 = new CandlestickRenderer(); 
-     CandlestickRenderer r2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(r1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         r2 = (CandlestickRenderer) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(r1, r2); 
- }
+public void testCloning5199() throws CloneNotSupportedException { CandlestickRenderer r1 = new CandlestickRenderer(); r1.setUpPaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); CandlestickRenderer r2 = (CandlestickRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getUpPaint(), r2.getUpPaint()); }
+public void testCloning25200() throws CloneNotSupportedException { CandlestickRenderer r1 = new CandlestickRenderer(); r1.setUpPaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); CandlestickRenderer r2 = (CandlestickRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getUpPaint(), r2.getUpPaint()); }
+public void testCloning5203() throws CloneNotSupportedException { CandlestickRenderer r1 = new CandlestickRenderer(); r1.setDownPaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); CandlestickRenderer r2 = (CandlestickRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getDownPaint(), r2.getDownPaint()); }
+public void testCloning25204() throws CloneNotSupportedException { CandlestickRenderer r1 = new CandlestickRenderer(); r1.setDownPaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); CandlestickRenderer r2 = (CandlestickRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getDownPaint(), r2.getDownPaint()); }
+public void testDrawVolume5205() { CandlestickRenderer r1 = new CandlestickRenderer(); assertFalse(r1.getDrawVolume()); r1.setDrawVolume(true); assertTrue(r1.getDrawVolume()); r1.setDrawVolume(false); assertFalse(r1.getDrawVolume()); }
+public void testCloning5207() throws CloneNotSupportedException { CandlestickRenderer r1 = new CandlestickRenderer(); r1.setVolumePaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); CandlestickRenderer r2 = (CandlestickRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getVolumePaint(), r2.getVolumePaint()); }
+public void testCloning5209() throws CloneNotSupportedException { CandlestickRenderer r1 = new CandlestickRenderer(); r1.setVolumePaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); CandlestickRenderer r2 = (CandlestickRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testCloning25210() throws CloneNotSupportedException { CandlestickRenderer r1 = new CandlestickRenderer(); r1.setVolumePaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); CandlestickRenderer r2 = (CandlestickRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testCloning5212() throws CloneNotSupportedException { CandlestickRenderer r1 = new CandlestickRenderer(); r1.setUseOutlinePaint(true); CandlestickRenderer r2 = (CandlestickRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
     
 
     /**

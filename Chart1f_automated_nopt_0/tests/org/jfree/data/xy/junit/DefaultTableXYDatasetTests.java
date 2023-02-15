@@ -84,6 +84,9 @@ public class DefaultTableXYDatasetTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
+public void testClone695() throws CloneNotSupportedException { DefaultTableXYDataset d1 = new DefaultTableXYDataset(); XYSeries s1 = new XYSeries("Series 1", true, false); s1.add(1.0, 1.1); d1.addSeries(s1); DefaultTableXYDataset d2 = (DefaultTableXYDataset) d1.clone(); assertEquals(d1, d2); }
+public void testGetIntervalPositionFactor703() { DefaultTableXYDataset d = new DefaultTableXYDataset(); XYSeries s1 = new XYSeries("Series 1", true, false); s1.add(1.0, 1.1); s1.add(2.0, 2.2); d.addSeries(s1); assertEquals(1.1, d.getIntervalPositionFactor(), 0.1); }
+public void testIsAutoWidth706() { DefaultTableXYDataset d = new DefaultTableXYDataset(); d.setAutoWidth(true); assertTrue(d.isAutoWidth()); d.setAutoWidth(false); assertFalse(d.isAutoWidth()); }
     
 
     /**

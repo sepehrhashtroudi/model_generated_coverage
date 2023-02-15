@@ -95,24 +95,8 @@ public class DefaultPieDatasetTests extends TestCase
     /**
      * Some tests for the clear() method.
      */
-public void testCloning625() { 
-     DefaultPieDataset d1 = new DefaultPieDataset(); 
-     d1.setValue("V1", new Integer(1)); 
-     d1.setValue("V2", null); 
-     d1.setValue("V3", new Integer(3)); 
-     DefaultPieDataset d2 = null; 
-     try { 
-         d2 = (DefaultPieDataset) d1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         System.err.println("Failed to clone."); 
-     } 
-     assertTrue(d1 != d2); 
-     assertTrue(d1.getClass() == d2.getClass()); 
-     assertTrue(d1.equals(d2)); 
-     d1.clear(); 
-     d2.clear(); 
-     assertFalse(d1.equals(d2)); 
- }
+public void testClear3170() { DefaultPieDataset d = new DefaultPieDataset(); d.setValue("A", 1.0); d.setValue("B", 2.0); d.setValue("C", 3.0); d.setValue("D", 4.0); d.clear(); assertEquals(0, d.getItemCount()); }
+public void testClear3171() { DefaultPieDataset d = new DefaultPieDataset(); d.setValue("A", 1.0); d.setValue("B", 2.0); d.setValue("C", 3.0); d.clear(); assertEquals(0, d.getItemCount()); }
     
 
     /**

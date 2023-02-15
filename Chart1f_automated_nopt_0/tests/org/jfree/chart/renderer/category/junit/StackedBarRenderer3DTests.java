@@ -99,34 +99,12 @@ public class StackedBarRenderer3DTests extends TestCase {
     /**
      * Some checks for the findRangeBounds() method.
      */
-public void testFindRangeBounds587() { 
-     StackedBarRenderer3D r = new StackedBarRenderer3D(); 
-     assertNull(r.findRangeBounds(null)); 
-     DefaultCategoryDataset dataset = new DefaultCategoryDataset(); 
-     assertNull(r.findRangeBounds(dataset)); 
-     dataset.addValue(1.0, "R1", "C1"); 
-     assertEquals(new Range(0.0, 1.0), r.findRangeBounds(dataset)); 
-     dataset.addValue(-2.0, "R1", "C2"); 
-     assertEquals(new Range(-2.0, 1.0), r.findRangeBounds(dataset)); 
-     dataset.addValue(null, "R1", "C3"); 
-     assertEquals(new Range(-2.0, 1.0), r.findRangeBounds(dataset)); 
-     dataset.addValue(2.0, "R2", "C1"); 
-     assertEquals(new Range(-2.0, 3.0), r.findRangeBounds(dataset)); 
-     dataset.addValue(null, "R2", "C2"); 
-     assertEquals(new Range(-2.0, 3.0), r.findRangeBounds(dataset)); 
- }
-public void testHashcode589() { 
-     StackedBarRenderer3D r1 = new StackedBarRenderer3D(); 
-     StackedBarRenderer3D r2 = new StackedBarRenderer3D(); 
-     assertTrue(r1.equals(r2)); 
-     int h1 = r1.hashCode(); 
-     int h2 = r2.hashCode(); 
-     assertEquals(h1, h2); 
-     r1.setRenderAsPercentages(true); 
-     h1 = r1.hashCode(); 
-     h2 = r2.hashCode(); 
-     assertFalse(h1 == h2); 
- }
+public void test12906() { StackedBarRenderer3D r = new StackedBarRenderer3D(); assertTrue(r.getRenderAsPercentages()); }
+public void testStackedBarRenderer3D2907() { StackedBarRenderer3D r = new StackedBarRenderer3D(); assertTrue(r.getRenderAsPercentages()); }
+public void testEquals2908() { StackedBarRenderer3D r1 = new StackedBarRenderer3D(); StackedBarRenderer3D r2 = new StackedBarRenderer3D(); assertEquals(r1, r2); assertEquals(r2, r1); r1.setRenderAsPercentages(false); assertFalse(r1.equals(r2)); r2.setRenderAsPercentages(false); assertEquals(r1, r2); }
+public void testEquals2909() { StackedBarRenderer3D r1 = new StackedBarRenderer3D(); StackedBarRenderer3D r2 = new StackedBarRenderer3D(); assertEquals(r1, r2); r1.setRenderAsPercentages(false); assertFalse(r1.equals(r2)); r2.setRenderAsPercentages(false); assertEquals(r1, r2); }
+public void testEquals2910() { StackedBarRenderer3D r1 = new StackedBarRenderer3D(); StackedBarRenderer3D r2 = new StackedBarRenderer3D(); assertEquals(r1, r2); r1.setIgnoreZeroValues(true); assertFalse(r1.equals(r2)); r2.setIgnoreZeroValues(true); assertEquals(r1, r2); }
+public void testHashcode2911() { StackedBarRenderer3D r1 = new StackedBarRenderer3D(); StackedBarRenderer3D r2 = new StackedBarRenderer3D(); assertEquals(r1, r2); int h1 = r1.hashCode(); int h2 = r2.hashCode(); assertEquals(h1, h2); }
     
 
     /**

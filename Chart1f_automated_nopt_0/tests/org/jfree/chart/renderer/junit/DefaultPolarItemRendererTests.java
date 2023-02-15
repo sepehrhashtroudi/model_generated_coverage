@@ -80,18 +80,9 @@ public class DefaultPolarItemRendererTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
-public void testCloning691() { 
-     DefaultPolarItemRenderer r1 = new DefaultPolarItemRenderer(); 
-     DefaultPolarItemRenderer r2 = null; 
-     try { 
-         r2 = (DefaultPolarItemRenderer) r1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         System.err.println("Failed to clone."); 
-     } 
-     assertTrue(r1 != r2); 
-     assertTrue(r1.getClass() == r2.getClass()); 
-     assertTrue(r1.equals(r2)); 
- }
+public void testDefaultPolarItemRenderer3690() { DefaultPolarItemRenderer r = new DefaultPolarItemRenderer(); assertEquals(r, new DefaultPolarItemRenderer()); }
+public void testEquals3696() { DefaultPolarItemRenderer r1 = new DefaultPolarItemRenderer(); DefaultPolarItemRenderer r2 = new DefaultPolarItemRenderer(); assertEquals(r1, r2); r1.setSeriesFilled(0, true); assertFalse(r1.equals(r2)); r2.setSeriesFilled(0, true); assertEquals(r1, r2); r1.setSeriesFilled(1, false); assertFalse(r1.equals(r2)); r2.setSeriesFilled(1, false); assertEquals(r1, r2); }
+public void testCloning3697() throws CloneNotSupportedException { DefaultPolarItemRenderer r1 = new DefaultPolarItemRenderer(); DefaultPolarItemRenderer r2 = (DefaultPolarItemRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
     
 
     /**

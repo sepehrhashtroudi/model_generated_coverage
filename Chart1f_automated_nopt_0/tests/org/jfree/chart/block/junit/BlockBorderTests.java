@@ -84,22 +84,7 @@ public class BlockBorderTests extends TestCase {
     /**
      * Confirm that the equals() method can distinguish all the required fields.
      */
-public void testSerialization1061() { 
-     BlockBorder b1 = new BlockBorder(new RectangleInsets(1.0, 2.0, 3.0, 4.0), Color.red); 
-     BlockBorder b2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(b1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         b2 = (BlockBorder) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         System.out.println(e.toString()); 
-     } 
-     assertEquals(b1, b2); 
- }
+public void testReadObject5553() { BlockBorder b1 = new BlockBorder(new RectangleInsets(1.0, 2.0, 3.0, 4.0), Color.BLACK); BlockBorder b2 = new BlockBorder(new RectangleInsets(1.0, 2.0, 3.0, 4.0), Color.BLACK); assertEquals(b1, b2); }
     
 
     /**

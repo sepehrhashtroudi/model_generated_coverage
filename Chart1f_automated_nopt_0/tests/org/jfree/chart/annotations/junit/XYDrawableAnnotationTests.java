@@ -128,6 +128,9 @@ public class XYDrawableAnnotationTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
+public void testXYDrawableAnnotation464() { XYDrawableAnnotation a1 = new XYDrawableAnnotation(10.0, 20.0, 100.0, 200.0, new TestDrawable()); XYDrawableAnnotation a2 = new XYDrawableAnnotation(10.0, 20.0, 100.0, 200.0, new TestDrawable()); assertEquals(a1, a2); }
+public void testHashCode470() { XYDrawableAnnotation a1 = new XYDrawableAnnotation(10.0, 20.0, 100.0, 200.0, new TestDrawable()); XYDrawableAnnotation a2 = new XYDrawableAnnotation(10.0, 20.0, 100.0, 200.0, new TestDrawable()); assertEquals(a1, a2); int h1 = a1.hashCode(); int h2 = a2.hashCode(); assertEquals(h1, h2); }
+public void testCloning471() throws CloneNotSupportedException { XYDrawableAnnotation a1 = new XYDrawableAnnotation(10.0, 20.0, 100.0, 200.0, new TestDrawable()); XYDrawableAnnotation a2 = (XYDrawableAnnotation) a1.clone(); assertNotSame(a1, a2); assertSame(a1.getClass(), a2.getClass()); assertEquals(a1, a2); }
     
 
     /**

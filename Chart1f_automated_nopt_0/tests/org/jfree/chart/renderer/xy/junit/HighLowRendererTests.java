@@ -91,28 +91,20 @@ public class HighLowRendererTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
-public void testCloning275() { 
-     HighLowRenderer r1 = new HighLowRenderer(); 
-     HighLowRenderer r2 = null; 
-     try { 
-         r2 = (HighLowRenderer) r1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(r1 != r2); 
-     assertTrue(r1.getClass() == r2.getClass()); 
-     assertTrue(r1.equals(r2)); 
- }
-public void testEquals276() { 
-     HighLowRenderer r1 = new HighLowRenderer(); 
-     HighLowRenderer r2 = new HighLowRenderer(); 
-     assertTrue(r1.equals(r2)); 
-     assertTrue(r2.equals(r1)); 
-     r1.setCloseTickPaint(Color.green); 
-     assertFalse(r1.equals(r2)); 
-     r2.setCloseTickPaint(Color.green); 
-     assertTrue(r1.equals(r2)); 
- }
+public void testHighLowRenderer1140() { HighLowRenderer r1 = new HighLowRenderer(); HighLowRenderer r2 = new HighLowRenderer(); assertEquals(r1, r2); }
+public void testHighLowRenderer1141() { HighLowRenderer r = new HighLowRenderer(); assertEquals(r, new HighLowRenderer()); }
+public void testCloning1145() throws CloneNotSupportedException { HighLowRenderer r1 = new HighLowRenderer(); r1.setDrawOpenTicks(true); HighLowRenderer r2 = (HighLowRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testFireChangeEvent1146() { HighLowRenderer r = new HighLowRenderer(); r.setDrawOpenTicks(false); assertFalse(r.getDrawOpenTicks()); r.setDrawOpenTicks(true); assertTrue(r.getDrawOpenTicks()); }
+public void testCloning1147() throws CloneNotSupportedException { HighLowRenderer r1 = new HighLowRenderer(); r1.setDrawCloseTicks(true); HighLowRenderer r2 = (HighLowRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testFireChangeEvent1148() { HighLowRenderer r = new HighLowRenderer(); r.setDrawCloseTicks(true); assertEquals(true, r.getDrawCloseTicks()); r.setDrawCloseTicks(false); assertEquals(false, r.getDrawCloseTicks()); }
+public void testCloning1150() throws CloneNotSupportedException { HighLowRenderer r1 = new HighLowRenderer(); r1.setOpenTickPaint(Color.RED); HighLowRenderer r2 = (HighLowRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testFireChangeEvent1151() { HighLowRenderer r = new HighLowRenderer(); r.setOpenTickPaint(Color.RED); assertEquals(Color.RED, r.getOpenTickPaint()); r.setOpenTickPaint(Color.BLUE); assertEquals(Color.BLUE, r.getOpenTickPaint()); r.setCloseTickPaint(Color.RED); assertEquals(Color.RED, r.getCloseTickPaint()); }
+public void testCloning1153() throws CloneNotSupportedException { HighLowRenderer r1 = new HighLowRenderer(); r1.setCloseTickPaint(Color.RED); HighLowRenderer r2 = (HighLowRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testCloning1155() throws CloneNotSupportedException { HighLowRenderer r1 = new HighLowRenderer(); r1.setTickLength(0.5); HighLowRenderer r2 = (HighLowRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testCloning1156() throws CloneNotSupportedException { HighLowRenderer r1 = new HighLowRenderer(); HighLowRenderer r2 = (HighLowRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testEquals1162() { HighLowRenderer r1 = new HighLowRenderer(); HighLowRenderer r2 = new HighLowRenderer(); assertEquals(r1, r2); r1.setTickLength(0.5); assertFalse(r1.equals(r2)); r2.setTickLength(0.5); assertEquals(r1, r2); r1.setOpenTickPaint(Color.RED); assertFalse(r1.equals(r2)); r2.setOpenTickPaint(Color.RED); assertEquals(r1, r2); r1.setCloseTickPaint(Color.RED); assertFalse(r1.equals(r2));
+}
+
     
 
     /**

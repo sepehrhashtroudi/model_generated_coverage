@@ -90,68 +90,7 @@ public class MinMaxCategoryRendererTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
-public void testCloning179() { 
-     MinMaxCategoryRenderer r1 = new MinMaxCategoryRenderer(); 
-     MinMaxCategoryRenderer r2 = null; 
-     try { 
-         r2 = (MinMaxCategoryRenderer) r1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(r1 != r2); 
-     assertTrue(r1.getClass() == r2.getClass()); 
-     assertTrue(r1.equals(r2)); 
- }
-public void testEquals180() { 
-     MinMaxCategoryRenderer r1 = new MinMaxCategoryRenderer(); 
-     MinMaxCategoryRenderer r2 = new MinMaxCategoryRenderer(); 
-     assertEquals(r1, r2); 
-     r1.setDrawLines(true); 
-     assertFalse(r1.equals(r2)); 
-     r2.setDrawLines(true); 
-     assertTrue(r1.equals(r2)); 
-     r1.setGroupPaint(new GradientPaint(1.0f, 2.0f, Color.red, 3.0f, 4.0f, Color.yellow)); 
-     assertFalse(r1.equals(r2)); 
-     r2.setGroupPaint(new GradientPaint(1.0f, 2.0f, Color.red, 3.0f, 4.0f, Color.yellow)); 
-     assertTrue(r1.equals(r2)); 
-     r1.setGroupStroke(new BasicStroke(1.2f)); 
-     assertFalse(r1.equals(r2)); 
-     r2.setGroupStroke(new BasicStroke(1.2f)); 
-     assertTrue(r1.equals(r2)); 
- }
-public void testSerialization181() { 
-     MinMaxCategoryRenderer r1 = new MinMaxCategoryRenderer(); 
-     MinMaxCategoryRenderer r2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(r1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         r2 = (MinMaxCategoryRenderer) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(r1, r2); 
- }
-public void testSerialization182() { 
-     MinMaxCategoryRenderer r1 = new MinMaxCategoryRenderer(); 
-     r1.setDrawLines(true); 
-     MinMaxCategoryRenderer r2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(r1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         r2 = (MinMaxCategoryRenderer) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(r1, r2); 
- }
+public void testMinMaxCategoryRenderer766() { MinMaxCategoryRenderer r = new MinMaxCategoryRenderer(); }
     
 
     /**

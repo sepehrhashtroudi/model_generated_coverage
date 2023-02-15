@@ -84,43 +84,16 @@ public class TimeTableXYDatasetTests extends TestCase {
     /**
      * Some checks for a simple dataset.
      */
-public void testStandard1092() { 
-     TimeTableXYDataset d = new TimeTableXYDataset(); 
-     d.add(new Year(1999), 1.0, "Series 1"); 
-     assertEquals(d.getItemCount(), 1); 
-     assertEquals(d.getSeriesCount(), 1); 
-     d.add(new Year(2000), 2.0, "Series 2"); 
-     assertEquals(d.getItemCount(), 2); 
-     assertEquals(d.getSeriesCount(), 2); 
-     assertEquals(d.getYValue(0, 0), 1.0, DELTA); 
-     assertTrue(Double.isNaN(d.getYValue(0, 1))); 
-     assertTrue(Double.isNaN(d.getYValue(1, 0))); 
-     assertEquals(d.getYValue(1, 1), 2.0, DELTA); 
- }
-public void testStandard1093() { 
-     TimeTableXYDataset d = new TimeTableXYDataset(); 
-     d.add(new Year(1999), 1.0, "Series 1"); 
-     assertEquals(d.getItemCount(), 1); 
-     d.clear(); 
-     assertEquals(0, d.getItemCount()); 
- }
-public void testCloning1096() { 
-     TimeTableXYDataset d1 = new TimeTableXYDataset(); 
-     d1.add(new Year(1999), 1.0, "Series 1"); 
-     TimeTableXYDataset d2 = null; 
-     try { 
-         d2 = (TimeTableXYDataset) d1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(d1 != d2); 
-     assertTrue(d1.getClass() == d2.getClass()); 
-     assertTrue(d1.equals(d2)); 
-     d1.add(new Year(2000), 2.0, "Series 2"); 
-     assertFalse(d1.equals(d2)); 
-     d2.add(new Year(2000), 2.0, "Series 2"); 
-     assertTrue(d1.equals(d2)); 
- }
+public void testGetDomainIsPointsInTime5706() { TimeTableXYDataset d = new TimeTableXYDataset(); d.setDomainIsPointsInTime(true); assertTrue(d.getDomainIsPointsInTime()); d.setDomainIsPointsInTime(false); assertFalse(d.getDomainIsPointsInTime()); }
+public void testSetDomainIsPointsInTime5707() { TimeTableXYDataset dataset = new TimeTableXYDataset(); dataset.setDomainIsPointsInTime(true); assertTrue(dataset.getDomainIsPointsInTime()); dataset.add(new Year(2006), 1.0, "Series 1"); dataset.setDomainIsPointsInTime(false); assertFalse(dataset.getDomainIsPointsInTime()); dataset.add(new Year(2006), 2.0, "Series 2"); dataset.setDomainIsPointsInTime(true); assertTrue(dataset.getDomainIsPointsInTime()); }
+public void testSetDomainIsPointsInTime5708() { System.out.println("setDomainIsPointsInTime"); TimeTableXYDataset dataset = new TimeTableXYDataset(); dataset.setDomainIsPointsInTime(true); assertTrue(dataset.getDomainIsPointsInTime()); dataset.setDomainIsPointsInTime(false); assertFalse(dataset.getDomainIsPointsInTime()); dataset.setDomainIsPointsInTime(true); assertTrue(dataset.getDomainIsPointsInTime()); }
+public void testGetTimePeriod5712() { TimeTableXYDataset d = new TimeTableXYDataset(); d.add(new Year(1999), 1.0, "Series 1"); d.add(new Year(2000), 2.0, "Series 2"); d.add(new Year(2006), 3.0, "Series 3"); assertEquals(new Year(2006), d.getTimePeriod(0)); assertEquals(new Year(2006), d.getTimePeriod(1)); assertEquals(new Year(2006), d.getTimePeriod(2)); }
+public void testEquals5713() { TimeTableXYDataset d1 = new TimeTableXYDataset(); d1.add(new Year(0), 1.0, "Series 1"); TimeTableXYDataset d2 = new TimeTableXYDataset(); d2.add(new Year(0), 1.0, "Series 1"); assertEquals(d1, d2); d1.setDomainIsPointsInTime(!d1.getDomainIsPointsInTime()); assertFalse(d1.equals(d2)); d2.setDomainIsPointsInTime(!d1.getDomainIsPointsInTime()); assertEquals(d1, d2); }
+public void testEquals5714() { TimeTableXYDataset d1 = new TimeTableXYDataset(); d1.add(new Year(0), 1.0, "Series 1"); TimeTableXYDataset d2 = new TimeTableXYDataset(); d2.add(new Year(0), 1.0, "Series 1"); assertEquals(d1, d2); d1.setDomainIsPointsInTime(true); assertFalse(d1.equals(d2)); d2.setDomainIsPointsInTime(true); assertEquals(d1, d2); }
+public void testEquals5715() { TimeTableXYDataset d1 = new TimeTableXYDataset(); d1.setDomainIsPointsInTime(true); TimeTableXYDataset d2 = new TimeTableXYDataset(); d2.setDomainIsPointsInTime(true); assertEquals(d1, d2); d1.add(new Year(2001), 1.0, "Series 1"); assertFalse(d1.equals(d2)); d2.add(new Year(2001), 1.0, "Series 1"); assertEquals(d1, d2); d1.setDomainIsPointsInTime(false); assertFalse(d1.equals(d2));
+}
+
+public void testClone5717() throws CloneNotSupportedException { TimeTableXYDataset d1 = new TimeTableXYDataset(); d1.add(new Year(1999), 1.0, "Series 1"); TimeTableXYDataset d2 = (TimeTableXYDataset) d1.clone(); assertEquals(d1, d2); }
     
 
     /**

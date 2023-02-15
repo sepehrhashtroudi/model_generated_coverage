@@ -105,53 +105,8 @@ public class MillisecondTests extends TestCase {
      *
      * SourceForge Bug ID: 558850.
      */
-public void testSerialization823() { 
-     Millisecond m1 = new Millisecond(599, 23, 45, 7, 9, 10, 2007); 
-     Millisecond m2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(m1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         m2 = (Millisecond) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         System.out.println(e.toString()); 
-     } 
-     assertEquals(m1, m2); 
- }
-public void testDateConstructor2824() { 
-     TimeZone zone = TimeZone.getTimeZone("Europe/Tallinn"); 
-     Calendar c = new GregorianCalendar(zone); 
-     Millisecond m1 = new Millisecond(new Date(1016722559122L), zone); 
-     Millisecond m2 = new Millisecond(new Date(1016722559123L), zone); 
-     assertEquals(122, m1.getMillisecond()); 
-     assertEquals(1016722559122L, m1.getLastMillisecond(c)); 
-     assertEquals(123, m2.getMillisecond()); 
-     assertEquals(1016722559123L, m2.getFirstMillisecond(c)); 
- }
-public void testGetFirstMillisecondWithCalendar825() { 
-     Millisecond m = new Millisecond(500, 55, 40, 2, 15, 4, 2000); 
-     GregorianCalendar calendar = new GregorianCalendar(Locale.GERMANY); 
-     calendar.setTimeZone(TimeZone.getTimeZone("Europe/Frankfurt")); 
-     assertEquals(955766455500L, m.getFirstMillisecond(calendar)); 
-     boolean pass = false; 
-     try { 
-         m.getFirstMillisecond((Calendar) null); 
-     } catch (NullPointerException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
-public void testHashcode826() { 
-     Millisecond m1 = new Millisecond(599, 23, 45, 7, 9, 10, 2007); 
-     Millisecond m2 = new Millisecond(599, 23, 45, 7, 9, 10, 2007); 
-     assertTrue(m1.equals(m2)); 
-     int hash1 = m1.hashCode(); 
-     int hash2 = m2.hashCode(); 
-     assertEquals(hash1, hash2); 
- }
+public void testGetFirstMillisecond4426() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Millisecond m = new Millisecond(500, 1, 1, 1, 1, 1, 1970); assertEquals(0, m.getFirstMillisecond()); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testGetLastMillisecond4427() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Millisecond m = new Millisecond(500, 1, 1, 1, 1, 1, 1970); assertEquals(0, m.getLastMillisecond()); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
     
 
     /**

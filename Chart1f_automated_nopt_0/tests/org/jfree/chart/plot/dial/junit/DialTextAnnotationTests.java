@@ -82,18 +82,8 @@ public class DialTextAnnotationTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testCloning1091() { 
-     DialTextAnnotation a1 = new DialTextAnnotation("A1"); 
-     DialTextAnnotation a2 = null; 
-     try { 
-         a2 = (DialTextAnnotation) a1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         System.err.println("Failed to clone."); 
-     } 
-     assertTrue(a1 != a2); 
-     assertTrue(a1.getClass() == a2.getClass()); 
-     assertTrue(a1.equals(a2)); 
- }
+public void testRadius5700() { DialTextAnnotation label1 = new DialTextAnnotation("A"); label1.setRadius(1.0); DialTextAnnotation label2 = new DialTextAnnotation("B"); label2.setRadius(1.0); DialTextAnnotation label3 = new DialTextAnnotation("C"); label3.setRadius(1.0); DialTextAnnotation label4 = new DialTextAnnotation("D"); label4.setRadius(1.0); assertEquals(label1, label2); assertEquals(label1, label3); assertEquals(label1, label4); }
+public void testCloning5703() throws CloneNotSupportedException { DialTextAnnotation a1 = new DialTextAnnotation("A"); DialTextAnnotation a2 = ( DialTextAnnotation) a1.clone(); assertNotSame(a1, a2); assertSame(a1.getClass(), a2.getClass()); assertEquals(a1, a2); }
     
 
     /**

@@ -82,6 +82,7 @@ public class KeyedObjectTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
+public void testClone6094() throws CloneNotSupportedException { KeyedObject ko1 = new KeyedObject("Test1", "Test1"); KeyedObject ko2 = (KeyedObject) ko1.clone(); assertEquals("Test1", ko1.getKey()); assertEquals("Test1", ko2.getKey()); assertEquals("Test1", ko1.getObject()); KeyedObject ko3 = (KeyedObject) ko2.clone(); assertEquals("Test1", ko3.getKey()); assertEquals("Test1", ko3.getObject()); }
     
 
     /**

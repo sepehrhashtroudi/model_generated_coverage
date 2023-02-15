@@ -84,6 +84,11 @@ public class LineBorderTests extends TestCase {
     /**
      * Confirm that the equals() method can distinguish all the required fields.
      */
+public void testLineBorder7401() { LineBorder lb = new LineBorder(Color.BLUE, new BasicStroke(1.0f), new RectangleInsets(1.0, 1.0, 1.0, 1.0)); assertEquals(Color.BLUE, lb.getPaint()); assertEquals(new BasicStroke(1.0f), lb.getStroke()); assertEquals(new RectangleInsets(1.0, 1.0, 1.0, 1.0), lb.getInsets()); }
+public void testLineBorder7402() { LineBorder br = new LineBorder(Color.BLUE, new BasicStroke(1.0f), new RectangleInsets(1.0, 1.0, 1.0, 1.0)); assertEquals(Color.BLUE, br.getPaint()); assertEquals(new BasicStroke(1.0f), br.getStroke()); assertEquals(new RectangleInsets(1.0, 1.0, 1.0, 1.0), br.getInsets()); }
+public void testLineBorder7403() { LineBorder lb1 = new LineBorder(Color.RED, new BasicStroke(1.5f), new RectangleInsets(1, 1, 1, 1)); assertEquals(Color.RED, lb1.getPaint()); assertEquals(new BasicStroke(1.5f), lb1.getStroke()); assertEquals(new RectangleInsets(1, 1, 1, 1), lb1.getInsets()); LineBorder lb2 = new LineBorder(Color.BLUE, new BasicStroke(1.5f), new RectangleInsets(1, 1, 1, 1)); assertEquals(Color.BLUE, lb2.getPaint());
+}
+
     
 
     /**

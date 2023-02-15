@@ -88,32 +88,7 @@ public class XYBlockRendererTests extends TestCase {
     /**
      * Test that the equals() method distinguishes all fields.
      */
-public void testEquals1136() { 
-     XYBlockRenderer r1 = new XYBlockRenderer(); 
-     XYBlockRenderer r2 = new XYBlockRenderer(); 
-     assertTrue(r1.equals(r2)); 
-     assertTrue(r2.equals(r1)); 
-     r1.setBlockHeight(2.0); 
-     assertFalse(r1.equals(r2)); 
-     r2.setBlockHeight(2.0); 
-     assertTrue(r1.equals(r2)); 
-     r1.setBlockWidth(2.0); 
-     assertFalse(r1.equals(r2)); 
-     r2.setBlockWidth(2.0); 
-     assertTrue(r1.equals(r2)); 
-     r1.setPaintScale(new GrayPaintScale(0.0, 1.0)); 
-     assertFalse(r1.equals(r2)); 
-     r2.setPaintScale(new GrayPaintScale(0.0, 1.0)); 
-     assertTrue(r1.equals(r2)); 
- }
-public void testBug1766646B1137() { 
-     XYBlockRenderer r = new XYBlockRenderer(); 
-     Range range = r.findDomainBounds(null); 
-     assertTrue(range == null); 
-     DefaultXYZDataset emptyDataset = new DefaultXYZDataset(); 
-     range = r.findDomainBounds(emptyDataset); 
-     assertTrue(range == null); 
- }
+public void testCloning6070() throws CloneNotSupportedException { XYBlockRenderer r1 = new XYBlockRenderer(); r1.setPaintScale(new GrayPaintScale()); XYBlockRenderer r2 = (XYBlockRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
     
 
     /**

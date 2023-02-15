@@ -78,24 +78,8 @@ public class OutlierTests extends TestCase {
     /**
      * Simple check for the default constructor.
      */
-public void testEquals139() { 
-     Outlier out1 = new Outlier(1.0, 2.0, 3.0); 
-     Outlier out2 = new Outlier(1.0, 2.0, 3.0); 
-     assertTrue(out1.equals(out2)); 
-     assertTrue(out2.equals(out1)); 
-     out1.setPoint(new Point2D.Double(2.0, 2.0)); 
-     assertFalse(out1.equals(out2)); 
-     out2.setPoint(new Point2D.Double(2.0, 2.0)); 
-     assertTrue(out1.equals(out2)); 
-     out1.setPoint(new Point2D.Double(2.0, 3.0)); 
-     assertFalse(out1.equals(out2)); 
-     out2.setPoint(new Point2D.Double(2.0, 3.0)); 
-     assertTrue(out1.equals(out2)); 
-     out1.setRadius(4.0); 
-     assertFalse(out1.equals(out2)); 
-     out2.setRadius(4.0); 
-     assertTrue(out1.equals(out2)); 
- }
+public void getX() { Outlier outlier = new Outlier(0, 0, 1); outlier.setPoint(new Point2D.Double(0, 0)); assertEquals(0, outlier.getX(), 0); outlier.setPoint(new Point2D.Double(1, 1)); assertEquals(1, outlier.getX(), 0); outlier.setPoint(new Point2D.Double(1, 1)); assertEquals(1, outlier.getX(), 0); outlier.setPoint(new Point2D.Double(1, 1)); assertEquals(1, outlier.getX(), 0); }
+public void testGetRadius640() { Outlier outlier = new Outlier(0, 0, 1); outlier.setRadius(1); assertEquals(1, outlier.getRadius(), 0.001); outlier.setRadius(2); assertEquals(2, outlier.getRadius(), 0.001); outlier.setRadius(3); assertEquals(3, outlier.getRadius(), 0.001); outlier.setRadius(4); assertEquals(4, outlier.getRadius(), 0.001); outlier.setRadius(5); assertEquals(5, outlier.getRadius(), 0.001); }
     
 
     /**

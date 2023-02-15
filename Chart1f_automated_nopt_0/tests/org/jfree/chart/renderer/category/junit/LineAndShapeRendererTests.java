@@ -89,6 +89,17 @@ public class LineAndShapeRendererTests extends TestCase {
     /**
      * Test that the equals() method distinguishes all fields.
      */
+public void testLineAndShapeRenderer7786() { LineAndShapeRenderer r = new LineAndShapeRenderer(); assertEquals(r, new LineAndShapeRenderer()); }
+public void testGetBaseLinesVisible7792() { LineAndShapeRenderer r = new LineAndShapeRenderer(); assertFalse(r.getBaseLinesVisible()); r.setBaseLinesVisible(true); assertTrue(r.getBaseLinesVisible()); r.setBaseLinesVisible(false); assertFalse(r.getBaseLinesVisible()); r.setBaseLinesVisible(true); assertTrue(r.getBaseLinesVisible()); }
+public void testGetBaseShapesVisible7801() { LineAndShapeRenderer r = new LineAndShapeRenderer(); assertFalse(r.getBaseShapesVisible()); r.setBaseShapesVisible(true); assertTrue(r.getBaseShapesVisible()); r.setBaseShapesVisible(false); assertFalse(r.getBaseShapesVisible()); r.setBaseShapesVisible(true); assertTrue(r.getBaseShapesVisible()); }
+public void testSetUseOutlinePaint7806() { LineAndShapeRenderer r = new LineAndShapeRenderer(); r.setUseOutlinePaint(true); assertTrue(r.getUseOutlinePaint()); r.setUseOutlinePaint(false); assertFalse(r.getUseOutlinePaint()); }
+public void testFireChangeEvent7808() { LineAndShapeRenderer r = new LineAndShapeRenderer(); r.setUseOutlinePaint(true); assertTrue(r.getUseOutlinePaint()); r.setUseOutlinePaint(false); assertFalse(r.getUseOutlinePaint()); }
+public void testCloning7813() throws CloneNotSupportedException { LineAndShapeRenderer r1 = new LineAndShapeRenderer(); r1.setSeriesShapesFilled(0, true); LineAndShapeRenderer r2 = (LineAndShapeRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testSetUseSeriesOffset7817() { LineAndShapeRenderer r = new LineAndShapeRenderer(); r.setUseSeriesOffset(true); assertTrue(r.getUseSeriesOffset()); r.setUseSeriesOffset(false); assertFalse(r.getUseSeriesOffset()); }
+public void testFireChangeEvent7819() { LineAndShapeRenderer r = new LineAndShapeRenderer(); r.setUseSeriesOffset(true); assertTrue(r.getUseSeriesOffset()); r.setUseSeriesOffset(false); assertFalse(r.getUseSeriesOffset()); }
+public void testEquals7824() { LineAndShapeRenderer r1 = new LineAndShapeRenderer(); LineAndShapeRenderer r2 = new LineAndShapeRenderer(); assertEquals(r1, r2); r1.setBaseLinesVisible(false); assertFalse(r1.equals(r2)); r2.setBaseLinesVisible(false); assertEquals(r1, r2); r1.setSeriesLinesVisible(1, true); assertFalse(r1.equals(r2)); r2.setSeriesLinesVisible(1, true); assertEquals(r1, r2); r1.setBaseShapesVisible(true); assertFalse(r1.equals(r2));
+}
+
     
 
     /**

@@ -931,11 +931,11 @@ public class SegmentedTimelineTests extends TestCase {
         test.testMondayThoughFridayExceptionSegments();
         test.tearDown();
     }
-
     public void testMondayThoughFridayExceptionSegments()
             throws ParseException {
         verifyExceptionSegments(this.mondayFridayTimeline,
                 US_HOLIDAYS, DATE_FORMAT);
     }
+
 
 }

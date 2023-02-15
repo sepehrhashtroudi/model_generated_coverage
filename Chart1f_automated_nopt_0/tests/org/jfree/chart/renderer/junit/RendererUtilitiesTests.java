@@ -75,6 +75,7 @@ public class RendererUtilitiesTests extends TestCase {
      * Some checks for the findLiveItemsLowerBound() method when the dataset is
      * unordered.
      */
+public void testGetDomainOrder5059() { DefaultXYDataset dataset = new DefaultXYDataset(); assertEquals(DomainOrder.NONE, dataset.getDomainOrder()); dataset.addSeries("S1", new double[][] {{1.0, 2.0}, {3.0, 4.0}}); assertEquals(DomainOrder.NONE, dataset.getDomainOrder()); dataset.addSeries("S2", new double[][] {{1.0, 2.0}, {3.0, 4.0}}); assertEquals(DomainOrder.NONE, dataset.getDomainOrder()); }
     
 
     /**

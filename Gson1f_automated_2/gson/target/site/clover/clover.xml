@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1674165938853" clover="4.4.1">
-   <project name="Gson 1.6" timestamp="1674165934407">
+<coverage generated="1675576035103" clover="4.4.1">
+   <project name="Gson 1.6" timestamp="1675576030723">
       <metrics coveredelements="1968" complexity="1244" loc="11588" methods="621" classes="128" statements="2432" packages="4" coveredconditionals="337" coveredmethods="332" elements="3903" ncloc="5408" files="90" conditionals="850" coveredstatements="1299"/>
       <package name="com.google.gson.stream">
          <metrics coveredelements="504" complexity="266" loc="1856" methods="73" classes="5" statements="550" coveredconditionals="89" coveredmethods="62" elements="789" ncloc="873" files="5" conditionals="166" coveredstatements="353"/>
@@ -4147,14 +4147,14 @@
          </file>
       </package>
    </project>
-   <testproject name="Gson 1.6" timestamp="1674165934407">
+   <testproject name="Gson 1.6" timestamp="1675576030723">
       <metrics coveredelements="313" complexity="434" loc="7285" methods="298" classes="218" statements="986" packages="5" coveredconditionals="8" coveredmethods="59" elements="1486" ncloc="3250" files="82" conditionals="202" coveredstatements="246"/>
       <package name="com.google.gson.stream">
          <metrics coveredelements="82" complexity="20" loc="375" methods="12" classes="2" statements="127" coveredconditionals="0" coveredmethods="8" elements="143" ncloc="179" files="2" conditionals="4" coveredstatements="74"/>
          <file path="/home/sepehr/masters/test_generation/model_generated_coverage/Gson1f_automated_2/gson/src/test/java/com/google/gson/stream/JsonReaderTest.java" name="JsonReaderTest.java">
             <metrics coveredelements="43" coveredconditionals="0" complexity="8" loc="190" coveredmethods="4" methods="4" elements="47" classes="1" ncloc="65" statements="43" conditionals="0" coveredstatements="39"/>
             <class name="JsonReaderTest">
-               <metrics coveredelements="43" complexity="8" methods="4" testruns="4" statements="43" coveredconditionals="0" coveredmethods="4" elements="47" testfailures="0" testduration="0.009000000000000001" conditionals="0" coveredstatements="39" testpasses="4"/>
+               <metrics coveredelements="43" complexity="8" methods="4" testruns="4" statements="43" coveredconditionals="0" coveredmethods="4" elements="47" testfailures="0" testduration="0.027000000000000003" conditionals="0" coveredstatements="39" testpasses="4"/>
             </class>
             <line complexity="2" visibility="public" signature="testStrictMultipleTopLevelValues18() : void" num="26" testsuccess="true" count="1" testduration="0.001" type="method"/>
             <line num="27" count="1" type="stmt"/>
@@ -4163,7 +4163,7 @@
             <line num="30" count="1" type="stmt"/>
             <line num="31" count="1" type="stmt"/>
             <line num="32" count="0" type="stmt"/>
-            <line complexity="1" visibility="public" signature="testDoubles19() : void" num="36" testsuccess="true" count="1" testduration="0.002" type="method"/>
+            <line complexity="1" visibility="public" signature="testDoubles19() : void" num="36" testsuccess="true" count="1" testduration="0.025" type="method"/>
             <line num="37" count="1" type="stmt"/>
             <line num="38" count="1" type="stmt"/>
             <line num="39" count="1" type="stmt"/>
@@ -4194,7 +4194,7 @@
             <line num="69" count="1" type="stmt"/>
             <line num="70" count="1" type="stmt"/>
             <line num="71" count="0" type="stmt"/>
-            <line complexity="1" visibility="public" signature="testSkipObject21() : void" num="75" testsuccess="true" count="1" testduration="0.005" type="method"/>
+            <line complexity="1" visibility="public" signature="testSkipObject21() : void" num="75" testsuccess="true" count="1" testduration="0.0" type="method"/>
             <line num="76" count="1" type="stmt"/>
             <line num="77" count="1" type="stmt"/>
             <line num="78" count="1" type="stmt"/>
@@ -4207,9 +4207,9 @@
          <file path="/home/sepehr/masters/test_generation/model_generated_coverage/Gson1f_automated_2/gson/src/test/java/com/google/gson/stream/JsonWriterTest.java" name="JsonWriterTest.java">
             <metrics coveredelements="39" coveredconditionals="0" complexity="12" loc="185" coveredmethods="4" methods="8" elements="96" classes="1" ncloc="114" statements="84" conditionals="4" coveredstatements="35"/>
             <class name="JsonWriterTest">
-               <metrics coveredelements="39" complexity="12" methods="8" testruns="8" statements="84" coveredconditionals="0" coveredmethods="4" elements="96" testfailures="4" testduration="0.007" conditionals="4" coveredstatements="35" testpasses="4"/>
+               <metrics coveredelements="39" complexity="12" methods="8" testruns="8" statements="84" coveredconditionals="0" coveredmethods="4" elements="96" testfailures="4" testduration="0.006" conditionals="4" coveredstatements="35" testpasses="4"/>
             </class>
-            <line complexity="2" visibility="public" signature="testWrongTopLevelType8() : void" num="28" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line complexity="2" visibility="public" signature="testWrongTopLevelType8() : void" num="28" testsuccess="true" count="1" testduration="0.001" type="method"/>
             <line num="29" count="1" type="stmt"/>
             <line num="30" count="1" type="stmt"/>
             <line num="31" count="1" type="stmt"/>
@@ -4221,7 +4221,7 @@
             <line num="40" count="0" type="stmt"/>
             <line num="41" count="0" type="stmt"/>
             <line num="42" count="0" type="stmt"/>
-            <line complexity="1" visibility="public" signature="testValue10() : void" num="44" testsuccess="false" count="0" testduration="0.001" type="method"/>
+            <line complexity="1" visibility="public" signature="testValue10() : void" num="44" testsuccess="false" count="0" testduration="0.0" type="method"/>
             <line num="45" count="0" type="stmt"/>
             <line num="46" count="0" type="stmt"/>
             <line num="47" count="0" type="stmt"/>
@@ -4240,7 +4240,7 @@
             <line num="60" count="0" type="stmt"/>
             <line num="61" count="0" type="stmt"/>
             <line num="62" count="0" type="stmt"/>
-            <line complexity="1" visibility="public" signature="testValue11() : void" num="64" testsuccess="false" count="0" testduration="0.002" type="method"/>
+            <line complexity="1" visibility="public" signature="testValue11() : void" num="64" testsuccess="false" count="0" testduration="0.001" type="method"/>
             <line num="65" count="0" type="stmt"/>
             <line num="66" count="0" type="stmt"/>
             <line num="67" count="0" type="stmt"/>
@@ -4438,9 +4438,9 @@
          <file path="/home/sepehr/masters/test_generation/model_generated_coverage/Gson1f_automated_2/gson/src/test/java/com/google/gson/GsonBuilderTest.java" name="GsonBuilderTest.java">
             <metrics coveredelements="5" coveredconditionals="0" complexity="1" loc="35" coveredmethods="1" methods="1" elements="5" classes="1" ncloc="10" statements="4" conditionals="0" coveredstatements="4"/>
             <class name="GsonBuilderTest">
-               <metrics coveredelements="5" complexity="1" methods="1" testruns="1" statements="4" coveredconditionals="0" coveredmethods="1" elements="5" testfailures="0" testduration="0.081" conditionals="0" coveredstatements="4" testpasses="1"/>
+               <metrics coveredelements="5" complexity="1" methods="1" testruns="1" statements="4" coveredconditionals="0" coveredmethods="1" elements="5" testfailures="0" testduration="0.071" conditionals="0" coveredstatements="4" testpasses="1"/>
             </class>
-            <line complexity="1" visibility="public" signature="testJsonObjectSerialization76() : void" num="28" testsuccess="true" count="1" testduration="0.081" type="method"/>
+            <line complexity="1" visibility="public" signature="testJsonObjectSerialization76() : void" num="28" testsuccess="true" count="1" testduration="0.071" type="method"/>
             <line num="29" count="1" type="stmt"/>
             <line num="30" count="1" type="stmt"/>
             <line num="31" count="1" type="stmt"/>
@@ -4539,12 +4539,12 @@
          <file path="/home/sepehr/masters/test_generation/model_generated_coverage/Gson1f_automated_2/gson/src/test/java/com/google/gson/JsonParserTest.java" name="JsonParserTest.java">
             <metrics coveredelements="12" coveredconditionals="0" complexity="2" loc="62" coveredmethods="2" methods="2" elements="12" classes="1" ncloc="25" statements="10" conditionals="0" coveredstatements="10"/>
             <class name="JsonParserTest">
-               <metrics coveredelements="12" complexity="2" methods="2" testruns="1" statements="10" coveredconditionals="0" coveredmethods="2" elements="12" testfailures="0" testduration="0.034" conditionals="0" coveredstatements="10" testpasses="1"/>
+               <metrics coveredelements="12" complexity="2" methods="2" testruns="1" statements="10" coveredconditionals="0" coveredmethods="2" elements="12" testfailures="0" testduration="0.019" conditionals="0" coveredstatements="10" testpasses="1"/>
             </class>
             <line complexity="1" visibility="protected" signature="setUp() : void" num="35" count="1" type="method"/>
             <line num="37" count="1" type="stmt"/>
             <line num="38" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="testGsonAcceptsEscapedAndNonEscapedJsonDeserialization60() : void" num="41" testsuccess="true" count="1" testduration="0.034" type="method"/>
+            <line complexity="1" visibility="public" signature="testGsonAcceptsEscapedAndNonEscapedJsonDeserialization60() : void" num="41" testsuccess="true" count="1" testduration="0.019" type="method"/>
             <line num="42" count="1" type="stmt"/>
             <line num="43" count="1" type="stmt"/>
             <line num="44" count="1" type="stmt"/>
@@ -4889,9 +4889,9 @@
          <file path="/home/sepehr/masters/test_generation/model_generated_coverage/Gson1f_automated_2/gson/src/test/java/com/google/gson/TypeInfoMapTest.java" name="TypeInfoMapTest.java">
             <metrics coveredelements="4" coveredconditionals="0" complexity="2" loc="52" coveredmethods="1" methods="1" elements="5" classes="1" ncloc="18" statements="4" conditionals="0" coveredstatements="3"/>
             <class name="TypeInfoMapTest">
-               <metrics coveredelements="4" complexity="2" methods="1" testruns="1" statements="4" coveredconditionals="0" coveredmethods="1" elements="5" testfailures="0" testduration="0.002" conditionals="0" coveredstatements="3" testpasses="1"/>
+               <metrics coveredelements="4" complexity="2" methods="1" testruns="1" statements="4" coveredconditionals="0" coveredmethods="1" elements="5" testfailures="0" testduration="0.001" conditionals="0" coveredstatements="3" testpasses="1"/>
             </class>
-            <line complexity="2" visibility="public" signature="testNonMapConstruction48() : void" num="36" testsuccess="true" count="1" testduration="0.002" type="method"/>
+            <line complexity="2" visibility="public" signature="testNonMapConstruction48() : void" num="36" testsuccess="true" count="1" testduration="0.001" type="method"/>
             <line num="37" count="1" type="stmt"/>
             <line num="38" count="1" type="stmt"/>
             <line num="40" count="1" type="stmt"/>
@@ -4930,12 +4930,12 @@
          <file path="/home/sepehr/masters/test_generation/model_generated_coverage/Gson1f_automated_2/gson/src/test/java/com/google/gson/VersionExclusionStrategyTest.java" name="VersionExclusionStrategyTest.java">
             <metrics coveredelements="6" coveredconditionals="0" complexity="1" loc="55" coveredmethods="1" methods="1" elements="6" classes="2" ncloc="20" statements="5" conditionals="0" coveredstatements="5"/>
             <class name="VersionExclusionStrategyTest">
-               <metrics coveredelements="6" complexity="1" methods="1" testruns="1" statements="5" coveredconditionals="0" coveredmethods="1" elements="6" testfailures="0" testduration="0.019" conditionals="0" coveredstatements="5" testpasses="1"/>
+               <metrics coveredelements="6" complexity="1" methods="1" testruns="1" statements="5" coveredconditionals="0" coveredmethods="1" elements="6" testfailures="0" testduration="0.012" conditionals="0" coveredstatements="5" testpasses="1"/>
             </class>
             <class name="VersionExclusionStrategyTest.MockObject">
                <metrics coveredelements="0" coveredconditionals="0" complexity="0" coveredmethods="0" methods="0" elements="0" statements="0" conditionals="0" coveredstatements="0"/>
             </class>
-            <line complexity="1" visibility="public" signature="testClassAndFieldAreAheadInVersion83() : void" num="33" testsuccess="true" count="1" testduration="0.019" type="method"/>
+            <line complexity="1" visibility="public" signature="testClassAndFieldAreAheadInVersion83() : void" num="33" testsuccess="true" count="1" testduration="0.012" type="method"/>
             <line num="34" count="1" type="stmt"/>
             <line num="35" count="1" type="stmt"/>
             <line num="36" count="1" type="stmt"/>
@@ -5207,7 +5207,7 @@
             <line complexity="1" visibility="protected" signature="tearDown() : void" num="67" count="5" type="method"/>
             <line num="69" count="5" type="stmt"/>
             <line num="70" count="5" type="stmt"/>
-            <line complexity="1" visibility="public" signature="testUuidDeserialization39() : void" num="73" testsuccess="true" count="1" testduration="0.001" type="method"/>
+            <line complexity="1" visibility="public" signature="testUuidDeserialization39() : void" num="73" testsuccess="true" count="1" testduration="0.0" type="method"/>
             <line num="74" count="1" type="stmt"/>
             <line num="75" count="1" type="stmt"/>
             <line num="76" count="1" type="stmt"/>
@@ -5219,7 +5219,7 @@
             <line num="84" count="1" type="stmt"/>
             <line num="85" count="1" type="stmt"/>
             <line num="86" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="testBigIntegerFieldDeserialization43() : void" num="88" testsuccess="true" count="1" testduration="0.001" type="method"/>
+            <line complexity="1" visibility="public" signature="testBigIntegerFieldDeserialization43() : void" num="88" testsuccess="true" count="1" testduration="0.002" type="method"/>
             <line num="89" count="1" type="stmt"/>
             <line num="90" count="1" type="stmt"/>
             <line num="91" count="1" type="stmt"/>
@@ -5394,7 +5394,7 @@
          <file path="/home/sepehr/masters/test_generation/model_generated_coverage/Gson1f_automated_2/gson/src/test/java/com/google/gson/functional/InheritanceTest.java" name="InheritanceTest.java">
             <metrics coveredelements="12" coveredconditionals="0" complexity="22" loc="200" coveredmethods="2" methods="13" elements="86" classes="3" ncloc="134" statements="59" conditionals="14" coveredstatements="10"/>
             <class name="InheritanceTest">
-               <metrics coveredelements="12" complexity="2" methods="2" testruns="1" statements="10" coveredconditionals="0" coveredmethods="2" elements="12" testfailures="0" testduration="0.0" conditionals="0" coveredstatements="10" testpasses="1"/>
+               <metrics coveredelements="12" complexity="2" methods="2" testruns="1" statements="10" coveredconditionals="0" coveredmethods="2" elements="12" testfailures="0" testduration="0.001" conditionals="0" coveredstatements="10" testpasses="1"/>
             </class>
             <class name="InheritanceTest.SubTypeOfNested">
                <metrics coveredelements="0" coveredconditionals="0" complexity="3" coveredmethods="0" methods="3" elements="7" statements="4" conditionals="0" coveredstatements="0"/>
@@ -5405,7 +5405,7 @@
             <line complexity="1" visibility="protected" signature="setUp() : void" num="49" count="1" type="method"/>
             <line num="51" count="1" type="stmt"/>
             <line num="52" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="testCharacterDeserialization46() : void" num="55" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line complexity="1" visibility="public" signature="testCharacterDeserialization46() : void" num="55" testsuccess="true" count="1" testduration="0.001" type="method"/>
             <line num="56" count="1" type="stmt"/>
             <line num="57" count="1" type="stmt"/>
             <line num="58" count="1" type="stmt"/>
@@ -5491,7 +5491,7 @@
          <file path="/home/sepehr/masters/test_generation/model_generated_coverage/Gson1f_automated_2/gson/src/test/java/com/google/gson/functional/InterfaceTest.java" name="InterfaceTest.java">
             <metrics coveredelements="9" coveredconditionals="0" complexity="4" loc="71" coveredmethods="3" methods="4" elements="11" classes="4" ncloc="34" statements="7" conditionals="0" coveredstatements="6"/>
             <class name="InterfaceTest">
-               <metrics coveredelements="7" complexity="2" methods="2" testruns="1" statements="5" coveredconditionals="0" coveredmethods="2" elements="7" testfailures="0" testduration="0.008" conditionals="0" coveredstatements="5" testpasses="1"/>
+               <metrics coveredelements="7" complexity="2" methods="2" testruns="1" statements="5" coveredconditionals="0" coveredmethods="2" elements="7" testfailures="0" testduration="0.001" conditionals="0" coveredstatements="5" testpasses="1"/>
             </class>
             <class name="InterfaceTest.TestObjectInterface">
                <metrics coveredelements="0" coveredconditionals="0" complexity="0" coveredmethods="0" methods="0" elements="0" statements="0" conditionals="0" coveredstatements="0"/>
@@ -5506,7 +5506,7 @@
             <line num="37" count="1" type="stmt"/>
             <line num="38" count="1" type="stmt"/>
             <line num="39" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="testTopLevelArrayOfIntsSerialization6() : void" num="42" testsuccess="true" count="1" testduration="0.008" type="method"/>
+            <line complexity="1" visibility="public" signature="testTopLevelArrayOfIntsSerialization6() : void" num="42" testsuccess="true" count="1" testduration="0.001" type="method"/>
             <line num="43" count="1" type="stmt"/>
             <line num="44" count="1" type="stmt"/>
             <line complexity="1" visibility="private" signature="TestObject(String)" num="58" count="1" type="method"/>
@@ -5544,12 +5544,12 @@
          <file path="/home/sepehr/masters/test_generation/model_generated_coverage/Gson1f_automated_2/gson/src/test/java/com/google/gson/functional/JsonParserTest.java" name="JsonParserTest.java">
             <metrics coveredelements="14" coveredconditionals="0" complexity="4" loc="72" coveredmethods="3" methods="3" elements="15" classes="1" ncloc="35" statements="12" conditionals="0" coveredstatements="11"/>
             <class name="JsonParserTest">
-               <metrics coveredelements="14" complexity="4" methods="3" testruns="2" statements="12" coveredconditionals="0" coveredmethods="3" elements="15" testfailures="0" testduration="0.007" conditionals="0" coveredstatements="11" testpasses="2"/>
+               <metrics coveredelements="14" complexity="4" methods="3" testruns="2" statements="12" coveredconditionals="0" coveredmethods="3" elements="15" testfailures="0" testduration="0.005" conditionals="0" coveredstatements="11" testpasses="2"/>
             </class>
             <line complexity="1" visibility="protected" signature="setUp() : void" num="41" count="2" type="method"/>
             <line num="43" count="2" type="stmt"/>
             <line num="44" count="2" type="stmt"/>
-            <line complexity="2" visibility="public" signature="testBadArrayDeserialization49() : void" num="47" testsuccess="true" count="1" testduration="0.006" type="method"/>
+            <line complexity="2" visibility="public" signature="testBadArrayDeserialization49() : void" num="47" testsuccess="true" count="1" testduration="0.004" type="method"/>
             <line num="48" count="1" type="stmt"/>
             <line num="49" count="1" type="stmt"/>
             <line num="50" count="1" type="stmt"/>
@@ -5938,7 +5938,7 @@
             <line complexity="1" visibility="protected" signature="setUp() : void" num="37" count="2" type="method"/>
             <line num="39" count="2" type="stmt"/>
             <line num="40" count="2" type="stmt"/>
-            <line complexity="3" visibility="public" signature="testDoubleNaNSerializationNotSupportedByDefault45() : void" num="43" testsuccess="true" count="1" testduration="0.001" type="method"/>
+            <line complexity="3" visibility="public" signature="testDoubleNaNSerializationNotSupportedByDefault45() : void" num="43" testsuccess="true" count="1" testduration="0.0" type="method"/>
             <line num="44" count="1" type="stmt"/>
             <line num="45" count="1" type="stmt"/>
             <line num="46" count="1" type="stmt"/>
@@ -5946,7 +5946,7 @@
             <line num="50" count="1" type="stmt"/>
             <line num="51" count="1" type="stmt"/>
             <line num="52" count="0" type="stmt"/>
-            <line complexity="1" visibility="public" signature="testDoubleInASingleElementArrayDeserialization52() : void" num="56" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line complexity="1" visibility="public" signature="testDoubleInASingleElementArrayDeserialization52() : void" num="56" testsuccess="true" count="1" testduration="0.001" type="method"/>
             <line num="57" count="1" type="stmt"/>
             <line num="58" count="1" type="stmt"/>
             <line num="59" count="1" type="stmt"/>

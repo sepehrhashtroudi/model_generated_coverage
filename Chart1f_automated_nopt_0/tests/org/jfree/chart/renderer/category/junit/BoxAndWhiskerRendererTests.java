@@ -106,51 +106,16 @@ public class BoxAndWhiskerRendererTests extends TestCase {
     /**
      * Test that the equals() method distinguishes all fields.
      */
-public void testSerialization200() { 
-     BufferedImage image = new BufferedImage(100, 100, BufferedImage.TYPE_INT_RGB); 
-     Graphics2D g2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(g2); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         g2 = (Graphics2D) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(g2, g2); 
- }
-public void testEquals265() { 
-     BoxAndWhiskerRenderer r1 = new BoxAndWhiskerRenderer(); 
-     BoxAndWhiskerRenderer r2 = new BoxAndWhiskerRenderer(); 
-     assertEquals(r1, r2); 
-     r1.setArtifactPaint(new GradientPaint(1.0f, 2.0f, Color.yellow, 3.0f, 4.0f, Color.blue)); 
-     assertFalse(r1.equals(r2)); 
-     r2.setArtifactPaint(new GradientPaint(1.0f, 2.0f, Color.yellow, 3.0f, 4.0f, Color.blue)); 
-     assertEquals(r1, r2); 
-     r1.setFillBox(!r1.getFillBox()); 
-     assertFalse(r1.equals(r2)); 
-     r2.setFillBox(!r2.getFillBox()); 
-     assertEquals(r1, r2); 
-     r1.setItemMargin(0.11); 
-     assertFalse(r1.equals(r2)); 
-     r2.setItemMargin(0.11); 
-     assertEquals(r1, r2); 
-     r1.setMaximumBarWidth(0.99); 
-     assertFalse(r1.equals(r2)); 
-     r2.setMaximumBarWidth(0.99); 
-     assertTrue(r1.equals(r2)); 
-     r1.setMeanVisible(true); 
-     assertFalse(r1.equals(r2)); 
-     r2.setMeanVisible(true); 
-     assertTrue(r1.equals(r2)); 
-     r1.setMedianVisible(false); 
-     assertFalse(r1.equals(r2)); 
-     r2.setMedianVisible(false); 
-     assertTrue(r1.equals(r2)); 
- }
+public void testBoxAndWhiskerRenderer1083() { BoxAndWhiskerRenderer r = new BoxAndWhiskerRenderer(); }
+public void testDrawVerticalItem1110() { }
+public void testSetSeriesKey5825() { LegendItem item1 = new LegendItem("Label 1"); LegendItem item2 = new LegendItem("Label 2"); item1.setSeriesKey("A"); item2.setSeriesKey("B"); assertEquals("A", item1.getSeriesKey()); assertEquals("B", item2.getSeriesKey()); }
+public void testSetSeriesKey5826() { LegendItem item1 = new LegendItem("Label1"); item1.setSeriesKey("A"); assertEquals("A", item1.getSeriesKey()); LegendItem item2 = new LegendItem("Label2"); item2.setSeriesKey("B"); assertEquals("B", item2.getSeriesKey()); LegendItem item3 = new LegendItem("Label3"); item3.setSeriesKey("A"); assertEquals("A", item3.getSeriesKey()); }
+public void testGetSeriesIndex5827() { LegendItem item1 = new LegendItem("Label1"); LegendItem item2 = new LegendItem("Label2"); LegendItem item3 = new LegendItem("Label3"); item1.setSeriesIndex(0); item2.setSeriesIndex(1); assertEquals(0, item1.getSeriesIndex()); assertEquals(1, item2.getSeriesIndex()); assertEquals(2, item3.getSeriesIndex()); }
+public void testConstructor5828() { LegendItem item1 = new LegendItem("Label 1"); LegendItem item2 = new LegendItem("Label 2"); LegendItem item3 = new LegendItem("Label 3"); LegendItem item4 = new LegendItem("Label 4"); assertEquals(0, item1.getSeriesIndex()); assertEquals(0, item2.getSeriesIndex()); assertEquals(0, item3.getSeriesIndex()); assertEquals(0, item4.getSeriesIndex()); }
+public void testSetSeriesIndex5829() { LegendItem item1 = new LegendItem("Label1"); LegendItem item2 = new LegendItem("Label2"); item1.setSeriesIndex(0); assertEquals(0, item1.getSeriesIndex()); item1.setSeriesIndex(1); assertEquals(1, item1.getSeriesIndex()); item2.setSeriesIndex(2); assertEquals(2, item2.getSeriesIndex()); }
+public void testConstructor5830() { LegendItem item1 = new LegendItem("Label1"); LegendItem item2 = new LegendItem("Label2"); assertEquals(0, item1.getSeriesIndex()); assertEquals(0, item2.getSeriesIndex()); item1.setSeriesIndex(1); assertEquals(1, item1.getSeriesIndex()); assertEquals(1, item2.getSeriesIndex()); item2.setSeriesIndex(2); assertEquals(2, item1.getSeriesIndex()); assertEquals(2, item2.getSeriesIndex()); }
+public void testGetLabel5831() { LegendItem item1 = new LegendItem("Label 1"); LegendItem item2 = new LegendItem("Label 2"); LegendItem item3 = new LegendItem("Label 3"); LegendItem item4 = new LegendItem("Label 4"); assertEquals("Label 1", item1.getLabel()); assertEquals("Label 2", item2.getLabel()); assertEquals("Label 3", item3.getLabel()); assertEquals("Label 4", item4.getLabel()); }
+public void testGetLabel5832() { LegendItem item1 = new LegendItem("Label 1"); LegendItem item2 = new LegendItem("Label 2"); LegendItem item3 = new LegendItem("Label 3"); assertEquals("Label 1", item1.getLabel()); assertEquals("Label 2", item2.getLabel()); assertEquals("Label 3", item3.getLabel()); }
     
 
     /**

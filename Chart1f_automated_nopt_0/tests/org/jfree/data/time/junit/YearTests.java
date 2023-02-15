@@ -101,42 +101,11 @@ public class YearTests extends TestCase {
      *
      * SourceForge Bug ID: 558850.
      */
-public void testEquals188() { 
-     Year year1 = new Year(2002); 
-     Year year2 = new Year(2002); 
-     assertTrue(year1.equals(year2)); 
-     assertTrue(year2.equals(year1)); 
-     year1 = new Year(1999); 
-     assertFalse(year1.equals(year2)); 
-     year2 = new Year(1999); 
-     assertTrue(year1.equals(year2)); 
- }
-public void testDateConstructor2190() { 
-     TimeZone zone = TimeZone.getTimeZone("America/Los_Angeles"); 
-     Calendar c = new GregorianCalendar(zone); 
-     Year y1 = new Year(new Date(1009871999999L), zone); 
-     Year y2 = new Year(new Date(1009872000000L), zone); 
-     assertEquals(2001, y1.getYear()); 
-     assertEquals(1009871000000L, y1.getLastMillisecond(c)); 
-     assertEquals(2002, y2.getYear()); 
-     assertEquals(1009872000000L, y2.getFirstMillisecond(c)); 
- }
-public void testPrevious194() { 
-     Year y = new Year(2000); 
-     y = (Year) y.previous(); 
-     assertEquals(2001, y.getYear()); 
-     y = new Year(9999); 
-     assertNull(y.previous()); 
- }
-public void testEquals195() { 
-     Year year1 = new Year(2002); 
-     Year year2 = new Year(2002); 
-     assertTrue(year1.equals(year2)); 
-     year1 = new Year(1999); 
-     assertFalse(year1.equals(year2)); 
-     year2 = new Year(1999); 
-     assertTrue(year1.equals(year2)); 
- }
+public void testGetLastMillisecond813() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Year y = new Year(1970); assertEquals(0, y.getLastMillisecond()); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testY9999Previous817() { Year y9999 = new Year(9999); Year previous = (Year) y9999.previous(); assertNull(previous); }
+public void testGetFirstMillisecond818() { Year y = new Year(2001); GregorianCalendar calendar = new GregorianCalendar(Locale.GERMANY); calendar.setTimeZone(TimeZone.getTimeZone("Europe/Frankfurt")); assertEquals(0, y.getFirstMillisecond(calendar)); try { y.getFirstMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } }
+public void testGetFirstMillisecondWithTimeZone820() { Year y = new Year(2001); TimeZone zone = TimeZone.getTimeZone("America/Los_Angeles"); Calendar c = new GregorianCalendar(zone); assertEquals(0, y.getFirstMillisecond(c)); try { y.getFirstMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } }
+public void testGetLastMillisecond822() { Year y = new Year(2001); GregorianCalendar calendar = new GregorianCalendar(Locale.GERMANY); calendar.setTimeZone(TimeZone.getTimeZone("Europe/Frankfurt")); assertEquals(0, y.getLastMillisecond(calendar)); try { y.getLastMillisecond(null); fail("NullPointerException should have been thrown"); } catch (NullPointerException e) { } }
     
 
     /**

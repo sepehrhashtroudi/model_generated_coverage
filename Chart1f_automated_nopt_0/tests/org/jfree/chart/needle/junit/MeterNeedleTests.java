@@ -77,6 +77,11 @@ public class MeterNeedleTests extends TestCase {
     /**
      * Check that the equals() method can distinguish all fields.
      */
+public void testEquals1267() { MeterNeedle n1 = new LineNeedle(); MeterNeedle n2 = new LineNeedle(); assertEquals(n1, n2); assertEquals(n2, n1); n1.setOutlinePaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); assertFalse(n1.equals(n2)); n2.setOutlinePaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); assertEquals(n1, n2);
+}
+
+public void testEquals1268() { MeterNeedle n1 = new LineNeedle(); MeterNeedle n2 = new LineNeedle(); assertEquals(n1, n2); n1.setOutlinePaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); assertFalse(n1.equals(n2)); n2.setOutlinePaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); assertEquals(n1, n2); }
+public void testEquals1274() { MeterNeedle n1 = new LineNeedle(); MeterNeedle n2 = new LineNeedle(); assertEquals(n1, n2); n1.setRotateX(1.0); assertFalse(n1.equals(n2)); n2.setRotateX(1.0); assertEquals(n1, n2); }
     
 
 }

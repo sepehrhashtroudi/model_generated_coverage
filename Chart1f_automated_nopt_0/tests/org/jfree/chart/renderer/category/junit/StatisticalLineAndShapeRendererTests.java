@@ -88,30 +88,7 @@ public class StatisticalLineAndShapeRendererTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
-public void testHashcode1275() { 
-     StatisticalLineAndShapeRenderer r1 = new StatisticalLineAndShapeRenderer(); 
-     StatisticalLineAndShapeRenderer r2 = new StatisticalLineAndShapeRenderer(); 
-     assertTrue(r1.equals(r2)); 
-     int h1 = r1.hashCode(); 
-     int h2 = r2.hashCode(); 
-     assertEquals(h1, h2); 
- }
-public void testSerialization1276() { 
-     StatisticalLineAndShapeRenderer r1 = new StatisticalLineAndShapeRenderer(); 
-     StatisticalLineAndShapeRenderer r2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(r1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         r2 = (StatisticalLineAndShapeRenderer) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(r1, r2); 
- }
+public void testHashcode6875() { StatisticalLineAndShapeRenderer r1 = new StatisticalLineAndShapeRenderer(); StatisticalLineAndShapeRenderer r2 = new StatisticalLineAndShapeRenderer(); assertEquals(r1, r2); int h1 = r1.hashCode(); int h2 = r2.hashCode(); assertEquals(h1, h2); }
     
 
     /**

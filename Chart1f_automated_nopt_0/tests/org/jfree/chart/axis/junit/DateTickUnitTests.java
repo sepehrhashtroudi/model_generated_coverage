@@ -81,6 +81,10 @@ public class DateTickUnitTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
+public void testEquals748() { DateTickUnit t1 = new DateTickUnit(DateTickUnitType.DAY, 1); DateTickUnit t2 = new DateTickUnit(DateTickUnitType.DAY, 1); DateTickUnit t3 = new DateTickUnit(DateTickUnitType.DAY, 1); assertFalse(t1.equals(t2)); assertFalse(t2.equals(t1)); assertTrue(t1.equals(t3)); }
+public void testEquals749() { DateTickUnit t1 = new DateTickUnit(DateTickUnitType.DAY, 1); DateTickUnit t2 = new DateTickUnit(DateTickUnitType.DAY, 1); DateTickUnit t3 = new DateTickUnit(DateTickUnitType.DAY, 1); DateTickUnit t4 = new DateTickUnit(DateTickUnitType.DAY, 1); assertFalse(t1.equals(t2)); assertFalse(t1.equals(t3)); assertFalse(t1.equals(t4)); }
+public void testEquals750() { DateTickUnit t1 = new DateTickUnit(DateTickUnitType.DAY, 1); DateTickUnit t2 = new DateTickUnit(DateTickUnitType.DAY, 1); assertFalse(t1.equals(t2)); }
+public void testEquals751() { DateTickUnit t1 = new DateTickUnit(DateTickUnitType.DAY, 1); DateTickUnit t2 = new DateTickUnit(DateTickUnitType.DAY, 1); assertTrue(t1.equals(t2)); }
     
 
     /**

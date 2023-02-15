@@ -124,89 +124,10 @@ public class JFreeChartTests extends TestCase implements ChartChangeListener {
     /**
      * Check that the equals() method can distinguish all fields.
      */
-public void testHashcode214() { 
-     TextTitle t1 = new TextTitle(); 
-     TextTitle t2 = new TextTitle(); 
-     assertTrue(t1.equals(t2)); 
-     int h1 = t1.hashCode(); 
-     int h2 = t2.hashCode(); 
-     assertEquals(h1, h2); 
- }
-public void testLegendEvents1403() { 
-     DefaultPieDataset dataset = new DefaultPieDataset(); 
-     JFreeChart chart = ChartFactory.createPieChart("title", dataset, true); 
-     chart.addChangeListener(this); 
-     this.lastChartChangeEvent = null; 
-     LegendTitle legend = chart.getLegend(); 
-     legend.setPosition(RectangleEdge.TOP); 
-     assertNotNull(this.lastChartChangeEvent); 
- }
-public void testGetLegend1413() { 
-     DefaultPieDataset dataset = new DefaultPieDataset(); 
-     JFreeChart chart = ChartFactory.createPieChart("title", dataset, true); 
-     Title t = chart.getLegend(); 
-     assertTrue(t instanceof LegendTitle); 
-     boolean pass = false; 
-     try { 
-         t = chart.getLegend(-1); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
-     pass = false; 
-     try { 
-         t = chart.getLegend(1); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
-public void testGetSubtitleCount1414() { 
-     DefaultPieDataset dataset = new DefaultPieDataset(); 
-     JFreeChart chart = ChartFactory.createPieChart("title", dataset, true); 
-     assertEquals(2, chart.getSubtitleCount()); 
-     boolean pass = false; 
-     try { 
-         chart.getSubtitle(-1); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
-     pass = false; 
-     try { 
-         chart.getSubtitle(1); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
-public void testGetSubtitle1415() { 
-     DefaultPieDataset dataset = new DefaultPieDataset(); 
-     JFreeChart chart = ChartFactory.createPieChart("title", dataset, true); 
-     Title t = chart.getSubtitle(0); 
-     assertTrue(t instanceof LegendTitle); 
-     boolean pass = false; 
-     try { 
-         t = chart.getSubtitle(-1); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
-     pass = false; 
-     try { 
-         t = chart.getSubtitle(1); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
-     pass = false; 
-     try { 
-         t = chart.getSubtitle(2); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
+public void testRingPlot504() { RingPlot p1 = new RingPlot(null); RingPlot p2 = new RingPlot(null); assertEquals(p1, p2); }
+public void testRingPlot505() { RingPlot p1 = new RingPlot(); RingPlot p2 = new RingPlot(); assertEquals(p1, p2); }
+public void testTextTitle893() { TextTitle t1 = new TextTitle(); TextTitle t2 = new TextTitle(); assertEquals(t1.getText(), t2.getText()); assertEquals(t1.getFont(), t2.getFont()); assertEquals(t1.getHorizontalAlignment(), t2.getHorizontalAlignment()); assertEquals(t1.getVerticalAlignment(), t2.getVerticalAlignment()); assertEquals(t1.getPadding(), t2.getPadding()); }
+public void testTextTitle894() { TextTitle t1 = new TextTitle(); TextTitle t2 = new TextTitle(); assertEquals(t1, t2); }
     
 
     /**

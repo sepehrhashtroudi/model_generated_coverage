@@ -142,200 +142,35 @@ public class TimePeriodValuesTests extends TestCase {
      * Set up a quarter equal to Q1 1900.  Request the previous quarter, it 
      * should be null.
      */
-public void testSerialization240() { 
-     TimePeriodValues v1 = new TimePeriodValues("Test"); 
-     TimePeriodValues v2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(v1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         v2 = (TimePeriodValues) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         System.out.println(e.toString()); 
-     } 
-     assertEquals(v1, v2); 
- }
-public void testEquals241() { 
-     TimePeriodValues p1 = new TimePeriodValues("Test"); 
-     TimePeriodValues p2 = new TimePeriodValues("Test"); 
-     assertTrue(p1.equals(p2)); 
-     assertTrue(p2.equals(p1)); 
-     p1 = new TimePeriodValues("Test 1"); 
-     assertFalse(p1.equals(p2)); 
-     p2 = new TimePeriodValues("Test 2"); 
-     assertTrue(p1.equals(p2)); 
-     p1 = new TimePeriodValues("Test", "Test", "Test"); 
-     assertFalse(p1.equals(p2)); 
-     p2 = new TimePeriodValues("Test", "Test", "Test"); 
-     assertTrue(p1.equals(p2)); 
-     p1 = new TimePeriodValues("Test", "Test", "Test 2"); 
-     assertFalse(p1.equals(p2)); 
-     p2 = new TimePeriodValues("Test", "Test", "Test 2"); 
-     assertTrue(p1.equals(p2)); 
-     p1 = new TimePeriodValues("Test", "Test", "Test 3"); 
-     assertFalse(p1.equals(p2)); 
-     p2 = new TimePeriodValues("Test", "Test", "Test 3"); 
-     assertTrue(p1.equals(p2)); 
-     p1 = new TimePeriodValues("Test", "Test", "Test 4"); 
-     assertFalse(p1.equals(p2)); 
-     p2 = new TimePeriodValues("Test", "Test", "Test 4"); 
-     assertTrue(p1.equals(p2)); 
- }
-public void testSerialization242() { 
-     TimePeriodValues tpvs = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(tpvs); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         tpvs = (TimePeriodValues) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         System.out.println(e.toString()); 
-     } 
-     assertEquals(tpvs, tpvs); 
- }
-public void testEquals244() { 
-     TimePeriodValues p1 = new TimePeriodValues("Test"); 
-     TimePeriodValues p2 = new TimePeriodValues("Test"); 
-     assertTrue(p1.equals(p2)); 
-     assertTrue(p2.equals(p1)); 
-     p1.setDomainDescription("XYZ"); 
-     assertFalse(p1.equals(p2)); 
-     p2.setDomainDescription("XYZ"); 
-     assertTrue(p1.equals(p2)); 
-     p1.setRangeDescription(null); 
-     assertFalse(p1.equals(p2)); 
-     p2.setRangeDescription(null); 
-     assertTrue(p1.equals(p2)); 
- }
-public void testEquals246() { 
-     TimePeriodValues a1 = new TimePeriodValues("Test"); 
-     TimePeriodValues a2 = new TimePeriodValues("Test"); 
-     assertTrue(a1.equals(a2)); 
-     assertTrue(a2.equals(a1)); 
-     a1 = new TimePeriodValues("Test 1"); 
-     assertFalse(a1.equals(a2)); 
-     a2 = new TimePeriodValues("Test 2"); 
-     assertTrue(a1.equals(a2)); 
-     a1 = new TimePeriodValues("Test", "Test", "Test"); 
-     assertFalse(a1.equals(a2)); 
-     a2 = new TimePeriodValues("Test", "Test", "Test"); 
-     assertTrue(a1.equals(a2)); 
-     a1 = new TimePeriodValues("Test", "Test", "Test 2"); 
-     assertFalse(a1.equals(a2)); 
-     a2 = new TimePeriodValues("Test", "Test", "Test 2"); 
-     assertTrue(a1.equals(a2)); 
-     a1.add(new Year(1999), 1.0); 
-     assertFalse(a1.equals(a2)); 
-     a2.add(new Year(1999), 1.0); 
-     assertTrue(a1.equals(a2)); 
- }
-public void testAddValue248() { 
-     TimePeriodValues tpvs = new TimePeriodValues("Test"); 
-     try { 
-         tpvs.add(new Year(1999), new Integer(1)); 
-     } catch (SeriesException e) { 
-         System.err.println("Problem adding to series."); 
-     } 
-     int value = tpvs.getItemCount(); 
-     assertEquals(1, value); 
- }
-public void testAdd250() { 
-     TimePeriodValues tpvs = new TimePeriodValues("Test"); 
-     try { 
-         tpvs.add(new Year(1999), new Integer(1)); 
-     } catch (SeriesException e) { 
-         System.err.println("Problem adding to series."); 
-     } 
-     int value = tpvs.getValue(0).intValue(); 
-     assertEquals(1, value); 
- }
-public void testAddValue255() { 
-     TimePeriodValues tpvs = new TimePeriodValues("Test"); 
-     try { 
-         tpvs.add(new Year(1999), new Integer(1)); 
-     } catch (SeriesException e) { 
-         System.err.println("Problem adding to series."); 
-     } 
-     int value = tpvs.getValue(0).intValue(); 
-     assertEquals(1, value); 
- }
-public void testEquals256() { 
-     TimePeriodValues p1 = new TimePeriodValues("Test"); 
-     TimePeriodValues p2 = new TimePeriodValues("Test"); 
-     assertTrue(p1.equals(p2)); 
-     assertTrue(p2.equals(p1)); 
-     p1.add(new Year(1999), 1.1); 
-     assertFalse(p1.equals(p2)); 
-     p2.add(new Year(1999), 1.1); 
-     assertTrue(p1.equals(p2)); 
- }
-public void testSerialization259() { 
-     TimePeriodValues v1 = new TimePeriodValues("Test Axis"); 
-     TimePeriodValues v2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(v1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         v2 = (TimePeriodValues) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         System.out.println(e.toString()); 
-     } 
-     assertEquals(v1, v2); 
- }
-public void testCloning260() { 
-     TimePeriodValues s1 = new TimePeriodValues("Test"); 
-     TimePeriodValues s2 = null; 
-     try { 
-         s2 = (TimePeriodValues) s1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         System.err.println("Failed to clone."); 
-     } 
-     assertTrue(s1 != s2); 
-     assertTrue(s1.getClass() == s2.getClass()); 
-     assertTrue(s1.equals(s2)); 
- }
-public void testAddValue520() { 
-     TimePeriodValues tpvs = new TimePeriodValues("Test"); 
-     try { 
-         tpvs.add(new Year(1999), new Integer(1)); 
-     } catch (SeriesException e) { 
-         System.err.println("Problem adding to series."); 
-     } 
-     int value = tpvs.getValue(0).intValue(); 
-     assertEquals(1, value); 
-     boolean pass = false; 
-     try { 
-         tpvs.add(new Year(2000), null); 
-     } catch (SeriesException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
-public void testSerialization522() { 
-     TimePeriodValue t1 = new TimePeriodValue(new Year(1999), new Integer(1)); 
-     TimePeriodValue t2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(t1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         t2 = (TimePeriodValue) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         System.out.println(e.toString()); 
-     } 
-     assertEquals(t1, t2); 
- }
+public void testTimePeriodValues1010() { TimePeriodValues ts = new TimePeriodValues("Test Time"); ts.setDomainDescription("Test Domain"); ts.setRangeDescription("Test Range"); ts.add(new SimpleTimePeriod(100L, 200L), 1.0); ts.add(new SimpleTimePeriod(200L, 300L), 2.0); ts.add(new SimpleTimePeriod(300L, 400L), 3.0); ts.add(new SimpleTimePeriod(300L, 400L), 4.0); ts.add(new SimpleTimePeriod(300L, 400L), 5.0); ts.add(new SimpleTimePeriod(300L, 400L), 6.0);
+}
+
+public void testTimePeriodValues1011() { TimePeriodValues ts = new TimePeriodValues("Test Time"); ts.add(new SimpleTimePeriod(100L, 200L), 1.0); ts.add(new SimpleTimePeriod(200L, 300L), 2.0); ts.add(new SimpleTimePeriod(300L, 400L), 3.0); ts.add(new SimpleTimePeriod(300L, 400L), 4.0); ts.add(new SimpleTimePeriod(300L, 400L), 5.0); ts.add(new SimpleTimePeriod(300L, 400L), 6.0); ts.add(new SimpleTimePeriod(300L, 400L), 7.0);
+}
+
+public void testGetDomainDescription1015() { System.out.println("getDomainDescription"); TimePeriodValues instance = new TimePeriodValues("Test"); String expResult = ""; String result = instance.getDomainDescription(); assertEquals(expResult, result); }
+public void testSetDomainDescription1016() { TimePeriodValues values = new TimePeriodValues("Test"); values.setDomainDescription("A"); assertEquals("A", values.getDomainDescription()); }
+public void testGetRangeDescription1019() { System.out.println("getRangeDescription"); TimePeriodValues instance = new TimePeriodValues("Test"); String expResult = ""; String result = instance.getRangeDescription(); assertEquals(expResult, result); }
+public void testSetRangeDescription1020() { TimePeriodValues values = new TimePeriodValues("Test"); values.setRangeDescription("A"); assertEquals("A", values.getRangeDescription()); values.setRangeDescription("B"); assertEquals("B", values.getRangeDescription()); }
+public void testSetRangeDescription1021() { TimePeriodValues values = new TimePeriodValues("Test"); values.setRangeDescription("A"); assertEquals("A", values.getRangeDescription()); }
+public void testFirePropertyChange1022() { TimePeriodValues values = new TimePeriodValues("Test"); values.setRangeDescription("A"); assertEquals("A", values.getRangeDescription()); values.setRangeDescription("B"); assertEquals("B", values.getRangeDescription()); values.setRangeDescription("C"); assertEquals("C", values.getRangeDescription()); values.setRangeDescription("D"); assertEquals("D", values.getRangeDescription()); values.setRangeDescription("E"); assertEquals("E", values.getRangeDescription()); values.setRangeDescription("F"); assertEquals("F", values.getRangeDescription()); }
+public void testGetItemCount1023() { TimePeriodValues values = new TimePeriodValues("Test"); assertEquals(0, values.getItemCount()); values.add(new SimpleTimePeriod(100L, 200L), 1.0); assertEquals(1, values.getItemCount()); values.add(new SimpleTimePeriod(300L, 200L), 2.0); assertEquals(2, values.getItemCount()); values.add(new SimpleTimePeriod(300L, 200L), 3.0); assertEquals(3, values.getItemCount()); }
+public void testGetDataItem1024() { System.out.println("getDataItem"); int index = 0; TimePeriodValues instance = new TimePeriodValues("Test"); instance.add(new SimpleTimePeriod(100L, 200L), 1.0); instance.add(new SimpleTimePeriod(300L, 400L), 2.0); instance.add(new SimpleTimePeriod(300L, 400L), 3.0); TimePeriodValue expResult = new TimePeriodValue(new SimpleTimePeriod(300L, 200L), 3.0); TimePeriodValue result = instance.getDataItem(index); assertEquals(expResult, result); }
+public void testRecalculateBounds1034() { TimePeriodValues ts = new TimePeriodValues("Test"); ts.add(new SimpleTimePeriod(100L, 200L), 1.0); ts.add(new SimpleTimePeriod(200L, 300L), 2.0); ts.add(new SimpleTimePeriod(300L, 400L), 3.0); ts.add(new SimpleTimePeriod(300L, 400L), 4.0); ts.add(new SimpleTimePeriod(300L, 400L), 5.0); ts.add(new SimpleTimePeriod(300L, 400L), 6.0); ts.add(new SimpleTimePeriod(300L, 400L), 7.0);
+}
+
+public void testFireSeriesChanged1041() { TimePeriodValues ts = new TimePeriodValues("Test"); ts.add(new SimpleTimePeriod(100L, 200L), 1.0); ts.add(new SimpleTimePeriod(200L, 300L), 2.0); ts.add(new SimpleTimePeriod(300L, 400L), 3.0); ts.add(new SimpleTimePeriod(300L, 400L), 4.0); ts.add(new SimpleTimePeriod(300L, 400L), 5.0); ts.add(new SimpleTimePeriod(300L, 400L), 6.0); ts.add(new SimpleTimePeriod(300L, 400L), 7.0);
+}
+
+public void testFireSeriesChanged1043() { TimePeriodValues instance = new TimePeriodValues("Test"); instance.add(new SimpleTimePeriod(100L, 200L), 1.0); instance.add(new SimpleTimePeriod(200L, 300L), 2.0); instance.add(new SimpleTimePeriod(300L, 400L), 3.0); instance.add(new SimpleTimePeriod(300L, 400L), 4.0); instance.add(new SimpleTimePeriod(300L, 400L), 5.0); instance.add(new SimpleTimePeriod(300L, 400L), 6.0); instance.add(new SimpleTimePeriod(300L, 400L), 7.0);
+}
+
+public void testEquals1046() { TimePeriodValues pv1 = new TimePeriodValues("Test"); TimePeriodValues pv2 = new TimePeriodValues("Test"); assertEquals(pv1, pv2); pv1.setDomainDescription("XYZ"); assertFalse(pv1.equals(pv2)); pv2.setDomainDescription("XYZ"); assertEquals(pv1, pv2); pv1.setRangeDescription("XYZ"); assertFalse(pv1.equals(pv2)); pv2.setRangeDescription("XYZ"); assertEquals(pv1, pv2); }
+public void testMaxStartIndex1060() { TimePeriodValues values = new TimePeriodValues("Test"); assertEquals(0, values.getMaxStartIndex()); values.add(new SimpleTimePeriod(100L, 200L), 1.0); assertEquals(1, values.getMaxStartIndex()); values.add(new SimpleTimePeriod(300L, 200L), 2.0); assertEquals(2, values.getMaxStartIndex()); values.add(new SimpleTimePeriod(300L, 200L), 3.0); assertEquals(3, values.getMaxStartIndex()); }
+public void testGetMaxStartIndex1061() { System.out.println("getMaxStartIndex"); TimePeriodValues instance = new TimePeriodValues("Test"); int expResult = 0; int result = instance.getMaxStartIndex(); assertEquals(expResult, result); }
+public void testEquals2498() { TimePeriodValue value1 = new TimePeriodValue(new Year(2000), 10.0); TimePeriodValue value2 = new TimePeriodValue(new Year(2000), 10.0); TimePeriodValue value3 = new TimePeriodValue(new Year(2000), 20.0); assertTrue(value1.equals(value1)); assertTrue(value1.equals(value2)); assertTrue(value1.equals(value3)); assertFalse(value1.equals(null)); assertFalse(value1.equals(new Object())); }
+public void testEquals2500() { TimePeriodValue value1 = new TimePeriodValue(new Year(2000), 10.0); TimePeriodValue value2 = new TimePeriodValue(new Year(2000), 10.0); TimePeriodValue value3 = new TimePeriodValue(new Year(2000), 10.0); assertTrue(value1.equals(value1)); assertTrue(value1.equals(value2)); assertTrue(value1.equals(value3)); assertFalse(value1.equals(null)); assertFalse(value1.equals(new Object())); }
+public void testClone2506() { System.out.println("clone"); TimePeriodValue instance = new TimePeriodValue(new Year(2000), 1.0); TimePeriodValue instance2 = (TimePeriodValue) instance.clone(); assertEquals(instance, instance2); }
     
 
     /**

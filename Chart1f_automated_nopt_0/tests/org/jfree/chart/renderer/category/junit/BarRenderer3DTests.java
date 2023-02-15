@@ -85,24 +85,7 @@ public class BarRenderer3DTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
-public void testEquals18() { 
-     BarRenderer3D r1 = new BarRenderer3D(); 
-     BarRenderer3D r2 = new BarRenderer3D(); 
-     assertTrue(r1.equals(r2)); 
-     assertTrue(r2.equals(r1)); 
-     r1 = new BarRenderer3D(1.0, 2.0); 
-     assertFalse(r1.equals(r2)); 
-     r2 = new BarRenderer3D(1.0, 2.0); 
-     assertTrue(r1.equals(r2)); 
-     r1 = new BarRenderer3D(1.1, 2.0); 
-     assertFalse(r1.equals(r2)); 
-     r2 = new BarRenderer3D(1.1, 2.0); 
-     assertTrue(r1.equals(r2)); 
-     r1 = new BarRenderer3D(1.1, 2.2); 
-     assertFalse(r1.equals(r2)); 
-     r2 = new BarRenderer3D(1.1, 2.2); 
-     assertTrue(r1.equals(r2)); 
- }
+public void testCloning58() throws CloneNotSupportedException { BarRenderer3D r1 = new BarRenderer3D(); r1.setWallPaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); BarRenderer3D r2 = (BarRenderer3D) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
     
 
     /**

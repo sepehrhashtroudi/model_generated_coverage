@@ -79,22 +79,9 @@ public class XYCoordinateTests extends TestCase {
     /**
      * Test that the equals() method distinguishes all fields.
      */
-public void testHashcode304() { 
-     XYCoordinate v1 = new XYCoordinate(1.0, 2.0); 
-     XYCoordinate v2 = new XYCoordinate(1.0, 2.0); 
-     assertTrue(v1.equals(v2)); 
-     int h1 = v1.hashCode(); 
-     int h2 = v2.hashCode(); 
-     assertEquals(h1, h2); 
- }
-public void testHashCode305() { 
-     XYCoordinate v1 = new XYCoordinate(1.0, 2.0); 
-     XYCoordinate v2 = new XYCoordinate(1.0, 2.0); 
-     assertTrue(v1.equals(v2)); 
-     int h1 = v1.hashCode(); 
-     int h2 = v2.hashCode(); 
-     assertEquals(h1, h2); 
- }
+public void testHashCode1248() { int h1 = new XYCoordinate().hashCode(); int h2 = new XYCoordinate().hashCode(); assertEquals(h1, h2); }
+public void testHashCode1249() { XYCoordinate x1 = new XYCoordinate(1.0, 2.0); XYCoordinate y1 = new XYCoordinate(1.0, 2.0); assertEquals(x1.hashCode(), y1.hashCode()); }
+public void testHashCode1250() { XYCoordinate x = new XYCoordinate(1.0, 2.0); XYCoordinate y = new XYCoordinate(1.0, 2.0); assertEquals(x.hashCode(), y.hashCode()); }
     
 
     /**

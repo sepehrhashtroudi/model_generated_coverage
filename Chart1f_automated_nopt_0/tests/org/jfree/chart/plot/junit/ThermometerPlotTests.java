@@ -90,6 +90,9 @@ public class ThermometerPlotTests extends TestCase {
     /**
      * Some checks for the equals() method.
      */
+public void testSetBackgroundPaint5475() { ThermometerPlot p = new ThermometerPlot(); p.setBackgroundPaint(Color.WHITE); assertEquals(Color.WHITE, p.getBackgroundPaint()); }
+public void testCloning5514() throws CloneNotSupportedException { ThermometerPlot p1 = new ThermometerPlot(); ThermometerPlot p2 = (ThermometerPlot) p1.clone(); assertNotSame(p1, p2); assertSame(p1.getClass(), p2.getClass()); assertEquals(p1, p2); }
+public void testCloning5515() throws CloneNotSupportedException { ThermometerPlot p1 = new ThermometerPlot(); ThermometerPlot p2 = (ThermometerPlot) p1.clone(); assertNotSame(p1, p2); assertSame(p1.getDataset(), p2.getDataset()); assertEquals(p1, p2); }
     
 
     /**

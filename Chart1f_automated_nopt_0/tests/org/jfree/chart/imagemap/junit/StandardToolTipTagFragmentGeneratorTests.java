@@ -72,17 +72,10 @@ public class StandardToolTipTagFragmentGeneratorTests extends TestCase {
     /**
      * Some checks for the generateURLFragment() method.
      */
-public void testGenerateToolTipFragment1027() { 
-     StandardToolTipTagFragmentGenerator g = new StandardToolTipTagFragmentGenerator(); 
-     assertEquals(" onMouseOver=\"return overlib('abc');\"" + " onMouseOut=\"return nd();\"", g.generateToolTipFragment("abc")); 
-     assertEquals(" onMouseOver=\"return overlib(" + "'It\\'s \\\"A\\\", 100.0');\" onMouseOut=\"return nd();\"", g.generateToolTipFragment("It\'s \"A\", 100.0")); 
- }
-public void testGenerateToolTipFragment1028() { 
-     StandardToolTipTagFragmentGenerator g = new StandardToolTipTagFragmentGenerator(); 
-     assertEquals("Title=\"abc\"", g.generateToolTipFragment("abc")); 
-     assertEquals("Title=\"images/abc.png\"", g.generateToolTipFragment("images/abc.png")); 
-     assertEquals("Title=\"http://www.jfree.org/images/abc.png\"", g.generateToolTipFragment("http://www.jfree.org/images/abc.png")); 
- }
+public void testStandardToolTipTagFragmentGenerator5358() { StandardToolTipTagFragmentGenerator g = new StandardToolTipTagFragmentGenerator(); String result = g.generateToolTipFragment("This is a test."); assertEquals("This is a test.", result); }
+public void testStandardToolTipTagFragmentGenerator5359() { StandardToolTipTagFragmentGenerator g = new StandardToolTipTagFragmentGenerator(); String s = g.generateToolTipFragment("This is a test."); System.out.println(s); assertEquals("This is a test.", s); s = g.generateToolTipFragment("This is a test."); System.out.println(s); assertEquals("This is a test.", s); s = g.generateToolTipFragment("This is a test."); System.out.println(s); assertEquals("This is a test.", s); s = g.generateToolTipFragment("This is a test."); System.out.println(s);
+}
+
     
 
 }

@@ -89,16 +89,9 @@ public class CategoryStepRendererTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
-public void testEquals609() { 
-     CategoryStepRenderer r1 = new CategoryStepRenderer(); 
-     CategoryStepRenderer r2 = new CategoryStepRenderer(); 
-     assertTrue(r1.equals(r2)); 
-     assertTrue(r2.equals(r1)); 
-     r1.setStagger(true); 
-     assertFalse(r1.equals(r2)); 
-     r2.setStagger(true); 
-     assertTrue(r1.equals(r2)); 
- }
+public void testCategoryStepRenderer3061() { CategoryStepRenderer r1 = new CategoryStepRenderer(); CategoryStepRenderer r2 = new CategoryStepRenderer(); assertEquals(r1, r2); }
+public void testCategoryStepRenderer3062() { CategoryStepRenderer r1 = new CategoryStepRenderer(false); CategoryStepRenderer r2 = new CategoryStepRenderer(false); assertEquals(r1, r2); }
+public void testCategoryStepRenderer3063() { CategoryStepRenderer r1 = new CategoryStepRenderer(); assertEquals(r1, r1); }
     
 
     /**

@@ -81,22 +81,8 @@ public class MultipleXYSeriesLabelGeneratorTests extends TestCase {
     /**
      * A series of tests for the equals() method.
      */
-public void testCloning959() { 
-     MultipleXYSeriesLabelGenerator g1 = new MultipleXYSeriesLabelGenerator(); 
-     MultipleXYSeriesLabelGenerator g2 = null; 
-     try { 
-         g2 = (MultipleXYSeriesLabelGenerator) g1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(g1 != g2); 
-     assertTrue(g1.getClass() == g2.getClass()); 
-     assertTrue(g1.equals(g2)); 
-     g1.addSeriesLabel(3, "Add3"); 
-     assertFalse(g1.equals(g2)); 
-     g2.addSeriesLabel(3, "Add3"); 
-     assertTrue(g1.equals(g2)); 
- }
+public void testEquals5050() { MultipleXYSeriesLabelGenerator g1 = new MultipleXYSeriesLabelGenerator(); g1.addSeriesLabel(0, "Series 1"); g1.addSeriesLabel(1, "Series 2"); g1.addSeriesLabel(2, "Series 3"); MultipleXYSeriesLabelGenerator g2 = new MultipleXYSeriesLabelGenerator(); g2.addSeriesLabel(0, "Series 1"); g2.addSeriesLabel(1, "Series 2"); g2.addSeriesLabel(2, "Series 3"); assertEquals(g1, g2); }
+public void testHashCode5051() { MultipleXYSeriesLabelGenerator g1 = new MultipleXYSeriesLabelGenerator(); MultipleXYSeriesLabelGenerator g2 = new MultipleXYSeriesLabelGenerator(); assertEquals(g1.hashCode(), g2.hashCode()); }
     
 
     /**

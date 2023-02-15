@@ -98,64 +98,8 @@ public class SpiderWebPlotTests extends TestCase {
     /**
      * Some checks for the equals() method.
      */
-public void testEquals489() { 
-     SpiderWebPlot p1 = new SpiderWebPlot(new DefaultCategoryDataset()); 
-     SpiderWebPlot p2 = new SpiderWebPlot(new DefaultCategoryDataset()); 
-     assertTrue(p1.equals(p2)); 
-     assertTrue(p2.equals(p1)); 
-     p1.setDataExtractOrder(TableOrder.BY_COLUMN); 
-     assertFalse(p1.equals(p2)); 
-     p2.setDataExtractOrder(TableOrder.BY_COLUMN); 
-     assertTrue(p1.equals(p2)); 
-     p1.setHeadPercent(0.321); 
-     assertFalse(p1.equals(p2)); 
-     p2.setHeadPercent(0.321); 
-     assertTrue(p1.equals(p2)); 
-     p1.setInteriorGap(0.123); 
-     assertFalse(p1.equals(p2)); 
-     p2.setInteriorGap(0.123); 
-     assertTrue(p1.equals(p2)); 
-     p1.setStartAngle(0.456); 
-     assertFalse(p1.equals(p2)); 
-     p2.setStartAngle(0.456); 
-     assertTrue(p1.equals(p2)); 
-     p1.setDirection(Rotation.ANTICLOCKWISE); 
-     assertFalse(p1.equals(p2)); 
-     p2.setDirection(Rotation.ANTICLOCKWISE); 
-     assertTrue(p1.equals(p2)); 
-     p1.setMaxValue(123.4); 
-     assertFalse(p1.equals(p2)); 
-     p2.setMaxValue(123.4); 
-     assertTrue(p1.equals(p2)); 
-     p1.setLegendItemShape(new Rectangle(1, 2, 3, 4)); 
-     assertFalse(p1.equals(p2));
-}
-
-public void testCloning492() { 
-     SpiderWebPlot p1 = new SpiderWebPlot(new DefaultCategoryDataset()); 
-     SpiderWebPlot p2 = null; 
-     try { 
-         p2 = (SpiderWebPlot) p1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(p1 != p2); 
-     assertTrue(p1.getClass() == p2.getClass()); 
-     assertTrue(p1.equals(p2)); 
- }
-public void testGenerateLabel1326() { 
-     StandardCategoryItemLabelGenerator g = new StandardCategoryItemLabelGenerator("{2}", new DecimalFormat("0.000")); 
-     DefaultCategoryDataset dataset = new DefaultCategoryDataset(); 
-     dataset.addValue(1.0, "R0", "C0"); 
-     dataset.addValue(2.0, "R0", "C1"); 
-     dataset.addValue(3.0, "R1", "C0"); 
-     dataset.addValue(null, "R1", "C1"); 
-     String s = g.generateColumnLabel(dataset, 0); 
-     assertTrue(s.startsWith("1")); 
-     assertTrue(s.endsWith("000")); 
-     s = g.generateColumnLabel(dataset, 1); 
-     assertEquals("-", s); 
- }
+public void testGetLabelPaint2229() { Color p = Color.RED; SpiderWebPlot plot = new SpiderWebPlot(); plot.setLabelPaint(p); assertEquals(p, plot.getLabelPaint()); plot.setLabelPaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); assertEquals(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE), plot.getLabelPaint()); }
+public void testCloning2294() throws CloneNotSupportedException { SpiderWebPlot p1 = new SpiderWebPlot(); SpiderWebPlot p2 = (SpiderWebPlot) p1.clone(); assertNotSame(p1, p2); assertSame(p1.getClass(), p2.getClass()); assertEquals(p1, p2); }
     
 
     /**

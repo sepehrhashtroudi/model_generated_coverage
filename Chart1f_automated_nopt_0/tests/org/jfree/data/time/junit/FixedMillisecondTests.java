@@ -83,10 +83,7 @@ public class FixedMillisecondTests extends TestCase {
     /**
      * Serialize an instance, restore it, and check for equality.
      */
-public void testNotCloneable176() { 
-     FixedMillisecond m = new FixedMillisecond(); 
-     assertFalse(m instanceof Cloneable); 
- }
+public void testFixedMillisecond755() { FixedMillisecond f = new FixedMillisecond(2001); assertEquals(2001, f.getFirstMillisecond()); assertEquals(2001, f.getLastMillisecond()); f = new FixedMillisecond(2002); assertEquals(2002, f.getFirstMillisecond()); assertEquals(2002, f.getLastMillisecond()); }
     
 
     /**

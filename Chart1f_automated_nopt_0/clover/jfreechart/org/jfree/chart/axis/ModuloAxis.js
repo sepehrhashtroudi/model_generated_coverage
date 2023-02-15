@@ -1,7 +1,7 @@
 var clover = new Object();
 
 // JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
-clover.pageData = {"classes":[{"el":432,"id":23574,"methods":[{"el":85,"sc":5,"sl":80},{"el":94,"sc":5,"sl":92},{"el":103,"sc":5,"sl":101},{"el":123,"sc":5,"sl":112},{"el":131,"sc":5,"sl":129},{"el":162,"sc":5,"sl":142},{"el":193,"sc":5,"sl":173},{"el":232,"sc":5,"sl":207},{"el":271,"sc":5,"sl":246},{"el":289,"sc":5,"sl":280},{"el":310,"sc":5,"sl":300},{"el":325,"sc":5,"sl":317},{"el":336,"sc":5,"sl":332},{"el":350,"sc":5,"sl":348},{"el":373,"sc":5,"sl":363},{"el":403,"sc":5,"sl":385},{"el":430,"sc":5,"sl":412}],"name":"ModuloAxis","sl":55}]}
+clover.pageData = {"classes":[{"el":432,"id":6768,"methods":[{"el":85,"sc":5,"sl":80},{"el":94,"sc":5,"sl":92},{"el":103,"sc":5,"sl":101},{"el":123,"sc":5,"sl":112},{"el":131,"sc":5,"sl":129},{"el":162,"sc":5,"sl":142},{"el":193,"sc":5,"sl":173},{"el":232,"sc":5,"sl":207},{"el":271,"sc":5,"sl":246},{"el":289,"sc":5,"sl":280},{"el":310,"sc":5,"sl":300},{"el":325,"sc":5,"sl":317},{"el":336,"sc":5,"sl":332},{"el":350,"sc":5,"sl":348},{"el":373,"sc":5,"sl":363},{"el":403,"sc":5,"sl":385},{"el":430,"sc":5,"sl":412}],"name":"ModuloAxis","sl":55}]}
 
 // JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
 clover.testTargets = {}

@@ -121,38 +121,11 @@ public class MonthTests extends TestCase {
      *
      * SourceForge Bug ID: 558850.
      */
-public void testDateConstructor1327() { 
-     TimeZone zone = TimeZone.getTimeZone("GMT"); 
-     Calendar c = new GregorianCalendar(zone); 
-     Month m1 = new Month(new Date(951868799999L), zone, Locale.getDefault()); 
-     Month m2 = new Month(new Date(951868800000L), zone, Locale.getDefault()); 
-     assertEquals(MonthConstants.FEBRUARY, m1.getMonth()); 
-     assertEquals(951868799999L, m1.getLastMillisecond(c)); 
-     assertEquals(MonthConstants.MARCH, m2.getMonth()); 
-     assertEquals(951868800000L, m2.getFirstMillisecond(c)); 
- }
-public void testJan1900Previous328() { 
-     Month previous = (Month) this.jan1900.previous(); 
-     assertNull(previous); 
- }
-public void testJan1900Next329() { 
-     Month next = (Month) this.jan1900.next(); 
-     assertNull(next); 
- }
-public void testJan1900Next330() { 
-     Month next = (Month) this.jan1900.next(); 
-     assertEquals(this.feb1900, next); 
- }
-public void testGetSerialIndex331() { 
-     Month m = new Month(1, 2000); 
-     assertEquals(876625L, m.getSerialIndex()); 
-     m = new Month(1, 1900); 
-     assertEquals(49L, m.getSerialIndex()); 
- }
-public void testEqualsSelf332() { 
-     Month month = new Month(); 
-     assertTrue(month.equals(month)); 
- }
+public void testGetLastMillisecond1353() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Month m = new Month(1, 1970); assertEquals(0, m.getLastMillisecond()); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testGetLastMillisecond1354() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Month m = new Month(1, 2001); assertEquals(2001, m.getLastMillisecond()); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testGetSerialIndex1363() { Month m = new Month(1, 2001); assertEquals(1, m.getSerialIndex()); m = new Month(2, 2001); assertEquals(2, m.getSerialIndex()); m = new Month(3, 2001); assertEquals(3, m.getSerialIndex()); m = new Month(4, 2001); assertEquals(4, m.getSerialIndex()); m = new Month(5, 2001); assertEquals(5, m.getSerialIndex()); m = new Month(7, 2001); assertEquals(7, m.getSerialIndex()); }
+public void testGetSerialIndex1364() { Month m = new Month(1, 2001); assertEquals(1L, m.getSerialIndex()); m = new Month(2, 2001); assertEquals(2L, m.getSerialIndex()); m = new Month(3, 2001); assertEquals(3L, m.getSerialIndex()); m = new Month(4, 2001); assertEquals(4L, m.getSerialIndex()); m = new Month(5, 2001); assertEquals(5L, m.getSerialIndex()); }
+public void testEquals1366() { Month m1 = new Month(1, 2001); Month m2 = new Month(1, 2001); assertEquals(m1, m2); m1 = new Month(2, 2001); assertFalse(m1.equals(m2)); m2 = new Month(2, 2001); assertEquals(m1, m2); m1 = new Month(3, 2001); assertFalse(m1.equals(m2)); m2 = new Month(3, 2001); assertEquals(m1, m2); }
     
 
     /**

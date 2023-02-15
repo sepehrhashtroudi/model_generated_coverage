@@ -83,91 +83,9 @@ public class CustomPieURLGeneratorTests extends TestCase {
     /**
      * Some checks for the equals() method.
      */
-public void testEquals24() { 
-     CustomPieURLGenerator g1 = new CustomPieURLGenerator(); 
-     CustomPieURLGenerator g2 = new CustomPieURLGenerator(); 
-     assertTrue(g1.equals(g2)); 
-     assertTrue(g2.equals(g1)); 
-     g1 = new CustomPieURLGenerator(); 
-     assertFalse(g1.equals(g2)); 
-     g2 = new CustomPieURLGenerator(); 
-     assertTrue(g1.equals(g2)); 
- }
-public void testCloning27() { 
-     CustomPieURLGenerator g1 = new CustomPieURLGenerator(); 
-     CustomPieURLGenerator g2 = null; 
-     try { 
-         g2 = (CustomPieURLGenerator) g1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         System.err.println("Failed to clone."); 
-     } 
-     assertTrue(g1 != g2); 
-     assertTrue(g1.getClass() == g2.getClass()); 
-     assertTrue(g1.equals(g2)); 
- }
-public void testEquals29() { 
-     CustomPieURLGenerator g1 = new CustomPieURLGenerator(); 
-     CustomPieURLGenerator g2 = new CustomPieURLGenerator(); 
-     assertTrue(g1.equals(g2)); 
-     assertTrue(g2.equals(g1)); 
-     g1 = new CustomPieURLGenerator(); 
-     assertFalse(g1.equals(g2)); 
-     g2 = new CustomPieURLGenerator(); 
-     assertTrue(g1.equals(g2)); 
-     g1 = new CustomPieURLGenerator(); 
-     assertFalse(g1.equals(g2)); 
-     g2 = new CustomPieURLGenerator(); 
-     assertTrue(g1.equals(g2)); 
-     g1 = new CustomPieURLGenerator(); 
-     g2 = new CustomPieURLGenerator(); 
-     assertFalse(g1.equals(g2)); 
- }
-public void testEquals30() { 
-     CustomPieURLGenerator g1 = new CustomPieURLGenerator(); 
-     CustomPieURLGenerator g2 = new CustomPieURLGenerator(); 
-     assertTrue(g1.equals(g2)); 
-     assertTrue(g2.equals(g1)); 
-     g1 = new CustomPieURLGenerator(); 
-     assertFalse(g1.equals(g2)); 
-     g2 = new CustomPieURLGenerator(); 
-     assertTrue(g1.equals(g2)); 
-     g1 = new CustomPieURLGenerator(); 
-     assertFalse(g1.equals(g2)); 
-     g2 = new CustomPieURLGenerator(); 
-     assertTrue(g1.equals(g2)); 
- }
-public void testEquals33() { 
-     CustomPieURLGenerator g1 = new CustomPieURLGenerator(); 
-     CustomPieURLGenerator g2 = new CustomPieURLGenerator(); 
-     assertTrue(g1.equals(g2)); 
-     assertTrue(g2.equals(g1)); 
-     g1 = new CustomPieURLGenerator(); 
-     assertFalse(g1.equals(g2)); 
-     g2 = new CustomPieURLGenerator(); 
-     assertTrue(g1.equals(g2)); 
-     g1 = new CustomPieURLGenerator(); 
-     g2 = new CustomPieURLGenerator(); 
-     assertFalse(g1.equals(g2)); 
-     g1 = new CustomPieURLGenerator(); 
-     g2 = new CustomPieURLGenerator(); 
-     assertFalse(g1.equals(g2)); 
- }
-public void testSerialization35() { 
-     CustomPieURLGenerator g1 = new CustomPieURLGenerator(); 
-     CustomPieURLGenerator g2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(g1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         g2 = (CustomPieURLGenerator) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         System.out.println(e.toString()); 
-     } 
-     assertEquals(g1, g2); 
- }
+public void testClone160() throws CloneNotSupportedException { CustomPieURLGenerator g1 = new CustomPieURLGenerator(); g1.addURLs(new HashMap()); CustomPieURLGenerator g2 = (CustomPieURLGenerator) g1.clone(); assertEquals(g1, g2); }
+public void testClone161() throws CloneNotSupportedException { CustomPieURLGenerator g1 = new CustomPieURLGenerator(); CustomPieURLGenerator g2 = (CustomPieURLGenerator) g1.clone(); assertEquals(g1, g2); }
+public void testClone164() throws CloneNotSupportedException { CustomPieURLGenerator g1 = new CustomPieURLGenerator(); CustomPieURLGenerator g2 = (CustomPieURLGenerator) g1.clone(); assertEquals(g1.getListCount(), g2.getListCount()); assertEquals(g1.getURL(null, 0), g2.getURL(null, 0)); }
     
 
     /**

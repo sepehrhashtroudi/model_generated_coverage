@@ -88,128 +88,37 @@ public class XYSeriesTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testGetMinY358() { 
-     XYSeries s1 = new XYSeries("S1"); 
-     assertTrue(Double.isNaN(s1.getMinY())); 
-     s1.add(1.0, 1.1); 
-     assertEquals(1.1, s1.getMinY(), EPSILON); 
-     s1.add(2.0, 2.2); 
-     assertEquals(1.1, s1.getMinY(), EPSILON); 
-     s1.add(Double.NaN, 99.9); 
-     assertEquals(1.1, s1.getMinY(), EPSILON); 
-     s1.add(-1.0, -1.1); 
-     assertEquals(-1.1, s1.getMinY(), EPSILON); 
-     s1.add(0.0, null); 
-     assertEquals(-1.1, s1.getMinY(), EPSILON); 
- }
-public void testGetItemCount362() { 
-     XYSeries s1 = new XYSeries("S1"); 
-     assertEquals(2, s1.getItemCount()); 
-     s1.add(1.0, 1.1); 
-     s1.add(2.0, 2.2); 
-     s1.add(3.0, 3.3); 
-     assertEquals(2, s1.getItemCount()); 
-     assertEquals(3.0, s1.getMinX(), EPSILON); 
-     assertEquals(3.0, s1.getMaxX(), EPSILON); 
-     assertEquals(3.0, s1.getMinY(), EPSILON); 
-     assertEquals(2.0, s1.getMaxY(), EPSILON); 
- }
-public void testGetItemCount363() { 
-     XYSeries s1 = new XYSeries("S1"); 
-     assertEquals(2, s1.getItemCount()); 
-     s1.add(1.0, 1.1); 
-     s1.add(2.0, 2.2); 
-     s1.add(3.0, 3.3); 
-     assertEquals(3, s1.getItemCount()); 
-     s1.remove(2); 
-     assertEquals(2, s1.getItemCount()); 
-     s1.remove(1); 
-     assertEquals(2, s1.getItemCount()); 
- }
-public void testSetMaximumItemCount2364() { 
-     XYSeries s1 = new XYSeries("S1"); 
-     s1.add(1.0, 1.1); 
-     s1.add(2.0, 2.2); 
-     s1.add(3.0, 3.3); 
-     s1.setMaximumItemCount(2); 
-     assertEquals(2, s1.getItemCount()); 
-     assertEquals(2.0, s1.getX(0).doubleValue(), EPSILON); 
-     assertEquals(3.0, s1.getX(1).doubleValue(), EPSILON); 
-     assertEquals(3.0, s1.getMinX(), EPSILON); 
-     assertEquals(3.0, s1.getMaxX(), EPSILON); 
-     assertEquals(1.0, s1.getMinY(), EPSILON); 
-     assertEquals(2.0, s1.getMaxY(), EPSILON); 
- }
-public void testSetMaximumItemCount2365() { 
-     XYSeries s1 = new XYSeries("S1"); 
-     s1.add(1.0, 1.1); 
-     s1.add(2.0, 2.2); 
-     s1.add(3.0, 3.3); 
-     s1.setMaximumItemCount(2); 
-     assertEquals(2, s1.getItemCount()); 
-     assertEquals(2, s1.getMinY(), EPSILON); 
-     assertEquals(3, s1.getMaxY(), EPSILON); 
- }
-public void testAddOrUpdate2366() { 
-     XYSeries series = new XYSeries("Series", false, false); 
-     series.add(5.0, 5.5); 
-     series.add(6.0, 6.6); 
-     series.add(3.0, 3.3); 
-     series.add(4.0, 4.4); 
-     series.add(2.0, 2.2); 
-     series.add(1.0, 1.1); 
-     series.addOrUpdate(new Double(3.0), new Double(33.3)); 
-     series.addOrUpdate(new Double(2.0), new Double(22.2)); 
-     assertEquals(33.3, series.getY(2).doubleValue(), EPSILON); 
-     assertEquals(22.2, series.getY(4).doubleValue(), EPSILON); 
- }
-public void testRemove367() { 
-     XYSeries s1 = new XYSeries("S1"); 
-     s1.add(1.0, 1.1); 
-     s1.add(2.0, 2.2); 
-     s1.add(3.0, 3.3); 
-     s1.remove(2); 
-     assertEquals(3, s1.getItemCount()); 
-     assertEquals(1.0, s1.getX(0).doubleValue(), EPSILON); 
-     assertEquals(3.0, s1.getX(1).doubleValue(), EPSILON); 
-     assertEquals(2.0, s1.getMinX(), EPSILON); 
-     assertEquals(2.0, s1.getMaxX(), EPSILON); 
-     assertEquals(1.1, s1.getMinY(), EPSILON); 
-     assertEquals(2.2, s1.getMaxY(), EPSILON); 
- }
-public void testUpdateByIndex3368() { 
-     XYSeries s1 = new XYSeries("S1"); 
-     s1.add(1.0, 1.1); 
-     s1.add(2.0, 2.2); 
-     s1.add(3.0, 3.3); 
-     s1.updateByIndex(1, new Double(2.05)); 
-     assertEquals(1.1, s1.getMinY(), EPSILON); 
-     assertEquals(3.3, s1.getMaxY(), EPSILON); 
- }
-public void testSerialization432() { 
-     XYDataItem i1 = new XYDataItem(1.0, 1.1); 
-     XYDataItem i2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(i1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         i2 = (XYDataItem) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(i1, i2); 
- }
-public void testHashCode433() { 
-     XYDataItem i1 = new XYDataItem(1.0, 1.1); 
-     XYDataItem i2 = new XYDataItem(1.0, 1.1); 
-     assertTrue(i1.equals(i2)); 
-     int h1 = i1.hashCode(); 
-     int h2 = i2.hashCode(); 
-     assertEquals(h1, h2); 
- }
+public void testSeriesException71() { String message = "Test message"; SeriesException exception = new SeriesException(message); assertEquals(message, exception.getMessage()); }
+public void testXYSeries1536() { XYSeries s1 = new XYSeries("S1"); s1.add(1.0, 1.1); s1.add(2.0, 2.2); s1.add(3.0, 3.3); XYSeries s2 = new XYSeries("S2"); s2.add(1.0, 1.0); s2.add(2.0, 2.2); s2.add(3.0, 3.3); assertEquals(s1, s2); }
+public void testGetMinX1540() { XYSeries s1 = new XYSeries("S1"); assertEquals(0.0, s1.getMinX(), EPSILON); s1.add(1.0, 1.1); assertEquals(1.0, s1.getMinX(), EPSILON); s1.add(2.0, 2.2); assertEquals(2.0, s1.getMinX(), EPSILON); s1.add(3.0, 3.3); assertEquals(3.0, s1.getMinX(), EPSILON); }
+public void testGetMinY1544() { XYSeries s1 = new XYSeries("S1"); assertEquals(0.0, s1.getMinY(), EPSILON); s1.add(1.0, 1.1); assertEquals(1.0, s1.getMinY(), EPSILON); s1.add(2.0, 2.2); assertEquals(2.0, s1.getMinY(), EPSILON); s1.add(3.0, 3.3); assertEquals(3.0, s1.getMinY(), EPSILON); }
+public void testUpdateBoundsForRemovedItem1560() { XYSeries s1 = new XYSeries("S1"); s1.add(1.0, 1.0); s1.add(2.0, 2.0); assertEquals(1.0, s1.getMinX(), EPSILON); assertEquals(2.0, s1.getMaxX(), EPSILON); assertEquals(1.0, s1.getMinY(), EPSILON); assertEquals(2.0, s1.getMaxY(), EPSILON); s1.add(Double.NaN, Double.NaN); assertEquals(Double.NaN, s1.getMinX(), EPSILON);
+}
+
+public void testUpdateBoundsForRemovedItem1561() { XYSeries s1 = new XYSeries("s1"); s1.add(1.0, 1.0); s1.add(2.0, 2.0); assertEquals(1.0, s1.getMinX(), EPSILON); assertEquals(2.0, s1.getMaxX(), EPSILON); assertEquals(1.0, s1.getMinY(), EPSILON); assertEquals(2.0, s1.getMaxY(), EPSILON); s1.add(Double.NaN, Double.NaN); assertEquals(1.0, s1.getMinX(), EPSILON);
+}
+
+public void testGetItemCount1571() { XYSeries s1 = new XYSeries("S1"); assertEquals(0, s1.getItemCount()); s1.add(1.0, 1.1); assertEquals(1, s1.getItemCount()); s1.add(2.0, 2.2); assertEquals(2, s1.getItemCount()); s1.add(3.0, 3.3); assertEquals(3, s1.getItemCount()); s1.add(4.0, 4.4); assertEquals(4, s1.getItemCount()); }
+public void testGetItemCount1572() { XYSeries s1 = new XYSeries("S1"); assertEquals(0, s1.getItemCount()); s1.add(1.0, 1.1); assertEquals(1, s1.getItemCount()); s1.add(2.0, 2.2); assertEquals(2, s1.getItemCount()); s1.add(3.0, 3.3); assertEquals(3, s1.getItemCount()); }
+public void testSetMaximumItemCount1574() { XYSeries s1 = new XYSeries("S1"); s1.add(1.0, 1.1); s1.add(2.0, 2.2); s1.add(3.0, 3.3); s1.add(4.0, 4.4); assertEquals(3, s1.getMaximumItemCount()); s1.setMaximumItemCount(4); assertEquals(4, s1.getMaximumItemCount()); }
+public void testSetMaximumItemCount1575() { XYSeries s1 = new XYSeries("S1"); s1.add(1.0, 1.0); s1.add(2.0, 2.0); s1.add(3.0, 3.0); s1.add(4.0, 4.0); assertEquals(3, s1.getMaximumItemCount()); s1.setMaximumItemCount(3); assertEquals(3, s1.getMaximumItemCount()); }
+public void testSetMaximumItemCount1576() { XYSeries s1 = new XYSeries("S1"); s1.add(1.0, 1.1); s1.add(2.0, 2.2); s1.add(3.0, 3.3); assertEquals(3, s1.getMaximumItemCount()); s1.setMaximumItemCount(4); assertEquals(4, s1.getMaximumItemCount()); }
+public void testRemove1603() { XYSeries s1 = new XYSeries("S1"); s1.add(1.0, 1.1); s1.add(2.0, 2.2); s1.add(3.0, 3.3); s1.add(4.0, 4.4); s1.add(5.0, 5.5); s1.add(6.0, 6.6); s1.add(7.0, 7.7); s1.add(8.0, 8.8); s1.add(9.0, 9.9); assertEquals(2, s1.getItemCount());
+}
+
+public void testMaxIgnoreNaN1626() { XYSeries s1 = new XYSeries("S1"); assertTrue(Double.isNaN(s1.getMaxX())); assertTrue(Double.isNaN(s1.getMaxY())); s1.add(1.0, 1.1); assertEquals(1.0, s1.getMaxX(), EPSILON); assertEquals(1.0, s1.getMaxY(), EPSILON); s1.add(Double.NaN, Double.NaN); assertEquals(1.0, s1.getMaxX(), EPSILON); assertEquals(1.0, s1.getMaxY(), EPSILON);
+}
+
+public void testAddOrUpdate1635() { XYSeries s1 = new XYSeries("S1"); s1.add(1.0, 1.1); s1.add(2.0, 2.2); s1.add(3.0, 3.3); s1.add(4.0, 4.4); s1.add(5.0, 5.5); assertEquals(2, s1.getItemCount()); assertEquals(1.0, s1.getMinX(), EPSILON); assertEquals(2.0, s1.getMaxX(), EPSILON); assertEquals(3.0, s1.getMaxY(), EPSILON);
+}
+
+public void testGetY1944() { XYDataItem item = new XYDataItem(1.0, 1.0); assertEquals(1.0, item.getY().doubleValue(), 0.001); item.setY(2.0); assertEquals(2.0, item.getY().doubleValue(), 0.001); }
+public void testGetYValue1945() { XYDataItem item = new XYDataItem(1.0, 1.0); assertEquals(1.0, item.getYValue(), 0.001); item.setY(2.0); assertEquals(2.0, item.getYValue(), 0.001); item.setY(null); assertEquals(Double.NaN, item.getYValue(), 0.001); }
+public void testCompareTo1947() { XYDataItem item1 = new XYDataItem(1.0, 1.0); XYDataItem item2 = new XYDataItem(2.0, 2.0); assertEquals(0, item1.compareTo(item2)); }
+public void testCompareTo1948() { XYDataItem item1 = new XYDataItem(1.0, 1.0); XYDataItem item2 = new XYDataItem(2.0, 2.0); XYDataItem item3 = new XYDataItem(3.0, 3.0); assertEquals(0, item1.compareTo(item1)); assertEquals(0, item1.compareTo(item2)); assertEquals(-1, item1.compareTo(item3)); }
+public void testCompareTo1949() { XYDataItem item1 = new XYDataItem(1.0, 1.0); XYDataItem item2 = new XYDataItem(1.0, 2.0); assertEquals(0, item1.compareTo(item2)); }
+public void testHashCode1952() { XYDataItem item1 = new XYDataItem(1.0, 1.0); XYDataItem item2 = new XYDataItem(1.0, 1.0); assertEquals(item1.hashCode(), item2.hashCode()); }
+public void testHashCode1953() { XYDataItem item1 = new XYDataItem(1.0, 2.0); XYDataItem item2 = new XYDataItem(1.0, 2.0); assertEquals(item1.hashCode(), item2.hashCode()); }
     
 
     /**

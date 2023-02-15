@@ -79,38 +79,11 @@ public class HistogramBinTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testEquals1004() { 
-     HistogramBin b1 = new HistogramBin(1.0, 2.0); 
-     HistogramBin b2 = new HistogramBin(1.0, 2.0); 
-     assertTrue(b1.equals(b2)); 
-     assertTrue(b2.equals(b2)); 
-     b1 = new HistogramBin(1.1, 2.0); 
-     assertFalse(b1.equals(b2)); 
-     b2 = new HistogramBin(1.1, 2.0); 
-     assertTrue(b1.equals(b2)); 
-     b1 = new HistogramBin(1.1, 2.2); 
-     assertFalse(b1.equals(b2)); 
-     b2 = new HistogramBin(1.1, 2.2); 
-     assertTrue(b1.equals(b2)); 
-     b1 = new HistogramBin(1.1, 2.2); 
-     assertFalse(b1.equals(b2)); 
-     b2 = new HistogramBin(1.1, 2.2); 
-     assertTrue(b1.equals(b2)); 
- }
-public void testEquals1005() { 
-     HistogramBin b1 = new HistogramBin(1.0, 2.0); 
-     HistogramBin b2 = new HistogramBin(1.0, 2.0); 
-     assertTrue(b1.equals(b2)); 
-     assertTrue(b2.equals(b2)); 
-     b1 = new HistogramBin(1.1, 2.0); 
-     assertFalse(b1.equals(b2)); 
-     b2 = new HistogramBin(1.1, 2.0); 
-     assertTrue(b1.equals(b2)); 
-     b1 = new HistogramBin(1.1, 2.2); 
-     assertFalse(b1.equals(b2)); 
-     b2 = new HistogramBin(1.1, 2.2); 
-     assertTrue(b1.equals(b2)); 
- }
+public void testHistogramBin5242() { final double start = 10; final double end = 20; HistogramBin bin = new HistogramBin(start, end); assertEquals(0, bin.getCount()); assertEquals(start, bin.getStartBoundary(), 0.001); assertEquals(end, bin.getEndBoundary(), 0.001); bin.incrementCount(); assertEquals(1, bin.getCount()); assertEquals(start, bin.getStartBoundary(), 0.001); assertEquals(end, bin.getEndBoundary(), 0.001); bin.incrementCount(); assertEquals(2, bin.getCount()); assertEquals(start, bin.getStartBoundary(), 0.001);
+}
+
+public void testEquals5251() { final double start = 10.0; final double end = 20.0; HistogramBin bin1 = new HistogramBin(start, end); HistogramBin bin2 = new HistogramBin(start, end); assertTrue(bin1.equals(bin2)); bin2.incrementCount(); assertTrue(bin1.equals(bin2)); bin1.incrementCount(); assertFalse(bin1.equals(bin2)); bin2.incrementCount(); assertFalse(bin1.equals(bin2)); }
+public void testEquals5252() { final double start = 10.0; final double end = 20.0; HistogramBin bin1 = new HistogramBin(start, end); HistogramBin bin2 = new HistogramBin(start, end); assertTrue(bin1.equals(bin2)); bin2.incrementCount(); assertFalse(bin1.equals(bin2)); bin2.incrementCount(); assertTrue(bin1.equals(bin2)); bin1.incrementCount(); assertFalse(bin1.equals(bin2)); bin2.incrementCount(); assertTrue(bin1.equals(bin2)); }
     
 
     /**

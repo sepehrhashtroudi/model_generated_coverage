@@ -79,6 +79,7 @@ public class StandardTickUnitSourceTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
+public void equals() { StandardTickUnitSource source1 = new StandardTickUnitSource(); StandardTickUnitSource source2 = new StandardTickUnitSource(); boolean equals1 = source1.equals(source2); boolean equals2 = source2.equals(source1); assertTrue(equals1); assertTrue(equals2); }
     
 
     /**

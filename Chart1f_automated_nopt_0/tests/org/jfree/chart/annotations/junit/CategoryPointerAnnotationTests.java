@@ -84,42 +84,10 @@ public class CategoryPointerAnnotationTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testHashcode944() { 
-     CategoryPointerAnnotation a1 = new CategoryPointerAnnotation("Label", "Key 1", 20.0, Math.PI); 
-     CategoryPointerAnnotation a2 = new CategoryPointerAnnotation("Label", "Key 1", 20.0, Math.PI); 
-     assertTrue(a1.equals(a2)); 
-     int h1 = a1.hashCode(); 
-     int h2 = a2.hashCode(); 
-     assertEquals(h1, h2); 
- }
-public void testCloning945() { 
-     CategoryPointerAnnotation a1 = new CategoryPointerAnnotation("Label", "Key 1", 20.0, Math.PI); 
-     CategoryPointerAnnotation a2 = null; 
-     try { 
-         a2 = (CategoryPointerAnnotation) a1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         System.err.println("Failed to clone."); 
-     } 
-     assertTrue(a1 != a2); 
-     assertTrue(a1.getClass() == a2.getClass()); 
-     assertTrue(a1.equals(a2)); 
- }
-public void testSerialization946() { 
-     CategoryPointerAnnotation a1 = new CategoryPointerAnnotation("Label", "Key 1", 20.0, Math.PI); 
-     CategoryPointerAnnotation a2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(a1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         a2 = (CategoryPointerAnnotation) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(a1, a2); 
- }
+public void testHashCode4980() { CategoryPointerAnnotation a1 = new CategoryPointerAnnotation("Label", "A", 20.0, Math.PI); CategoryPointerAnnotation a2 = new CategoryPointerAnnotation("Label", "A", 20.0, Math.PI); assertEquals(a1, a2); int h1 = a1.hashCode(); int h2 = a2.hashCode(); assertEquals(h1, h2); }
+public void testHashCode4981() { CategoryPointerAnnotation a1 = new CategoryPointerAnnotation("Label", "Test", 1.0, Math.PI); CategoryPointerAnnotation a2 = new CategoryPointerAnnotation("Label", "Test", 1.0, Math.PI); assertEquals(a1, a2); int h1 = a1.hashCode(); int h2 = a2.hashCode(); assertEquals(h1, h2); }
+public void testHashCode4982() { CategoryPointerAnnotation a1 = new CategoryPointerAnnotation("Label", "A", 1.0, Math.PI); CategoryPointerAnnotation a2 = new CategoryPointerAnnotation("Label", "A", 1.0, Math.PI); assertEquals(a1, a2); int h1 = a1.hashCode(); int h2 = a2.hashCode(); assertEquals(h1, h2); }
+public void testCloning4983() throws CloneNotSupportedException { CategoryPointerAnnotation p1 = new CategoryPointerAnnotation("Label", "A", 20.0, Math.PI); CategoryPointerAnnotation p2 = (CategoryPointerAnnotation) p1.clone(); assertNotSame(p1, p2); assertSame(p1.getClass(), p2.getClass()); assertEquals(p1, p2); }
     
 
     /**

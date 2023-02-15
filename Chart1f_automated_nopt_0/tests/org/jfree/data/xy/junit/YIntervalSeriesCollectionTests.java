@@ -83,51 +83,10 @@ public class YIntervalSeriesCollectionTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testRemoveSeries1098() { 
-     YIntervalSeriesCollection c = new YIntervalSeriesCollection(); 
-     YIntervalSeries s1 = new YIntervalSeries("s1"); 
-     c.addSeries(s1); 
-     c.removeSeries(0); 
-     assertEquals(0, c.getSeriesCount()); 
-     c.addSeries(s1); 
-     boolean pass = false; 
-     try { 
-         c.removeSeries(-1); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
-     pass = false; 
-     try { 
-         c.removeSeries(1); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
-public void testCloning1100() { 
-     YIntervalSeriesCollection c1 = new YIntervalSeriesCollection(); 
-     YIntervalSeries s1 = new YIntervalSeries("s1"); 
-     c1.addSeries(s1); 
-     YIntervalSeriesCollection c2 = null; 
-     try { 
-         c2 = (YIntervalSeriesCollection) c1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(c1 != c2); 
-     assertTrue(c1.getClass() == c2.getClass()); 
-     assertTrue(c1.equals(c2)); 
-     s1.add(1.0, 2.0, 3.0, 4.0); 
-     assertFalse(c1.equals(c2)); 
-     YIntervalSeries s2 = new YIntervalSeries("s2"); 
-     c2.addSeries(s2); 
-     assertTrue(c1.equals(c2)); 
-     c1.addSeries(new YIntervalSeries("Empty")); 
-     assertFalse(c1.equals(c2)); 
-     c2.addSeries(new YIntervalSeries("Empty")); 
-     assertTrue(c1.equals(c2)); 
- }
+public void testDeepClone5629() throws CloneNotSupportedException { final Object obj1 = new Object(); final Object obj2 = new Object(); final Object obj3 = new Object(); final Object obj4 = new Object(); final Object obj5 = new Object(); final Object obj6 = new Object(); final Object obj7 = new Object(); final Object obj8 = new Object(); final Object obj9 = new Object(); final Object obj10 = new Object(); final Object obj11 = new Object(); final Object obj12 = new Object(); final Object obj13 = new Object(); final Object obj14 = new Object(); final Object obj15 = new Object(); final Object obj16 = new Object(); final Object obj17 = new Object();
+}
+
+public void testEquals5738() { YIntervalSeriesCollection c1 = new YIntervalSeriesCollection(); YIntervalSeriesCollection c2 = new YIntervalSeriesCollection(); c1.addSeries(new YIntervalSeries("Series 1", true, false)); c1.addSeries(new YIntervalSeries("Series 2", true, false)); c2.addSeries(new YIntervalSeries("Series 1", true, false)); c2.addSeries(new YIntervalSeries("Series 2", true, false)); assertEquals(c1, c2); assertEquals(c2, c1); }
     
 
     /**

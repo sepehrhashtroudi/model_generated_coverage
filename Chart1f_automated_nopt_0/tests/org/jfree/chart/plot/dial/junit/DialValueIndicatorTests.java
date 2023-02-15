@@ -88,18 +88,8 @@ public class DialValueIndicatorTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testCloning815() { 
-     DialValueIndicator i1 = new DialValueIndicator(0); 
-     DialValueIndicator i2 = null; 
-     try { 
-         i2 = (DialValueIndicator) i1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(i1 != i2); 
-     assertTrue(i1.getClass() == i2.getClass()); 
-     assertTrue(i1.equals(i2)); 
- }
+public void testCloning4384() throws CloneNotSupportedException { DialValueIndicator i1 = new DialValueIndicator(0); DialValueIndicator i2 = ( DialValueIndicator) i1.clone(); assertNotSame(i1, i2); assertSame(i1.getClass(), i2.getClass()); assertEquals(i1, i2); }
+public void testCloning4385() throws CloneNotSupportedException { DialValueIndicator i1 = new DialValueIndicator(); DialValueIndicator i2 = ( DialValueIndicator) i1.clone(); assertNotSame(i1, i2); assertSame(i1.getClass(), i2.getClass()); assertEquals(i1, i2); }
     
 
     /**

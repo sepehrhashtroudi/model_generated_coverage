@@ -96,56 +96,12 @@ public class DefaultHeatMapDatasetTests extends TestCase
     /**
      * Some general tests.
      */
-public void testEquals414() { 
-     DefaultHeatMapDataset d1 = new DefaultHeatMapDataset(2, 3, -1.0, 4.0, -2.0, 5.0); 
-     DefaultHeatMapDataset d2 = new DefaultHeatMapDataset(2, 3, -1.0, 4.0, -2.0, 5.0); 
-     assertTrue(d1.equals(d2)); 
-     assertTrue(d2.equals(d1)); 
-     d1 = new DefaultHeatMapDataset(1, 3, -1.0, -2.0, -2.0, 5.0); 
-     assertFalse(d1.equals(d2)); 
-     d2 = new DefaultHeatMapDataset(1, 3, -1.0, 4.0, -2.0, 5.0); 
-     assertTrue(d1.equals(d2)); 
-     d1 = new DefaultHeatMapDataset(1, 3, -1.0, 3.0, -2.0, 5.0); 
-     assertFalse(d1.equals(d2)); 
-     d2 = new DefaultHeatMapDataset(1, 3, -1.0, 3.0, -2.0, 5.0); 
-     assertTrue(d1.equals(d2)); 
-     d1 = new DefaultHeatMapDataset(1, 3, -1.0, 3.0, 4.0, 5.0); 
-     assertFalse(d1.equals(d2)); 
-     d2 = new DefaultHeatMapDataset(1, 3, -1.0, 3.0, 4.0, 5.0); 
-     assertTrue(d1.equals(d2)); 
- }
-public void testSerialization418() { 
-     DefaultHeatMapDataset d1 = new DefaultHeatMapDataset(2, 3, -1.0, 4.0, -2.0, 5.0); 
-     DefaultHeatMapDataset d2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(d1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         d2 = (DefaultHeatMapDataset) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         System.out.println(e.toString()); 
-     } 
-     assertEquals(d1, d2); 
- }
-public void testSerialization3422() { 
-     DefaultHeatMapDataset d1 = new DefaultHeatMapDataset(2, 3, -1.0, 4.0, -2.0, 5.0); 
-     DefaultHeatMapDataset d2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(d1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         d2 = (DefaultHeatMapDataset) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(d1, d2); 
- }
+public void testGetXSampleCount1893() { DefaultHeatMapDataset dataset = new DefaultHeatMapDataset(10, 20, 0.0, 0.0, 0.0, 0.0); assertEquals(10, dataset.getXSampleCount()); }
+public void testGetXSampleCount1894() { DefaultHeatMapDataset dataset = new DefaultHeatMapDataset(5, 10, 0.0, 1.0, 2.0, 3.0); assertEquals(5, dataset.getXSampleCount()); }
+public void testGetMinimumXValue1898() { DefaultHeatMapDataset dataset = new DefaultHeatMapDataset(8, 8, -1.0, 2.0, -1.0, 2.0); assertEquals(-1.0, dataset.getMinimumXValue(), EPSILON); }
+public void testGetMaximumXValue1900() { DefaultHeatMapDataset dataset = new DefaultHeatMapDataset(8, 8, 0.0, 1.0, 2.0, 3.0); assertEquals(3.0, dataset.getMaximumXValue(), EPSILON); }
+public void testGetMinimumYValue1902() { DefaultHeatMapDataset dataset = new DefaultHeatMapDataset(8, 8, -1.0, 2.0, -1.0, 2.0); assertEquals(-1.0, dataset.getMinimumYValue(), EPSILON); }
+public void testGetMaximumYValue1904() { DefaultHeatMapDataset dataset = new DefaultHeatMapDataset(8, 8, -1.0, 2.0, -1.0, 2.0); assertEquals(2.0, dataset.getMaximumYValue(), EPSILON); }
     
 
     /**

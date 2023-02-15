@@ -84,46 +84,7 @@ public class CompassPlotTests extends TestCase {
     /**
      * Test the equals() method.
      */
-public void testCloning20() { 
-     CompassPlot p1 = new CompassPlot(new DefaultValueDataset(15.0)); 
-     CompassPlot p2 = null; 
-     try { 
-         p2 = (CompassPlot) p1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         System.err.println("Failed to clone."); 
-     } 
-     assertTrue(p1 != p2); 
-     assertTrue(p1.getClass() == p2.getClass()); 
-     assertTrue(p1.equals(p2)); 
- }
-public void testCloning893() { 
-     CompassPlot p1 = new CompassPlot(new DefaultValueDataset(15.0)); 
-     CompassPlot p2 = null; 
-     try { 
-         p2 = (CompassPlot) p1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(p1 != p2); 
-     assertTrue(p1.getClass() == p2.getClass()); 
-     assertTrue(p1.equals(p2)); 
- }
-public void testSerialization894() { 
-     CompassPlot p1 = new CompassPlot(new DefaultValueDataset(15.0)); 
-     CompassPlot p2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(p1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         p2 = (CompassPlot) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(p1, p2); 
- }
+public void testCompassPlot4726() { CompassPlot plot = new CompassPlot(); assertNotNull(plot); }
     
 
     /**

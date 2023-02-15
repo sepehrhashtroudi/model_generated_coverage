@@ -85,46 +85,9 @@ public class XYErrorRendererTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
-public void testEquals403() { 
-     XYErrorRenderer r1 = new XYErrorRenderer(); 
-     XYErrorRenderer r2 = new XYErrorRenderer(); 
-     assertTrue(r1.equals(r2)); 
-     assertTrue(r2.equals(r1)); 
-     r1.setErrorStroke(new BasicStroke(1.5f)); 
-     assertFalse(r1.equals(r2)); 
-     r2.setErrorStroke(new BasicStroke(1.5f)); 
-     assertTrue(r2.equals(r1)); 
- }
-public void testCloning2404() { 
-     XYErrorRenderer r1 = new XYErrorRenderer(); 
-     r1.setErrorStroke(new BasicStroke(1.5f)); 
-     XYErrorRenderer r2 = null; 
-     try { 
-         r2 = (XYErrorRenderer) r1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(r1 != r2); 
-     assertTrue(r1.getClass() == r2.getClass()); 
-     assertTrue(r1.equals(r2)); 
- }
-public void testSerialization405() { 
-     XYErrorRenderer r1 = new XYErrorRenderer(); 
-     r1.setErrorStroke(new BasicStroke(1.5f)); 
-     XYErrorRenderer r2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(r1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         r2 = (XYErrorRenderer) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(r1, r2); 
- }
+public void testFireChangeEvent1828() { XYErrorRenderer r = new XYErrorRenderer(); assertFalse(r.getDrawYError()); r.setDrawYError(true); assertTrue(r.getDrawYError()); r.setDrawYError(false); assertFalse(r.getDrawYError()); }
+public void testCloning21831() throws CloneNotSupportedException { XYErrorRenderer r1 = new XYErrorRenderer(); r1.setErrorPaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); XYErrorRenderer r2 = (XYErrorRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testFireChangeEvent1832() { XYErrorRenderer r1 = new XYErrorRenderer(); r1.setErrorPaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); XYErrorRenderer r2 = new XYErrorRenderer(); r2.setErrorPaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f, Color.BLUE)); assertEquals(r1, r2); }
     
 
     /**

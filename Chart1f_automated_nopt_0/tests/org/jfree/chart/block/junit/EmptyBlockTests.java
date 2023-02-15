@@ -79,18 +79,7 @@ public class EmptyBlockTests extends TestCase {
     /**
      * Confirm that the equals() method can distinguish all the required fields.
      */
-public void testCloning93() { 
-     EmptyBlock b1 = new EmptyBlock(1.0, 2.0); 
-     EmptyBlock b2 = null; 
-     try { 
-         b2 = (EmptyBlock) b1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         System.err.println("Failed to clone."); 
-     } 
-     assertTrue(b1 != b2); 
-     assertTrue(b1.getClass() == b2.getClass()); 
-     assertTrue(b1.equals(b2)); 
- }
+public void testSetHeight463() throws Exception { EmptyBlock b = new EmptyBlock(1.0, 1.0); assertEquals(1.0, b.getWidth(), 0.01); assertEquals(1.0, b.getHeight(), 0.01); b.setHeight(2.0); assertEquals(2.0, b.getWidth(), 0.01); assertEquals(2.0, b.getHeight(), 0.01); b.setHeight(3.0); assertEquals(3.0, b.getWidth(), 0.01); assertEquals(3.0, b.getHeight(), 0.01); }
     
 
     /**

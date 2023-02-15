@@ -95,40 +95,11 @@ public class StackedXYAreaRenderer2Tests extends TestCase {
      * Test chart drawing with an empty dataset to ensure that this special
      * case doesn't cause any exceptions.
      */
-public void testPublicCloneable868() { 
-     StackedXYAreaRenderer2 r1 = new StackedXYAreaRenderer2(); 
-     assertTrue(r1 instanceof PublicCloneable); 
- }
-public void testEquals869() { 
-     StackedXYAreaRenderer2 r1 = new StackedXYAreaRenderer2(); 
-     StackedXYAreaRenderer2 r2 = new StackedXYAreaRenderer2(); 
-     assertTrue(r1.equals(r2)); 
-     assertTrue(r2.equals(r1)); 
-     r1.setRoundXCoordinates(true); 
-     assertFalse(r1.equals(r2)); 
-     r2.setRoundXCoordinates(true); 
-     assertTrue(r1.equals(r2)); 
- }
-public void testHashcode871() { 
-     StackedXYAreaRenderer2 r1 = new StackedXYAreaRenderer2(); 
-     StackedXYAreaRenderer2 r2 = new StackedXYAreaRenderer2(); 
-     assertTrue(r1.equals(r2)); 
-     int h1 = r1.hashCode(); 
-     int h2 = r2.hashCode(); 
-     assertEquals(h1, h2); 
- }
-public void testCloning873() { 
-     StackedXYAreaRenderer2 r1 = new StackedXYAreaRenderer2(); 
-     StackedXYAreaRenderer2 r2 = null; 
-     try { 
-         r2 = (StackedXYAreaRenderer2) r1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(r1 != r2); 
-     assertTrue(r1.getClass() == r2.getClass()); 
-     assertTrue(r1.equals(r2)); 
- }
+public void testStackedXYAreaRenderer24643() { StackedXYAreaRenderer2 renderer = new StackedXYAreaRenderer2(); }
+public void testGetRoundXCoordinates4647() { System.out.println("getRoundXCoordinates"); StackedXYAreaRenderer2 instance = new StackedXYAreaRenderer2(); assertFalse(instance.getRoundXCoordinates()); instance.setRoundXCoordinates(true); assertTrue(instance.getRoundXCoordinates()); instance.setRoundXCoordinates(false); assertFalse(instance.getRoundXCoordinates()); }
+public void testFireChangeEvent4650() { StackedXYAreaRenderer2 r = new StackedXYAreaRenderer2(); r.setRoundXCoordinates(false); assertEquals(false, r.getRoundXCoordinates()); r.setRoundXCoordinates(true); assertEquals(true, r.getRoundXCoordinates()); r.setRoundXCoordinates(false); assertEquals(false, r.getRoundXCoordinates()); r.setRoundXCoordinates(true); assertEquals(true, r.getRoundXCoordinates()); }
+public void testEquals4662() { StackedXYAreaRenderer2 r1 = new StackedXYAreaRenderer2(); StackedXYAreaRenderer2 r2 = new StackedXYAreaRenderer2(); assertEquals(r1, r2); assertEquals(r2, r1); r1.setRoundXCoordinates(false); assertFalse(r1.equals(r2)); r2.setRoundXCoordinates(false); assertEquals(r1, r2); }
+public void testCloning4663() throws CloneNotSupportedException { StackedXYAreaRenderer2 r1 = new StackedXYAreaRenderer2(); StackedXYAreaRenderer2 r2 = (StackedXYAreaRenderer2) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
     
 
     /**

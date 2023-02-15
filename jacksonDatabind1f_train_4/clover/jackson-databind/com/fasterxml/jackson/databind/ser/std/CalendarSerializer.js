@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":59,"id":3440,"methods":[{"el":23,"sc":5,"sl":23},{"el":27,"sc":5,"sl":25},{"el":36,"sc":5,"sl":29},{"el":41,"sc":5,"sl":38},{"el":57,"sc":5,"sl":43}],"name":"CalendarSerializer","sl":18}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_108":{"methods":[{"sl":23},{"sl":25}],"name":"testFromArray213","pass":true,"statements":[{"sl":23},{"sl":26}]},"test_17":{"methods":[{"sl":43}],"name":"testXMLGregorianCalendarSerAndDeser44","pass":true,"statements":[{"sl":47},{"sl":49},{"sl":55}]},"test_204":{"methods":[{"sl":23},{"sl":25}],"name":"testSimpleProxied560","pass":true,"statements":[{"sl":23},{"sl":26}]},"test_275":{"methods":[{"sl":23},{"sl":25}],"name":"testOverrideMapValid24","pass":true,"statements":[{"sl":23},{"sl":26}]},"test_392":{"methods":[{"sl":23},{"sl":25}],"name":"testExceptionWithMapperAndGenerator482","pass":true,"statements":[{"sl":23},{"sl":26}]},"test_417":{"methods":[{"sl":23},{"sl":25}],"name":"testReadingArrayAsTree297","pass":true,"statements":[{"sl":23},{"sl":26}]},"test_418":{"methods":[{"sl":23},{"sl":25}],"name":"testSneakySelfRefs251","pass":true,"statements":[{"sl":23},{"sl":26}]},"test_485":{"methods":[{"sl":23},{"sl":25}],"name":"testSimpleObject81","pass":true,"statements":[{"sl":23},{"sl":26}]},"test_53":{"methods":[{"sl":23},{"sl":25}],"name":"testSimpleArray123","pass":true,"statements":[{"sl":23},{"sl":26}]},"test_66":{"methods":[{"sl":23},{"sl":25}],"name":"testComplexObject204","pass":true,"statements":[{"sl":23},{"sl":26}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [108, 417, 275, 204, 392, 418, 485, 66, 53], [], [108, 417, 275, 204, 392, 418, 485, 66, 53], [108, 417, 275, 204, 392, 418, 485, 66, 53], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [17], [], [], [], [17], [], [17], [], [], [], [], [], [17], [], [], [], []]

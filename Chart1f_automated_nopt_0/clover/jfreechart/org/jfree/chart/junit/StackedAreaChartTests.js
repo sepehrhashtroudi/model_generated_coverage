@@ -1,7 +1,7 @@
 var clover = new Object();
 
 // JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
-clover.pageData = {"classes":[{"el":160,"id":80249,"methods":[{"el":84,"sc":5,"sl":82},{"el":93,"sc":5,"sl":91},{"el":100,"sc":5,"sl":98},{"el":139,"sc":5,"sl":130}],"name":"StackedAreaChartTests","sl":72},{"el":158,"id":80259,"methods":[{"el":156,"sc":9,"sl":154}],"name":"StackedAreaChartTests.LocalListener","sl":144}]}
+clover.pageData = {"classes":[{"el":160,"id":81673,"methods":[{"el":84,"sc":5,"sl":82},{"el":93,"sc":5,"sl":91},{"el":100,"sc":5,"sl":98},{"el":139,"sc":5,"sl":130}],"name":"StackedAreaChartTests","sl":72},{"el":158,"id":81683,"methods":[{"el":156,"sc":9,"sl":154}],"name":"StackedAreaChartTests.LocalListener","sl":144}]}
 
 // JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
 clover.testTargets = {}

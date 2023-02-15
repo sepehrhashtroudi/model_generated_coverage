@@ -111,16 +111,8 @@ public class CombinedDomainXYPlotTests extends TestCase
     /**
      * Confirm that the constructor will accept a null axis.
      */
-public void testRemoveSubplot1247() { 
-     CombinedDomainXYPlot plot = new CombinedDomainXYPlot(); 
-     XYPlot plot1 = new XYPlot(); 
-     XYPlot plot2 = new XYPlot(); 
-     plot.add(plot1); 
-     plot.add(plot2); 
-     plot.remove(plot2); 
-     List plots = plot.getSubplots(); 
-     assertTrue(plots.get(0) == plot1); 
- }
+public void testCloning6540() throws CloneNotSupportedException { CombinedDomainXYPlot plot1 = createPlot(); CombinedDomainXYPlot plot2 = (CombinedDomainXYPlot) plot1.clone(); assertNotSame(plot1, plot2); assertSame(plot1.getClass(), plot2.getClass()); assertEquals(plot1, plot2); plot1.setGap(0.5); plot2.setGap(0.5); assertSame(plot1, plot2); }
+public void testEquals6556() { CombinedDomainXYPlot plot1 = createPlot(); CombinedDomainXYPlot plot2 = createPlot(); assertEquals(plot1, plot2); }
     
 
     /**

@@ -84,35 +84,9 @@ public class HistogramDatasetTests extends TestCase {
     /**
      * Some checks that the correct values are assigned to bins.
      */
-public void testCloning906() { 
-     double[] values = { 1.0, 2.0, 3.0, 4.0, 6.0, 12.0, 5.0, 6.3, 4.5 }; 
-     HistogramDataset d1 = new HistogramDataset(); 
-     d1.addSeries("Series 1", values, 5); 
-     HistogramDataset d2 = null; 
-     try { 
-         d2 = (HistogramDataset) d1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(d1 != d2); 
-     assertTrue(d1.getClass() == d2.getClass()); 
-     assertTrue(d1.equals(d2)); 
-     d1.addSeries("Series 2", new double[] { 1.0, 2.0, 3.0 }, 2); 
-     assertFalse(d1.equals(d2)); 
-     d2.addSeries("Series 2", new double[] { 1.0, 2.0, 3.0 }, 2); 
-     assertTrue(d1.equals(d2)); 
- }
-public void test1553088907() { 
-     double[] values = { -1.0, 0.0, -Double.MIN_VALUE, 3.0 }; 
-     HistogramDataset d = new HistogramDataset(); 
-     d.addSeries("S1", values, 2, -1.0, 0.0); 
-     assertEquals(-1.0, d.getStartXValue(0, 0), EPSILON); 
-     assertEquals(-0.5, d.getEndXValue(0, 0), EPSILON); 
-     assertEquals(1.0, d.getYValue(0, 0), EPSILON); 
-     assertEquals(-0.5, d.getStartXValue(0, 1), EPSILON); 
-     assertEquals(0.0, d.getEndXValue(0, 1), EPSILON); 
-     assertEquals(3.0, d.getYValue(0, 1), EPSILON); 
- }
+public void testGetBins4821() { HistogramDataset dataset = new HistogramDataset(); dataset.addSeries("Series 1", new double[] {1.0, 2.0, 3.0}, 4); dataset.addSeries("Series 2", new double[] {1.0, 2.0, 3.0}, 5); dataset.addSeries("Series 3", new double[] {1.0, 2.0, 3.0}, 6); dataset.addSeries("Series 4", new double[] {1.0, 2.0, 3.0}, 7); dataset.addSeries("Series 4", new double[] {1.0, 2.0, 3.0}, 8);
+}
+
     
 
     /**

@@ -1,0 +1,2139 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>jfreechart</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="historical.html">jfreechart-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        jfreechart
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Fri Feb 3 2023 02:44:19 MST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+            <li class="menu-item ">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+
+                        <div style="text-align: right; margin-bottom: 10px">
+            
+            
+                                    <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;How to read this chart
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function (content, trigger, showPopup) {
+                var description = quickWinsDescription();
+                var title = 'Quick Wins';
+                content.css({"padding": "20px"}).html(
+                        '<h2>' + title + '</h2>' + description);
+                showPopup();
+                return false;
+            },
+            {
+                width: 600
+            }
+    );
+</script>
+        </div>
+
+        
+
+<div style="padding: 20px; border: 1px solid #cccccc; background-color: #f5f5f5; border-radius: 3px">
+          <div id="deepPackageCloud"  >
+                          
+    
+        
+    
+            <a href="org/jfree/chart/block/junit/AbstractBlockTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">AbstractBlockTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/AbstractCategoryItemRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">AbstractCategoryItemRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/junit/AbstractDialLayerTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">AbstractDialLayerTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/junit/AbstractRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">AbstractRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/AbstractXYItemRendererTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 2 ">AbstractXYItemRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/annotations/junit/AnnotationsPackageTests.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 20 , # Elements Covered - 16 ">AnnotationsPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/junit/ArcDialFrameTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ArcDialFrameTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/AreaChartTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">AreaChartTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/junit/AreaRendererEndTypeTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">AreaRendererEndTypeTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/AreaRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">AreaRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/needle/junit/ArrowNeedleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ArrowNeedleTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/AxisLocationTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">AxisLocationTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/AxisPackageTests.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="# Elements - 41 , # Elements Covered - 37 ">AxisPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/AxisSpaceTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">AxisSpaceTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/AxisTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">AxisTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/BarChart3DTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">BarChart3DTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/BarChartTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">BarChartTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/BarRenderer3DTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">BarRenderer3DTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/BarRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">BarRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/block/junit/BlockBorderTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">BlockBorderTests</a>
+            
+    
+            <a href="org/jfree/chart/block/junit/BlockContainerTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">BlockContainerTests</a>
+            
+    
+            <a href="org/jfree/chart/block/junit/BlockPackageTests.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 19 , # Elements Covered - 15 ">BlockPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/BooleanListTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">BooleanListTests</a>
+            
+    
+            <a href="org/jfree/chart/block/junit/BorderArrangementTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">BorderArrangementTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/BoxAndWhiskerCalculatorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">BoxAndWhiskerCalculatorTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/BoxAndWhiskerItemTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">BoxAndWhiskerItemTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/BoxAndWhiskerRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">BoxAndWhiskerRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/BoxAndWhiskerToolTipGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">BoxAndWhiskerToolTipGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/BoxAndWhiskerXYToolTipGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">BoxAndWhiskerXYToolTipGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/BubbleXYItemLabelGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">BubbleXYItemLabelGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/CandlestickRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CandlestickRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/CategoryAnchorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CategoryAnchorTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/CategoryAxis3DTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CategoryAxis3DTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/CategoryAxisTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CategoryAxisTests</a>
+            
+    
+            <a href="org/jfree/chart/entity/junit/CategoryItemEntityTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CategoryItemEntityTests</a>
+            
+    
+            <a href="org/jfree/chart/entity/junit/CategoryLabelEntityTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CategoryLabelEntityTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/CategoryLabelPositionTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CategoryLabelPositionTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/CategoryLabelPositionsTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CategoryLabelPositionsTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/CategoryLabelWidthTypeTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CategoryLabelWidthTypeTests</a>
+            
+    
+            <a href="org/jfree/chart/annotations/junit/CategoryLineAnnotationTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CategoryLineAnnotationTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/CategoryMarkerTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">CategoryMarkerTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/CategoryPlotTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CategoryPlotTests</a>
+            
+    
+            <a href="org/jfree/chart/annotations/junit/CategoryPointerAnnotationTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CategoryPointerAnnotationTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/CategoryStepRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CategoryStepRendererTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/CategoryTableXYDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CategoryTableXYDatasetTests</a>
+            
+    
+            <a href="org/jfree/chart/annotations/junit/CategoryTextAnnotationTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CategoryTextAnnotationTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/CategoryTickTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CategoryTickTests</a>
+            
+    
+            <a href="org/jfree/data/category/junit/CategoryToPieDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CategoryToPieDatasetTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/ChartPackageTests.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 29 , # Elements Covered - 29 ">ChartPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/ChartPanelTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">ChartPanelTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/ChartRenderingInfoTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ChartRenderingInfoTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/ClusteredXYBarRendererTests.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 2 ">ClusteredXYBarRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/block/junit/ColorBlockTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ColorBlockTests</a>
+            
+    
+            <a href="org/jfree/chart/block/junit/ColumnArrangementTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ColumnArrangementTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/CombinedDomainCategoryPlotTests.html" class="tag"
+            style="font-size: 21px;color:#d04437"
+            title="# Elements - 84 , # Elements Covered - 2 ">CombinedDomainCategoryPlotTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/CombinedDomainXYPlotTests.html" class="tag"
+            style="font-size: 21px;color:#d04437"
+            title="# Elements - 82 , # Elements Covered - 2 ">CombinedDomainXYPlotTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/CombinedRangeCategoryPlotTests.html" class="tag"
+            style="font-size: 21px;color:#d04437"
+            title="# Elements - 82 , # Elements Covered - 2 ">CombinedRangeCategoryPlotTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/CombinedRangeXYPlotTests.html" class="tag"
+            style="font-size: 21px;color:#d04437"
+            title="# Elements - 82 , # Elements Covered - 2 ">CombinedRangeXYPlotTests</a>
+            
+    
+            <a href="org/jfree/data/junit/ComparableObjectItemTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ComparableObjectItemTests</a>
+            
+    
+            <a href="org/jfree/data/junit/ComparableObjectSeriesTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ComparableObjectSeriesTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/CompassPlotTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CompassPlotTests</a>
+            
+    
+            <a href="org/jfree/chart/title/junit/CompositeTitleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CompositeTitleTests</a>
+            
+    
+            <a href="org/jfree/chart/urls/junit/CustomCategoryURLGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CustomCategoryURLGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/urls/junit/CustomPieURLGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CustomPieURLGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/CustomXYItemLabelGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CustomXYItemLabelGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/urls/junit/CustomXYURLGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CustomXYURLGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/CyclicNumberAxisTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">CyclicNumberAxisTests</a>
+            
+    
+            <a href="org/jfree/data/category/junit/DataCategoryPackageTests.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 11 , # Elements Covered - 7 ">DataCategoryPackageTests</a>
+            
+    
+            <a href="org/jfree/data/function/junit/DataFunctionPackageTests.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 11 , # Elements Covered - 7 ">DataFunctionPackageTests</a>
+            
+    
+            <a href="org/jfree/data/gantt/junit/DataGanttPackageTests.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 12 , # Elements Covered - 8 ">DataGanttPackageTests</a>
+            
+    
+            <a href="org/jfree/data/general/junit/DataGeneralPackageTests.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 14 , # Elements Covered - 10 ">DataGeneralPackageTests</a>
+            
+    
+            <a href="org/jfree/data/junit/DataPackageTests.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 20 , # Elements Covered - 16 ">DataPackageTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/DataStatisticsPackageTests.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 20 , # Elements Covered - 16 ">DataStatisticsPackageTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/DataTimePackageTests.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 28 , # Elements Covered - 24 ">DataTimePackageTests</a>
+            
+    
+            <a href="org/jfree/data/junit/DataUtilitiesTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DataUtilitiesTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/DataXYPackageTests.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="# Elements - 41 , # Elements Covered - 37 ">DataXYPackageTests</a>
+            
+    
+            <a href="org/jfree/data/general/junit/DatasetGroupTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DatasetGroupTests</a>
+            
+    
+            <a href="org/jfree/data/general/junit/DatasetUtilitiesTests.html" class="tag"
+            style="font-size: 16px;color:#d04437"
+            title="# Elements - 45 , # Elements Covered - 2 ">DatasetUtilitiesTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/DateAxisTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">DateAxisTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/DateRangeTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DateRangeTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/DateTickMarkPositionTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DateTickMarkPositionTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/DateTickTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DateTickTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/DateTickUnitTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DateTickUnitTests</a>
+            
+    
+            <a href="org/jfree/chart/title/junit/DateTitleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DateTitleTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/DayTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 2 ">DayTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/DefaultBoxAndWhiskerCategoryDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultBoxAndWhiskerCategoryDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/DefaultBoxAndWhiskerXYDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultBoxAndWhiskerXYDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/category/junit/DefaultCategoryDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultCategoryDatasetTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/DefaultCategoryItemRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultCategoryItemRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/DefaultDrawingSupplierTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultDrawingSupplierTests</a>
+            
+    
+            <a href="org/jfree/data/general/junit/DefaultHeatMapDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">DefaultHeatMapDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/DefaultHighLowDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultHighLowDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/category/junit/DefaultIntervalCategoryDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultIntervalCategoryDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/DefaultIntervalXYDatasetTests.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 2 ">DefaultIntervalXYDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/general/junit/DefaultKeyedValueDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultKeyedValueDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/junit/DefaultKeyedValueTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultKeyedValueTests</a>
+            
+    
+            <a href="org/jfree/data/general/junit/DefaultKeyedValues2DDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultKeyedValues2DDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/junit/DefaultKeyedValues2DTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultKeyedValues2DTests</a>
+            
+    
+            <a href="org/jfree/data/general/junit/DefaultKeyedValuesDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultKeyedValuesDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/junit/DefaultKeyedValuesTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 2 ">DefaultKeyedValuesTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/DefaultMultiValueCategoryDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultMultiValueCategoryDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/DefaultOHLCDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultOHLCDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/general/junit/DefaultPieDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">DefaultPieDatasetTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/junit/DefaultPolarItemRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultPolarItemRendererTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/DefaultStatisticalCategoryDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultStatisticalCategoryDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/DefaultTableXYDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultTableXYDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/DefaultWindDatasetTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 2 ">DefaultWindDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/DefaultXYDatasetTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 2 ">DefaultXYDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/DefaultXYZDatasetTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 2 ">DefaultXYZDatasetTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/DeviationRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DeviationRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/junit/DialBackgroundTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DialBackgroundTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/junit/DialCapTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DialCapTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/junit/DialPackageTests.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 18 , # Elements Covered - 14 ">DialPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/junit/DialPlotTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">DialPlotTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/junit/DialPointerTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DialPointerTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/junit/DialTextAnnotationTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DialTextAnnotationTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/junit/DialValueIndicatorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DialValueIndicatorTests</a>
+            
+    
+            <a href="org/jfree/data/junit/DomainOrderTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DomainOrderTests</a>
+            
+    
+            <a href="org/jfree/chart/imagemap/junit/DynamicDriveToolTipTagFragmentGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DynamicDriveToolTipTagFragmentGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/block/junit/EmptyBlockTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">EmptyBlockTests</a>
+            
+    
+            <a href="org/jfree/chart/entity/junit/EntityPackageTests.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 14 , # Elements Covered - 10 ">EntityPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/ExtendedCategoryAxisTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ExtendedCategoryAxisTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/FastScatterPlotTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 2 ">FastScatterPlotTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/FixedMillisecondTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">FixedMillisecondTests</a>
+            
+    
+            <a href="org/jfree/chart/block/junit/FlowArrangementTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">FlowArrangementTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/GanttChartTests.html" class="tag"
+            style="font-size: 16px;color:#d04437"
+            title="# Elements - 44 , # Elements Covered - 2 ">GanttChartTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/GanttRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">GanttRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/GradientBarPainterTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">GradientBarPainterTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/GradientXYBarPainterTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">GradientXYBarPainterTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/junit/GrayPaintScaleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">GrayPaintScaleTests</a>
+            
+    
+            <a href="org/jfree/chart/block/junit/GridArrangementTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 2 ">GridArrangementTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/GroupedStackedBarRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">GroupedStackedBarRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/HashUtilitiesTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">HashUtilitiesTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/HighLowItemLabelGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">HighLowItemLabelGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/HighLowRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">HighLowRendererTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/HistogramBinTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">HistogramBinTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/HistogramDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">HistogramDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/HourTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 2 ">HourTests</a>
+            
+    
+            <a href="org/jfree/chart/imagemap/junit/ImageMapPackageTests.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 12 , # Elements Covered - 8 ">ImageMapPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/imagemap/junit/ImageMapUtilitiesTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ImageMapUtilitiesTests</a>
+            
+    
+            <a href="org/jfree/chart/title/junit/ImageTitleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ImageTitleTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/IntervalBarRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">IntervalBarRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/IntervalCategoryItemLabelGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">IntervalCategoryItemLabelGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/IntervalCategoryToolTipGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">IntervalCategoryToolTipGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/IntervalMarkerTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">IntervalMarkerTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/IntervalXYDelegateTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">IntervalXYDelegateTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/ItemLabelAnchorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ItemLabelAnchorTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/ItemLabelPositionTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ItemLabelPositionTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/JFreeChartTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 2 ">JFreeChartTests</a>
+            
+    
+            <a href="org/jfree/data/junit/KeyToGroupMapTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">KeyToGroupMapTests</a>
+            
+    
+            <a href="org/jfree/data/junit/KeyedObjectTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">KeyedObjectTests</a>
+            
+    
+            <a href="org/jfree/data/junit/KeyedObjects2DTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">KeyedObjects2DTests</a>
+            
+    
+            <a href="org/jfree/data/junit/KeyedObjectsTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 2 ">KeyedObjectsTests</a>
+            
+    
+            <a href="org/jfree/chart/block/junit/LabelBlockTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">LabelBlockTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/LabelsPackageTests.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 27 , # Elements Covered - 23 ">LabelsPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/LayeredBarRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">LayeredBarRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/title/junit/LegendGraphicTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">LegendGraphicTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/LegendItemCollectionTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">LegendItemCollectionTests</a>
+            
+    
+            <a href="org/jfree/chart/entity/junit/LegendItemEntityTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">LegendItemEntityTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/LegendItemTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">LegendItemTests</a>
+            
+    
+            <a href="org/jfree/chart/title/junit/LegendTitleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">LegendTitleTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/LevelRendererTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 2 ">LevelRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/LineAndShapeRendererTests.html" class="tag"
+            style="font-size: 19px;color:#d04437"
+            title="# Elements - 72 , # Elements Covered - 2 ">LineAndShapeRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/block/junit/LineBorderTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">LineBorderTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/LineChart3DTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">LineChart3DTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/LineChartTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">LineChartTests</a>
+            
+    
+            <a href="org/jfree/data/function/junit/LineFunction2DTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">LineFunction2DTests</a>
+            
+    
+            <a href="org/jfree/chart/needle/junit/LineNeedleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">LineNeedleTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/LineRenderer3DTests.html" class="tag"
+            style="font-size: 18px;color:#d04437"
+            title="# Elements - 57 , # Elements Covered - 2 ">LineRenderer3DTests</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/LineUtilitiesTests.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 2 ">LineUtilitiesTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/LogAxisTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">LogAxisTests</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/LogFormatTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">LogFormatTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/LogarithmicAxisTests.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 2 ">LogarithmicAxisTests</a>
+            
+    
+            <a href="org/jfree/chart/needle/junit/LongNeedleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">LongNeedleTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/junit/LookupPaintScaleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">LookupPaintScaleTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/MarkerAxisBandTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">MarkerAxisBandTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/MarkerTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">MarkerTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/MatrixSeriesCollectionTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">MatrixSeriesCollectionTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/MatrixSeriesTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">MatrixSeriesTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/MeanAndStandardDeviationTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">MeanAndStandardDeviationTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/MeterChartTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">MeterChartTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/MeterIntervalTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">MeterIntervalTests</a>
+            
+    
+            <a href="org/jfree/chart/needle/junit/MeterNeedleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">MeterNeedleTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/MeterPlotTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">MeterPlotTests</a>
+            
+    
+            <a href="org/jfree/chart/needle/junit/MiddlePinNeedleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">MiddlePinNeedleTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/MillisecondTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 2 ">MillisecondTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/MinMaxCategoryRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">MinMaxCategoryRendererTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/MinuteTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 2 ">MinuteTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/ModuloAxisTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ModuloAxisTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/MonthDateFormatTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">MonthDateFormatTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/MonthTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">MonthTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/MovingAverageTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 2 ">MovingAverageTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/MultiplePiePlotTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">MultiplePiePlotTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/MultipleXYSeriesLabelGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">MultipleXYSeriesLabelGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/needle/junit/NeedlePackageTests.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 17 , # Elements Covered - 13 ">NeedlePackageTests</a>
+            
+    
+            <a href="org/jfree/data/function/junit/NormalDistributionFunction2DTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">NormalDistributionFunction2DTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/NumberAxis3DTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">NumberAxis3DTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/NumberAxisTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">NumberAxisTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/NumberTickUnitTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">NumberTickUnitTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/OHLCDataItemTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">OHLCDataItemTests</a>
+            
+    
+            <a href="org/jfree/data/time/ohlc/junit/OHLCItemTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">OHLCItemTests</a>
+            
+    
+            <a href="org/jfree/data/time/ohlc/junit/OHLCPackageTests.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 11 , # Elements Covered - 7 ">OHLCPackageTests</a>
+            
+    
+            <a href="org/jfree/data/time/ohlc/junit/OHLCSeriesCollectionTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">OHLCSeriesCollectionTests</a>
+            
+    
+            <a href="org/jfree/data/time/ohlc/junit/OHLCSeriesTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">OHLCSeriesTests</a>
+            
+    
+            <a href="org/jfree/data/time/ohlc/junit/OHLCTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">OHLCTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/junit/OutlierTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">OutlierTests</a>
+            
+    
+            <a href="org/jfree/chart/imagemap/junit/OverLIBToolTipTagFragmentGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">OverLIBToolTipTagFragmentGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/PaintListTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">PaintListTests</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/PaintMapTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">PaintMapTests</a>
+            
+    
+            <a href="org/jfree/chart/title/junit/PaintScaleLegendTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">PaintScaleLegendTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/PeriodAxisLabelInfoTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">PeriodAxisLabelInfoTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/PeriodAxisTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">PeriodAxisTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/PieChart3DTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 2 ">PieChart3DTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/PieChartTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 2 ">PieChartTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/PieLabelRecordTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">PieLabelRecordTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/PiePlot3DTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">PiePlot3DTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/PiePlotTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">PiePlotTests</a>
+            
+    
+            <a href="org/jfree/chart/entity/junit/PieSectionEntityTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">PieSectionEntityTests</a>
+            
+    
+            <a href="org/jfree/chart/needle/junit/PinNeedleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">PinNeedleTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/PlotOrientationTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">PlotOrientationTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/PlotPackageTests.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 33 , # Elements Covered - 29 ">PlotPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/PlotRenderingInfoTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">PlotRenderingInfoTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/PlotTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">PlotTests</a>
+            
+    
+            <a href="org/jfree/chart/needle/junit/PlumNeedleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">PlumNeedleTests</a>
+            
+    
+            <a href="org/jfree/chart/needle/junit/PointerNeedleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">PointerNeedleTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/PolarPlotTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">PolarPlotTests</a>
+            
+    
+            <a href="org/jfree/data/function/junit/PolynomialFunction2DTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">PolynomialFunction2DTests</a>
+            
+    
+            <a href="org/jfree/data/function/junit/PowerFunction2DTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">PowerFunction2DTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/QuarterDateFormatTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">QuarterDateFormatTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/QuarterTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">QuarterTests</a>
+            
+    
+            <a href="org/jfree/data/junit/RangeTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">RangeTests</a>
+            
+    
+            <a href="org/jfree/data/junit/RangeTypeTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">RangeTypeTests</a>
+            
+    
+            <a href="org/jfree/chart/util/RectangleAnchor.html" class="tag"
+            style="font-size: 27px;color:#d04437"
+            title="# Elements - 140 , # Elements Covered - 2 ">RectangleAnchor</a>
+            
+    
+            <a href="org/jfree/chart/block/junit/RectangleConstraintTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">RectangleConstraintTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/RegressionTests.html" class="tag"
+            style="font-size: 17px;color:#d04437"
+            title="# Elements - 52 , # Elements Covered - 2 ">RegressionTests</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/RelativeDateFormatTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">RelativeDateFormatTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/RendererCategoryPackageTests.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 31 , # Elements Covered - 27 ">RendererCategoryPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/junit/RendererPackageTests.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 12 , # Elements Covered - 10 ">RendererPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/junit/RendererUtilitiesTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">RendererUtilitiesTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/RendererXYPackageTests.html" class="tag"
+            style="font-size: 18px;color:#de7b72"
+            title="# Elements - 58 , # Elements Covered - 32 ">RendererXYPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/RingPlotTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">RingPlotTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/ScatterPlotTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 2 ">ScatterPlotTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/ScatterRendererTests.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 2 ">ScatterRendererTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/SecondTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 2 ">SecondTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/SegmentedTimeline.html" class="tag"
+            style="font-size: 48px;color:#89c495"
+            title="# Elements - 327 , # Elements Covered - 110 ">SegmentedTimeline</a>
+            
+    
+            <a href="org/jfree/chart/axis/SegmentedTimeline.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 101 , # Elements Covered - 40 ">SegmentedTimeline.Segment</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/SerialUtilitiesTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">SerialUtilitiesTests</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/ShapeListTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ShapeListTests</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/ShapeUtilitiesTests.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 2 ">ShapeUtilitiesTests</a>
+            
+    
+            <a href="org/jfree/chart/needle/junit/ShipNeedleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ShipNeedleTests</a>
+            
+    
+            <a href="org/jfree/chart/title/junit/ShortTextTitleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ShortTextTitleTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/SimpleHistogramBinTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">SimpleHistogramBinTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/SimpleHistogramDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">SimpleHistogramDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/SimpleTimePeriodTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 2 ">SimpleTimePeriodTests</a>
+            
+    
+            <a href="org/jfree/data/category/junit/SlidingCategoryDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">SlidingCategoryDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/gantt/junit/SlidingGanttCategoryDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">SlidingGanttCategoryDatasetTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/SpiderWebPlotTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">SpiderWebPlotTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/StackedAreaChartTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">StackedAreaChartTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/StackedAreaRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StackedAreaRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/StackedBarChart3DTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">StackedBarChart3DTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/StackedBarChartTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">StackedBarChartTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/StackedBarRenderer3DTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StackedBarRenderer3DTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/StackedBarRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StackedBarRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/StackedXYAreaRenderer2Tests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StackedXYAreaRenderer2Tests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/StackedXYAreaRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StackedXYAreaRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/StackedXYBarRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StackedXYBarRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/StandardBarPainterTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardBarPainterTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/StandardCategoryItemLabelGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardCategoryItemLabelGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/StandardCategorySeriesLabelGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardCategorySeriesLabelGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/StandardCategoryToolTipGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardCategoryToolTipGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/urls/junit/StandardCategoryURLGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardCategoryURLGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/StandardChartThemeTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardChartThemeTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/junit/StandardDialFrameTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardDialFrameTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/junit/StandardDialRangeTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardDialRangeTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/junit/StandardDialScaleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardDialScaleTests</a>
+            
+    
+            <a href="org/jfree/chart/entity/junit/StandardEntityCollectionTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardEntityCollectionTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/StandardPieSectionLabelGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">StandardPieSectionLabelGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/StandardPieToolTipGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardPieToolTipGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/urls/junit/StandardPieURLGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardPieURLGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/StandardTickUnitSourceTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardTickUnitSourceTests</a>
+            
+    
+            <a href="org/jfree/chart/imagemap/junit/StandardToolTipTagFragmentGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardToolTipTagFragmentGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/imagemap/junit/StandardURLTagFragmentGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardURLTagFragmentGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/StandardXYBarPainterTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardXYBarPainterTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/StandardXYItemLabelGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardXYItemLabelGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/StandardXYItemRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardXYItemRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/StandardXYSeriesLabelGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardXYSeriesLabelGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/StandardXYToolTipGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardXYToolTipGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/urls/junit/StandardXYURLGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardXYURLGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/StandardXYZToolTipGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StandardXYZToolTipGeneratorTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/StatisticalBarRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StatisticalBarRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/StatisticalLineAndShapeRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StatisticalLineAndShapeRendererTests</a>
+            
+    
+            <a href="org/jfree/data/statistics/junit/StatisticsTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StatisticsTests</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/StrokeListTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StrokeListTests</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/StrokeMapTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">StrokeMapTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/SubCategoryAxisTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">SubCategoryAxisTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/SymbolAxisTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">SymbolAxisTests</a>
+            
+    
+            <a href="org/jfree/chart/labels/junit/SymbolicXYItemLabelGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">SymbolicXYItemLabelGeneratorTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/TableXYDatasetTests.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 2 ">TableXYDatasetTests</a>
+            
+    
+            <a href="org/jfree/data/gantt/junit/TaskSeriesCollectionTests.html" class="tag"
+            style="font-size: 19px;color:#d04437"
+            title="# Elements - 70 , # Elements Covered - 2 ">TaskSeriesCollectionTests</a>
+            
+    
+            <a href="org/jfree/data/gantt/junit/TaskSeriesTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">TaskSeriesTests</a>
+            
+    
+            <a href="org/jfree/data/gantt/junit/TaskTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">TaskTests</a>
+            
+    
+            <a href="org/jfree/chart/annotations/junit/TextAnnotationTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">TextAnnotationTests</a>
+            
+    
+            <a href="org/jfree/chart/title/junit/TextTitleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">TextTitleTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/ThermometerPlotTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ThermometerPlotTests</a>
+            
+    
+            <a href="org/jfree/chart/entity/junit/TickLabelEntityTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">TickLabelEntityTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/TickUnitsTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">TickUnitsTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/TimePeriodAnchorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">TimePeriodAnchorTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/TimePeriodValueTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 2 ">TimePeriodValueTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/TimePeriodValuesCollectionTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 2 ">TimePeriodValuesCollectionTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/TimePeriodValuesTests.html" class="tag"
+            style="font-size: 16px;color:#d04437"
+            title="# Elements - 44 , # Elements Covered - 2 ">TimePeriodValuesTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/TimeSeriesChartTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 2 ">TimeSeriesChartTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/TimeSeriesCollectionTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 2 ">TimeSeriesCollectionTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/TimeSeriesDataItemTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 2 ">TimeSeriesDataItemTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/TimeSeriesTests.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 2 ">TimeSeriesTests</a>
+            
+    
+            <a href="org/jfree/chart/urls/junit/TimeSeriesURLGeneratorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">TimeSeriesURLGeneratorTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/TimeTableXYDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">TimeTableXYDatasetTests</a>
+            
+    
+            <a href="org/jfree/chart/title/junit/TitlePackageTests.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 16 , # Elements Covered - 12 ">TitlePackageTests</a>
+            
+    
+            <a href="org/jfree/chart/title/junit/TitleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">TitleTests</a>
+            
+    
+            <a href="org/jfree/chart/urls/junit/UrlsPackageTests.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 14 , # Elements Covered - 10 ">UrlsPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/util/junit/UtilPackageTests.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 19 , # Elements Covered - 15 ">UtilPackageTests</a>
+            
+    
+            <a href="org/jfree/chart/axis/junit/ValueAxisTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ValueAxisTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/ValueMarkerTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">ValueMarkerTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/VectorDataItemTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">VectorDataItemTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/VectorRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">VectorRendererTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/VectorSeriesCollectionTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">VectorSeriesCollectionTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/VectorSeriesTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">VectorSeriesTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/VectorTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">VectorTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/junit/WaterfallBarRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">WaterfallBarRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/WaterfallChartTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">WaterfallChartTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/WeekTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">WeekTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/WindItemRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">WindItemRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/needle/junit/WindNeedleTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">WindNeedleTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/XIntervalDataItemTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XIntervalDataItemTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/XIntervalSeriesCollectionTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XIntervalSeriesCollectionTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/XIntervalSeriesTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">XIntervalSeriesTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/XYAreaChartTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 2 ">XYAreaChartTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYAreaRenderer2Tests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYAreaRenderer2Tests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYAreaRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYAreaRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/XYBarChartTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 2 ">XYBarChartTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/XYBarDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYBarDatasetTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYBarRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYBarRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYBlockRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYBlockRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYBoxAndWhiskerRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYBoxAndWhiskerRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/annotations/junit/XYBoxAnnotationTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYBoxAnnotationTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYBubbleRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYBubbleRendererTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/XYCoordinateTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYCoordinateTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/XYDataItemTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYDataItemTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYDifferenceRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYDifferenceRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYDotRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYDotRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/annotations/junit/XYDrawableAnnotationTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYDrawableAnnotationTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYErrorRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYErrorRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/annotations/junit/XYImageAnnotationTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYImageAnnotationTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/XYIntervalDataItemTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYIntervalDataItemTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/XYIntervalSeriesCollectionTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYIntervalSeriesCollectionTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/XYIntervalSeriesTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">XYIntervalSeriesTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/XYIntervalTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYIntervalTests</a>
+            
+    
+            <a href="org/jfree/chart/entity/junit/XYItemEntityTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYItemEntityTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYLine3DRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYLine3DRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYLineAndShapeRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYLineAndShapeRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/annotations/junit/XYLineAnnotationTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYLineAnnotationTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/XYLineChartTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 2 ">XYLineChartTests</a>
+            
+    
+            <a href="org/jfree/chart/plot/junit/XYPlotTests.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 2 ">XYPlotTests</a>
+            
+    
+            <a href="org/jfree/chart/annotations/junit/XYPointerAnnotationTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYPointerAnnotationTests</a>
+            
+    
+            <a href="org/jfree/chart/annotations/junit/XYPolygonAnnotationTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYPolygonAnnotationTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/XYSeriesCollectionTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYSeriesCollectionTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/XYSeriesTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYSeriesTests</a>
+            
+    
+            <a href="org/jfree/chart/annotations/junit/XYShapeAnnotationTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYShapeAnnotationTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYShapeRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYShapeRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYSplineRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYSplineRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/XYStepAreaChartTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 2 ">XYStepAreaChartTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYStepAreaRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYStepAreaRendererTests</a>
+            
+    
+            <a href="org/jfree/chart/junit/XYStepChartTests.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 2 ">XYStepChartTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/XYStepRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYStepRendererTests</a>
+            
+    
+            <a href="org/jfree/data/gantt/junit/XYTaskDatasetTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYTaskDatasetTests</a>
+            
+    
+            <a href="org/jfree/chart/annotations/junit/XYTextAnnotationTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYTextAnnotationTests</a>
+            
+    
+            <a href="org/jfree/chart/annotations/junit/XYTitleAnnotationTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">XYTitleAnnotationTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/YIntervalDataItemTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">YIntervalDataItemTests</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/junit/YIntervalRendererTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">YIntervalRendererTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/YIntervalSeriesCollectionTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">YIntervalSeriesCollectionTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/YIntervalSeriesTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">YIntervalSeriesTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/YIntervalTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">YIntervalTests</a>
+            
+    
+            <a href="org/jfree/data/xy/junit/YWithXIntervalTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">YWithXIntervalTests</a>
+            
+    
+            <a href="org/jfree/data/time/junit/YearTests.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 2 ">YearTests</a>
+           </div>
+   
+   </div>
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Fri Feb 3 2023 02:44:30 MST using coverage data from Fri Feb 3 2023 02:44:28 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

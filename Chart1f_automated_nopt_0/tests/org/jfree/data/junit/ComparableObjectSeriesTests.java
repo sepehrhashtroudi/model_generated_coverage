@@ -110,14 +110,8 @@ public class ComparableObjectSeriesTests extends TestCase {
     /**
      * Some checks for the constructor.
      */
-public void testHashCode802() { 
-     ComparableObjectItem item1 = new ComparableObjectItem(new Integer(1), "XYZ"); 
-     ComparableObjectItem item2 = new ComparableObjectItem(new Integer(1), "XYZ"); 
-     assertTrue(item1.equals(item2)); 
-     int h1 = item1.hashCode(); 
-     int h2 = item2.hashCode(); 
-     assertEquals(h1, h2); 
- }
+public void testGetItemCount3376() { MyComparableObjectSeries s1 = new MyComparableObjectSeries("A"); assertEquals(0, s1.getItemCount()); s1.add("A", "1"); assertEquals(1, s1.getItemCount()); s1.add("B", "2"); assertEquals(2, s1.getItemCount()); s1.add("C", "3"); assertEquals(3, s1.getItemCount()); s1.add("D", "4"); assertEquals(4, s1.getItemCount()); s1.add("E", "5"); assertEquals(5, s1.getItemCount()); }
+public void testGetMaximumItemCount3378() { MyComparableObjectSeries s1 = new MyComparableObjectSeries("A"); assertEquals(0, s1.getMaximumItemCount()); s1.setMaximumItemCount(1); assertEquals(1, s1.getMaximumItemCount()); s1.setMaximumItemCount(2); assertEquals(2, s1.getMaximumItemCount()); s1.setMaximumItemCount(3); assertEquals(3, s1.getMaximumItemCount()); s1.setMaximumItemCount(4); assertEquals(4, s1.getMaximumItemCount()); s1.setMaximumItemCount(5); assertEquals(5, s1.getMaximumItemCount()); }
     
 
     /**

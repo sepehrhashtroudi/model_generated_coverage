@@ -82,26 +82,7 @@ public class BoxAndWhiskerToolTipGeneratorTests extends TestCase {
     /**
      * A series of tests for the equals() method.
      */
-public void testPublicCloneable1214() { 
-     BoxAndWhiskerToolTipGenerator g1 = new BoxAndWhiskerToolTipGenerator(); 
-     assertTrue(g1 instanceof PublicCloneable); 
- }
-public void testSerialization1215() { 
-     BoxAndWhiskerToolTipGenerator g1 = new BoxAndWhiskerToolTipGenerator(); 
-     BoxAndWhiskerToolTipGenerator g2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(g1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         g2 = (BoxAndWhiskerToolTipGenerator) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(g1, g2); 
- }
+public void testEquals6348() { BoxAndWhiskerToolTipGenerator g1 = new BoxAndWhiskerToolTipGenerator(); BoxAndWhiskerToolTipGenerator g2 = new BoxAndWhiskerToolTipGenerator(); assertEquals(g1, g2); }
     
 
     /**

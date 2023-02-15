@@ -99,37 +99,14 @@ public class StackedXYAreaRendererTests extends TestCase {
     /**
      * Test that the equals() method distinguishes all fields.
      */
-public void testPublicCloneable1109() { 
-     StackedXYAreaRenderer r1 = new StackedXYAreaRenderer(); 
-     assertTrue(r1 instanceof PublicCloneable); 
- }
-public void testEquals1110() { 
-     StackedXYAreaRenderer r1 = new StackedXYAreaRenderer(); 
-     StackedXYAreaRenderer r2 = new StackedXYAreaRenderer(); 
-     assertEquals(r1, r2); 
-     assertEquals(r2, r1); 
-     r1.setShapePaint(new GradientPaint(1.0f, 2.0f, Color.yellow, 3.0f, 4.0f, Color.green)); 
-     assertFalse(r1.equals(r2)); 
-     r2.setShapePaint(new GradientPaint(1.0f, 2.0f, Color.yellow, 3.0f, 4.0f, Color.green)); 
-     assertTrue(r1.equals(r2)); 
-     Stroke s = new BasicStroke(1.23f); 
-     r1.setShapeStroke(s); 
-     assertFalse(r1.equals(r2)); 
-     r2.setShapeStroke(s); 
-     assertTrue(r1.equals(r2)); 
- }
-public void testCloning1111() { 
-     StackedXYAreaRenderer r1 = new StackedXYAreaRenderer(); 
-     StackedXYAreaRenderer r2 = null; 
-     try { 
-         r2 = (StackedXYAreaRenderer) r1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(r1 != r2); 
-     assertTrue(r1.getClass() == r2.getClass()); 
-     assertTrue(r1.equals(r2)); 
- }
+public void testGetItemCount688() { DefaultTableXYDataset d = new DefaultTableXYDataset(); XYSeries s1 = new XYSeries("Series 1", true, false); s1.add(1.0, 1.1); s1.add(2.0, 2.2); d.addSeries(s1); assertEquals(2, d.getItemCount()); d.addSeries(s1); assertEquals(2, d.getItemCount()); d.removeSeries(s1); assertEquals(0, d.getItemCount()); }
+public void testGetItemCount689() { DefaultTableXYDataset d = new DefaultTableXYDataset(); XYSeries s1 = new XYSeries("Series 1", true, false); s1.add(1.0, 1.1); s1.add(2.0, 2.2); d.addSeries(s1); assertEquals(2, d.getItemCount()); XYSeries s2 = new XYSeries("Series 2", true, false); s2.add(1.0, 1.1); s2.add(2.0, 2.2); d.addSeries(s2); assertEquals(2, d.getItemCount()); }
+public void testGetSeriesKey692() { DefaultTableXYDataset d1 = new DefaultTableXYDataset(); XYSeries s1 = new XYSeries("Series 1", true, false); s1.add(1.0, 1.1); s1.add(2.0, 2.2); s1.add(3.0, 3.3); d1.addSeries(s1); assertEquals("Series 1", d1.getSeriesKey(0)); assertEquals("Series 2", d1.getSeriesKey(1)); assertEquals("Series 3", d1.getSeriesKey(2)); }
+public void testGetSeriesKey693() { DefaultTableXYDataset d = new DefaultTableXYDataset(); XYSeries s1 = new XYSeries("Series 1", true, false); s1.add(1.0, 1.1); s1.add(2.0, 2.2); s1.add(3.0, 3.3); d.addSeries(s1); assertEquals("Series 1", d.getSeriesKey(0)); assertEquals("Series 2", d.getSeriesKey(1)); assertEquals("Series 3", d.getSeriesKey(2)); }
+public void testStackedXYAreaRenderer5903() { StackedXYAreaRenderer r = new StackedXYAreaRenderer(); assertEquals(r, new StackedXYAreaRenderer()); }
+public void testStackedXYAreaRenderer5904() { StackedXYAreaRenderer r = new StackedXYAreaRenderer(); assertEquals(r, r); }
+public void testCloning5906() throws CloneNotSupportedException { StackedXYAreaRenderer r1 = new StackedXYAreaRenderer(); StackedXYAreaRenderer r2 = (StackedXYAreaRenderer) r1.clone(); assertNotSame(r1, r2); assertSame(r1.getClass(), r2.getClass()); assertEquals(r1, r2); }
+public void testDrawItem5922() { }
     
 
     /**

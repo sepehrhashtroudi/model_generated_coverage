@@ -97,66 +97,11 @@ public class TimePeriodValuesCollectionTests extends TestCase {
      * A test for bug report 1161340.  I wasn't able to reproduce the problem
      * with this test.
      */
-public void testSerialization804() { 
-     TimePeriodValuesCollection c1 = new TimePeriodValuesCollection(); 
-     TimePeriodValuesCollection c2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(c1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         c2 = (TimePeriodValuesCollection) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(c1, c2); 
- }
-public void testRemoveSeries806() { 
-     TimePeriodValuesCollection c1 = new TimePeriodValuesCollection(); 
-     TimePeriodValues s1 = new TimePeriodValues("Series 1"); 
-     c1.addSeries(s1); 
-     c1.removeSeries(0); 
-     assertEquals(0, c1.getSeriesCount()); 
-     c1.addSeries(new TimePeriodValues("Empty Series")); 
-     boolean pass = false; 
-     try { 
-         c1.removeSeries(-1); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
-     pass = false; 
-     try { 
-         c1.removeSeries(1); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
-public void testRemoveSeries808() { 
-     TimePeriodValuesCollection c1 = new TimePeriodValuesCollection(); 
-     TimePeriodValues s1 = new TimePeriodValues("Series 1"); 
-     c1.addSeries(s1); 
-     c1.removeSeries(s1); 
-     assertEquals(0, c1.getSeriesCount()); 
-     c1.addSeries(new TimePeriodValues("Empty Series")); 
-     boolean pass = false; 
-     try { 
-         c1.removeSeries(-1); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
-     pass = false; 
-     try { 
-         c1.removeSeries(null); 
-     } catch (IllegalArgumentException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
+public void testGetMinStartIndex1059() { System.out.println("getMinStartIndex"); TimePeriodValues instance = new TimePeriodValues("Test"); int expResult = 0; int result = instance.getMinStartIndex(); assertEquals(expResult, result); }
+public void testGetMinMiddleIndex1062() { System.out.println("getMinMiddleIndex"); TimePeriodValues instance = new TimePeriodValues("Test"); int expResult = 0; int result = instance.getMinMiddleIndex(); assertEquals(expResult, result); }
+public void testGetMaxMiddleIndex1064() { System.out.println("getMaxMiddleIndex"); TimePeriodValues instance = new TimePeriodValues("Test"); int expResult = 0; int result = instance.getMaxMiddleIndex(); assertEquals(expResult, result); }
+public void testGetMaxEndIndex1065() { System.out.println("getMaxEndIndex"); TimePeriodValues instance = new TimePeriodValues("Test"); int expResult = 10; int result = instance.getMaxEndIndex(); assertEquals(expResult, result); }
+public void testGetSeriesCount4300() { System.out.println("getSeriesCount"); TimePeriodValuesCollection instance = new TimePeriodValuesCollection(); int expResult = 0; int result = instance.getSeriesCount(); assertEquals(expResult, result); }
     
     
     /**

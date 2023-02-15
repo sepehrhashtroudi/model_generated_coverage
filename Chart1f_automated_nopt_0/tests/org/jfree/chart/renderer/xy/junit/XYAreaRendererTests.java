@@ -92,6 +92,7 @@ public class XYAreaRendererTests extends TestCase {
     /**
      * Check that the equals() method distinguishes all fields.
      */
+public void testFireChangeEvent7984() { XYAreaRenderer r = new XYAreaRenderer(); r.setLegendArea(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0)); assertEquals(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0), r.getLegendArea()); }
     
 
     /**

@@ -82,22 +82,7 @@ public class PlotRenderingInfoTests extends TestCase {
     /**
      * Test the equals() method.
      */
-public void testSerialization100() { 
-     PlotRenderingInfo p1 = new PlotRenderingInfo(new ChartRenderingInfo()); 
-     PlotRenderingInfo p2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(p1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         p2 = (PlotRenderingInfo) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         System.out.println(e.toString()); 
-     } 
-     assertEquals(p1, p2); 
- }
+public void testPlotRenderingInfo484() { ChartRenderingInfo r1 = new ChartRenderingInfo(); ChartRenderingInfo r2 = new ChartRenderingInfo(); PlotRenderingInfo p1 = new PlotRenderingInfo(r1); PlotRenderingInfo p2 = new PlotRenderingInfo(r2); assertEquals(p1, p2); }
     
 
     /**

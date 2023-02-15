@@ -103,53 +103,21 @@ public class SecondTests extends TestCase {
      *
      * SourceForge Bug ID: 558850.
      */
-public void test16118721296() { 
-     Minute m1 = new Minute(0, 10, 15, 4, 2000); 
-     Minute m2 = (Minute) m1.previous(); 
-     assertEquals(m2, new Minute(59, 9, 15, 4, 2000)); 
- }
-public void testSerialization1462() { 
-     Second s1 = new Second(); 
-     Second s2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(s1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         s2 = (Second) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         System.out.println(e.toString()); 
-     } 
-     assertEquals(s1, s2); 
- }
-public void testGetFirstMillisecondWithCalendar1479() { 
-     Second s = new Second(25, 40, 2, 15, 4, 2000); 
-     GregorianCalendar calendar = new GregorianCalendar(Locale.GERMANY); 
-     calendar.setTimeZone(TimeZone.getTimeZone("Europe/Frankfurt")); 
-     assertEquals(955766455500L, s.getFirstMillisecond(calendar)); 
-     boolean pass = false; 
-     try { 
-         s.getFirstMillisecond((Calendar) null); 
-     } catch (NullPointerException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
-public void testGetFirstMillisecondWithCalendar1480() { 
-     Second s = new Second(25, 40, 2, 15, 4, 2000); 
-     GregorianCalendar calendar = new GregorianCalendar(Locale.GERMANY); 
-     calendar.setTimeZone(TimeZone.getTimeZone("Europe/Frankfurt")); 
-     assertEquals(3155850061L, s.getFirstMillisecond(calendar)); 
-     boolean pass = false; 
-     try { 
-         s.getFirstMillisecond((Calendar) null); 
-     } catch (NullPointerException e) { 
-         pass = true; 
-     } 
-     assertTrue(pass); 
- }
+public void testGetHourValue7047() { Minute m = new Minute(1, 1, 1, 1, 2000); assertEquals(1,m.getHourValue()); m = new Minute(1, 1, 1, 1, 1900); assertEquals(1,m.getHourValue()); m = new Minute(1, 1, 1, 1, 1900); assertEquals(1,m.getHourValue()); m = new Minute(1, 1, 1, 1, 1900); assertEquals(1,m.getHourValue()); m = new Minute(1, 1, 1, 1, 1900); assertEquals(1,m.getHourValue()); }
+public void testGetHourValue7048() { Minute m = new Minute(1, 1, 1, 1, 2000); assertEquals(1, m.getHourValue()); m = new Minute(1, 1, 1, 1, 1900); assertEquals(1, m.getHourValue()); m = new Minute(1, 1, 1, 1, 1900); assertEquals(1, m.getHourValue()); m = new Minute(1, 1, 1, 1, 1900); assertEquals(1, m.getHourValue()); }
+public void testToString8731() { Second s = new Second(1, 1, 1, 1, 1, 1); assertEquals("1:01:01:01", s.toString()); }
+public void testGetSecond8738() { Second s = new Second(1, 1, 1, 1, 1, 2000); assertEquals(1, s.getSecond()); s = new Second(1, 1, 1, 1, 1, 2000); assertEquals(1, s.getSecond()); s = new Second(1, 1, 1, 1, 1, 1900); assertEquals(1, s.getSecond()); s = new Second(1, 1, 1, 1, 1, 1900); assertEquals(1, s.getSecond()); s = new Second(1, 1, 1, 1, 1, 1900); assertEquals(1, s.getSecond());
+}
+
+public void testGetLastMillisecond8742() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Second s = new Second(0, 0, 0, 0, 0, 1970); assertEquals(0, s.getLastMillisecond()); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testGetFirstMillisecond8747() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Second s = new Second(0, 0, 0, 0, 0, 0); Calendar c = new GregorianCalendar(saved); assertEquals(0, s.getFirstMillisecond(c)); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testGetFirstMillisecond8748() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Second s = new Second(0, 0, 0, 0, 0, 2006); Calendar c = new GregorianCalendar(saved); assertEquals(0, s.getFirstMillisecond(c)); Locale.setDefault(saved); TimeZone.setDefault(savedZone); s = new Second(0, 0, 0, 0, 0, 2006); assertEquals(0, s.getFirstMillisecond(c)); }
+public void testGetLastMillisecond8749() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Second s = new Second(0, 0, 0, 0, 0, 1970); assertEquals(0, s.getLastMillisecond(null)); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testGetLastMillisecond8750() { Locale saved = Locale.getDefault(); Locale.setDefault(Locale.UK); TimeZone savedZone = TimeZone.getDefault(); TimeZone.setDefault(TimeZone.getTimeZone("Europe/London")); Second s = new Second(0, 0, 0, 0, 0, 1970); assertEquals(0, s.getFirstMillisecond(null)); Locale.setDefault(saved); TimeZone.setDefault(savedZone); }
+public void testHashCode8758() { Second s1 = new Second(1, 0, 0, 0, 0, 2000); Second s2 = new Second(1, 0, 0, 0, 0, 2000); assertEquals(s1.hashCode(), s2.hashCode()); }
+public void testHashCode8759() { Second s1 = new Second(0, 0, 0, 0, 0, 2000); Second s2 = new Second(0, 0, 0, 0, 0, 2000); assertEquals(s1.hashCode(), s2.hashCode()); }
+public void testHashCode8761() { Second s1 = new Second(); Second s2 = new Second(); assertEquals(s1, s2); int h1 = s1.hashCode(); int h2 = s2.hashCode(); assertEquals(h1, h2); }
+public void testHashCode8762() { Second s1 = new Second(1, 1, 1, 1, 1, 2000); Second s2 = new Second(1, 1, 1, 1, 1, 2000); assertEquals(s1.hashCode(), s2.hashCode()); }
     
 
     /**

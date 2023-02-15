@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="2" failures="19" hostname="sepehr-UX310UQK" name="org.jsoup.parser.ParserTest" skipped="0" tests="28" time="0.17" timestamp="2023-02-09T19:41:57">
+  <properties>
+    <property name="java.vendor" value="Private Build" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="ant.file.type.jsoup-from-maven" value="file" />
+    <property name="maven.build.srcDir.0" value="src/main/java" />
+    <property name="os.name" value="Linux" />
+    <property name="clover.historical.json" value="true" />
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes" />
+    <property name="sun.desktop" value="gnome" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="java.runtime.version" value="1.8.0_352-8u352-ga-1~20.04-b08" />
+    <property name="maven.build.resourceDir.0" value="src/main/resources" />
+    <property name="project.build.sourceEncoding" value="UTF-8" />
+    <property name="clover.project.historydir" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/.cloverhistory/jsoup" />
+    <property name="clover.flushinterval" value="100" />
+    <property name="user.name" value="sepehr" />
+    <property name="maven.build.outputDir" value="target/classes" />
+    <property name="maven.repo.local" value="/home/sepehr/.m2/repository" />
+    <property name="maven.build.finalName" value="jsoup-1.1.2-SNAPSHOT" />
+    <property name="maven.build.testDir.0" value="src/test/java" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64" />
+    <property name="ant.project.default-target" value="package" />
+    <property name="maven.reporting.outputDirectory" value="target/site" />
+    <property name="ant.project.name" value="jsoup" />
+    <property name="java.version" value="1.8.0_352" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="clover.initstring" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/.clover/clover4_4_1.db" />
+    <property name="java.class.version" value="52.0" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre" />
+    <property name="clover.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/clover" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/build.xml" />
+    <property name="os.version" value="5.15.0-58-generic" />
+    <property name="maven.build.testOutputDir" value="target/test-classes" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="25.352-b08" />
+    <property name="maven.build.dir" value="target" />
+    <property name="maven.test.reports" value="target/test-reports" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="clover.jar" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/${clover.home}/clover.jar" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="java.specification.maintenance.version" value="4" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="project.build.outputDirectory" value="target/classes" />
+    <property name="user.home" value="/home/sepehr" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="clover.dest" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/clover/jsoup" />
+    <property name="clover.span" value="1day" />
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="test.target" value="test" />
+    <property name="maven.settings.offline" value="false" />
+    <property name="java.vm.vendor" value="Private Build" />
+    <property name="maven.settings.interactiveMode" value="true" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner org.jsoup.parser.ParserTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/target/test-reports/TEST-org.jsoup.parser.ParserTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/junitvmwatcher2683886971974655722.properties propsfile=/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/junit1772549378189992824.properties" />
+    <property name="java.class.path" value="/home/sepehr/.ant/lib/clover.jar:/home/sepehr/.m2/repository/junit/junit/4.5/junit-4.5.jar:/home/sepehr/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/target/classes:/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/target/test-classes:/home/sepehr/.ant/lib/evosuite-1.0.6.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.7 compiled on October 24 2019" />
+    <property name="project.name" value="jsoup" />
+    <property name="project.build.directory" value="target" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="clover.snapshot.file" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/.cloverhistory/jsoup/clover.snapshot" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="junit.present" value="true" />
+    <property name="project.title" value="jsoup" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="ant.file.jsoup-from-maven" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/maven-build.xml" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="os.arch" value="amd64" />
+    <property name="clover.jarpath" value="/home/sepehr/.ant/lib/clover.jar" />
+    <property name="maven.build.testResourceDir.0" value="src/test/resources" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="user.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="basedir" value="." />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="build.compiler" value="com.atlassian.clover.ant.taskdefs.CloverCompilerAdapter" />
+    <property name="clover.historydir" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/.cloverhistory" />
+    <property name="ant.file.type.jsoup" value="file" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="ant.project.invoked-targets" value="with.clover,test,clover.report" />
+    <property name="ant.file.jsoup" value="/home/sepehr/masters/test_generation/model_generated_coverage/jsoup1f_nopt_0/build.xml" />
+    <property name="clover.flushpolicy" value="directed" />
+  </properties>
+  <testcase classname="org.jsoup.parser.ParserTest" name="addFirst" time="0.035">
+    <failure message="expected:&lt;[One Two Three]&gt; but was:&lt;[[T, h, r, e, e, T, w, o, O, n, e,  , T, w, o,  , T, h, r, e, e]]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[One Two Three]&gt; but was:&lt;[[T, h, r, e, e, T, w, o, O, n, e,  , T, w, o,  , T, h, r, e, e]]&gt;
+	at org.jsoup.parser.ParserTest.__CLR4_4_1crxkay20x(ParserTest.java:23)
+	at org.jsoup.parser.ParserTest.addFirst(ParserTest.java:23)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="testParse128" time="0.027">
+    <failure message="expected:&lt;[html]&gt; but was:&lt;[&lt;title&gt;Title&lt;/title&gt;]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[html]&gt; but was:&lt;[&lt;title&gt;Title&lt;/title&gt;]&gt;
+	at org.jsoup.parser.ParserTest.__CLR4_4_1rmsd0d21q(ParserTest.java:31)
+	at org.jsoup.parser.ParserTest.testParse128(ParserTest.java:31)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="testParse130" time="0.002">
+    <failure message="expected:&lt;[html]&gt; but was:&lt;[]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[html]&gt; but was:&lt;[]&gt;
+	at org.jsoup.parser.ParserTest.__CLR4_4_1vcnj8421z(ParserTest.java:33)
+	at org.jsoup.parser.ParserTest.testParse130(ParserTest.java:33)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="testParse132" time="0.003">
+    <failure message="expected:&lt;[html]&gt; but was:&lt;[&lt;title&gt;Title&lt;/title&gt;]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[html]&gt; but was:&lt;[&lt;title&gt;Title&lt;/title&gt;]&gt;
+	at org.jsoup.parser.ParserTest.__CLR4_4_1x6gl6222a(ParserTest.java:37)
+	at org.jsoup.parser.ParserTest.testParse132(ParserTest.java:37)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="testParseEndTag134" time="0.001" />
+  <testcase classname="org.jsoup.parser.ParserTest" name="testParseEndTag135" time="0.003">
+    <failure message="expected:&lt;[Hello]&gt; but was:&lt;[]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[Hello]&gt; but was:&lt;[]&gt;
+	at org.jsoup.parser.ParserTest.__CLR4_4_1wmwqu222n(ParserTest.java:41)
+	at org.jsoup.parser.ParserTest.testParseEndTag135(ParserTest.java:41)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="testParseEndTag136" time="0.002">
+    <failure message="expected:&lt;[body]&gt; but was:&lt;[Hello]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[body]&gt; but was:&lt;[Hello]&gt;
+	at org.jsoup.parser.ParserTest.__CLR4_4_1z57ccl22y(ParserTest.java:43)
+	at org.jsoup.parser.ParserTest.testParseEndTag136(ParserTest.java:43)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="testParseEndTag137" time="0.003">
+    <failure message="expected:&lt;1&gt; but was:&lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;1&gt; but was:&lt;0&gt;
+	at org.jsoup.parser.ParserTest.__CLR4_4_1vw7dk4237(ParserTest.java:45)
+	at org.jsoup.parser.ParserTest.testParseEndTag137(ParserTest.java:45)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="testParseTextNode141" time="0.003">
+    <failure message="expected:&lt;[There]&gt; but was:&lt;[]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[There]&gt; but was:&lt;[]&gt;
+	at org.jsoup.parser.ParserTest.__CLR4_4_1ltphvp23i(ParserTest.java:49)
+	at org.jsoup.parser.ParserTest.testParseTextNode141(ParserTest.java:49)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="parsesTextNodes" time="0.003">
+    <failure message="expected:&lt;Hello[ There]&gt; but was:&lt;Hello[]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;Hello[ There]&gt; but was:&lt;Hello[]&gt;
+	at org.jsoup.parser.ParserTest.__CLR4_4_1wxblh23u(ParserTest.java:53)
+	at org.jsoup.parser.ParserTest.parsesTextNodes(ParserTest.java:53)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="testPopStackToSuitableContainer151" time="0.004">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at org.jsoup.parser.ParserTest.__CLR4_4_12yzhky243(ParserTest.java:57)
+	at org.jsoup.parser.ParserTest.testPopStackToSuitableContainer151(ParserTest.java:57)
+</error>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="testPopStackToSuitableContainer155" time="0.003">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at org.jsoup.parser.ParserTest.__CLR4_4_1a10dky24a(ParserTest.java:61)
+	at org.jsoup.parser.ParserTest.testPopStackToSuitableContainer155(ParserTest.java:61)
+</error>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="testTag195" time="0.001" />
+  <testcase classname="org.jsoup.parser.ParserTest" name="getName1" time="0.001" />
+  <testcase classname="org.jsoup.parser.ParserTest" name="canContain1" time="0.001">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
+	at org.jsoup.parser.ParserTest.__CLR4_4_15xgad0251(ParserTest.java:73)
+	at org.jsoup.parser.ParserTest.canContain1(ParserTest.java:73)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="canContain2" time="0.003">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
+	at org.jsoup.parser.ParserTest.__CLR4_4_196g95h25b(ParserTest.java:75)
+	at org.jsoup.parser.ParserTest.canContain2(ParserTest.java:75)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="canContain" time="0.001">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
+	at org.jsoup.parser.ParserTest.__CLR4_4_1uzsjhn25n(ParserTest.java:77)
+	at org.jsoup.parser.ParserTest.canContain(ParserTest.java:77)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="isData1" time="0.002">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
+	at org.jsoup.parser.ParserTest.__CLR4_4_1jiqx5w25u(ParserTest.java:79)
+	at org.jsoup.parser.ParserTest.isData1(ParserTest.java:79)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="isData" time="0.001">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
+	at org.jsoup.parser.ParserTest.__CLR4_4_1ufl3k5260(ParserTest.java:81)
+	at org.jsoup.parser.ParserTest.isData(ParserTest.java:81)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="testGetImplicitParent197" time="0.001">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
+	at org.jsoup.parser.ParserTest.__CLR4_4_1v2y6pp269(ParserTest.java:85)
+	at org.jsoup.parser.ParserTest.testGetImplicitParent197(ParserTest.java:85)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="testHashCode200" time="0.0" />
+  <testcase classname="org.jsoup.parser.ParserTest" name="setAncestor" time="0.0" />
+  <testcase classname="org.jsoup.parser.ParserTest" name="addFirst1" time="0.002">
+    <failure message="expected:&lt;[One Two Three]&gt; but was:&lt;[[ , T, w, o,  , T, h, r, e, e]]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[One Two Three]&gt; but was:&lt;[[ , T, w, o,  , T, h, r, e, e]]&gt;
+	at org.jsoup.parser.ParserTest.__CLR4_4_11cvxpz21c(ParserTest.java:27)
+	at org.jsoup.parser.ParserTest.addFirst1(ParserTest.java:27)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="parsesComments" time="0.004">
+    <failure message="expected:&lt;...tle&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;[Thir]d!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&gt; but was:&lt;...tle&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;[Secon]d!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;...tle&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;[Thir]d!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&gt; but was:&lt;...tle&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;[Secon]d!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&gt;
+	at org.jsoup.parser.ParserTest.__CLR4_4_1ltfdad21l(ParserTest.java:29)
+	at org.jsoup.parser.ParserTest.parsesComments(ParserTest.java:29)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="addFirst2" time="0.001">
+    <failure message="expected:&lt;[One Two Three]&gt; but was:&lt;[[ , T, w, o,  , T, h, r, e, e]]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[One Two Three]&gt; but was:&lt;[[ , T, w, o,  , T, h, r, e, e]]&gt;
+	at org.jsoup.parser.ParserTest.__CLR4_4_11w412i215(ParserTest.java:25)
+	at org.jsoup.parser.ParserTest.addFirst2(ParserTest.java:25)
+</failure>
+  </testcase>
+  <testcase classname="org.jsoup.parser.ParserTest" name="valueOf" time="0.001" />
+  <testcase classname="org.jsoup.parser.ParserTest" name="getName" time="0.001" />
+  <testcase classname="org.jsoup.parser.ParserTest" name="isEmpty" time="0.001">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
+	at org.jsoup.parser.ParserTest.__CLR4_4_1u3unrq266(ParserTest.java:83)
+	at org.jsoup.parser.ParserTest.isEmpty(ParserTest.java:83)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

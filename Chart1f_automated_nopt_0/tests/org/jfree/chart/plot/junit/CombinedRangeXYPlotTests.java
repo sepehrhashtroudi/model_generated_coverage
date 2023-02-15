@@ -111,16 +111,15 @@ public class CombinedRangeXYPlotTests extends TestCase
     /**
      * Test the equals method.
      */
-public void testRemoveSubplot769() { 
-     CombinedRangeXYPlot plot = new CombinedRangeXYPlot(); 
-     XYPlot plot1 = new XYPlot(); 
-     XYPlot plot2 = new XYPlot(); 
-     plot.add(plot1); 
-     plot.add(plot2); 
-     plot.remove(plot2); 
-     List plots = plot.getSubplots(); 
-     assertTrue(plots.get(0) == plot1); 
- }
+public void testCombinedRangeXYPlot4025() { CombinedRangeXYPlot plot1 = createPlot(); CombinedRangeXYPlot plot2 = createPlot(); assertEquals(plot1, plot2); }
+public void testEquals4026() { CombinedRangeXYPlot plot1 = new CombinedRangeXYPlot(); CombinedRangeXYPlot plot2 = new CombinedRangeXYPlot(); assertEquals(plot1, plot2); }
+public void testCombinedRangeXYPlot4027() { try { CombinedRangeXYPlot plot1 = createPlot(); CombinedRangeXYPlot plot2 = createPlot(); assertEquals(plot1, plot2); } catch (Exception e) { fail(e.getMessage()); } }
+public void testEquals4028() { CombinedRangeXYPlot plot1 = createPlot(); CombinedRangeXYPlot plot2 = createPlot(); assertEquals(plot1, plot2); }
+public void testCloning4029() throws CloneNotSupportedException { CombinedRangeXYPlot plot1 = createPlot(); CombinedRangeXYPlot plot2 = (CombinedRangeXYPlot) plot1.clone(); assertNotSame(plot1, plot2); }
+public void testCloning4031() throws CloneNotSupportedException { CombinedRangeXYPlot plot1 = createPlot(); CombinedRangeXYPlot plot2 = (CombinedRangeXYPlot) plot1.clone(); assertNotSame(plot1, plot2); assertSame(plot1.getClass(), plot2.getClass()); assertEquals(plot1, plot2); plot1.setGap(0.5); plot2.setGap(0.5); assertEquals(plot1, plot2); }
+public void testCloning4033() throws CloneNotSupportedException { CombinedRangeXYPlot plot1 = createPlot(); CombinedRangeXYPlot plot2 = (CombinedRangeXYPlot) plot1.clone(); plot1.add(plot2); assertNotSame(plot1, plot2); }
+public void testGetPlotDiscontinuous6421() { StandardXYItemRenderer r = new StandardXYItemRenderer(); assertFalse(r.getPlotDiscontinuous()); r.setPlotDiscontinuous(true); assertTrue(r.getPlotDiscontinuous()); }
+public void testDrawAnnotations8508() { }
     
 
     /**

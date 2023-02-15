@@ -111,22 +111,7 @@ public class MultiplePiePlotTests extends TestCase
     /**
      * Some checks for the constructors.
      */
-public void testSerialization264() { 
-     MultiplePiePlot p1 = new MultiplePiePlot(new DefaultCategoryDataset()); 
-     MultiplePiePlot p2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(p1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         p2 = (MultiplePiePlot) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(p1, p2); 
- }
+public void testEquals1075() { MultiplePiePlot p1 = new MultiplePiePlot(); MultiplePiePlot p2 = new MultiplePiePlot(); assertEquals(p1, p2); assertEquals(p2, p1); p1.setDataExtractOrder(TableOrder.BY_COLUMN); assertFalse(p1.equals(p2)); p2.setDataExtractOrder(TableOrder.BY_COLUMN); assertEquals(p1, p2); p1.setLimit(0.5); assertFalse(p1.equals(p2)); p2.setLimit(0.5); assertEquals(p1, p2); }
     
 
     /**

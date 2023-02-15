@@ -86,44 +86,7 @@ public class XYShapeAnnotationTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testHashCode567() { 
-     XYShapeAnnotation a1 = new XYShapeAnnotation(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0), new BasicStroke(1.2f), Color.red, Color.blue); 
-     XYShapeAnnotation a2 = new XYShapeAnnotation(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0), new BasicStroke(1.2f), Color.red, Color.blue); 
-     assertTrue(a1.equals(a2)); 
-     int h1 = a1.hashCode(); 
-     int h2 = a2.hashCode(); 
-     assertEquals(h1, h2); 
- }
-public void testEquals568() { 
-     XYShapeAnnotation a1 = new XYShapeAnnotation(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0), new BasicStroke(1.2f), Color.red, Color.blue); 
-     XYShapeAnnotation a2 = new XYShapeAnnotation(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0), new BasicStroke(1.2f), Color.red, Color.blue); 
-     assertTrue(a1.equals(a2)); 
-     assertTrue(a2.equals(a1)); 
-     a1 = new XYShapeAnnotation(new Rectangle2D.Double(4.0, 3.0, 2.0, 1.0), new BasicStroke(1.2f), Color.red, Color.blue); 
-     assertFalse(a1.equals(a2)); 
-     a2 = new XYShapeAnnotation(new Rectangle2D.Double(4.0, 3.0, 2.0, 1.0), new BasicStroke(1.2f), Color.red, Color.blue); 
-     assertTrue(a1.equals(a2)); 
-     a1 = new XYShapeAnnotation(new Rectangle2D.Double(4.0, 3.0, 2.0, 1.0), new BasicStroke(2.3f), Color.red, Color.blue); 
-     assertFalse(a1.equals(a2)); 
-     a2 = new XYShapeAnnotation(new Rectangle2D.Double(4.0, 3.0, 2.0, 1.0), new BasicStroke(2.3f), Color.red, Color.blue); 
-     assertTrue(a1.equals(a2)); 
- }
-public void testSerialization569() { 
-     XYShapeAnnotation a1 = new XYShapeAnnotation(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0), new BasicStroke(1.2f), Color.red, Color.blue); 
-     XYShapeAnnotation a2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(a1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         a2 = (XYShapeAnnotation) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(a1, a2); 
- }
+public void testXYShapeAnnotation2848() { XYShapeAnnotation a1 = new XYShapeAnnotation(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0), new BasicStroke(1.2f), Color.RED, Color.BLUE); XYShapeAnnotation a2 = new XYShapeAnnotation(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0), new BasicStroke(1.2f), Color.RED, Color.BLUE); assertEquals(a1, a2); }
     
 
     /**

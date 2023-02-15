@@ -80,14 +80,12 @@ public class NumberTickUnitTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
-public void testHashCode1401() { 
-     NumberTickUnit t1 = new NumberTickUnit(1.23, new DecimalFormat("0.00")); 
-     NumberTickUnit t2 = new NumberTickUnit(1.23, new DecimalFormat("0.00")); 
-     assertTrue(t1.equals(t2)); 
-     int h1 = t1.hashCode(); 
-     int h2 = t2.hashCode(); 
-     assertEquals(h1, h2); 
- }
+public void testNumberTickUnit8106() { NumberTickUnit t1 = new NumberTickUnit(1.23, new DecimalFormat("0.00")); NumberTickUnit t2 = new NumberTickUnit(1.23, new DecimalFormat("0.00")); NumberTickUnit t3 = new NumberTickUnit(1.23, new DecimalFormat("0.00")); NumberTickUnit t4 = new NumberTickUnit(1.23, new DecimalFormat("0.00")); assertEquals(t1.valueToString(1.23), t2.valueToString(1.23)); assertEquals(t1.valueToString(1.23), t3.valueToString(1.23));
+}
+
+public void equals() { NumberTickUnit f1 = new NumberTickUnit(1.0, new DecimalFormat("0.00")); NumberTickUnit f2 = new NumberTickUnit(1.0, new DecimalFormat("0.00")); NumberTickUnit f3 = new NumberTickUnit(1.0, new DecimalFormat("0.00")); NumberTickUnit f4 = new NumberTickUnit(1.0, new DecimalFormat("0.00")); assertTrue(f1.equals(f1)); assertTrue(f1.equals(f2)); assertFalse(f1.equals(f3)); assertFalse(f1.equals(f4)); }
+//public void equals() { NumberTickUnit t1 = new NumberTickUnit(1.23, new DecimalFormat("0.00")); NumberTickUnit t2 = new NumberTickUnit(1.23, new DecimalFormat("0.00")); NumberTickUnit t3 = new NumberTickUnit(1.23, new DecimalFormat("0.00")); NumberTickUnit t4 = new NumberTickUnit(1.23, new DecimalFormat("0.00")); assertTrue(t1.equals(t2)); assertTrue(t2.equals(t1)); assertFalse(t1.equals(t3)); assertFalse(t3.equals(t4)); }
+public void testHashCode8115() { NumberTickUnit t1 = new NumberTickUnit(1.23, new DecimalFormat("0.00")); NumberTickUnit t2 = new NumberTickUnit(1.23, new DecimalFormat("0.00")); NumberTickUnit t3 = new NumberTickUnit(1.23, new DecimalFormat("0.00")); assertEquals(t1.hashCode(), t2.hashCode()); assertEquals(t1.hashCode(), t3.hashCode()); }
     
 
     /**

@@ -83,24 +83,11 @@ public class StandardXYSeriesLabelGeneratorTests extends TestCase {
     /**
      * Some checks for the generalLabel() method.
      */
-public void testCloning1014() { 
-     StandardXYSeriesLabelGenerator g1 = new StandardXYSeriesLabelGenerator(); 
-     StandardXYSeriesLabelGenerator g2 = null; 
-     try { 
-         g2 = (StandardXYSeriesLabelGenerator) g1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(g1 != g2); 
-     assertTrue(g1.getClass() == g2.getClass()); 
-     assertTrue(g1.equals(g2)); 
- }
-public void testHashCode1015() { 
-     StandardXYSeriesLabelGenerator g1 = new StandardXYSeriesLabelGenerator(); 
-     StandardXYSeriesLabelGenerator g2 = new StandardXYSeriesLabelGenerator(); 
-     assertTrue(g1.equals(g2)); 
-     assertTrue(g1.hashCode() == g2.hashCode()); 
- }
+public void testCreateItemArray5266() { XYSeriesCollection d = new XYSeriesCollection(); XYSeries s1 = new XYSeries("S1"); s1.add(1.0, 1.1); s1.add(2.0, 2.2); d.addSeries(s1); XYSeries s2 = new XYSeries("S2"); s2.add(1.0, 1.1); s2.add(2.0, 2.2); d.addSeries(s2); XYSeriesCollection d2 = new XYSeriesCollection(); XYSeries s3 = new XYSeries("S3"); s3.add(1.0, 1.1);
+}
+
+public void testEquals5269() { StandardXYSeriesLabelGenerator g1 = new StandardXYSeriesLabelGenerator(); StandardXYSeriesLabelGenerator g2 = new StandardXYSeriesLabelGenerator(); assertEquals(g1, g2); }
+public void testHashCode5270() { StandardXYSeriesLabelGenerator g1 = new StandardXYSeriesLabelGenerator(); StandardXYSeriesLabelGenerator g2 = new StandardXYSeriesLabelGenerator(); assertEquals(g1.hashCode(), g2.hashCode()); }
     
 
     /**

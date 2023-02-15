@@ -78,6 +78,10 @@ public class YWithXIntervalTests extends TestCase {
     /**
      * Confirm that the equals method can distinguish all the required fields.
      */
+public void equalsTest() { final double xLow = 10.0; final double xHigh = 20.0; final double yLow = 10.0; final double yHigh = 20.0; final YWithXInterval path1 = new YWithXInterval(xLow, xHigh, xLow); final YWithXInterval path2 = new YWithXInterval(yLow, xHigh, xHigh); final boolean equals1 = path1.equals(path2); assertTrue(equals1); final boolean equals2 = path1.equals(path2); assertTrue(equals2); }
+//public void equalsTest() { final double xLow = 10.0; final double xHigh = 20.0; final double xLow1 = 10.0; final double xHigh1 = 20.0; final YWithXInterval path1 = new YWithXInterval(0.0, xLow, xHigh); final YWithXInterval path2 = new YWithXInterval(0.0, xLow1, xHigh1); final YWithXInterval path3 = new YWithXInterval(0.0, xLow1, xHigh1); final YWithXInterval path4 = new YWithXInterval(0.0, xHigh1, xHigh1);
+//}
+
     
 
     /**

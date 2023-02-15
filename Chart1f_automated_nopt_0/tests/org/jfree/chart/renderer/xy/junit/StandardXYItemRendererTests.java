@@ -104,40 +104,7 @@ public class StandardXYItemRendererTests extends TestCase {
     /**
      * Test that the equals() method distinguishes all fields.
      */
-public void testSerialization1226() { 
-     StandardXYItemRenderer r1 = new StandardXYItemRenderer(); 
-     r1.setSeriesShapesFilled(1, Boolean.TRUE); 
-     StandardXYItemRenderer r2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(r1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         r2 = (StandardXYItemRenderer) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(r1, r2); 
- }
-public void testSerialization1227() { 
-     StandardXYItemRenderer r1 = new StandardXYItemRenderer(); 
-     r1.setBaseShapesVisible(true); 
-     StandardXYItemRenderer r2 = null; 
-     try { 
-         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
-         ObjectOutput out = new ObjectOutputStream(buffer); 
-         out.writeObject(r1); 
-         out.close(); 
-         ObjectInput in = new ObjectInputStream(new ByteArrayInputStream(buffer.toByteArray())); 
-         r2 = (StandardXYItemRenderer) in.readObject(); 
-         in.close(); 
-     } catch (Exception e) { 
-         e.printStackTrace(); 
-     } 
-     assertEquals(r1, r2); 
- }
+public void testGetItemShapeFilled6420() { StandardXYItemRenderer r = new StandardXYItemRenderer(); r.setBaseShapesFilled(true); assertTrue(r.getItemShapeFilled(0, 0)); assertTrue(r.getItemShapeFilled(0, 1)); assertFalse(r.getItemShapeFilled(0, 2)); }
     
 
     /**

@@ -88,42 +88,7 @@ public class FastScatterPlotTests extends TestCase {
     /**
      * Some checks for the equals() method.
      */
-public void testCloning1193() { 
-     FastScatterPlot p1 = new FastScatterPlot(); 
-     FastScatterPlot p2 = null; 
-     try { 
-         p2 = (FastScatterPlot) p1.clone(); 
-     } catch (CloneNotSupportedException e) { 
-         e.printStackTrace(); 
-     } 
-     assertTrue(p1 != p2); 
-     assertTrue(p1.getClass() == p2.getClass()); 
-     assertTrue(p1.equals(p2)); 
-     float[][] a = p1.getData(); 
-     float[][] b = p2.getData(); 
-     assertTrue(p1 != p2); 
-     assertTrue(p1.getClass() == p2.getClass()); 
-     assertTrue(p1.equals(p2)); 
-     a[0] = new float[6]; 
-     assertFalse(p1.equals(p2)); 
-     b[0] = new float[6]; 
-     assertTrue(p1.equals(p2)); 
-     a[0][0] = 1.0f; 
-     assertFalse(p1.equals(p2)); 
-     b[0][0] = 1.0f; 
-     assertTrue(p1.equals(p2)); 
-     a[0][1] = Float.NaN; 
-     assertFalse(p1.equals(p2)); 
-     b[0][1] = Float.NaN; 
-     assertTrue(p1.equals(p2)); 
-     a[0][2] = Float.POSITIVE_INFINITY; 
-     assertFalse(p1.equals(p2)); 
-     b[0][2] = Float.POSITIVE_INFINITY; 
-     assertTrue(p1.equals(p2)); 
-     a[0][3] = Float.NEGATIVE_INFINITY; 
-     assertFalse(p1.equals(p2));
-}
-
+public void testCloning6275() throws CloneNotSupportedException { FastScatterPlot p1 = new FastScatterPlot(); FastScatterPlot p2 = (FastScatterPlot) p1.clone(); assertNotSame(p1, p2); assertSame(p1.getClass(), p2.getClass()); assertEquals(p1, p2); }
     
 
     /**

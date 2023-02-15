@@ -81,6 +81,10 @@ public class MeterChartTests extends TestCase {
      * Draws the chart with a single range.  At one point, this caused a null
      * pointer exception (fixed now).
      */
+public void testGetLegendItems6663() { }
+public void testDrawArc6720() { }
+public void testFillArc6724() { }
+public void testGetOutlineStroke7511() { }
     
 
 }
