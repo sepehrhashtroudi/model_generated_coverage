@@ -1,0 +1,10 @@
+Testsuite: org.apache.commons.lang3.SystemUtilsTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+
+Testcase: testGetUserDir707 took 0.02 sec
+Testcase: testGetUserHome708 took 0 sec
+Testcase: testJavaVersionMatches710 took 0 sec
+Testcase: testGetJavaHome706 took 0 sec
+Testcase: testOSMatchesNameAndVersion711 took 0 sec
+Testcase: testOSMatchesName712 took 0 sec
+Testcase: testJavaAwtHeadless709 took 0 sec

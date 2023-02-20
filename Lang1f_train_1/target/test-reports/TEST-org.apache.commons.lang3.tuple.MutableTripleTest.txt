@@ -1,0 +1,6 @@
+Testsuite: org.apache.commons.lang3.tuple.MutableTripleTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+
+Testcase: testToString728 took 0.021 sec
+Testcase: testDefault729 took 0 sec
+Testcase: testMutate730 took 0 sec

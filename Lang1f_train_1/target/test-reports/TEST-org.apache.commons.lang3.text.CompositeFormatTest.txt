@@ -1,0 +1,5 @@
+Testsuite: org.apache.commons.lang3.text.CompositeFormatTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+
+Testcase: testUsage1176 took 0.027 sec
+Testcase: testCompositeFormat1177 took 0.001 sec

@@ -1,0 +1,99 @@
+Testsuite: org.apache.commons.lang3.text.StrBuilderTest
+Tests run: 24, Failures: 8, Errors: 5, Skipped: 0, Time elapsed: 0.062 sec
+
+Testcase: testConstructors239 took 0.005 sec
+Testcase: testToString281 took 0 sec
+Testcase: testTrim273 took 0 sec
+Testcase: testCapacityAndLength241 took 0 sec
+Testcase: testToCharArrayIntInt247 took 0.006 sec
+	Caused an ERROR
+end < start
+java.lang.StringIndexOutOfBoundsException: end < start
+	at org.apache.commons.lang3.text.StrBuilder.validateRange(StrBuilder.java:2784)
+	at org.apache.commons.lang3.text.StrBuilder.toCharArray(StrBuilder.java:376)
+	at org.apache.commons.lang3.text.StrBuilderTest.testToCharArrayIntInt247(StrBuilderTest.java:255)
+
+Testcase: testToCharArrayIntInt248 took 0 sec
+	Caused an ERROR
+end < start
+java.lang.StringIndexOutOfBoundsException: end < start
+	at org.apache.commons.lang3.text.StrBuilder.validateRange(StrBuilder.java:2784)
+	at org.apache.commons.lang3.text.StrBuilder.toCharArray(StrBuilder.java:376)
+	at org.apache.commons.lang3.text.StrBuilderTest.testToCharArrayIntInt248(StrBuilderTest.java:266)
+
+Testcase: testReplaceAll_String_String269 took 0.001 sec
+Testcase: testEndsWith274 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.text.StrBuilderTest.testEndsWith274(StrBuilderTest.java:419)
+
+Testcase: testEndsWith275 took 0 sec
+	FAILED
+endsWith(String) failed
+junit.framework.AssertionFailedError: endsWith(String) failed
+	at org.apache.commons.lang3.text.StrBuilderTest.testEndsWith275(StrBuilderTest.java:429)
+
+Testcase: testAppend_String240 took 0 sec
+Testcase: testDeleteAll_String267 took 0.001 sec
+	FAILED
+expected:<[bcbccb]> but was:<[abcbccba]>
+junit.framework.AssertionFailedError: expected:<[bcbccb]> but was:<[abcbccba]>
+	at org.apache.commons.lang3.text.StrBuilderTest.testDeleteAll_String267(StrBuilderTest.java:309)
+
+Testcase: testReplaceFirst_char_char272 took 0 sec
+	FAILED
+expected:<[a]bcbccba> but was:<[b]bcbccba>
+junit.framework.AssertionFailedError: expected:<[a]bcbccba> but was:<[b]bcbccba>
+	at org.apache.commons.lang3.text.StrBuilderTest.testReplaceFirst_char_char272(StrBuilderTest.java:381)
+
+Testcase: testDeleteIntInt266 took 0 sec
+Testcase: testAsWriter282 took 0 sec
+Testcase: testLastIndexOf_char276 took 0 sec
+	FAILED
+expected:<-1> but was:<2>
+junit.framework.AssertionFailedError: expected:<-1> but was:<2>
+	at org.apache.commons.lang3.text.StrBuilderTest.testLastIndexOf_char276(StrBuilderTest.java:437)
+
+Testcase: testToCharArray246 took 0 sec
+Testcase: testHashCode279 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.text.StrBuilderTest.testHashCode279(StrBuilderTest.java:467)
+
+Testcase: testHashCode280 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.text.StrBuilderTest.testHashCode280(StrBuilderTest.java:479)
+
+Testcase: testEquals278 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.text.StrBuilderTest.testEquals278(StrBuilderTest.java:453)
+
+Testcase: testReplaceFirst_StrMatcher_String268 took 0.005 sec
+Testcase: testGetSetCapacity238 took 0 sec
+Testcase: testDeleteCharAt243 took 0 sec
+	Caused an ERROR
+String index out of range: 2
+java.lang.StringIndexOutOfBoundsException: String index out of range: 2
+	at org.apache.commons.lang3.text.StrBuilder.deleteCharAt(StrBuilder.java:344)
+	at org.apache.commons.lang3.text.StrBuilderTest.testDeleteCharAt243(StrBuilderTest.java:174)
+
+Testcase: testDeleteCharAt244 took 0 sec
+	Caused an ERROR
+String index out of range: 2
+java.lang.StringIndexOutOfBoundsException: String index out of range: 2
+	at org.apache.commons.lang3.text.StrBuilder.deleteCharAt(StrBuilder.java:344)
+	at org.apache.commons.lang3.text.StrBuilderTest.testDeleteCharAt244(StrBuilderTest.java:196)
+
+Testcase: testDeleteCharAt245 took 0 sec
+	Caused an ERROR
+String index out of range: 2
+java.lang.StringIndexOutOfBoundsException: String index out of range: 2
+	at org.apache.commons.lang3.text.StrBuilder.deleteCharAt(StrBuilder.java:344)
+	at org.apache.commons.lang3.text.StrBuilderTest.testDeleteCharAt245(StrBuilderTest.java:224)
+

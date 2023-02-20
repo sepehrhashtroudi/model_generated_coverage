@@ -1,0 +1,23 @@
+Testsuite: org.apache.commons.lang3.math.NumberUtilsTest
+Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+
+Testcase: testIsDigits28 took 0.031 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.math.NumberUtilsTest.testIsDigits28(NumberUtilsTest.java:121)
+
+Testcase: testMaxDouble24 took 0.001 sec
+Testcase: testCreateFloat19 took 0.001 sec
+Testcase: testMinInt20 took 0 sec
+Testcase: testMaxDouble_emptyArray25 took 0.001 sec
+Testcase: testMinByte22 took 0 sec
+Testcase: testMinInt_nullArray21 took 0 sec
+Testcase: testMaxInt23 took 0 sec
+Testcase: testMaximumInt26 took 0 sec
+	FAILED
+maximum(int,int,int) 1 failed expected:<12345> but was:<12347>
+junit.framework.AssertionFailedError: maximum(int,int,int) 1 failed expected:<12345> but was:<12347>
+	at org.apache.commons.lang3.math.NumberUtilsTest.testMaximumInt26(NumberUtilsTest.java:100)
+
+Testcase: testMaximumByte27 took 0 sec

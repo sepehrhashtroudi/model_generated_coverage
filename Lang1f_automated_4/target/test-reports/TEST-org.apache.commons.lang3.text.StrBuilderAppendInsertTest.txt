@@ -1,0 +1,22 @@
+Testsuite: org.apache.commons.lang3.text.StrBuilderAppendInsertTest
+Tests run: 9, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+
+Testcase: testAppendWithSeparators_Iterator289 took 0.008 sec
+Testcase: testAppendPadding_int_char292 took 0.002 sec
+	FAILED
+expected:<[]> but was:<[-]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[-]>
+	at org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendPadding_int_char292(StrBuilderAppendInsertTest.java:192)
+
+Testcase: testAppendWithSeparators_Collection290 took 0 sec
+Testcase: testAppendSeparator_String_String291 took 0 sec
+Testcase: testAppend_String278 took 0 sec
+Testcase: testAppendln_StrBuilder282 took 0.001 sec
+Testcase: testAppendln_String281 took 0 sec
+Testcase: testAppendln_String287 took 0 sec
+	FAILED
+expected:<1> but was:<2>
+junit.framework.AssertionFailedError: expected:<1> but was:<2>
+	at org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_String287(StrBuilderAppendInsertTest.java:124)
+
+Testcase: testAppendAll_Collection288 took 0 sec

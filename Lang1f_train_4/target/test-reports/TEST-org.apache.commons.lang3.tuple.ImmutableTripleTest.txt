@@ -1,0 +1,5 @@
+Testsuite: org.apache.commons.lang3.tuple.ImmutableTripleTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+
+Testcase: testHashCode393 took 0.017 sec
+Testcase: testEquals392 took 0.001 sec

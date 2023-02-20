@@ -1,0 +1,21 @@
+Testsuite: org.apache.commons.lang3.concurrent.BasicThreadFactoryTest
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.015 sec
+
+Testcase: testNewThreadDaemonTrue57 took 0.002 sec
+	Caused an ERROR
+org/easymock/EasyMock
+java.lang.NoClassDefFoundError: org/easymock/EasyMock
+	at org.apache.commons.lang3.concurrent.BasicThreadFactoryTest.checkDaemonFlag(BasicThreadFactoryTest.java:128)
+	at org.apache.commons.lang3.concurrent.BasicThreadFactoryTest.testNewThreadDaemonTrue57(BasicThreadFactoryTest.java:69)
+Caused by: java.lang.ClassNotFoundException: org.easymock.EasyMock
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+
+Testcase: testNewThreadExHandler58 took 0 sec
+	Caused an ERROR
+org/easymock/EasyMock
+java.lang.NoClassDefFoundError: org/easymock/EasyMock
+	at org.apache.commons.lang3.concurrent.BasicThreadFactoryTest.testNewThreadExHandler58(BasicThreadFactoryTest.java:73)
+

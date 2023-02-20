@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: com.google.gson.functional.DefaultTypeAdaptersTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+testDefaultJavaSqlDateDeserialization33(com.google.gson.functional.DefaultTypeAdaptersTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<3> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.assertEqualsDate(DefaultTypeAdaptersTest.java:159)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.__CLR4_4_1bfoa6t3jr(DefaultTypeAdaptersTest.java:76)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.testDefaultJavaSqlDateDeserialization33(DefaultTypeAdaptersTest.java:73)
+
+testDefaultJavaSqlDateDeserialization34(com.google.gson.functional.DefaultTypeAdaptersTest)  Time elapsed: 0 sec  <<< ERROR!
+com.google.gson.JsonSyntaxException: java.text.ParseException: Unparseable date: "Dec 3, 2009"
+	at com.google.gson.DefaultTypeAdapters$DefaultDateTypeAdapter.deserialize(DefaultTypeAdapters.java:281)
+	at com.google.gson.DefaultTypeAdapters$DefaultDateTypeAdapter.deserialize(DefaultTypeAdapters.java:243)
+	at com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:50)
+	at com.google.gson.JsonDeserializationVisitor.invokeCustomDeserializer(JsonDeserializationVisitor.java:88)
+	at com.google.gson.JsonDeserializationVisitor.visitUsingCustomHandler(JsonDeserializationVisitor.java:76)
+	at com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:106)
+	at com.google.gson.JsonDeserializationContextDefault.fromJsonPrimitive(JsonDeserializationContextDefault.java:84)
+	at com.google.gson.JsonDeserializationContextDefault.deserialize(JsonDeserializationContextDefault.java:53)
+	at com.google.gson.Gson.fromJson(Gson.java:539)
+	at com.google.gson.Gson.fromJson(Gson.java:486)
+	at com.google.gson.Gson.fromJson(Gson.java:473)
+	at com.google.gson.Gson.fromJson(Gson.java:427)
+	at com.google.gson.Gson.fromJson(Gson.java:400)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.__CLR4_4_186obec3jv(DefaultTypeAdaptersTest.java:80)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.testDefaultJavaSqlDateDeserialization34(DefaultTypeAdaptersTest.java:78)
+Caused by: java.text.ParseException: Unparseable date: "Dec 3, 2009"
+	at java.text.DateFormat.parse(DateFormat.java:366)
+	at com.google.gson.DefaultTypeAdapters$DefaultDateTypeAdapter.deserialize(DefaultTypeAdapters.java:278)
+	... 41 more
+

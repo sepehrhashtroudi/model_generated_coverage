@@ -1,0 +1,9 @@
+Testsuite: org.apache.commons.lang3.CharSetUtilsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+
+Testcase: testDelete_StringString748 took 0.029 sec
+Testcase: testCount_StringString935 took 0 sec
+Testcase: testContainsAny_StringStringarray934 took 0 sec
+Testcase: testSqueeze_StringString932 took 0 sec
+Testcase: testContainsAny_StringString933 took 0 sec
+Testcase: testConstructor931 took 0 sec

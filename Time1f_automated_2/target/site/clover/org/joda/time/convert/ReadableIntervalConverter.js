@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":116,"id":12860,"methods":[{"el":43,"sc":5,"sl":41},{"el":53,"sc":5,"sl":51},{"el":72,"sc":5,"sl":63},{"el":87,"sc":5,"sl":85},{"el":106,"sc":5,"sl":98},{"el":114,"sc":5,"sl":112}],"name":"ReadableIntervalConverter","sl":30}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_110":{"methods":[{"sl":112}],"name":"testGetPeriodConverterRemovedNull213","pass":true,"statements":[{"sl":113}]},"test_166":{"methods":[{"sl":112}],"name":"testToPeriod_Chronology277","pass":true,"statements":[{"sl":113}]},"test_200":{"methods":[{"sl":41}],"name":"testConstructor_nullObject293","pass":true,"statements":[{"sl":42}]},"test_21":{"methods":[{"sl":51}],"name":"testGetDurationMillis_Object605","pass":false,"statements":[{"sl":52}]},"test_22":{"methods":[{"sl":112}],"name":"testAddIntervalConverter1216","pass":true,"statements":[{"sl":113}]},"test_240":{"methods":[{"sl":112}],"name":"testConstructor_Object6483","pass":true,"statements":[{"sl":113}]},"test_27":{"methods":[{"sl":112}],"name":"testSetIntoInterval_Object_Chronology580","pass":true,"statements":[{"sl":113}]},"test_307":{"methods":[{"sl":85},{"sl":112}],"name":"testConstructor_Object3146","pass":true,"statements":[{"sl":86},{"sl":113}]},"test_360":{"methods":[{"sl":112}],"name":"testFactory_parseYears_String281","pass":true,"statements":[{"sl":113}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [200], [200], [], [], [], [], [], [], [], [], [21], [21], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [307], [307], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [22, 240, 360, 307, 166, 27, 110], [22, 240, 360, 307, 166, 27, 110], [], [], []]

@@ -1,0 +1,33 @@
+-------------------------------------------------------------------------------
+Test set: com.google.gson.functional.DefaultTypeAdaptersTest
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.095 sec <<< FAILURE!
+testDefaultJavaSqlTimestampDeserialization84(com.google.gson.functional.DefaultTypeAdaptersTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<13> but was:<12>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.assertEqualsTime(DefaultTypeAdaptersTest.java:305)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.__CLR4_4_15ydd4p3z1(DefaultTypeAdaptersTest.java:109)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.testDefaultJavaSqlTimestampDeserialization84(DefaultTypeAdaptersTest.java:105)
+
+testDefaultJavaSqlDateDeserialization86(com.google.gson.functional.DefaultTypeAdaptersTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<3> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.assertEqualsDate(DefaultTypeAdaptersTest.java:300)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.__CLR4_4_14ue0y13za(DefaultTypeAdaptersTest.java:123)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.testDefaultJavaSqlDateDeserialization86(DefaultTypeAdaptersTest.java:120)
+
+testDefaultJavaSqlTimeSerialization87(com.google.gson.functional.DefaultTypeAdaptersTest)  Time elapsed: 0.012 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<"0[1]:18:02 PM"> but was:<"0[2]:18:02 PM">
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.__CLR4_4_1fcddjg3ze(DefaultTypeAdaptersTest.java:130)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.testDefaultJavaSqlTimeSerialization87(DefaultTypeAdaptersTest.java:127)
+

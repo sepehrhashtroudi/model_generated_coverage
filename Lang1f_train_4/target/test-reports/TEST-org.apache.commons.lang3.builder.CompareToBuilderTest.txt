@@ -1,0 +1,25 @@
+Testsuite: org.apache.commons.lang3.builder.CompareToBuilderTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+
+Testcase: testDoubleArrayHiddenByObject980 took 0.02 sec
+Testcase: testRaggedArray970 took 0 sec
+Testcase: testBooleanArray991 took 0 sec
+Testcase: testFloatArray990 took 0 sec
+Testcase: testMultiBooleanArray982 took 0 sec
+Testcase: testIntArray988 took 0 sec
+Testcase: testMultiCharArray978 took 0 sec
+Testcase: testObject975 took 0 sec
+Testcase: testObjectComparator983 took 0 sec
+Testcase: testByteArrayHiddenByObject979 took 0 sec
+Testcase: testObjectArrayHiddenByObject976 took 0 sec
+Testcase: testReflectionCompareEx1973 took 0 sec
+Testcase: testReflectionCompareEx2971 took 0.001 sec
+Testcase: testCharArray984 took 0 sec
+Testcase: testReflectionHierarchyCompare972 took 0.011 sec
+Testcase: testDoubleArray985 took 0 sec
+Testcase: testMultiFloatArray981 took 0 sec
+Testcase: testObjectArray986 took 0 sec
+Testcase: testAppendSuper974 took 0 sec
+Testcase: testMultiShortArray977 took 0 sec
+Testcase: testLongArray987 took 0 sec
+Testcase: testByteArray989 took 0 sec

@@ -1,0 +1,33 @@
+Testsuite: org.apache.commons.lang3.EnumUtilsTest
+Tests run: 6, Failures: 2, Errors: 2, Skipped: 0, Time elapsed: 0.046 sec
+
+Testcase: test_getEnumList147 took 0.018 sec
+	Caused an ERROR
+Index: 3, Size: 3
+java.lang.IndexOutOfBoundsException: Index: 3, Size: 3
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at org.apache.commons.lang3.EnumUtilsTest.test_getEnumList147(EnumUtilsTest.java:47)
+
+Testcase: test_getEnumList148 took 0.001 sec
+	Caused an ERROR
+Index: 3, Size: 3
+java.lang.IndexOutOfBoundsException: Index: 3, Size: 3
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at org.apache.commons.lang3.EnumUtilsTest.test_getEnumList148(EnumUtilsTest.java:63)
+
+Testcase: test_generateBitVector149 took 0.002 sec
+	FAILED
+expected:<8> but was:<6>
+junit.framework.AssertionFailedError: expected:<8> but was:<6>
+	at org.apache.commons.lang3.EnumUtilsTest.test_generateBitVector149(EnumUtilsTest.java:78)
+
+Testcase: test_generateBitVector150 took 0 sec
+	FAILED
+expected:<0> but was:<1>
+junit.framework.AssertionFailedError: expected:<0> but was:<1>
+	at org.apache.commons.lang3.EnumUtilsTest.test_generateBitVector150(EnumUtilsTest.java:85)
+
+Testcase: test_generateBitVectors151 took 0.009 sec
+Testcase: test_generateBitVectors_nullClassWithArray155 took 0 sec

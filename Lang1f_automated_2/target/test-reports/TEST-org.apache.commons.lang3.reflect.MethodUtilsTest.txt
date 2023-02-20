@@ -1,0 +1,16 @@
+Testsuite: org.apache.commons.lang3.reflect.MethodUtilsTest
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec
+
+Testcase: testInvokeExactMethod20 took 0.035 sec
+Testcase: testGetMatchingAccessibleMethodPrivateInterface24 took 0.001 sec
+	FAILED
+expected null, but was:<public java.lang.String org.apache.commons.lang3.reflect.MethodUtilsTest$TestBeanWithInterfaces.foo()>
+junit.framework.AssertionFailedError: expected null, but was:<public java.lang.String org.apache.commons.lang3.reflect.MethodUtilsTest$TestBeanWithInterfaces.foo()>
+	at org.apache.commons.lang3.reflect.MethodUtilsTest.testGetMatchingAccessibleMethodPrivateInterface24(MethodUtilsTest.java:192)
+
+Testcase: testInvokeStaticMethod22 took 0.001 sec
+	FAILED
+should throw NoSuchMethodException
+junit.framework.AssertionFailedError: should throw NoSuchMethodException
+	at org.apache.commons.lang3.reflect.MethodUtilsTest.testInvokeStaticMethod22(MethodUtilsTest.java:173)
+

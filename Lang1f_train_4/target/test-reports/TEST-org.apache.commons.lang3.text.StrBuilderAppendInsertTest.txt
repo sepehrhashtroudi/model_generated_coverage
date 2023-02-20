@@ -1,0 +1,42 @@
+Testsuite: org.apache.commons.lang3.text.StrBuilderAppendInsertTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+
+Testcase: testAppendln_String_int_int651 took 0.005 sec
+Testcase: testAppend_StrBuilder661 took 0 sec
+Testcase: testAppendln_StringBuilder658 took 0 sec
+Testcase: testAppendNewLine652 took 0 sec
+Testcase: testInsertWithNullText689 took 0 sec
+Testcase: testAppendFixedWidthPadRight_int688 took 0 sec
+Testcase: testAppendln_StrBuilder_int_int669 took 0 sec
+Testcase: testAppendln_CharArray670 took 0 sec
+Testcase: testAppendln_Object666 took 0 sec
+Testcase: testAppend_String_int_int653 took 0 sec
+Testcase: testAppend_PrimitiveNumber665 took 0.001 sec
+Testcase: testAppendWithSeparators_Collection677 took 0.001 sec
+Testcase: testAppendln_FormattedString654 took 0 sec
+Testcase: testAppendFixedWidthPadLeft641 took 0 sec
+Testcase: testAppendln_StringBuffer_int_int667 took 0 sec
+Testcase: testAppendSeparator_String678 took 0 sec
+Testcase: testAppend_CharArray662 took 0 sec
+Testcase: testAppend_String642 took 0 sec
+Testcase: testAppendln_StrBuilder668 took 0 sec
+Testcase: testAppendFixedWidthPadRight687 took 0 sec
+Testcase: testAppend_StringBuilder_int_int660 took 0 sec
+Testcase: testAppend_StringBuffer_int_int657 took 0 sec
+Testcase: testInsert690 took 0.001 sec
+Testcase: testAppendSeparator_char_int682 took 0 sec
+Testcase: testAppendln_Boolean672 took 0 sec
+Testcase: testAppendln_CharArray_int_int671 took 0.001 sec
+Testcase: testAppend_CharArray_int_int663 took 0 sec
+Testcase: testAppendSeparator_String_int681 took 0 sec
+Testcase: testAppend_Boolean664 took 0 sec
+Testcase: testAppendWithNullText656 took 0 sec
+Testcase: testAppendFixedWidthPadLeft_int683 took 0.001 sec
+Testcase: testAppendWithSeparators_Array676 took 0 sec
+Testcase: testAppendSeparator_char679 took 0 sec
+Testcase: testLang299685 took 0 sec
+Testcase: testAppendAll_Collection675 took 0 sec
+Testcase: testAppendSeparator_char_char680 took 0 sec
+Testcase: testAppendln_StringBuilder_int_int659 took 0 sec
+Testcase: testAppendln_StringBuffer655 took 0 sec
+Testcase: testAppendln_PrimitiveNumber673 took 0 sec

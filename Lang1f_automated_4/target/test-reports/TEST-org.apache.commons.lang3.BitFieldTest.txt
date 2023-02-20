@@ -1,0 +1,11 @@
+Testsuite: org.apache.commons.lang3.BitFieldTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+
+Testcase: testSetBoolean30 took 0 sec
+Testcase: testGetShortRawValue29 took 0 sec
+Testcase: testGetValue28 took 0.001 sec
+	FAILED
+expected:<-16257> but was:<127>
+junit.framework.AssertionFailedError: expected:<-16257> but was:<127>
+	at org.apache.commons.lang3.BitFieldTest.testGetValue28(BitFieldTest.java:44)
+

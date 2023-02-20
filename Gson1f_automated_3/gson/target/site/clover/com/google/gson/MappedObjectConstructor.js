@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":112,"id":2007,"methods":[{"el":45,"sc":3,"sl":42},{"el":54,"sc":3,"sl":47},{"el":58,"sc":3,"sl":56},{"el":78,"sc":3,"sl":60},{"el":92,"sc":3,"sl":80},{"el":106,"sc":3,"sl":101},{"el":111,"sc":3,"sl":108}],"name":"MappedObjectConstructor","sl":37}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_0":{"methods":[{"sl":47},{"sl":56},{"sl":60},{"sl":80}],"name":"testArrayWithoutTypeInfoDeserialization40","pass":true,"statements":[{"sl":49},{"sl":50},{"sl":53},{"sl":57},{"sl":61},{"sl":62},{"sl":63},{"sl":67},{"sl":82},{"sl":83},{"sl":84},{"sl":85},{"sl":86},{"sl":87},{"sl":88}]},"test_12":{"methods":[{"sl":56}],"name":"testArrayOfStringsDeserialization29","pass":true,"statements":[{"sl":57}]},"test_15":{"methods":[{"sl":42}],"name":"testCreatingMoreThanOnce19","pass":true,"statements":[{"sl":44}]},"test_26":{"methods":[{"sl":42}],"name":"testNegativeInfinitySerialization32","pass":true,"statements":[{"sl":44}]},"test_27":{"methods":[{"sl":42}],"name":"testDateSerializationWithPattern21","pass":true,"statements":[{"sl":44}]},"test_28":{"methods":[{"sl":42}],"name":"testSelfReferenceCustomHandlerSerialization4","pass":true,"statements":[{"sl":44}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [27, 15, 26, 28], [], [27, 15, 26, 28], [], [], [0], [], [0], [0], [], [], [0], [], [], [12, 0], [12, 0], [], [], [0], [0], [0], [0], [], [], [], [0], [], [], [], [], [], [], [], [], [], [], [], [], [0], [], [0], [0], [0], [0], [0], [0], [0], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]

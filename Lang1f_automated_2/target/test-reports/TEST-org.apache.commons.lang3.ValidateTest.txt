@@ -1,0 +1,38 @@
+Testsuite: org.apache.commons.lang3.ValidateTest
+Tests run: 10, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+
+Testcase: testNotEmptyArray1387 took 0.02 sec
+	FAILED
+Expecting IllegalArgumentException
+junit.framework.AssertionFailedError: Expecting IllegalArgumentException
+	at org.apache.commons.lang3.ValidateTest.testNotEmptyArray1387(ValidateTest.java:100)
+
+Testcase: testNotEmptyArray2386 took 0 sec
+	FAILED
+Expecting IllegalArgumentException
+junit.framework.AssertionFailedError: Expecting IllegalArgumentException
+	at org.apache.commons.lang3.ValidateTest.testNotEmptyArray2386(ValidateTest.java:79)
+
+Testcase: testIsAssignable_withMessage394 took 0.001 sec
+	FAILED
+expected:<[Expected type: java.util.List, actual: java.lang.String]> but was:<[Cannot assign a java.lang.String to a java.util.List]>
+junit.framework.AssertionFailedError: expected:<[Expected type: java.util.List, actual: java.lang.String]> but was:<[Cannot assign a java.lang.String to a java.util.List]>
+	at org.apache.commons.lang3.ValidateTest.testIsAssignable_withMessage394(ValidateTest.java:209)
+
+Testcase: testExclusiveBetween_withMessage393 took 0 sec
+	FAILED
+expected:<...ot in the specified [in]clusive range of 0 t...> but was:<...ot in the specified [ex]clusive range of 0 t...>
+junit.framework.AssertionFailedError: expected:<...ot in the specified [in]clusive range of 0 t...> but was:<...ot in the specified [ex]clusive range of 0 t...>
+	at org.apache.commons.lang3.ValidateTest.testExclusiveBetween_withMessage393(ValidateTest.java:198)
+
+Testcase: testNotEmptyString1388 took 0 sec
+Testcase: testIsTrue4385 took 0 sec
+Testcase: testConstructor384 took 0 sec
+Testcase: testValidIndex_withMessage_array389 took 0 sec
+Testcase: testValidIndex_withMessage_array390 took 0 sec
+Testcase: testValidIndex_array391 took 0.001 sec
+	FAILED
+expected:<The validated [character sequence] is invalid: -1> but was:<The validated [array index] is invalid: -1>
+junit.framework.AssertionFailedError: expected:<The validated [character sequence] is invalid: -1> but was:<The validated [array index] is invalid: -1>
+	at org.apache.commons.lang3.ValidateTest.testValidIndex_array391(ValidateTest.java:178)
+

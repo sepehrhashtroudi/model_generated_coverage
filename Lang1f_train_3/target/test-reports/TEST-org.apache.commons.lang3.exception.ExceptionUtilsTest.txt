@@ -1,0 +1,15 @@
+Testsuite: org.apache.commons.lang3.exception.ExceptionUtilsTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec
+
+Testcase: testGetThrowableCount_Throwable930 took 0.02 sec
+Testcase: testPrintRootCauseStackTrace_Throwable932 took 0 sec
+Testcase: testPrintRootCauseStackTrace_ThrowableStream933 took 0.004 sec
+Testcase: testGetCause_Throwable928 took 0 sec
+Testcase: testConstructor926 took 0 sec
+Testcase: test_getRootCauseMessage_Throwable937 took 0.009 sec
+Testcase: test_getMessage_Throwable936 took 0 sec
+Testcase: testIndexOfType_ThrowableClassInt931 took 0.003 sec
+Testcase: testGetRootCause_Throwable929 took 0.001 sec
+Testcase: testPrintRootCauseStackTrace_ThrowableWriter934 took 0.002 sec
+Testcase: testGetRootCauseStackTrace_Throwable927 took 0.007 sec
+Testcase: testRemoveCommonFrames_ListList935 took 0 sec

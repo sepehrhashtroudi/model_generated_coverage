@@ -1,0 +1,38 @@
+Testsuite: org.apache.commons.lang3.ObjectUtilsTest
+Tests run: 10, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec
+
+Testcase: testDefaultIfNull_ObjectString355 took 0.022 sec
+	FAILED
+expected:<[NULL]> but was:<[]>
+junit.framework.AssertionFailedError: expected:<[NULL]> but was:<[]>
+	at org.apache.commons.lang3.ObjectUtilsTest.testDefaultIfNull_ObjectString355(ObjectUtilsTest.java:56)
+
+Testcase: testCloneOfStringArray366 took 0 sec
+Testcase: testMedian_emptyItems364 took 0.001 sec
+Testcase: testNotEqual359 took 0 sec
+	FAILED
+ObjectUtils.notEqual("foo", null) returned true
+junit.framework.AssertionFailedError: ObjectUtils.notEqual("foo", null) returned true
+	at org.apache.commons.lang3.ObjectUtilsTest.testNotEqual359(ObjectUtilsTest.java:70)
+
+Testcase: testIdentityToStringStringBuilder360 took 0 sec
+Testcase: testPossibleCloneOfCloneable367 took 0 sec
+Testcase: testMin362 took 0.008 sec
+	FAILED
+expected same:<Wed Feb 16 21:09:22 MST 2022> was not:<Thu Feb 16 21:09:22 MST 2023>
+junit.framework.AssertionFailedError: expected same:<Wed Feb 16 21:09:22 MST 2022> was not:<Thu Feb 16 21:09:22 MST 2023>
+	at org.apache.commons.lang3.ObjectUtilsTest.testMin362(ObjectUtilsTest.java:114)
+
+Testcase: testMin363 took 0 sec
+	FAILED
+expected same:<Wed Feb 16 21:09:22 MST 2022> was not:<Thu Feb 16 21:09:22 MST 2023>
+junit.framework.AssertionFailedError: expected same:<Wed Feb 16 21:09:22 MST 2022> was not:<Thu Feb 16 21:09:22 MST 2023>
+	at org.apache.commons.lang3.ObjectUtilsTest.testMin363(ObjectUtilsTest.java:137)
+
+Testcase: testToString_ObjectString361 took 0 sec
+Testcase: testDefaultIfNull_StringString356 took 0.001 sec
+	FAILED
+expected:<[NULL]> but was:<[null]>
+junit.framework.AssertionFailedError: expected:<[NULL]> but was:<[null]>
+	at org.apache.commons.lang3.ObjectUtilsTest.testDefaultIfNull_StringString356(ObjectUtilsTest.java:62)
+

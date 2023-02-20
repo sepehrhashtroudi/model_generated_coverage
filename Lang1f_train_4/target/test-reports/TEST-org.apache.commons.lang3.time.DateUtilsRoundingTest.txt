@@ -1,0 +1,7 @@
+Testsuite: org.apache.commons.lang3.time.DateUtilsRoundingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 sec
+
+Testcase: testTruncateAmPm449 took 0.012 sec
+Testcase: testTruncateMilliSecond448 took 0.002 sec
+Testcase: testRoundMinute444 took 0.004 sec
+Testcase: testTruncateHourOfDay436 took 0.003 sec

@@ -1,0 +1,24 @@
+Testsuite: org.apache.commons.lang3.math.NumberUtilsTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+
+Testcase: testMinimumInt42 took 0.018 sec
+Testcase: testMinimumInt43 took 0 sec
+Testcase: testCreateLong34 took 0 sec
+Testcase: testMaxShort39 took 0 sec
+Testcase: testCreateInteger33 took 0 sec
+Testcase: testToIntStringI27 took 0 sec
+Testcase: testMaximumShort45 took 0 sec
+Testcase: testMinInt36 took 0 sec
+Testcase: testCreateNumberFailure_432 took 0.008 sec
+Testcase: testToIntString26 took 0 sec
+Testcase: testMinimumByte44 took 0 sec
+Testcase: testMaxLong38 took 0 sec
+Testcase: testMinimumLong41 took 0 sec
+Testcase: testToByteStringI28 took 0 sec
+Testcase: testConstructor25 took 0 sec
+Testcase: testMaxInt_emptyArray40 took 0 sec
+Testcase: testMinLong35 took 0 sec
+Testcase: testToLongString29 took 0 sec
+Testcase: testToLongString30 took 0 sec
+Testcase: testToLongString31 took 0 sec
+Testcase: testLang38137 took 0 sec

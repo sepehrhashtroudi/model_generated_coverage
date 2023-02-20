@@ -1,0 +1,16 @@
+Testsuite: org.apache.commons.lang3.builder.ToStringBuilderTest
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+
+Testcase: testReflectionFloatArray413 took 0.028 sec
+Testcase: testFloatArrayArray156 took 0.001 sec
+Testcase: testShortArray586 took 0 sec
+Testcase: testDoubleArrayArray585 took 0.003 sec
+	FAILED
+expected:<...6ed3ef1[{{1.0,2.2968[]6},<null>,{NaN}}]> but was:<...6ed3ef1[{{1.0,2.2968[59979629516]6},<null>,{NaN}}]>
+junit.framework.AssertionFailedError: expected:<...6ed3ef1[{{1.0,2.2968[]6},<null>,{NaN}}]> but was:<...6ed3ef1[{{1.0,2.2968[59979629516]6},<null>,{NaN}}]>
+	at org.apache.commons.lang3.builder.ToStringBuilderTest.testDoubleArrayArray585(ToStringBuilderTest.java:94)
+
+Testcase: testShort158 took 0 sec
+Testcase: testAppendSuper159 took 0 sec
+Testcase: testByteArrayArray587 took 0.001 sec
+Testcase: testByteArray157 took 0 sec

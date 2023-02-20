@@ -1,0 +1,18 @@
+Testsuite: org.apache.commons.lang3.LocaleUtilsTest
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec
+
+Testcase: testToLocale_3Part166 took 0.041 sec
+Testcase: testLocaleLookupList168 took 0.001 sec
+Testcase: testLocaleLookupList170 took 0.001 sec
+	FAILED
+expected:<true> but was:<[en]>
+junit.framework.AssertionFailedError: expected:<true> but was:<[en]>
+	at org.apache.commons.lang3.LocaleUtilsTest.testLocaleLookupList170(LocaleUtilsTest.java:139)
+
+Testcase: testLocaleLookupList_Locale171 took 0 sec
+	FAILED
+expected:<true> but was:<[en]>
+junit.framework.AssertionFailedError: expected:<true> but was:<[en]>
+	at org.apache.commons.lang3.LocaleUtilsTest.testLocaleLookupList_Locale171(LocaleUtilsTest.java:150)
+
+Testcase: testLang865167 took 0 sec

@@ -1,0 +1,24 @@
+Testsuite: org.apache.commons.lang3.ObjectUtilsTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec
+
+Testcase: testCloneOfPrimitiveArray892 took 0.021 sec
+Testcase: testIsNull875 took 0 sec
+Testcase: testIdentityToStringStringBuffer883 took 0 sec
+Testcase: testCompare887 took 0 sec
+Testcase: testMedian889 took 0.002 sec
+Testcase: testMedian_emptyItems888 took 0 sec
+Testcase: testFirstNonNull876 took 0.001 sec
+Testcase: testIdentityToStringAppendable881 took 0 sec
+Testcase: testToString_Object884 took 0 sec
+Testcase: testIdentityToStringStrBuilder882 took 0.005 sec
+Testcase: testCloneOfNotCloneable891 took 0 sec
+Testcase: testNotEqual878 took 0 sec
+Testcase: testCloneOfUncloneable893 took 0.002 sec
+Testcase: testConstructor874 took 0 sec
+Testcase: testIdentityToStringStringBuilder880 took 0 sec
+Testcase: testMode890 took 0.005 sec
+Testcase: testHashCodeMulti_multiple_likeList879 took 0 sec
+Testcase: testConstMethods895 took 0 sec
+Testcase: testEquals877 took 0 sec
+Testcase: testMax886 took 0.007 sec
+Testcase: testToString_ObjectString885 took 0 sec

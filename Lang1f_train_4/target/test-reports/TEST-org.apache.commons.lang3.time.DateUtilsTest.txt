@@ -1,0 +1,34 @@
+Testsuite: org.apache.commons.lang3.time.DateUtilsTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.248 sec
+------------- Standard Output ---------------
+DateUtilsTest: Default Locale=en_US
+------------- ---------------- ---------------
+
+Testcase: testIsSameDay_Cal422 took 0.03 sec
+Testcase: testIsSameLocalTime_Cal425 took 0.004 sec
+Testcase: testAddSeconds435 took 0.004 sec
+Testcase: testAddHours433 took 0.003 sec
+Testcase: testAddDays432 took 0.004 sec
+Testcase: testTruncate446 took 0.017 sec
+Testcase: testSetMilliseconds443 took 0.003 sec
+Testcase: testSetSeconds442 took 0.003 sec
+Testcase: testIsSameDay_Date421 took 0.003 sec
+Testcase: testMonthIterator451 took 0.007 sec
+Testcase: testSetDays439 took 0.002 sec
+Testcase: testAddMinutes434 took 0.002 sec
+Testcase: testIsSameInstant_Date423 took 0.002 sec
+Testcase: testAddMonths430 took 0.002 sec
+Testcase: testSetYears437 took 0.001 sec
+Testcase: testSetMinutes441 took 0.003 sec
+Testcase: testLANG799_EN_WITH_DE_LOCALE426 took 0.007 sec
+Testcase: testCeil447 took 0.014 sec
+Testcase: testIsSameInstant_Cal424 took 0.002 sec
+Testcase: testConstructor420 took 0.001 sec
+Testcase: testParseDate427 took 0.002 sec
+Testcase: testRound445 took 0.008 sec
+Testcase: testIteratorEx450 took 0.001 sec
+Testcase: testSetHours440 took 0.001 sec
+Testcase: testAddYears429 took 0.001 sec
+Testcase: testSetMonths438 took 0.001 sec
+Testcase: testLang530428 took 0.092 sec
+Testcase: testAddWeeks431 took 0.001 sec

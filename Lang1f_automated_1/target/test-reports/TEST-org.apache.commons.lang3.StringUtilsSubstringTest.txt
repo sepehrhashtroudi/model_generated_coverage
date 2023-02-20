@@ -1,0 +1,51 @@
+Testsuite: org.apache.commons.lang3.StringUtilsSubstringTest
+Tests run: 8, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+
+Testcase: testSubstringBeforeLast_StringString454 took 0.026 sec
+	FAILED
+expected:<foo[]> but was:<foo[XXbar]>
+junit.framework.AssertionFailedError: expected:<foo[]> but was:<foo[XXbar]>
+	at org.apache.commons.lang3.StringUtilsSubstringTest.testSubstringBeforeLast_StringString454(StringUtilsSubstringTest.java:129)
+
+Testcase: testSubstringBeforeLast_StringString455 took 0 sec
+	FAILED
+expected:<[baz]> but was:<[fooXXbar]>
+junit.framework.AssertionFailedError: expected:<[baz]> but was:<[fooXXbar]>
+	at org.apache.commons.lang3.StringUtilsSubstringTest.testSubstringBeforeLast_StringString455(StringUtilsSubstringTest.java:146)
+
+Testcase: testSubstring_StringInt448 took 0 sec
+	FAILED
+expected:<[]> but was:<[baz]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[baz]>
+	at org.apache.commons.lang3.StringUtilsSubstringTest.testSubstring_StringInt448(StringUtilsSubstringTest.java:47)
+
+Testcase: testSubstring_StringInt449 took 0 sec
+	FAILED
+expected:<[]> but was:<[baz]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[baz]>
+	at org.apache.commons.lang3.StringUtilsSubstringTest.testSubstring_StringInt449(StringUtilsSubstringTest.java:60)
+
+Testcase: testSubstring_StringInt450 took 0 sec
+	FAILED
+expected:<[]> but was:<[baz]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[baz]>
+	at org.apache.commons.lang3.StringUtilsSubstringTest.testSubstring_StringInt450(StringUtilsSubstringTest.java:77)
+
+Testcase: testSubstring_StringInt451 took 0.001 sec
+	FAILED
+expected:<[]> but was:<[baz]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[baz]>
+	at org.apache.commons.lang3.StringUtilsSubstringTest.testSubstring_StringInt451(StringUtilsSubstringTest.java:92)
+
+Testcase: testSubstring_StringInt452 took 0 sec
+	FAILED
+expected:<[]> but was:<[baz]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[baz]>
+	at org.apache.commons.lang3.StringUtilsSubstringTest.testSubstring_StringInt452(StringUtilsSubstringTest.java:104)
+
+Testcase: testSubstring_StringInt453 took 0 sec
+	FAILED
+expected:<[]> but was:<[baz]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[baz]>
+	at org.apache.commons.lang3.StringUtilsSubstringTest.testSubstring_StringInt453(StringUtilsSubstringTest.java:119)
+

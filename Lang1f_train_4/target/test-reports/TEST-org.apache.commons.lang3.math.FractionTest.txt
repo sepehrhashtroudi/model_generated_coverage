@@ -1,0 +1,22 @@
+Testsuite: org.apache.commons.lang3.math.FractionTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.155 sec
+
+Testcase: testFactory_String_improper264 took 0.023 sec
+Testcase: testReduce266 took 0 sec
+Testcase: testToString274 took 0 sec
+Testcase: testInvert269 took 0 sec
+Testcase: testReducedFactory_int_int260 took 0.001 sec
+Testcase: testDivide267 took 0 sec
+Testcase: testFactory_int_int257 took 0 sec
+Testcase: testFactory_double261 took 0.111 sec
+Testcase: testConversions265 took 0 sec
+Testcase: testMultiply271 took 0.001 sec
+Testcase: testFactory_String_double259 took 0.001 sec
+Testcase: testFactory_String_proper263 took 0 sec
+Testcase: testToProperString258 took 0 sec
+Testcase: testCompareTo273 took 0 sec
+Testcase: testAdd270 took 0.001 sec
+Testcase: testHashCode256 took 0 sec
+Testcase: testEquals272 took 0.001 sec
+Testcase: testPow268 took 0 sec
+Testcase: testFactory_String262 took 0 sec

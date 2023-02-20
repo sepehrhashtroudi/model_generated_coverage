@@ -1,0 +1,13 @@
+Testsuite: org.apache.commons.lang3.time.FastDateParserTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.73 sec
+
+Testcase: testDayOf115 took 0.027 sec
+Testcase: testLANG_831112 took 0.004 sec
+Testcase: testPatternMatches108 took 0.09 sec
+Testcase: test_Equality_Hash109 took 0.008 sec
+Testcase: testLocales_Short_AD117 took 1.553 sec
+Testcase: testSpecialCharacters110 took 0.002 sec
+Testcase: testTimeDefaults118 took 0.012 sec
+Testcase: testParseLongShort111 took 0.003 sec
+Testcase: testFormatPeriodISO119 took 0.011 sec
+Testcase: testLocaleMatches107 took 0.001 sec

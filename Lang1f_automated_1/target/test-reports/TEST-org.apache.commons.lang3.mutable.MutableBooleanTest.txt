@@ -1,0 +1,26 @@
+Testsuite: org.apache.commons.lang3.mutable.MutableBooleanTest
+Tests run: 8, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+
+Testcase: testConstructors406 took 0.018 sec
+	FAILED
+expected:<0> but was:<false>
+junit.framework.AssertionFailedError: expected:<0> but was:<false>
+	at org.apache.commons.lang3.mutable.MutableBooleanTest.testConstructors406(MutableBooleanTest.java:34)
+
+Testcase: testConstructors407 took 0 sec
+Testcase: testConstructors409 took 0 sec
+	FAILED
+expected:<true> but was:<false>
+junit.framework.AssertionFailedError: expected:<true> but was:<false>
+	at org.apache.commons.lang3.mutable.MutableBooleanTest.testConstructors409(MutableBooleanTest.java:64)
+
+Testcase: testToBoolean419 took 0 sec
+Testcase: testGetSet410 took 0 sec
+	FAILED
+expected:<true> but was:<false>
+junit.framework.AssertionFailedError: expected:<true> but was:<false>
+	at org.apache.commons.lang3.mutable.MutableBooleanTest.testGetSet410(MutableBooleanTest.java:74)
+
+Testcase: testGetSet412 took 0 sec
+Testcase: testGetSet413 took 0 sec
+Testcase: testEquals408 took 0 sec

@@ -1,0 +1,16 @@
+Testsuite: org.apache.commons.lang3.text.translate.UnicodeEscaperTest
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+
+Testcase: testAbove524 took 0.02 sec
+Testcase: testBelow522 took 0.002 sec
+	FAILED
+Failed to escape Unicode characters via the below method expected:<[&#65;&#68;]FGZ> but was:<[\u0041\u0044]FGZ>
+junit.framework.AssertionFailedError: Failed to escape Unicode characters via the below method expected:<[&#65;&#68;]FGZ> but was:<[\u0041\u0044]FGZ>
+	at org.apache.commons.lang3.text.translate.UnicodeEscaperTest.testBelow522(UnicodeEscaperTest.java:35)
+
+Testcase: testBetween523 took 0 sec
+	FAILED
+Failed to escape Unicode characters via the between method expected:<AD[&#70;&#71;]Z> but was:<AD[\u0046\u0047]Z>
+junit.framework.AssertionFailedError: Failed to escape Unicode characters via the between method expected:<AD[&#70;&#71;]Z> but was:<AD[\u0046\u0047]Z>
+	at org.apache.commons.lang3.text.translate.UnicodeEscaperTest.testBetween523(UnicodeEscaperTest.java:42)
+

@@ -1,0 +1,32 @@
+Testsuite: org.apache.commons.lang3.ValidateTest
+Tests run: 9, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+
+Testcase: testValidIndex_withMessage_iterable443 took 0.022 sec
+	FAILED
+expected:<The validated [iterable] index is invalid: -...> but was:<The validated [collection] index is invalid: -...>
+junit.framework.AssertionFailedError: expected:<The validated [iterable] index is invalid: -...> but was:<The validated [collection] index is invalid: -...>
+	at org.apache.commons.lang3.ValidateTest.testValidIndex_withMessage_iterable443(ValidateTest.java:108)
+
+Testcase: testNotBlankExceptionMessage442 took 0.006 sec
+	FAILED
+Expecting IllegalArgumentException
+junit.framework.AssertionFailedError: Expecting IllegalArgumentException
+	at org.apache.commons.lang3.ValidateTest.testNotBlankExceptionMessage442(ValidateTest.java:92)
+
+Testcase: testValidIndex_withArray444 took 0 sec
+Testcase: testIsAssignableExceptionMessage447 took 0.001 sec
+Testcase: testNotBlankExMessageNotBlank441 took 0 sec
+	FAILED
+Expecting IllegalArgumentException
+junit.framework.AssertionFailedError: Expecting IllegalArgumentException
+	at org.apache.commons.lang3.ValidateTest.testNotBlankExMessageNotBlank441(ValidateTest.java:82)
+
+Testcase: testNotEmptyString2437 took 0.001 sec
+Testcase: testNotBlankNullStringShouldThrow440 took 0 sec
+Testcase: testInclusiveBetween446 took 0 sec
+	FAILED
+expected:<...ot in the specified [ex]clusive range of 0 t...> but was:<...ot in the specified [in]clusive range of 0 t...>
+junit.framework.AssertionFailedError: expected:<...ot in the specified [ex]clusive range of 0 t...> but was:<...ot in the specified [in]clusive range of 0 t...>
+	at org.apache.commons.lang3.ValidateTest.testInclusiveBetween446(ValidateTest.java:160)
+
+Testcase: testMatchesPattern445 took 0 sec

@@ -1,0 +1,10 @@
+Testsuite: org.apache.commons.lang3.mutable.MutableShortTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+
+Testcase: testAddValuePrimitive472 took 0.02 sec
+Testcase: testDecrement474 took 0 sec
+Testcase: testIncrement475 took 0 sec
+Testcase: testAddValueObject473 took 0 sec
+Testcase: testGetSet470 took 0 sec
+Testcase: testEquals469 took 0 sec
+Testcase: testPrimitiveValues476 took 0.001 sec

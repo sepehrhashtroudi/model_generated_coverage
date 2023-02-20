@@ -1,0 +1,24 @@
+Testsuite: org.apache.commons.lang3.builder.ToStringBuilderTest
+Tests run: 7, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 0.097 sec
+
+Testcase: testBooleanArray139 took 0.051 sec
+Testcase: testGetSetDefault138 took 0.003 sec
+	FAILED
+Expected exception: java.lang.IllegalArgumentException
+junit.framework.AssertionFailedError: Expected exception: java.lang.IllegalArgumentException
+
+Testcase: testInheritedReflectionStatics360 took 0.008 sec
+	FAILED
+expected:<...474c6c[staticString2[=staticString2,staticInt2=]67890]> but was:<...474c6c[staticString2[,]67890]>
+junit.framework.AssertionFailedError: expected:<...474c6c[staticString2[=staticString2,staticInt2=]67890]> but was:<...474c6c[staticString2[,]67890]>
+	at org.apache.commons.lang3.builder.ToStringBuilderTest.testInheritedReflectionStatics360(ToStringBuilderTest.java:76)
+
+Testcase: testInheritedReflectionStatics361 took 0 sec
+	Caused an ERROR
+Unexpected exception, expected<java.lang.IllegalArgumentException> but was<org.junit.ComparisonFailure>
+java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<org.junit.ComparisonFailure>
+	at org.apache.commons.lang3.builder.ToStringBuilderTest.testInheritedReflectionStatics361(ToStringBuilderTest.java:84)
+
+Testcase: testShortArray140 took 0 sec
+Testcase: testLongArray491 took 0 sec
+Testcase: testShortArrayArray494 took 0 sec

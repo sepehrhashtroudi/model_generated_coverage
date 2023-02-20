@@ -1,0 +1,42 @@
+Testsuite: org.apache.commons.lang3.ConversionTest
+Tests run: 8, Failures: 5, Errors: 1, Skipped: 0, Time elapsed: 0.041 sec
+
+Testcase: testHexToShort597 took 0.023 sec
+	Caused an ERROR
+(nHexs-1)*4+dstPos is greather or equal to than 16
+java.lang.IllegalArgumentException: (nHexs-1)*4+dstPos is greather or equal to than 16
+	at org.apache.commons.lang3.Conversion.hexToShort(Conversion.java:975)
+	at org.apache.commons.lang3.ConversionTest.testHexToShort597(ConversionTest.java:134)
+
+Testcase: testIntToHexDigit591 took 0.001 sec
+Testcase: testByteArrayToLong593 took 0 sec
+	FAILED
+expected:<12> but was:<205>
+junit.framework.AssertionFailedError: expected:<12> but was:<205>
+	at org.apache.commons.lang3.ConversionTest.testByteArrayToLong593(ConversionTest.java:93)
+
+Testcase: testBinaryToHexDigit_2args590 took 0 sec
+Testcase: testIntArrayToLong592 took 0 sec
+	FAILED
+expected:<12> but was:<0>
+junit.framework.AssertionFailedError: expected:<12> but was:<0>
+	at org.apache.commons.lang3.ConversionTest.testIntArrayToLong592(ConversionTest.java:83)
+
+Testcase: testByteArrayToInt594 took 0 sec
+	FAILED
+expected:<991196> but was:<61681>
+junit.framework.AssertionFailedError: expected:<991196> but was:<61681>
+	at org.apache.commons.lang3.ConversionTest.testByteArrayToInt594(ConversionTest.java:105)
+
+Testcase: testByteArrayToInt595 took 0 sec
+	FAILED
+expected:<52719> but was:<315446904>
+junit.framework.AssertionFailedError: expected:<52719> but was:<315446904>
+	at org.apache.commons.lang3.ConversionTest.testByteArrayToInt595(ConversionTest.java:117)
+
+Testcase: testByteArrayToInt596 took 0 sec
+	FAILED
+expected:<-839821704> but was:<315446904>
+junit.framework.AssertionFailedError: expected:<-839821704> but was:<315446904>
+	at org.apache.commons.lang3.ConversionTest.testByteArrayToInt596(ConversionTest.java:127)
+

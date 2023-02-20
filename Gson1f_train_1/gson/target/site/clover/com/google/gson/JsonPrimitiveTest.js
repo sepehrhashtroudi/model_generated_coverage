@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":124,"id":4147,"methods":[{"el":36,"sc":1,"sl":32},{"el":44,"sc":1,"sl":39},{"el":57,"sc":1,"sl":47},{"el":69,"sc":1,"sl":60},{"el":77,"sc":1,"sl":72},{"el":85,"sc":1,"sl":80}],"name":"JsonPrimitiveTest","sl":29}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_105":{"methods":[{"sl":32}],"name":"testBoolean128","pass":true,"statements":[{"sl":33},{"sl":34},{"sl":35}]},"test_138":{"methods":[{"sl":47}],"name":"testExponential199","pass":true,"statements":[{"sl":48},{"sl":49},{"sl":50},{"sl":51},{"sl":52},{"sl":53}]},"test_175":{"methods":[{"sl":80}],"name":"testFloatEqualsDouble205","pass":true,"statements":[{"sl":81},{"sl":82},{"sl":83},{"sl":84}]},"test_177":{"methods":[{"sl":39}],"name":"testShortEqualsInteger198","pass":true,"statements":[{"sl":40},{"sl":41},{"sl":42},{"sl":43}]},"test_190":{"methods":[{"sl":60}],"name":"testStringsAndChar200","pass":true,"statements":[{"sl":61},{"sl":62},{"sl":63},{"sl":64},{"sl":65},{"sl":66},{"sl":67},{"sl":68}]},"test_202":{"methods":[{"sl":72}],"name":"testValidJsonOnToString204","pass":true,"statements":[{"sl":73},{"sl":74},{"sl":75},{"sl":76}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [105], [105], [105], [105], [], [], [], [177], [177], [177], [177], [177], [], [], [], [138], [138], [138], [138], [138], [138], [138], [], [], [], [], [], [], [190], [190], [190], [190], [190], [190], [190], [190], [190], [], [], [], [202], [202], [202], [202], [202], [], [], [], [175], [175], [175], [175], [175], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]

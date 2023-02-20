@@ -1,0 +1,7 @@
+Testsuite: org.apache.commons.lang3.mutable.MutableIntTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+
+Testcase: testToString383 took 0.02 sec
+Testcase: testDecrement382 took 0 sec
+Testcase: testIncrement381 took 0 sec
+Testcase: testGetSet380 took 0 sec

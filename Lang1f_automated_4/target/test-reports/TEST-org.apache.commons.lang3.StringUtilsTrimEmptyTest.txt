@@ -1,0 +1,21 @@
+Testsuite: org.apache.commons.lang3.StringUtilsTrimEmptyTest
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+
+Testcase: testStripToEmpty489 took 0.025 sec
+	FAILED
+expected:<null> but was:<>
+junit.framework.AssertionFailedError: expected:<null> but was:<>
+	at org.apache.commons.lang3.StringUtilsTrimEmptyTest.testStripToEmpty489(StringUtilsTrimEmptyTest.java:46)
+
+Testcase: testStripAccents_String490 took 0.004 sec
+	FAILED
+expected:<[]> but was:<[        ]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[        ]>
+	at org.apache.commons.lang3.StringUtilsTrimEmptyTest.testStripAccents_String490(StringUtilsTrimEmptyTest.java:56)
+
+Testcase: testStripToNull488 took 0 sec
+	FAILED
+expected:<> but was:<null>
+junit.framework.AssertionFailedError: expected:<> but was:<null>
+	at org.apache.commons.lang3.StringUtilsTrimEmptyTest.testStripToNull488(StringUtilsTrimEmptyTest.java:39)
+

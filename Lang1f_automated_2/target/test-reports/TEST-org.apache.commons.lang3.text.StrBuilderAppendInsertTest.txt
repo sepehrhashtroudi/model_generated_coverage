@@ -1,0 +1,41 @@
+Testsuite: org.apache.commons.lang3.text.StrBuilderAppendInsertTest
+Tests run: 11, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+
+Testcase: testAppendln_StringBuilder250 took 0.005 sec
+Testcase: testAppendln_Object253 took 0.001 sec
+	FAILED
+expected:<1> but was:<0>
+junit.framework.AssertionFailedError: expected:<1> but was:<0>
+	at org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_Object253(StrBuilderAppendInsertTest.java:111)
+
+Testcase: testAppendln_StrBuilder254 took 0.001 sec
+Testcase: testAppendSeparator_char_int261 took 0.001 sec
+	FAILED
+expected:<foo[,]> but was:<foo[ ]>
+junit.framework.AssertionFailedError: expected:<foo[,]> but was:<foo[ ]>
+	at org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendSeparator_char_int261(StrBuilderAppendInsertTest.java:178)
+
+Testcase: testAppendSeparator_char_int262 took 0 sec
+Testcase: testAppendln_CharArray_int_int255 took 0.001 sec
+Testcase: testLang412Left264 took 0 sec
+Testcase: testAppendFixedWidthPadLeft_int265 took 0 sec
+	FAILED
+expected:<[1]> but was:<[3]>
+junit.framework.AssertionFailedError: expected:<[1]> but was:<[3]>
+	at org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendFixedWidthPadLeft_int265(StrBuilderAppendInsertTest.java:216)
+
+Testcase: testLang299263 took 0 sec
+	FAILED
+expected:<[f]> but was:<[o]>
+junit.framework.AssertionFailedError: expected:<[f]> but was:<[o]>
+	at org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testLang299263(StrBuilderAppendInsertTest.java:198)
+
+Testcase: testAppendln_StringBuilder_int_int251 took 0 sec
+Testcase: testAppendln_PrimitiveNumber256 took 0.001 sec
+	FAILED
+expected:<0[]> but was:<0[
+]>
+junit.framework.AssertionFailedError: expected:<0[]> but was:<0[
+]>
+	at org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendln_PrimitiveNumber256(StrBuilderAppendInsertTest.java:162)
+

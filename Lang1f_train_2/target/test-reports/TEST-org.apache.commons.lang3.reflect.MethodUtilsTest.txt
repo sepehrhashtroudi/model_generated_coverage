@@ -1,0 +1,11 @@
+Testsuite: org.apache.commons.lang3.reflect.MethodUtilsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+
+Testcase: testGetAccessibleInterfaceMethod54 took 0.027 sec
+Testcase: testInvokeExactStaticMethod50 took 0.005 sec
+Testcase: testGetAccessibleMethodPrivateInterface51 took 0 sec
+Testcase: testInvokeExactMethod49 took 0 sec
+Testcase: testGetAccessiblePublicMethod52 took 0 sec
+Testcase: testConstructor47 took 0 sec
+Testcase: testGetMatchingAccessibleMethod612 took 0.004 sec
+Testcase: testGetAccessibleMethodInaccessible53 took 0 sec

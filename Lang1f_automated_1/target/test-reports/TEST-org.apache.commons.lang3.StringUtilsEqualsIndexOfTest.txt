@@ -1,0 +1,18 @@
+Testsuite: org.apache.commons.lang3.StringUtilsEqualsIndexOfTest
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+
+Testcase: testIndexOf_StringInt441 took 0.027 sec
+	FAILED
+expected:<0> but was:<-1>
+junit.framework.AssertionFailedError: expected:<0> but was:<-1>
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testIndexOf_StringInt441(StringUtilsEqualsIndexOfTest.java:72)
+
+Testcase: testContainsNone_StringWithBadSupplementaryChars447 took 0 sec
+Testcase: testIndexOfAnyBut_StringString446 took 0.001 sec
+Testcase: testContainsAny_StringString445 took 0.004 sec
+Testcase: testLastIndexOf_String444 took 0.001 sec
+	FAILED
+expected:<7> but was:<-1>
+junit.framework.AssertionFailedError: expected:<7> but was:<-1>
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testLastIndexOf_String444(StringUtilsEqualsIndexOfTest.java:100)
+

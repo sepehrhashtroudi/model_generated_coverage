@@ -1,0 +1,4 @@
+Testsuite: org.apache.commons.lang3.text.WordUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+
+Testcase: testInitials_String178 took 0.024 sec

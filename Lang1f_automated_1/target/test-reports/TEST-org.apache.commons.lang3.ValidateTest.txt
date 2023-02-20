@@ -1,0 +1,63 @@
+Testsuite: org.apache.commons.lang3.ValidateTest
+Tests run: 12, Failures: 7, Errors: 2, Skipped: 0, Time elapsed: 0.054 sec
+
+Testcase: testNotEmptyArray1394 took 0.022 sec
+	FAILED
+Expecting IllegalArgumentException
+junit.framework.AssertionFailedError: Expecting IllegalArgumentException
+	at org.apache.commons.lang3.ValidateTest.testNotEmptyArray1394(ValidateTest.java:59)
+
+Testcase: testNotNullString2395 took 0 sec
+	FAILED
+Expecting IllegalArgumentException
+junit.framework.AssertionFailedError: Expecting IllegalArgumentException
+	at org.apache.commons.lang3.ValidateTest.testNotNullString2395(ValidateTest.java:78)
+
+Testcase: testNoNullElementsArray1398 took 0.007 sec
+	Caused an ERROR
+The validated array contains null element at index: 0
+java.lang.IllegalArgumentException: The validated array contains null element at index: 0
+	at org.apache.commons.lang3.Validate.noNullElements(Validate.java:510)
+	at org.apache.commons.lang3.Validate.noNullElements(Validate.java:538)
+	at org.apache.commons.lang3.ValidateTest.testNoNullElementsArray1398(ValidateTest.java:117)
+
+Testcase: testNotEmptyString2396 took 0 sec
+Testcase: testValidIndex_collection403 took 0.001 sec
+Testcase: testIsInstanceOfExceptionMessage404 took 0.001 sec
+	FAILED
+expected:<[The valida]ted type: java.util....> but was:<[Expec]ted type: java.util....>
+junit.framework.AssertionFailedError: expected:<[The valida]ted type: java.util....> but was:<[Expec]ted type: java.util....>
+	at org.apache.commons.lang3.ValidateTest.testIsInstanceOfExceptionMessage404(ValidateTest.java:260)
+
+Testcase: testNotBlankNullStringShouldThrow397 took 0 sec
+Testcase: testIsInstanceOf_withMessage405 took 0 sec
+	Caused an ERROR
+Error
+java.lang.IllegalArgumentException: Error
+	at org.apache.commons.lang3.Validate.isInstanceOf(Validate.java:1026)
+	at org.apache.commons.lang3.ValidateTest.testIsInstanceOf_withMessage405(ValidateTest.java:266)
+
+Testcase: testValidIndex_array399 took 0 sec
+	FAILED
+Expecting IndexOutOfBoundsException
+junit.framework.AssertionFailedError: Expecting IndexOutOfBoundsException
+	at org.apache.commons.lang3.ValidateTest.testValidIndex_array399(ValidateTest.java:147)
+
+Testcase: testValidIndex_array400 took 0 sec
+	FAILED
+Expecting IndexOutOfBoundsException
+junit.framework.AssertionFailedError: Expecting IndexOutOfBoundsException
+	at org.apache.commons.lang3.ValidateTest.testValidIndex_array400(ValidateTest.java:174)
+
+Testcase: testValidIndex_array401 took 0 sec
+	FAILED
+Expecting IndexOutOfBoundsException
+junit.framework.AssertionFailedError: Expecting IndexOutOfBoundsException
+	at org.apache.commons.lang3.ValidateTest.testValidIndex_array401(ValidateTest.java:196)
+
+Testcase: testValidIndex_array402 took 0 sec
+	FAILED
+Expecting IndexOutOfBoundsException
+junit.framework.AssertionFailedError: Expecting IndexOutOfBoundsException
+	at org.apache.commons.lang3.ValidateTest.testValidIndex_array402(ValidateTest.java:223)
+

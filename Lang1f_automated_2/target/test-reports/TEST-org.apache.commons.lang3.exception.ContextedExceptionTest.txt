@@ -1,0 +1,5 @@
+Testsuite: org.apache.commons.lang3.exception.ContextedExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+
+Testcase: testNullExceptionPassing306 took 0.028 sec
+Testcase: testContextedExceptionStringThrowableContext305 took 0 sec

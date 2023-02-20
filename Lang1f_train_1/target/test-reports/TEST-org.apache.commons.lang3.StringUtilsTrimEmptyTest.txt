@@ -1,0 +1,15 @@
+Testsuite: org.apache.commons.lang3.StringUtilsTrimEmptyTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec
+
+Testcase: testTrimToEmpty987 took 0.033 sec
+Testcase: testStripToEmpty_String990 took 0 sec
+Testcase: testTrimToNull986 took 0 sec
+Testcase: testStripAll994 took 0.001 sec
+Testcase: testTrim985 took 0 sec
+Testcase: testIsNotBlank984 took 0 sec
+Testcase: testStripStart_StringString991 took 0 sec
+Testcase: testStripToNull_String989 took 0.001 sec
+Testcase: testStrip_String988 took 0 sec
+Testcase: testStripAccents995 took 0.014 sec
+Testcase: testStrip_StringString992 took 0 sec
+Testcase: testIsNotEmpty983 took 0 sec

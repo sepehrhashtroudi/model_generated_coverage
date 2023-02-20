@@ -1,0 +1,16 @@
+Testsuite: org.apache.commons.lang3.mutable.MutableLongTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+
+Testcase: testConstructors849 took 0.02 sec
+Testcase: testAddValuePrimitive853 took 0 sec
+Testcase: testCompareToNull860 took 0 sec
+Testcase: testDecrement852 took 0 sec
+Testcase: testSubtractValuePrimitive855 took 0 sec
+Testcase: testToLong857 took 0 sec
+Testcase: testIncrement851 took 0 sec
+Testcase: testCompareTo861 took 0 sec
+Testcase: testAddValueObject854 took 0 sec
+Testcase: testHashCode859 took 0 sec
+Testcase: testGetSet850 took 0 sec
+Testcase: testEquals858 took 0 sec
+Testcase: testPrimitiveValues856 took 0 sec

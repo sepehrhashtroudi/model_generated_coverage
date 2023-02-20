@@ -1,0 +1,18 @@
+Testsuite: org.apache.commons.lang3.builder.ToStringBuilderTest
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+
+Testcase: testBooleanArray486 took 0.025 sec
+Testcase: testLongArray157 took 0 sec
+Testcase: testLongArray158 took 0 sec
+Testcase: testBooleanArrayArray485 took 0.002 sec
+	FAILED
+expected:<...[{{true,false,false}[]]> but was:<...[{{true,false,false}[,<null>,{true}}]]>
+junit.framework.AssertionFailedError: expected:<...[{{true,false,false}[]]> but was:<...[{{true,false,false}[,<null>,{true}}]]>
+	at org.apache.commons.lang3.builder.ToStringBuilderTest.testBooleanArrayArray485(ToStringBuilderTest.java:69)
+
+Testcase: testBooleanArrayArray487 took 0 sec
+	FAILED
+expected:<...[{{true,false,false}[]]> but was:<...[{{true,false,false}[,<null>,{true}}]]>
+junit.framework.AssertionFailedError: expected:<...[{{true,false,false}[]]> but was:<...[{{true,false,false}[,<null>,{true}}]]>
+	at org.apache.commons.lang3.builder.ToStringBuilderTest.testBooleanArrayArray487(ToStringBuilderTest.java:87)
+

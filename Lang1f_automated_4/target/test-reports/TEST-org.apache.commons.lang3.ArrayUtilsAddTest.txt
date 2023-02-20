@@ -1,0 +1,108 @@
+Testsuite: org.apache.commons.lang3.ArrayUtilsAddTest
+Tests run: 20, Failures: 17, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec
+
+Testcase: testAddAllIntArray235 took 0.023 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testAddAllIntArray235(ArrayUtilsAddTest.java:188)
+
+Testcase: testAddAllIntArray236 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testAddAllIntArray236(ArrayUtilsAddTest.java:224)
+
+Testcase: testAddAllBooleanArray220 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testAddAllBooleanArray220(ArrayUtilsAddTest.java:54)
+
+Testcase: testAddObjectArrayByte252 took 0 sec
+Testcase: testJira567219 took 0 sec
+Testcase: testJira567221 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testJira567221(ArrayUtilsAddTest.java:77)
+
+Testcase: testJira567222 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testJira567222(ArrayUtilsAddTest.java:97)
+
+Testcase: testJira567224 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testJira567224(ArrayUtilsAddTest.java:113)
+
+Testcase: testJira567225 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testJira567225(ArrayUtilsAddTest.java:130)
+
+Testcase: testJira567231 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testJira567231(ArrayUtilsAddTest.java:149)
+
+Testcase: testJira567233 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testJira567233(ArrayUtilsAddTest.java:160)
+
+Testcase: testJira567234 took 0.001 sec
+	FAILED
+expected:<4> but was:<3>
+junit.framework.AssertionFailedError: expected:<4> but was:<3>
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testJira567234(ArrayUtilsAddTest.java:167)
+
+Testcase: testJira567239 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testJira567239(ArrayUtilsAddTest.java:243)
+
+Testcase: testJira567241 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testJira567241(ArrayUtilsAddTest.java:253)
+
+Testcase: testJira567242 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testJira567242(ArrayUtilsAddTest.java:264)
+
+Testcase: testJira567243 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testJira567243(ArrayUtilsAddTest.java:284)
+
+Testcase: testJira567247 took 0 sec
+Testcase: testJira567249 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testJira567249(ArrayUtilsAddTest.java:304)
+
+Testcase: testJira567250 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testJira567250(ArrayUtilsAddTest.java:324)
+
+Testcase: testJira567251 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testJira567251(ArrayUtilsAddTest.java:343)
+

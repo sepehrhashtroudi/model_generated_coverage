@@ -1,0 +1,13 @@
+Testsuite: org.apache.commons.lang3.builder.MultiLineToStringStyleTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+
+Testcase: testLongArray584 took 0.026 sec
+	FAILED
+expected:<...ang.Integer@6ed3ef1[[{1,2,-3,4}]]> but was:<...ang.Integer@6ed3ef1[[
+  {1,2,-3,4}
+]]>
+junit.framework.AssertionFailedError: expected:<...ang.Integer@6ed3ef1[[{1,2,-3,4}]]> but was:<...ang.Integer@6ed3ef1[[
+  {1,2,-3,4}
+]]>
+	at org.apache.commons.lang3.builder.MultiLineToStringStyleTest.testLongArray584(MultiLineToStringStyleTest.java:55)
+

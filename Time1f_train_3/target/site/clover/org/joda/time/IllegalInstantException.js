@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":89,"id":2285,"methods":[{"el":54,"sc":5,"sl":52},{"el":64,"sc":5,"sl":62},{"el":70,"sc":5,"sl":66},{"el":87,"sc":5,"sl":79}],"name":"IllegalInstantException","sl":41}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_202":{"methods":[{"sl":62},{"sl":66}],"name":"testIsLocalDateTimeGap_Berlin636","pass":true,"statements":[{"sl":63},{"sl":67},{"sl":68},{"sl":69}]},"test_251":{"methods":[{"sl":62},{"sl":66}],"name":"testZoneTransition944","pass":true,"statements":[{"sl":63},{"sl":67},{"sl":68},{"sl":69}]},"test_26":{"methods":[{"sl":52}],"name":"test_DateTime_parse_Turk815","pass":true,"statements":[{"sl":53}]},"test_447":{"methods":[{"sl":52}],"name":"test_DateTime_parse_Gaza940","pass":true,"statements":[{"sl":53}]},"test_560":{"methods":[{"sl":62},{"sl":66},{"sl":79}],"name":"testPropertyWithMaximumValueMillisOfDayDSTGap630","pass":true,"statements":[{"sl":63},{"sl":67},{"sl":68},{"sl":69},{"sl":80},{"sl":81},{"sl":83},{"sl":84}]},"test_725":{"methods":[{"sl":62},{"sl":66}],"name":"test_LocalDate_toDateMidnight_Gaza712","pass":true,"statements":[{"sl":63},{"sl":67},{"sl":68},{"sl":69}]},"test_891":{"methods":[{"sl":62},{"sl":66}],"name":"test_DateTime_setHourForward_NewYork_Spring812","pass":true,"statements":[{"sl":63},{"sl":67},{"sl":68},{"sl":69}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [26, 447], [26, 447], [], [], [], [], [], [], [], [], [202, 251, 891, 725, 560], [202, 251, 891, 725, 560], [], [], [202, 251, 891, 725, 560], [202, 251, 891, 725, 560], [202, 251, 891, 725, 560], [202, 251, 891, 725, 560], [], [], [], [], [], [], [], [], [], [560], [560], [560], [], [560], [560], [], [], [], [], []]

@@ -1,0 +1,17 @@
+Testsuite: org.apache.commons.lang3.builder.CompareToBuilderTest
+Tests run: 9, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.039 sec
+
+Testcase: testDoubleArrayHiddenByObject458 took 0.021 sec
+Testcase: testRaggedArray461 took 0 sec
+Testcase: testBooleanArray463 took 0 sec
+Testcase: testMultiIntArray455 took 0 sec
+Testcase: testMultiCharArray456 took 0 sec
+Testcase: testByteArrayHiddenByObject457 took 0 sec
+Testcase: testReflectionCompareEx2454 took 0.001 sec
+Testcase: testMultiFloatArray459 took 0 sec
+Testcase: testBooleanArrayHiddenByObject460 took 0.001 sec
+	Caused an ERROR
+3
+java.lang.ArrayIndexOutOfBoundsException: 3
+	at org.apache.commons.lang3.builder.CompareToBuilderTest.testBooleanArrayHiddenByObject460(CompareToBuilderTest.java:231)
+

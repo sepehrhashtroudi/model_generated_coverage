@@ -1,0 +1,6 @@
+Testsuite: org.apache.commons.lang3.JavaVersionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+
+Testcase: testGetJavaVersion840 took 0.018 sec
+Testcase: testToString841 took 0 sec
+Testcase: testAtLeast839 took 0 sec

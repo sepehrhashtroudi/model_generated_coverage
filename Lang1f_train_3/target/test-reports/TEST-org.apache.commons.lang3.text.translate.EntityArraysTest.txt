@@ -1,0 +1,5 @@
+Testsuite: org.apache.commons.lang3.text.translate.EntityArraysTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+
+Testcase: testHTML40_EXTENDED_ESCAPE199 took 0.02 sec
+Testcase: testISO8859_1_ESCAPE197 took 0 sec

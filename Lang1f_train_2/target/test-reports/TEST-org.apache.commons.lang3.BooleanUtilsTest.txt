@@ -1,0 +1,47 @@
+Testsuite: org.apache.commons.lang3.BooleanUtilsTest
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+
+Testcase: testXor_object_validInput_3items41 took 0.023 sec
+Testcase: test_toStringOnOff_boolean28 took 0 sec
+Testcase: test_toBoolean_Integer_Integer_Integer8 took 0 sec
+Testcase: test_toIntegerObject_Boolean16 took 0.002 sec
+Testcase: testAnd_object_nullElementInput35 took 0 sec
+Testcase: testOr_object_nullElementInput39 took 0 sec
+Testcase: test_negate_Boolean1 took 0 sec
+Testcase: test_toBooleanObject_int5 took 0 sec
+Testcase: testXor_primitive_emptyInput42 took 0 sec
+Testcase: testAnd_primitive_validInput_2items30 took 0 sec
+Testcase: test_toBoolean_String_String_String_nullValue24 took 0 sec
+Testcase: test_toIntegerObject_boolean_Integer_Integer19 took 0 sec
+Testcase: test_toBooleanObject_String_String_String_String22 took 0 sec
+Testcase: testOr_object_emptyInput38 took 0 sec
+Testcase: test_toBooleanObject_int_int_int11 took 0 sec
+Testcase: test_toBoolean_int_int_int_noMatch7 took 0 sec
+Testcase: testAnd_primitive_nullInput31 took 0 sec
+Testcase: test_toBooleanObject_int_int_int_noMatch10 took 0 sec
+Testcase: test_toBoolean_int_int_int6 took 0 sec
+Testcase: test_toStringOnOff_Boolean26 took 0 sec
+Testcase: test_toStringTrueFalse_boolean27 took 0 sec
+Testcase: test_toBooleanObject_Integer_Integer_Integer_Integer_noMatch13 took 0 sec
+Testcase: test_toBooleanObject_Integer_Integer_Integer_Integer12 took 0 sec
+Testcase: test_toIntegerObject_Boolean_Integer_Integer_Integer20 took 0 sec
+Testcase: testOr_primitive_emptyInput37 took 0 sec
+Testcase: testXor_object_nullInput43 took 0 sec
+Testcase: test_toIntegerObject_boolean15 took 0 sec
+Testcase: testAnd_object_validInput_3items33 took 0 sec
+Testcase: test_toStringYesNo_boolean29 took 0 sec
+Testcase: test_isNotTrue_Boolean2 took 0 sec
+Testcase: testOr_object_validInput_2items40 took 0 sec
+Testcase: test_toInteger_boolean14 took 0 sec
+Testcase: testAnd_primitive_emptyInput32 took 0 sec
+Testcase: test_toBoolean_String21 took 0 sec
+Testcase: testAnd_object_nullInput34 took 0 sec
+Testcase: test_toBoolean_Boolean4 took 0 sec
+Testcase: test_toBoolean_Integer_Integer_Integer_nullValue9 took 0 sec
+Testcase: testXor_object_nullElementInput44 took 0 sec
+Testcase: test_toInteger_Boolean_int_int_int18 took 0 sec
+Testcase: test_toInteger_boolean_int_int17 took 0 sec
+Testcase: testOr_primitive_validInput_2items36 took 0 sec
+Testcase: test_toStringTrueFalse_Boolean25 took 0 sec
+Testcase: test_isNotFalse_Boolean3 took 0 sec
+Testcase: test_toBoolean_String_String_String23 took 0 sec

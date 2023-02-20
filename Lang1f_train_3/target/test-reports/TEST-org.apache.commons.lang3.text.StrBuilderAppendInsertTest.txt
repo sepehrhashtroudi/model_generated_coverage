@@ -1,0 +1,40 @@
+Testsuite: org.apache.commons.lang3.text.StrBuilderAppendInsertTest
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec
+
+Testcase: testAppendln_String_int_int635 took 0.004 sec
+Testcase: testAppend_StrBuilder646 took 0.001 sec
+Testcase: testAppendWithSeparators_Iterator636 took 0.001 sec
+Testcase: testAppendln_StringBuilder643 took 0 sec
+Testcase: testInsertWithNullText671 took 0 sec
+Testcase: testAppendFixedWidthPadRight_int670 took 0 sec
+Testcase: testAppend_Object637 took 0 sec
+Testcase: testAppendln_StrBuilder_int_int655 took 0 sec
+Testcase: testAppendln_Object652 took 0.001 sec
+Testcase: testAppend_String_int_int638 took 0 sec
+Testcase: testAppend_PrimitiveNumber651 took 0.002 sec
+Testcase: testAppendAll_Iterator659 took 0 sec
+Testcase: testAppendln_FormattedString639 took 0 sec
+Testcase: testAppendSeparator_String_String661 took 0 sec
+Testcase: testAppendFixedWidthPadLeft623 took 0 sec
+Testcase: testAppendSeparator_String660 took 0 sec
+Testcase: testAppend_CharArray648 took 0 sec
+Testcase: testAppend_String624 took 0 sec
+Testcase: testAppendln_StrBuilder654 took 0 sec
+Testcase: testAppendFixedWidthPadRight669 took 0 sec
+Testcase: testAppendln_String653 took 0 sec
+Testcase: testAppend_StringBuilder_int_int645 took 0 sec
+Testcase: testAppend_StringBuffer_int_int642 took 0 sec
+Testcase: testAppendSeparator_char_int664 took 0 sec
+Testcase: testAppendln_CharArray_int_int656 took 0 sec
+Testcase: testAppend_CharArray_int_int649 took 0 sec
+Testcase: testAppendSeparator_String_int663 took 0 sec
+Testcase: testAppend_Boolean650 took 0 sec
+Testcase: testAppendWithNullText641 took 0 sec
+Testcase: testAppendFixedWidthPadLeft_int666 took 0 sec
+Testcase: testAppend_StrBuilder_int_int634 took 0 sec
+Testcase: testAppendSeparator_char662 took 0 sec
+Testcase: testLang299667 took 0 sec
+Testcase: testAppendPadding665 took 0 sec
+Testcase: testAppendln_StringBuilder_int_int644 took 0 sec
+Testcase: testAppendln_StringBuffer640 took 0 sec
+Testcase: testAppendln_PrimitiveNumber657 took 0.001 sec

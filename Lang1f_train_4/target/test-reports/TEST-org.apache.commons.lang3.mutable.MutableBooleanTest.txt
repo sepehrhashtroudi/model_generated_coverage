@@ -1,0 +1,8 @@
+Testsuite: org.apache.commons.lang3.mutable.MutableBooleanTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+
+Testcase: testConstructors928 took 0.019 sec
+Testcase: testToString931 took 0 sec
+Testcase: testCompareTo930 took 0 sec
+Testcase: testGetSet927 took 0 sec
+Testcase: testEquals929 took 0 sec

@@ -1,0 +1,15 @@
+Testsuite: org.apache.commons.lang3.builder.HashCodeBuilderTest
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+
+Testcase: testFloatArrayAsObject380 took 0.018 sec
+Testcase: testByteArrayAsObject377 took 0 sec
+Testcase: testObjectArray382 took 0 sec
+Testcase: testObjectArrayAsObject378 took 0 sec
+Testcase: testLongArray375 took 0 sec
+Testcase: testByteArray371 took 0.002 sec
+	FAILED
+expected:<23273> but was:<23458>
+junit.framework.AssertionFailedError: expected:<23273> but was:<23458>
+	at org.apache.commons.lang3.builder.HashCodeBuilderTest.testByteArray371(HashCodeBuilderTest.java:142)
+
+Testcase: testByteArray372 took 0 sec

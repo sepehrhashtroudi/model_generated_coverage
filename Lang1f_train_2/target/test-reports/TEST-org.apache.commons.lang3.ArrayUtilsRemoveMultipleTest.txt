@@ -1,0 +1,20 @@
+Testsuite: org.apache.commons.lang3.ArrayUtilsRemoveMultipleTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+
+Testcase: testRemoveAllByteArrayOutOfBoundsIndex596 took 0.024 sec
+Testcase: testRemoveElementShortArray599 took 0.001 sec
+Testcase: testRemoveElementBooleanArray607 took 0.001 sec
+Testcase: testRemoveElementIntArray601 took 0 sec
+Testcase: testRemoveElementCharArray603 took 0 sec
+Testcase: testRemoveAllNullCharArray602 took 0.001 sec
+Testcase: testRemoveElementsObjectArray595 took 0 sec
+Testcase: testRemoveAllLongArray604 took 0 sec
+Testcase: testRemoveElementDoubleArray538 took 0.001 sec
+Testcase: testRemoveAllDoubleArray606 took 0 sec
+Testcase: testRemoveAllNumberArray594 took 0.001 sec
+Testcase: testRemoveAllShortArrayNegativeIndex598 took 0 sec
+Testcase: testRemoveAllFloatArrayNegativeIndex471 took 0 sec
+Testcase: testRemoveAllObjectArray608 took 0 sec
+Testcase: testRemoveElementByteArray597 took 0 sec
+Testcase: testRemoveAllIntArrayRemoveNone600 took 0 sec
+Testcase: testRemoveElementFloatArray605 took 0 sec

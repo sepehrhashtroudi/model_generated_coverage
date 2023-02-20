@@ -1,0 +1,16 @@
+Testsuite: org.apache.commons.lang3.math.FractionTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.165 sec
+
+Testcase: testToString269 took 0.024 sec
+Testcase: testReducedFactory_int_int261 took 0 sec
+Testcase: testDivide265 took 0 sec
+Testcase: testFactory_double262 took 0.12 sec
+Testcase: testConversions264 took 0 sec
+Testcase: testFactory_String_proper263 took 0.001 sec
+Testcase: testToProperString259 took 0 sec
+Testcase: testAbs258 took 0 sec
+Testcase: testAdd266 took 0.002 sec
+Testcase: testHashCode257 took 0 sec
+Testcase: testEquals268 took 0 sec
+Testcase: testSubtract267 took 0 sec
+Testcase: testFactory_int_int_int260 took 0 sec

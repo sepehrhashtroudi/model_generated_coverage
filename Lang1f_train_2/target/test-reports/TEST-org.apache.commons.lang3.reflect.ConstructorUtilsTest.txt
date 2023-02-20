@@ -1,0 +1,7 @@
+Testsuite: org.apache.commons.lang3.reflect.ConstructorUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+
+Testcase: testInvokeConstructor611 took 0.029 sec
+Testcase: testInvokeExactConstructor756 took 0 sec
+Testcase: testGetAccessibleConstructorFromDescription757 took 0 sec
+Testcase: testGetMatchingAccessibleMethod613 took 0.001 sec

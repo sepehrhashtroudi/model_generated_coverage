@@ -1,0 +1,46 @@
+Testsuite: org.apache.commons.lang3.StringUtilsEqualsIndexOfTest
+Tests run: 8, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+
+Testcase: testLastIndexOfIgnoreCase_String419 took 0.023 sec
+Testcase: testIndexOfAnyBut_StringStringWithSupplementaryChars425 took 0.001 sec
+	FAILED
+expected:<0> but was:<2>
+junit.framework.AssertionFailedError: expected:<0> but was:<2>
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testIndexOfAnyBut_StringStringWithSupplementaryChars425(StringUtilsEqualsIndexOfTest.java:157)
+
+Testcase: testLastIndexOfAny_StringStringArray426 took 0 sec
+	FAILED
+expected:<2> but was:<3>
+junit.framework.AssertionFailedError: expected:<2> but was:<3>
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testLastIndexOfAny_StringStringArray426(StringUtilsEqualsIndexOfTest.java:167)
+
+Testcase: testContainsWhitespace_String423 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testContainsWhitespace_String423(StringUtilsEqualsIndexOfTest.java:128)
+
+Testcase: testContainsWhitespace_String424 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testContainsWhitespace_String424(StringUtilsEqualsIndexOfTest.java:143)
+
+Testcase: testContains_String421 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testContains_String421(StringUtilsEqualsIndexOfTest.java:98)
+
+Testcase: testContains_String422 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testContains_String422(StringUtilsEqualsIndexOfTest.java:110)
+
+Testcase: testEquals416 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testEquals416(StringUtilsEqualsIndexOfTest.java:69)
+

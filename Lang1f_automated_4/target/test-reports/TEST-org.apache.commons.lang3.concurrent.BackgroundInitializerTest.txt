@@ -1,0 +1,8 @@
+Testsuite: org.apache.commons.lang3.concurrent.BackgroundInitializerTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
+
+Testcase: testIsStartedAfterGet80 took 0.025 sec
+	FAILED
+Expected exception: java.lang.IllegalStateException
+junit.framework.AssertionFailedError: Expected exception: java.lang.IllegalStateException
+

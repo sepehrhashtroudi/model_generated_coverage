@@ -1,0 +1,27 @@
+Testsuite: org.apache.commons.lang3.builder.NoFieldNamesToStringStyleTest
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
+
+Testcase: testAppendSuper483 took 0.024 sec
+	FAILED
+expected:<...ang.Integer@6ed3ef1[[a=]hello]> but was:<...ang.Integer@6ed3ef1[[]hello]>
+junit.framework.AssertionFailedError: expected:<...ang.Integer@6ed3ef1[[a=]hello]> but was:<...ang.Integer@6ed3ef1[[]hello]>
+	at org.apache.commons.lang3.builder.NoFieldNamesToStringStyleTest.testAppendSuper483(NoFieldNamesToStringStyleTest.java:70)
+
+Testcase: testIntegerWithTransients480 took 0.001 sec
+	FAILED
+expected:<...ang.Integer@6ed3ef1[[a=]3]> but was:<...ang.Integer@6ed3ef1[[]3]>
+junit.framework.AssertionFailedError: expected:<...ang.Integer@6ed3ef1[[a=]3]> but was:<...ang.Integer@6ed3ef1[[]3]>
+	at org.apache.commons.lang3.builder.NoFieldNamesToStringStyleTest.testIntegerWithTransients480(NoFieldNamesToStringStyleTest.java:54)
+
+Testcase: testPerson482 took 0 sec
+	FAILED
+expected:<[ToStringStyleTest.Person[name=John Q. Public,age=45,smoker=]true]> but was:<[org.apache.commons.lang3.builder.ToStringStyleTest$Person@61443d8f[John Q. Public,45,]true]>
+junit.framework.AssertionFailedError: expected:<[ToStringStyleTest.Person[name=John Q. Public,age=45,smoker=]true]> but was:<[org.apache.commons.lang3.builder.ToStringStyleTest$Person@61443d8f[John Q. Public,45,]true]>
+	at org.apache.commons.lang3.builder.NoFieldNamesToStringStyleTest.testPerson482(NoFieldNamesToStringStyleTest.java:64)
+
+Testcase: testLongArrayArray484 took 0 sec
+	FAILED
+expected:<[{{1,2},<null>,{5}}]> but was:<[java.lang.Integer@6ed3ef1[{{1,2},<null>,{5}}]]>
+junit.framework.AssertionFailedError: expected:<[{{1,2},<null>,{5}}]> but was:<[java.lang.Integer@6ed3ef1[{{1,2},<null>,{5}}]]>
+	at org.apache.commons.lang3.builder.NoFieldNamesToStringStyleTest.testLongArrayArray484(NoFieldNamesToStringStyleTest.java:77)
+

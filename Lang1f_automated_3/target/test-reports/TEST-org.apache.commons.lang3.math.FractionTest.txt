@@ -1,0 +1,20 @@
+Testsuite: org.apache.commons.lang3.math.FractionTest
+Tests run: 7, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.038 sec
+
+Testcase: testReduce133 took 0.021 sec
+Testcase: testInvert132 took 0.002 sec
+	FAILED
+expected:<50> but was:<-75>
+junit.framework.AssertionFailedError: expected:<50> but was:<-75>
+	at org.apache.commons.lang3.math.FractionTest.testInvert132(FractionTest.java:166)
+
+Testcase: testFactory_String_double130 took 0.001 sec
+Testcase: testToProperString129 took 0 sec
+Testcase: testAbs128 took 0 sec
+Testcase: testHashCode137 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.math.FractionTest.testHashCode137(FractionTest.java:227)
+
+Testcase: testPow131 took 0 sec

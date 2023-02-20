@@ -1,0 +1,33 @@
+Testsuite: org.apache.commons.lang3.StringUtilsSubstringTest
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+
+Testcase: testSubstringBefore_StringString432 took 0.026 sec
+	FAILED
+expected:<foo[XXbar]> but was:<foo[]>
+junit.framework.AssertionFailedError: expected:<foo[XXbar]> but was:<foo[]>
+	at org.apache.commons.lang3.StringUtilsSubstringTest.testSubstringBefore_StringString432(StringUtilsSubstringTest.java:104)
+
+Testcase: testSubstringBefore_StringString433 took 0 sec
+	FAILED
+expected:<foo[XXbar]> but was:<foo[]>
+junit.framework.AssertionFailedError: expected:<foo[XXbar]> but was:<foo[]>
+	at org.apache.commons.lang3.StringUtilsSubstringTest.testSubstringBefore_StringString433(StringUtilsSubstringTest.java:121)
+
+Testcase: testMid_String427 took 0.001 sec
+	FAILED
+expected:<[a]bc> but was:<[]bc>
+junit.framework.AssertionFailedError: expected:<[a]bc> but was:<[]bc>
+	at org.apache.commons.lang3.StringUtilsSubstringTest.testMid_String427(StringUtilsSubstringTest.java:51)
+
+Testcase: testMid_String428 took 0 sec
+	FAILED
+expected:<[]> but was:<[abc]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[abc]>
+	at org.apache.commons.lang3.StringUtilsSubstringTest.testMid_String428(StringUtilsSubstringTest.java:70)
+
+Testcase: testMid_String429 took 0 sec
+	FAILED
+expected:<[abc]> but was:<[]>
+junit.framework.AssertionFailedError: expected:<[abc]> but was:<[]>
+	at org.apache.commons.lang3.StringUtilsSubstringTest.testMid_String429(StringUtilsSubstringTest.java:93)
+

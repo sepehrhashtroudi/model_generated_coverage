@@ -1,0 +1,46 @@
+Testsuite: org.apache.commons.lang3.ArrayUtilsAddTest
+Tests run: 8, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec
+
+Testcase: testAddIntArray233 took 0.035 sec
+	FAILED
+expected null, but was:<[I@1ff8b8f>
+junit.framework.AssertionFailedError: expected null, but was:<[I@1ff8b8f>
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testAddIntArray233(ArrayUtilsAddTest.java:77)
+
+Testcase: testAddIntArray234 took 0.001 sec
+	FAILED
+expected null, but was:<[I@3ecf72fd>
+junit.framework.AssertionFailedError: expected null, but was:<[I@3ecf72fd>
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testAddIntArray234(ArrayUtilsAddTest.java:110)
+
+Testcase: testAddObjectArrayBoolean228 took 0 sec
+	FAILED
+expected null, but was:<[Z@77f03bb1>
+junit.framework.AssertionFailedError: expected null, but was:<[Z@77f03bb1>
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testAddObjectArrayBoolean228(ArrayUtilsAddTest.java:59)
+
+Testcase: testAddObjectArrayFloat236 took 0 sec
+	FAILED
+expected null, but was:<[F@7a92922>
+junit.framework.AssertionFailedError: expected null, but was:<[F@7a92922>
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testAddObjectArrayFloat236(ArrayUtilsAddTest.java:176)
+
+Testcase: testAddObjectArrayFloat237 took 0 sec
+	FAILED
+expected null, but was:<[F@5474c6c>
+junit.framework.AssertionFailedError: expected null, but was:<[F@5474c6c>
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testAddObjectArrayFloat237(ArrayUtilsAddTest.java:209)
+
+Testcase: testAddObjectArrayDouble238 took 0.001 sec
+	FAILED
+expected null, but was:<[D@591f989e>
+junit.framework.AssertionFailedError: expected null, but was:<[D@591f989e>
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testAddObjectArrayDouble238(ArrayUtilsAddTest.java:242)
+
+Testcase: testAddObjectArrayLong235 took 0 sec
+	FAILED
+expected null, but was:<[J@445b84c0>
+junit.framework.AssertionFailedError: expected null, but was:<[J@445b84c0>
+	at org.apache.commons.lang3.ArrayUtilsAddTest.testAddObjectArrayLong235(ArrayUtilsAddTest.java:143)
+
+Testcase: testAddObjectArrayInt223 took 0 sec

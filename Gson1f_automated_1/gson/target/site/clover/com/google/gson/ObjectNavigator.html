@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../style.css');
+        @import url('../../../tree.css');
+        
+    </style>
+
+    <script src="../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../clover.js" type="text/javascript"></script>
+    <script src="../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../cloud.js" type="text/javascript"></script>
+
+            <title>Gson 1.6</title>
+    </head>
+
+<body  onload="onLoad('Gson 1.6: com.google.gson.ObjectNavigator.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="http://code.google.com/p/google-gson/" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="http://code.google.com/p/google-gson/" target="_top">
+                                        Gson 1.6
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../" data-package-name="com.google.gson">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../dashboard.html">Project Clover database Wed Feb 15 2023 22:55:49 MST</a></li> 
+        <li><a href="pkg-summary.html">        Package com.google.gson</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File ObjectNavigator.java
+    </h1>
+
+
+
+
+
+
+    <div style="display:none;">
+        <span id="traceControl" class="expand">&#160;</span>
+                    <div id="trace-50">
+                <div id="traceCol50" class="errorMessage" ><a href="../../../com/google/gson/functional/ArrayTest_testRawCollectionOfCollectionDeserialization48_1e.html" style="font-weight:bold;">testRawCollectionOfCollectionDeserialization48</a>: <span style="color:#888;">The&#160;JsonDeserializer&#160;com.google.gson.DefaultTypeAdapters$...</span></div>
+                <div id="traceEx50" class="errorMessage" style="display:none;color:#888;"><a href="../../../com/google/gson/functional/ArrayTest_testRawCollectionOfCollectionDeserialization48_1e.html" style="font-weight:bold;">testRawCollectionOfCollectionDeserialization48</a>: <div>com.google.gson.JsonParseException: The JsonDeserializer com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter@12f40c25 failed to deserialized json object 0 given the type interface java.util.Collection</div><div>	at <a href="../../../com/google/gson/JsonDeserializerExceptionWrapper.html?line=63#src-63">com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:63)</a></div><div>	at <a href="../../../com/google/gson/JsonDeserializationVisitor.html?line=88#src-88">com.google.gson.JsonDeserializationVisitor.invokeCustomDeserializer(JsonDeserializationVisitor.java:88)</a></div><div>	at <a href="../../../com/google/gson/JsonDeserializationVisitor.html?line=76#src-76">com.google.gson.JsonDeserializationVisitor.visitUsingCustomHandler(JsonDeserializationVisitor.java:76)</a></div><div>	at <a href="../../../com/google/gson/ObjectNavigator.html?line=106#src-106">com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:106)</a></div><div>	at <a href="../../../com/google/gson/JsonDeserializationVisitor.html?line=107#src-107">com.google.gson.JsonDeserializationVisitor.visitChild(JsonDeserializationVisitor.java:107)</a></div><div>	at <a href="../../../com/google/gson/JsonDeserializationVisitor.html?line=95#src-95">com.google.gson.JsonDeserializationVisitor.visitChildAsObject(JsonDeserializationVisitor.java:95)</a></div><div>	at <a href="../../../com/google/gson/JsonArrayDeserializationVisitor.html?line=76#src-76">com.google.gson.JsonArrayDeserializationVisitor.visitArray(JsonArrayDeserializationVisitor.java:76)</a></div><div>	at <a href="../../../com/google/gson/ObjectNavigator.html?line=117#src-117">com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:117)</a></div><div>	at <a href="../../../com/google/gson/JsonDeserializationContextDefault.html?line=64#src-64">com.google.gson.JsonDeserializationContextDefault.fromJsonArray(JsonDeserializationContextDefault.java:64)</a></div><div>	at <a href="../../../com/google/gson/JsonDeserializationContextDefault.html?line=49#src-49">com.google.gson.JsonDeserializationContextDefault.deserialize(JsonDeserializationContextDefault.java:49)</a></div><div>	at <a href="../../../com/google/gson/Gson.html?line=539#src-539">com.google.gson.Gson.fromJson(Gson.java:539)</a></div><div>	at <a href="../../../com/google/gson/Gson.html?line=486#src-486">com.google.gson.Gson.fromJson(Gson.java:486)</a></div><div>	at <a href="../../../com/google/gson/Gson.html?line=473#src-473">com.google.gson.Gson.fromJson(Gson.java:473)</a></div><div>	at <a href="../../../com/google/gson/Gson.html?line=427#src-427">com.google.gson.Gson.fromJson(Gson.java:427)</a></div><div>	at <a href="../../../com/google/gson/functional/ArrayTest.html?line=74#src-74">com.google.gson.functional.ArrayTest.testRawCollectionOfCollectionDeserialization48(ArrayTest.java:74)</a></div><div> at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)</div><div> at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)</div><div> at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:121)</div><div> at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:98)</div><div> at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)</div><div> at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)</div><div> at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)</div><div> at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)</div><div> at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)</div><div>Caused by: java.lang.IllegalArgumentException: Collection objects need to be parameterized unless you use a custom serializer. Use the com.google.gson.reflect.TypeToken to extract the ParameterizedType.</div><div>	at <a href="../../../com/google/gson/TypeInfoCollection.html?line=34#src-34">com.google.gson.TypeInfoCollection.&lt;init&gt;(TypeInfoCollection.java:34)</a></div><div>	at <a href="../../../com/google/gson/DefaultTypeAdapters.html?line=542#src-542">com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter.deserialize(DefaultTypeAdapters.java:542)</a></div><div>	at <a href="../../../com/google/gson/DefaultTypeAdapters.html?line=509#src-509">com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter.deserialize(DefaultTypeAdapters.java:509)</a></div><div>	at <a href="../../../com/google/gson/JsonDeserializerExceptionWrapper.html?line=50#src-50">com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:50)</a></div><div> ... 42 more</div></div>
+            </div>
+                    <div id="trace-47">
+                <div id="traceCol47" class="errorMessage" ><a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest_testDefaultJavaSqlTimeDeserialization35_1b.html" style="font-weight:bold;">testDefaultJavaSqlTimeDeserialization35</a>: <span style="color:#888;">java.text.ParseException:&#160;Unparseable&#160;date:&#160;&quot;Dec&#160;3,&#160;2009&#160;...</span></div>
+                <div id="traceEx47" class="errorMessage" style="display:none;color:#888;"><a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest_testDefaultJavaSqlTimeDeserialization35_1b.html" style="font-weight:bold;">testDefaultJavaSqlTimeDeserialization35</a>: <div>com.google.gson.JsonSyntaxException: java.text.ParseException: Unparseable date: &quot;Dec 3, 2009 1:18:02 PM&quot;</div><div>	at <a href="../../../com/google/gson/DefaultTypeAdapters.html?line=354#src-354">com.google.gson.DefaultTypeAdapters$DefaultTimeTypeAdapter.deserialize(DefaultTypeAdapters.java:354)</a></div><div>	at <a href="../../../com/google/gson/DefaultTypeAdapters.html?line=332#src-332">com.google.gson.DefaultTypeAdapters$DefaultTimeTypeAdapter.deserialize(DefaultTypeAdapters.java:332)</a></div><div>	at <a href="../../../com/google/gson/JsonDeserializerExceptionWrapper.html?line=50#src-50">com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:50)</a></div><div>	at <a href="../../../com/google/gson/JsonDeserializationVisitor.html?line=88#src-88">com.google.gson.JsonDeserializationVisitor.invokeCustomDeserializer(JsonDeserializationVisitor.java:88)</a></div><div>	at <a href="../../../com/google/gson/JsonDeserializationVisitor.html?line=76#src-76">com.google.gson.JsonDeserializationVisitor.visitUsingCustomHandler(JsonDeserializationVisitor.java:76)</a></div><div>	at <a href="../../../com/google/gson/ObjectNavigator.html?line=106#src-106">com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:106)</a></div><div>	at <a href="../../../com/google/gson/JsonDeserializationContextDefault.html?line=84#src-84">com.google.gson.JsonDeserializationContextDefault.fromJsonPrimitive(JsonDeserializationContextDefault.java:84)</a></div><div>	at <a href="../../../com/google/gson/JsonDeserializationContextDefault.html?line=53#src-53">com.google.gson.JsonDeserializationContextDefault.deserialize(JsonDeserializationContextDefault.java:53)</a></div><div>	at <a href="../../../com/google/gson/Gson.html?line=539#src-539">com.google.gson.Gson.fromJson(Gson.java:539)</a></div><div>	at <a href="../../../com/google/gson/Gson.html?line=486#src-486">com.google.gson.Gson.fromJson(Gson.java:486)</a></div><div>	at <a href="../../../com/google/gson/Gson.html?line=473#src-473">com.google.gson.Gson.fromJson(Gson.java:473)</a></div><div>	at <a href="../../../com/google/gson/Gson.html?line=427#src-427">com.google.gson.Gson.fromJson(Gson.java:427)</a></div><div>	at <a href="../../../com/google/gson/Gson.html?line=400#src-400">com.google.gson.Gson.fromJson(Gson.java:400)</a></div><div>	at <a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest.html?line=108#src-108">com.google.gson.functional.DefaultTypeAdaptersTest.testDefaultJavaSqlTimeDeserialization35(DefaultTypeAdaptersTest.java:108)</a></div><div> at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)</div><div> at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)</div><div> at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:121)</div><div> at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:98)</div><div> at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)</div><div> at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)</div><div> at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)</div><div> at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)</div><div> at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)</div><div>Caused by: java.text.ParseException: Unparseable date: &quot;Dec 3, 2009 1:18:02 PM&quot;</div><div> at java.text.DateFormat.parse(DateFormat.java:366)</div><div>	at <a href="../../../com/google/gson/DefaultTypeAdapters.html?line=350#src-350">com.google.gson.DefaultTypeAdapters$DefaultTimeTypeAdapter.deserialize(DefaultTypeAdapters.java:350)</a></div><div> ... 41 more</div></div>
+            </div>
+            </div>
+
+
+        
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../../img/srcFileCovDistChart7.png" alt="../../../img/srcFileCovDistChart7.png"
+                         usemap="#srcFileCovDistChart7.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart7.png" name="srcFileCovDistChart7.png">
+<area shape="rect" coords="100,61,107,66" title="6 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,62,98,66" title="5 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,60,89,66" title="8 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,62,80,66" title="5 files have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,61,71,66" title="6 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,60,63,66" title="8 files have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,60,54,65" title="7 files have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,62,45,66" title="5 files have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,64,36,66" title="3 files have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,66,27,67" title="1 file has 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,8,18,65" title="69 files have 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>15% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">22</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">42</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">169</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">90</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">18</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.43</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">10.5</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">4.5</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">22</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">42</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">169</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">90</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">18</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.43</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">10.5</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">4.5</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="ObjectNavigator">
+        <span><a href="#30" title="ObjectNavigator" onclick="closeDialogAndScrollTo('dialog-ObjectNavigator', '30');">ObjectNavigator</a></span>
+</td>
+<td>30<a name="sl-30"></a></td>
+    <td class="">42</td>
+    <td class="">0%</td>
+    <td class="">18</td>
+    <td class="">20</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7058824</span>70.6%</div><div style="display: table-cell">
+ <div title="70.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:70.6%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-ObjectNavigator" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                               <tr> <td id="ObjectNavigator.Visitor">
+        <span><a href="#32" title="ObjectNavigator.Visitor" onclick="closeDialogAndScrollTo('dialog-ObjectNavigator_Visitor', '32');">ObjectNavigator.Visitor</a></span>
+</td>
+<td>32<a name="sl-32"></a></td>
+    <td class="">0</td>
+    <td class=""> - </td>
+    <td class="">0</td>
+    <td class="">0</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">-1.0</span> - </div><div style="display: table-cell">
+<div title="Empty" class="barEmpty" style="min-width:200px;"></div></div></div></td>
+    <td><button data-dialog-id="dialog-ObjectNavigator_Visitor" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-ObjectNavigator" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class ObjectNavigator</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-ObjectNavigator-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-ObjectNavigator-methods-body', 'dialog-ObjectNavigator-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                                                                                                                                                        
+                    <thead>
+                                                 <tr> <th id="ObjectNavigator">
+    Class<br/>    <span><a href="#30" title="ObjectNavigator" onclick="closeDialogAndScrollTo('dialog-ObjectNavigator', '30');">ObjectNavigator</a></span>
+</th>
+<th>Line #<br/>30<a name="sl-30"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>42</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>18</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>20</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7058824</span>70.6%</div><div style="display: table-cell">
+ <div title="70.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:70.6%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-ObjectNavigator-methods-body">
+                                                                                                            <tr id="ObjectNavigator-1">
+<td id="summary-90-3">
+ <span class="sortValue">ObjectNavigator(ObjectTypePair,ExclusionStrategy)</span>
+&#160;&#160;<a href="?line=29#90" title="ObjectNavigator(ObjectTypePair,ExclusionStrategy)" name="sl-90" onclick="closeDialogAndScrollTo('dialog-ObjectNavigator', '90');">ObjectNavigator(ObjectTypePair,ExclusionStrategy)</a>
+</td>
+<td align="right"><span class="sortValue">90</span>90</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ObjectNavigator-2">
+<td id="summary-101-3">
+ <span class="sortValue">accept(Visitor)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#101" title="accept(Visitor)&#160;:&#160;void" name="sl-101" onclick="closeDialogAndScrollTo('dialog-ObjectNavigator', '101');">accept(Visitor)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">101</span>101</td>
+<td class="" align="right"><span class="sortValue">24.0</span>24</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">11.0</span>11</td>
+<td class="" align="right"><span class="sortValue">9.0</span>9</td>
+<td class="" align="right"><span class="sortValue">0.775</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.775</span>77.5%</div><div style="display: table-cell">
+ <div title="77.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:77.5%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ObjectNavigator-3">
+<td id="summary-141-3">
+ <span class="sortValue">isPrimitiveOrString(Object)&#160;:&#160;boolean</span>
+&#160;&#160;<a href="?line=29#141" title="isPrimitiveOrString(Object)&#160;:&#160;boolean" name="sl-141" onclick="closeDialogAndScrollTo('dialog-ObjectNavigator', '141');">isPrimitiveOrString(Object)&#160;:&#160;boolean</a>
+</td>
+<td align="right"><span class="sortValue">141</span>141</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ObjectNavigator-4">
+<td id="summary-147-3">
+ <span class="sortValue">navigateClassFields(Object,Class&lt;?&gt;,Visitor)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#147" title="navigateClassFields(Object,Class&lt;?&gt;,Visitor)&#160;:&#160;void" name="sl-147" onclick="closeDialogAndScrollTo('dialog-ObjectNavigator', '147');">navigateClassFields(Object,Class&lt;?&gt;,Visitor)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">147</span>147</td>
+<td class="" align="right"><span class="sortValue">13.0</span>13</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">5.0</span>5</td>
+<td class="" align="right"><span class="sortValue">8.0</span>8</td>
+<td class="" align="right"><span class="sortValue">0.57894737</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.57894737</span>57.9%</div><div style="display: table-cell">
+ <div title="57.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:57.9%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-ObjectNavigator">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+        <section role="dialog" id="dialog-ObjectNavigator_Visitor" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class ObjectNavigator.Visitor</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-ObjectNavigator.Visitor-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-ObjectNavigator.Visitor-methods-body', 'dialog-ObjectNavigator.Visitor-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                        
+                    <thead>
+                                                 <tr> <th id="ObjectNavigator.Visitor">
+    Class<br/>    <span><a href="#32" title="ObjectNavigator.Visitor" onclick="closeDialogAndScrollTo('dialog-ObjectNavigator_Visitor', '32');">ObjectNavigator.Visitor</a></span>
+</th>
+<th>Line #<br/>32<a name="sl-32"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>0</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/> - </th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>0</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>0</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">-1.0</span> - </div><div style="display: table-cell">
+<div title="Empty" class="barEmpty" style="min-width:200px;"></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-ObjectNavigator.Visitor-methods-body">
+                                                                     </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-ObjectNavigator_Visitor">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 18 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-11">
+<td><a name="testA-11"></a><input type="checkbox" id="cb-11" value="11" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ArrayTest_testInvalidJsonDeserializationFails18_b.html';">
+<span class="sortValue">0.64705884</span>
+<div>
+<div title="64.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:64.7%"></div></div></div></td>
+<td id="tc-11">  <span class="sortValue">com.google.gson.functional.ArrayTest.testInvalidJsonDeserializationFails18</span><a href="../../../com/google/gson/functional/ArrayTest_testInvalidJsonDeserializationFails18_b.html" title="View Test Summary Page">com.google.gson.functional.ArrayTest.testInvalidJsonDeserializationFails18</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ArrayTest.html?line=49#src-49" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ArrayTest_testInvalidJsonDeserializationFails18_b.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-0">
+<td><a name="testA-0"></a><input type="checkbox" id="cb-0" value="0" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ArrayTest_testArrayOfCollectionDeserialization46_0.html';">
+<span class="sortValue">0.3529412</span>
+<div>
+<div title="35.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:35.3%"></div></div></div></td>
+<td id="tc-0">  <span class="sortValue">com.google.gson.functional.ArrayTest.testArrayOfCollectionDeserialization46</span><a href="../../../com/google/gson/functional/ArrayTest_testArrayOfCollectionDeserialization46_0.html" title="View Test Summary Page">com.google.gson.functional.ArrayTest.testArrayOfCollectionDeserialization46</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ArrayTest.html?line=61#src-61" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ArrayTest_testArrayOfCollectionDeserialization46_0.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-31">
+<td><a name="testA-31"></a><input type="checkbox" id="cb-31" value="31" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/MapTest_testNullsInArraySerialization47_v.html';">
+<span class="sortValue">0.3529412</span>
+<div>
+<div title="35.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:35.3%"></div></div></div></td>
+<td id="tc-31">  <span class="sortValue">com.google.gson.functional.MapTest.testNullsInArraySerialization47</span><a href="../../../com/google/gson/functional/MapTest_testNullsInArraySerialization47_v.html" title="View Test Summary Page">com.google.gson.functional.MapTest.testNullsInArraySerialization47</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/MapTest.html?line=48#src-48" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/MapTest_testNullsInArraySerialization47_v.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-50">
+<td><a name="testA-50"></a><input type="checkbox" id="cb-50" value="50" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ArrayTest_testRawCollectionOfCollectionDeserialization48_1e.html';">
+<span class="sortValue">0.3382353</span>
+<div>
+<div title="33.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:33.8%"></div></div></div></td>
+<td id="tc-50">  <span class="sortValue">com.google.gson.functional.ArrayTest.testRawCollectionOfCollectionDeserialization48</span><a href="../../../com/google/gson/functional/ArrayTest_testRawCollectionOfCollectionDeserialization48_1e.html" title="View Test Summary Page">com.google.gson.functional.ArrayTest.testRawCollectionOfCollectionDeserialization48</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ArrayTest.html?line=70#src-70" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ArrayTest_testRawCollectionOfCollectionDeserialization48_1e.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-32">
+<td><a name="testA-32"></a><input type="checkbox" id="cb-32" value="32" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/InternationalizationTest_testStringsWithUnicodeChineseCharactersDeserialization_w.html';">
+<span class="sortValue">0.16176471</span>
+<div>
+<div title="16.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:16.2%"></div></div></div></td>
+<td id="tc-32">  <span class="sortValue">com.google.gson.functional.InternationalizationTest.testStringsWithUnicodeChineseCharactersDeserialization</span><a href="../../../com/google/gson/functional/InternationalizationTest_testStringsWithUnicodeChineseCharactersDeserialization_w.html" title="View Test Summary Page">com.google.gson.functional.InternationalizationTest.testStringsWithUnicodeChineseCharactersDeserialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/InternationalizationTest.html?line=60#src-60" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/InternationalizationTest_testStringsWithUnicodeChineseCharactersDeserialization_w.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-25">
+<td><a name="testA-25"></a><input type="checkbox" id="cb-25" value="25" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/DefaultTypeAdaptersTest_testLocaleSerialization38_p.html';">
+<span class="sortValue">0.16176471</span>
+<div>
+<div title="16.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:16.2%"></div></div></div></td>
+<td id="tc-25">  <span class="sortValue">com.google.gson.functional.DefaultTypeAdaptersTest.testLocaleSerialization38</span><a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest_testLocaleSerialization38_p.html" title="View Test Summary Page">com.google.gson.functional.DefaultTypeAdaptersTest.testLocaleSerialization38</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest.html?line=112#src-112" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest_testLocaleSerialization38_p.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-39">
+<td><a name="testA-39"></a><input type="checkbox" id="cb-39" value="39" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/InternationalizationTest_testStringsWithUnicodeChineseCharactersEscapedDeserialization_13.html';">
+<span class="sortValue">0.16176471</span>
+<div>
+<div title="16.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:16.2%"></div></div></div></td>
+<td id="tc-39">  <span class="sortValue">com.google.gson.functional.InternationalizationTest.testStringsWithUnicodeChineseCharactersEscapedDeserialization</span><a href="../../../com/google/gson/functional/InternationalizationTest_testStringsWithUnicodeChineseCharactersEscapedDeserialization_13.html" title="View Test Summary Page">com.google.gson.functional.InternationalizationTest.testStringsWithUnicodeChineseCharactersEscapedDeserialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/InternationalizationTest.html?line=67#src-67" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/InternationalizationTest_testStringsWithUnicodeChineseCharactersEscapedDeserialization_13.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-41">
+<td><a name="testA-41"></a><input type="checkbox" id="cb-41" value="41" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/DefaultTypeAdaptersTest_testDoubleSerialization30_15.html';">
+<span class="sortValue">0.16176471</span>
+<div>
+<div title="16.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:16.2%"></div></div></div></td>
+<td id="tc-41">  <span class="sortValue">com.google.gson.functional.DefaultTypeAdaptersTest.testDoubleSerialization30</span><a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest_testDoubleSerialization30_15.html" title="View Test Summary Page">com.google.gson.functional.DefaultTypeAdaptersTest.testDoubleSerialization30</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest.html?line=82#src-82" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest_testDoubleSerialization30_15.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-10">
+<td><a name="testA-10"></a><input type="checkbox" id="cb-10" value="10" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/DefaultTypeAdaptersTest_testNegativeInfinitySerialization32_a.html';">
+<span class="sortValue">0.16176471</span>
+<div>
+<div title="16.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:16.2%"></div></div></div></td>
+<td id="tc-10">  <span class="sortValue">com.google.gson.functional.DefaultTypeAdaptersTest.testNegativeInfinitySerialization32</span><a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest_testNegativeInfinitySerialization32_a.html" title="View Test Summary Page">com.google.gson.functional.DefaultTypeAdaptersTest.testNegativeInfinitySerialization32</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest.html?line=91#src-91" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest_testNegativeInfinitySerialization32_a.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-28">
+<td><a name="testA-28"></a><input type="checkbox" id="cb-28" value="28" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ArrayTest_testReallyLongValuesDeserialization71_s.html';">
+<span class="sortValue">0.16176471</span>
+<div>
+<div title="16.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:16.2%"></div></div></div></td>
+<td id="tc-28">  <span class="sortValue">com.google.gson.functional.ArrayTest.testReallyLongValuesDeserialization71</span><a href="../../../com/google/gson/functional/ArrayTest_testReallyLongValuesDeserialization71_s.html" title="View Test Summary Page">com.google.gson.functional.ArrayTest.testReallyLongValuesDeserialization71</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ArrayTest.html?line=79#src-79" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ArrayTest_testReallyLongValuesDeserialization71_s.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-43">
+<td><a name="testA-43"></a><input type="checkbox" id="cb-43" value="43" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/InternationalizationTest_testStringsWithRawChineseCharactersDeserialization_17.html';">
+<span class="sortValue">0.16176471</span>
+<div>
+<div title="16.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:16.2%"></div></div></div></td>
+<td id="tc-43">  <span class="sortValue">com.google.gson.functional.InternationalizationTest.testStringsWithRawChineseCharactersDeserialization</span><a href="../../../com/google/gson/functional/InternationalizationTest_testStringsWithRawChineseCharactersDeserialization_17.html" title="View Test Summary Page">com.google.gson.functional.InternationalizationTest.testStringsWithRawChineseCharactersDeserialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/InternationalizationTest.html?line=46#src-46" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/InternationalizationTest_testStringsWithRawChineseCharactersDeserialization_17.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-16">
+<td><a name="testA-16"></a><input type="checkbox" id="cb-16" value="16" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/EscapingTest_testHtmlEscaping64_g.html';">
+<span class="sortValue">0.16176471</span>
+<div>
+<div title="16.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:16.2%"></div></div></div></td>
+<td id="tc-16">  <span class="sortValue">com.google.gson.functional.EscapingTest.testHtmlEscaping64</span><a href="../../../com/google/gson/functional/EscapingTest_testHtmlEscaping64_g.html" title="View Test Summary Page">com.google.gson.functional.EscapingTest.testHtmlEscaping64</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/EscapingTest.html?line=41#src-41" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/EscapingTest_testHtmlEscaping64_g.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-29">
+<td><a name="testA-29"></a><input type="checkbox" id="cb-29" value="29" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/InternationalizationTest_testStringsWithUnicodeChineseCharactersSerialization_t.html';">
+<span class="sortValue">0.16176471</span>
+<div>
+<div title="16.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:16.2%"></div></div></div></td>
+<td id="tc-29">  <span class="sortValue">com.google.gson.functional.InternationalizationTest.testStringsWithUnicodeChineseCharactersSerialization</span><a href="../../../com/google/gson/functional/InternationalizationTest_testStringsWithUnicodeChineseCharactersSerialization_t.html" title="View Test Summary Page">com.google.gson.functional.InternationalizationTest.testStringsWithUnicodeChineseCharactersSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/InternationalizationTest.html?line=53#src-53" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/InternationalizationTest_testStringsWithUnicodeChineseCharactersSerialization_t.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-42">
+<td><a name="testA-42"></a><input type="checkbox" id="cb-42" value="42" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/DefaultTypeAdaptersTest_testSetSerialization29_16.html';">
+<span class="sortValue">0.16176471</span>
+<div>
+<div title="16.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:16.2%"></div></div></div></td>
+<td id="tc-42">  <span class="sortValue">com.google.gson.functional.DefaultTypeAdaptersTest.testSetSerialization29</span><a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest_testSetSerialization29_16.html" title="View Test Summary Page">com.google.gson.functional.DefaultTypeAdaptersTest.testSetSerialization29</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest.html?line=73#src-73" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest_testSetSerialization29_16.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-4">
+<td><a name="testA-4"></a><input type="checkbox" id="cb-4" value="4" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/DefaultTypeAdaptersTest_testFloatInfinitySerialization41_4.html';">
+<span class="sortValue">0.16176471</span>
+<div>
+<div title="16.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:16.2%"></div></div></div></td>
+<td id="tc-4">  <span class="sortValue">com.google.gson.functional.DefaultTypeAdaptersTest.testFloatInfinitySerialization41</span><a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest_testFloatInfinitySerialization41_4.html" title="View Test Summary Page">com.google.gson.functional.DefaultTypeAdaptersTest.testFloatInfinitySerialization41</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest.html?line=117#src-117" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest_testFloatInfinitySerialization41_4.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-13">
+<td><a name="testA-13"></a><input type="checkbox" id="cb-13" value="13" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/DefaultTypeAdaptersTest_testSetDeserialization33_d.html';">
+<span class="sortValue">0.16176471</span>
+<div>
+<div title="16.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:16.2%"></div></div></div></td>
+<td id="tc-13">  <span class="sortValue">com.google.gson.functional.DefaultTypeAdaptersTest.testSetDeserialization33</span><a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest_testSetDeserialization33_d.html" title="View Test Summary Page">com.google.gson.functional.DefaultTypeAdaptersTest.testSetDeserialization33</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest.html?line=97#src-97" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest_testSetDeserialization33_d.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-18">
+<td><a name="testA-18"></a><input type="checkbox" id="cb-18" value="18" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/DefaultTypeAdaptersTest_testDateSerializationWithPattern65_i.html';">
+<span class="sortValue">0.16176471</span>
+<div>
+<div title="16.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:16.2%"></div></div></div></td>
+<td id="tc-18">  <span class="sortValue">com.google.gson.functional.DefaultTypeAdaptersTest.testDateSerializationWithPattern65</span><a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest_testDateSerializationWithPattern65_i.html" title="View Test Summary Page">com.google.gson.functional.DefaultTypeAdaptersTest.testDateSerializationWithPattern65</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest.html?line=123#src-123" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest_testDateSerializationWithPattern65_i.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-47">
+<td><a name="testA-47"></a><input type="checkbox" id="cb-47" value="47" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/DefaultTypeAdaptersTest_testDefaultJavaSqlTimeDeserialization35_1b.html';">
+<span class="sortValue">0.13235295</span>
+<div>
+<div title="13.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:13.2%"></div></div></div></td>
+<td id="tc-47">  <span class="sortValue">com.google.gson.functional.DefaultTypeAdaptersTest.testDefaultJavaSqlTimeDeserialization35</span><a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest_testDefaultJavaSqlTimeDeserialization35_1b.html" title="View Test Summary Page">com.google.gson.functional.DefaultTypeAdaptersTest.testDefaultJavaSqlTimeDeserialization35</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest.html?line=106#src-106" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/DefaultTypeAdaptersTest_testDefaultJavaSqlTimeDeserialization35_1b.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="comment">/*</span></span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"><span class="comment"> * Copyright (C) 2008 Google Inc.</span></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="comment"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="comment"> * you may not use this file except in compliance with the License.</span></span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="comment"> * You may obtain a copy of the License at</span></span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="comment"> * http://www.apache.org/licenses/LICENSE-2.0</span></span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"><span class="comment"> * Unless required by applicable law or agreed to in writing, software</span></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="comment"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine"><span class="comment"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"><span class="comment"> * See the License for the specific language governing permissions and</span></span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"><span class="comment"> * limitations under the License.</span></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"></span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"><span class="keyword">package</span> com.google.<a href="../gson/pkg-summary.html">gson</a>;</span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"></span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine"><span class="keyword">import</span> java.lang.reflect.AccessibleObject;</span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine"><span class="keyword">import</span> java.lang.reflect.Field;</span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine"><span class="keyword">import</span> java.lang.reflect.Type;</span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"></span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine"><span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine"><span class="comment"> * Provides ability to apply a visitor to an object and all of its fields</span></span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLine"><span class="comment"> * recursively.</span></span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine"><span class="comment"> * </span></span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLine"><span class="comment"> * </span><span class="javadoc">@author</span><span class="comment"> Inderjeet Singh</span></span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine"><span class="comment"> * </span><span class="javadoc">@author</span><span class="comment"> Joel Leitch</span></span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="30" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-30' onclick="toggleInlineStats(this, 'inlinestats-30');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-30" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-30'), 'inlinestats-30');return true;">
+                <td><div>
+<div title="70.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:70.6%"></div></div></div></td><td>70.6%</td>
+                <td class="inlineStat">Uncovered Elements: 20 (68)</td>
+                <td class="inlineStat">Complexity: 18</td>
+                <td class="inlineStat">Complexity Density: 0.43</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 30, 'Tests that hit ObjectNavigator');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-30"><span class="spacer"></span><span id="src-30" class="srcLine"><span class="keyword">final</span> <span class="keyword">class</span> <a href="../../../com/google/gson/ObjectNavigator.html#ObjectNavigator">ObjectNavigator</a> {</span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="32" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-32' onclick="toggleInlineStats(this, 'inlinestats-32');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-32" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-32'), 'inlinestats-32');return true;">
+                <td><div>
+<div title="Empty" class="barEmpty" style="min-width:40px;"></div>
+</div></td><td> - </td>
+                <td class="inlineStat">Uncovered Elements: 0 (0)</td>
+                <td class="inlineStat">Complexity: 0</td>
+                <td class="inlineStat">Complexity Density: -</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l32">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" id="id-32"><span class="spacer"></span><span id="src-32" class="srcLine">  <span class="keyword">public</span> <span class="keyword">interface</span> Visitor {</span></td>
+</tr>
+ <tr id="l33">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-33" class="srcLine">    <span class="keyword">public</span> <span class="keyword">void</span> start(<a href="../../../com/google/gson/ObjectTypePair.html#ObjectTypePair">ObjectTypePair</a> node);</span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine"></span></td>
+</tr>
+ <tr id="l35">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLine">    <span class="keyword">public</span> <span class="keyword">void</span> end(<a href="../../../com/google/gson/ObjectTypePair.html#ObjectTypePair">ObjectTypePair</a> node);</span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine"></span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l38">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLine"><span class="comment">     * This is called before the object navigator starts visiting the current</span></span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine"><span class="comment">     * object</span></span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+ <tr id="l41">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-41" class="srcLine">    <span class="keyword">void</span> startVisitingObject(Object node);</span></td>
+</tr>
+ <tr id="l42">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-42" class="srcLine"></span></td>
+</tr>
+ <tr id="l43">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l44">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLine"><span class="comment">     * This is called to visit the current object if it is an array</span></span></td>
+</tr>
+ <tr id="l45">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-45" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+ <tr id="l46">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-46" class="srcLine">    <span class="keyword">void</span> visitArray(Object array, Type componentType);</span></td>
+</tr>
+ <tr id="l47">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-47" class="srcLine"></span></td>
+</tr>
+ <tr id="l48">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l49">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-49" class="srcLine"><span class="comment">     * This is called to visit an object field of the current object</span></span></td>
+</tr>
+ <tr id="l50">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-50" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+ <tr id="l51">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-51" class="srcLine">    <span class="keyword">void</span> visitObjectField(<a href="../../../com/google/gson/FieldAttributes.html#FieldAttributes">FieldAttributes</a> f, Type typeOfF, Object obj);</span></td>
+</tr>
+ <tr id="l52">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-52" class="srcLine"></span></td>
+</tr>
+ <tr id="l53">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-53" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l54">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-54" class="srcLine"><span class="comment">     * This is called to visit an array field of the current object</span></span></td>
+</tr>
+ <tr id="l55">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-55" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+ <tr id="l56">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-56" class="srcLine">    <span class="keyword">void</span> visitArrayField(<a href="../../../com/google/gson/FieldAttributes.html#FieldAttributes">FieldAttributes</a> f, Type typeOfF, Object obj);</span></td>
+</tr>
+ <tr id="l57">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=57#src-57">57</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-57" class="srcLine"></span></td>
+</tr>
+ <tr id="l58">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=58#src-58">58</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-58" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l59">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=59#src-59">59</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-59" class="srcLine"><span class="comment">     * This is called to visit an object using a custom handler</span></span></td>
+</tr>
+ <tr id="l60">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=60#src-60">60</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-60" class="srcLine"><span class="comment">     * </span></span></td>
+</tr>
+ <tr id="l61">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=61#src-61">61</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-61" class="srcLine"><span class="comment">     * </span><span class="javadoc">@return</span><span class="comment"> true if a custom handler exists, false otherwise</span></span></td>
+</tr>
+ <tr id="l62">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=62#src-62">62</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-62" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+ <tr id="l63">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=63#src-63">63</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-63" class="srcLine">    <span class="keyword">public</span> <span class="keyword">boolean</span> visitUsingCustomHandler(<a href="../../../com/google/gson/ObjectTypePair.html#ObjectTypePair">ObjectTypePair</a> objTypePair);</span></td>
+</tr>
+ <tr id="l64">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=64#src-64">64</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-64" class="srcLine"></span></td>
+</tr>
+ <tr id="l65">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=65#src-65">65</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-65" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l66">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=66#src-66">66</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-66" class="srcLine"><span class="comment">     * This is called to visit a field of the current object using a custom</span></span></td>
+</tr>
+ <tr id="l67">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=67#src-67">67</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-67" class="srcLine"><span class="comment">     * handler</span></span></td>
+</tr>
+ <tr id="l68">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=68#src-68">68</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-68" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+ <tr id="l69">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=69#src-69">69</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-69" class="srcLine">    <span class="keyword">public</span> <span class="keyword">boolean</span> visitFieldUsingCustomHandler(<a href="../../../com/google/gson/FieldAttributes.html#FieldAttributes">FieldAttributes</a> f, Type actualTypeOfField,</span></td>
+</tr>
+ <tr id="l70">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=70#src-70">70</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-70" class="srcLine">        Object parent);</span></td>
+</tr>
+ <tr id="l71">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=71#src-71">71</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-71" class="srcLine"></span></td>
+</tr>
+ <tr id="l72">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=72#src-72">72</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-72" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l73">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=73#src-73">73</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-73" class="srcLine"><span class="comment">     * Retrieve the current target</span></span></td>
+</tr>
+ <tr id="l74">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=74#src-74">74</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-74" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+ <tr id="l75">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=75#src-75">75</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-75" class="srcLine">    Object getTarget();</span></td>
+</tr>
+ <tr id="l76">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=76#src-76">76</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-76" class="srcLine"></span></td>
+</tr>
+ <tr id="l77">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=77#src-77">77</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-77" class="srcLine">    <span class="keyword">void</span> visitPrimitive(Object primitive);</span></td>
+</tr>
+ <tr id="l78">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=78#src-78">78</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-78" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l79">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=79#src-79">79</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-79" class="srcLine"></span></td>
+</tr>
+ <tr id="l80">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=80#src-80">80</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-80" class="srcLine">  <span class="keyword">private</span> <span class="keyword">final</span> <a href="../../../com/google/gson/ExclusionStrategy.html#ExclusionStrategy">ExclusionStrategy</a> exclusionStrategy;</span></td>
+</tr>
+ <tr id="l81">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=81#src-81">81</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-81" class="srcLine">  <span class="keyword">private</span> <span class="keyword">final</span> <a href="../../../com/google/gson/ObjectTypePair.html#ObjectTypePair">ObjectTypePair</a> objTypePair;</span></td>
+</tr>
+ <tr id="l82">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=82#src-82">82</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-82" class="srcLine"></span></td>
+</tr>
+ <tr id="l83">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=83#src-83">83</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-83" class="srcLine">  <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l84">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=84#src-84">84</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-84" class="srcLine"><span class="comment">   * </span><span class="javadoc">@param</span><span class="comment"> objTypePair</span></span></td>
+</tr>
+ <tr id="l85">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=85#src-85">85</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-85" class="srcLine"><span class="comment">   *          The object,type (fully genericized) being navigated</span></span></td>
+</tr>
+ <tr id="l86">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=86#src-86">86</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-86" class="srcLine"><span class="comment">   * </span><span class="javadoc">@param</span><span class="comment"> exclusionStrategy</span></span></td>
+</tr>
+ <tr id="l87">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=87#src-87">87</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-87" class="srcLine"><span class="comment">   *          the concrete strategy object to be used to filter out fields of an</span></span></td>
+</tr>
+ <tr id="l88">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=88#src-88">88</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-88" class="srcLine"><span class="comment">   *          object.</span></span></td>
+</tr>
+ <tr id="l89">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=89#src-89">89</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-89" class="srcLine"><span class="comment">   */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="90" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-90' onclick="toggleInlineStats(this, 'inlinestats-90');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-90" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-90'), 'inlinestats-90');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (3)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.33</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l90">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=90#src-90">90</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 90, 'Tests that hit ObjectNavigator(ObjectTypePair,ExclusionStrategy)');" ><span title="Line 90, Col 3: method entered 36 times." class="nolink">&#160;36</span></td>
+<td class=" methodStart  srcCell" id="id-90"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 90,95);" id="img-90" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-90" class="srcLine"><span class="nolink" title="Line 90, Col 3: method entered 36 times.">  <a href="../../../com/google/gson/ObjectNavigator.html#ObjectNavigator">ObjectNavigator</a>(<a href="../../../com/google/gson/ObjectTypePair.html#ObjectTypePair">ObjectTypePair</a> objTypePair, <a href="../../../com/google/gson/ExclusionStrategy.html#ExclusionStrategy">ExclusionStrategy</a> exclusionStrategy) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-90'), 90,95);" id="e90" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l91">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=91#src-91">91</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 91, 'Tests that hit line # 91');" ><span title="Line 91, Col 5: statement executed 36 times." class="nolink">&#160;36</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-91" class="srcLine"><span class="nolink" title="Line 91, Col 5: statement executed 36 times.">    <a href="../../../com/google/gson/Preconditions.html#Preconditions">Preconditions</a>.checkNotNull(exclusionStrategy);</span></span></td>
+</tr>
+ <tr id="l92">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=92#src-92">92</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-92" class="srcLine"></span></td>
+</tr>
+ <tr id="l93">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=93#src-93">93</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 93, 'Tests that hit line # 93');" ><span title="Line 93, Col 5: statement executed 36 times." class="nolink">&#160;36</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-93" class="srcLine"><span class="nolink" title="Line 93, Col 5: statement executed 36 times.">    <span class="keyword">this</span>.objTypePair = objTypePair;</span></span></td>
+</tr>
+ <tr id="l94">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=94#src-94">94</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 94, 'Tests that hit line # 94');" ><span title="Line 94, Col 5: statement executed 36 times." class="nolink">&#160;36</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-94" class="srcLine"><span class="nolink" title="Line 94, Col 5: statement executed 36 times.">    <span class="keyword">this</span>.exclusionStrategy = exclusionStrategy;</span></span></td>
+</tr>
+ <tr id="l95">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=95#src-95">95</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-95" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l96">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=96#src-96">96</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-96" class="srcLine"></span></td>
+</tr>
+ <tr id="l97">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=97#src-97">97</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-97" class="srcLine">  <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l98">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=98#src-98">98</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-98" class="srcLine"><span class="comment">   * Navigate all the fields of the specified object. If a field is null, it</span></span></td>
+</tr>
+ <tr id="l99">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=99#src-99">99</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-99" class="srcLine"><span class="comment">   * does not get visited.</span></span></td>
+</tr>
+ <tr id="l100">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=100#src-100">100</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-100" class="srcLine"><span class="comment">   */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="101" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-101' onclick="toggleInlineStats(this, 'inlinestats-101');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-101" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-101'), 'inlinestats-101');return true;">
+                <td><div>
+<div title="77.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:77.5%"></div></div></div></td><td>77.5%</td>
+                <td class="inlineStat">Uncovered Elements: 9 (40)</td>
+                <td class="inlineStat">Complexity: 11</td>
+                <td class="inlineStat">Complexity Density: 0.46</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l101">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=101#src-101">101</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 101, 'Tests that hit accept(Visitor)&#160;:&#160;void');" ><span title="Line 101, Col 3: method entered 36 times." class="nolink">&#160;36</span></td>
+<td class=" methodStart  srcCell" id="id-101"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 101,139);" id="img-101" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-101" class="srcLine"><span class="nolink" title="Line 101, Col 3: method entered 36 times.">  <span class="keyword">public</span> <span class="keyword">void</span> accept(Visitor visitor) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-101'), 101,139);" id="e101" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l102">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=102#src-102">102</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 102, 'Tests that hit line # 102');" ><span title="Line 102, Col 5: statement executed 36 times." class="nolink">&#160;36</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-102" class="srcLine"><span class="nolink" title="Line 102, Col 5: statement executed 36 times.">    <a href="../../../com/google/gson/TypeInfo.html#TypeInfo">TypeInfo</a> objTypeInfo = <span class="keyword">new</span> <a href="../../../com/google/gson/TypeInfo.html#TypeInfo">TypeInfo</a>(objTypePair.type);</span></span></td>
+</tr>
+ <tr id="l103">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=103#src-103">103</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 103, 'Tests that hit line # 103');" ><span title="Line 103, Col 8: true branch executed 0 times, false branch executed 36 times." class="nolink">&#160;36</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-103" class="srcLineHilight"><span class="nolink" title="Line 103, Col 8: true branch executed 0 times, false branch executed 36 times.">    <span class="keyword">if</span> (exclusionStrategy.shouldSkipClass(objTypeInfo.getRawClass())) {</span></span></td>
+</tr>
+ <tr id="l104">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=104#src-104">104</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 104, Col 7: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-104" class="srcLineHilight"><span class="nolink" title="Line 104, Col 7: statement not executed.">      <span class="keyword">return</span>;</span></span></td>
+</tr>
+ <tr id="l105">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=105#src-105">105</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-105" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l106">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=106#src-106">106</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 106, 'Tests that hit line # 106');" ><span title="Line 106, Col 5: statement executed 36 times." class="nolink">&#160;36</span></td>
+<td class=" srcCell" >                        <img onclick="return showFailingTestsPopup(this, 106, [  [47, 6] , [50, 4]]);" alt="Test failure here" class="icon" src="../../../img/failure_gutter.gif"/>
+<span id="src-106" class="srcLine"><span class="nolink" title="Line 106, Col 5: statement executed 36 times.">    <span class="keyword">boolean</span> visitedWithCustomHandler = visitor.visitUsingCustomHandler(objTypePair);</span></span></td>
+</tr>
+ <tr id="l107">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=107#src-107">107</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 107, 'Tests that hit line # 107');" ><span title="Line 107, Col 8: true branch executed 4 times, false branch executed 30 times." class="nolink">&#160;34</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-107" class="srcLine"><span class="nolink" title="Line 107, Col 8: true branch executed 4 times, false branch executed 30 times.">    <span class="keyword">if</span> (!visitedWithCustomHandler) {</span></span></td>
+</tr>
+ <tr id="l108">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=108#src-108">108</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 108, 'Tests that hit line # 108');" ><span title="Line 108, Col 7: statement executed 4 times." class="nolink">&#160;4</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-108" class="srcLine"><span class="nolink" title="Line 108, Col 7: statement executed 4 times.">      Object obj = objTypePair.getObject();</span></span></td>
+</tr>
+ <tr id="l109">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=109#src-109">109</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 109, 'Tests that hit line # 109');" ><span title="Line 109, Col 29: true branch executed 2 times, false branch executed 2 times." class="nolink">&#160;4</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-109" class="srcLine"><span class="nolink" title="Line 109, Col 29: true branch executed 2 times, false branch executed 2 times.">      Object objectToVisit = (obj == <span class="keyword">null</span>) ? visitor.getTarget() : obj;</span></span></td>
+</tr>
+ <tr id="l110">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=110#src-110">110</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 110, 'Tests that hit line # 110');" ><span title="Line 110, Col 10: true branch executed 0 times, false branch executed 4 times." class="nolink">&#160;4</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-110" class="srcLineHilight"><span class="nolink" title="Line 110, Col 10: true branch executed 0 times, false branch executed 4 times.">      <span class="keyword">if</span> (objectToVisit == <span class="keyword">null</span>) {</span></span></td>
+</tr>
+ <tr id="l111">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=111#src-111">111</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 111, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-111" class="srcLineHilight"><span class="nolink" title="Line 111, Col 9: statement not executed.">        <span class="keyword">return</span>;</span></span></td>
+</tr>
+ <tr id="l112">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=112#src-112">112</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-112" class="srcLine">      }</span></td>
+</tr>
+ <tr id="l113">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=113#src-113">113</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 113, 'Tests that hit line # 113');" ><span title="Line 113, Col 7: statement executed 4 times." class="nolink">&#160;4</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-113" class="srcLine"><span class="nolink" title="Line 113, Col 7: statement executed 4 times.">      objTypePair.setObject(objectToVisit);</span></span></td>
+</tr>
+ <tr id="l114">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=114#src-114">114</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 114, 'Tests that hit line # 114');" ><span title="Line 114, Col 7: statement executed 4 times." class="nolink">&#160;4</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-114" class="srcLine"><span class="nolink" title="Line 114, Col 7: statement executed 4 times.">      visitor.start(objTypePair);</span></span></td>
+</tr>
+ <tr id="l115">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=115#src-115">115</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 115, 'Tests that hit line # 115');" ><span title="Line 115, Col 7: statement executed 4 times." class="nolink">&#160;4</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-115" class="srcLine"><span class="nolink" title="Line 115, Col 7: statement executed 4 times.">      <span class="keyword">try</span> {</span></span></td>
+</tr>
+ <tr id="l116">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=116#src-116">116</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 116, 'Tests that hit line # 116');" ><span title="Line 116, Col 12: true branch executed 3 times, false branch executed 1 time." class="nolink">&#160;4</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-116" class="srcLine"><span class="nolink" title="Line 116, Col 12: true branch executed 3 times, false branch executed 1 time.">        <span class="keyword">if</span> (objTypeInfo.isArray()) {</span></span></td>
+</tr>
+ <tr id="l117">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=117#src-117">117</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 117, 'Tests that hit line # 117');" ><span title="Line 117, Col 11: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" >                <img onclick="return showFailingTestsPopup(this, 117, [  [50, 8]]);" alt="Test failure here" class="icon" src="../../../img/failure_gutter.gif"/>
+<span id="src-117" class="srcLine"><span class="nolink" title="Line 117, Col 11: statement executed 3 times.">          visitor.visitArray(objectToVisit, objTypePair.type);</span></span></td>
+</tr>
+ <tr id="l118">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=118#src-118">118</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 118, 'Tests that hit line # 118');" ><span title="Line 118, Col 19: true branch executed 0 times, false branch executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-118" class="srcLineHilight"><span class="nolink" title="Line 118, Col 19: true branch executed 0 times, false branch executed 1 time.">        } <span class="keyword">else</span> <span class="keyword">if</span> (objTypeInfo.getActualType() == Object.<span class="keyword">class</span></span></span></td>
+</tr>
+ <tr id="l119">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=119#src-119">119</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-119" class="srcLine">            &amp;&amp; isPrimitiveOrString(objectToVisit)) {</span></td>
+</tr>
+ <tr id="l120">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=120#src-120">120</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-120" class="srcLine">          <span class="comment">// TODO(Joel): this is only used for deserialization of &quot;primitives&quot;</span></span></td>
+</tr>
+ <tr id="l121">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=121#src-121">121</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-121" class="srcLine">          <span class="comment">// we should rethink this!!!</span></span></td>
+</tr>
+ <tr id="l122">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=122#src-122">122</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 122, Col 11: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-122" class="srcLineHilight"><span class="nolink" title="Line 122, Col 11: statement not executed.">          visitor.visitPrimitive(objectToVisit);</span></span></td>
+</tr>
+ <tr id="l123">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=123#src-123">123</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 123, Col 11: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-123" class="srcLineHilight"><span class="nolink" title="Line 123, Col 11: statement not executed.">          objectToVisit = visitor.getTarget();</span></span></td>
+</tr>
+ <tr id="l124">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=124#src-124">124</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-124" class="srcLine">        } <span class="keyword">else</span> {</span></td>
+</tr>
+ <tr id="l125">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=125#src-125">125</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 125, 'Tests that hit line # 125');" ><span title="Line 125, Col 11: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-125" class="srcLine"><span class="nolink" title="Line 125, Col 11: statement executed 1 time.">          visitor.startVisitingObject(objectToVisit);</span></span></td>
+</tr>
+ <tr id="l126">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=126#src-126">126</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 126, 'Tests that hit line # 126');" ><span title="Line 126, Col 11: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-126" class="srcLine"><span class="nolink" title="Line 126, Col 11: statement executed 1 time.">          <a href="../../../com/google/gson/ObjectTypePair.html#ObjectTypePair">ObjectTypePair</a> currObjTypePair = objTypePair.toMoreSpecificType();</span></span></td>
+</tr>
+ <tr id="l127">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=127#src-127">127</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 127, 'Tests that hit line # 127');" ><span title="Line 127, Col 11: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-127" class="srcLine"><span class="nolink" title="Line 127, Col 11: statement executed 1 time.">          Class&lt;?&gt; topLevelClass = <span class="keyword">new</span> <a href="../../../com/google/gson/TypeInfo.html#TypeInfo">TypeInfo</a>(currObjTypePair.type).getRawClass();</span></span></td>
+</tr>
+ <tr id="l128">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=128#src-128">128</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 128, 'Tests that hit line # 128');" ><span title="Line 128, Col 46: true branch executed 1 time, false branch executed 0 times." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-128" class="srcLineHilight"><span class="nolink" title="Line 128, Col 46: true branch executed 1 time, false branch executed 0 times.">          <span class="keyword">for</span> (Class&lt;?&gt; curr = topLevelClass; curr != <span class="keyword">null</span> &amp;&amp; !curr.equals(Object.<span class="keyword">class</span>); curr =</span></span></td>
+</tr>
+ <tr id="l129">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=129#src-129">129</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-129" class="srcLine">              curr.getSuperclass()) {</span></td>
+</tr>
+ <tr id="l130">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=130#src-130">130</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 130, 'Tests that hit line # 130');" ><span title="Line 130, Col 16: true branch executed 1 time, false branch executed 0 times." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-130" class="srcLineHilight"><span class="nolink" title="Line 130, Col 16: true branch executed 1 time, false branch executed 0 times.">            <span class="keyword">if</span> (!curr.isSynthetic()) {</span></span></td>
+</tr>
+ <tr id="l131">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=131#src-131">131</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 131, 'Tests that hit line # 131');" ><span title="Line 131, Col 15: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-131" class="srcLine"><span class="nolink" title="Line 131, Col 15: statement executed 1 time.">              navigateClassFields(objectToVisit, curr, visitor);</span></span></td>
+</tr>
+ <tr id="l132">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=132#src-132">132</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-132" class="srcLine">            }</span></td>
+</tr>
+ <tr id="l133">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=133#src-133">133</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-133" class="srcLine">          }</span></td>
+</tr>
+ <tr id="l134">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=134#src-134">134</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-134" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l135">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=135#src-135">135</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-135" class="srcLine">      } <span class="keyword">finally</span> {</span></td>
+</tr>
+ <tr id="l136">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=136#src-136">136</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 136, 'Tests that hit line # 136');" ><span title="Line 136, Col 9: statement executed 4 times." class="nolink">&#160;4</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-136" class="srcLine"><span class="nolink" title="Line 136, Col 9: statement executed 4 times.">        visitor.end(objTypePair);</span></span></td>
+</tr>
+ <tr id="l137">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=137#src-137">137</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-137" class="srcLine">      }</span></td>
+</tr>
+ <tr id="l138">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=138#src-138">138</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-138" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l139">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=139#src-139">139</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-139" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l140">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=140#src-140">140</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-140" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="141" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-141' onclick="toggleInlineStats(this, 'inlinestats-141');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-141" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-141'), 'inlinestats-141');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 2 (2)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l141">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=141#src-141">141</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 141, Col 3: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-141"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 141,145);" id="img-141" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-141" class="srcLineHilight"><span class="nolink" title="Line 141, Col 3: method not entered.">  <span class="keyword">private</span> <span class="keyword">boolean</span> isPrimitiveOrString(Object objectToVisit) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-141'), 141,145);" id="e141" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l142">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=142#src-142">142</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 142, Col 5: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-142" class="srcLineHilight"><span class="nolink" title="Line 142, Col 5: statement not executed.">    Class&lt;?&gt; realClazz = objectToVisit.getClass();</span></span></td>
+</tr>
+ <tr id="l143">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=143#src-143">143</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 143, Col 5: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-143" class="srcLineHilight"><span class="nolink" title="Line 143, Col 5: statement not executed.">    <span class="keyword">return</span> realClazz == Object.<span class="keyword">class</span> || realClazz == String.<span class="keyword">class</span></span></span></td>
+</tr>
+ <tr id="l144">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=144#src-144">144</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-144" class="srcLine">        || <a href="../../../com/google/gson/Primitives.html#Primitives">Primitives</a>.unwrap(realClazz).isPrimitive();</span></td>
+</tr>
+ <tr id="l145">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=145#src-145">145</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-145" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l146">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=146#src-146">146</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-146" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="147" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-147' onclick="toggleInlineStats(this, 'inlinestats-147');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-147" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-147'), 'inlinestats-147');return true;">
+                <td><div>
+<div title="57.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:57.9%"></div></div></div></td><td>57.9%</td>
+                <td class="inlineStat">Uncovered Elements: 8 (19)</td>
+                <td class="inlineStat">Complexity: 5</td>
+                <td class="inlineStat">Complexity Density: 0.38</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l147">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=147#src-147">147</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 147, 'Tests that hit navigateClassFields(Object,Class&lt;?&gt;,Visitor)&#160;:&#160;void');" ><span title="Line 147, Col 3: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-147"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 147,168);" id="img-147" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-147" class="srcLine"><span class="nolink" title="Line 147, Col 3: method entered 1 time.">  <span class="keyword">private</span> <span class="keyword">void</span> navigateClassFields(Object obj, Class&lt;?&gt; clazz, Visitor visitor) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-147'), 147,168);" id="e147" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l148">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=148#src-148">148</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 148, 'Tests that hit line # 148');" ><span title="Line 148, Col 5: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-148" class="srcLine"><span class="nolink" title="Line 148, Col 5: statement executed 1 time.">    Field[] fields = clazz.getDeclaredFields();</span></span></td>
+</tr>
+ <tr id="l149">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=149#src-149">149</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 149, 'Tests that hit line # 149');" ><span title="Line 149, Col 5: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-149" class="srcLine"><span class="nolink" title="Line 149, Col 5: statement executed 1 time.">    AccessibleObject.setAccessible(fields, <span class="keyword">true</span>);</span></span></td>
+</tr>
+ <tr id="l150">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=150#src-150">150</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 150, 'Tests that hit line # 150');" ><span title="Line 150, Col 5: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-150" class="srcLine"><span class="nolink" title="Line 150, Col 5: statement executed 1 time.">    <span class="keyword">for</span> (Field f : fields) {</span></span></td>
+</tr>
+ <tr id="l151">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=151#src-151">151</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 151, 'Tests that hit line # 151');" ><span title="Line 151, Col 7: statement executed 2 times." class="nolink">&#160;2</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-151" class="srcLine"><span class="nolink" title="Line 151, Col 7: statement executed 2 times.">      <a href="../../../com/google/gson/FieldAttributes.html#FieldAttributes">FieldAttributes</a> fieldAttributes = <span class="keyword">new</span> <a href="../../../com/google/gson/FieldAttributes.html#FieldAttributes">FieldAttributes</a>(clazz, f);</span></span></td>
+</tr>
+ <tr id="l152">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=152#src-152">152</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 152, 'Tests that hit line # 152');" ><span title="Line 152, Col 10: true branch executed 1 time, false branch executed 1 time." class="nolink">&#160;2</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-152" class="srcLine"><span class="nolink" title="Line 152, Col 10: true branch executed 1 time, false branch executed 1 time.">      <span class="keyword">if</span> (exclusionStrategy.shouldSkipField(fieldAttributes)</span></span></td>
+</tr>
+ <tr id="l153">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=153#src-153">153</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-153" class="srcLine">          || exclusionStrategy.shouldSkipClass(fieldAttributes.getDeclaredClass())) {</span></td>
+</tr>
+ <tr id="l154">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=154#src-154">154</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 154, 'Tests that hit line # 154');" ><span title="Line 154, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-154" class="srcLine"><span class="nolink" title="Line 154, Col 9: statement executed 1 time.">        <span class="keyword">continue</span>; <span class="comment">// skip</span></span></span></td>
+</tr>
+ <tr id="l155">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=155#src-155">155</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-155" class="srcLine">      }</span></td>
+</tr>
+ <tr id="l156">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=156#src-156">156</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 156, 'Tests that hit line # 156');" ><span title="Line 156, Col 7: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-156" class="srcLine"><span class="nolink" title="Line 156, Col 7: statement executed 1 time.">      <a href="../../../com/google/gson/TypeInfo.html#TypeInfo">TypeInfo</a> fieldTypeInfo = <a href="../../../com/google/gson/TypeInfoFactory.html#TypeInfoFactory">TypeInfoFactory</a>.getTypeInfoForField(f, objTypePair.type);</span></span></td>
+</tr>
+ <tr id="l157">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=157#src-157">157</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 157, 'Tests that hit line # 157');" ><span title="Line 157, Col 7: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-157" class="srcLine"><span class="nolink" title="Line 157, Col 7: statement executed 1 time.">      Type declaredTypeOfField = fieldTypeInfo.getActualType();</span></span></td>
+</tr>
+ <tr id="l158">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=158#src-158">158</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 158, 'Tests that hit line # 158');" ><span title="Line 158, Col 7: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-158" class="srcLine"><span class="nolink" title="Line 158, Col 7: statement executed 1 time.">      <span class="keyword">boolean</span> visitedWithCustomHandler =</span></span></td>
+</tr>
+ <tr id="l159">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=159#src-159">159</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-159" class="srcLine">        visitor.visitFieldUsingCustomHandler(fieldAttributes, declaredTypeOfField, obj);</span></td>
+</tr>
+ <tr id="l160">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=160#src-160">160</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 160, Col 7: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-160" class="srcLineHilight"><span class="nolink" title="Line 160, Col 7: statement not executed.">      <span class="keyword">if</span> (!visitedWithCustomHandler) {</span></span></td>
+</tr>
+ <tr id="l161">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=161#src-161">161</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 161, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-161" class="srcLineHilight"><span class="nolink" title="Line 161, Col 9: statement not executed.">        <span class="keyword">if</span> (fieldTypeInfo.isArray()) {</span></span></td>
+</tr>
+ <tr id="l162">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=162#src-162">162</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 162, Col 11: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-162" class="srcLineHilight"><span class="nolink" title="Line 162, Col 11: statement not executed.">          visitor.visitArrayField(fieldAttributes, declaredTypeOfField, obj);</span></span></td>
+</tr>
+ <tr id="l163">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=163#src-163">163</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-163" class="srcLine">        } <span class="keyword">else</span> {</span></td>
+</tr>
+ <tr id="l164">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=164#src-164">164</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 164, Col 11: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-164" class="srcLineHilight"><span class="nolink" title="Line 164, Col 11: statement not executed.">          visitor.visitObjectField(fieldAttributes, declaredTypeOfField, obj);</span></span></td>
+</tr>
+ <tr id="l165">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=165#src-165">165</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-165" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l166">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=166#src-166">166</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-166" class="srcLine">      }</span></td>
+</tr>
+ <tr id="l167">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=167#src-167">167</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-167" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l168">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=168#src-168">168</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-168" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l169">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=169#src-169">169</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-169" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../';
+    var testsPerFile = -1;
+</script>
+<script src="ObjectNavigator.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Wed Feb 15 2023 22:55:55 MST using coverage data from Wed Feb 15 2023 22:55:53 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

@@ -1,0 +1,10 @@
+Testsuite: org.apache.commons.lang3.text.StrLookupTest
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+
+Testcase: testSystemProperiesLookup87 took 0.017 sec
+Testcase: testMapLookup_Map88 took 0.001 sec
+	FAILED
+expected:<Linux> but was:<null>
+junit.framework.AssertionFailedError: expected:<Linux> but was:<null>
+	at org.apache.commons.lang3.text.StrLookupTest.testMapLookup_Map88(StrLookupTest.java:50)
+

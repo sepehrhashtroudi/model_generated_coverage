@@ -1,0 +1,67 @@
+Testsuite: org.apache.commons.lang3.AnnotationUtilsTest
+Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.048 sec
+
+Testcase: testToString152 took 0.002 sec
+	Caused an ERROR
+org.apache.commons.lang3.AnnotationUtilsTest.testToString()
+java.lang.NoSuchMethodException: org.apache.commons.lang3.AnnotationUtilsTest.testToString()
+	at java.lang.Class.getDeclaredMethod(Class.java:2130)
+	at org.apache.commons.lang3.AnnotationUtilsTest.testToString152(AnnotationUtilsTest.java:403)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+
+Testcase: testObjectArray167 took 0 sec
+	Caused an ERROR
+org.apache.commons.lang3.AnnotationUtilsTest.testObjectArray()
+java.lang.NoSuchMethodException: org.apache.commons.lang3.AnnotationUtilsTest.testObjectArray()
+	at java.lang.Class.getDeclaredMethod(Class.java:2130)
+	at org.apache.commons.lang3.AnnotationUtilsTest.testObjectArray167(AnnotationUtilsTest.java:454)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+
+Testcase: testHashCode154 took 0 sec
+	Caused an ERROR
+org.apache.commons.lang3.AnnotationUtilsTest.testHashCode()
+java.lang.NoSuchMethodException: org.apache.commons.lang3.AnnotationUtilsTest.testHashCode()
+	at java.lang.Class.getDeclaredMethod(Class.java:2130)
+	at org.apache.commons.lang3.AnnotationUtilsTest.testHashCode154(AnnotationUtilsTest.java:422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+
+Testcase: testEquals153 took 0 sec
+	Caused an ERROR
+org.apache.commons.lang3.AnnotationUtilsTest.testEquals()
+java.lang.NoSuchMethodException: org.apache.commons.lang3.AnnotationUtilsTest.testEquals()
+	at java.lang.Class.getDeclaredMethod(Class.java:2130)
+	at org.apache.commons.lang3.AnnotationUtilsTest.testEquals153(AnnotationUtilsTest.java:413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+
+Testcase: testEquals156 took 0.001 sec
+	Caused an ERROR
+org.apache.commons.lang3.AnnotationUtilsTest.testEquals()
+java.lang.NoSuchMethodException: org.apache.commons.lang3.AnnotationUtilsTest.testEquals()
+	at java.lang.Class.getDeclaredMethod(Class.java:2130)
+	at org.apache.commons.lang3.AnnotationUtilsTest.testEquals156(AnnotationUtilsTest.java:436)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+
+Testcase: testSameInstance150 took 0.025 sec
+Testcase: testSameInstance155 took 0.001 sec
+	Caused an ERROR
+org.apache.commons.lang3.AnnotationUtilsTest.testSameInstance()
+java.lang.NoSuchMethodException: org.apache.commons.lang3.AnnotationUtilsTest.testSameInstance()
+	at java.lang.Class.getDeclaredMethod(Class.java:2130)
+	at org.apache.commons.lang3.AnnotationUtilsTest.testSameInstance155(AnnotationUtilsTest.java:431)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+
+Testcase: testArrayEquals157 took 0 sec
+	Caused an ERROR
+org.apache.commons.lang3.AnnotationUtilsTest.testArrayEquals()
+java.lang.NoSuchMethodException: org.apache.commons.lang3.AnnotationUtilsTest.testArrayEquals()
+	at java.lang.Class.getDeclaredMethod(Class.java:2130)
+	at org.apache.commons.lang3.AnnotationUtilsTest.testArrayEquals157(AnnotationUtilsTest.java:445)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+

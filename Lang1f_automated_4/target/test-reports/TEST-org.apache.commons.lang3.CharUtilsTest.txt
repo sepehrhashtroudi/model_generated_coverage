@@ -1,0 +1,48 @@
+Testsuite: org.apache.commons.lang3.CharUtilsTest
+Tests run: 10, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+
+Testcase: testToUnicodeEscaped_Character392 took 0.02 sec
+Testcase: testIsAscii_char393 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.CharUtilsTest.testIsAscii_char393(CharUtilsTest.java:61)
+
+Testcase: testIsAscii_char394 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.CharUtilsTest.testIsAscii_char394(CharUtilsTest.java:78)
+
+Testcase: testIsAsciiAlphaLower_char399 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.CharUtilsTest.testIsAsciiAlphaLower_char399(CharUtilsTest.java:126)
+
+Testcase: testIsAsciiAlphaLower_char400 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.CharUtilsTest.testIsAsciiAlphaLower_char400(CharUtilsTest.java:142)
+
+Testcase: testIsAsciiAlpha_char397 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.CharUtilsTest.testIsAsciiAlpha_char397(CharUtilsTest.java:94)
+
+Testcase: testToString_Character391 took 0 sec
+Testcase: testIsAsciiAlphaUpper_char398 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.CharUtilsTest.testIsAsciiAlphaUpper_char398(CharUtilsTest.java:111)
+
+Testcase: testIsAsciiNumeric_char401 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.CharUtilsTest.testIsAsciiNumeric_char401(CharUtilsTest.java:160)
+
+Testcase: testToIntValue_Character_int388 took 0 sec

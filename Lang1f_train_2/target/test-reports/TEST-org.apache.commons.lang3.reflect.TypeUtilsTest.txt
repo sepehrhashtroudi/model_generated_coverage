@@ -1,0 +1,11 @@
+Testsuite: org.apache.commons.lang3.reflect.TypeUtilsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec
+
+Testcase: testIsInstance617 took 0.022 sec
+Testcase: testDetermineTypeVariableAssignments616 took 0.001 sec
+Testcase: testGetRawType619 took 0.001 sec
+Testcase: testGetTypeArguments615 took 0.002 sec
+Testcase: testIsArrayTypeClasses620 took 0 sec
+Testcase: testGetArrayComponentType621 took 0.001 sec
+Testcase: testLang820618 took 0.001 sec
+Testcase: testIsAssignable614 took 0.03 sec

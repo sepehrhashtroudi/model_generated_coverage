@@ -1,0 +1,22 @@
+Testsuite: org.apache.commons.lang3.exception.ExceptionUtilsTest
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec
+
+Testcase: testGetMessage_Throwable397 took 0.024 sec
+	FAILED
+expected:<[Message]> but was:<[]>
+junit.framework.AssertionFailedError: expected:<[Message]> but was:<[]>
+	at org.apache.commons.lang3.exception.ExceptionUtilsTest.testGetMessage_Throwable397(ExceptionUtilsTest.java:131)
+
+Testcase: testGetRootCauseStackTrace_Throwable396 took 0.009 sec
+Testcase: testGetRootCauseMessage_Throwable398 took 0.007 sec
+	FAILED
+ClassUtils.getRootCauseMessage(withoutCause) failed expected:<[ExceptionUtilsTest.ExceptionWithoutCause: ]> but was:<[]>
+junit.framework.AssertionFailedError: ClassUtils.getRootCauseMessage(withoutCause) failed expected:<[ExceptionUtilsTest.ExceptionWithoutCause: ]> but was:<[]>
+	at org.apache.commons.lang3.exception.ExceptionUtilsTest.testGetRootCauseMessage_Throwable398(ExceptionUtilsTest.java:141)
+
+Testcase: testGetRootCauseMessage_Throwable399 took 0 sec
+	FAILED
+expected same:<null> was not:<>
+junit.framework.AssertionFailedError: expected same:<null> was not:<>
+	at org.apache.commons.lang3.exception.ExceptionUtilsTest.testGetRootCauseMessage_Throwable399(ExceptionUtilsTest.java:150)
+

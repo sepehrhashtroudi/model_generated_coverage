@@ -1,0 +1,11 @@
+Testsuite: org.apache.commons.lang3.time.DurationFormatUtilsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 sec
+
+Testcase: testFormatDuration927 took 0.033 sec
+Testcase: testFormatDurationHMS925 took 0 sec
+Testcase: testFormatDurationISO926 took 0.001 sec
+Testcase: testLexx930 took 0 sec
+Testcase: testFormatDurationWords928 took 0.002 sec
+Testcase: testConstructor924 took 0 sec
+Testcase: testFormatPeriodISO245 took 0.107 sec
+Testcase: testEdgeDurations929 took 0.006 sec

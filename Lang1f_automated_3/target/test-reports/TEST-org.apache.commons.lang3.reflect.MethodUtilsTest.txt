@@ -1,0 +1,10 @@
+Testsuite: org.apache.commons.lang3.reflect.MethodUtilsTest
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+
+Testcase: testInvokeConstructor323 took 0.031 sec
+	FAILED
+expected:<[()]> but was:<[org.apache.commons.lang3.reflect.MethodUtilsTest$TestBean@282ba1e]>
+junit.framework.AssertionFailedError: expected:<[()]> but was:<[org.apache.commons.lang3.reflect.MethodUtilsTest$TestBean@282ba1e]>
+	at org.apache.commons.lang3.reflect.MethodUtilsTest.testInvokeConstructor323(MethodUtilsTest.java:146)
+
+Testcase: testGetAccessibleMethodPrivateInterface25 took 0.002 sec

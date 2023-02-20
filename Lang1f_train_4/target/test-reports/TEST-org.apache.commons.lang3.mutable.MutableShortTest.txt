@@ -1,0 +1,13 @@
+Testsuite: org.apache.commons.lang3.mutable.MutableShortTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+
+Testcase: testToString963 took 0.021 sec
+Testcase: testDecrement957 took 0 sec
+Testcase: testToShort959 took 0 sec
+Testcase: testSubtractValuePrimitive955 took 0 sec
+Testcase: testIncrement956 took 0 sec
+Testcase: testSubtractValueObject958 took 0 sec
+Testcase: testCompareTo962 took 0 sec
+Testcase: testHashCode961 took 0 sec
+Testcase: testGetSet954 took 0 sec
+Testcase: testEquals960 took 0 sec

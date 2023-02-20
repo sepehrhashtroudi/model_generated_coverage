@@ -1,0 +1,25 @@
+Testsuite: org.apache.commons.lang3.ValidateTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec
+
+Testcase: testNotEmptyArray1912 took 0.021 sec
+Testcase: testExclusiveBetween922 took 0 sec
+Testcase: testValidIndex_charSequence919 took 0 sec
+Testcase: testIsAssignableExceptionMessage926 took 0.001 sec
+Testcase: testNoNullElementsArray2911 took 0.006 sec
+Testcase: testExclusiveBetween_withMessage923 took 0 sec
+Testcase: testNotEmptyString1914 took 0 sec
+Testcase: testNotEmptyString2913 took 0 sec
+Testcase: testValidIndex_collection918 took 0 sec
+Testcase: testIsInstanceOfExceptionMessage924 took 0 sec
+Testcase: testIsTrue1909 took 0 sec
+Testcase: testIsTrue2908 took 0.001 sec
+Testcase: testIsTrue4906 took 0 sec
+Testcase: testIsTrue5907 took 0 sec
+Testcase: testConstructor905 took 0 sec
+Testcase: testNotBlankMsgNotBlankStringShouldNotThrow916 took 0.006 sec
+Testcase: testInclusiveBetween_withMessage921 took 0 sec
+Testcase: testNotBlankNullStringShouldThrow915 took 0 sec
+Testcase: testIsInstanceOf_withMessage925 took 0 sec
+Testcase: testValidIndex_withMessage_collection917 took 0.001 sec
+Testcase: testValidIndex_array910 took 0 sec
+Testcase: testMatchesPattern920 took 0 sec

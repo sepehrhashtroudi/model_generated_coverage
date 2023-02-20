@@ -1,0 +1,9 @@
+Testsuite: org.apache.commons.lang3.StringUtilsIsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
+
+Testcase: testIsAlphanumericSpace1081 took 0.026 sec
+Testcase: testIsAlphaspace1079 took 0 sec
+Testcase: testIsAlpha1078 took 0 sec
+Testcase: testIsWhitespace1083 took 0.013 sec
+Testcase: testIsAlphanumeric1080 took 0 sec
+Testcase: testIsAsciiPrintable_String1082 took 0.001 sec

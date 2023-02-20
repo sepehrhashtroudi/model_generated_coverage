@@ -1,0 +1,11 @@
+Testsuite: org.apache.commons.lang3.reflect.TypeUtilsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec
+
+Testcase: testGetPrimitiveArrayComponentType615 took 0.021 sec
+Testcase: testDetermineTypeVariableAssignments611 took 0.005 sec
+Testcase: testGetRawType613 took 0.002 sec
+Testcase: testGetTypeArguments610 took 0.002 sec
+Testcase: testIsArrayTypeClasses614 took 0 sec
+Testcase: testGetArrayComponentType616 took 0.001 sec
+Testcase: testLang820612 took 0.001 sec
+Testcase: testIsAssignable609 took 0.029 sec

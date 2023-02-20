@@ -1,0 +1,39 @@
+Testsuite: org.apache.commons.lang3.time.DateUtilsTest
+Tests run: 7, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.17 sec
+------------- Standard Output ---------------
+DateUtilsTest: Default Locale=en_US
+------------- ---------------- ---------------
+
+Testcase: testIsSameDay_Cal236 took 0.03 sec
+	FAILED
+LANG-677
+junit.framework.AssertionFailedError: LANG-677
+	at org.apache.commons.lang3.time.DateUtilsTest.testIsSameDay_Cal236(DateUtilsTest.java:190)
+
+Testcase: testIsSameInstant237 took 0.004 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.time.DateUtilsTest.testIsSameInstant237(DateUtilsTest.java:201)
+
+Testcase: testSetMinutes243 took 0.004 sec
+	FAILED
+expected:<3> but was:<0>
+junit.framework.AssertionFailedError: expected:<3> but was:<0>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:362)
+	at org.apache.commons.lang3.time.DateUtilsTest.testSetMinutes243(DateUtilsTest.java:276)
+
+Testcase: testIsSameInstant_Cal240 took 0.002 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.time.DateUtilsTest.testIsSameInstant_Cal240(DateUtilsTest.java:236)
+
+Testcase: testIsSameDay232 took 0.004 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.time.DateUtilsTest.testIsSameDay232(DateUtilsTest.java:151)
+
+Testcase: testLang530242 took 0.097 sec
+Testcase: testLANG799_DE_OK241 took 0.005 sec

@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: com.google.gson.TypeInfoArrayTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+testStringArray14(com.google.gson.TypeInfoArrayTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<class [Ljava.lang.String;> but was:<class java.lang.String>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.google.gson.TypeInfoArrayTest.__CLR4_4_1q9ge3k38h(TypeInfoArrayTest.java:38)
+	at com.google.gson.TypeInfoArrayTest.testStringArray14(TypeInfoArrayTest.java:34)
+

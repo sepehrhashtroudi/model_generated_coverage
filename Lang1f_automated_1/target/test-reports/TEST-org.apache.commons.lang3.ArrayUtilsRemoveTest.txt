@@ -1,0 +1,7 @@
+Testsuite: org.apache.commons.lang3.ArrayUtilsRemoveTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec
+
+Testcase: testRemoveElementIntArray250 took 0.033 sec
+Testcase: testRemoveElementCharArray247 took 0 sec
+Testcase: testRemoveFloatArray248 took 0 sec
+Testcase: testRemoveElementFloatArray249 took 0 sec

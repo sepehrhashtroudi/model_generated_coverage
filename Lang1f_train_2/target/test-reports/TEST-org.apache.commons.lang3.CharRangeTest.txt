@@ -1,0 +1,8 @@
+Testsuite: org.apache.commons.lang3.CharRangeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+
+Testcase: testSerialization759 took 0.03 sec
+Testcase: testContains_Char758 took 0 sec
+Testcase: testEquals_Object760 took 0 sec
+Testcase: testHashCode761 took 0 sec
+Testcase: testConstructorAccessors_isNotIn_Normal762 took 0 sec

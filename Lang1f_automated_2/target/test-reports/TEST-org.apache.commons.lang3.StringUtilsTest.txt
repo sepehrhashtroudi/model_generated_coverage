@@ -1,0 +1,119 @@
+Testsuite: org.apache.commons.lang3.StringUtilsTest
+Tests run: 26, Failures: 18, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec
+
+Testcase: testJoin_ArrayOfBytes443 took 0.025 sec
+Testcase: testJoin_IterableString446 took 0.001 sec
+Testcase: testReplaceChars_charChar453 took 0.001 sec
+	FAILED
+expected:<[]> but was:<[        ]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[        ]>
+	at org.apache.commons.lang3.StringUtilsTest.testReplaceChars_charChar453(StringUtilsTest.java:366)
+
+Testcase: testReplace_StringStringStringInt450 took 0 sec
+	FAILED
+expected:<[f]> but was:<[oofoo]>
+junit.framework.AssertionFailedError: expected:<[f]> but was:<[oofoo]>
+	at org.apache.commons.lang3.StringUtilsTest.testReplace_StringStringStringInt450(StringUtilsTest.java:317)
+
+Testcase: testReplace_StringStringStringInt451 took 0 sec
+	FAILED
+expected:<[f]> but was:<[oofoo]>
+junit.framework.AssertionFailedError: expected:<[f]> but was:<[oofoo]>
+	at org.apache.commons.lang3.StringUtilsTest.testReplace_StringStringStringInt451(StringUtilsTest.java:336)
+
+Testcase: testReplace_StringStringArrayStringArrayBoolean452 took 0 sec
+Testcase: testDifference_StringString466 took 0 sec
+	FAILED
+expected:<null> but was:<i am a robot>
+junit.framework.AssertionFailedError: expected:<null> but was:<i am a robot>
+	at org.apache.commons.lang3.StringUtilsTest.testDifference_StringString466(StringUtilsTest.java:483)
+
+Testcase: testSplitByWholeSeparatorPreserveAllTokens_StringStringInt438 took 0.006 sec
+Testcase: testJoin_ArrayCharSeparator444 took 0 sec
+Testcase: testReplaceChars_StringStringString454 took 0 sec
+	FAILED
+expected:<[F]OO> but was:<[]OO>
+junit.framework.AssertionFailedError: expected:<[F]OO> but was:<[]OO>
+	at org.apache.commons.lang3.StringUtilsTest.testReplaceChars_StringStringString454(StringUtilsTest.java:380)
+
+Testcase: testReplaceChars_StringStringString455 took 0 sec
+	FAILED
+expected:<[F]OO> but was:<[]OO>
+junit.framework.AssertionFailedError: expected:<[F]OO> but was:<[]OO>
+	at org.apache.commons.lang3.StringUtilsTest.testReplaceChars_StringStringString455(StringUtilsTest.java:397)
+
+Testcase: testReplaceChars_StringStringString456 took 0 sec
+	FAILED
+expected:<[F]OO> but was:<[]OO>
+junit.framework.AssertionFailedError: expected:<[F]OO> but was:<[]OO>
+	at org.apache.commons.lang3.StringUtilsTest.testReplaceChars_StringStringString456(StringUtilsTest.java:414)
+
+Testcase: testRightPad_StringInt458 took 0 sec
+	FAILED
+expected:<[  abc]> but was:<[abc  ]>
+junit.framework.AssertionFailedError: expected:<[  abc]> but was:<[abc  ]>
+	at org.apache.commons.lang3.StringUtilsTest.testRightPad_StringInt458(StringUtilsTest.java:438)
+
+Testcase: testCenter_StringInt457 took 0 sec
+Testcase: testDefault_String464 took 0 sec
+	FAILED
+expected:<[NULL]> but was:<[]>
+junit.framework.AssertionFailedError: expected:<[NULL]> but was:<[]>
+	at org.apache.commons.lang3.StringUtilsTest.testDefault_String464(StringUtilsTest.java:468)
+
+Testcase: testRightPad_StringIntString459 took 0 sec
+Testcase: testDifferenceAt_StringString469 took 0 sec
+	FAILED
+expected:<-1> but was:<0>
+junit.framework.AssertionFailedError: expected:<-1> but was:<0>
+	at org.apache.commons.lang3.StringUtilsTest.testDifferenceAt_StringString469(StringUtilsTest.java:513)
+
+Testcase: testDifferenceAt_StringString470 took 0 sec
+	FAILED
+expected:<-1> but was:<0>
+junit.framework.AssertionFailedError: expected:<-1> but was:<0>
+	at org.apache.commons.lang3.StringUtilsTest.testDifferenceAt_StringString470(StringUtilsTest.java:526)
+
+Testcase: testSplitPreserveAllTokens_StringStringInt442 took 0.001 sec
+	FAILED
+expected:<5> but was:<10>
+junit.framework.AssertionFailedError: expected:<5> but was:<10>
+	at org.apache.commons.lang3.StringUtilsTest.testSplitPreserveAllTokens_StringStringInt442(StringUtilsTest.java:219)
+
+Testcase: testSplitByWholeString_StringStringInt437 took 0 sec
+	FAILED
+expected:<5> but was:<3>
+junit.framework.AssertionFailedError: expected:<5> but was:<3>
+	at org.apache.commons.lang3.StringUtilsTest.testSplitByWholeString_StringStringInt437(StringUtilsTest.java:147)
+
+Testcase: testRemove_StringString447 took 0 sec
+	FAILED
+expected:<www.domain.[]> but was:<www.domain.[com.]>
+junit.framework.AssertionFailedError: expected:<www.domain.[]> but was:<www.domain.[com.]>
+	at org.apache.commons.lang3.StringUtilsTest.testRemove_StringString447(StringUtilsTest.java:266)
+
+Testcase: testLeftPad_StringIntChar460 took 0.004 sec
+Testcase: testReverse_String465 took 0.001 sec
+	FAILED
+expected:<[]> but was:<[        ]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[        ]>
+	at org.apache.commons.lang3.StringUtilsTest.testReverse_String465(StringUtilsTest.java:476)
+
+Testcase: testSplit_StringStringInt436 took 0 sec
+	FAILED
+expected:<5> but was:<3>
+junit.framework.AssertionFailedError: expected:<5> but was:<3>
+	at org.apache.commons.lang3.StringUtilsTest.testSplit_StringStringInt436(StringUtilsTest.java:118)
+
+Testcase: testReplace_StringStringString448 took 0 sec
+	FAILED
+expected:<[F]OO> but was:<[any]OO>
+junit.framework.AssertionFailedError: expected:<[F]OO> but was:<[any]OO>
+	at org.apache.commons.lang3.StringUtilsTest.testReplace_StringStringString448(StringUtilsTest.java:284)
+
+Testcase: testReplace_StringStringString449 took 0.001 sec
+	FAILED
+expected:<[F]OO> but was:<[any]OO>
+junit.framework.AssertionFailedError: expected:<[F]OO> but was:<[any]OO>
+	at org.apache.commons.lang3.StringUtilsTest.testReplace_StringStringString449(StringUtilsTest.java:300)
+

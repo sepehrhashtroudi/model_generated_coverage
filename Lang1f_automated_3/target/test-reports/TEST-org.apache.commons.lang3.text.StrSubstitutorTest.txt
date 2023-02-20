@@ -1,0 +1,15 @@
+Testsuite: org.apache.commons.lang3.text.StrSubstitutorTest
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+
+Testcase: testGetSetSuffix125 took 0.027 sec
+Testcase: testReplaceSystemProperties121 took 0.005 sec
+Testcase: testReplaceIncompletePrefix124 took 0.002 sec
+Testcase: testSamePrefixAndSuffix127 took 0 sec
+Testcase: testReplaceSolo122 took 0 sec
+Testcase: testReplaceNoVariables123 took 0 sec
+Testcase: testGetSetPrefix126 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.text.StrSubstitutorTest.testGetSetPrefix126(StrSubstitutorTest.java:105)
+

@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":66,"id":10878,"methods":[{"el":39,"sc":5,"sl":37},{"el":44,"sc":5,"sl":42},{"el":49,"sc":5,"sl":47},{"el":54,"sc":5,"sl":52},{"el":59,"sc":5,"sl":57},{"el":64,"sc":5,"sl":62}],"name":"GJMonthOfYearDateTimeField","sl":28}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1":{"methods":[{"sl":37}],"name":"testSerialization517","pass":true,"statements":[{"sl":38}]},"test_131":{"methods":[{"sl":42},{"sl":47},{"sl":57},{"sl":62}],"name":"testPropertyGetMonth573","pass":true,"statements":[{"sl":43},{"sl":48},{"sl":58},{"sl":63}]},"test_137":{"methods":[{"sl":42},{"sl":47},{"sl":52},{"sl":57}],"name":"testFormatParse_textMonthApr_Korean99","pass":true,"statements":[{"sl":43},{"sl":48},{"sl":53},{"sl":58}]},"test_15":{"methods":[{"sl":52}],"name":"testPropertySetTextMonthOfYear594","pass":false,"statements":[{"sl":53}]},"test_21":{"methods":[{"sl":52}],"name":"test_2400_fromDay342","pass":true,"statements":[{"sl":53}]},"test_245":{"methods":[{"sl":37}],"name":"testToString346","pass":true,"statements":[{"sl":38}]},"test_292":{"methods":[{"sl":52}],"name":"test_2400_fromDay344","pass":false,"statements":[{"sl":53}]},"test_308":{"methods":[{"sl":37}],"name":"testSerializedGJChronologyChangedInternals51","pass":true,"statements":[{"sl":38}]},"test_360":{"methods":[{"sl":42}],"name":"testForStyle_longDate97","pass":true,"statements":[{"sl":43}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [245, 1, 308], [245, 1, 308], [], [], [], [360, 131, 137], [360, 131, 137], [], [], [], [131, 137], [131, 137], [], [], [], [21, 15, 137, 292], [21, 15, 137, 292], [], [], [], [131, 137], [131, 137], [], [], [], [131], [131], [], [], []]

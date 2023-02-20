@@ -1,0 +1,25 @@
+Testsuite: org.apache.commons.lang3.math.FractionTest
+Tests run: 5, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 0.036 sec
+
+Testcase: testFactory_double83 took 0.02 sec
+Testcase: testFactory_double84 took 0.001 sec
+	FAILED
+expecting ArithmeticException
+junit.framework.AssertionFailedError: expecting ArithmeticException
+	at org.apache.commons.lang3.math.FractionTest.testFactory_double84(FractionTest.java:133)
+
+Testcase: testAbs79 took 0 sec
+Testcase: testCompareTo91 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.math.Fraction.compareTo(Fraction.java:887)
+	at org.apache.commons.lang3.math.FractionTest.testCompareTo91(FractionTest.java:157)
+
+Testcase: testCompareTo92 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at org.apache.commons.lang3.math.Fraction.compareTo(Fraction.java:887)
+	at org.apache.commons.lang3.math.FractionTest.testCompareTo92(FractionTest.java:184)
+

@@ -1,0 +1,67 @@
+Testsuite: org.apache.commons.lang3.StringUtilsTest
+Tests run: 15, Failures: 8, Errors: 1, Skipped: 0, Time elapsed: 0.072 sec
+
+Testcase: testSplitByWholeString_StringStringBooleanInt480 took 0.031 sec
+Testcase: testSplitByWholeString_StringStringBooleanInt481 took 0.002 sec
+	FAILED
+expected:<[]de fg> but was:<[  ]de fg>
+junit.framework.AssertionFailedError: expected:<[]de fg> but was:<[  ]de fg>
+	at org.apache.commons.lang3.StringUtilsTest.testSplitByWholeString_StringStringBooleanInt481(StringUtilsTest.java:149)
+
+Testcase: testLeftPad_StringInt497 took 0.001 sec
+	FAILED
+expected:<[xx]abc> but was:<[  ]abc>
+junit.framework.AssertionFailedError: expected:<[xx]abc> but was:<[  ]abc>
+	at org.apache.commons.lang3.StringUtilsTest.testLeftPad_StringInt497(StringUtilsTest.java:318)
+
+Testcase: testRemoveStartIgnoreCase487 took 0.001 sec
+Testcase: testReplaceOnce_StringStringString489 took 0 sec
+	FAILED
+expected:<[]> but was:<[foofoo]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[foofoo]>
+	at org.apache.commons.lang3.StringUtilsTest.testReplaceOnce_StringStringString489(StringUtilsTest.java:261)
+
+Testcase: testSplitPreserveAllTokens_String482 took 0 sec
+	FAILED
+expected:<3> but was:<4>
+junit.framework.AssertionFailedError: expected:<3> but was:<4>
+	at org.apache.commons.lang3.StringUtilsTest.testSplitPreserveAllTokens_String482(StringUtilsTest.java:165)
+
+Testcase: testRemovePattern490 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at java.util.regex.Pattern.<init>(Pattern.java:1350)
+	at java.util.regex.Pattern.compile(Pattern.java:1054)
+	at org.apache.commons.lang3.StringUtils.replacePattern(StringUtils.java:4335)
+	at org.apache.commons.lang3.StringUtils.removePattern(StringUtils.java:4351)
+	at org.apache.commons.lang3.StringUtilsTest.testRemovePattern490(StringUtilsTest.java:267)
+
+Testcase: testEscapeSurrogatePairs168 took 0.01 sec
+Testcase: testDefaultIfEmpty_StringString499 took 0 sec
+	FAILED
+expected:<[NULL]> but was:<[ ]>
+junit.framework.AssertionFailedError: expected:<[NULL]> but was:<[ ]>
+	at org.apache.commons.lang3.StringUtilsTest.testDefaultIfEmpty_StringString499(StringUtilsTest.java:329)
+
+Testcase: testRightPad_StringIntString496 took 0 sec
+	FAILED
+expected:<[-+-+abc]> but was:<[abc-+-+]>
+junit.framework.AssertionFailedError: expected:<[-+-+abc]> but was:<[abc-+-+]>
+	at org.apache.commons.lang3.StringUtilsTest.testRightPad_StringIntString496(StringUtilsTest.java:305)
+
+Testcase: testJoin_IterableChar484 took 0.001 sec
+Testcase: testDeleteWhitespace485 took 0 sec
+	FAILED
+expected:<i[ am a ]robot> but was:<i[ama]robot>
+junit.framework.AssertionFailedError: expected:<i[ am a ]robot> but was:<i[ama]robot>
+	at org.apache.commons.lang3.StringUtilsTest.testDeleteWhitespace485(StringUtilsTest.java:194)
+
+Testcase: testDeleteWhitespace486 took 0 sec
+	FAILED
+expected:<a[ b ]c> but was:<a[b]c>
+junit.framework.AssertionFailedError: expected:<a[ b ]c> but was:<a[b]c>
+	at org.apache.commons.lang3.StringUtilsTest.testDeleteWhitespace486(StringUtilsTest.java:217)
+
+Testcase: testRemoveEndIgnoreCase488 took 0 sec
+Testcase: testCenter_StringIntString495 took 0.001 sec

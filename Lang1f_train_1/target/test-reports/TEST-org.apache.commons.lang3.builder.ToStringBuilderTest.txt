@@ -1,0 +1,32 @@
+Testsuite: org.apache.commons.lang3.builder.ToStringBuilderTest
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
+
+Testcase: testSelfInstanceTwoVarsReflectionObjectCycle840 took 0.03 sec
+Testcase: testReflectionFloatArray395 took 0.002 sec
+Testcase: testFloat405 took 0 sec
+Testcase: testDoubleArrayArray1119 took 0.001 sec
+Testcase: testBoolean398 took 0 sec
+Testcase: testReflectionLongArrayArray1121 took 0 sec
+Testcase: testFloatArray406 took 0 sec
+Testcase: testGetSetDefault394 took 0 sec
+Testcase: testIntArray408 took 0 sec
+Testcase: testFloatArrayArray393 took 0.001 sec
+Testcase: testObject412 took 0.009 sec
+Testcase: testConstructorEx3414 took 0 sec
+Testcase: testAppendToStringUsingMultiLineStyle397 took 0 sec
+Testcase: testInheritedReflectionStatics841 took 0.002 sec
+Testcase: testDouble403 took 0 sec
+Testcase: testByte399 took 0 sec
+Testcase: testCharArray402 took 0 sec
+Testcase: testReflectionByteArrayArray846 took 0 sec
+Testcase: testReflectionNull847 took 0 sec
+Testcase: testChar401 took 0 sec
+Testcase: testShort410 took 0 sec
+Testcase: testDoubleArray404 took 0.001 sec
+Testcase: testObjectBuild415 took 0 sec
+Testcase: testReflectionBooleanArrayArray1120 took 0.001 sec
+Testcase: testAppendSuper413 took 0 sec
+Testcase: testInt407 took 0 sec
+Testcase: testLongArray409 took 0 sec
+Testcase: testReflectionHierarchy396 took 0.002 sec
+Testcase: testByteArray400 took 0 sec

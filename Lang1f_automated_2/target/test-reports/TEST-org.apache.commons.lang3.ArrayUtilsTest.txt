@@ -1,0 +1,147 @@
+Testsuite: org.apache.commons.lang3.ArrayUtilsTest
+Tests run: 38, Failures: 14, Errors: 6, Skipped: 0, Time elapsed: 0.059 sec
+
+Testcase: testSameLengthByte197 took 0.023 sec
+Testcase: testContainsShort204 took 0 sec
+Testcase: testContainsShort205 took 0 sec
+Testcase: testToObject_float223 took 0.001 sec
+Testcase: testLastIndexOfBooleanWithStartIndex211 took 0.001 sec
+	FAILED
+expected:<0> but was:<2>
+junit.framework.AssertionFailedError: expected:<0> but was:<2>
+	at org.apache.commons.lang3.ArrayUtilsTest.testLastIndexOfBooleanWithStartIndex211(ArrayUtilsTest.java:517)
+
+Testcase: testLastIndexOfBooleanWithStartIndex213 took 0 sec
+	FAILED
+expected:<0> but was:<2>
+junit.framework.AssertionFailedError: expected:<0> but was:<2>
+	at org.apache.commons.lang3.ArrayUtilsTest.testLastIndexOfBooleanWithStartIndex213(ArrayUtilsTest.java:534)
+
+Testcase: testLastIndexOfBooleanWithStartIndex214 took 0 sec
+	FAILED
+expected:<4> but was:<2>
+junit.framework.AssertionFailedError: expected:<4> but was:<2>
+	at org.apache.commons.lang3.ArrayUtilsTest.testLastIndexOfBooleanWithStartIndex214(ArrayUtilsTest.java:550)
+
+Testcase: testLastIndexOfBooleanWithStartIndex215 took 0.001 sec
+	FAILED
+expected:<0> but was:<2>
+junit.framework.AssertionFailedError: expected:<0> but was:<2>
+	at org.apache.commons.lang3.ArrayUtilsTest.testLastIndexOfBooleanWithStartIndex215(ArrayUtilsTest.java:566)
+
+Testcase: testLastIndexOfBooleanWithStartIndex216 took 0 sec
+	FAILED
+expected:<4> but was:<2>
+junit.framework.AssertionFailedError: expected:<4> but was:<2>
+	at org.apache.commons.lang3.ArrayUtilsTest.testLastIndexOfBooleanWithStartIndex216(ArrayUtilsTest.java:583)
+
+Testcase: testLastIndexOfBooleanWithStartIndex217 took 0 sec
+	FAILED
+expected:<4> but was:<2>
+junit.framework.AssertionFailedError: expected:<4> but was:<2>
+	at org.apache.commons.lang3.ArrayUtilsTest.testLastIndexOfBooleanWithStartIndex217(ArrayUtilsTest.java:598)
+
+Testcase: testIndexOfByte208 took 0 sec
+Testcase: testToMap181 took 0 sec
+	Caused an ERROR
+Array element 0, 'a', is neither of type Map.Entry nor an Array
+java.lang.IllegalArgumentException: Array element 0, 'a', is neither of type Map.Entry nor an Array
+	at org.apache.commons.lang3.ArrayUtils.toMap(ArrayUtils.java:253)
+	at org.apache.commons.lang3.ArrayUtilsTest.testToMap181(ArrayUtilsTest.java:48)
+
+Testcase: testToMap183 took 0 sec
+	Caused an ERROR
+Array element 0, 'a', is neither of type Map.Entry nor an Array
+java.lang.IllegalArgumentException: Array element 0, 'a', is neither of type Map.Entry nor an Array
+	at org.apache.commons.lang3.ArrayUtils.toMap(ArrayUtils.java:253)
+	at org.apache.commons.lang3.ArrayUtilsTest.testToMap183(ArrayUtilsTest.java:85)
+
+Testcase: testToMap184 took 0.001 sec
+	Caused an ERROR
+Array element 0, '0', is neither of type Map.Entry nor an Array
+java.lang.IllegalArgumentException: Array element 0, '0', is neither of type Map.Entry nor an Array
+	at org.apache.commons.lang3.ArrayUtils.toMap(ArrayUtils.java:253)
+	at org.apache.commons.lang3.ArrayUtilsTest.testToMap184(ArrayUtilsTest.java:117)
+
+Testcase: testToMap185 took 0 sec
+	Caused an ERROR
+Array element 0, '0', is neither of type Map.Entry nor an Array
+java.lang.IllegalArgumentException: Array element 0, '0', is neither of type Map.Entry nor an Array
+	at org.apache.commons.lang3.ArrayUtils.toMap(ArrayUtils.java:253)
+	at org.apache.commons.lang3.ArrayUtilsTest.testToMap185(ArrayUtilsTest.java:132)
+
+Testcase: testToMap187 took 0 sec
+	FAILED
+expected:<0> but was:<null>
+junit.framework.AssertionFailedError: expected:<0> but was:<null>
+	at org.apache.commons.lang3.ArrayUtilsTest.testToMap187(ArrayUtilsTest.java:140)
+
+Testcase: testToMap190 took 0 sec
+	Caused an ERROR
+Array element 0, 'a', is neither of type Map.Entry nor an Array
+java.lang.IllegalArgumentException: Array element 0, 'a', is neither of type Map.Entry nor an Array
+	at org.apache.commons.lang3.ArrayUtils.toMap(ArrayUtils.java:253)
+	at org.apache.commons.lang3.ArrayUtilsTest.testToMap190(ArrayUtilsTest.java:206)
+
+Testcase: testSameLengthFloat199 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsTest.testSameLengthFloat199(ArrayUtilsTest.java:367)
+
+Testcase: testReverseInt200 took 0 sec
+Testcase: testToPrimitive_byte220 took 0 sec
+Testcase: testNullToEmptyShort194 took 0 sec
+Testcase: testNullToEmptyBooleanObject195 took 0 sec
+Testcase: testToPrimitive_char218 took 0 sec
+Testcase: testRemoveElementDoubleArray209 took 0 sec
+Testcase: testIndexOf201 took 0 sec
+Testcase: testIndexOf202 took 0 sec
+	FAILED
+expected:<5> but was:<0>
+junit.framework.AssertionFailedError: expected:<5> but was:<0>
+	at org.apache.commons.lang3.ArrayUtilsTest.testIndexOf202(ArrayUtilsTest.java:401)
+
+Testcase: testContainsChar206 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsTest.testContainsChar206(ArrayUtilsTest.java:452)
+
+Testcase: testContainsChar207 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsTest.testContainsChar207(ArrayUtilsTest.java:463)
+
+Testcase: testSameLengthDouble198 took 0 sec
+Testcase: testToObject_double222 took 0 sec
+Testcase: testToObjectArray189 took 0.001 sec
+	Caused an ERROR
+Array element 0, 'a', is neither of type Map.Entry nor an Array
+java.lang.IllegalArgumentException: Array element 0, 'a', is neither of type Map.Entry nor an Array
+	at org.apache.commons.lang3.ArrayUtils.toMap(ArrayUtils.java:253)
+	at org.apache.commons.lang3.ArrayUtilsTest.testToObjectArray189(ArrayUtilsTest.java:174)
+
+Testcase: testToObject_char219 took 0 sec
+Testcase: testLastIndexOfShortWithStartIndex203 took 0 sec
+Testcase: testIndexOfDoubleWithStartIndexTolerance210 took 0.001 sec
+	FAILED
+expected:<4> but was:<-1>
+junit.framework.AssertionFailedError: expected:<4> but was:<-1>
+	at org.apache.commons.lang3.ArrayUtilsTest.testIndexOfDoubleWithStartIndexTolerance210(ArrayUtilsTest.java:505)
+
+Testcase: testRemoveElementFloatArray193 took 0 sec
+Testcase: testToPrimitive_double_double221 took 0 sec
+Testcase: testToArray_Object191 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsTest.testToArray_Object191(ArrayUtilsTest.java:244)
+
+Testcase: testToArray_Object192 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsTest.testToArray_Object192(ArrayUtilsTest.java:259)
+

@@ -1,0 +1,34 @@
+Testsuite: org.apache.commons.lang3.StringUtilsEqualsIndexOfTest
+Tests run: 11, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec
+
+Testcase: testIndexOfIgnoreCase_StringInt495 took 0.027 sec
+Testcase: testIndexOfAny_StringCharArrayWithSupplementaryChars499 took 0.007 sec
+	FAILED
+expected:<2> but was:<0>
+junit.framework.AssertionFailedError: expected:<2> but was:<0>
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testIndexOfAny_StringCharArrayWithSupplementaryChars499(StringUtilsEqualsIndexOfTest.java:146)
+
+Testcase: testIndexOfAnyBut_StringStringWithSupplementaryChars502 took 0.001 sec
+Testcase: testContainsIgnoreCase_String497 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testContainsIgnoreCase_String497(StringUtilsEqualsIndexOfTest.java:124)
+
+Testcase: testContainsIgnoreCase_String498 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testContainsIgnoreCase_String498(StringUtilsEqualsIndexOfTest.java:137)
+
+Testcase: testEqualsIgnoreCase_StringString492 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testEqualsIgnoreCase_StringString492(StringUtilsEqualsIndexOfTest.java:69)
+
+Testcase: testLastIndexOf_charInt496 took 0 sec
+Testcase: testIndexOfAny_StringString500 took 0 sec
+Testcase: testIndexOf_char_int493 took 0 sec
+Testcase: testLeftPad_StringIntChar501 took 0.005 sec
+Testcase: testIndexOf_charInt494 took 0 sec

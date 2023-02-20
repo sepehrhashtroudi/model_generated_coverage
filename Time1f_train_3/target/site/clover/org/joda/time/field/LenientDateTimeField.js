@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":77,"id":14088,"methods":[{"el":54,"sc":5,"sl":43},{"el":59,"sc":5,"sl":56},{"el":63,"sc":5,"sl":61},{"el":76,"sc":5,"sl":69}],"name":"LenientDateTimeField","sl":32}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1374":{"methods":[{"sl":43},{"sl":56}],"name":"testEqualsHashCodeStrict1167","pass":true,"statements":[{"sl":44},{"sl":47},{"sl":50},{"sl":53},{"sl":57},{"sl":58}]},"test_303":{"methods":[{"sl":43},{"sl":56}],"name":"testToString514","pass":true,"statements":[{"sl":44},{"sl":47},{"sl":50},{"sl":53},{"sl":57},{"sl":58}]},"test_761":{"methods":[{"sl":43},{"sl":56}],"name":"testPropertyEqualsHashCodeLenient380","pass":true,"statements":[{"sl":44},{"sl":47},{"sl":50},{"sl":53},{"sl":57},{"sl":58}]},"test_782":{"methods":[{"sl":43},{"sl":56},{"sl":69}],"name":"test_lenientChrononolgy_Chicago544","pass":true,"statements":[{"sl":44},{"sl":47},{"sl":50},{"sl":53},{"sl":57},{"sl":58},{"sl":72},{"sl":73},{"sl":74},{"sl":75}]},"test_978":{"methods":[{"sl":43},{"sl":56},{"sl":69}],"name":"testPropertyEqualsHashCodeLenient493","pass":true,"statements":[{"sl":44},{"sl":47},{"sl":50},{"sl":53},{"sl":57},{"sl":58},{"sl":72},{"sl":73},{"sl":74},{"sl":75}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [761, 782, 1374, 303, 978], [761, 782, 1374, 303, 978], [], [], [761, 782, 1374, 303, 978], [], [], [761, 782, 1374, 303, 978], [], [], [761, 782, 1374, 303, 978], [], [], [761, 782, 1374, 303, 978], [761, 782, 1374, 303, 978], [761, 782, 1374, 303, 978], [], [], [], [], [], [], [], [], [], [], [782, 978], [], [], [782, 978], [782, 978], [782, 978], [782, 978], [], []]

@@ -1,0 +1,83 @@
+Testsuite: org.apache.commons.lang3.text.StrBuilderTest
+Tests run: 23, Failures: 10, Errors: 1, Skipped: 0, Time elapsed: 0.054 sec
+
+Testcase: testMinimizeCapacity333 took 0.006 sec
+	FAILED
+expected:<32> but was:<>
+junit.framework.AssertionFailedError: expected:<32> but was:<>
+	at org.apache.commons.lang3.text.StrBuilderTest.testMinimizeCapacity333(StrBuilderTest.java:127)
+
+Testcase: testLeftString358 took 0 sec
+Testcase: testSetLength331 took 0 sec
+	FAILED
+setLength(0) expected IndexOutOfBoundsException
+junit.framework.AssertionFailedError: setLength(0) expected IndexOutOfBoundsException
+	at org.apache.commons.lang3.text.StrBuilderTest.testSetLength331(StrBuilderTest.java:86)
+
+Testcase: testDeleteFirst_String355 took 0.001 sec
+	FAILED
+expected:<[a]bcba> but was:<[]bcba>
+junit.framework.AssertionFailedError: expected:<[a]bcba> but was:<[]bcba>
+	at org.apache.commons.lang3.text.StrBuilderTest.testDeleteFirst_String355(StrBuilderTest.java:195)
+
+Testcase: testDelete_int_int354 took 0 sec
+	Caused an ERROR
+end < start
+java.lang.StringIndexOutOfBoundsException: end < start
+	at org.apache.commons.lang3.text.StrBuilder.validateRange(StrBuilder.java:2784)
+	at org.apache.commons.lang3.text.StrBuilder.delete(StrBuilder.java:1682)
+	at org.apache.commons.lang3.text.StrBuilderTest.testDelete_int_int354(StrBuilderTest.java:178)
+
+Testcase: testIndexOf_StrMatcher_int362 took 0 sec
+	FAILED
+expected:<0> but was:<-1>
+junit.framework.AssertionFailedError: expected:<0> but was:<-1>
+	at org.apache.commons.lang3.text.StrBuilderTest.testIndexOf_StrMatcher_int362(StrBuilderTest.java:289)
+
+Testcase: testIndexOf_StrMatcher_int363 took 0 sec
+	FAILED
+expected:<0> but was:<-1>
+junit.framework.AssertionFailedError: expected:<0> but was:<-1>
+	at org.apache.commons.lang3.text.StrBuilderTest.testIndexOf_StrMatcher_int363(StrBuilderTest.java:306)
+
+Testcase: testIndexOf_StrMatcher_int364 took 0 sec
+	FAILED
+expected:<-1> but was:<6>
+junit.framework.AssertionFailedError: expected:<-1> but was:<6>
+	at org.apache.commons.lang3.text.StrBuilderTest.testIndexOf_StrMatcher_int364(StrBuilderTest.java:334)
+
+Testcase: testReplaceAll_String_String360 took 0 sec
+Testcase: testLeftString_int357 took 0 sec
+Testcase: testSubstringIntInt356 took 0 sec
+Testcase: testChaining332 took 0.001 sec
+Testcase: testAppend_String329 took 0 sec
+Testcase: testReplaceFirst_char_char327 took 0 sec
+Testcase: testIndexOf_String361 took 0 sec
+	FAILED
+expected:<1> but was:<0>
+junit.framework.AssertionFailedError: expected:<1> but was:<0>
+	at org.apache.commons.lang3.text.StrBuilderTest.testIndexOf_String361(StrBuilderTest.java:279)
+
+Testcase: testGetNewLineText328 took 0.001 sec
+	FAILED
+expected:<> but was:<null>
+junit.framework.AssertionFailedError: expected:<> but was:<null>
+	at org.apache.commons.lang3.text.StrBuilderTest.testGetNewLineText328(StrBuilderTest.java:60)
+
+Testcase: testAppendFixedWidthPadLeft_int350 took 0 sec
+Testcase: testLang294352 took 0 sec
+Testcase: testLang295359 took 0 sec
+Testcase: testCapacity326 took 0 sec
+Testcase: testLastIndexOf_StrMatcher366 took 0 sec
+	FAILED
+expected:<6> but was:<-1>
+junit.framework.AssertionFailedError: expected:<6> but was:<-1>
+	at org.apache.commons.lang3.text.StrBuilderTest.testLastIndexOf_StrMatcher366(StrBuilderTest.java:346)
+
+Testcase: testLastIndexOf_StrMatcher367 took 0 sec
+	FAILED
+expected:<6> but was:<-1>
+junit.framework.AssertionFailedError: expected:<6> but was:<-1>
+	at org.apache.commons.lang3.text.StrBuilderTest.testLastIndexOf_StrMatcher367(StrBuilderTest.java:358)
+
+Testcase: testToStringBuilder373 took 0 sec

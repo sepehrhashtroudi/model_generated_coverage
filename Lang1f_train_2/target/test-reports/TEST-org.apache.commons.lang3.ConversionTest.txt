@@ -1,0 +1,39 @@
+Testsuite: org.apache.commons.lang3.ConversionTest
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+
+Testcase: testByteArrayToUuid1166 took 0.022 sec
+Testcase: testIntToShortArray1156 took 0.001 sec
+Testcase: testLongToByteArray1157 took 0 sec
+Testcase: testBinaryToHexDigit1133 took 0 sec
+Testcase: testHexDigitToInt1131 took 0 sec
+Testcase: testIntToByteArray1158 took 0 sec
+Testcase: testIntToHexDigitMsb01139 took 0 sec
+Testcase: testByteArrayToLong1143 took 0 sec
+Testcase: testBinaryToShort1152 took 0 sec
+Testcase: testHexDigitMsb0ToBinary1132 took 0 sec
+Testcase: testBinaryToInt1151 took 0 sec
+Testcase: testBinaryToHexDigitMsb0_4bits_2args1135 took 0 sec
+Testcase: testHexToShort1148 took 0 sec
+Testcase: testIntArrayToLong1140 took 0 sec
+Testcase: testLongToShortArray1155 took 0 sec
+Testcase: testByteArrayToInt1144 took 0 sec
+Testcase: testBinaryToHexDigit_2args1134 took 0 sec
+Testcase: testBinaryBeMsb0ToHexDigit1136 took 0 sec
+Testcase: testByteArrayToShort1145 took 0 sec
+Testcase: testLongToIntArray1154 took 0 sec
+Testcase: testShortToByteArray1159 took 0 sec
+Testcase: testIntToHexDigit1138 took 0 sec
+Testcase: testHexToLong1146 took 0 sec
+Testcase: testHexToInt1147 took 0 sec
+Testcase: testUuidToByteArray1165 took 0 sec
+Testcase: testBinaryToLong1150 took 0.001 sec
+Testcase: testHexToByte1149 took 0 sec
+Testcase: testBinaryToByte1153 took 0 sec
+Testcase: testLongToBinary1161 took 0.001 sec
+Testcase: testIntToBinary1162 took 0 sec
+Testcase: testShortToBinary1163 took 0 sec
+Testcase: testIntToHex1160 took 0 sec
+Testcase: testByteToBinary1164 took 0 sec
+Testcase: testShortArrayToInt1142 took 0 sec
+Testcase: testShortArrayToLong1141 took 0 sec
+Testcase: testByteToHex1137 took 0 sec

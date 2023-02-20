@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5e623a5b-08d2-4c93-a62e-f3b0a308d9f8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Compress1f_nopt_0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Compress1f_nopt_0/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Time1f_train/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Time1f_train/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Time1f_train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Time1f_train/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Ct3r4m8yutBr7rmpBvEc6NpCyO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/sepehr/masters/test_generation/model_generated_coverage/Time1f_automated_3"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.org.joda.time in joda-time">
+    <configuration name="All in joda-time" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="joda-time" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.joda.time in joda-time" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="joda-time" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.joda.time.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.joda.time" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.org.joda.time in joda-time" />
+        <item itemvalue="JUnit.All in joda-time" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e623a5b-08d2-4c93-a62e-f3b0a308d9f8" name="Changes" comment="" />
+      <created>1659608249452</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659608249452</updated>
+      <workItem from="1659608252457" duration="651000" />
+      <workItem from="1659647739960" duration="2507000" />
+      <workItem from="1659652921795" duration="2105000" />
+      <workItem from="1659670504361" duration="2195000" />
+      <workItem from="1659733065260" duration="30000" />
+      <workItem from="1660010531088" duration="1450000" />
+      <workItem from="1660013101093" duration="3436000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

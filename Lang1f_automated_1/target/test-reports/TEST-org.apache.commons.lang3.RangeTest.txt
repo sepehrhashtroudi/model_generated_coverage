@@ -1,0 +1,17 @@
+Testsuite: org.apache.commons.lang3.RangeTest
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
+
+Testcase: testToString353 took 0.022 sec
+Testcase: testGetMaximum355 took 0.002 sec
+	FAILED
+expected:<10> but was:<20>
+junit.framework.AssertionFailedError: expected:<10> but was:<20>
+	at org.apache.commons.lang3.RangeTest.testGetMaximum355(RangeTest.java:83)
+
+Testcase: testIntersectionWith354 took 0 sec
+Testcase: testIsAfter356 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.RangeTest.testIsAfter356(RangeTest.java:91)
+

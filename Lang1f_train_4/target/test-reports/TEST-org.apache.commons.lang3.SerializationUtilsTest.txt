@@ -1,0 +1,14 @@
+Testsuite: org.apache.commons.lang3.SerializationUtilsTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec
+
+Testcase: testDeserializeBytes816 took 0.031 sec
+Testcase: testPrimitiveTypeClassSerialization818 took 0.002 sec
+Testcase: testDeserializeBytesNull817 took 0 sec
+Testcase: testDeserializeStream812 took 0 sec
+Testcase: testDeserializeStreamClassNotFound814 took 0.009 sec
+Testcase: testSerializeStreamObjNull811 took 0 sec
+Testcase: testConstructor809 took 0 sec
+Testcase: testDeserializeStreamBadStream815 took 0 sec
+Testcase: testSerializeBytesUnserializable133 took 0.006 sec
+Testcase: testDeserializeStreamNull813 took 0 sec
+Testcase: testClone810 took 0 sec

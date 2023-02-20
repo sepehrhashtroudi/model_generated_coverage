@@ -1,0 +1,56 @@
+Testsuite: org.apache.commons.lang3.BooleanUtilsTest
+Tests run: 14, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec
+
+Testcase: test_toBoolean_Integer_Integer_Integer4 took 0.02 sec
+Testcase: test_negate_Boolean1 took 0.002 sec
+	FAILED
+expected:<true> but was:<false>
+junit.framework.AssertionFailedError: expected:<true> but was:<false>
+	at org.apache.commons.lang3.BooleanUtilsTest.test_negate_Boolean1(BooleanUtilsTest.java:40)
+
+Testcase: test_negate_Boolean2 took 0 sec
+	FAILED
+expected:<true> but was:<false>
+junit.framework.AssertionFailedError: expected:<true> but was:<false>
+	at org.apache.commons.lang3.BooleanUtilsTest.test_negate_Boolean2(BooleanUtilsTest.java:46)
+
+Testcase: test_toBooleanObject_int3 took 0 sec
+Testcase: testAnd_primitive_validInput_2items13 took 0 sec
+	FAILED
+False result for (true, false)
+junit.framework.AssertionFailedError: False result for (true, false)
+	at org.apache.commons.lang3.BooleanUtilsTest.testAnd_primitive_validInput_2items13(BooleanUtilsTest.java:133)
+
+Testcase: testAnd_object_validInput_2items14 took 0.006 sec
+	FAILED
+False result for (true, false)
+junit.framework.AssertionFailedError: False result for (true, false)
+	at org.apache.commons.lang3.BooleanUtilsTest.testAnd_object_validInput_2items14(BooleanUtilsTest.java:140)
+
+Testcase: test_toIntegerObject_Boolean7 took 0.002 sec
+	FAILED
+expected:<0> but was:<null>
+junit.framework.AssertionFailedError: expected:<0> but was:<null>
+	at org.apache.commons.lang3.BooleanUtilsTest.test_toIntegerObject_Boolean7(BooleanUtilsTest.java:78)
+
+Testcase: test_toIntegerObject_Boolean8 took 0.001 sec
+	FAILED
+expected:<1> but was:<null>
+junit.framework.AssertionFailedError: expected:<1> but was:<null>
+	at org.apache.commons.lang3.BooleanUtilsTest.test_toIntegerObject_Boolean8(BooleanUtilsTest.java:84)
+
+Testcase: test_toInteger_boolean_int_int9 took 0 sec
+Testcase: test_toBooleanObject_String10 took 0 sec
+Testcase: test_toBooleanObject_int_int_int_int_int6 took 0 sec
+	FAILED
+Expected exception: java.lang.IllegalArgumentException
+junit.framework.AssertionFailedError: Expected exception: java.lang.IllegalArgumentException
+
+Testcase: test_toStringTrueFalse_boolean12 took 0 sec
+Testcase: test_toBoolean_String11 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.BooleanUtilsTest.test_toBoolean_String11(BooleanUtilsTest.java:121)
+
+Testcase: test_toBooleanObject_int_int_int_int5 took 0 sec

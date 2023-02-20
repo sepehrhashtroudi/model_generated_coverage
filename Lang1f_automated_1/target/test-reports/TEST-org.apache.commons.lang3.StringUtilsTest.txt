@@ -1,0 +1,82 @@
+Testsuite: org.apache.commons.lang3.StringUtilsTest
+Tests run: 19, Failures: 12, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec
+
+Testcase: testDefaultIfBlank474 took 0.027 sec
+	FAILED
+expected:<[]> but was:<[NULL]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[NULL]>
+	at org.apache.commons.lang3.StringUtilsTest.testDefaultIfBlank474(StringUtilsTest.java:322)
+
+Testcase: testJoin_ArrayOfShorts462 took 0 sec
+Testcase: testChomp467 took 0 sec
+	FAILED
+chomp(String) failed expected:<fo[]> but was:<fo[o]>
+junit.framework.AssertionFailedError: chomp(String) failed expected:<fo[]> but was:<fo[o]>
+	at org.apache.commons.lang3.StringUtilsTest.testChomp467(StringUtilsTest.java:251)
+
+Testcase: testChomp469 took 0 sec
+	FAILED
+expected:<foo[]> but was:<foo[XXbarXXbaz]>
+junit.framework.AssertionFailedError: expected:<foo[]> but was:<foo[XXbarXXbaz]>
+	at org.apache.commons.lang3.StringUtilsTest.testChomp469(StringUtilsTest.java:276)
+
+Testcase: testJoin_ArrayOfLongs460 took 0 sec
+Testcase: testJoin_ArrayOfLongs461 took 0 sec
+Testcase: testSplitByWholeString_StringStringBooleanInt458 took 0.006 sec
+	FAILED
+expected:<abstemiously[aeiouyabstemiously]> but was:<abstemiously[]>
+junit.framework.AssertionFailedError: expected:<abstemiously[aeiouyabstemiously]> but was:<abstemiously[]>
+	at org.apache.commons.lang3.StringUtilsTest.testSplitByWholeString_StringStringBooleanInt458(StringUtilsTest.java:185)
+
+Testcase: testRemoveStart464 took 0 sec
+	FAILED
+expected:<www.domain[.com]> but was:<www.domain[]>
+junit.framework.AssertionFailedError: expected:<www.domain[.com]> but was:<www.domain[]>
+	at org.apache.commons.lang3.StringUtilsTest.testRemoveStart464(StringUtilsTest.java:240)
+
+Testcase: testGetCommonPrefix476 took 0 sec
+	FAILED
+expected:<[]> but was:<[ ]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[ ]>
+	at org.apache.commons.lang3.StringUtilsTest.testGetCommonPrefix476(StringUtilsTest.java:347)
+
+Testcase: testGetCommonPrefix477 took 0 sec
+	FAILED
+expected:<[abc]> but was:<[]>
+junit.framework.AssertionFailedError: expected:<[abc]> but was:<[]>
+	at org.apache.commons.lang3.StringUtilsTest.testGetCommonPrefix477(StringUtilsTest.java:368)
+
+Testcase: testGetCommonPrefix479 took 0 sec
+	FAILED
+expected:<[abc]> but was:<[]>
+junit.framework.AssertionFailedError: expected:<[abc]> but was:<[]>
+	at org.apache.commons.lang3.StringUtilsTest.testGetCommonPrefix479(StringUtilsTest.java:379)
+
+Testcase: testSwapCase_String472 took 0 sec
+Testcase: testDifference_StringString475 took 0.001 sec
+Testcase: testJoin_ArrayOfDoubles463 took 0.001 sec
+Testcase: testRepeat_StringStringInt471 took 0 sec
+	FAILED
+expected:<[]> but was:<[ababab]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[ababab]>
+	at org.apache.commons.lang3.StringUtilsTest.testRepeat_StringStringInt471(StringUtilsTest.java:295)
+
+Testcase: testJoin_Array459 took 0 sec
+Testcase: testSplitByWholeString_StringStringInt457 took 0 sec
+	FAILED
+expected:<2> but was:<3>
+junit.framework.AssertionFailedError: expected:<2> but was:<3>
+	at org.apache.commons.lang3.StringUtilsTest.testSplitByWholeString_StringStringInt457(StringUtilsTest.java:157)
+
+Testcase: testChomp_String468 took 0 sec
+	FAILED
+expected:<[]> but was:<[ ]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[ ]>
+	at org.apache.commons.lang3.StringUtilsTest.testChomp_String468(StringUtilsTest.java:258)
+
+Testcase: testSplit_String456 took 0 sec
+	FAILED
+expected:<3> but was:<2>
+junit.framework.AssertionFailedError: expected:<3> but was:<2>
+	at org.apache.commons.lang3.StringUtilsTest.testSplit_String456(StringUtilsTest.java:122)
+

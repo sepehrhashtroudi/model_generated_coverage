@@ -1,0 +1,6 @@
+Testsuite: org.apache.commons.lang3.mutable.MutableFloatTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec
+
+Testcase: testHashCode54 took 0.041 sec
+Testcase: testConstructors52 took 0 sec
+Testcase: testEquals53 took 0 sec

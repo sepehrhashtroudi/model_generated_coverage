@@ -1,0 +1,9 @@
+Testsuite: org.apache.commons.lang3.text.StrMatcherTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+
+Testcase: testTabMatcher118 took 0.02 sec
+	FAILED
+expected:<1> but was:<0>
+junit.framework.AssertionFailedError: expected:<1> but was:<0>
+	at org.apache.commons.lang3.text.StrMatcherTest.testTabMatcher118(StrMatcherTest.java:44)
+

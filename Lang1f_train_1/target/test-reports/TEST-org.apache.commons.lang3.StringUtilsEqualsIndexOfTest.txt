@@ -1,0 +1,35 @@
+Testsuite: org.apache.commons.lang3.StringUtilsEqualsIndexOfTest
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec
+
+Testcase: testLastIndexOf_StringInt275 took 0.025 sec
+Testcase: testIndexOfAny_StringString1012 took 0.005 sec
+Testcase: testIndexOfAnyBut_StringString1018 took 0.001 sec
+Testcase: testLastOrdinalIndexOf1000 took 0 sec
+Testcase: testIndexOfIgnoreCase_String1001 took 0 sec
+Testcase: testEqualsIgnoreCase998 took 0 sec
+Testcase: testContainsAny_StringCharArrayWithBadSupplementaryChars1013 took 0 sec
+Testcase: testEqualsOnStrings996 took 0 sec
+Testcase: testLastIndexOfAny_StringStringArray1023 took 0 sec
+Testcase: testIndexOfAny_StringCharArray1011 took 0 sec
+Testcase: testLastIndexOfIgnoreCase_String1004 took 0 sec
+Testcase: testContainsNone_StringWithSupplementaryChars1021 took 0 sec
+Testcase: testLastIndexOfIgnoreCase_StringInt1005 took 0 sec
+Testcase: testIndexOfIgnoreCase_StringInt1002 took 0 sec
+Testcase: testContainsAny_StringString276 took 0 sec
+Testcase: testContains_Char1006 took 0 sec
+Testcase: testIndexOf_char999 took 0 sec
+Testcase: testContainsIgnoreCase_StringString1008 took 0 sec
+Testcase: testContainsNone_StringWithBadSupplementaryChars1020 took 0 sec
+Testcase: testLastIndexOf_char274 took 0 sec
+Testcase: testContainsOnly_CharArray1019 took 0 sec
+Testcase: testIndexOfAny_StringStringArray1022 took 0.001 sec
+Testcase: testIndexOfAnyBut_StringCharArrayWithSupplementaryChars1016 took 0 sec
+Testcase: testIndexOfAny_StringStringWithSupplementaryChars1010 took 0 sec
+Testcase: testContains_String1007 took 0 sec
+Testcase: testIndexOfAnyBut_StringCharArray1015 took 0 sec
+Testcase: testLastIndexOf_charInt1003 took 0 sec
+Testcase: testContainsOnly_String1017 took 0 sec
+Testcase: testEquals997 took 0 sec
+Testcase: testIndexOf_charInt272 took 0.001 sec
+Testcase: testOrdinalIndexOf273 took 0 sec
+Testcase: testContainsWhitespace1009 took 0 sec

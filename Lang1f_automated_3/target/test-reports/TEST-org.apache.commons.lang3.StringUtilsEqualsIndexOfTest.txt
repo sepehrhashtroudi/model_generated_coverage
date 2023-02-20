@@ -1,0 +1,27 @@
+Testsuite: org.apache.commons.lang3.StringUtilsEqualsIndexOfTest
+Tests run: 9, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+
+Testcase: testLastOrdinalIndexOf472 took 0.026 sec
+Testcase: testLastIndexOf_StringInt474 took 0.001 sec
+	FAILED
+expected:<8> but was:<-1>
+junit.framework.AssertionFailedError: expected:<8> but was:<-1>
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testLastIndexOf_StringInt474(StringUtilsEqualsIndexOfTest.java:143)
+
+Testcase: testLastIndexOf_StringInt475 took 0.001 sec
+	FAILED
+expected:<8> but was:<-1>
+junit.framework.AssertionFailedError: expected:<8> but was:<-1>
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testLastIndexOf_StringInt475(StringUtilsEqualsIndexOfTest.java:169)
+
+Testcase: testEqualsOnStrings470 took 0 sec
+Testcase: testIndexOfIgnoreCase_String473 took 0 sec
+Testcase: testContainsAny_StringCharArrayWithBadSupplementaryChars476 took 0.005 sec
+Testcase: testIndexOf_char471 took 0 sec
+	FAILED
+expected:<5> but was:<2>
+junit.framework.AssertionFailedError: expected:<5> but was:<2>
+	at org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testIndexOf_char471(StringUtilsEqualsIndexOfTest.java:103)
+
+Testcase: testLastIndexOf_char140 took 0 sec
+Testcase: testIndexOf_charInt139 took 0 sec

@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: com.google.gson.stream.JsonReaderTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.018 sec <<< FAILURE!
+testNullLiteralIsNotAString13(com.google.gson.stream.JsonReaderTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.IllegalStateException: Expected a string but was NULL
+	at com.google.gson.stream.JsonReader.nextString(JsonReader.java:462)
+	at com.google.gson.stream.JsonReaderTest.__CLR4_4_1j241ew41w(JsonReaderTest.java:30)
+	at com.google.gson.stream.JsonReaderTest.testNullLiteralIsNotAString13(JsonReaderTest.java:26)
+
+testNullLiteralIsNotAString16(com.google.gson.stream.JsonReaderTest)  Time elapsed: 0.006 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.fail(Assert.java:53)
+	at com.google.gson.stream.JsonReaderTest.__CLR4_4_1st3xsb43a(JsonReaderTest.java:106)
+	at com.google.gson.stream.JsonReaderTest.testNullLiteralIsNotAString16(JsonReaderTest.java:101)
+

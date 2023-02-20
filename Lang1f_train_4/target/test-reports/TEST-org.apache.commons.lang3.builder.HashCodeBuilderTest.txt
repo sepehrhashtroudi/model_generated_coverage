@@ -1,0 +1,26 @@
+Testsuite: org.apache.commons.lang3.builder.HashCodeBuilderTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+
+Testcase: testIntArrayAsObject799 took 0.018 sec
+Testcase: testFloatArrayAsObject802 took 0 sec
+Testcase: testShortArrayAsObject800 took 0 sec
+Testcase: testFloat794 took 0 sec
+Testcase: testBooleanArray790 took 0 sec
+Testcase: testCharArrayAsObject791 took 0 sec
+Testcase: testFloatArray795 took 0 sec
+Testcase: testSuper806 took 0 sec
+Testcase: testIntArray796 took 0 sec
+Testcase: testConstructorEx1788 took 0 sec
+Testcase: testConstructorEx2789 took 0 sec
+Testcase: testReflectionHashCodeEx3787 took 0 sec
+Testcase: testShortArray805 took 0 sec
+Testcase: testByteArrayAsObject801 took 0 sec
+Testcase: testLongArrayAsObject798 took 0 sec
+Testcase: testCharArray792 took 0 sec
+Testcase: testDoubleArray793 took 0 sec
+Testcase: testToHashCodeEqualsHashCode808 took 0 sec
+Testcase: testObjectBuild807 took 0.001 sec
+Testcase: testObjectArray804 took 0 sec
+Testcase: testObjectArrayAsObject803 took 0 sec
+Testcase: testReflectionObjectCycle786 took 0.006 sec
+Testcase: testLongArray797 took 0 sec

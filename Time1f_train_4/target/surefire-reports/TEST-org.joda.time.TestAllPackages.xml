@@ -1,0 +1,1648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.joda.time.TestAllPackages" time="6.744" tests="1476" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.352-b08"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/sepehr/masters/test_generation/model_generated_coverage/Time1f_train_4"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/sepehr/masters/test_generation/model_generated_coverage/Time1f_train_4"/>
+    <property name="java.runtime.version" value="1.8.0_352-8u352-ga-1~20.04-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="org.joda.time.DateTimeZone.Provider" value="org.joda.time.tz.UTCProvider"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="skipTests" value="false"/>
+    <property name="os.version" value="5.15.0-58-generic"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
+    <property name="user.home" value="/home/sepehr"/>
+    <property name="user.timezone" value="America/Edmonton"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="testFailureIgnore" value="true"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="sepehr"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean clover:setup test clover:aggregate clover:clover -DskipTests=false -DtestFailureIgnore=true -fail-never"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_352"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="java.specification.maintenance.version" value="4"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testEqualsHashCode_Limit532" classname="org.joda.time.TestChronology" time="0.013"/>
+  <testcase name="testTest908" classname="org.joda.time.TestChronology" time="0.009"/>
+  <testcase name="testEqualsHashCode_Zoned958" classname="org.joda.time.TestChronology" time="0.001"/>
+  <testcase name="testToString514" classname="org.joda.time.TestChronology" time="0.004"/>
+  <testcase name="testEqualsHashCode_ISO299" classname="org.joda.time.TestChronology" time="0.001"/>
+  <testcase name="test_monthOfYear1374" classname="org.joda.time.TestDateTimeFieldType" time="0.053"/>
+  <testcase name="test_dayOfMonth1375" classname="org.joda.time.TestDateTimeFieldType" time="0"/>
+  <testcase name="test_weekyearOfCentury1376" classname="org.joda.time.TestDateTimeFieldType" time="0"/>
+  <testcase name="test_weekyear1377" classname="org.joda.time.TestDateTimeFieldType" time="0.001"/>
+  <testcase name="test_weekOfWeekyear1378" classname="org.joda.time.TestDateTimeFieldType" time="0.001"/>
+  <testcase name="test_yearOfCentury1369" classname="org.joda.time.TestDateTimeFieldType" time="0.001"/>
+  <testcase name="test_dayOfYear1373" classname="org.joda.time.TestDateTimeFieldType" time="0.001"/>
+  <testcase name="test_era1371" classname="org.joda.time.TestDateTimeFieldType" time="0.001"/>
+  <testcase name="test_dayOfWeek1379" classname="org.joda.time.TestDateTimeFieldType" time="0.001"/>
+  <testcase name="test_halfdayOfDay1380" classname="org.joda.time.TestDateTimeFieldType" time="0.001"/>
+  <testcase name="test_hourOfHalfday1381" classname="org.joda.time.TestDateTimeFieldType" time="0.001"/>
+  <testcase name="test_clockhourOfHalfday1382" classname="org.joda.time.TestDateTimeFieldType" time="0"/>
+  <testcase name="test_minuteOfDay1383" classname="org.joda.time.TestDateTimeFieldType" time="0.001"/>
+  <testcase name="test_minuteOfHour1384" classname="org.joda.time.TestDateTimeFieldType" time="0.001"/>
+  <testcase name="test_millisOfSecond1385" classname="org.joda.time.TestDateTimeFieldType" time="0.001"/>
+  <testcase name="test_yearOfEra1372" classname="org.joda.time.TestDateTimeFieldType" time="0.001"/>
+  <testcase name="test_centuryOfEra1370" classname="org.joda.time.TestDateTimeFieldType" time="0.001"/>
+  <testcase name="test_days1020" classname="org.joda.time.TestDurationFieldType" time="0.002"/>
+  <testcase name="test_minutes1021" classname="org.joda.time.TestDurationFieldType" time="0.001"/>
+  <testcase name="test_seconds1022" classname="org.joda.time.TestDurationFieldType" time="0"/>
+  <testcase name="test_millis1023" classname="org.joda.time.TestDurationFieldType" time="0"/>
+  <testcase name="test_weekyears1018" classname="org.joda.time.TestDurationFieldType" time="0.001"/>
+  <testcase name="test_weeks1016" classname="org.joda.time.TestDurationFieldType" time="0.001"/>
+  <testcase name="test_eras1017" classname="org.joda.time.TestDurationFieldType" time="0.001"/>
+  <testcase name="test_years1019" classname="org.joda.time.TestDurationFieldType" time="0.001"/>
+  <testcase name="testConstructor_nullObject705" classname="org.joda.time.TestInstant_Constructors" time="0.009"/>
+  <testcase name="testConstructor_badconverterObject52" classname="org.joda.time.TestInstant_Constructors" time="0.001"/>
+  <testcase name="testParse_noFormatter703" classname="org.joda.time.TestInstant_Constructors" time="0.003"/>
+  <testcase name="testToMutableDateTimeISO712" classname="org.joda.time.TestInstant_Basics" time="0.003"/>
+  <testcase name="testGet_DateTimeField1397" classname="org.joda.time.TestInstant_Basics" time="0.001"/>
+  <testcase name="testIsBeforeNow1406" classname="org.joda.time.TestInstant_Basics" time="0"/>
+  <testcase name="testIsEqualNow1407" classname="org.joda.time.TestInstant_Basics" time="0.001"/>
+  <testcase name="testPlus_long707" classname="org.joda.time.TestInstant_Basics" time="0.001"/>
+  <testcase name="testIsEqual_RI1408" classname="org.joda.time.TestInstant_Basics" time="0.001"/>
+  <testcase name="testGet_DateTimeFieldType704" classname="org.joda.time.TestInstant_Basics" time="0"/>
+  <testcase name="testToDateTimeISO711" classname="org.joda.time.TestInstant_Basics" time="0"/>
+  <testcase name="testWithDurationAdded_long_int708" classname="org.joda.time.TestInstant_Basics" time="0.001"/>
+  <testcase name="testPlus_RD710" classname="org.joda.time.TestInstant_Basics" time="0.003"/>
+  <testcase name="testMinus_RD709" classname="org.joda.time.TestInstant_Basics" time="0"/>
+  <testcase name="testToInstant706" classname="org.joda.time.TestInstant_Basics" time="0.001"/>
+  <testcase name="testConstructor_int_int_int_int_int_int577" classname="org.joda.time.TestDateTime_Constructors" time="0.001"/>
+  <testcase name="testConstructor_int_int_int_int_int575" classname="org.joda.time.TestDateTime_Constructors" time="0.001"/>
+  <testcase name="test_now_nullDateTimeZone565" classname="org.joda.time.TestDateTime_Constructors" time="0"/>
+  <testcase name="test_now_DateTimeZone566" classname="org.joda.time.TestDateTime_Constructors" time="0.001"/>
+  <testcase name="testParse_formatter570" classname="org.joda.time.TestDateTime_Constructors" time="0.003"/>
+  <testcase name="testConstructor_int_int_int_int_int_int_Chronology579" classname="org.joda.time.TestDateTime_Constructors" time="0.001"/>
+  <testcase name="test_now_Chronology567" classname="org.joda.time.TestDateTime_Constructors" time="0"/>
+  <testcase name="test_now_nullChronology568" classname="org.joda.time.TestDateTime_Constructors" time="0.001"/>
+  <testcase name="testConstructor_int_int_int_int_int_Chronology576" classname="org.joda.time.TestDateTime_Constructors" time="0.001"/>
+  <testcase name="testConstructor571" classname="org.joda.time.TestDateTime_Constructors" time="0.001"/>
+  <testcase name="test_now564" classname="org.joda.time.TestDateTime_Constructors" time="0"/>
+  <testcase name="testConstructor_nullObject573" classname="org.joda.time.TestDateTime_Constructors" time="0.001"/>
+  <testcase name="testConstructor_DateTimeZone572" classname="org.joda.time.TestDateTime_Constructors" time="0.001"/>
+  <testcase name="testToDateTime_Chronology583" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testPlus_RP594" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testWithDurationAdded_long_int593" classname="org.joda.time.TestDateTime_Basics" time="0"/>
+  <testcase name="testWithers406" classname="org.joda.time.TestDateTime_Basics" time="0.004"/>
+  <testcase name="testPlusYears_int157" classname="org.joda.time.TestDateTime_Basics" time="0"/>
+  <testcase name="testToDateTimeISO581" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testWithDurationAdded_RD_int592" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testToDateMidnight614" classname="org.joda.time.TestDateTime_Basics" time="0.003"/>
+  <testcase name="testToLocalDateTime615" classname="org.joda.time.TestDateTime_Basics" time="0.003"/>
+  <testcase name="testToLocalTime617" classname="org.joda.time.TestDateTime_Basics" time="0.002"/>
+  <testcase name="testToString_String_Locale1394" classname="org.joda.time.TestDateTime_Basics" time="0.012"/>
+  <testcase name="testIsSupported_DateTimeFieldType1396" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testToInstant1398" classname="org.joda.time.TestDateTime_Basics" time="0"/>
+  <testcase name="testToMutableDateTimeISO1401" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testToMutableDateTime_DateTimeZone1402" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testIsAfter_RI1404" classname="org.joda.time.TestDateTime_Basics" time="0.002"/>
+  <testcase name="testIsAfterNow1405" classname="org.joda.time.TestDateTime_Basics" time="0"/>
+  <testcase name="testToString_DTFormatter1409" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testMinus_RP607" classname="org.joda.time.TestDateTime_Basics" time="0.002"/>
+  <testcase name="testMinus_RD606" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testPlus_RD595" classname="org.joda.time.TestDateTime_Basics" time="0"/>
+  <testcase name="testWithFieldAdded4590" classname="org.joda.time.TestDateTime_Basics" time="0.002"/>
+  <testcase name="testWithFieldAdded1591" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testWithField1588" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testWithField2589" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testWithTime_int_int_int586" classname="org.joda.time.TestDateTime_Basics" time="0.003"/>
+  <testcase name="testWithFields_RPartial587" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testPlusMonths_int596" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testPlusWeeks_int597" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testPlusDays_int598" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testWithDate_int_int_int585" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testWithZoneRetainFields_DateTimeZone584" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testToDateTime_DateTimeZone582" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testPlusHours_int599" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testPlusMinutes_int600" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testPlusSeconds_int602" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testPlusMillis_int604" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testMinus_long605" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testMinusYears_int608" classname="org.joda.time.TestDateTime_Basics" time="0.002"/>
+  <testcase name="testMinusMonths_int609" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testMinusDays_int610" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testMinusHours_int612" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testMinusMinutes_int613" classname="org.joda.time.TestDateTime_Basics" time="0.001"/>
+  <testcase name="testPropertyToIntervalYearOfEra626" classname="org.joda.time.TestDateTime_Properties" time="0.008"/>
+  <testcase name="testPropertyEqualsHashCodeLenient190" classname="org.joda.time.TestDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertyGetEra624" classname="org.joda.time.TestDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertySetYear627" classname="org.joda.time.TestDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertySetWeekOfWeekyear629" classname="org.joda.time.TestDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertyAddLongDayOfWeek630" classname="org.joda.time.TestDateTime_Properties" time="0"/>
+  <testcase name="testPropertyGetMinuteOfDay631" classname="org.joda.time.TestDateTime_Properties" time="0"/>
+  <testcase name="testPropertyGetSecondOfDay632" classname="org.joda.time.TestDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertySetTextDayOfMonth635" classname="org.joda.time.TestDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertyRoundHalfFloorHourOfDay637" classname="org.joda.time.TestDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertyRoundHalfCeilingHourOfDay638" classname="org.joda.time.TestDateTime_Properties" time="0.002"/>
+  <testcase name="testPropertyRoundHalfEvenHourOfDay639" classname="org.joda.time.TestDateTime_Properties" time="0"/>
+  <testcase name="testPropertyToIntervalYearOfCentury407" classname="org.joda.time.TestDateTime_Properties" time="0"/>
+  <testcase name="testPropertyWithMaximumValueMillisOfDayDSTGap636" classname="org.joda.time.TestDateTime_Properties" time="0.002"/>
+  <testcase name="testPropertyWithMinimumValueMillisOfDayDSTGap633" classname="org.joda.time.TestDateTime_Properties" time="0.002"/>
+  <testcase name="testPropertyGetCenturyOfEra625" classname="org.joda.time.TestDateTime_Properties" time="0"/>
+  <testcase name="testPropertyAddWrapFieldYear269" classname="org.joda.time.TestDateTime_Properties" time="0.002"/>
+  <testcase name="testPropertyEqualsHashCodeStrict580" classname="org.joda.time.TestDateTime_Properties" time="0.003"/>
+  <testcase name="testPropertyAddDayOfMonth838" classname="org.joda.time.TestDateTime_Properties" time="0"/>
+  <testcase name="testPropertyGetDifferenceHourOfDay939" classname="org.joda.time.TestDateTime_Properties" time="0"/>
+  <testcase name="testPropertyGetMaxMinValuesDayOfYear940" classname="org.joda.time.TestDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertyWithMaximumValueDayOfMonth941" classname="org.joda.time.TestDateTime_Properties" time="0"/>
+  <testcase name="testPropertyToIntervalMillisOfSecond960" classname="org.joda.time.TestDateTime_Properties" time="0"/>
+  <testcase name="testPropertyGetMonthOfYear515" classname="org.joda.time.TestDateTime_Properties" time="0.001"/>
+  <testcase name="testConstructor_nullObject1032" classname="org.joda.time.TestMutableDateTime_Constructors" time="0.001"/>
+  <testcase name="testConstructor_badconverterObject_DateTimeZone1033" classname="org.joda.time.TestMutableDateTime_Constructors" time="0.001"/>
+  <testcase name="test_now_Chronology1027" classname="org.joda.time.TestMutableDateTime_Constructors" time="0.001"/>
+  <testcase name="testConstructor_DateTimeZone1028" classname="org.joda.time.TestMutableDateTime_Constructors" time="0"/>
+  <testcase name="test_now1024" classname="org.joda.time.TestMutableDateTime_Constructors" time="0.001"/>
+  <testcase name="testConstructor_nullObject_nullDateTimeZone136" classname="org.joda.time.TestMutableDateTime_Constructors" time="0.001"/>
+  <testcase name="testConstructor_Chronology1029" classname="org.joda.time.TestMutableDateTime_Constructors" time="0"/>
+  <testcase name="test_now_DateTimeZone1025" classname="org.joda.time.TestMutableDateTime_Constructors" time="0"/>
+  <testcase name="test_now_nullDateTimeZone1026" classname="org.joda.time.TestMutableDateTime_Constructors" time="0.001"/>
+  <testcase name="testToGregorianCalendar539" classname="org.joda.time.TestMutableDateTime_Basics" time="0.004"/>
+  <testcase name="testToDateTime_DateTimeZone1030" classname="org.joda.time.TestMutableDateTime_Basics" time="0.001"/>
+  <testcase name="testClone1088" classname="org.joda.time.TestMutableDateTime_Basics" time="0"/>
+  <testcase name="testGetMethods536" classname="org.joda.time.TestMutableDateTime_Basics" time="0.001"/>
+  <testcase name="testRounding51037" classname="org.joda.time.TestMutableDateTime_Basics" time="0.001"/>
+  <testcase name="testRounding41035" classname="org.joda.time.TestMutableDateTime_Basics" time="0.001"/>
+  <testcase name="testRounding31036" classname="org.joda.time.TestMutableDateTime_Basics" time="0"/>
+  <testcase name="testCopy1087" classname="org.joda.time.TestMutableDateTime_Basics" time="0"/>
+  <testcase name="testProperty1074" classname="org.joda.time.TestMutableDateTime_Basics" time="0.003"/>
+  <testcase name="testCompareTo1403" classname="org.joda.time.TestMutableDateTime_Basics" time="0.001"/>
+  <testcase name="testToString_String_String540" classname="org.joda.time.TestMutableDateTime_Basics" time="0"/>
+  <testcase name="testToDateTime1399" classname="org.joda.time.TestMutableDateTime_Basics" time="0.001"/>
+  <testcase name="testSetDate_int_int_int1956" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetWeekyear_int11050" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetZoneRetainFields_DateTimeZone21044" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetTime_int_int_int2957" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSet_DateTimeFieldType_int21045" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetDayOfWeek_int11057" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetMinuteOfDay_int11060" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetMinuteOfHour_int21061" classname="org.joda.time.TestMutableDateTime_Sets" time="0.004"/>
+  <testcase name="testSetDayOfYear_int_dstOverlapWinter_addZero1055" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetDayOfMonth_int_dstOverlapWinter_addZero1056" classname="org.joda.time.TestMutableDateTime_Sets" time="0"/>
+  <testcase name="testSetSecondOfDay_int11063" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetSecondOfMinute_int11064" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetWeekOfWeekyear_int21053" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetZoneRetainFields_DateTimeZone1931" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetDayOfMonth_int_dstOverlapSummer_addZero641" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetMonthOfYear_int_dstOverlapWinter_addZero1051" classname="org.joda.time.TestMutableDateTime_Sets" time="0"/>
+  <testcase name="testSet_DateTimeFieldType_int31046" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetMillis_RI11038" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetDayOfYear_int2453" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetZoneRetainFields_DateTimeZone31031" classname="org.joda.time.TestMutableDateTime_Sets" time="0.002"/>
+  <testcase name="testSetZone_DateTimeZone11043" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetDateTime_int_int_int_int_int_int_int1537" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetMilliOfDay_int21067" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetMilliOfSecond_int21068" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetDate_RI_same1071" classname="org.joda.time.TestMutableDateTime_Sets" time="0.002"/>
+  <testcase name="testSetDate_int_int_int21072" classname="org.joda.time.TestMutableDateTime_Sets" time="0.001"/>
+  <testcase name="testSetTime_RI11073" classname="org.joda.time.TestMutableDateTime_Sets" time="0.002"/>
+  <testcase name="testAddSeconds_int_dstOverlapWinter_addZero1065" classname="org.joda.time.TestMutableDateTime_Adds" time="0"/>
+  <testcase name="testAddSeconds_int11066" classname="org.joda.time.TestMutableDateTime_Adds" time="0.001"/>
+  <testcase name="testAddMillis_int_dstOverlapWinter_addZero1069" classname="org.joda.time.TestMutableDateTime_Adds" time="0.001"/>
+  <testcase name="testAdd_DurationFieldType_int31048" classname="org.joda.time.TestMutableDateTime_Adds" time="0"/>
+  <testcase name="testAddYears_int11049" classname="org.joda.time.TestMutableDateTime_Adds" time="0.001"/>
+  <testcase name="testAddMonths_int_dstOverlapSummer_addZero1052" classname="org.joda.time.TestMutableDateTime_Adds" time="0"/>
+  <testcase name="testAddWeeks_int_dstOverlapSummer_addZero1054" classname="org.joda.time.TestMutableDateTime_Adds" time="0"/>
+  <testcase name="testAddDays_int_dstOverlapSummer_addZero1058" classname="org.joda.time.TestMutableDateTime_Adds" time="0.001"/>
+  <testcase name="testAddDays_int11059" classname="org.joda.time.TestMutableDateTime_Adds" time="0.001"/>
+  <testcase name="testAddMinutes_int11062" classname="org.joda.time.TestMutableDateTime_Adds" time="0"/>
+  <testcase name="testAdd_RP21041" classname="org.joda.time.TestMutableDateTime_Adds" time="0.001"/>
+  <testcase name="testAdd_RD21040" classname="org.joda.time.TestMutableDateTime_Adds" time="0.001"/>
+  <testcase name="testAdd_RP_int11042" classname="org.joda.time.TestMutableDateTime_Adds" time="0"/>
+  <testcase name="testAdd_DurationFieldType_int11047" classname="org.joda.time.TestMutableDateTime_Adds" time="0.001"/>
+  <testcase name="testAdd_long11039" classname="org.joda.time.TestMutableDateTime_Adds" time="0.001"/>
+  <testcase name="testAddMillis_int11070" classname="org.joda.time.TestMutableDateTime_Adds" time="0"/>
+  <testcase name="testPropertyRoundHalfFloorHourOfDay1094" classname="org.joda.time.TestMutableDateTime_Properties" time="0.002"/>
+  <testcase name="testPropertyRoundHalfCeilingHourOfDay1095" classname="org.joda.time.TestMutableDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertyRoundHalfEvenHourOfDay1096" classname="org.joda.time.TestMutableDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertySetWeekOfWeekyear1241" classname="org.joda.time.TestMutableDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertySetTextMonthOfYear1091" classname="org.joda.time.TestMutableDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertyRoundFloorHourOfDay1092" classname="org.joda.time.TestMutableDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertyRoundCeilingHourOfDay1093" classname="org.joda.time.TestMutableDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertyToIntervalMonthOfYear450" classname="org.joda.time.TestMutableDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertyGetMillisOfDay1086" classname="org.joda.time.TestMutableDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertyAddLongDayOfWeek1090" classname="org.joda.time.TestMutableDateTime_Properties" time="0"/>
+  <testcase name="testPropertySetDayOfMonth1082" classname="org.joda.time.TestMutableDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertyGetMinuteOfDay1083" classname="org.joda.time.TestMutableDateTime_Properties" time="0"/>
+  <testcase name="testPropertyGetEra1075" classname="org.joda.time.TestMutableDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertyGetCenturyOfEra1076" classname="org.joda.time.TestMutableDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertyGetMinuteOfHour1084" classname="org.joda.time.TestMutableDateTime_Properties" time="0"/>
+  <testcase name="testPropertyGetSecondOfDay1085" classname="org.joda.time.TestMutableDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertyGetYearOfCentury1077" classname="org.joda.time.TestMutableDateTime_Properties" time="0"/>
+  <testcase name="testPropertyGetYearOfEra1078" classname="org.joda.time.TestMutableDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertyGetWeekyear1079" classname="org.joda.time.TestMutableDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertyAddWeekOfWeekyear1080" classname="org.joda.time.TestMutableDateTime_Properties" time="0"/>
+  <testcase name="testPropertySetTextDayOfYear1081" classname="org.joda.time.TestMutableDateTime_Properties" time="0.001"/>
+  <testcase name="testPropertyAddWrapFieldMonthOfYear446" classname="org.joda.time.TestMutableDateTime_Properties" time="0"/>
+  <testcase name="testPropertyGetDayOfWeek965" classname="org.joda.time.TestMutableDateTime_Properties" time="0"/>
+  <testcase name="testPropertyRemainderHourOfDay266" classname="org.joda.time.TestMutableDateTime_Properties" time="0.001"/>
+  <testcase name="testConstructor_int_int_int_Chronology462" classname="org.joda.time.TestDateMidnight_Constructors" time="0.001"/>
+  <testcase name="test_now_Chronology1428" classname="org.joda.time.TestDateMidnight_Constructors" time="0"/>
+  <testcase name="testParse_formatter1430" classname="org.joda.time.TestDateMidnight_Constructors" time="0.001"/>
+  <testcase name="test_now_nullDateTimeZone1426" classname="org.joda.time.TestDateMidnight_Constructors" time="0.001"/>
+  <testcase name="test_now_DateTimeZone1427" classname="org.joda.time.TestDateMidnight_Constructors" time="0.001"/>
+  <testcase name="testConstructor_nullObject1431" classname="org.joda.time.TestDateMidnight_Constructors" time="0.001"/>
+  <testcase name="testConstructor_int_int_int_nullDateTimeZone1433" classname="org.joda.time.TestDateMidnight_Constructors" time="0.001"/>
+  <testcase name="testConstructor_Object_nullDateTimeZone930" classname="org.joda.time.TestDateMidnight_Constructors" time="0"/>
+  <testcase name="testConstructor_Object_nullChronology1432" classname="org.joda.time.TestDateMidnight_Constructors" time="0"/>
+  <testcase name="testConstructor_badconverterObject_DateTimeZone1119" classname="org.joda.time.TestDateMidnight_Constructors" time="0.001"/>
+  <testcase name="testPlus_RD464" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testProperty1452" classname="org.joda.time.TestDateMidnight_Basics" time="0.002"/>
+  <testcase name="testMinus_RD1447" classname="org.joda.time.TestDateMidnight_Basics" time="0"/>
+  <testcase name="testPlus_RP1442" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testEqualsHashCode300" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testMinusWeeks_int466" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testWithers776" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testWithDurationAdded_long_int1441" classname="org.joda.time.TestDateMidnight_Basics" time="0"/>
+  <testcase name="testToYearMonthDay22" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testMinus_RP1448" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testWithFields_RPartial1435" classname="org.joda.time.TestDateMidnight_Basics" time="0"/>
+  <testcase name="testWithField21436" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testToCalendar_Locale538" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testWithField11437" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testWithFieldAdded41438" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testWithFieldAdded21439" classname="org.joda.time.TestDateMidnight_Basics" time="0"/>
+  <testcase name="testWithFieldAdded11440" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testWithChronology_Chronology1434" classname="org.joda.time.TestDateMidnight_Basics" time="0"/>
+  <testcase name="testGet_DateTimeFieldType258" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testWithZoneRetainFields_DateTimeZone276" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testToInterval1454" classname="org.joda.time.TestDateMidnight_Basics" time="0"/>
+  <testcase name="testPlus_long1443" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testPlusMonths_int1444" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testPlusWeeks_int1445" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testMinus_long1446" classname="org.joda.time.TestDateMidnight_Basics" time="0"/>
+  <testcase name="testMinusYears_int1449" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testMinusMonths_int1450" classname="org.joda.time.TestDateMidnight_Basics" time="0"/>
+  <testcase name="testMinusDays_int1451" classname="org.joda.time.TestDateMidnight_Basics" time="0"/>
+  <testcase name="testToLocalDate1453" classname="org.joda.time.TestDateMidnight_Basics" time="0.001"/>
+  <testcase name="testPropertyGetDifferenceMonthOfYear938" classname="org.joda.time.TestDateMidnight_Properties" time="0.001"/>
+  <testcase name="testPropertyWithMaximumValueDayOfMonth1459" classname="org.joda.time.TestDateMidnight_Properties" time="0.001"/>
+  <testcase name="testPropertyAddLongMonthOfYear1463" classname="org.joda.time.TestDateMidnight_Properties" time="0.001"/>
+  <testcase name="testPropertyAddWrapFieldMonthOfYear1464" classname="org.joda.time.TestDateMidnight_Properties" time="0.001"/>
+  <testcase name="testPropertyWithMinimumValueDayOfMonth1465" classname="org.joda.time.TestDateMidnight_Properties" time="0.001"/>
+  <testcase name="testPropertyRoundFloorMonthOfYear1466" classname="org.joda.time.TestDateMidnight_Properties" time="0.001"/>
+  <testcase name="testPropertyRoundCeilingMonthOfYear1467" classname="org.joda.time.TestDateMidnight_Properties" time="0.001"/>
+  <testcase name="testPropertyRoundHalfFloorMonthOfYear1468" classname="org.joda.time.TestDateMidnight_Properties" time="0.001"/>
+  <testcase name="testPropertyRoundHalfEvenMonthOfYear1469" classname="org.joda.time.TestDateMidnight_Properties" time="0.001"/>
+  <testcase name="testPropertyGetEra1455" classname="org.joda.time.TestDateMidnight_Properties" time="0"/>
+  <testcase name="testPropertyToIntervalYear1456" classname="org.joda.time.TestDateMidnight_Properties" time="0.001"/>
+  <testcase name="testPropertyGetWeekyear1457" classname="org.joda.time.TestDateMidnight_Properties" time="0.001"/>
+  <testcase name="testPropertyGetDayOfYear1458" classname="org.joda.time.TestDateMidnight_Properties" time="0"/>
+  <testcase name="testPropertyAddMonthOfYear1462" classname="org.joda.time.TestDateMidnight_Properties" time="0.001"/>
+  <testcase name="testPropertyGetCenturyOfEra1411" classname="org.joda.time.TestDateMidnight_Properties" time="0"/>
+  <testcase name="testPropertyEqualsHashCodeStrict1461" classname="org.joda.time.TestDateMidnight_Properties" time="0.001"/>
+  <testcase name="testConstructor_Object3233" classname="org.joda.time.TestDuration_Constructors" time="0.001"/>
+  <testcase name="testConstructor_RI_RI4681" classname="org.joda.time.TestDuration_Constructors" time="0"/>
+  <testcase name="testFactory_standardDays_long226" classname="org.joda.time.TestDuration_Constructors" time="0.001"/>
+  <testcase name="testFactory_standardSeconds_long228" classname="org.joda.time.TestDuration_Constructors" time="0"/>
+  <testcase name="testFactory_standardHours_long227" classname="org.joda.time.TestDuration_Constructors" time="0"/>
+  <testcase name="testFactory_millis_long230" classname="org.joda.time.TestDuration_Constructors" time="0.001"/>
+  <testcase name="testConstructor_RI_RI1232" classname="org.joda.time.TestDuration_Constructors" time="0"/>
+  <testcase name="testMinus_RD2239" classname="org.joda.time.TestDuration_Basics" time="0.001"/>
+  <testcase name="testIsAfter1387" classname="org.joda.time.TestDuration_Basics" time="0.001"/>
+  <testcase name="testToString413" classname="org.joda.time.TestDuration_Basics" time="0"/>
+  <testcase name="testToPeriodFrom_PeriodType79" classname="org.joda.time.TestDuration_Basics" time="0.001"/>
+  <testcase name="testToPeriod_Chronology82" classname="org.joda.time.TestDuration_Basics" time="0.003"/>
+  <testcase name="testToDuration21386" classname="org.joda.time.TestDuration_Basics" time="0"/>
+  <testcase name="testSerialization1388" classname="org.joda.time.TestDuration_Basics" time="0.002"/>
+  <testcase name="testEqualsHashCode1389" classname="org.joda.time.TestDuration_Basics" time="0.001"/>
+  <testcase name="testMultipliedBy_long2247" classname="org.joda.time.TestDuration_Basics" time="0"/>
+  <testcase name="testDividedBy_long2248" classname="org.joda.time.TestDuration_Basics" time="0.001"/>
+  <testcase name="testDividedBy_long1249" classname="org.joda.time.TestDuration_Basics" time="0"/>
+  <testcase name="testNegated_long2250" classname="org.joda.time.TestDuration_Basics" time="0"/>
+  <testcase name="testNegated_long3251" classname="org.joda.time.TestDuration_Basics" time="0.001"/>
+  <testcase name="testToPeriod_PeriodType682" classname="org.joda.time.TestDuration_Basics" time="0"/>
+  <testcase name="testToPeriodFrom683" classname="org.joda.time.TestDuration_Basics" time="0.001"/>
+  <testcase name="testToPeriodTo684" classname="org.joda.time.TestDuration_Basics" time="0.001"/>
+  <testcase name="testToPeriodTo_PeriodType685" classname="org.joda.time.TestDuration_Basics" time="0.002"/>
+  <testcase name="testToIntervalTo686" classname="org.joda.time.TestDuration_Basics" time="0"/>
+  <testcase name="testPlus_RD1243" classname="org.joda.time.TestDuration_Basics" time="0.001"/>
+  <testcase name="testToStandardDays234" classname="org.joda.time.TestDuration_Basics" time="0.007"/>
+  <testcase name="testToStandardSeconds235" classname="org.joda.time.TestDuration_Basics" time="0.001"/>
+  <testcase name="testToDuration1236" classname="org.joda.time.TestDuration_Basics" time="0"/>
+  <testcase name="testMinus_RD3244" classname="org.joda.time.TestDuration_Basics" time="0.001"/>
+  <testcase name="testPlus_RD3242" classname="org.joda.time.TestDuration_Basics" time="0"/>
+  <testcase name="testToPeriod_PeriodType_Chronology83" classname="org.joda.time.TestDuration_Basics" time="0.001"/>
+  <testcase name="testMinus_RD1245" classname="org.joda.time.TestDuration_Basics" time="0"/>
+  <testcase name="testWithMillis1237" classname="org.joda.time.TestDuration_Basics" time="0"/>
+  <testcase name="testWithMillis2238" classname="org.joda.time.TestDuration_Basics" time="0.001"/>
+  <testcase name="testWithDurationAdded_RD_int5240" classname="org.joda.time.TestDuration_Basics" time="0"/>
+  <testcase name="testPlus_long1241" classname="org.joda.time.TestDuration_Basics" time="0.001"/>
+  <testcase name="testMultipliedBy_long1246" classname="org.joda.time.TestDuration_Basics" time="0"/>
+  <testcase name="testConstructor_RP_RI8818" classname="org.joda.time.TestInterval_Constructors" time="0.001"/>
+  <testcase name="testConstructor_Object_Chronology2331" classname="org.joda.time.TestInterval_Constructors" time="0.001"/>
+  <testcase name="testParse_noFormatter327" classname="org.joda.time.TestInterval_Constructors" time="0.003"/>
+  <testcase name="testConstructor_Object4330" classname="org.joda.time.TestInterval_Constructors" time="0.001"/>
+  <testcase name="testConstructor_Object6821" classname="org.joda.time.TestInterval_Constructors" time="0.001"/>
+  <testcase name="testConstructor_long_long_nullZone328" classname="org.joda.time.TestInterval_Constructors" time="0"/>
+  <testcase name="testConstructor_RI_RI3814" classname="org.joda.time.TestInterval_Constructors" time="0.001"/>
+  <testcase name="testConstructor_RI_RP6816" classname="org.joda.time.TestInterval_Constructors" time="0"/>
+  <testcase name="testToPeriod74" classname="org.joda.time.TestInterval_Basics" time="0.002"/>
+  <testcase name="testWithPeriodAfterStart2348" classname="org.joda.time.TestInterval_Basics" time="0.001"/>
+  <testcase name="testWithPeriodBeforeEnd2349" classname="org.joda.time.TestInterval_Basics" time="0"/>
+  <testcase name="testToPeriod_PeriodType2781" classname="org.joda.time.TestInterval_Basics" time="0.001"/>
+  <testcase name="testContains_RI_zeroDuration1172" classname="org.joda.time.TestInterval_Basics" time="0"/>
+  <testcase name="testIsEqual_RI1175" classname="org.joda.time.TestInterval_Basics" time="0.001"/>
+  <testcase name="testIsBefore_RI_null1176" classname="org.joda.time.TestInterval_Basics" time="0.001"/>
+  <testcase name="testIsBefore_RInterval_null1178" classname="org.joda.time.TestInterval_Basics" time="0.001"/>
+  <testcase name="testIsAfterNow1179" classname="org.joda.time.TestInterval_Basics" time="0"/>
+  <testcase name="testIsAfter_RI1180" classname="org.joda.time.TestInterval_Basics" time="0.001"/>
+  <testcase name="testIsAfter_RInterval_null1181" classname="org.joda.time.TestInterval_Basics" time="0"/>
+  <testcase name="testGetDuration21185" classname="org.joda.time.TestInterval_Basics" time="0.001"/>
+  <testcase name="testEqualsHashCodeStrict1186" classname="org.joda.time.TestInterval_Basics" time="0.001"/>
+  <testcase name="testAbuts_RInterval335" classname="org.joda.time.TestInterval_Basics" time="0.001"/>
+  <testcase name="testAbuts_RInterval_null336" classname="org.joda.time.TestInterval_Basics" time="0"/>
+  <testcase name="testToString1187" classname="org.joda.time.TestInterval_Basics" time="0.001"/>
+  <testcase name="testToPeriod_PeriodType176" classname="org.joda.time.TestInterval_Basics" time="0.003"/>
+  <testcase name="testContains_RInterval_zeroDuration1173" classname="org.joda.time.TestInterval_Basics" time="0"/>
+  <testcase name="testGap_RInterval_zone333" classname="org.joda.time.TestInterval_Basics" time="0"/>
+  <testcase name="testWithChronology3337" classname="org.joda.time.TestInterval_Basics" time="0.001"/>
+  <testcase name="testWithChronology2338" classname="org.joda.time.TestInterval_Basics" time="0"/>
+  <testcase name="testWithStartMillis_long2339" classname="org.joda.time.TestInterval_Basics" time="0.001"/>
+  <testcase name="testWithStartMillis_long3340" classname="org.joda.time.TestInterval_Basics" time="0.001"/>
+  <testcase name="testWithStartInstant_RI2341" classname="org.joda.time.TestInterval_Basics" time="0"/>
+  <testcase name="testWithEndInstant_RI3342" classname="org.joda.time.TestInterval_Basics" time="0"/>
+  <testcase name="testWithDurationAfterStart2343" classname="org.joda.time.TestInterval_Basics" time="0.001"/>
+  <testcase name="testWithDurationAfterStart4344" classname="org.joda.time.TestInterval_Basics" time="0"/>
+  <testcase name="testWithDurationBeforeEnd1345" classname="org.joda.time.TestInterval_Basics" time="0.001"/>
+  <testcase name="testWithDurationBeforeEnd4346" classname="org.joda.time.TestInterval_Basics" time="0"/>
+  <testcase name="testWithPeriodAfterStart1347" classname="org.joda.time.TestInterval_Basics" time="0.001"/>
+  <testcase name="testGap_RInterval_null334" classname="org.joda.time.TestInterval_Basics" time="0.001"/>
+  <testcase name="testOverlap_RInterval_null332" classname="org.joda.time.TestInterval_Basics" time="0"/>
+  <testcase name="testFactory_fromDateFields_null1290" classname="org.joda.time.TestLocalDateTime_Constructors" time="0.001"/>
+  <testcase name="testFactory_fromDateFields_after19701291" classname="org.joda.time.TestLocalDateTime_Constructors" time="0"/>
+  <testcase name="testFactory_fromDateFields_before19701289" classname="org.joda.time.TestLocalDateTime_Constructors" time="0"/>
+  <testcase name="testConstructor_nullDateTimeZone1292" classname="org.joda.time.TestLocalDateTime_Constructors" time="0.001"/>
+  <testcase name="testConstructor_long_nullDateTimeZone1294" classname="org.joda.time.TestLocalDateTime_Constructors" time="0"/>
+  <testcase name="testConstructor_Object_nullDateTimeZone1295" classname="org.joda.time.TestLocalDateTime_Constructors" time="0.001"/>
+  <testcase name="testConstructor_ObjectStringEx61296" classname="org.joda.time.TestLocalDateTime_Constructors" time="0"/>
+  <testcase name="testConstructor_int_int_int_int_int_int1297" classname="org.joda.time.TestLocalDateTime_Constructors" time="0.001"/>
+  <testcase name="testConstructor_Chronology1286" classname="org.joda.time.TestLocalDateTime_Constructors" time="0"/>
+  <testcase name="testConstructor_ObjectLocalDateTime1242" classname="org.joda.time.TestLocalDateTime_Constructors" time="0.001"/>
+  <testcase name="testFactory_fromCalendarFields_null1288" classname="org.joda.time.TestLocalDateTime_Constructors" time="0"/>
+  <testcase name="testParse_noFormatter1287" classname="org.joda.time.TestLocalDateTime_Constructors" time="0.001"/>
+  <testcase name="testConstructor1284" classname="org.joda.time.TestLocalDateTime_Constructors" time="0.001"/>
+  <testcase name="testConstructor_DateTimeZone1285" classname="org.joda.time.TestLocalDateTime_Constructors" time="0"/>
+  <testcase name="testProperty1305" classname="org.joda.time.TestLocalDateTime_Basics" time="0.002"/>
+  <testcase name="testWithers1332" classname="org.joda.time.TestLocalDateTime_Basics" time="0.001"/>
+  <testcase name="testWithField_DateTimeFieldType_int_21312" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testPlusYears_int1316" classname="org.joda.time.TestLocalDateTime_Basics" time="0.001"/>
+  <testcase name="testPlusMonths_int1317" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testPlusWeeks_int1318" classname="org.joda.time.TestLocalDateTime_Basics" time="0.001"/>
+  <testcase name="testIsSupported_DurationFieldType1304" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testGet_DateTimeFieldType1302" classname="org.joda.time.TestLocalDateTime_Basics" time="0.001"/>
+  <testcase name="testGetters1331" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testToDate_springDST1309" classname="org.joda.time.TestLocalDateTime_Basics" time="0.006"/>
+  <testcase name="testToDateTime1307" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testToLocalTime1308" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testToDate_summer_Zone1306" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testPlusDays_int1319" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testPlusHours_int1320" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testPlusMinutes_int1321" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testPlusSeconds_int1322" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testGetValue_int1300" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testToString_DTFormatter1301" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testIsSupported_DateTimeFieldType1303" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testPlusMillis_int1323" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testMinusYears_int1324" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testMinusMonths_int1325" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testMinusWeeks_int1326" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testMinusHours_int1327" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testMinusMinutes_int1328" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testMinusSeconds_int1329" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testMinusMillis_int1330" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testToString_String_Locale1337" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testPlus_RP1315" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testMinus_RP1314" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testIsAfter_LocalDateTime1299" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testWithDate1310" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testToDate_autumnDST16" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testGetFieldTypes1293" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testWithFieldAdded_DurationFieldType_int_21313" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testWithField_DateTimeFieldType_int_31311" classname="org.joda.time.TestLocalDateTime_Basics" time="0"/>
+  <testcase name="testPropertyGetMinute1335" classname="org.joda.time.TestLocalDateTime_Properties" time="0"/>
+  <testcase name="testPropertySetTextSecond1336" classname="org.joda.time.TestLocalDateTime_Properties" time="0"/>
+  <testcase name="testPropertyHashCode942" classname="org.joda.time.TestLocalDateTime_Properties" time="0"/>
+  <testcase name="testPropertyCompareToDay937" classname="org.joda.time.TestLocalDateTime_Properties" time="0"/>
+  <testcase name="testPropertySetCopyYear1333" classname="org.joda.time.TestLocalDateTime_Properties" time="0"/>
+  <testcase name="testPropertyRoundHour1338" classname="org.joda.time.TestLocalDateTime_Properties" time="0"/>
+  <testcase name="testPropertyGetMonth563" classname="org.joda.time.TestLocalDateTime_Properties" time="0"/>
+  <testcase name="testPropertyGetMilli1366" classname="org.joda.time.TestLocalDateTime_Properties" time="0"/>
+  <testcase name="testPropertyWithMaxMinValueHour1334" classname="org.joda.time.TestLocalDateTime_Properties" time="0"/>
+  <testcase name="testConstructor_long1_Chronology721" classname="org.joda.time.TestLocalDate_Constructors" time="0"/>
+  <testcase name="testConstructor713" classname="org.joda.time.TestLocalDate_Constructors" time="0"/>
+  <testcase name="testConstructor_ObjectString2143" classname="org.joda.time.TestLocalDate_Constructors" time="0"/>
+  <testcase name="testParse_noFormatter451" classname="org.joda.time.TestLocalDate_Constructors" time="0"/>
+  <testcase name="testFactory_fromDateFields_before1970717" classname="org.joda.time.TestLocalDate_Constructors" time="0"/>
+  <testcase name="testConstructor_DateTimeZone714" classname="org.joda.time.TestLocalDate_Constructors" time="0"/>
+  <testcase name="testConstructor_Chronology715" classname="org.joda.time.TestLocalDate_Constructors" time="0"/>
+  <testcase name="testConstructor_nullObject_nullDateTimeZone722" classname="org.joda.time.TestLocalDate_Constructors" time="0"/>
+  <testcase name="testGetters465" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testMinus_RP751" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testGetFieldType_int724" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testGetValue_int725" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testToString_DTFormatter727" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testEqualsHashCodeStrict729" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testToDate_autumnDST730" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testToDateTimeAtMidnight731" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testToDateTimeAtCurrentTime732" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testToDateMidnight733" classname="org.joda.time.TestLocalDate_Basics" time="0.005"/>
+  <testcase name="testIsSupported_DurationFieldType728" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testToLocalDateTime_nullLocalTime734" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testToLocalDateTime_wrongChronologyLocalTime735" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testSerialization189" classname="org.joda.time.TestLocalDate_Basics" time="0.003"/>
+  <testcase name="testGet_DateTimeFieldType191" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testToInterval_Zone274" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testToDate_springDST_2Hour40Savings716" classname="org.joda.time.TestLocalDate_Basics" time="0.019"/>
+  <testcase name="testToLocalDateTime_LocalTime736" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testToDateTime_LocalTime737" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testToDateTime_LocalTime_nullZone738" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testToDateTime_wrongChronoLocalTime_Zone739" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testToInterval740" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testWithField_DateTimeFieldType_int_2741" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testWithField_DateTimeFieldType_int_3742" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testWithField_DateTimeFieldType_int_1743" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testWithFieldAdded_DurationFieldType_int_2744" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testWithFieldAdded_DurationFieldType_int_5745" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testWithFieldAdded_DurationFieldType_int_1746" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testWithers757" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testPlusYears_int747" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testPlusMonths_int748" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testPlusWeeks_int749" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testPlusDays_int750" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testMinusYears_int752" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testMinusMonths_int753" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testMinusWeeks_int754" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testMinusDays_int755" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testToString_String_Locale759" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testToDateTimeAtStartOfDay494" classname="org.joda.time.TestLocalDate_Basics" time="0"/>
+  <testcase name="testToDateTime_nullRI628" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testProperty756" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testGetValues718" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testIsSupported_DateTimeFieldType726" classname="org.joda.time.TestLocalDate_Basics" time="0.001"/>
+  <testcase name="testPropertyGetDay760" classname="org.joda.time.TestLocalDate_Properties" time="0"/>
+  <testcase name="testPropertyAddToCopyYear761" classname="org.joda.time.TestLocalDate_Properties" time="0.001"/>
+  <testcase name="testPropertyCompareToMonth719" classname="org.joda.time.TestLocalDate_Properties" time="0.001"/>
+  <testcase name="testPropertyWithMinimumValueDayOfMonth763" classname="org.joda.time.TestLocalDate_Properties" time="0"/>
+  <testcase name="testPropertyAddWrapFieldToCopyDay762" classname="org.joda.time.TestLocalDate_Properties" time="0"/>
+  <testcase name="testPropertyEqualsHashCodeLenient493" classname="org.joda.time.TestLocalDate_Properties" time="0.001"/>
+  <testcase name="testPropertyWithMaximumValueDayOfMonth764" classname="org.joda.time.TestLocalDate_Properties" time="0.001"/>
+  <testcase name="testPropertyEqualsHashCodeStrict959" classname="org.joda.time.TestLocalDate_Properties" time="0.001"/>
+  <testcase name="testPropertyEquals758" classname="org.joda.time.TestLocalDate_Properties" time="0"/>
+  <testcase name="testParse_noFormatter972" classname="org.joda.time.TestLocalTime_Constructors" time="0.001"/>
+  <testcase name="testParse_formatter973" classname="org.joda.time.TestLocalTime_Constructors" time="0"/>
+  <testcase name="testFactoryMillisOfDay_long974" classname="org.joda.time.TestLocalTime_Constructors" time="0.001"/>
+  <testcase name="testConstructor_long_DateTimeZone_2980" classname="org.joda.time.TestLocalTime_Constructors" time="0.001"/>
+  <testcase name="testConstructor_ObjectLocalTime981" classname="org.joda.time.TestLocalTime_Constructors" time="0"/>
+  <testcase name="testConstructor969" classname="org.joda.time.TestLocalTime_Constructors" time="0"/>
+  <testcase name="testFactory_FromDateFields_after1970976" classname="org.joda.time.TestLocalTime_Constructors" time="0.001"/>
+  <testcase name="testConstructor_ObjectString_DateTimeZoneNewYork137" classname="org.joda.time.TestLocalTime_Constructors" time="0.001"/>
+  <testcase name="testFactory_FromCalendarFields_Calendar975" classname="org.joda.time.TestLocalTime_Constructors" time="0"/>
+  <testcase name="testConstructor_DateTimeZone970" classname="org.joda.time.TestLocalTime_Constructors" time="0.001"/>
+  <testcase name="testFactory_FromDateFields_null977" classname="org.joda.time.TestLocalTime_Constructors" time="0"/>
+  <testcase name="testConstructor_Chronology971" classname="org.joda.time.TestLocalTime_Constructors" time="0"/>
+  <testcase name="testWithFieldAdded_DurationFieldType_int_3991" classname="org.joda.time.TestLocalTime_Basics" time="0.001"/>
+  <testcase name="testSerialization983" classname="org.joda.time.TestLocalTime_Basics" time="0.002"/>
+  <testcase name="testWithFieldAdded_DurationFieldType_int_1992" classname="org.joda.time.TestLocalTime_Basics" time="0"/>
+  <testcase name="testToDateTimeTodayDefaultZone1006" classname="org.joda.time.TestLocalTime_Basics" time="0.001"/>
+  <testcase name="testToDateTimeToday_nullZone1007" classname="org.joda.time.TestLocalTime_Basics" time="0.001"/>
+  <testcase name="testToString_String_Locale1008" classname="org.joda.time.TestLocalTime_Basics" time="0.001"/>
+  <testcase name="testWithFieldAdded_DurationFieldType_int_81015" classname="org.joda.time.TestLocalTime_Basics" time="0"/>
+  <testcase name="testWithField_DateTimeFieldType_int_3990" classname="org.joda.time.TestLocalTime_Basics" time="0"/>
+  <testcase name="testPlusSeconds_int995" classname="org.joda.time.TestLocalTime_Basics" time="0.001"/>
+  <testcase name="testPlusMillis_int996" classname="org.joda.time.TestLocalTime_Basics" time="0"/>
+  <testcase name="testIsSupported_DateTimeFieldType987" classname="org.joda.time.TestLocalTime_Basics" time="0.001"/>
+  <testcase name="testGetters1002" classname="org.joda.time.TestLocalTime_Basics" time="0"/>
+  <testcase name="testMinus_RP997" classname="org.joda.time.TestLocalTime_Basics" time="0.001"/>
+  <testcase name="testEqualsHashCode988" classname="org.joda.time.TestLocalTime_Basics" time="0.003"/>
+  <testcase name="testWithFieldAdded_DurationFieldType_int_5993" classname="org.joda.time.TestLocalTime_Basics" time="0"/>
+  <testcase name="testWithFieldAdded_DurationFieldType_int_4994" classname="org.joda.time.TestLocalTime_Basics" time="0"/>
+  <testcase name="testGetField_int984" classname="org.joda.time.TestLocalTime_Basics" time="0.001"/>
+  <testcase name="testMinusHours_int998" classname="org.joda.time.TestLocalTime_Basics" time="0"/>
+  <testcase name="testMinusMinutes_int999" classname="org.joda.time.TestLocalTime_Basics" time="0.001"/>
+  <testcase name="testMinusSeconds_int1000" classname="org.joda.time.TestLocalTime_Basics" time="0"/>
+  <testcase name="testMinusMillis_int1001" classname="org.joda.time.TestLocalTime_Basics" time="0"/>
+  <testcase name="testGet_DateTimeFieldType986" classname="org.joda.time.TestLocalTime_Basics" time="0.001"/>
+  <testcase name="testGetValue_int985" classname="org.joda.time.TestLocalTime_Basics" time="0"/>
+  <testcase name="testWithField_DateTimeFieldType_int_1989" classname="org.joda.time.TestLocalTime_Basics" time="0.001"/>
+  <testcase name="testPlusMinutes_int429" classname="org.joda.time.TestLocalTime_Basics" time="0"/>
+  <testcase name="testPropertyGetHour1003" classname="org.joda.time.TestLocalTime_Properties" time="0.001"/>
+  <testcase name="testPropertySetTextSecond1004" classname="org.joda.time.TestLocalTime_Properties" time="0.001"/>
+  <testcase name="testPropertySetMilli1005" classname="org.joda.time.TestLocalTime_Properties" time="0"/>
+  <testcase name="testPropertyGetMinute1009" classname="org.joda.time.TestLocalTime_Properties" time="0.001"/>
+  <testcase name="testPropertyPlusNoWrapMinute1010" classname="org.joda.time.TestLocalTime_Properties" time="0"/>
+  <testcase name="testPropertySetSecond1012" classname="org.joda.time.TestLocalTime_Properties" time="0.001"/>
+  <testcase name="testPropertyWithMaxMinValueHour1013" classname="org.joda.time.TestLocalTime_Properties" time="0"/>
+  <testcase name="testPropertyRoundHour1014" classname="org.joda.time.TestLocalTime_Properties" time="0.001"/>
+  <testcase name="testPropertyCompareToMinute979" classname="org.joda.time.TestLocalTime_Properties" time="0"/>
+  <testcase name="testPropertyPlusWrapFieldMinute1011" classname="org.joda.time.TestLocalTime_Properties" time="0"/>
+  <testcase name="testConstructor_RI_RP3444" classname="org.joda.time.TestMutableInterval_Constructors" time="0.001"/>
+  <testcase name="testConstructor_RI_RD11412" classname="org.joda.time.TestMutableInterval_Constructors" time="0"/>
+  <testcase name="testConstructor_RD_RI11413" classname="org.joda.time.TestMutableInterval_Constructors" time="0.001"/>
+  <testcase name="testParse_noFormatter1137" classname="org.joda.time.TestMutableInterval_Constructors" time="0.002"/>
+  <testcase name="testConstructor_Object6820" classname="org.joda.time.TestMutableInterval_Constructors" time="0.001"/>
+  <testcase name="testConstructor_Object_Chronology1819" classname="org.joda.time.TestMutableInterval_Constructors" time="0.001"/>
+  <testcase name="testConstructor_RI_RD4815" classname="org.joda.time.TestMutableInterval_Constructors" time="0"/>
+  <testcase name="testConstructor_RP_RI5817" classname="org.joda.time.TestMutableInterval_Constructors" time="0"/>
+  <testcase name="testOverlaps_RInterval1174" classname="org.joda.time.TestMutableInterval_Basics" time="0"/>
+  <testcase name="testIsBefore_RI1177" classname="org.joda.time.TestMutableInterval_Basics" time="0.001"/>
+  <testcase name="testIsAfter_RInterval1182" classname="org.joda.time.TestMutableInterval_Basics" time="0"/>
+  <testcase name="testToInterval11183" classname="org.joda.time.TestMutableInterval_Basics" time="0"/>
+  <testcase name="testToMutableInterval11184" classname="org.joda.time.TestMutableInterval_Basics" time="0.001"/>
+  <testcase name="testEqualsHashCode125" classname="org.joda.time.TestMutableInterval_Basics" time="0.001"/>
+  <testcase name="testSetDurationBeforeEnd_long11421" classname="org.joda.time.TestMutableInterval_Updates" time="0"/>
+  <testcase name="testSetPeriodAfterStart_RI31422" classname="org.joda.time.TestMutableInterval_Updates" time="0.001"/>
+  <testcase name="testSetPeriodAfterStart_RI11423" classname="org.joda.time.TestMutableInterval_Updates" time="0"/>
+  <testcase name="testSetPeriodBeforeEnd_RI11424" classname="org.joda.time.TestMutableInterval_Updates" time="0.001"/>
+  <testcase name="testSetPeriodBeforeEnd_RI31425" classname="org.joda.time.TestMutableInterval_Updates" time="0"/>
+  <testcase name="testSetInterval_RI_RI3822" classname="org.joda.time.TestMutableInterval_Updates" time="0.001"/>
+  <testcase name="testSeDurationAfterStart_RI21171" classname="org.joda.time.TestMutableInterval_Updates" time="0"/>
+  <testcase name="testSetInterval_RInterval11414" classname="org.joda.time.TestMutableInterval_Updates" time="0.001"/>
+  <testcase name="testSetDurationAfterStart_long11420" classname="org.joda.time.TestMutableInterval_Updates" time="0"/>
+  <testcase name="testSetInterval_RInterval31415" classname="org.joda.time.TestMutableInterval_Updates" time="0.001"/>
+  <testcase name="testSetInterval_RI_RI51416" classname="org.joda.time.TestMutableInterval_Updates" time="0"/>
+  <testcase name="testSetDurationBeforeEnd_RI31417" classname="org.joda.time.TestMutableInterval_Updates" time="0.001"/>
+  <testcase name="testSetStart_RI11418" classname="org.joda.time.TestMutableInterval_Updates" time="0"/>
+  <testcase name="testSetEnd_RI31419" classname="org.joda.time.TestMutableInterval_Updates" time="0.001"/>
+  <testcase name="testConstructor_long_PeriodType_Chronology471" classname="org.joda.time.TestPeriod_Constructors" time="0"/>
+  <testcase name="testConstructor_trickyDifferences_LD_LD_toFeb_endOfMonth1449" classname="org.joda.time.TestPeriod_Constructors" time="0.001"/>
+  <testcase name="testConstructor_trickyDifferences_LD_LD_toFeb_exactMonths448" classname="org.joda.time.TestPeriod_Constructors" time="0.001"/>
+  <testcase name="testConstructor_RP_RP_PeriodType278" classname="org.joda.time.TestPeriod_Constructors" time="0"/>
+  <testcase name="testFactoryFieldDifference564" classname="org.joda.time.TestPeriod_Constructors" time="0.004"/>
+  <testcase name="testConstructor_RI_RI4447" classname="org.joda.time.TestPeriod_Constructors" time="0"/>
+  <testcase name="testConstructor_Object_PeriodType3779" classname="org.joda.time.TestPeriod_Constructors" time="0.001"/>
+  <testcase name="testConstructor_RP_RP277" classname="org.joda.time.TestPeriod_Constructors" time="0.001"/>
+  <testcase name="testConstructor_RD_RI280" classname="org.joda.time.TestPeriod_Constructors" time="0"/>
+  <testcase name="testConstructor166" classname="org.joda.time.TestPeriod_Constructors" time="0.001"/>
+  <testcase name="testConstructor_long_long272" classname="org.joda.time.TestPeriod_Constructors" time="0"/>
+  <testcase name="testConstructor_long_Chronology270" classname="org.joda.time.TestPeriod_Constructors" time="0.001"/>
+  <testcase name="testConstructor_RD_RI_PeriodType181" classname="org.joda.time.TestPeriod_Constructors" time="0.001"/>
+  <testcase name="testFactoryFieldDifference165" classname="org.joda.time.TestPeriod_Constructors" time="0"/>
+  <testcase name="testFactoryFieldDifference461" classname="org.joda.time.TestPeriod_Constructors" time="0.001"/>
+  <testcase name="testFactoryFieldDifference262" classname="org.joda.time.TestPeriod_Constructors" time="0"/>
+  <testcase name="testFactoryFieldDifference363" classname="org.joda.time.TestPeriod_Constructors" time="0.001"/>
+  <testcase name="testConstructor_Object3782" classname="org.joda.time.TestPeriod_Constructors" time="0"/>
+  <testcase name="testConstructor_RP_RP_PeriodType8842" classname="org.joda.time.TestPeriod_Constructors" time="0.001"/>
+  <testcase name="testConstructor_RP_RP4843" classname="org.joda.time.TestPeriod_Constructors" time="0"/>
+  <testcase name="testConstructor_RP_RP_PeriodType6844" classname="org.joda.time.TestPeriod_Constructors" time="0.001"/>
+  <testcase name="testConstructor_RP_RP_PeriodType7845" classname="org.joda.time.TestPeriod_Constructors" time="0"/>
+  <testcase name="testConstructor_Object_PeriodType2848" classname="org.joda.time.TestPeriod_Constructors" time="0.001"/>
+  <testcase name="testConstructor_long_long_PeriodType273" classname="org.joda.time.TestPeriod_Constructors" time="0"/>
+  <testcase name="testWith94" classname="org.joda.time.TestPeriod_Basics" time="0.001"/>
+  <testcase name="testEqualsHashCode1191" classname="org.joda.time.TestPeriod_Basics" time="0.001"/>
+  <testcase name="testToString_nullPeriodFormatter1192" classname="org.joda.time.TestPeriod_Basics" time="0"/>
+  <testcase name="testToString_PeriodFormatter1193" classname="org.joda.time.TestPeriod_Basics" time="0.003"/>
+  <testcase name="testToMutablePeriod1202" classname="org.joda.time.TestPeriod_Basics" time="0"/>
+  <testcase name="testToStandardDays1245" classname="org.joda.time.TestPeriod_Basics" time="0.001"/>
+  <testcase name="testWithFieldAdded389" classname="org.joda.time.TestPeriod_Basics" time="0.001"/>
+  <testcase name="testWithFieldAdded290" classname="org.joda.time.TestPeriod_Basics" time="0"/>
+  <testcase name="testWithFieldAdded491" classname="org.joda.time.TestPeriod_Basics" time="0"/>
+  <testcase name="testWithFieldAdded192" classname="org.joda.time.TestPeriod_Basics" time="0.001"/>
+  <testcase name="testPlusFieldsZero96" classname="org.joda.time.TestPeriod_Basics" time="0"/>
+  <testcase name="testMinus97" classname="org.joda.time.TestPeriod_Basics" time="0.001"/>
+  <testcase name="testMinusFields98" classname="org.joda.time.TestPeriod_Basics" time="0.001"/>
+  <testcase name="testToStandardWeeks_years100" classname="org.joda.time.TestPeriod_Basics" time="0.002"/>
+  <testcase name="testToStandardDays_months101" classname="org.joda.time.TestPeriod_Basics" time="0"/>
+  <testcase name="testToStandardHours_years102" classname="org.joda.time.TestPeriod_Basics" time="0.001"/>
+  <testcase name="testToStandardMinutes_years103" classname="org.joda.time.TestPeriod_Basics" time="0.002"/>
+  <testcase name="testNormalizedStandard_periodType_yearMonth3104" classname="org.joda.time.TestPeriod_Basics" time="0"/>
+  <testcase name="testToDurationTo231" classname="org.joda.time.TestPeriod_Basics" time="0"/>
+  <testcase name="testToStandardSeconds461" classname="org.joda.time.TestPeriod_Basics" time="0.001"/>
+  <testcase name="testToStandardWeeks546" classname="org.joda.time.TestPeriod_Basics" time="0.001"/>
+  <testcase name="testTypeIndexMethods1188" classname="org.joda.time.TestPeriod_Basics" time="0"/>
+  <testcase name="testIsSupported1189" classname="org.joda.time.TestPeriod_Basics" time="0"/>
+  <testcase name="testWithPeriodType385" classname="org.joda.time.TestPeriod_Basics" time="0.001"/>
+  <testcase name="testWithFields187" classname="org.joda.time.TestPeriod_Basics" time="0"/>
+  <testcase name="testWithFields286" classname="org.joda.time.TestPeriod_Basics" time="0.001"/>
+  <testcase name="testPlusFields60" classname="org.joda.time.TestPeriod_Basics" time="0"/>
+  <testcase name="testNormalizedStandard_yearMonth193" classname="org.joda.time.TestPeriod_Basics" time="0.001"/>
+  <testcase name="testWithField288" classname="org.joda.time.TestPeriod_Basics" time="0"/>
+  <testcase name="testNegated99" classname="org.joda.time.TestPeriod_Basics" time="0"/>
+  <testcase name="testGetPeriodType69" classname="org.joda.time.TestPeriod_Basics" time="0.001"/>
+  <testcase name="testWithPeriodType184" classname="org.joda.time.TestPeriod_Basics" time="0"/>
+  <testcase name="testConstructor_long_long_Chronology1306" classname="org.joda.time.TestMutablePeriod_Constructors" time="0.001"/>
+  <testcase name="testConstructor_long_PeriodType_Chronology21198" classname="org.joda.time.TestMutablePeriod_Constructors" time="0"/>
+  <testcase name="testConstructor_RI_RI31199" classname="org.joda.time.TestMutablePeriod_Constructors" time="0.001"/>
+  <testcase name="testConstructor_RI_RI_PeriodType21200" classname="org.joda.time.TestMutablePeriod_Constructors" time="0.001"/>
+  <testcase name="testConstructor_Object_Chronology21204" classname="org.joda.time.TestMutablePeriod_Constructors" time="0"/>
+  <testcase name="testParse_noFormatter1190" classname="org.joda.time.TestMutablePeriod_Constructors" time="0.001"/>
+  <testcase name="testConstructor_RI_RD_PeriodType1846" classname="org.joda.time.TestMutablePeriod_Constructors" time="0"/>
+  <testcase name="testConstructor_long_long1516" classname="org.joda.time.TestMutablePeriod_Constructors" time="0.001"/>
+  <testcase name="testConstructor_RI_RI5841" classname="org.joda.time.TestMutablePeriod_Constructors" time="0.001"/>
+  <testcase name="testConstructor_RI_RD21201" classname="org.joda.time.TestMutablePeriod_Constructors" time="0"/>
+  <testcase name="testConstructor_Object_PeriodType41203" classname="org.joda.time.TestMutablePeriod_Constructors" time="0.001"/>
+  <testcase name="testToPeriod1205" classname="org.joda.time.TestMutablePeriod_Basics" time="0"/>
+  <testcase name="testAddHours1219" classname="org.joda.time.TestMutablePeriod_Updates" time="0.001"/>
+  <testcase name="testSetYears1196" classname="org.joda.time.TestMutablePeriod_Updates" time="0"/>
+  <testcase name="testAddDays851" classname="org.joda.time.TestMutablePeriod_Updates" time="0"/>
+  <testcase name="testAdd_RD11212" classname="org.joda.time.TestMutablePeriod_Updates" time="0.001"/>
+  <testcase name="testAdd_long11213" classname="org.joda.time.TestMutablePeriod_Updates" time="0"/>
+  <testcase name="testAdd_long_Chronology11214" classname="org.joda.time.TestMutablePeriod_Updates" time="0.001"/>
+  <testcase name="testMergePeriod_RP51215" classname="org.joda.time.TestMutablePeriod_Updates" time="0"/>
+  <testcase name="testAddMonths1217" classname="org.joda.time.TestMutablePeriod_Updates" time="0.001"/>
+  <testcase name="testAddMinutes1220" classname="org.joda.time.TestMutablePeriod_Updates" time="0"/>
+  <testcase name="testAddMillis1221" classname="org.joda.time.TestMutablePeriod_Updates" time="0"/>
+  <testcase name="testClear1206" classname="org.joda.time.TestMutablePeriod_Updates" time="0.001"/>
+  <testcase name="testSetPeriod_long_long_NoMinutes1195" classname="org.joda.time.TestMutablePeriod_Updates" time="0.001"/>
+  <testcase name="testAddYears1216" classname="org.joda.time.TestMutablePeriod_Updates" time="0"/>
+  <testcase name="testAddWeeks1218" classname="org.joda.time.TestMutablePeriod_Updates" time="0.001"/>
+  <testcase name="testAdd_RD31211" classname="org.joda.time.TestMutablePeriod_Updates" time="0"/>
+  <testcase name="testSetPeriod_long21194" classname="org.joda.time.TestMutablePeriod_Updates" time="0.001"/>
+  <testcase name="testSetPeriod_8ints21197" classname="org.joda.time.TestMutablePeriod_Updates" time="0"/>
+  <testcase name="testSet_Field1207" classname="org.joda.time.TestMutablePeriod_Updates" time="0"/>
+  <testcase name="testSetPeriod_RI_RI21208" classname="org.joda.time.TestMutablePeriod_Updates" time="0.001"/>
+  <testcase name="testSetPeriod_RI_RI31209" classname="org.joda.time.TestMutablePeriod_Updates" time="0.001"/>
+  <testcase name="testAdd_8ints11210" classname="org.joda.time.TestMutablePeriod_Updates" time="0"/>
+  <testcase name="testAdd_RInterval175" classname="org.joda.time.TestMutablePeriod_Updates" time="0.001"/>
+  <testcase name="testSetWeeks850" classname="org.joda.time.TestMutablePeriod_Updates" time="0"/>
+  <testcase name="testSetPeriod_8ints1849" classname="org.joda.time.TestMutablePeriod_Updates" time="0.001"/>
+  <testcase name="testEqualsHashCode512" classname="org.joda.time.TestBaseSingleFieldPeriod" time="0"/>
+  <testcase name="testToMutablePeriod508" classname="org.joda.time.TestBaseSingleFieldPeriod" time="0.001"/>
+  <testcase name="testValueIndexMethods509" classname="org.joda.time.TestBaseSingleFieldPeriod" time="0"/>
+  <testcase name="testIsSupported510" classname="org.joda.time.TestBaseSingleFieldPeriod" time="0.001"/>
+  <testcase name="testGetSetValue506" classname="org.joda.time.TestBaseSingleFieldPeriod" time="0"/>
+  <testcase name="testGet505" classname="org.joda.time.TestBaseSingleFieldPeriod" time="0"/>
+  <testcase name="testToPeriod511" classname="org.joda.time.TestBaseSingleFieldPeriod" time="0.001"/>
+  <testcase name="testFactory_between_RInstant503" classname="org.joda.time.TestBaseSingleFieldPeriod" time="0.001"/>
+  <testcase name="testCompareTo513" classname="org.joda.time.TestBaseSingleFieldPeriod" time="0"/>
+  <testcase name="testFactory_between_RPartial504" classname="org.joda.time.TestBaseSingleFieldPeriod" time="0.001"/>
+  <testcase name="testFieldTypeIndexMethods507" classname="org.joda.time.TestBaseSingleFieldPeriod" time="0"/>
+  <testcase name="testFactory_yearsIn_RInterval693" classname="org.joda.time.TestYears" time="0.001"/>
+  <testcase name="testFactory_parseYears_String689" classname="org.joda.time.TestYears" time="0"/>
+  <testcase name="testSerialization695" classname="org.joda.time.TestYears" time="0.001"/>
+  <testcase name="testGetFieldType696" classname="org.joda.time.TestYears" time="0.001"/>
+  <testcase name="testGetPeriodType697" classname="org.joda.time.TestYears" time="0"/>
+  <testcase name="testPlus_Years698" classname="org.joda.time.TestYears" time="0"/>
+  <testcase name="testMinus_Years699" classname="org.joda.time.TestYears" time="0.001"/>
+  <testcase name="testFactory_yearsBetween_RInstant688" classname="org.joda.time.TestYears" time="0"/>
+  <testcase name="testMultipliedBy_int690" classname="org.joda.time.TestYears" time="0"/>
+  <testcase name="testFactory_years_int691" classname="org.joda.time.TestYears" time="0.001"/>
+  <testcase name="testFactory_yearsBetween_RPartial692" classname="org.joda.time.TestYears" time="0"/>
+  <testcase name="testNegated700" classname="org.joda.time.TestYears" time="0"/>
+  <testcase name="testToString687" classname="org.joda.time.TestYears" time="0"/>
+  <testcase name="testIsGreaterThan701" classname="org.joda.time.TestYears" time="0"/>
+  <testcase name="testIsLessThan702" classname="org.joda.time.TestYears" time="0"/>
+  <testcase name="testFactory_parseMonths_String179" classname="org.joda.time.TestMonths" time="0.002"/>
+  <testcase name="testSerialization321" classname="org.joda.time.TestMonths" time="0.002"/>
+  <testcase name="testMultipliedBy_int322" classname="org.joda.time.TestMonths" time="0"/>
+  <testcase name="testDividedBy_int323" classname="org.joda.time.TestMonths" time="0"/>
+  <testcase name="testIsLessThan324" classname="org.joda.time.TestMonths" time="0.001"/>
+  <testcase name="testFactory_months_int318" classname="org.joda.time.TestMonths" time="0"/>
+  <testcase name="testToString325" classname="org.joda.time.TestMonths" time="0"/>
+  <testcase name="testFactory_monthsBetween_RPartial_YearMonth320" classname="org.joda.time.TestMonths" time="0.002"/>
+  <testcase name="testPlus_Months319" classname="org.joda.time.TestMonths" time="0.001"/>
+  <testcase name="testGetPeriodType316" classname="org.joda.time.TestMonths" time="0"/>
+  <testcase name="testMinus_Months317" classname="org.joda.time.TestMonths" time="0"/>
+  <testcase name="testFactory_standardWeeksIn_RPeriod550" classname="org.joda.time.TestWeeks" time="0.001"/>
+  <testcase name="testFactory_weeksBetween_RPartial548" classname="org.joda.time.TestWeeks" time="0.001"/>
+  <testcase name="testToStandardSeconds526" classname="org.joda.time.TestWeeks" time="0"/>
+  <testcase name="testToStandardHours555" classname="org.joda.time.TestWeeks" time="0"/>
+  <testcase name="testToStandardMinutes556" classname="org.joda.time.TestWeeks" time="0.001"/>
+  <testcase name="testToStandardDuration557" classname="org.joda.time.TestWeeks" time="0"/>
+  <testcase name="testPlus_Weeks559" classname="org.joda.time.TestWeeks" time="0"/>
+  <testcase name="testMultipliedBy_int560" classname="org.joda.time.TestWeeks" time="0.001"/>
+  <testcase name="testIsGreaterThan562" classname="org.joda.time.TestWeeks" time="0"/>
+  <testcase name="testFactory_weeksBetween_RInstant544" classname="org.joda.time.TestWeeks" time="0.001"/>
+  <testcase name="testNegated561" classname="org.joda.time.TestWeeks" time="0"/>
+  <testcase name="testMinus_int558" classname="org.joda.time.TestWeeks" time="0"/>
+  <testcase name="testFactory_parseWeeks_String545" classname="org.joda.time.TestWeeks" time="0.001"/>
+  <testcase name="testFactory_weeks_int547" classname="org.joda.time.TestWeeks" time="0.001"/>
+  <testcase name="testAddToLocalDate552" classname="org.joda.time.TestWeeks" time="0"/>
+  <testcase name="testToStandardDays554" classname="org.joda.time.TestWeeks" time="0"/>
+  <testcase name="testSerialization551" classname="org.joda.time.TestWeeks" time="0.002"/>
+  <testcase name="testFactory_weeksIn_RInterval549" classname="org.joda.time.TestWeeks" time="0"/>
+  <testcase name="testToStandardWeeks1252" classname="org.joda.time.TestDays" time="0.001"/>
+  <testcase name="testFactory_parseDays_String1251" classname="org.joda.time.TestDays" time="0.001"/>
+  <testcase name="testFactory_days_int1248" classname="org.joda.time.TestDays" time="0"/>
+  <testcase name="testToStandardDuration1256" classname="org.joda.time.TestDays" time="0"/>
+  <testcase name="testConstants1257" classname="org.joda.time.TestDays" time="0"/>
+  <testcase name="testToStandardSeconds1255" classname="org.joda.time.TestDays" time="0.001"/>
+  <testcase name="testToStandardHours1253" classname="org.joda.time.TestDays" time="0"/>
+  <testcase name="testToStandardMinutes1254" classname="org.joda.time.TestDays" time="0.001"/>
+  <testcase name="testFactory_daysBetween_RInstant1249" classname="org.joda.time.TestDays" time="0.001"/>
+  <testcase name="testPlus_Days1258" classname="org.joda.time.TestDays" time="0"/>
+  <testcase name="testMultipliedBy_int1259" classname="org.joda.time.TestDays" time="0"/>
+  <testcase name="testDividedBy_int1260" classname="org.joda.time.TestDays" time="0.001"/>
+  <testcase name="testIsGreaterThan1262" classname="org.joda.time.TestDays" time="0"/>
+  <testcase name="testIsLessThan1263" classname="org.joda.time.TestDays" time="0"/>
+  <testcase name="testSerialization1247" classname="org.joda.time.TestDays" time="0.001"/>
+  <testcase name="testNegated1261" classname="org.joda.time.TestDays" time="0.001"/>
+  <testcase name="testPlus_int1246" classname="org.joda.time.TestDays" time="0"/>
+  <testcase name="testFactory_daysBetween_RPartial_LocalDate1244" classname="org.joda.time.TestDays" time="0.001"/>
+  <testcase name="testFactory_standardDaysIn_RPeriod1250" classname="org.joda.time.TestDays" time="0"/>
+  <testcase name="testToString1264" classname="org.joda.time.TestDays" time="0"/>
+  <testcase name="testGetMethods1243" classname="org.joda.time.TestDays" time="0.001"/>
+  <testcase name="testGetMethods1108" classname="org.joda.time.TestHours" time="0"/>
+  <testcase name="testMinus_int1110" classname="org.joda.time.TestHours" time="0"/>
+  <testcase name="testToStandardMinutes1106" classname="org.joda.time.TestHours" time="0.001"/>
+  <testcase name="testToStandardDuration1107" classname="org.joda.time.TestHours" time="0"/>
+  <testcase name="testToStandardDays1105" classname="org.joda.time.TestHours" time="0"/>
+  <testcase name="testGetFieldType1103" classname="org.joda.time.TestHours" time="0.001"/>
+  <testcase name="testToStandardWeeks1104" classname="org.joda.time.TestHours" time="0"/>
+  <testcase name="testSerialization1102" classname="org.joda.time.TestHours" time="0.001"/>
+  <testcase name="testFactory_hoursIn_RInterval1100" classname="org.joda.time.TestHours" time="0.001"/>
+  <testcase name="testFactory_hoursBetween_RInstant1098" classname="org.joda.time.TestHours" time="0"/>
+  <testcase name="testMinus_Hours1111" classname="org.joda.time.TestHours" time="0"/>
+  <testcase name="testDividedBy_int1112" classname="org.joda.time.TestHours" time="0.001"/>
+  <testcase name="testIsGreaterThan1113" classname="org.joda.time.TestHours" time="0"/>
+  <testcase name="testToString1114" classname="org.joda.time.TestHours" time="0.001"/>
+  <testcase name="testPlus_int1109" classname="org.joda.time.TestHours" time="0"/>
+  <testcase name="testFactory_standardHoursIn_RPeriod301" classname="org.joda.time.TestHours" time="0.001"/>
+  <testcase name="testFactory_hoursBetween_RPartial1099" classname="org.joda.time.TestHours" time="0"/>
+  <testcase name="testMultipliedBy_int458" classname="org.joda.time.TestHours" time="0"/>
+  <testcase name="testToStandardSeconds1097" classname="org.joda.time.TestHours" time="0.001"/>
+  <testcase name="testFactory_minutesBetween_RInstant913" classname="org.joda.time.TestMinutes" time="0"/>
+  <testcase name="testFactory_minutesIn_RInterval915" classname="org.joda.time.TestMinutes" time="0.001"/>
+  <testcase name="testToStandardWeeks916" classname="org.joda.time.TestMinutes" time="0"/>
+  <testcase name="testToStandardDays917" classname="org.joda.time.TestMinutes" time="0"/>
+  <testcase name="testToStandardSeconds918" classname="org.joda.time.TestMinutes" time="0.001"/>
+  <testcase name="testToStandardDuration919" classname="org.joda.time.TestMinutes" time="0"/>
+  <testcase name="testMinus_Minutes911" classname="org.joda.time.TestMinutes" time="0.001"/>
+  <testcase name="testNegated922" classname="org.joda.time.TestMinutes" time="0"/>
+  <testcase name="testFactory_parseMinutes_String910" classname="org.joda.time.TestMinutes" time="0.001"/>
+  <testcase name="testFactory_minutesBetween_RPartial914" classname="org.joda.time.TestMinutes" time="0"/>
+  <testcase name="testGetPeriodType786" classname="org.joda.time.TestMinutes" time="0"/>
+  <testcase name="testIsLessThan909" classname="org.joda.time.TestMinutes" time="0.001"/>
+  <testcase name="testFactory_minutes_int912" classname="org.joda.time.TestMinutes" time="0"/>
+  <testcase name="testMultipliedBy_int920" classname="org.joda.time.TestMinutes" time="0.001"/>
+  <testcase name="testDividedBy_int921" classname="org.joda.time.TestMinutes" time="0"/>
+  <testcase name="testIsGreaterThan923" classname="org.joda.time.TestMinutes" time="0"/>
+  <testcase name="testFactory_secondsIn_RInterval523" classname="org.joda.time.TestSeconds" time="0.001"/>
+  <testcase name="testFactory_parseSeconds_String524" classname="org.joda.time.TestSeconds" time="0.001"/>
+  <testcase name="testAddToLocalDate525" classname="org.joda.time.TestSeconds" time="0"/>
+  <testcase name="testToStandardWeeks527" classname="org.joda.time.TestSeconds" time="0.001"/>
+  <testcase name="testMinus_Seconds529" classname="org.joda.time.TestSeconds" time="0"/>
+  <testcase name="testIsLessThan530" classname="org.joda.time.TestSeconds" time="0"/>
+  <testcase name="testFactory_standardSecondsIn_RPeriod519" classname="org.joda.time.TestSeconds" time="0.001"/>
+  <testcase name="testMinus_int528" classname="org.joda.time.TestSeconds" time="0"/>
+  <testcase name="testPlus_int520" classname="org.joda.time.TestSeconds" time="0"/>
+  <testcase name="testFactory_secondsBetween_RInstant518" classname="org.joda.time.TestSeconds" time="0"/>
+  <testcase name="testFactory_secondsBetween_RPartial522" classname="org.joda.time.TestSeconds" time="0.001"/>
+  <testcase name="testFactory_seconds_int521" classname="org.joda.time.TestSeconds" time="0"/>
+  <testcase name="testMinusSeconds_int1160" classname="org.joda.time.TestTimeOfDay_Basics" time="0.001"/>
+  <testcase name="testPlusSeconds_int1161" classname="org.joda.time.TestTimeOfDay_Basics" time="0"/>
+  <testcase name="testPlusMillis_int1162" classname="org.joda.time.TestTimeOfDay_Basics" time="0.001"/>
+  <testcase name="testGetFieldTypes1156" classname="org.joda.time.TestTimeOfDay_Basics" time="0"/>
+  <testcase name="testToDateTimeToday_Zone535" classname="org.joda.time.TestTimeOfDay_Basics" time="0.001"/>
+  <testcase name="testWithFieldAdded310" classname="org.joda.time.TestTimeOfDay_Basics" time="0.001"/>
+  <testcase name="testWithField11158" classname="org.joda.time.TestTimeOfDay_Basics" time="0"/>
+  <testcase name="testWithField41159" classname="org.joda.time.TestTimeOfDay_Basics" time="0.001"/>
+  <testcase name="testWithChronologyRetainFields_Chrono1155" classname="org.joda.time.TestTimeOfDay_Basics" time="0"/>
+  <testcase name="testToDateTime_RI11" classname="org.joda.time.TestTimeOfDay_Basics" time="0.001"/>
+  <testcase name="testWithers1164" classname="org.joda.time.TestTimeOfDay_Basics" time="0.001"/>
+  <testcase name="testToDateTimeToday1163" classname="org.joda.time.TestTimeOfDay_Basics" time="0"/>
+  <testcase name="testToString_String1471" classname="org.joda.time.TestTimeOfDay_Basics" time="0.001"/>
+  <testcase name="testPlus_RP9" classname="org.joda.time.TestTimeOfDay_Basics" time="0.001"/>
+  <testcase name="testWithChronologyRetainFields_sameChrono1157" classname="org.joda.time.TestTimeOfDay_Basics" time="0"/>
+  <testcase name="testGetField1147" classname="org.joda.time.TestTimeOfDay_Basics" time="0.001"/>
+  <testcase name="testMinusMillis_int390" classname="org.joda.time.TestTimeOfDay_Basics" time="0"/>
+  <testcase name="testConstructor_Object_nullChronology1151" classname="org.joda.time.TestTimeOfDay_Constructors" time="0.001"/>
+  <testcase name="testConstructor_int_int1152" classname="org.joda.time.TestTimeOfDay_Constructors" time="0.001"/>
+  <testcase name="testConstructor_int_int_int1153" classname="org.joda.time.TestTimeOfDay_Constructors" time="0"/>
+  <testcase name="testConstructor_int_int_int_nullChronology1154" classname="org.joda.time.TestTimeOfDay_Constructors" time="0.001"/>
+  <testcase name="testConstructor_ObjectString21142" classname="org.joda.time.TestTimeOfDay_Constructors" time="0"/>
+  <testcase name="testFactory_FromCalendarFields1143" classname="org.joda.time.TestTimeOfDay_Constructors" time="0.001"/>
+  <testcase name="testFactory_FromDateFields_null1144" classname="org.joda.time.TestTimeOfDay_Constructors" time="0"/>
+  <testcase name="testConstructor1145" classname="org.joda.time.TestTimeOfDay_Constructors" time="0.001"/>
+  <testcase name="testConstructor_DateTimeZone1146" classname="org.joda.time.TestTimeOfDay_Constructors" time="0"/>
+  <testcase name="testConstructor_long2_Chronology1149" classname="org.joda.time.TestTimeOfDay_Constructors" time="0.001"/>
+  <testcase name="testConstructor_ObjectString11150" classname="org.joda.time.TestTimeOfDay_Constructors" time="0"/>
+  <testcase name="testPropertyAddNoWrapMilli1167" classname="org.joda.time.TestTimeOfDay_Properties" time="0.237"/>
+  <testcase name="testPropertyAddWrapFieldHour1168" classname="org.joda.time.TestTimeOfDay_Properties" time="0.001"/>
+  <testcase name="testPropertyWithMinimumValueHour1170" classname="org.joda.time.TestTimeOfDay_Properties" time="0"/>
+  <testcase name="testPropertyAddHour391" classname="org.joda.time.TestTimeOfDay_Properties" time="0.001"/>
+  <testcase name="testPropertySetTextHour1165" classname="org.joda.time.TestTimeOfDay_Properties" time="0"/>
+  <testcase name="testPropertySetMilli1166" classname="org.joda.time.TestTimeOfDay_Properties" time="0.001"/>
+  <testcase name="testPropertyWithMaximumValueHour1169" classname="org.joda.time.TestTimeOfDay_Properties" time="0"/>
+  <testcase name="testPropertyGetMinute430" classname="org.joda.time.TestTimeOfDay_Properties" time="0.001"/>
+  <testcase name="testPropertyCompareToSecond1148" classname="org.joda.time.TestTimeOfDay_Properties" time="0"/>
+  <testcase name="testMinus_RP31" classname="org.joda.time.TestYearMonthDay_Basics" time="0.001"/>
+  <testcase name="testToInterval43" classname="org.joda.time.TestYearMonthDay_Basics" time="0.001"/>
+  <testcase name="testToLocalDate38" classname="org.joda.time.TestYearMonthDay_Basics" time="0.001"/>
+  <testcase name="testToDateTimeAtMidnight39" classname="org.joda.time.TestYearMonthDay_Basics" time="0"/>
+  <testcase name="testToDateTimeAtCurrentTime41" classname="org.joda.time.TestYearMonthDay_Basics" time="0.001"/>
+  <testcase name="testToDateMidnight42" classname="org.joda.time.TestYearMonthDay_Basics" time="0"/>
+  <testcase name="testToDateTime_TOD_nullZone839" classname="org.joda.time.TestYearMonthDay_Basics" time="0.001"/>
+  <testcase name="testToString_String_Locale1141" classname="org.joda.time.TestYearMonthDay_Basics" time="0.001"/>
+  <testcase name="testCompareTo1410" classname="org.joda.time.TestYearMonthDay_Basics" time="0.001"/>
+  <testcase name="testWithField325" classname="org.joda.time.TestYearMonthDay_Basics" time="0"/>
+  <testcase name="testIsBefore_YMD12" classname="org.joda.time.TestYearMonthDay_Basics" time="0.001"/>
+  <testcase name="testWithChronologyRetainFields_sameChrono28" classname="org.joda.time.TestYearMonthDay_Basics" time="0.001"/>
+  <testcase name="testWithField429" classname="org.joda.time.TestYearMonthDay_Basics" time="0.001"/>
+  <testcase name="testMinusMonths_int30" classname="org.joda.time.TestYearMonthDay_Basics" time="0"/>
+  <testcase name="testWithChronologyRetainFields_nullChrono27" classname="org.joda.time.TestYearMonthDay_Basics" time="0.001"/>
+  <testcase name="testProperty37" classname="org.joda.time.TestYearMonthDay_Basics" time="0.002"/>
+  <testcase name="testToString45" classname="org.joda.time.TestYearMonthDay_Basics" time="0"/>
+  <testcase name="testToDateTimeAtMidnight_nullZone40" classname="org.joda.time.TestYearMonthDay_Basics" time="0.001"/>
+  <testcase name="testPlusMonths_int33" classname="org.joda.time.TestYearMonthDay_Basics" time="0.001"/>
+  <testcase name="testPlusDays_int34" classname="org.joda.time.TestYearMonthDay_Basics" time="0"/>
+  <testcase name="testMinusYears_int35" classname="org.joda.time.TestYearMonthDay_Basics" time="0.001"/>
+  <testcase name="testMinusDays_int36" classname="org.joda.time.TestYearMonthDay_Basics" time="0.001"/>
+  <testcase name="testPlusYears_int32" classname="org.joda.time.TestYearMonthDay_Basics" time="0"/>
+  <testcase name="testConstructor_Object_Chronology24" classname="org.joda.time.TestYearMonthDay_Constructors" time="0.001"/>
+  <testcase name="testConstructor_ObjectStringEx2142" classname="org.joda.time.TestYearMonthDay_Constructors" time="0.001"/>
+  <testcase name="testConstructor_DateTimeZone20" classname="org.joda.time.TestYearMonthDay_Constructors" time="0"/>
+  <testcase name="testFactory_FromCalendarFields17" classname="org.joda.time.TestYearMonthDay_Constructors" time="0.001"/>
+  <testcase name="testFactory_FromDateFields18" classname="org.joda.time.TestYearMonthDay_Constructors" time="0.001"/>
+  <testcase name="testConstructor_ObjectString323" classname="org.joda.time.TestYearMonthDay_Constructors" time="0.001"/>
+  <testcase name="testPropertyCompareToYear21" classname="org.joda.time.TestYearMonthDay_Properties" time="0"/>
+  <testcase name="testPropertySetMonth26" classname="org.joda.time.TestYearMonthDay_Properties" time="0.001"/>
+  <testcase name="testPropertyGetMaxMinValuesDay44" classname="org.joda.time.TestYearMonthDay_Properties" time="0.001"/>
+  <testcase name="testPropertyWithMinimumValueDayOfMonth51" classname="org.joda.time.TestYearMonthDay_Properties" time="0"/>
+  <testcase name="testPropertyAddYear47" classname="org.joda.time.TestYearMonthDay_Properties" time="0.001"/>
+  <testcase name="testPropertyAddWrapFieldYear48" classname="org.joda.time.TestYearMonthDay_Properties" time="0"/>
+  <testcase name="testPropertySetTextDay49" classname="org.joda.time.TestYearMonthDay_Properties" time="0.001"/>
+  <testcase name="testPropertyAddMonth443" classname="org.joda.time.TestYearMonthDay_Properties" time="0.001"/>
+  <testcase name="testPropertyGetMonth46" classname="org.joda.time.TestYearMonthDay_Properties" time="0.001"/>
+  <testcase name="testPropertyWithMaximumValueDayOfMonth50" classname="org.joda.time.TestYearMonthDay_Properties" time="0"/>
+  <testcase name="testGetField362" classname="org.joda.time.TestYearMonth_Basics" time="0.001"/>
+  <testcase name="testWithChronologyRetainFields_nullChrono364" classname="org.joda.time.TestYearMonth_Basics" time="0.001"/>
+  <testcase name="testWithField_same365" classname="org.joda.time.TestYearMonth_Basics" time="0"/>
+  <testcase name="testPlusYears_int367" classname="org.joda.time.TestYearMonth_Basics" time="0.001"/>
+  <testcase name="testCompareTo13" classname="org.joda.time.TestYearMonth_Basics" time="0.001"/>
+  <testcase name="testPlus_RP369" classname="org.joda.time.TestYearMonth_Basics" time="0"/>
+  <testcase name="testWithField366" classname="org.joda.time.TestYearMonth_Basics" time="0.001"/>
+  <testcase name="testWithers373" classname="org.joda.time.TestYearMonth_Basics" time="0.001"/>
+  <testcase name="testToString375" classname="org.joda.time.TestYearMonth_Basics" time="0"/>
+  <testcase name="testIsAfter_YM15" classname="org.joda.time.TestYearMonth_Basics" time="0.001"/>
+  <testcase name="testMinus_RP368" classname="org.joda.time.TestYearMonth_Basics" time="0.001"/>
+  <testcase name="testToInterval370" classname="org.joda.time.TestYearMonth_Basics" time="0"/>
+  <testcase name="testMinusYears_int371" classname="org.joda.time.TestYearMonth_Basics" time="0.001"/>
+  <testcase name="testMinusMonths_int372" classname="org.joda.time.TestYearMonth_Basics" time="0"/>
+  <testcase name="testToString_String_Locale376" classname="org.joda.time.TestYearMonth_Basics" time="0.001"/>
+  <testcase name="testSerialization361" classname="org.joda.time.TestYearMonth_Basics" time="0.009"/>
+  <testcase name="testGetFieldTypes363" classname="org.joda.time.TestYearMonth_Basics" time="0.001"/>
+  <testcase name="testConstructor_nullChronology356" classname="org.joda.time.TestYearMonth_Constructors" time="0"/>
+  <testcase name="testConstructor_long1_Chronology357" classname="org.joda.time.TestYearMonth_Constructors" time="0"/>
+  <testcase name="testConstructor_Object358" classname="org.joda.time.TestYearMonth_Constructors" time="0"/>
+  <testcase name="testConstructor_Object_nullChronology359" classname="org.joda.time.TestYearMonth_Constructors" time="0.001"/>
+  <testcase name="testParse_formatter1133" classname="org.joda.time.TestYearMonth_Constructors" time="0.001"/>
+  <testcase name="testParse_noFormatter353" classname="org.joda.time.TestYearMonth_Constructors" time="0"/>
+  <testcase name="testFactory_FromDateFields355" classname="org.joda.time.TestYearMonth_Constructors" time="0.001"/>
+  <testcase name="testConstructor350" classname="org.joda.time.TestYearMonth_Constructors" time="0"/>
+  <testcase name="testConstructor_DateTimeZone351" classname="org.joda.time.TestYearMonth_Constructors" time="0.001"/>
+  <testcase name="testConstructor_Chronology352" classname="org.joda.time.TestYearMonth_Constructors" time="0"/>
+  <testcase name="testFactory_FromCalendarFields354" classname="org.joda.time.TestYearMonth_Constructors" time="0.001"/>
+  <testcase name="testPropertyAddWrapFieldMonth379" classname="org.joda.time.TestYearMonth_Properties" time="0"/>
+  <testcase name="testPropertyEquals433" classname="org.joda.time.TestYearMonth_Properties" time="0.001"/>
+  <testcase name="testPropertyGetYear378" classname="org.joda.time.TestYearMonth_Properties" time="0"/>
+  <testcase name="testPropertyCompareToMonth5" classname="org.joda.time.TestYearMonth_Properties" time="0.001"/>
+  <testcase name="testPropertySetMonth360" classname="org.joda.time.TestYearMonth_Properties" time="0.001"/>
+  <testcase name="testPropertySetTextYear374" classname="org.joda.time.TestYearMonth_Properties" time="0"/>
+  <testcase name="testPropertyEqualsHashCodeLenient377" classname="org.joda.time.TestYearMonth_Properties" time="0.001"/>
+  <testcase name="testPlusDays_int8" classname="org.joda.time.TestMonthDay_Basics" time="0.002"/>
+  <testcase name="testMinusDays_int_negativeFromLeap1279" classname="org.joda.time.TestMonthDay_Basics" time="0"/>
+  <testcase name="testProperty432" classname="org.joda.time.TestMonthDay_Basics" time="0.001"/>
+  <testcase name="testWithers408" classname="org.joda.time.TestMonthDay_Basics" time="0.001"/>
+  <testcase name="testEqualsHashCode467" classname="org.joda.time.TestMonthDay_Basics" time="0"/>
+  <testcase name="testToString_String517" classname="org.joda.time.TestMonthDay_Basics" time="0.001"/>
+  <testcase name="testIsSupported1268" classname="org.joda.time.TestMonthDay_Basics" time="0"/>
+  <testcase name="testGetFieldTypes1273" classname="org.joda.time.TestMonthDay_Basics" time="0.001"/>
+  <testcase name="testWithField1274" classname="org.joda.time.TestMonthDay_Basics" time="0"/>
+  <testcase name="testPlusDays_same1276" classname="org.joda.time.TestMonthDay_Basics" time="0.001"/>
+  <testcase name="testPlusMonths_int_wrap1277" classname="org.joda.time.TestMonthDay_Basics" time="0"/>
+  <testcase name="testMinusMonths_int1278" classname="org.joda.time.TestMonthDay_Basics" time="0.001"/>
+  <testcase name="testToLocalDate1280" classname="org.joda.time.TestMonthDay_Basics" time="0.001"/>
+  <testcase name="testGetField1272" classname="org.joda.time.TestMonthDay_Basics" time="0"/>
+  <testcase name="testToString_String_Locale1282" classname="org.joda.time.TestMonthDay_Basics" time="0.001"/>
+  <testcase name="testWithChronologyRetainFields_Chrono1271" classname="org.joda.time.TestMonthDay_Basics" time="0"/>
+  <testcase name="testWithFieldAdded_unknownField1275" classname="org.joda.time.TestMonthDay_Basics" time="0.001"/>
+  <testcase name="testConstructor_Chronology1266" classname="org.joda.time.TestMonthDay_Constructors" time="0"/>
+  <testcase name="testFactory_FromDateFields1267" classname="org.joda.time.TestMonthDay_Constructors" time="0.001"/>
+  <testcase name="testConstructor1265" classname="org.joda.time.TestMonthDay_Constructors" time="0.001"/>
+  <testcase name="testConstructor_Object1270" classname="org.joda.time.TestMonthDay_Constructors" time="0"/>
+  <testcase name="testConstructor_int_int_nullChronology1281" classname="org.joda.time.TestMonthDay_Constructors" time="0"/>
+  <testcase name="testPropertyAddDayOfMonth445" classname="org.joda.time.TestMonthDay_Properties" time="0.001"/>
+  <testcase name="testPropertyCompareToMonthOfYear1269" classname="org.joda.time.TestMonthDay_Properties" time="0.001"/>
+  <testcase name="testPropertyAddWrapFieldDayOfMonth409" classname="org.joda.time.TestMonthDay_Properties" time="0.001"/>
+  <testcase name="testPropertySetTextDayOfMonth1283" classname="org.joda.time.TestMonthDay_Properties" time="0"/>
+  <testcase name="testWith2659" classname="org.joda.time.TestPartial_Basics" time="0.001"/>
+  <testcase name="testMinus_RP670" classname="org.joda.time.TestPartial_Basics" time="0.001"/>
+  <testcase name="testWith16" classname="org.joda.time.TestPartial_Basics" time="0.001"/>
+  <testcase name="testWithChronologyRetainFields_Chrono657" classname="org.joda.time.TestPartial_Basics" time="0.001"/>
+  <testcase name="testWithChronologyRetainFields_sameChrono658" classname="org.joda.time.TestPartial_Basics" time="0"/>
+  <testcase name="testWithFieldAdded4667" classname="org.joda.time.TestPartial_Basics" time="0.001"/>
+  <testcase name="testWithFieldAddWrapped5668" classname="org.joda.time.TestPartial_Basics" time="0.001"/>
+  <testcase name="testWithFieldAddWrapped8669" classname="org.joda.time.TestPartial_Basics" time="0.001"/>
+  <testcase name="testToString_String675" classname="org.joda.time.TestPartial_Basics" time="0.001"/>
+  <testcase name="testToString_String_Locale676" classname="org.joda.time.TestPartial_Basics" time="0"/>
+  <testcase name="testGetFieldTypes650" classname="org.joda.time.TestPartial_Basics" time="0.001"/>
+  <testcase name="testGetFormatter1656" classname="org.joda.time.TestPartial_Basics" time="0.001"/>
+  <testcase name="testWith_argHasNoRange660" classname="org.joda.time.TestPartial_Basics" time="0"/>
+  <testcase name="testGetFormatter3661" classname="org.joda.time.TestPartial_Basics" time="0.001"/>
+  <testcase name="testWithField2664" classname="org.joda.time.TestPartial_Basics" time="0.001"/>
+  <testcase name="testWithField4665" classname="org.joda.time.TestPartial_Basics" time="0"/>
+  <testcase name="testWithFieldAdded1666" classname="org.joda.time.TestPartial_Basics" time="0.001"/>
+  <testcase name="testWithout2663" classname="org.joda.time.TestPartial_Basics" time="0.001"/>
+  <testcase name="testToString2648" classname="org.joda.time.TestPartial_Basics" time="0"/>
+  <testcase name="testSerialization3" classname="org.joda.time.TestPartial_Basics" time="0.003"/>
+  <testcase name="testWith4662" classname="org.joda.time.TestPartial_Basics" time="0.001"/>
+  <testcase name="testCompareTo14" classname="org.joda.time.TestPartial_Basics" time="0"/>
+  <testcase name="testToString5674" classname="org.joda.time.TestPartial_Basics" time="0.001"/>
+  <testcase name="testPlus_RP671" classname="org.joda.time.TestPartial_Basics" time="0"/>
+  <testcase name="testConstructorEx5_TypeArray_intArray652" classname="org.joda.time.TestPartial_Constructors" time="0"/>
+  <testcase name="testConstructor_Chrono649" classname="org.joda.time.TestPartial_Constructors" time="0"/>
+  <testcase name="testConstructorEx3_TypeArray_intArray651" classname="org.joda.time.TestPartial_Constructors" time="0.001"/>
+  <testcase name="testConstructor_Type_int454" classname="org.joda.time.TestPartial_Constructors" time="0"/>
+  <testcase name="testConstructorEx6_TypeArray_intArray653" classname="org.joda.time.TestPartial_Constructors" time="0"/>
+  <testcase name="testConstructorEx8_TypeArray_intArray654" classname="org.joda.time.TestPartial_Constructors" time="0.001"/>
+  <testcase name="testConstructorEx7_TypeArray_intArray655" classname="org.joda.time.TestPartial_Constructors" time="0.001"/>
+  <testcase name="testPropertyGetMinute677" classname="org.joda.time.TestPartial_Properties" time="0.001"/>
+  <testcase name="testPropertyAddMinute678" classname="org.joda.time.TestPartial_Properties" time="0"/>
+  <testcase name="testPropertyWithMinimumValueHour431" classname="org.joda.time.TestPartial_Properties" time="0.001"/>
+  <testcase name="testPropertySetTextMinute679" classname="org.joda.time.TestPartial_Properties" time="0.001"/>
+  <testcase name="testPropertyWithMaximumValueHour680" classname="org.joda.time.TestPartial_Properties" time="0"/>
+  <testcase name="testIsMatch_Partial673" classname="org.joda.time.TestPartial_Match" time="0.001"/>
+  <testcase name="testIsMatch_Instant672" classname="org.joda.time.TestPartial_Match" time="0.001"/>
+  <testcase name="testGetFieldTypes2" classname="org.joda.time.TestAbstractPartial" time="0.001"/>
+  <testcase name="testGetPropertyEquals1" classname="org.joda.time.TestAbstractPartial" time="0.002"/>
+  <testcase name="testGetValues4" classname="org.joda.time.TestAbstractPartial" time="0"/>
+  <testcase name="testSetMethods1470" classname="org.joda.time.TestBasePartial" time="0.001"/>
+  <testcase name="testMonth1229" classname="org.joda.time.TestDateTimeComparator" time="0.003"/>
+  <testcase name="testStaticGetDateOnlyInstance498" classname="org.joda.time.TestDateTimeComparator" time="0"/>
+  <testcase name="testEqualsHashCode499" classname="org.joda.time.TestDateTimeComparator" time="0.001"/>
+  <testcase name="testMinute500" classname="org.joda.time.TestDateTimeComparator" time="0.002"/>
+  <testcase name="testListWOW501" classname="org.joda.time.TestDateTimeComparator" time="0.002"/>
+  <testcase name="testStaticGetTimeOnlyInstance502" classname="org.joda.time.TestDateTimeComparator" time="0.001"/>
+  <testcase name="testListYOYY574" classname="org.joda.time.TestDateTimeComparator" time="0.001"/>
+  <testcase name="testBasicComps3267" classname="org.joda.time.TestDateTimeComparator" time="0.001"/>
+  <testcase name="testStaticGetInstance495" classname="org.joda.time.TestDateTimeComparator" time="0"/>
+  <testcase name="testStaticGetInstanceLower496" classname="org.joda.time.TestDateTimeComparator" time="0.001"/>
+  <testcase name="testStaticGetInstanceLowerUpper497" classname="org.joda.time.TestDateTimeComparator" time="0.001"/>
+  <testcase name="warning" classname="junit.framework.TestSuite$1" time="0.004">
+    <failure message="No tests found in org.joda.time.TestDateTimeConstants" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: No tests found in org.joda.time.TestDateTimeConstants
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</failure>
+  </testcase>
+  <testcase name="testIsContiguous_RP7" classname="org.joda.time.TestDateTimeUtils" time="0"/>
+  <testcase name="testGetReadableInterval_ReadableInterval804" classname="org.joda.time.TestDateTimeUtils" time="0"/>
+  <testcase name="testGetIntervalChronology_RI_RI803" classname="org.joda.time.TestDateTimeUtils" time="0.002"/>
+  <testcase name="testOffsetMillis799" classname="org.joda.time.TestDateTimeUtils" time="0.001"/>
+  <testcase name="testGetInstantMillis_RI800" classname="org.joda.time.TestDateTimeUtils" time="0.001"/>
+  <testcase name="testClass798" classname="org.joda.time.TestDateTimeUtils" time="0"/>
+  <testcase name="testIsContiguous_RP_GJChronology135" classname="org.joda.time.TestDateTimeUtils" time="0.002"/>
+  <testcase name="testMillisProvider801" classname="org.joda.time.TestDateTimeUtils" time="0"/>
+  <testcase name="testGetInstantChronology_RI802" classname="org.joda.time.TestDateTimeUtils" time="0.001"/>
+  <testcase name="testGetZone_Zone805" classname="org.joda.time.TestDateTimeUtils" time="0.001"/>
+  <testcase name="testGetPeriodType_PeriodType806" classname="org.joda.time.TestDateTimeUtils" time="0"/>
+  <testcase name="testGetDurationMillis_RI807" classname="org.joda.time.TestDateTimeUtils" time="0.001"/>
+  <testcase name="test_julianDay809" classname="org.joda.time.TestDateTimeUtils" time="0.001"/>
+  <testcase name="testPatchedNameKeysLondon268" classname="org.joda.time.TestDateTimeZone" time="0.005"/>
+  <testcase name="testForOffsetHoursMinutes_int_int826" classname="org.joda.time.TestDateTimeZone" time="0.001"/>
+  <testcase name="testIsLocalDateTimeGap_Berlin643" classname="org.joda.time.TestDateTimeZone" time="0.002"/>
+  <testcase name="testForOffsetHours_int824" classname="org.joda.time.TestDateTimeZone" time="0.001"/>
+  <testcase name="testDefault823" classname="org.joda.time.TestDateTimeZone" time="0"/>
+  <testcase name="testForID_String_old261" classname="org.joda.time.TestDateTimeZone" time="0.008"/>
+  <testcase name="testEqualsHashCode277" classname="org.joda.time.TestDateTimeZone" time="0.001"/>
+  <testcase name="testProvider_badClassName640" classname="org.joda.time.TestDateTimeZone" time="0.003"/>
+  <testcase name="testSerialization2642" classname="org.joda.time.TestDateTimeZone" time="0.003"/>
+  <testcase name="testToTimeZone835" classname="org.joda.time.TestDateTimeZone" time="0"/>
+  <testcase name="testGetAvailableIDs829" classname="org.joda.time.TestDateTimeZone" time="0.001"/>
+  <testcase name="testNameProvider_badClassName830" classname="org.joda.time.TestDateTimeZone" time="0.003"/>
+  <testcase name="testConstructor831" classname="org.joda.time.TestDateTimeZone" time="0.001"/>
+  <testcase name="testGetOffset_RI832" classname="org.joda.time.TestDateTimeZone" time="0.001"/>
+  <testcase name="testGetMillisKeepLocal833" classname="org.joda.time.TestDateTimeZone" time="0"/>
+  <testcase name="testForID_String825" classname="org.joda.time.TestDateTimeZone" time="0.001"/>
+  <testcase name="testForTimeZone_TimeZone827" classname="org.joda.time.TestDateTimeZone" time="0.001"/>
+  <testcase name="testForOffsetMillis_int828" classname="org.joda.time.TestDateTimeZone" time="0.001"/>
+  <testcase name="test_DateTime_roundFloor_hour_NewYork_Spring_postCutover272" classname="org.joda.time.TestDateTimeZoneCutover" time="0"/>
+  <testcase name="testWithMinuteOfHourInDstChange_mockZone622" classname="org.joda.time.TestDateTimeZoneCutover" time="0.002"/>
+  <testcase name="test_DateTime_setHourForward_Moscow_Spring963" classname="org.joda.time.TestDateTimeZoneCutover" time="0"/>
+  <testcase name="testWithMillisOfSecondInDstChange_NewYork_summer623" classname="org.joda.time.TestDateTimeZoneCutover" time="0.001"/>
+  <testcase name="test_LocalDate_new_Turk720" classname="org.joda.time.TestDateTimeZoneCutover" time="0.001"/>
+  <testcase name="testBug2182444_ausNSW621" classname="org.joda.time.TestDateTimeZoneCutover" time="0.001"/>
+  <testcase name="test_DateTime_parse_Gaza962" classname="org.joda.time.TestDateTimeZoneCutover" time="0.001"/>
+  <testcase name="test_MutableDateTime_withZoneRetainFields_Gaza1034" classname="org.joda.time.TestDateTimeZoneCutover" time="0.001"/>
+  <testcase name="test_DateTime_withDay_Turk620" classname="org.joda.time.TestDateTimeZoneCutover" time="0.001"/>
+  <testcase name="testPlusSecondsInDstChange601" classname="org.joda.time.TestDateTimeZoneCutover" time="0.001"/>
+  <testcase name="testPlusMillisInDstChange603" classname="org.joda.time.TestDateTimeZoneCutover" time="0.001"/>
+  <testcase name="test_getOffsetFromLocal_Moscow_Autumn_overlap_mins273" classname="org.joda.time.TestDateTimeZoneCutover" time="0.004"/>
+  <testcase name="testBug2182444_usCentral194" classname="org.joda.time.TestDateTimeZoneCutover" time="0.002"/>
+  <testcase name="testBug3192457_adjustOffset834" classname="org.joda.time.TestDateTimeZoneCutover" time="0.001"/>
+  <testcase name="test_DateTime_roundCeiling_day_NewYork_Spring_postCutover961" classname="org.joda.time.TestDateTimeZoneCutover" time="0"/>
+  <testcase name="test_LocalDate_toDateMidnight_Gaza723" classname="org.joda.time.TestDateTimeZoneCutover" time="0.002"/>
+  <testcase name="test_DateTime_minusHour_NewYork_Autumn611" classname="org.joda.time.TestDateTimeZoneCutover" time="0"/>
+  <testcase name="testBug3476684_adjustOffset_springGap270" classname="org.joda.time.TestDateTimeZoneCutover" time="0.001"/>
+  <testcase name="test_DateTime_JustAfterLastEverOverlap264" classname="org.joda.time.TestDateTimeZoneCutover" time="0.003"/>
+  <testcase name="testEquals797" classname="org.joda.time.TestPeriodType" time="0.001"/>
+  <testcase name="testMaskYears794" classname="org.joda.time.TestPeriodType" time="0.002"/>
+  <testcase name="testSeconds787" classname="org.joda.time.TestPeriodType" time="0.001"/>
+  <testcase name="testYearWeekDayTime780" classname="org.joda.time.TestPeriodType" time="0.001"/>
+  <testcase name="testMaskMillis796" classname="org.joda.time.TestPeriodType" time="0.002"/>
+  <testcase name="testMaskTwice2795" classname="org.joda.time.TestPeriodType" time="0"/>
+  <testcase name="testForFields5792" classname="org.joda.time.TestPeriodType" time="0.001"/>
+  <testcase name="testForFields2793" classname="org.joda.time.TestPeriodType" time="0.001"/>
+  <testcase name="testForFields7791" classname="org.joda.time.TestPeriodType" time="0"/>
+  <testcase name="testForFields6789" classname="org.joda.time.TestPeriodType" time="0.001"/>
+  <testcase name="testForFields4790" classname="org.joda.time.TestPeriodType" time="0.001"/>
+  <testcase name="testMaskSeconds788" classname="org.joda.time.TestPeriodType" time="0.001"/>
+  <testcase name="testDays784" classname="org.joda.time.TestPeriodType" time="0.001"/>
+  <testcase name="testWeeks783" classname="org.joda.time.TestPeriodType" time="0.004"/>
+  <testcase name="testForFields1785" classname="org.joda.time.TestPeriodType" time="0"/>
+  <testcase name="warning" classname="junit.framework.TestSuite$1" time="0">
+    <failure message="No tests found in org.joda.time.TestDurationField" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: No tests found in org.joda.time.TestDurationField
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</failure>
+  </testcase>
+  <testcase name="testMonthDay_leapDay1138" classname="org.joda.time.TestStringConvert" time="0.021"/>
+  <testcase name="testPeriod59" classname="org.joda.time.TestStringConvert" time="0.002"/>
+  <testcase name="testHours1101" classname="org.joda.time.TestStringConvert" time="0.001"/>
+  <testcase name="testDateTime569" classname="org.joda.time.TestStringConvert" time="0.003"/>
+  <testcase name="testWeeks553" classname="org.joda.time.TestStringConvert" time="0.004"/>
+  <testcase name="testMutableDateTime1400" classname="org.joda.time.TestStringConvert" time="0"/>
+  <testcase name="testYears694" classname="org.joda.time.TestStringConvert" time="0"/>
+  <testcase name="testDateMidnight1429" classname="org.joda.time.TestStringConvert" time="0.001"/>
+  <testcase name="testSeconds531" classname="org.joda.time.TestStringConvert" time="0.001"/>
+  <testcase name="testMonthDay1231" classname="org.joda.time.TestStringConvert" time="0.001"/>
+  <testcase name="testSerializedCopticChronology312" classname="org.joda.time.TestSerialization" time="0.005"/>
+  <testcase name="testSerializedBuddhistChronology427" classname="org.joda.time.TestSerialization" time="0.009"/>
+  <testcase name="testSerializedLocalTime978" classname="org.joda.time.TestSerialization" time="0.002"/>
+  <testcase name="testDuration229" classname="org.joda.time.TestSerialization" time="0.001"/>
+  <testcase name="testSerializedISOChronology295" classname="org.joda.time.TestSerialization" time="0.001"/>
+  <testcase name="testSerializedDateMidnightProperty1460" classname="org.joda.time.TestSerialization" time="0.004"/>
+  <testcase name="testSerializedYearMonthDay19" classname="org.joda.time.TestSerialization" time="0.002"/>
+  <testcase name="testSerializedLocalDateTime1298" classname="org.joda.time.TestSerialization" time="0.002"/>
+  <testcase name="testSerializedLocalDateBuddhist492" classname="org.joda.time.TestSerialization" time="0.003"/>
+  <testcase name="testSerializedDateTimeProperty634" classname="org.joda.time.TestSerialization" time="0.003"/>
+  <testcase name="testSerializedMutableDateTimeProperty1089" classname="org.joda.time.TestSerialization" time="0.003"/>
+  <testcase name="testSerializedGregorianChronology928" classname="org.joda.time.TestSerialization" time="0.002"/>
+  <testcase name="testSerializedUnsupportedDateTimeField949" classname="org.joda.time.TestSerialization" time="0.003"/>
+  <testcase name="testSerializedGJChronologyChangedInternals115" classname="org.joda.time.TestSerialization" time="0.004"/>
+  <testcase name="testReadablePartialValidate967" classname="org.joda.time.TestIllegalFieldValueException" time="0"/>
+  <testcase name="testSetText778" classname="org.joda.time.TestIllegalFieldValueException" time="0.002"/>
+  <testcase name="testGJCutover127" classname="org.joda.time.TestIllegalFieldValueException" time="0.001"/>
+  <testcase name="testSkipDateTimeField966" classname="org.joda.time.TestIllegalFieldValueException" time="0"/>
+  <testcase name="testZoneTransition968" classname="org.joda.time.TestIllegalFieldValueException" time="0.001"/>
+  <testcase name="testVerifyValueBounds463" classname="org.joda.time.TestIllegalFieldValueException" time="0.001"/>
+  <testcase name="testFactory_Zone426" classname="org.joda.time.chrono.TestBuddhistChronology" time="0.014"/>
+  <testcase name="testWithZone428" classname="org.joda.time.chrono.TestBuddhistChronology" time="0"/>
+  <testcase name="testTimeFields425" classname="org.joda.time.chrono.TestBuddhistChronology" time="0.001"/>
+  <testcase name="testWithUTC424" classname="org.joda.time.chrono.TestBuddhistChronology" time="0.001"/>
+  <testcase name="testEra416" classname="org.joda.time.chrono.TestBuddhistChronology" time="0"/>
+  <testcase name="testDurationYear543" classname="org.joda.time.chrono.TestCopticChronology" time="0"/>
+  <testcase name="testWithZone313" classname="org.joda.time.chrono.TestCopticChronology" time="0.001"/>
+  <testcase name="testFactory_Zone310" classname="org.joda.time.chrono.TestCopticChronology" time="0"/>
+  <testcase name="testDurationFields311" classname="org.joda.time.chrono.TestCopticChronology" time="0.001"/>
+  <testcase name="testSampleDate315" classname="org.joda.time.chrono.TestCopticChronology" time="0.001"/>
+  <testcase name="testDurationMonth533" classname="org.joda.time.chrono.TestCopticChronology" time="0"/>
+  <testcase name="testFactoryUTC308" classname="org.joda.time.chrono.TestCopticChronology" time="0.001"/>
+  <testcase name="testEquality309" classname="org.joda.time.chrono.TestCopticChronology" time="0"/>
+  <testcase name="testEra314" classname="org.joda.time.chrono.TestCopticChronology" time="0"/>
+  <testcase name="testCalendar774" classname="org.joda.time.chrono.TestEthiopicChronology" time="3.574"/>
+  <testcase name="testSampleDateWithZone775" classname="org.joda.time.chrono.TestEthiopicChronology" time="0"/>
+  <testcase name="testWithUTC770" classname="org.joda.time.chrono.TestEthiopicChronology" time="0.001"/>
+  <testcase name="testWithZone773" classname="org.joda.time.chrono.TestEthiopicChronology" time="0"/>
+  <testcase name="testDurationMonth305" classname="org.joda.time.chrono.TestEthiopicChronology" time="0"/>
+  <testcase name="testFactory_Zone771" classname="org.joda.time.chrono.TestEthiopicChronology" time="0"/>
+  <testcase name="testDurationFields772" classname="org.joda.time.chrono.TestEthiopicChronology" time="0.001"/>
+  <testcase name="testEquality117" classname="org.joda.time.chrono.TestGJChronology" time="0"/>
+  <testcase name="testFactory_Zone_RI119" classname="org.joda.time.chrono.TestGJChronology" time="0.001"/>
+  <testcase name="testTimeOfDayAdd129" classname="org.joda.time.chrono.TestGJChronology" time="0.005"/>
+  <testcase name="testSubtractDays118" classname="org.joda.time.chrono.TestGJChronology" time="0.002"/>
+  <testcase name="testCutoverAddWeeks116" classname="org.joda.time.chrono.TestGJChronology" time="0.001"/>
+  <testcase name="testMaximumValue130" classname="org.joda.time.chrono.TestGJChronology" time="0.281"/>
+  <testcase name="testCutoverAddYears131" classname="org.joda.time.chrono.TestGJChronology" time="0.006"/>
+  <testcase name="testCutoverAddMonths134" classname="org.joda.time.chrono.TestGJChronology" time="0.004"/>
+  <testcase name="testToString126" classname="org.joda.time.chrono.TestGJChronology" time="0.001"/>
+  <testcase name="testIllegalDates124" classname="org.joda.time.chrono.TestGJChronology" time="0.001"/>
+  <testcase name="testLeapYearRulesConstructionInvalid123" classname="org.joda.time.chrono.TestGJChronology" time="0"/>
+  <testcase name="testEquality925" classname="org.joda.time.chrono.TestGregorianChronology" time="0"/>
+  <testcase name="testToString837" classname="org.joda.time.chrono.TestGregorianChronology" time="0.001"/>
+  <testcase name="testWithZone929" classname="org.joda.time.chrono.TestGregorianChronology" time="0"/>
+  <testcase name="testFactory_Zone926" classname="org.joda.time.chrono.TestGregorianChronology" time="0"/>
+  <testcase name="testFactory_Zone_int927" classname="org.joda.time.chrono.TestGregorianChronology" time="0.001"/>
+  <testcase name="testMaximumValue265" classname="org.joda.time.chrono.TestGregorianChronology" time="0.001"/>
+  <testcase name="testWithZone110" classname="org.joda.time.chrono.TestIslamicChronology" time="0"/>
+  <testcase name="testToString109" classname="org.joda.time.chrono.TestIslamicChronology" time="0"/>
+  <testcase name="testFactory106" classname="org.joda.time.chrono.TestIslamicChronology" time="0"/>
+  <testcase name="testFactory_Zone108" classname="org.joda.time.chrono.TestIslamicChronology" time="0"/>
+  <testcase name="testFactoryUTC105" classname="org.joda.time.chrono.TestIslamicChronology" time="0"/>
+  <testcase name="testWithUTC107" classname="org.joda.time.chrono.TestIslamicChronology" time="0"/>
+  <testcase name="testSampleDate1111" classname="org.joda.time.chrono.TestIslamicChronology" time="0.001"/>
+  <testcase name="testFieldConstructor112" classname="org.joda.time.chrono.TestIslamicChronology" time="0"/>
+  <testcase name="testSampleDate2114" classname="org.joda.time.chrono.TestIslamicChronology" time="0.001"/>
+  <testcase name="testSampleDate3452" classname="org.joda.time.chrono.TestIslamicChronology" time="0.001"/>
+  <testcase name="testEpoch113" classname="org.joda.time.chrono.TestIslamicChronology" time="0"/>
+  <testcase name="testToString417" classname="org.joda.time.chrono.TestJulianChronology" time="0.001"/>
+  <testcase name="testWithZone418" classname="org.joda.time.chrono.TestJulianChronology" time="0"/>
+  <testcase name="testDurationFields259" classname="org.joda.time.chrono.TestJulianChronology" time="0.001"/>
+  <testcase name="testWithZone297" classname="org.joda.time.chrono.TestISOChronology" time="0.001"/>
+  <testcase name="testMinYear1139" classname="org.joda.time.chrono.TestISOChronology" time="0.001"/>
+  <testcase name="testToString298" classname="org.joda.time.chrono.TestISOChronology" time="0"/>
+  <testcase name="testPartialDayOfYearAdd293" classname="org.joda.time.chrono.TestISOChronology" time="0.001"/>
+  <testcase name="testFactory_Zone294" classname="org.joda.time.chrono.TestISOChronology" time="0.001"/>
+  <testcase name="testDurationFields296" classname="org.joda.time.chrono.TestISOChronology" time="0"/>
+  <testcase name="test_lenientChrononolgy_Chicago541" classname="org.joda.time.chrono.TestLenientChronology" time="0.002"/>
+  <testcase name="test_setHourOfDay326" classname="org.joda.time.chrono.TestLenientChronology" time="0"/>
+  <testcase name="test_setDayOfMonth410" classname="org.joda.time.chrono.TestLenientChronology" time="0.001"/>
+  <testcase name="test_plusYears_positiveToZero_crossCutover133" classname="org.joda.time.chrono.TestGJDate" time="0"/>
+  <testcase name="test_cutoverPreZero120" classname="org.joda.time.chrono.TestGJDate" time="0.001"/>
+  <testcase name="test_plusWeekyears_positiveToZero_crossCutover132" classname="org.joda.time.chrono.TestGJDate" time="0"/>
+  <testcase name="test_plusYears_negativeToPositive122" classname="org.joda.time.chrono.TestGJDate" time="0.001"/>
+  <testcase name="testChronology" classname="org.joda.time.chrono.gj.MainTest" time="0.505"/>
+  <testcase name="testChronology" classname="org.joda.time.chrono.gj.MainTest" time="0.794"/>
+  <testcase name="testGetInstantConverterRemovedNull470" classname="org.joda.time.convert.TestConverterManager" time="0.001"/>
+  <testcase name="testGetInstantConverterBadMultipleMatches1122" classname="org.joda.time.convert.TestConverterManager" time="0"/>
+  <testcase name="testRemoveInstantConverter3473" classname="org.joda.time.convert.TestConverterManager" time="0.001"/>
+  <testcase name="testAddPartialConverter2474" classname="org.joda.time.convert.TestConverterManager" time="0"/>
+  <testcase name="testRemovePartialConverter3476" classname="org.joda.time.convert.TestConverterManager" time="0"/>
+  <testcase name="testAddPartialConverter4477" classname="org.joda.time.convert.TestConverterManager" time="0.001"/>
+  <testcase name="testGetDurationConverter479" classname="org.joda.time.convert.TestConverterManager" time="0"/>
+  <testcase name="testAddDurationConverter2481" classname="org.joda.time.convert.TestConverterManager" time="0.001"/>
+  <testcase name="testAddDurationConverter3482" classname="org.joda.time.convert.TestConverterManager" time="0"/>
+  <testcase name="testAddPeriodConverter3484" classname="org.joda.time.convert.TestConverterManager" time="0"/>
+  <testcase name="testGetPeriodConverter468" classname="org.joda.time.convert.TestConverterManager" time="0.001"/>
+  <testcase name="testGetInstantConverter469" classname="org.joda.time.convert.TestConverterManager" time="0"/>
+  <testcase name="testGetDurationConverterRemovedNull480" classname="org.joda.time.convert.TestConverterManager" time="0.001"/>
+  <testcase name="testGetPartialConverterOKMultipleMatches478" classname="org.joda.time.convert.TestConverterManager" time="0.001"/>
+  <testcase name="testGetPeriodConverterRemovedNull483" classname="org.joda.time.convert.TestConverterManager" time="0"/>
+  <testcase name="testGetInstantConverterOKMultipleMatches471" classname="org.joda.time.convert.TestConverterManager" time="0.001"/>
+  <testcase name="testGetPartialConverterRemovedNull475" classname="org.joda.time.convert.TestConverterManager" time="0"/>
+  <testcase name="testRemovePeriodConverter3485" classname="org.joda.time.convert.TestConverterManager" time="0.001"/>
+  <testcase name="testAddIntervalConverter1486" classname="org.joda.time.convert.TestConverterManager" time="0"/>
+  <testcase name="testGetIntervalConverter487" classname="org.joda.time.convert.TestConverterManager" time="0.001"/>
+  <testcase name="testRemoveIntervalConverter2488" classname="org.joda.time.convert.TestConverterManager" time="0.001"/>
+  <testcase name="testAddIntervalConverter3489" classname="org.joda.time.convert.TestConverterManager" time="0"/>
+  <testcase name="testRemoveIntervalConverter3490" classname="org.joda.time.convert.TestConverterManager" time="0"/>
+  <testcase name="testAddPartialConverter31117" classname="org.joda.time.convert.TestConverterManager" time="0.001"/>
+  <testcase name="testAddInstantConverter4472" classname="org.joda.time.convert.TestConverterManager" time="0"/>
+  <testcase name="testToString491" classname="org.joda.time.convert.TestConverterManager" time="0"/>
+  <testcase name="testAddNullRemoved31115" classname="org.joda.time.convert.TestConverterSet" time="0.001"/>
+  <testcase name="testRemoveNullRemoved21120" classname="org.joda.time.convert.TestConverterSet" time="0"/>
+  <testcase name="testAddNullRemoved21116" classname="org.joda.time.convert.TestConverterSet" time="0"/>
+  <testcase name="testAddNullRemoved11118" classname="org.joda.time.convert.TestConverterSet" time="0.001"/>
+  <testcase name="testRemoveNullRemoved11121" classname="org.joda.time.convert.TestConverterSet" time="0"/>
+  <testcase name="testToString1340" classname="org.joda.time.convert.TestCalendarConverter" time="0.001"/>
+  <testcase name="testGetChronology_Object_nullChronology121" classname="org.joda.time.convert.TestCalendarConverter" time="0.005"/>
+  <testcase name="testGetPartialValues1339" classname="org.joda.time.convert.TestCalendarConverter" time="0.001"/>
+  <testcase name="warning" classname="junit.framework.TestSuite$1" time="0">
+    <failure message="No tests found in org.joda.time.convert.TestDateConverter" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: No tests found in org.joda.time.convert.TestDateConverter
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</failure>
+  </testcase>
+  <testcase name="testToString58" classname="org.joda.time.convert.TestLongConverter" time="0.001"/>
+  <testcase name="testGetInstantMillis_Object_Chronology56" classname="org.joda.time.convert.TestLongConverter" time="0"/>
+  <testcase name="testGetDurationMillis_Object57" classname="org.joda.time.convert.TestLongConverter" time="0"/>
+  <testcase name="testSetInto_Object_Chronology2812" classname="org.joda.time.convert.TestNullConverter" time="0.001"/>
+  <testcase name="testGetDurationMillis_Object810" classname="org.joda.time.convert.TestNullConverter" time="0"/>
+  <testcase name="testSetInto_Object811" classname="org.joda.time.convert.TestNullConverter" time="0.001"/>
+  <testcase name="testSupportedType813" classname="org.joda.time.convert.TestNullConverter" time="0"/>
+  <testcase name="testGetDurationMillis_Object936" classname="org.joda.time.convert.TestReadableDurationConverter" time="0.001"/>
+  <testcase name="testGetDurationMillis_Object1390" classname="org.joda.time.convert.TestReadableIntervalConverter" time="0"/>
+  <testcase name="testSetIntoPeriod_Object11391" classname="org.joda.time.convert.TestReadableIntervalConverter" time="0.001"/>
+  <testcase name="testSupportedType1393" classname="org.joda.time.convert.TestReadableIntervalConverter" time="0"/>
+  <testcase name="testSetIntoInterval_Object1329" classname="org.joda.time.convert.TestReadableIntervalConverter" time="0"/>
+  <testcase name="testSetIntoInterval_Object2836" classname="org.joda.time.convert.TestReadableIntervalConverter" time="0.001"/>
+  <testcase name="testIsReadableInterval_Object_Chronology1392" classname="org.joda.time.convert.TestReadableIntervalConverter" time="0"/>
+  <testcase name="testGetPeriodType_Object138" classname="org.joda.time.convert.TestReadableIntervalConverter" time="0.001"/>
+  <testcase name="testToString423" classname="org.joda.time.convert.TestReadableInstantConverter" time="0"/>
+  <testcase name="testGetInstantMillis_Object_Chronology422" classname="org.joda.time.convert.TestReadableInstantConverter" time="0"/>
+  <testcase name="testGetChronology_Object_Zone419" classname="org.joda.time.convert.TestReadableInstantConverter" time="0.001"/>
+  <testcase name="testGetChronology_Object_nullChronology421" classname="org.joda.time.convert.TestReadableInstantConverter" time="0.001"/>
+  <testcase name="testGetChronology_Object_Chronology420" classname="org.joda.time.convert.TestReadableInstantConverter" time="0"/>
+  <testcase name="testGetPartialValues54" classname="org.joda.time.convert.TestReadablePartialConverter" time="0.001"/>
+  <testcase name="testSupportedType55" classname="org.joda.time.convert.TestReadablePartialConverter" time="0.001"/>
+  <testcase name="testGetChronology_Object_Zone53" classname="org.joda.time.convert.TestReadablePartialConverter" time="0"/>
+  <testcase name="testGetPeriodType_Object155" classname="org.joda.time.convert.TestReadablePeriodConverter" time="0.001"/>
+  <testcase name="testToString156" classname="org.joda.time.convert.TestReadablePeriodConverter" time="0"/>
+  <testcase name="testSetInto_Object154" classname="org.joda.time.convert.TestReadablePeriodConverter" time="0"/>
+  <testcase name="testIsReadableInterval_Object_Chronology139" classname="org.joda.time.convert.TestStringConverter" time="0"/>
+  <testcase name="testSetIntoIntervalEx_Object_Chronology4148" classname="org.joda.time.convert.TestStringConverter" time="0.001"/>
+  <testcase name="testGetDurationMillis_Object2145" classname="org.joda.time.convert.TestStringConverter" time="0"/>
+  <testcase name="testSetIntoPeriod_Object3146" classname="org.joda.time.convert.TestStringConverter" time="0"/>
+  <testcase name="testSetIntoPeriod_Object8147" classname="org.joda.time.convert.TestStringConverter" time="0.001"/>
+  <testcase name="testToString140" classname="org.joda.time.convert.TestStringConverter" time="0"/>
+  <testcase name="testSetIntoPeriod_Object5185" classname="org.joda.time.convert.TestStringConverter" time="0"/>
+  <testcase name="testSetIntoPeriod_Object4186" classname="org.joda.time.convert.TestStringConverter" time="0.001"/>
+  <testcase name="testSetIntoIntervalEx_Object_Chronology1149" classname="org.joda.time.convert.TestStringConverter" time="0"/>
+  <testcase name="testSetIntoInterval_Object_Chronology5150" classname="org.joda.time.convert.TestStringConverter" time="0.001"/>
+  <testcase name="testSetIntoIntervalEx_Object_Chronology3151" classname="org.joda.time.convert.TestStringConverter" time="0"/>
+  <testcase name="testSetIntoInterval_Object_Chronology1152" classname="org.joda.time.convert.TestStringConverter" time="0.001"/>
+  <testcase name="testSetIntoIntervalEx_Object_Chronology5153" classname="org.joda.time.convert.TestStringConverter" time="0.001"/>
+  <testcase name="testGetPartialValues141" classname="org.joda.time.convert.TestStringConverter" time="0.001"/>
+  <testcase name="testGetDurationMillis_Object1144" classname="org.joda.time.convert.TestStringConverter" time="0"/>
+  <testcase name="testSafeMultiplyLongLong459" classname="org.joda.time.field.TestFieldUtils" time="0.001"/>
+  <testcase name="testSafeDivideLongLong460" classname="org.joda.time.field.TestFieldUtils" time="0.003"/>
+  <testcase name="testSafeAddInt455" classname="org.joda.time.field.TestFieldUtils" time="0.001"/>
+  <testcase name="testSafeSubtractLong457" classname="org.joda.time.field.TestFieldUtils" time="0"/>
+  <testcase name="testSafeAddLong456" classname="org.joda.time.field.TestFieldUtils" time="0.001"/>
+  <testcase name="test_addWrapField_RP_int_intarray_int393" classname="org.joda.time.field.TestBaseDateTimeField" time="0.001"/>
+  <testcase name="test_getAsText_RP_int_Locale384" classname="org.joda.time.field.TestBaseDateTimeField" time="0"/>
+  <testcase name="test_getAsText_RP_Locale385" classname="org.joda.time.field.TestBaseDateTimeField" time="0"/>
+  <testcase name="test_getAsShortText_long387" classname="org.joda.time.field.TestBaseDateTimeField" time="0.001"/>
+  <testcase name="test_roundCeiling_long388" classname="org.joda.time.field.TestBaseDateTimeField" time="0"/>
+  <testcase name="test_add_RP_int_intarray_int389" classname="org.joda.time.field.TestBaseDateTimeField" time="0.001"/>
+  <testcase name="test_addWrapField_long_int392" classname="org.joda.time.field.TestBaseDateTimeField" time="0.001"/>
+  <testcase name="test_getDifference_long_long394" classname="org.joda.time.field.TestBaseDateTimeField" time="0"/>
+  <testcase name="test_set_long_String_Locale397" classname="org.joda.time.field.TestBaseDateTimeField" time="0"/>
+  <testcase name="test_toString382" classname="org.joda.time.field.TestBaseDateTimeField" time="0.001"/>
+  <testcase name="test_getMaximumValue_long380" classname="org.joda.time.field.TestBaseDateTimeField" time="0"/>
+  <testcase name="test_constructor381" classname="org.joda.time.field.TestBaseDateTimeField" time="0"/>
+  <testcase name="test_isSupported383" classname="org.joda.time.field.TestBaseDateTimeField" time="0"/>
+  <testcase name="test_getMaximumShortTextLength_Locale402" classname="org.joda.time.field.TestBaseDateTimeField" time="0.001"/>
+  <testcase name="test_getMaximumTextLength_Locale401" classname="org.joda.time.field.TestBaseDateTimeField" time="0"/>
+  <testcase name="test_set_RP_int_intarray_String_Locale396" classname="org.joda.time.field.TestBaseDateTimeField" time="0"/>
+  <testcase name="test_getDifferenceAsLong_long_long395" classname="org.joda.time.field.TestBaseDateTimeField" time="0"/>
+  <testcase name="test_getAsShortText_long_Locale386" classname="org.joda.time.field.TestBaseDateTimeField" time="0"/>
+  <testcase name="test_isLeap_long398" classname="org.joda.time.field.TestBaseDateTimeField" time="0"/>
+  <testcase name="test_getLeapAmount_long399" classname="org.joda.time.field.TestBaseDateTimeField" time="0.001"/>
+  <testcase name="test_getLeapDurationField400" classname="org.joda.time.field.TestBaseDateTimeField" time="0"/>
+  <testcase name="test_roundHalfFloor_long403" classname="org.joda.time.field.TestBaseDateTimeField" time="0"/>
+  <testcase name="test_roundHalfEven_long404" classname="org.joda.time.field.TestBaseDateTimeField" time="0.001"/>
+  <testcase name="test_remainder_long405" classname="org.joda.time.field.TestBaseDateTimeField" time="0"/>
+  <testcase name="test_add_long_long1233" classname="org.joda.time.field.TestOffsetDateTimeField" time="0.001"/>
+  <testcase name="test_roundHalfCeiling_long1238" classname="org.joda.time.field.TestOffsetDateTimeField" time="0"/>
+  <testcase name="test_remainder_long1239" classname="org.joda.time.field.TestOffsetDateTimeField" time="0"/>
+  <testcase name="test_roundHalfFloor_long1237" classname="org.joda.time.field.TestOffsetDateTimeField" time="0.001"/>
+  <testcase name="test_getOffset1240" classname="org.joda.time.field.TestOffsetDateTimeField" time="0"/>
+  <testcase name="test_roundFloor_long1235" classname="org.joda.time.field.TestOffsetDateTimeField" time="0"/>
+  <testcase name="test_add_long_int1232" classname="org.joda.time.field.TestOffsetDateTimeField" time="0.001"/>
+  <testcase name="test_addWrapField_long_int1234" classname="org.joda.time.field.TestOffsetDateTimeField" time="0"/>
+  <testcase name="test_roundCeiling_long1236" classname="org.joda.time.field.TestOffsetDateTimeField" time="0"/>
+  <testcase name="test_set_long_int1225" classname="org.joda.time.field.TestPreciseDurationDateTimeField" time="0.001"/>
+  <testcase name="test_roundCeiling_long1226" classname="org.joda.time.field.TestPreciseDurationDateTimeField" time="0"/>
+  <testcase name="test_isLenient1224" classname="org.joda.time.field.TestPreciseDurationDateTimeField" time="0.001"/>
+  <testcase name="test_convertText1222" classname="org.joda.time.field.TestPreciseDurationDateTimeField" time="0"/>
+  <testcase name="test_constructor1223" classname="org.joda.time.field.TestPreciseDurationDateTimeField" time="0.001"/>
+  <testcase name="test_add_long_int1227" classname="org.joda.time.field.TestPreciseDurationDateTimeField" time="0"/>
+  <testcase name="test_set_RP_int_intarray_int1228" classname="org.joda.time.field.TestPreciseDurationDateTimeField" time="0"/>
+  <testcase name="test_getRange950" classname="org.joda.time.field.TestPreciseDateTimeField" time="0"/>
+  <testcase name="test_add_RP_int_intarray_int954" classname="org.joda.time.field.TestPreciseDateTimeField" time="0.001"/>
+  <testcase name="test_getMaximumValue955" classname="org.joda.time.field.TestPreciseDateTimeField" time="0"/>
+  <testcase name="test_addWrapField_long_int952" classname="org.joda.time.field.TestPreciseDateTimeField" time="0.001"/>
+  <testcase name="test_set_long_String953" classname="org.joda.time.field.TestPreciseDateTimeField" time="0"/>
+  <testcase name="test_getAsShortText_long_Locale951" classname="org.joda.time.field.TestPreciseDateTimeField" time="0"/>
+  <testcase name="test_getDifference_long_int1365" classname="org.joda.time.field.TestMillisDurationField" time="0.001"/>
+  <testcase name="test_toString1367" classname="org.joda.time.field.TestMillisDurationField" time="0"/>
+  <testcase name="testSerialization1368" classname="org.joda.time.field.TestMillisDurationField" time="0.001"/>
+  <testcase name="test_isSupported1357" classname="org.joda.time.field.TestMillisDurationField" time="0"/>
+  <testcase name="test_compareTo1358" classname="org.joda.time.field.TestMillisDurationField" time="0"/>
+  <testcase name="test_getValue_long_long1360" classname="org.joda.time.field.TestMillisDurationField" time="0.001"/>
+  <testcase name="test_getValueAsLong_long1359" classname="org.joda.time.field.TestMillisDurationField" time="0"/>
+  <testcase name="test_getType1356" classname="org.joda.time.field.TestMillisDurationField" time="0"/>
+  <testcase name="test_getMillis_int_long1362" classname="org.joda.time.field.TestMillisDurationField" time="0"/>
+  <testcase name="test_getMillis_long_long1363" classname="org.joda.time.field.TestMillisDurationField" time="0.001"/>
+  <testcase name="test_add_long_long1364" classname="org.joda.time.field.TestMillisDurationField" time="0"/>
+  <testcase name="test_getValueAsLong_long_long1361" classname="org.joda.time.field.TestMillisDurationField" time="0"/>
+  <testcase name="test_getMillis_long_long437" classname="org.joda.time.field.TestPreciseDurationField" time="0.001"/>
+  <testcase name="test_add_long_int438" classname="org.joda.time.field.TestPreciseDurationField" time="0"/>
+  <testcase name="test_compareTo434" classname="org.joda.time.field.TestPreciseDurationField" time="0"/>
+  <testcase name="test_getValueAsLong_long303" classname="org.joda.time.field.TestPreciseDurationField" time="0.001"/>
+  <testcase name="test_getValue_long_long304" classname="org.joda.time.field.TestPreciseDurationField" time="0"/>
+  <testcase name="test_getMillis_int_long436" classname="org.joda.time.field.TestPreciseDurationField" time="0"/>
+  <testcase name="test_equals441" classname="org.joda.time.field.TestPreciseDurationField" time="0"/>
+  <testcase name="test_add_long_long439" classname="org.joda.time.field.TestPreciseDurationField" time="0.001"/>
+  <testcase name="test_hashCode442" classname="org.joda.time.field.TestPreciseDurationField" time="0"/>
+  <testcase name="test_getValue_long302" classname="org.joda.time.field.TestPreciseDurationField" time="0.001"/>
+  <testcase name="test_getDifferenceAsLong_long_long440" classname="org.joda.time.field.TestPreciseDurationField" time="0"/>
+  <testcase name="test_isPrecise435" classname="org.joda.time.field.TestPreciseDurationField" time="0"/>
+  <testcase name="test_getDifferenceAsLong_long_long288" classname="org.joda.time.field.TestScaledDurationField" time="0.001"/>
+  <testcase name="test_compareTo289" classname="org.joda.time.field.TestScaledDurationField" time="0"/>
+  <testcase name="test_getScalar290" classname="org.joda.time.field.TestScaledDurationField" time="0.001"/>
+  <testcase name="testSerialization291" classname="org.joda.time.field.TestScaledDurationField" time="0.002"/>
+  <testcase name="test_equals292" classname="org.joda.time.field.TestScaledDurationField" time="0"/>
+  <testcase name="test_getValue_long_long281" classname="org.joda.time.field.TestScaledDurationField" time="0"/>
+  <testcase name="test_getValueAsLong_long_long282" classname="org.joda.time.field.TestScaledDurationField" time="0.001"/>
+  <testcase name="test_toString307" classname="org.joda.time.field.TestScaledDurationField" time="0"/>
+  <testcase name="test_constructor278" classname="org.joda.time.field.TestScaledDurationField" time="0"/>
+  <testcase name="test_getValue_long279" classname="org.joda.time.field.TestScaledDurationField" time="0.001"/>
+  <testcase name="test_getValueAsLong_long280" classname="org.joda.time.field.TestScaledDurationField" time="0"/>
+  <testcase name="test_getMillis_long283" classname="org.joda.time.field.TestScaledDurationField" time="0"/>
+  <testcase name="test_getMillis_long_long284" classname="org.joda.time.field.TestScaledDurationField" time="0.001"/>
+  <testcase name="test_add_long_int285" classname="org.joda.time.field.TestScaledDurationField" time="0"/>
+  <testcase name="test_add_long_long286" classname="org.joda.time.field.TestScaledDurationField" time="0"/>
+  <testcase name="test_getDifference_long_int287" classname="org.joda.time.field.TestScaledDurationField" time="0"/>
+  <testcase name="testMethodsThatShouldAlwaysReturnNull947" classname="org.joda.time.field.TestUnsupportedDateTimeField" time="0.001"/>
+  <testcase name="testNullValuesToGetInstanceThrowsException944" classname="org.joda.time.field.TestUnsupportedDateTimeField" time="0"/>
+  <testcase name="testToString948" classname="org.joda.time.field.TestUnsupportedDateTimeField" time="0"/>
+  <testcase name="testDelegatedMethods943" classname="org.joda.time.field.TestUnsupportedDateTimeField" time="0.001"/>
+  <testcase name="testPublicGetNameMethod945" classname="org.joda.time.field.TestUnsupportedDateTimeField" time="0"/>
+  <testcase name="testUnsupportedMethods946" classname="org.joda.time.field.TestUnsupportedDateTimeField" time="0"/>
+  <testcase name="testParseLocalDate_yearOfEra128" classname="org.joda.time.format.TestDateTimeFormatter" time="0.002"/>
+  <testcase name="testPrint_appendableMethods616" classname="org.joda.time.format.TestDateTimeFormatter" time="0"/>
+  <testcase name="testParseLocalDate_weekyear_month_week_20111347" classname="org.joda.time.format.TestDateTimeFormatter" time="0.001"/>
+  <testcase name="testPrint_simple534" classname="org.joda.time.format.TestDateTimeFormatter" time="0"/>
+  <testcase name="testParseLocalTime_simple982" classname="org.joda.time.format.TestDateTimeFormatter" time="0.001"/>
+  <testcase name="testPrinterParserMethods1343" classname="org.joda.time.format.TestDateTimeFormatter" time="0.002"/>
+  <testcase name="testParseInto_monthDay_feb29_tokyo_startOfYear1344" classname="org.joda.time.format.TestDateTimeFormatter" time="0"/>
+  <testcase name="testWithGetLocale1345" classname="org.joda.time.format.TestDateTimeFormatter" time="0.001"/>
+  <testcase name="testWithGetZone1349" classname="org.joda.time.format.TestDateTimeFormatter" time="0"/>
+  <testcase name="testParseLocalDate_yearOfCentury1350" classname="org.joda.time.format.TestDateTimeFormatter" time="0.001"/>
+  <testcase name="testWithGetPivotYear1351" classname="org.joda.time.format.TestDateTimeFormatter" time="0.001"/>
+  <testcase name="testParseLocalDate_monthDay_withDefaultYear_feb291352" classname="org.joda.time.format.TestDateTimeFormatter" time="0"/>
+  <testcase name="testParseInto_simple1353" classname="org.joda.time.format.TestDateTimeFormatter" time="0.001"/>
+  <testcase name="testParseInto_offsetParsed1354" classname="org.joda.time.format.TestDateTimeFormatter" time="0.001"/>
+  <testcase name="testParseLocalDateTime_simple1355" classname="org.joda.time.format.TestDateTimeFormatter" time="0.001"/>
+  <testcase name="testParseInto_simple_precedence1395" classname="org.joda.time.format.TestDateTimeFormatter" time="0.001"/>
+  <testcase name="testParseLocalDate_weekyear_month_week_2012219" classname="org.joda.time.format.TestDateTimeFormatter" time="0"/>
+  <testcase name="testParseInto_monthDay_feb29_tokyo271" classname="org.joda.time.format.TestDateTimeFormatter" time="0.001"/>
+  <testcase name="testParseMutableDateTime_zone1348" classname="org.joda.time.format.TestDateTimeFormatter" time="0.001"/>
+  <testcase name="testWithGetOffsetParsedMethods1346" classname="org.joda.time.format.TestDateTimeFormatter" time="0"/>
+  <testcase name="testParseDateTime_simple_precedence964" classname="org.joda.time.format.TestDateTimeFormatter" time="0.001"/>
+  <testcase name="testParseMutableDateTime_offsetParsed414" classname="org.joda.time.format.TestDateTimeFormatter" time="0.001"/>
+  <testcase name="testFormat_weekyearOfEra_twoDigit208" classname="org.joda.time.format.TestDateTimeFormat" time="0.002"/>
+  <testcase name="testFormatParse_textMonthApr_Korean211" classname="org.joda.time.format.TestDateTimeFormat" time="0.003"/>
+  <testcase name="testFormat_clockhourOfDay213" classname="org.joda.time.format.TestDateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_second214" classname="org.joda.time.format.TestDateTimeFormat" time="0.002"/>
+  <testcase name="testFormat_fractionOfSecondLong215" classname="org.joda.time.format.TestDateTimeFormat" time="0"/>
+  <testcase name="testFormatParse_textYear_UK415" classname="org.joda.time.format.TestDateTimeFormat" time="0"/>
+  <testcase name="testFormatParse_textEraAD_France777" classname="org.joda.time.format.TestDateTimeFormat" time="0.001"/>
+  <testcase name="testFormatParse_textMonthJanShort_France808" classname="org.joda.time.format.TestDateTimeFormat" time="0.001"/>
+  <testcase name="testFormatParse_textHalfdayAM_UK840" classname="org.joda.time.format.TestDateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_dayOfWeekText1135" classname="org.joda.time.format.TestDateTimeFormat" time="0"/>
+  <testcase name="testFormat_dayOfWeek216" classname="org.joda.time.format.TestDateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_dayOfWeekShortText217" classname="org.joda.time.format.TestDateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_dayOfYearText218" classname="org.joda.time.format.TestDateTimeFormat" time="0"/>
+  <testcase name="testFormatParse_zoneId_colon220" classname="org.joda.time.format.TestDateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_zoneAmountID221" classname="org.joda.time.format.TestDateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_invalid222" classname="org.joda.time.format.TestDateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_other223" classname="org.joda.time.format.TestDateTimeFormat" time="0"/>
+  <testcase name="testFormat_yearOfEra_twoDigit206" classname="org.joda.time.format.TestDateTimeFormat" time="0.001"/>
+  <testcase name="testSubclassableConstructor204" classname="org.joda.time.format.TestDateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_era205" classname="org.joda.time.format.TestDateTimeFormat" time="0"/>
+  <testcase name="testFormat_monthOfYearShortText212" classname="org.joda.time.format.TestDateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_minute196" classname="org.joda.time.format.TestDateTimeFormat" time="0"/>
+  <testcase name="testFormat_shortBasicParse207" classname="org.joda.time.format.TestDateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_year_long209" classname="org.joda.time.format.TestDateTimeFormat" time="0"/>
+  <testcase name="testFormat_yearOfEra210" classname="org.joda.time.format.TestDateTimeFormat" time="0.001"/>
+  <testcase name="testForStyle_mediumTime200" classname="org.joda.time.format.TestDateTimeFormatStyle" time="0.007"/>
+  <testcase name="testForStyle_shortDate197" classname="org.joda.time.format.TestDateTimeFormatStyle" time="0.002"/>
+  <testcase name="testForStyle_shortTime198" classname="org.joda.time.format.TestDateTimeFormatStyle" time="0.001"/>
+  <testcase name="testForStyle_invalidStrings225" classname="org.joda.time.format.TestDateTimeFormatStyle" time="0"/>
+  <testcase name="testForStyle_stringLengths224" classname="org.joda.time.format.TestDateTimeFormatStyle" time="0"/>
+  <testcase name="testForStyle_fullDate202" classname="org.joda.time.format.TestDateTimeFormatStyle" time="0.001"/>
+  <testcase name="testForStyle_longDate201" classname="org.joda.time.format.TestDateTimeFormatStyle" time="0.001"/>
+  <testcase name="testForStyle_mediumDate199" classname="org.joda.time.format.TestDateTimeFormatStyle" time="0.001"/>
+  <testcase name="testForStyle_shortMediumDateTime1140" classname="org.joda.time.format.TestDateTimeFormatStyle" time="0.001"/>
+  <testcase name="testFormat_basicDateTimeNoMillis889" classname="org.joda.time.format.TestISODateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_weekDate882" classname="org.joda.time.format.TestISODateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_basicTTime886" classname="org.joda.time.format.TestISODateTimeFormat" time="0"/>
+  <testcase name="testFormat_tTimeNoMillis877" classname="org.joda.time.format.TestISODateTimeFormat" time="0"/>
+  <testcase name="testFormat_basicWeekDateTimeNoMillis893" classname="org.joda.time.format.TestISODateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_time_partial875" classname="org.joda.time.format.TestISODateTimeFormat" time="0"/>
+  <testcase name="testFormat_year894" classname="org.joda.time.format.TestISODateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_yearMonth895" classname="org.joda.time.format.TestISODateTimeFormat" time="0"/>
+  <testcase name="testFormat_yearMonthDay896" classname="org.joda.time.format.TestISODateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_weekyear897" classname="org.joda.time.format.TestISODateTimeFormat" time="0"/>
+  <testcase name="testFormat_hourMinuteSecondFraction903" classname="org.joda.time.format.TestISODateTimeFormat" time="0.001"/>
+  <testcase name="testSubclassableConstructor852" classname="org.joda.time.format.TestISODateTimeFormat" time="0"/>
+  <testcase name="testFormat_date874" classname="org.joda.time.format.TestISODateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_basicOrdinalDateTimeNoMillis891" classname="org.joda.time.format.TestISODateTimeFormat" time="0"/>
+  <testcase name="testFormat_hourMinuteSecondMillis902" classname="org.joda.time.format.TestISODateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_weekyearWeek898" classname="org.joda.time.format.TestISODateTimeFormat" time="0"/>
+  <testcase name="testFormat_weekyearWeekDay899" classname="org.joda.time.format.TestISODateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_hourMinute900" classname="org.joda.time.format.TestISODateTimeFormat" time="0"/>
+  <testcase name="testFormat_hourMinuteSecond901" classname="org.joda.time.format.TestISODateTimeFormat" time="0"/>
+  <testcase name="testFormat_dateHourMinute904" classname="org.joda.time.format.TestISODateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_dateHourMinuteSecond905" classname="org.joda.time.format.TestISODateTimeFormat" time="0"/>
+  <testcase name="testFormat_dateHourMinuteSecondMillis906" classname="org.joda.time.format.TestISODateTimeFormat" time="0.001"/>
+  <testcase name="testFormat_dateHourMinuteSecondFraction907" classname="org.joda.time.format.TestISODateTimeFormat" time="0"/>
+  <testcase name="testForFields_datetime_DM864" classname="org.joda.time.format.TestISODateTimeFormat_Fields" time="0.001"/>
+  <testcase name="testForFields_datetime_DH861" classname="org.joda.time.format.TestISODateTimeFormat_Fields" time="0.001"/>
+  <testcase name="testForFields_calBased_YM859" classname="org.joda.time.format.TestISODateTimeFormat_Fields" time="0"/>
+  <testcase name="testForFields_calBased_M860" classname="org.joda.time.format.TestISODateTimeFormat_Fields" time="0.001"/>
+  <testcase name="testForFields_weekBased_Y858" classname="org.joda.time.format.TestISODateTimeFormat_Fields" time="0"/>
+  <testcase name="testForFields_weekBased_YWD856" classname="org.joda.time.format.TestISODateTimeFormat_Fields" time="0.001"/>
+  <testcase name="testForFields_weekBased_D857" classname="org.joda.time.format.TestISODateTimeFormat_Fields" time="0.001"/>
+  <testcase name="testForFields_ordinalBased_YD862" classname="org.joda.time.format.TestISODateTimeFormat_Fields" time="0.001"/>
+  <testcase name="testForFields_weekBased_W863" classname="org.joda.time.format.TestISODateTimeFormat_Fields" time="0"/>
+  <testcase name="testForFields_ordinalBased_D855" classname="org.joda.time.format.TestISODateTimeFormat_Fields" time="0.001"/>
+  <testcase name="testForFields_weekBased_YW195" classname="org.joda.time.format.TestISODateTimeFormat_Fields" time="0"/>
+  <testcase name="testForFields_time_HMm411" classname="org.joda.time.format.TestISODateTimeFormat_Fields" time="0.001"/>
+  <testcase name="testForFields_null853" classname="org.joda.time.format.TestISODateTimeFormat_Fields" time="0"/>
+  <testcase name="testForFields_calBased_YMD_unmodifiable854" classname="org.joda.time.format.TestISODateTimeFormat_Fields" time="0.001"/>
+  <testcase name="testForFields_time_Mm865" classname="org.joda.time.format.TestISODateTimeFormat_Fields" time="0"/>
+  <testcase name="testForFields_time_MS866" classname="org.joda.time.format.TestISODateTimeFormat_Fields" time="0.001"/>
+  <testcase name="test_basicOrdinalDateTime619" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_localTimeParser870" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_timeElementParser871" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_dateOptionalTimeParser872" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_timeParser869" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_localDateOptionalTimeParser873" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_dateParser867" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_dateTime878" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_tTime876" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0"/>
+  <testcase name="test_localDateParser868" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_time1230" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_dateElementParser193" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.002"/>
+  <testcase name="test_weekDateTime618" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_basicTimeNoMillis885" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_basicTTimeNoMillis887" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0"/>
+  <testcase name="test_basicDateTime888" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_basicOrdinalDate890" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_basicWeekDateTime892" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_dateTimeNoMillis879" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_ordinalDate880" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_ordinalDateTimeNoMillis881" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_weekDateTimeNoMillis883" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0.001"/>
+  <testcase name="test_basicTime884" classname="org.joda.time.format.TestISODateTimeFormatParsing" time="0"/>
+  <testcase name="test_append_Printer1129" classname="org.joda.time.format.TestDateTimeFormatterBuilder" time="0.001"/>
+  <testcase name="test_canBuildPrinter1127" classname="org.joda.time.format.TestDateTimeFormatterBuilder" time="0"/>
+  <testcase name="test_canBuildParser1128" classname="org.joda.time.format.TestDateTimeFormatterBuilder" time="0.001"/>
+  <testcase name="test_toParser1125" classname="org.joda.time.format.TestDateTimeFormatterBuilder" time="0"/>
+  <testcase name="test_append_nullPrinter_Parser1124" classname="org.joda.time.format.TestDateTimeFormatterBuilder" time="0.001"/>
+  <testcase name="test_appendOptional_Parser1132" classname="org.joda.time.format.TestDateTimeFormatterBuilder" time="0"/>
+  <testcase name="test_printParseZoneParis1136" classname="org.joda.time.format.TestDateTimeFormatterBuilder" time="0.002"/>
+  <testcase name="test_printParseOffset578" classname="org.joda.time.format.TestDateTimeFormatterBuilder" time="0.001"/>
+  <testcase name="test_append_Parser1130" classname="org.joda.time.format.TestDateTimeFormatterBuilder" time="0"/>
+  <testcase name="test_toPrinter1123" classname="org.joda.time.format.TestDateTimeFormatterBuilder" time="0.001"/>
+  <testcase name="test_append_Printer_nullParser1131" classname="org.joda.time.format.TestDateTimeFormatterBuilder" time="0"/>
+  <testcase name="test_canBuildFormatter1126" classname="org.joda.time.format.TestDateTimeFormatterBuilder" time="0"/>
+  <testcase name="test_appendFixedSignedDecimal1134" classname="org.joda.time.format.TestDateTimeFormatterBuilder" time="0.002"/>
+  <testcase name="test_parseWrongOffset203" classname="org.joda.time.format.TestDateTimeFormatterBuilder" time="0.001"/>
+  <testcase name="test_appendFixedDecimal412" classname="org.joda.time.format.TestDateTimeFormatterBuilder" time="0.001"/>
+  <testcase name="testWithGetParseTypeMethods646" classname="org.joda.time.format.TestPeriodFormatter" time="0"/>
+  <testcase name="testPrint_bufferMethods647" classname="org.joda.time.format.TestPeriodFormatter" time="0.001"/>
+  <testcase name="testWithGetLocaleMethods644" classname="org.joda.time.format.TestPeriodFormatter" time="0"/>
+  <testcase name="testParsePeriod_parseType847" classname="org.joda.time.format.TestPeriodFormatter" time="0.001"/>
+  <testcase name="testPrinterParserMethods645" classname="org.joda.time.format.TestPeriodFormatter" time="0.001"/>
+  <testcase name="testSubclassableConstructor765" classname="org.joda.time.format.TestPeriodFormat" time="0.027"/>
+  <testcase name="test_getDefault_cached766" classname="org.joda.time.format.TestPeriodFormat" time="0.002"/>
+  <testcase name="test_wordBased_es_parseTwoFields180" classname="org.joda.time.format.TestPeriodFormat" time="0"/>
+  <testcase name="test_wordBased_de_FormatOneField768" classname="org.joda.time.format.TestPeriodFormat" time="0.002"/>
+  <testcase name="test_wordBased_default767" classname="org.joda.time.format.TestPeriodFormat" time="0.001"/>
+  <testcase name="test_wordBased_nl_formatStandard769" classname="org.joda.time.format.TestPeriodFormat" time="0.003"/>
+  <testcase name="test_getDefault_checkRedundantSeparator187" classname="org.joda.time.format.TestPeriodFormat" time="0.001"/>
+  <testcase name="test_wordBased_nl_parseTwoFields95" classname="org.joda.time.format.TestPeriodFormat" time="0"/>
+  <testcase name="testFormatAlternateExtendedWithWeeks257" classname="org.joda.time.format.TestISOPeriodFormat" time="0.003"/>
+  <testcase name="testFormatStandard_negative182" classname="org.joda.time.format.TestISOPeriodFormat" time="0.002"/>
+  <testcase name="testSubclassableConstructor252" classname="org.joda.time.format.TestISOPeriodFormat" time="0.001"/>
+  <testcase name="testFormatAlternate254" classname="org.joda.time.format.TestISOPeriodFormat" time="0.001"/>
+  <testcase name="testFormatAlternateExtended255" classname="org.joda.time.format.TestISOPeriodFormat" time="0.001"/>
+  <testcase name="testFormatAlternateWithWeeks256" classname="org.joda.time.format.TestISOPeriodFormat" time="0.001"/>
+  <testcase name="testParseStandardFail1188" classname="org.joda.time.format.TestISOPeriodFormatParsing" time="0.001"/>
+  <testcase name="testParseStandard4253" classname="org.joda.time.format.TestISOPeriodFormatParsing" time="0.001"/>
+  <testcase name="testParseStandardFail3184" classname="org.joda.time.format.TestISOPeriodFormatParsing" time="0"/>
+  <testcase name="testParseCustom167" classname="org.joda.time.format.TestPeriodFormatParsing" time="0.002"/>
+  <testcase name="testFormatPrefixSimple2158" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0"/>
+  <testcase name="testBug2495455160" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0.001"/>
+  <testcase name="testFormatAppend_PrinterParser_null_null161" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0"/>
+  <testcase name="testFormatSuffixPlural268" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0.001"/>
+  <testcase name="testFormatSuffixSimple2169" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0"/>
+  <testcase name="testFormatSuffixSimple3170" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0.001"/>
+  <testcase name="testFormatSuffixPlural3171" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0"/>
+  <testcase name="testFormatSuffixPlural4172" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0"/>
+  <testcase name="testFormatSeparatorSimple173" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0.001"/>
+  <testcase name="testFormatSeparatorIfFieldsBefore175" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0.001"/>
+  <testcase name="testFormatSeparatorComplex176" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0"/>
+  <testcase name="testFormatAppend_PrinterParser_null_Parser177" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0.001"/>
+  <testcase name="testFormatAppend_PrinterParser_Printer_null178" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0"/>
+  <testcase name="testFormatSecondsWithOptionalMillis181" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0.001"/>
+  <testcase name="testFormatAppend_PrinterParser_PrinterParser183" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0.001"/>
+  <testcase name="testFormatPrintZeroRarelyFirst164" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0"/>
+  <testcase name="testFormatPrintZeroRarelyFirstSeconds168" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0.001"/>
+  <testcase name="testFormatSeparatorIfFieldsAfter174" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0"/>
+  <testcase name="testFormatAppend_PrinterParserThenClear159" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0"/>
+  <testcase name="testFormatMinDigits162" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0.001"/>
+  <testcase name="testFormatPrintZeroRarelyLast163" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0"/>
+  <testcase name="testFormatPrintZeroAlways165" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0.001"/>
+  <testcase name="testFormatPrintZeroNever166" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0.001"/>
+  <testcase name="testFormatSuffixPlural1167" classname="org.joda.time.format.TestPeriodFormatterBuilder" time="0.001"/>
+  <testcase name="warning" classname="junit.framework.TestSuite$1" time="0.001">
+    <failure message="No tests found in org.joda.time.format.TestTextFields" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: No tests found in org.joda.time.format.TestTextFields
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</failure>
+  </testcase>
+  <testcase name="testGetAvailableIDs1341" classname="org.joda.time.tz.TestUTCProvider" time="0.001"/>
+  <testcase name="testGetZone_String1342" classname="org.joda.time.tz.TestUTCProvider" time="0"/>
+  <testcase name="testFixed260" classname="org.joda.time.tz.TestBuilder" time="0.001"/>
+  <testcase name="testID542" classname="org.joda.time.tz.TestBuilder" time="0.011"/>
+  <testcase name="testCompile262" classname="org.joda.time.tz.TestCompiler" time="0.085"/>
+  <testcase name="testDateTimeZoneBuilder263" classname="org.joda.time.tz.TestCompiler" time="0.002"/>
+  <testcase name="test_2400_fromDay924" classname="org.joda.time.tz.TestCompiler" time="0"/>
+  <testcase name="testSerialization275" classname="org.joda.time.tz.TestCachedDateTimeZone" time="0.001"/>
+  <testcase name="testEquals935" classname="org.joda.time.tz.TestFixedDateTimeZone" time="0"/>
+  <testcase name="testHashCode932" classname="org.joda.time.tz.TestFixedDateTimeZone" time="0.001"/>
+  <testcase name="testToTimeZone2933" classname="org.joda.time.tz.TestFixedDateTimeZone" time="0"/>
+  <testcase name="testToTimeZone1934" classname="org.joda.time.tz.TestFixedDateTimeZone" time="0.001"/>
+</testsuite>

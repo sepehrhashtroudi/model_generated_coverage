@@ -1,0 +1,78 @@
+Testsuite: org.apache.commons.lang3.ConversionTest
+Tests run: 13, Failures: 10, Errors: 2, Skipped: 0, Time elapsed: 0.047 sec
+
+Testcase: testHexToByte519 took 0.022 sec
+	Caused an ERROR
+(nHexs-1)*4+dstPos is greather or equal to than 8
+java.lang.IllegalArgumentException: (nHexs-1)*4+dstPos is greather or equal to than 8
+	at org.apache.commons.lang3.Conversion.hexToByte(Conversion.java:1009)
+	at org.apache.commons.lang3.ConversionTest.testHexToByte519(ConversionTest.java:96)
+
+Testcase: testHexToByte520 took 0 sec
+	Caused an ERROR
+(nHexs-1)*4+dstPos is greather or equal to than 8
+java.lang.IllegalArgumentException: (nHexs-1)*4+dstPos is greather or equal to than 8
+	at org.apache.commons.lang3.Conversion.hexToByte(Conversion.java:1009)
+	at org.apache.commons.lang3.ConversionTest.testHexToByte520(ConversionTest.java:106)
+
+Testcase: testHexDigitToInt515 took 0.001 sec
+	FAILED
+Thrown java.lang.IllegalArgumentException expected
+junit.framework.AssertionFailedError: Thrown java.lang.IllegalArgumentException expected
+	at org.apache.commons.lang3.ConversionTest.testHexDigitToInt515(ConversionTest.java:47)
+
+Testcase: testByteArrayToShort518 took 0 sec
+	FAILED
+expected:<12> but was:<205>
+junit.framework.AssertionFailedError: expected:<12> but was:<205>
+	at org.apache.commons.lang3.ConversionTest.testByteArrayToShort518(ConversionTest.java:81)
+
+Testcase: testBinaryToInt525 took 0 sec
+	FAILED
+expected:<205> but was:<12>
+junit.framework.AssertionFailedError: expected:<205> but was:<12>
+	at org.apache.commons.lang3.ConversionTest.testBinaryToInt525(ConversionTest.java:156)
+
+Testcase: testBinaryToInt526 took 0 sec
+	FAILED
+expected:<205> but was:<12>
+junit.framework.AssertionFailedError: expected:<205> but was:<12>
+	at org.apache.commons.lang3.ConversionTest.testBinaryToInt526(ConversionTest.java:166)
+
+Testcase: testBinaryToInt527 took 0.001 sec
+	FAILED
+expected:<205> but was:<12>
+junit.framework.AssertionFailedError: expected:<205> but was:<12>
+	at org.apache.commons.lang3.ConversionTest.testBinaryToInt527(ConversionTest.java:176)
+
+Testcase: testBinaryToInt528 took 0 sec
+	FAILED
+expected:<205> but was:<12>
+junit.framework.AssertionFailedError: expected:<205> but was:<12>
+	at org.apache.commons.lang3.ConversionTest.testBinaryToInt528(ConversionTest.java:186)
+
+Testcase: testByteToHex517 took 0 sec
+Testcase: testBinaryToLong521 took 0 sec
+	FAILED
+expected:<205> but was:<12>
+junit.framework.AssertionFailedError: expected:<205> but was:<12>
+	at org.apache.commons.lang3.ConversionTest.testBinaryToLong521(ConversionTest.java:112)
+
+Testcase: testBinaryToLong522 took 0 sec
+	FAILED
+expected:<205> but was:<12>
+junit.framework.AssertionFailedError: expected:<205> but was:<12>
+	at org.apache.commons.lang3.ConversionTest.testBinaryToLong522(ConversionTest.java:123)
+
+Testcase: testBinaryToLong523 took 0 sec
+	FAILED
+expected:<205> but was:<12>
+junit.framework.AssertionFailedError: expected:<205> but was:<12>
+	at org.apache.commons.lang3.ConversionTest.testBinaryToLong523(ConversionTest.java:134)
+
+Testcase: testBinaryToLong524 took 0 sec
+	FAILED
+expected:<205> but was:<12>
+junit.framework.AssertionFailedError: expected:<205> but was:<12>
+	at org.apache.commons.lang3.ConversionTest.testBinaryToLong524(ConversionTest.java:145)
+

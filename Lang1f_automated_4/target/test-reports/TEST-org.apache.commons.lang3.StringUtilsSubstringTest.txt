@@ -1,0 +1,15 @@
+Testsuite: org.apache.commons.lang3.StringUtilsSubstringTest
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
+
+Testcase: testSubstring_StringIntInt505 took 0.025 sec
+	FAILED
+expected:<[bar]> but was:<[o]>
+junit.framework.AssertionFailedError: expected:<[bar]> but was:<[o]>
+	at org.apache.commons.lang3.StringUtilsSubstringTest.testSubstring_StringIntInt505(StringUtilsSubstringTest.java:49)
+
+Testcase: testSubstringAfterLast_StringString508 took 0 sec
+	FAILED
+expected:<ba[rXXba]z> but was:<ba[]z>
+junit.framework.AssertionFailedError: expected:<ba[rXXba]z> but was:<ba[]z>
+	at org.apache.commons.lang3.StringUtilsSubstringTest.testSubstringAfterLast_StringString508(StringUtilsSubstringTest.java:55)
+

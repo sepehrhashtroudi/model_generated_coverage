@@ -1,0 +1,41 @@
+Testsuite: org.apache.commons.lang3.ClassUtilsTest
+Tests run: 28, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
+
+Testcase: testGetClassInvalidArguments201 took 0.027 sec
+Testcase: test_getShortClassName_Class180 took 0.003 sec
+	FAILED
+expected:<ClassUtilsTest.[2]> but was:<ClassUtilsTest.[3]>
+junit.framework.AssertionFailedError: expected:<ClassUtilsTest.[2]> but was:<ClassUtilsTest.[3]>
+	at org.apache.commons.lang3.ClassUtilsTest.test_getShortClassName_Class180(ClassUtilsTest.java:112)
+
+Testcase: test_getSimpleName_Object183 took 0.001 sec
+Testcase: testToClass_object204 took 0.004 sec
+Testcase: test_isAssignable_Unboxing_Widening194 took 0.001 sec
+Testcase: testWithInterleavingWhitespace203 took 0 sec
+Testcase: testWrappersToPrimitivesNull196 took 0 sec
+Testcase: test_getSimpleName_Class184 took 0.001 sec
+Testcase: test_getShortClassName_Object179 took 0 sec
+	FAILED
+expected:<ClassUtilsTest.[1]> but was:<ClassUtilsTest.[2]>
+junit.framework.AssertionFailedError: expected:<ClassUtilsTest.[1]> but was:<ClassUtilsTest.[2]>
+	at org.apache.commons.lang3.ClassUtilsTest.test_getShortClassName_Object179(ClassUtilsTest.java:79)
+
+Testcase: testGetClassRawPrimitives199 took 0 sec
+Testcase: testGetClassClassNotFound200 took 0 sec
+Testcase: testGetClassWithArrayClasses198 took 0.001 sec
+Testcase: test_getPackageCanonicalName_Class205 took 0 sec
+Testcase: test_getShortCanonicalName_String181 took 0 sec
+Testcase: testPrimitivesToWrappers195 took 0.001 sec
+Testcase: test_isAssignable_ClassArray_ClassArray_NoAutoboxing191 took 0.001 sec
+Testcase: test_getShortClassName_String182 took 0 sec
+Testcase: test_isAssignable193 took 0.002 sec
+Testcase: test_getPackageName_Object185 took 0 sec
+Testcase: test_isInnerClass_Class197 took 0 sec
+Testcase: test_getPackageCanonicalName_Object178 took 0.001 sec
+Testcase: test_convertClassNamesToClasses_List188 took 0.001 sec
+Testcase: test_convertClassesToClassNames_List189 took 0 sec
+Testcase: testIsPrimitiveOrWrapper192 took 0 sec
+Testcase: testGetPublicMethod202 took 0.001 sec
+Testcase: test_isAssignable_ClassArray_ClassArray190 took 0 sec
+Testcase: test_getPackageName_String186 took 0 sec
+Testcase: test_getAllSuperclasses_Class187 took 0 sec

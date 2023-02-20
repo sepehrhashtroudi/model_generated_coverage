@@ -1,0 +1,7 @@
+Testsuite: org.apache.commons.lang3.exception.DefaultExceptionContextTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec
+
+Testcase: testFormattedExceptionMessageNull635 took 0.022 sec
+Testcase: testJavaSerialization768 took 0.027 sec
+Testcase: testGetContextValues155 took 0 sec
+Testcase: testGetContextLabels634 took 0.001 sec

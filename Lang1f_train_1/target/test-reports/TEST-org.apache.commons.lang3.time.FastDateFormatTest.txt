@@ -1,0 +1,12 @@
+Testsuite: org.apache.commons.lang3.time.FastDateFormatTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.105 sec
+------------- Standard Output ---------------
+>>FastDateFormatTest: FastDateParser:3373  SimpleDateFormat:4094
+------------- ---------------- ---------------
+
+Testcase: test_getInstance_String_TimeZone719 took 0.037 sec
+Testcase: test_getInstance386 took 0.003 sec
+Testcase: test_getInstance_String_Locale387 took 0.002 sec
+Testcase: testDateDefaults388 took 0.003 sec
+Testcase: testCheckDefaults720 took 0 sec
+Testcase: testParseSync242 took 1.048 sec

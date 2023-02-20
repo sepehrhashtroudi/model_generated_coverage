@@ -1,0 +1,36 @@
+Testsuite: org.apache.commons.lang3.time.DateUtilsTest
+Tests run: 6, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec
+------------- Standard Output ---------------
+DateUtilsTest: Default Locale=en_US
+------------- ---------------- ---------------
+
+Testcase: testAddHours145 took 0.028 sec
+	FAILED
+expected:<6> but was:<5>
+junit.framework.AssertionFailedError: expected:<6> but was:<5>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:308)
+	at org.apache.commons.lang3.time.DateUtilsTest.testAddHours145(DateUtilsTest.java:184)
+
+Testcase: testMonthIterator156 took 0.014 sec
+Testcase: testCEiling153 took 0.005 sec
+	FAILED
+expected:<2000> but was:<1>
+junit.framework.AssertionFailedError: expected:<2000> but was:<1>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:306)
+	at org.apache.commons.lang3.time.DateUtilsTest.testCEiling153(DateUtilsTest.java:213)
+
+Testcase: testConstructor143 took 0.003 sec
+Testcase: testCeiling151 took 0.003 sec
+	FAILED
+expected:<2000> but was:<1>
+junit.framework.AssertionFailedError: expected:<2000> but was:<1>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:306)
+	at org.apache.commons.lang3.time.DateUtilsTest.testCeiling151(DateUtilsTest.java:196)
+
+Testcase: testAddWeeks144 took 0.002 sec
+	FAILED
+expected:<4> but was:<12>
+junit.framework.AssertionFailedError: expected:<4> but was:<12>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:308)
+	at org.apache.commons.lang3.time.DateUtilsTest.testAddWeeks144(DateUtilsTest.java:168)
+

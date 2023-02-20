@@ -1,0 +1,12 @@
+Testsuite: org.apache.commons.lang3.ObjectUtilsTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec
+
+Testcase: testCloneOfPrimitiveArray430 took 0.02 sec
+Testcase: testConstructor426 took 0 sec
+Testcase: testIdentityToStringStringBuilder427 took 0 sec
+Testcase: testMode429 took 0.017 sec
+	FAILED
+expected same:<Thu Feb 16 21:13:52 MST 2023> was not:<null>
+junit.framework.AssertionFailedError: expected same:<Thu Feb 16 21:13:52 MST 2023> was not:<null>
+	at org.apache.commons.lang3.ObjectUtilsTest.testMode429(ObjectUtilsTest.java:94)
+

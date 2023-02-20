@@ -1,0 +1,8 @@
+Testsuite: org.apache.commons.lang3.RandomStringUtilsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+
+Testcase: testExceptions358 took 0.02 sec
+Testcase: testConstructor355 took 0 sec
+Testcase: testLANG805359 took 0 sec
+Testcase: testLang100356 took 0.009 sec
+Testcase: testRandomStringUtils357 took 0.002 sec

@@ -1,0 +1,12 @@
+Testsuite: org.apache.commons.lang3.LocaleUtilsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
+
+Testcase: testToLocale_3Part458 took 0.037 sec
+Testcase: testToLocale_1Part457 took 0 sec
+Testcase: testLanguagesByCountry464 took 0.001 sec
+Testcase: testToLocale_2Part459 took 0.001 sec
+Testcase: testLocaleLookupList_LocaleLocale461 took 0 sec
+Testcase: testLang328460 took 0 sec
+Testcase: testLang865456 took 0 sec
+Testcase: testCountriesByLanguage462 took 0.001 sec
+Testcase: testIsAvailableLocale463 took 0 sec

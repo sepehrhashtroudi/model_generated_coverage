@@ -1,0 +1,21 @@
+Testsuite: org.apache.commons.lang3.mutable.MutableFloatTest
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+
+Testcase: testDecrement55 took 0.019 sec
+Testcase: testGetSet52 took 0 sec
+Testcase: testSubtractValueObject57 took 0.002 sec
+	FAILED
+expected:<0.1> but was:<-0.100000024>
+junit.framework.AssertionFailedError: expected:<0.1> but was:<-0.100000024>
+	at org.apache.commons.lang3.mutable.MutableFloatTest.testSubtractValueObject57(MutableFloatTest.java:95)
+
+Testcase: testSubtractValuePrimitive56 took 0 sec
+	FAILED
+expected:<0.1> but was:<-0.100000024>
+junit.framework.AssertionFailedError: expected:<0.1> but was:<-0.100000024>
+	at org.apache.commons.lang3.mutable.MutableFloatTest.testSubtractValuePrimitive56(MutableFloatTest.java:89)
+
+Testcase: testNanInfinite53 took 0 sec
+Testcase: testIncrement54 took 0 sec
+Testcase: testConstructors50 took 0 sec
+Testcase: testConstructors51 took 0 sec

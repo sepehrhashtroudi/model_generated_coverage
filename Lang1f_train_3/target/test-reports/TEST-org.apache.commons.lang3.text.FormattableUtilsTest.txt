@@ -1,0 +1,7 @@
+Testsuite: org.apache.commons.lang3.text.FormattableUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+
+Testcase: testDefaultAppend363 took 0.021 sec
+Testcase: testEllipsis365 took 0 sec
+Testcase: testAlternatePadCharacter364 took 0.001 sec
+Testcase: testAlternatePadCharAndEllipsis366 took 0 sec

@@ -1,0 +1,13 @@
+Testsuite: org.apache.commons.lang3.mutable.MutableIntTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+
+Testcase: testConstructors848 took 0.019 sec
+Testcase: testToString857 took 0 sec
+Testcase: testAddValuePrimitive852 took 0 sec
+Testcase: testDecrement851 took 0 sec
+Testcase: testSubtractValuePrimitive853 took 0 sec
+Testcase: testIncrement850 took 0 sec
+Testcase: testSubtractValueObject854 took 0 sec
+Testcase: testHashCode856 took 0 sec
+Testcase: testGetSet849 took 0 sec
+Testcase: testPrimitiveValues855 took 0 sec

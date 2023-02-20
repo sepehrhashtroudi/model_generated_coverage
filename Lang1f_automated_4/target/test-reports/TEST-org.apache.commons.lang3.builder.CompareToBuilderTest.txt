@@ -1,0 +1,18 @@
+Testsuite: org.apache.commons.lang3.builder.CompareToBuilderTest
+Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.038 sec
+
+Testcase: testReflectionFloatArray482 took 0.02 sec
+Testcase: testRaggedArray485 took 0 sec
+Testcase: testMultiIntArray484 took 0 sec
+Testcase: testReflectionObject483 took 0.001 sec
+	Caused an ERROR
+org.apache.commons.lang3.builder.CompareToBuilderTest cannot be cast to org.apache.commons.lang3.builder.CompareToBuilderTest$TestObject
+java.lang.ClassCastException: org.apache.commons.lang3.builder.CompareToBuilderTest cannot be cast to org.apache.commons.lang3.builder.CompareToBuilderTest$TestObject
+	at org.apache.commons.lang3.builder.CompareToBuilderTest$TestObject.compareTo(CompareToBuilderTest.java:35)
+	at org.apache.commons.lang3.builder.CompareToBuilder.append(CompareToBuilder.java:443)
+	at org.apache.commons.lang3.builder.CompareToBuilder.append(CompareToBuilder.java:370)
+	at org.apache.commons.lang3.builder.CompareToBuilderTest.testReflectionObject483(CompareToBuilderTest.java:139)
+
+Testcase: testIntArray487 took 0 sec
+Testcase: testReflectionCompareEx2481 took 0 sec
+Testcase: testShortArray486 took 0 sec

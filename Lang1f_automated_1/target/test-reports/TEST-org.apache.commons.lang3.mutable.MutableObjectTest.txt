@@ -1,0 +1,10 @@
+Testsuite: org.apache.commons.lang3.mutable.MutableObjectTest
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+
+Testcase: testToString141 took 0.021 sec
+	FAILED
+expected:<[ALPHA]> but was:<[BAR]>
+junit.framework.AssertionFailedError: expected:<[ALPHA]> but was:<[BAR]>
+	at org.apache.commons.lang3.mutable.MutableObjectTest.testToString141(MutableObjectTest.java:37)
+
+Testcase: testToString142 took 0 sec

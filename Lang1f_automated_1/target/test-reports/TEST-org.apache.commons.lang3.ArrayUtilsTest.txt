@@ -1,0 +1,89 @@
+Testsuite: org.apache.commons.lang3.ArrayUtilsTest
+Tests run: 41, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec
+
+Testcase: testIndexOfBoolean203 took 0.033 sec
+	FAILED
+expected:<2> but was:<0>
+junit.framework.AssertionFailedError: expected:<2> but was:<0>
+	at org.apache.commons.lang3.ArrayUtilsTest.testIndexOfBoolean203(ArrayUtilsTest.java:346)
+
+Testcase: testIndexOfBoolean204 took 0 sec
+	FAILED
+expected:<2> but was:<0>
+junit.framework.AssertionFailedError: expected:<2> but was:<0>
+	at org.apache.commons.lang3.ArrayUtilsTest.testIndexOfBoolean204(ArrayUtilsTest.java:358)
+
+Testcase: testReverseLong194 took 0 sec
+	FAILED
+expected:<0> but was:<2>
+junit.framework.AssertionFailedError: expected:<0> but was:<2>
+	at org.apache.commons.lang3.ArrayUtilsTest.testReverseLong194(ArrayUtilsTest.java:242)
+
+Testcase: testIndexOfShortWithStartIndex198 took 0 sec
+Testcase: testNullToEmptyLong180 took 0 sec
+Testcase: testReverseBoolean195 took 0 sec
+Testcase: testIsEmptyChar216 took 0 sec
+Testcase: testIsEmptyChar217 took 0 sec
+Testcase: testIsEmptyShort215 took 0 sec
+Testcase: testIndexOfByte201 took 0 sec
+Testcase: testNullToEmptyChar181 took 0 sec
+Testcase: testSameLength191 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsTest.testSameLength191(ArrayUtilsTest.java:184)
+
+Testcase: testIndexOfChar199 took 0 sec
+Testcase: testIsEmptyBoolean220 took 0 sec
+Testcase: testCloneShort179 took 0 sec
+Testcase: testToString_Object176 took 0 sec
+	FAILED
+expected:<null> but was:<{}>
+junit.framework.AssertionFailedError: expected:<null> but was:<{}>
+	at org.apache.commons.lang3.ArrayUtilsTest.testToString_Object176(ArrayUtilsTest.java:57)
+
+Testcase: testToString_Object177 took 0 sec
+	FAILED
+expected:<null> but was:<{}>
+junit.framework.AssertionFailedError: expected:<null> but was:<{}>
+	at org.apache.commons.lang3.ArrayUtilsTest.testToString_Object177(ArrayUtilsTest.java:69)
+
+Testcase: testToPrimitive_double210 took 0 sec
+Testcase: testToPrimitive_float_float212 took 0 sec
+Testcase: testIndexOfByteWithStartIndex202 took 0 sec
+Testcase: testToObject_int207 took 0.002 sec
+Testcase: testNullToEmptyByteObject185 took 0 sec
+Testcase: testNullToEmptyByteObject186 took 0 sec
+Testcase: testToPrimitive_short_short208 took 0 sec
+Testcase: testLastIndexOfChar200 took 0 sec
+	FAILED
+expected:<0> but was:<4>
+junit.framework.AssertionFailedError: expected:<0> but was:<4>
+	at org.apache.commons.lang3.ArrayUtilsTest.testLastIndexOfChar200(ArrayUtilsTest.java:309)
+
+Testcase: testSameLengthObject192 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsTest.testSameLengthObject192(ArrayUtilsTest.java:207)
+
+Testcase: testToObject_short209 took 0 sec
+Testcase: testNullToEmptyShortObject184 took 0 sec
+Testcase: testConstructor173 took 0 sec
+Testcase: testToObject_long206 took 0 sec
+Testcase: testContainsBoolean205 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsTest.testContainsBoolean205(ArrayUtilsTest.java:371)
+
+Testcase: testRemoveElementLongArray213 took 0.001 sec
+Testcase: testSameLengthShort193 took 0 sec
+Testcase: testNullToEmptyBoolean182 took 0 sec
+Testcase: testIsEmptyFloat219 took 0.001 sec
+Testcase: testIndexOfInt196 took 0 sec
+Testcase: testIndexOfShort197 took 0 sec
+Testcase: testToPrimitive_float211 took 0 sec
+Testcase: testIsEmptyInt214 took 0 sec
+Testcase: testNullToEmptyLongObject183 took 0 sec
+Testcase: testNullToEmptyFloatObject187 took 0 sec

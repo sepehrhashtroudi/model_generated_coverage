@@ -1,0 +1,58 @@
+Testsuite: org.apache.commons.lang3.CharUtilsTest
+Tests run: 9, Failures: 8, Errors: 1, Skipped: 0, Time elapsed: 0.06 sec
+
+Testcase: testToChar_Character341 took 0.021 sec
+	FAILED
+expected same:<A> was not:<A>
+junit.framework.AssertionFailedError: expected same:<A> was not:<A>
+	at org.apache.commons.lang3.CharUtilsTest.testToChar_Character341(CharUtilsTest.java:138)
+
+Testcase: testToCharacterObject_Character335 took 0 sec
+	FAILED
+expected same:<A> was not:<A>
+junit.framework.AssertionFailedError: expected same:<A> was not:<A>
+	at org.apache.commons.lang3.CharUtilsTest.testToCharacterObject_Character335(CharUtilsTest.java:44)
+
+Testcase: testToCharacterObject_String336 took 0.007 sec
+	FAILED
+expected same:<D> was not:<d>
+junit.framework.AssertionFailedError: expected same:<D> was not:<d>
+	at org.apache.commons.lang3.CharUtilsTest.testToCharacterObject_String336(CharUtilsTest.java:52)
+
+Testcase: testToCharacterObject_String337 took 0 sec
+	FAILED
+expected same:<D> was not:<d>
+junit.framework.AssertionFailedError: expected same:<D> was not:<d>
+	at org.apache.commons.lang3.CharUtilsTest.testToCharacterObject_String337(CharUtilsTest.java:74)
+
+Testcase: testToCharacterObject_String338 took 0 sec
+	FAILED
+expected same:<D> was not:<d>
+junit.framework.AssertionFailedError: expected same:<D> was not:<d>
+	at org.apache.commons.lang3.CharUtilsTest.testToCharacterObject_String338(CharUtilsTest.java:96)
+
+Testcase: testToCharacterObject_String339 took 0 sec
+	FAILED
+expected same:<D> was not:<d>
+junit.framework.AssertionFailedError: expected same:<D> was not:<d>
+	at org.apache.commons.lang3.CharUtilsTest.testToCharacterObject_String339(CharUtilsTest.java:118)
+
+Testcase: testToChar_String342 took 0.001 sec
+	Caused an ERROR
+The String must not be empty
+java.lang.IllegalArgumentException: The String must not be empty
+	at org.apache.commons.lang3.CharUtils.toChar(CharUtils.java:174)
+	at org.apache.commons.lang3.CharUtilsTest.testToChar_String342(CharUtilsTest.java:145)
+
+Testcase: testToChar_String343 took 0 sec
+	FAILED
+expected:<97> but was:<65>
+junit.framework.AssertionFailedError: expected:<97> but was:<65>
+	at org.apache.commons.lang3.CharUtilsTest.testToChar_String343(CharUtilsTest.java:153)
+
+Testcase: testToChar_String344 took 0.001 sec
+	FAILED
+expected:<97> but was:<65>
+junit.framework.AssertionFailedError: expected:<97> but was:<65>
+	at org.apache.commons.lang3.CharUtilsTest.testToChar_String344(CharUtilsTest.java:162)
+

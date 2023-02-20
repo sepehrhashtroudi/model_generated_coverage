@@ -1,0 +1,9 @@
+Testsuite: org.apache.commons.lang3.StringUtilsStartsEndsWithTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+
+Testcase: testEndsWithAny_StringStringArray574 took 0.029 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsStartsEndsWithTest.testEndsWithAny_StringStringArray574(StringUtilsStartsEndsWithTest.java:50)
+

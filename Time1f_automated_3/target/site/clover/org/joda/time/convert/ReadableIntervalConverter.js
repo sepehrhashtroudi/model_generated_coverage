@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":116,"id":12860,"methods":[{"el":43,"sc":5,"sl":41},{"el":53,"sc":5,"sl":51},{"el":72,"sc":5,"sl":63},{"el":87,"sc":5,"sl":85},{"el":106,"sc":5,"sl":98},{"el":114,"sc":5,"sl":112}],"name":"ReadableIntervalConverter","sl":30}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_134":{"methods":[{"sl":112}],"name":"testIntervalParse_noFormatter123","pass":true,"statements":[{"sl":113}]},"test_194":{"methods":[{"sl":112}],"name":"testWithPeriodType3353","pass":true,"statements":[{"sl":113}]},"test_20":{"methods":[{"sl":112}],"name":"testToMutablePeriod193","pass":false,"statements":[{"sl":113}]},"test_308":{"methods":[{"sl":112}],"name":"testParseCustom1155","pass":true,"statements":[{"sl":113}]},"test_321":{"methods":[{"sl":98}],"name":"testSetIntoInterval_Object2600","pass":true,"statements":[{"sl":99},{"sl":100},{"sl":101},{"sl":102}]},"test_391":{"methods":[{"sl":112}],"name":"testGetPeriodConverterRemovedNull181","pass":true,"statements":[{"sl":113}]},"test_51":{"methods":[{"sl":85},{"sl":112}],"name":"testConstructor_Object_Chronology1336","pass":true,"statements":[{"sl":86},{"sl":113}]},"test_79":{"methods":[{"sl":41}],"name":"testConstructor_nullObject622","pass":true,"statements":[{"sl":42}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [79], [79], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [51], [51], [], [], [], [], [], [], [], [], [], [], [], [321], [321], [321], [321], [321], [], [], [], [], [], [], [], [], [], [20, 194, 308, 391, 51, 134], [20, 194, 308, 391, 51, 134], [], [], []]

@@ -1,0 +1,6 @@
+Testsuite: org.apache.commons.lang3.mutable.MutableDoubleTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+
+Testcase: testNanInfinite488 took 0.027 sec
+Testcase: testCompareTo490 took 0 sec
+Testcase: testHashCode489 took 0 sec

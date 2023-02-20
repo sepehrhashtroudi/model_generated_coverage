@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":91,"id":12816,"methods":[{"el":43,"sc":5,"sl":41},{"el":57,"sc":5,"sl":55},{"el":79,"sc":5,"sl":71},{"el":89,"sc":5,"sl":87}],"name":"ReadableDurationConverter","sl":30}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_102":{"methods":[{"sl":87}],"name":"testFactory_parseHours_String428","pass":false,"statements":[{"sl":88}]},"test_166":{"methods":[{"sl":41}],"name":"testConstructor_Object_nullChronology224","pass":true,"statements":[{"sl":42}]},"test_239":{"methods":[{"sl":71}],"name":"testSetIntoPeriod_Object1351","pass":false,"statements":[{"sl":72},{"sl":73},{"sl":74},{"sl":75},{"sl":76},{"sl":77}]},"test_250":{"methods":[{"sl":71}],"name":"testSetIntoPeriod_Object1352","pass":true,"statements":[{"sl":72},{"sl":73},{"sl":74},{"sl":75},{"sl":76},{"sl":77}]},"test_286":{"methods":[{"sl":71},{"sl":87}],"name":"testToPeriod563","pass":true,"statements":[{"sl":72},{"sl":73},{"sl":74},{"sl":75},{"sl":76},{"sl":77},{"sl":88}]},"test_289":{"methods":[{"sl":87}],"name":"testToString353","pass":true,"statements":[{"sl":88}]},"test_372":{"methods":[{"sl":87}],"name":"testSupportedType354","pass":true,"statements":[{"sl":88}]},"test_99":{"methods":[{"sl":87}],"name":"testConstructor_Object_PeriodType3287","pass":true,"statements":[{"sl":88}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [166], [166], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [239, 286, 250], [239, 286, 250], [239, 286, 250], [239, 286, 250], [239, 286, 250], [239, 286, 250], [239, 286, 250], [], [], [], [], [], [], [], [], [], [372, 102, 286, 99, 289], [372, 102, 286, 99, 289], [], [], []]

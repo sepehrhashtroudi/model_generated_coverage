@@ -1,0 +1,14 @@
+Testsuite: org.apache.commons.lang3.reflect.FieldUtilsTest
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.042 sec
+
+Testcase: testReadStaticFieldIllegalArgumentException2265 took 0.025 sec
+Testcase: testWriteNamedStaticField327 took 0.003 sec
+Testcase: testWriteDeclaredNamedField330 took 0.001 sec
+	Caused an ERROR
+Cannot locate declared field java.lang.Class.IMMUTABLE_PUBLIC
+java.lang.IllegalArgumentException: Cannot locate declared field java.lang.Class.IMMUTABLE_PUBLIC
+	at org.apache.commons.lang3.reflect.FieldUtils.writeDeclaredField(FieldUtils.java:756)
+	at org.apache.commons.lang3.reflect.FieldUtils.writeDeclaredField(FieldUtils.java:728)
+	at org.apache.commons.lang3.reflect.FieldUtilsTest.testWriteDeclaredNamedField330(FieldUtilsTest.java:145)
+
+Testcase: testReadStaticFieldForceAccessIllegalArgumentException2328 took 0 sec

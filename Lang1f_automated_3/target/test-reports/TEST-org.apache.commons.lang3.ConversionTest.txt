@@ -1,0 +1,45 @@
+Testsuite: org.apache.commons.lang3.ConversionTest
+Tests run: 7, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+
+Testcase: testIntToHexDigitMsb0527 took 0.022 sec
+	FAILED
+expected:<49> but was:<56>
+junit.framework.AssertionFailedError: expected:<49> but was:<56>
+	at org.apache.commons.lang3.ConversionTest.testIntToHexDigitMsb0527(ConversionTest.java:43)
+
+Testcase: testIntToHexDigitMsb0528 took 0 sec
+	FAILED
+expected:<49> but was:<56>
+junit.framework.AssertionFailedError: expected:<49> but was:<56>
+	at org.apache.commons.lang3.ConversionTest.testIntToHexDigitMsb0528(ConversionTest.java:67)
+
+Testcase: testBinaryToShort538 took 0 sec
+	FAILED
+expected:<8156> but was:<220>
+junit.framework.AssertionFailedError: expected:<8156> but was:<220>
+	at org.apache.commons.lang3.ConversionTest.testBinaryToShort538(ConversionTest.java:132)
+
+Testcase: testHexToInt537 took 0 sec
+	FAILED
+expected:<305419896> but was:<61949>
+junit.framework.AssertionFailedError: expected:<305419896> but was:<61949>
+	at org.apache.commons.lang3.ConversionTest.testHexToInt537(ConversionTest.java:123)
+
+Testcase: testShortArrayToLong533 took 0 sec
+	FAILED
+expected:<3455185089> but was:<52721>
+junit.framework.AssertionFailedError: expected:<3455185089> but was:<52721>
+	at org.apache.commons.lang3.ConversionTest.testShortArrayToLong533(ConversionTest.java:91)
+
+Testcase: testShortArrayToLong534 took 0 sec
+	FAILED
+expected:<3455185089> but was:<52721>
+junit.framework.AssertionFailedError: expected:<3455185089> but was:<52721>
+	at org.apache.commons.lang3.ConversionTest.testShortArrayToLong534(ConversionTest.java:101)
+
+Testcase: testShortArrayToLong535 took 0.001 sec
+	FAILED
+expected:<3455185089> but was:<52721>
+junit.framework.AssertionFailedError: expected:<3455185089> but was:<52721>
+	at org.apache.commons.lang3.ConversionTest.testShortArrayToLong535(ConversionTest.java:111)
+

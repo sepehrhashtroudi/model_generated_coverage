@@ -1,0 +1,9 @@
+Testsuite: org.apache.commons.lang3.time.StopWatchTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.174 sec
+
+Testcase: testStopWatchSuspend967 took 1.674 sec
+Testcase: testStopWatchSimple968 took 0.55 sec
+Testcase: testGetStartTime966 took 0.001 sec
+Testcase: testBadStates965 took 0.001 sec
+Testcase: testStopWatchSimpleGet969 took 0.528 sec
+Testcase: testLang315964 took 0.401 sec

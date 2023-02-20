@@ -1,0 +1,18 @@
+Testsuite: org.apache.commons.lang3.text.StrSubstitutorTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec
+
+Testcase: testConstructorMapFull246 took 0.031 sec
+Testcase: testReplaceInVariable252 took 0 sec
+Testcase: testGetSetSuffix244 took 0.001 sec
+Testcase: testReplaceToIdentical251 took 0.001 sec
+Testcase: testSubstituteDefaultProperties241 took 0.001 sec
+Testcase: testReplacePartialString_noReplace250 took 0 sec
+Testcase: testConstructorNoArgs254 took 0 sec
+Testcase: testReplaceIncompletePrefix249 took 0 sec
+Testcase: testSamePrefixAndSuffix242 took 0 sec
+Testcase: testStaticReplaceSystemProperties243 took 0 sec
+Testcase: testReplaceSolo245 took 0 sec
+Testcase: testReplaceNoVariables248 took 0 sec
+Testcase: testReplaceNull247 took 0 sec
+Testcase: testGetSetPrefix255 took 0 sec
+Testcase: testCyclicReplacement253 took 0.002 sec

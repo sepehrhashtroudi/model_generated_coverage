@@ -1,0 +1,28 @@
+Testsuite: org.apache.commons.lang3.ConversionTest
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+
+Testcase: testBinaryToHexDigitMsb0_4bits_2args514 took 0.018 sec
+Testcase: testShortToHex516 took 0.002 sec
+	FAILED
+expected:<000d[f]> but was:<000d[b]>
+junit.framework.AssertionFailedError: expected:<000d[f]> but was:<000d[b]>
+	at org.apache.commons.lang3.ConversionTest.testShortToHex516(ConversionTest.java:149)
+
+Testcase: testHexDigitMsb0ToInt501 took 0 sec
+	FAILED
+expected:<48> but was:<0>
+junit.framework.AssertionFailedError: expected:<48> but was:<0>
+	at org.apache.commons.lang3.ConversionTest.testHexDigitMsb0ToInt501(ConversionTest.java:42)
+
+Testcase: testHexDigitMsb0ToInt502 took 0 sec
+	FAILED
+expected:<48> but was:<0>
+junit.framework.AssertionFailedError: expected:<48> but was:<0>
+	at org.apache.commons.lang3.ConversionTest.testHexDigitMsb0ToInt502(ConversionTest.java:69)
+
+Testcase: testHexDigitMsb0ToInt503 took 0.001 sec
+	FAILED
+expected:<48> but was:<0>
+junit.framework.AssertionFailedError: expected:<48> but was:<0>
+	at org.apache.commons.lang3.ConversionTest.testHexDigitMsb0ToInt503(ConversionTest.java:97)
+

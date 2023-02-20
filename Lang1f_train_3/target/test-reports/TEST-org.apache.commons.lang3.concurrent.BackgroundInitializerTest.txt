@@ -1,0 +1,8 @@
+Testsuite: org.apache.commons.lang3.concurrent.BackgroundInitializerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+
+Testcase: testGetRuntimeException195 took 0.022 sec
+Testcase: testSetExternalExecutorAfterStart192 took 0.001 sec
+Testcase: testGetBeforeStart196 took 0 sec
+Testcase: testGetInterruptedException193 took 0.002 sec
+Testcase: testStartMultipleTimes194 took 0.001 sec

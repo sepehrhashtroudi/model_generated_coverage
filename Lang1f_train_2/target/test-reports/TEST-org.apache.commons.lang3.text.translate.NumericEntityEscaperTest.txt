@@ -1,0 +1,7 @@
+Testsuite: org.apache.commons.lang3.text.translate.NumericEntityEscaperTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+
+Testcase: testAbove192 took 0.02 sec
+Testcase: testBelow194 took 0 sec
+Testcase: testSupplementary193 took 0 sec
+Testcase: testBetween195 took 0 sec

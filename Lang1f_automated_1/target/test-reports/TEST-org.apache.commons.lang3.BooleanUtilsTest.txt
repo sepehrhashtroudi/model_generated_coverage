@@ -1,0 +1,62 @@
+Testsuite: org.apache.commons.lang3.BooleanUtilsTest
+Tests run: 15, Failures: 4, Errors: 4, Skipped: 0, Time elapsed: 0.046 sec
+
+Testcase: testXor_object_validInput_3items16 took 0.024 sec
+Testcase: test_toBoolean_Integer_Integer_Integer4 took 0.001 sec
+	Caused an ERROR
+The Integer did not match either specified value
+java.lang.IllegalArgumentException: The Integer did not match either specified value
+	at org.apache.commons.lang3.BooleanUtils.toBoolean(BooleanUtils.java:303)
+	at org.apache.commons.lang3.BooleanUtilsTest.test_toBoolean_Integer_Integer_Integer4(BooleanUtilsTest.java:61)
+
+Testcase: test_toBoolean_Integer_Integer_Integer5 took 0 sec
+	Caused an ERROR
+The Integer did not match either specified value
+java.lang.IllegalArgumentException: The Integer did not match either specified value
+	at org.apache.commons.lang3.BooleanUtils.toBoolean(BooleanUtils.java:303)
+	at org.apache.commons.lang3.BooleanUtilsTest.test_toBoolean_Integer_Integer_Integer5(BooleanUtilsTest.java:76)
+
+Testcase: test_toBoolean_Integer_Integer_Integer6 took 0.001 sec
+	Caused an ERROR
+The Integer did not match either specified value
+java.lang.IllegalArgumentException: The Integer did not match either specified value
+	at org.apache.commons.lang3.BooleanUtils.toBoolean(BooleanUtils.java:303)
+	at org.apache.commons.lang3.BooleanUtilsTest.test_toBoolean_Integer_Integer_Integer6(BooleanUtilsTest.java:87)
+
+Testcase: test_toStringTrueFalse_Boolean7 took 0 sec
+Testcase: test_toStringTrueFalse_Boolean8 took 0 sec
+Testcase: testOr_object_emptyInput15 took 0 sec
+Testcase: test_toBoolean_int_int_int3 took 0 sec
+	Caused an ERROR
+The Integer did not match either specified value
+java.lang.IllegalArgumentException: The Integer did not match either specified value
+	at org.apache.commons.lang3.BooleanUtils.toBoolean(BooleanUtils.java:269)
+	at org.apache.commons.lang3.BooleanUtilsTest.test_toBoolean_int_int_int3(BooleanUtilsTest.java:54)
+
+Testcase: test_toString_Boolean_String_String_String9 took 0 sec
+	FAILED
+expected:<null> but was:<U>
+junit.framework.AssertionFailedError: expected:<null> but was:<U>
+	at org.apache.commons.lang3.BooleanUtilsTest.test_toString_Boolean_String_String_String9(BooleanUtilsTest.java:112)
+
+Testcase: testOr_object_nullInput14 took 0 sec
+Testcase: testXor_object_nullInput17 took 0 sec
+Testcase: test_isNotTrue_Boolean1 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.BooleanUtilsTest.test_isNotTrue_Boolean1(BooleanUtilsTest.java:40)
+
+Testcase: testAnd_primitive_emptyInput13 took 0.001 sec
+Testcase: test_toBoolean_Boolean2 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.BooleanUtilsTest.test_toBoolean_Boolean2(BooleanUtilsTest.java:47)
+
+Testcase: test_toString_Boolean_String_String_String12 took 0.001 sec
+	FAILED
+expected:<[true]> but was:<[Y]>
+junit.framework.AssertionFailedError: expected:<[true]> but was:<[Y]>
+	at org.apache.commons.lang3.BooleanUtilsTest.test_toString_Boolean_String_String_String12(BooleanUtilsTest.java:119)
+

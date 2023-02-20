@@ -1,0 +1,6 @@
+Testsuite: org.apache.commons.lang3.tuple.TripleTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+
+Testcase: testToStringCustom384 took 0.029 sec
+Testcase: testComparable3380 took 0.002 sec
+Testcase: testFormattable_padded383 took 0 sec

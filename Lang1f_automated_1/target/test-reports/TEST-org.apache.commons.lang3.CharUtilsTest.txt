@@ -1,0 +1,16 @@
+Testsuite: org.apache.commons.lang3.CharUtilsTest
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+
+Testcase: testIsAsciiControl_char352 took 0.019 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.CharUtilsTest.testIsAsciiControl_char352(CharUtilsTest.java:70)
+
+Testcase: testToString_Character351 took 0.001 sec
+	FAILED
+expected:<[]> but was:<[A]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[A]>
+	at org.apache.commons.lang3.CharUtilsTest.testToString_Character351(CharUtilsTest.java:66)
+
+Testcase: testToString_char350 took 0 sec

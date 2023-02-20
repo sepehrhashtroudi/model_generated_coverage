@@ -1,0 +1,18 @@
+Testsuite: org.apache.commons.lang3.StringUtilsTrimEmptyTest
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+
+Testcase: testTrim467 took 0.027 sec
+	FAILED
+expected:<null> but was:<>
+junit.framework.AssertionFailedError: expected:<null> but was:<>
+	at org.apache.commons.lang3.StringUtilsTrimEmptyTest.testTrim467(StringUtilsTrimEmptyTest.java:65)
+
+Testcase: testIsWhitespace465 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsTrimEmptyTest.testIsWhitespace465(StringUtilsTrimEmptyTest.java:38)
+
+Testcase: testStrip_String468 took 0.006 sec
+Testcase: testStrip_StringString469 took 0 sec
+Testcase: testIsNotEmpty466 took 0 sec

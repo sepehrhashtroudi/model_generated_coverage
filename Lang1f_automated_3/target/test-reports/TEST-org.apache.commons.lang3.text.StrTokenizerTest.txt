@@ -1,0 +1,18 @@
+Testsuite: org.apache.commons.lang3.text.StrTokenizerTest
+Tests run: 4, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.057 sec
+
+Testcase: testBasicQuotedTrimmed1144 took 0.03 sec
+Testcase: test6143 took 0.011 sec
+Testcase: testRemoveAll145 took 0.001 sec
+	FAILED
+{a,b,c,d;"e,f,,,} expected:<5> but was:<8>
+junit.framework.AssertionFailedError: {a,b,c,d;"e,f,,,} expected:<5> but was:<8>
+	at org.apache.commons.lang3.text.StrTokenizerTest.testRemoveAll145(StrTokenizerTest.java:92)
+
+Testcase: testAdd149 took 0 sec
+	Caused an ERROR
+add() is unsupported
+java.lang.UnsupportedOperationException: add() is unsupported
+	at org.apache.commons.lang3.text.StrTokenizer.add(StrTokenizer.java:594)
+	at org.apache.commons.lang3.text.StrTokenizerTest.testAdd149(StrTokenizerTest.java:100)
+

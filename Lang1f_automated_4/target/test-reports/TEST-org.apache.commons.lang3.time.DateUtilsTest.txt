@@ -1,0 +1,9 @@
+Testsuite: org.apache.commons.lang3.time.DateUtilsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
+------------- Standard Output ---------------
+DateUtilsTest: Default Locale=en_US
+------------- ---------------- ---------------
+
+Testcase: testMonthIterator171 took 0.039 sec
+Testcase: testLANG799_EN_WITH_DE_LOCALE166 took 0.005 sec
+Testcase: testIteratorEx170 took 0.003 sec

@@ -1,0 +1,15 @@
+Testsuite: org.apache.commons.lang3.StringEscapeUtilsTest
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
+
+Testcase: testEscapeCsvString616 took 0.038 sec
+	FAILED
+expected:<[foo,bar]> but was:<["""foo,bar"""]>
+junit.framework.AssertionFailedError: expected:<[foo,bar]> but was:<["""foo,bar"""]>
+	at org.apache.commons.lang3.StringEscapeUtilsTest.testEscapeCsvString616(StringEscapeUtilsTest.java:68)
+
+Testcase: testUnescapeHtml4145 took 0.004 sec
+	FAILED
+expected:<Hello&#[];World> but was:<Hello&#[##];World>
+junit.framework.AssertionFailedError: expected:<Hello&#[];World> but was:<Hello&#[##];World>
+	at org.apache.commons.lang3.StringEscapeUtilsTest.testUnescapeHtml4145(StringEscapeUtilsTest.java:61)
+

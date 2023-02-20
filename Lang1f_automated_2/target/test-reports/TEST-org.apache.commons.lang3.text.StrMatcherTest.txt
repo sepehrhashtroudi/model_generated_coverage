@@ -1,0 +1,9 @@
+Testsuite: org.apache.commons.lang3.text.StrMatcherTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+
+Testcase: testSingleQuoteMatcher138 took 0.024 sec
+	FAILED
+expected:<0> but was:<1>
+junit.framework.AssertionFailedError: expected:<0> but was:<1>
+	at org.apache.commons.lang3.text.StrMatcherTest.testSingleQuoteMatcher138(StrMatcherTest.java:43)
+

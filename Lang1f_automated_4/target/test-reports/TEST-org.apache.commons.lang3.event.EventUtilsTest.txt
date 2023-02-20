@@ -1,0 +1,16 @@
+Testsuite: org.apache.commons.lang3.event.EventUtilsTest
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.051 sec
+
+Testcase: testAddEventListenerThrowsException31 took 0.031 sec
+	Caused an ERROR
+Unable to add listener.
+java.lang.RuntimeException: Unable to add listener.
+	at org.apache.commons.lang3.event.EventUtils.addEventListener(EventUtils.java:60)
+	at org.apache.commons.lang3.event.EventUtilsTest.testAddEventListenerThrowsException31(EventUtilsTest.java:52)
+Caused by: java.lang.RuntimeException
+	at org.apache.commons.lang3.event.EventUtilsTest$ExceptionEventSource.addPropertyChangeListener(EventUtilsTest.java:174)
+	at org.apache.commons.lang3.reflect.MethodUtils.invokeMethod(MethodUtils.java:129)
+	at org.apache.commons.lang3.reflect.MethodUtils.invokeMethod(MethodUtils.java:90)
+	at org.apache.commons.lang3.event.EventUtils.addEventListener(EventUtils.java:50)
+
+Testcase: testBindEventsToMethod32 took 0.004 sec

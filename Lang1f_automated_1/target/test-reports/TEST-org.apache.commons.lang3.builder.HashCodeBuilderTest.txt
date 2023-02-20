@@ -1,0 +1,25 @@
+Testsuite: org.apache.commons.lang3.builder.HashCodeBuilderTest
+Tests run: 7, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec
+
+Testcase: testIntArray343 took 0.024 sec
+	FAILED
+expected:<23273> but was:<23458>
+junit.framework.AssertionFailedError: expected:<23273> but was:<23458>
+	at org.apache.commons.lang3.builder.HashCodeBuilderTest.testIntArray343(HashCodeBuilderTest.java:196)
+
+Testcase: testShortArray346 took 0 sec
+Testcase: testLongArrayAsObject344 took 0 sec
+Testcase: testReflectionHashCodeExcludeFields337 took 0.001 sec
+	FAILED
+expected:<23273> but was:<17>
+junit.framework.AssertionFailedError: expected:<23273> but was:<17>
+	at org.apache.commons.lang3.builder.HashCodeBuilderTest.testReflectionHashCodeExcludeFields337(HashCodeBuilderTest.java:138)
+
+Testcase: testBooleanMultiArray338 took 0 sec
+Testcase: testBooleanMultiCharArray340 took 0 sec
+Testcase: testInt342 took 0.001 sec
+	FAILED
+expected:<23273> but was:<23458>
+junit.framework.AssertionFailedError: expected:<23273> but was:<23458>
+	at org.apache.commons.lang3.builder.HashCodeBuilderTest.testInt342(HashCodeBuilderTest.java:184)
+

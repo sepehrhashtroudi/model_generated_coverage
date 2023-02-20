@@ -1,0 +1,16 @@
+Testsuite: org.apache.commons.lang3.text.StrMatcherTest
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+
+Testcase: testCsvMatcher184 took 0.02 sec
+	FAILED
+expected:<1> but was:<0>
+junit.framework.AssertionFailedError: expected:<1> but was:<0>
+	at org.apache.commons.lang3.text.StrMatcherTest.testCsvMatcher184(StrMatcherTest.java:44)
+
+Testcase: testMatcherIndices186 took 0.007 sec
+Testcase: testSpaceMatcher185 took 0 sec
+	FAILED
+expected:<1> but was:<0>
+junit.framework.AssertionFailedError: expected:<1> but was:<0>
+	at org.apache.commons.lang3.text.StrMatcherTest.testSpaceMatcher185(StrMatcherTest.java:58)
+

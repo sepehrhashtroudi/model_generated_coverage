@@ -1,0 +1,12 @@
+Testsuite: org.apache.commons.lang3.EnumUtilsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+
+Testcase: test_isEnum381 took 0.022 sec
+Testcase: test_getEnum382 took 0 sec
+Testcase: test_generateBitVector383 took 0.002 sec
+Testcase: testConstructable379 took 0 sec
+Testcase: test_generateBitVectors384 took 0.006 sec
+Testcase: test_processBitVector387 took 0 sec
+Testcase: test_getEnumMap380 took 0 sec
+Testcase: test_generateBitVectors_nullClassWithArray385 took 0 sec
+Testcase: test_generateBitVectors_nullArrayElement386 took 0 sec

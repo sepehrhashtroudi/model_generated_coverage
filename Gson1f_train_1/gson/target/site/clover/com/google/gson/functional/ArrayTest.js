@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":142,"id":4851,"methods":[{"el":47,"sc":3,"sl":43},{"el":58,"sc":1,"sl":50},{"el":64,"sc":1,"sl":61},{"el":72,"sc":1,"sl":67},{"el":85,"sc":1,"sl":75},{"el":97,"sc":1,"sl":88}],"name":"ArrayTest","sl":40}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_43":{"methods":[{"sl":75}],"name":"testArrayOfPrimitivesWithCustomTypeAdapter160","pass":true,"statements":[{"sl":76},{"sl":77},{"sl":78},{"sl":79},{"sl":80},{"sl":81},{"sl":82},{"sl":83},{"sl":84}]},"test_58":{"methods":[{"sl":67}],"name":"testNullsInArraySerialization13","pass":true,"statements":[{"sl":68},{"sl":69},{"sl":70},{"sl":71}]},"test_77":{"methods":[{"sl":88}],"name":"testObjectArrayWithNonPrimitivesSerialization161","pass":true,"statements":[{"sl":89},{"sl":90},{"sl":91},{"sl":92},{"sl":93},{"sl":94},{"sl":95},{"sl":96}]},"test_82":{"methods":[{"sl":61}],"name":"testTopLevelArrayOfIntsSerialization9","pass":true,"statements":[{"sl":62},{"sl":63}]},"test_97":{"methods":[{"sl":50}],"name":"testArrayOfCollectionDeserialization2","pass":true,"statements":[{"sl":51},{"sl":52},{"sl":54},{"sl":55},{"sl":56},{"sl":57}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [97], [97], [97], [], [97], [97], [97], [97], [], [], [], [82], [82], [82], [], [], [], [58], [58], [58], [58], [58], [], [], [], [43], [43], [43], [43], [43], [43], [43], [43], [43], [43], [], [], [], [77], [77], [77], [77], [77], [77], [77], [77], [77], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]

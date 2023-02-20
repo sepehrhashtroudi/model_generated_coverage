@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":135,"id":35488,"methods":[{"el":53,"sc":5,"sl":51},{"el":57,"sc":5,"sl":55},{"el":61,"sc":5,"sl":59},{"el":66,"sc":5,"sl":63},{"el":82,"sc":10,"sl":80},{"el":85,"sc":1,"sl":70},{"el":91,"sc":1,"sl":88},{"el":101,"sc":10,"sl":99},{"el":104,"sc":1,"sl":94},{"el":112,"sc":1,"sl":107}],"name":"TestReadableInstantConverter","sl":41}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1028":{"methods":[{"sl":88}],"name":"testGetChronology_Object_Chronology392","pass":true,"statements":[{"sl":89},{"sl":90}]},"test_1213":{"methods":[{"sl":70},{"sl":80}],"name":"testGetChronology_Object_Zone391","pass":true,"statements":[{"sl":71},{"sl":72},{"sl":73},{"sl":74},{"sl":75},{"sl":76},{"sl":77},{"sl":78},{"sl":81},{"sl":84}]},"test_1424":{"methods":[{"sl":107}],"name":"testGetInstantMillis_Object_Chronology394","pass":true,"statements":[{"sl":108},{"sl":109},{"sl":110},{"sl":111}]},"test_432":{"methods":[{"sl":94},{"sl":99}],"name":"testGetChronology_Object_nullChronology393","pass":true,"statements":[{"sl":95},{"sl":96},{"sl":97},{"sl":100},{"sl":103}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1213], [1213], [1213], [1213], [1213], [1213], [1213], [1213], [1213], [], [1213], [1213], [], [], [1213], [], [], [], [1028], [1028], [1028], [], [], [], [432], [432], [432], [432], [], [432], [432], [], [], [432], [], [], [], [1424], [1424], [1424], [1424], [1424], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]

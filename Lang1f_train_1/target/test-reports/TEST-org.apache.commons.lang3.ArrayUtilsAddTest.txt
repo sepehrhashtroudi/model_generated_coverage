@@ -1,0 +1,13 @@
+Testsuite: org.apache.commons.lang3.ArrayUtilsAddTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+
+Testcase: testAddObjectArrayBoolean583 took 0.025 sec
+Testcase: testAddObjectArrayObject582 took 0 sec
+Testcase: testAddObjectArrayFloat587 took 0 sec
+Testcase: testAddObjectArrayDouble586 took 0 sec
+Testcase: testAddObjectArrayLong588 took 0 sec
+Testcase: testAddObjectArrayByte584 took 0 sec
+Testcase: testAddObjectArrayChar585 took 0 sec
+Testcase: testAddObjectArrayToObjectArray581 took 0 sec
+Testcase: testAddObjectArrayShort589 took 0 sec
+Testcase: testJira567580 took 0 sec

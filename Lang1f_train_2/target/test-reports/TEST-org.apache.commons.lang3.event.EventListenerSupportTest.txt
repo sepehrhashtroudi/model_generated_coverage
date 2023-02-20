@@ -1,0 +1,23 @@
+Testsuite: org.apache.commons.lang3.event.EventListenerSupportTest
+Tests run: 5, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.037 sec
+
+Testcase: testSerialization143 took 0.02 sec
+	Caused an ERROR
+org/easymock/EasyMock
+java.lang.NoClassDefFoundError: org/easymock/EasyMock
+	at org.apache.commons.lang3.event.EventListenerSupportTest.testSerialization143(EventListenerSupportTest.java:107)
+Caused by: java.lang.ClassNotFoundException: org.easymock.EasyMock
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+
+Testcase: testAddNullListener139 took 0 sec
+Testcase: testGetListeners142 took 0.001 sec
+	Caused an ERROR
+org/easymock/EasyMock
+java.lang.NoClassDefFoundError: org/easymock/EasyMock
+	at org.apache.commons.lang3.event.EventListenerSupportTest.testGetListeners142(EventListenerSupportTest.java:87)
+
+Testcase: testRemoveListenerDuringEvent140 took 0.001 sec
+Testcase: testRemoveNullListener141 took 0.001 sec

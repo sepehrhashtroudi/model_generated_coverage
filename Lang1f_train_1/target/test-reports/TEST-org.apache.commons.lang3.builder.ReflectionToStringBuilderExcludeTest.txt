@@ -1,0 +1,8 @@
+Testsuite: org.apache.commons.lang3.builder.ReflectionToStringBuilderExcludeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+
+Testcase: test_toStringExcludeNullArray411 took 0.023 sec
+Testcase: test_toStringExcludeEmptyArray844 took 0.004 sec
+Testcase: test_toStringExcludeArrayWithNull845 took 0 sec
+Testcase: test_toStringExcludeCollectionWithNulls842 took 0 sec
+Testcase: test_toStringExcludeNullCollection843 took 0 sec

@@ -1,0 +1,23 @@
+Testsuite: org.apache.commons.lang3.text.StrBuilderTest
+Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.101 sec
+
+Testcase: testCharAt260 took 0.005 sec
+Testcase: testAppendAll_object272 took 0 sec
+Testcase: testTrim290 took 0.001 sec
+Testcase: testCapacityAndLength291 took 0 sec
+Testcase: testSubstringIntInt279 took 0.008 sec
+	FAILED
+expected:<g[oodbye]> but was:<g[]>
+junit.framework.AssertionFailedError: expected:<g[oodbye]> but was:<g[]>
+	at org.apache.commons.lang3.text.StrBuilderTest.testSubstringIntInt279(StrBuilderTest.java:126)
+
+Testcase: testDeleteFirst_StrMatcher278 took 0.001 sec
+	FAILED
+expected:<x[y]> but was:<x[A1A2yA3]>
+junit.framework.AssertionFailedError: expected:<x[y]> but was:<x[A1A2yA3]>
+	at org.apache.commons.lang3.text.StrBuilderTest.testDeleteFirst_StrMatcher278(StrBuilderTest.java:115)
+
+Testcase: testAppendAll_Object273 took 0 sec
+Testcase: testReplaceFirst_char_char281 took 0 sec
+Testcase: testAsWriter261 took 0.001 sec
+Testcase: testAsTokenizer284 took 0.02 sec

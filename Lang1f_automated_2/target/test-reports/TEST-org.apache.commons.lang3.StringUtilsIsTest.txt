@@ -1,0 +1,21 @@
+Testsuite: org.apache.commons.lang3.StringUtilsIsTest
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+
+Testcase: testIsAsciiPrintable462 took 0.029 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsIsTest.testIsAsciiPrintable462(StringUtilsIsTest.java:52)
+
+Testcase: testIsAsciiPrintable463 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsIsTest.testIsAsciiPrintable463(StringUtilsIsTest.java:71)
+
+Testcase: testIsAlphas461 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsIsTest.testIsAlphas461(StringUtilsIsTest.java:42)
+

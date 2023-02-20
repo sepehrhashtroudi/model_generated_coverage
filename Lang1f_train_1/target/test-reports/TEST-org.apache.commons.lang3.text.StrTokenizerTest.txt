@@ -1,0 +1,18 @@
+Testsuite: org.apache.commons.lang3.text.StrTokenizerTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec
+
+Testcase: testCSVSimple280 took 0.037 sec
+Testcase: testBasicQuoted5289 took 0 sec
+Testcase: testTSVEmpty279 took 0 sec
+Testcase: testToString293 took 0.001 sec
+Testcase: test4284 took 0.008 sec
+Testcase: testConstructor_String_char_char282 took 0 sec
+Testcase: testReset_String285 took 0 sec
+Testcase: testConstructor_charArray_char_char283 took 0.001 sec
+Testcase: testCloneReset292 took 0 sec
+Testcase: testCloneNotSupportedException281 took 0 sec
+Testcase: testChaining290 took 0.001 sec
+Testcase: testBasicIgnoreTrimmed1288 took 0 sec
+Testcase: testIteration287 took 0 sec
+Testcase: testReset_charArray286 took 0 sec
+Testcase: testGetContent291 took 0 sec

@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: com.google.gson.functional.ArrayTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.099 sec <<< FAILURE!
+testRawCollectionOfCollectionDeserialization48(com.google.gson.functional.ArrayTest)  Time elapsed: 0.006 sec  <<< ERROR!
+com.google.gson.JsonParseException: The JsonDeserializer com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter@12f40c25 failed to deserialized json object 0 given the type interface java.util.Collection
+	at com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:63)
+	at com.google.gson.JsonDeserializationVisitor.invokeCustomDeserializer(JsonDeserializationVisitor.java:88)
+	at com.google.gson.JsonDeserializationVisitor.visitUsingCustomHandler(JsonDeserializationVisitor.java:76)
+	at com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:106)
+	at com.google.gson.JsonDeserializationVisitor.visitChild(JsonDeserializationVisitor.java:107)
+	at com.google.gson.JsonDeserializationVisitor.visitChildAsObject(JsonDeserializationVisitor.java:95)
+	at com.google.gson.JsonArrayDeserializationVisitor.visitArray(JsonArrayDeserializationVisitor.java:76)
+	at com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:117)
+	at com.google.gson.JsonDeserializationContextDefault.fromJsonArray(JsonDeserializationContextDefault.java:64)
+	at com.google.gson.JsonDeserializationContextDefault.deserialize(JsonDeserializationContextDefault.java:49)
+	at com.google.gson.Gson.fromJson(Gson.java:539)
+	at com.google.gson.Gson.fromJson(Gson.java:486)
+	at com.google.gson.Gson.fromJson(Gson.java:473)
+	at com.google.gson.Gson.fromJson(Gson.java:427)
+	at com.google.gson.functional.ArrayTest.__CLR4_4_1eqq83z3ge(ArrayTest.java:74)
+	at com.google.gson.functional.ArrayTest.testRawCollectionOfCollectionDeserialization48(ArrayTest.java:70)
+Caused by: java.lang.IllegalArgumentException: Collection objects need to be parameterized unless you use a custom serializer. Use the com.google.gson.reflect.TypeToken to extract the ParameterizedType.
+	at com.google.gson.TypeInfoCollection.<init>(TypeInfoCollection.java:34)
+	at com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter.deserialize(DefaultTypeAdapters.java:542)
+	at com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter.deserialize(DefaultTypeAdapters.java:509)
+	at com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:50)
+	... 42 more
+

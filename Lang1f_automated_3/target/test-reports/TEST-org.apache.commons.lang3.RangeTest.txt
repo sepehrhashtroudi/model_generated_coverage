@@ -1,0 +1,16 @@
+Testsuite: org.apache.commons.lang3.RangeTest
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+
+Testcase: testIntersectionWith422 took 0.021 sec
+Testcase: testIsAfterRange421 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.RangeTest.testIsAfterRange421(RangeTest.java:80)
+
+Testcase: testGetMinimum420 took 0 sec
+	FAILED
+expected:<20> but was:<10>
+junit.framework.AssertionFailedError: expected:<20> but was:<10>
+	at org.apache.commons.lang3.RangeTest.testGetMinimum420(RangeTest.java:67)
+

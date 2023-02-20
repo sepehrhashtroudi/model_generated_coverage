@@ -1,0 +1,41 @@
+Testsuite: org.apache.commons.lang3.math.NumberUtilsTest
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec
+
+Testcase: testCreateLong65 took 0.023 sec
+Testcase: testMaximumLong86 took 0 sec
+Testcase: testIsDigits91 took 0.006 sec
+Testcase: testMaxDouble80 took 0 sec
+Testcase: testMinByte_emptyArray70 took 0 sec
+Testcase: testMaxDouble_nullArray79 took 0 sec
+Testcase: testToIntStringI55 took 0 sec
+Testcase: testCreateFloat63 took 0.001 sec
+Testcase: testToFloatString57 took 0.001 sec
+Testcase: testMaxFloat_emptyArray81 took 0 sec
+Testcase: testCreateNumberFailure_361 took 0 sec
+Testcase: testCreateNumberFailure_460 took 0.001 sec
+Testcase: testMaxByte_emptyArray77 took 0 sec
+Testcase: testMaxByte78 took 0 sec
+Testcase: testMinDouble_nullArray72 took 0 sec
+Testcase: testCreateBigDecimal66 took 0 sec
+Testcase: testMaxFloat82 took 0 sec
+Testcase: testMinimumShort83 took 0 sec
+Testcase: testMaxLong74 took 0 sec
+Testcase: testMinimumDouble84 took 0 sec
+Testcase: testToByteStringI59 took 0 sec
+Testcase: testMinInt_emptyArray68 took 0 sec
+Testcase: testMaxInt_emptyArray75 took 0 sec
+Testcase: testMinByte71 took 0 sec
+Testcase: testMaximumFloat90 took 0 sec
+Testcase: testMinLong67 took 0 sec
+Testcase: testMinShort69 took 0 sec
+Testcase: testCreateDouble64 took 0 sec
+Testcase: testMaxInt76 took 0 sec
+Testcase: testMaximumDouble89 took 0 sec
+Testcase: TestLang747 took 0.001 sec
+Testcase: testMinimumFloat85 took 0 sec
+Testcase: testToLongString56 took 0 sec
+Testcase: testMaximumInt87 took 0 sec
+Testcase: testStringToDoubleString58 took 0 sec
+Testcase: testCreateNumber62 took 0.001 sec
+Testcase: testLang38173 took 0 sec
+Testcase: testMaximumByte88 took 0 sec

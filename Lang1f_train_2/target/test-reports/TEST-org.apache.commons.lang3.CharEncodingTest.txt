@@ -1,0 +1,5 @@
+Testsuite: org.apache.commons.lang3.CharEncodingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+
+Testcase: testSupported765 took 0.019 sec
+Testcase: testNotSupported766 took 0.005 sec

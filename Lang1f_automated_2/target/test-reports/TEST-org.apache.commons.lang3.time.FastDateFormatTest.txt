@@ -1,0 +1,8 @@
+Testsuite: org.apache.commons.lang3.time.FastDateFormatTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec
+
+Testcase: test_create_String_TimeZone_Locale283 took 0.042 sec
+Testcase: test_getInstance_String284 took 0.001 sec
+Testcase: test_getInstance_String_Locale285 took 0 sec
+Testcase: testDateDefaults287 took 0.004 sec
+Testcase: test_getInstance_String_TimeZone_Locale286 took 0 sec

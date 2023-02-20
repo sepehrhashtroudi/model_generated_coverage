@@ -1,0 +1,4 @@
+Testsuite: org.apache.commons.lang3.builder.SimpleToStringStyleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+
+Testcase: testLongArrayArray1110 took 0.024 sec

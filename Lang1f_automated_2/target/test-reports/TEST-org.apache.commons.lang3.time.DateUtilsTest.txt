@@ -1,0 +1,48 @@
+Testsuite: org.apache.commons.lang3.time.DateUtilsTest
+Tests run: 7, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec
+------------- Standard Output ---------------
+DateUtilsTest: Default Locale=en_US
+------------- ---------------- ---------------
+
+Testcase: testIsSameLocalTime_Cal160 took 0.029 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.time.DateUtilsTest.testIsSameLocalTime_Cal160(DateUtilsTest.java:157)
+
+Testcase: testAddSeconds164 took 0.004 sec
+	FAILED
+expected:<0> but was:<3>
+junit.framework.AssertionFailedError: expected:<0> but was:<3>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:334)
+	at org.apache.commons.lang3.time.DateUtilsTest.testAddSeconds164(DateUtilsTest.java:215)
+
+Testcase: testSetMilliseconds167 took 0.004 sec
+	FAILED
+expected:<0> but was:<3>
+junit.framework.AssertionFailedError: expected:<0> but was:<3>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:334)
+	at org.apache.commons.lang3.time.DateUtilsTest.testSetMilliseconds167(DateUtilsTest.java:248)
+
+Testcase: testAddMinutes163 took 0.004 sec
+	FAILED
+expected:<0> but was:<3>
+junit.framework.AssertionFailedError: expected:<0> but was:<3>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:334)
+	at org.apache.commons.lang3.time.DateUtilsTest.testAddMinutes163(DateUtilsTest.java:199)
+
+Testcase: testSetHours166 took 0.003 sec
+	FAILED
+expected:<4> but was:<0>
+junit.framework.AssertionFailedError: expected:<4> but was:<0>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:333)
+	at org.apache.commons.lang3.time.DateUtilsTest.testSetHours166(DateUtilsTest.java:231)
+
+Testcase: testAddYears162 took 0.003 sec
+	FAILED
+expected:<2000> but was:<2001>
+junit.framework.AssertionFailedError: expected:<2000> but was:<2001>
+	at org.apache.commons.lang3.time.DateUtilsTest.assertDate(DateUtilsTest.java:330)
+	at org.apache.commons.lang3.time.DateUtilsTest.testAddYears162(DateUtilsTest.java:187)
+
+Testcase: testLANG799_DE_OK161 took 0.005 sec

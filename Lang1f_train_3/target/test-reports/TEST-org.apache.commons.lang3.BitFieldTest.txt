@@ -1,0 +1,12 @@
+Testsuite: org.apache.commons.lang3.BitFieldTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+
+Testcase: testSetShortValue109 took 0.001 sec
+Testcase: testGetShortRawValue106 took 0 sec
+Testcase: testGetShortValue105 took 0 sec
+Testcase: testSetValue104 took 0 sec
+Testcase: testByte103 took 0 sec
+Testcase: testIsAllSet108 took 0.001 sec
+Testcase: testIsSet107 took 0 sec
+Testcase: testSetBoolean110 took 0 sec
+Testcase: testSetShortBoolean111 took 0 sec

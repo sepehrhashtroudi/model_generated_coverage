@@ -1,0 +1,6 @@
+Testsuite: org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+
+Testcase: testOutOfBounds52 took 0.022 sec
+Testcase: testSupplementaryUnescaping50 took 0 sec
+Testcase: testUnfinishedEntity51 took 0 sec

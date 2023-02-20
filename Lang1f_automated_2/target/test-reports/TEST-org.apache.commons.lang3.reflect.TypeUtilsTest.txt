@@ -1,0 +1,10 @@
+Testsuite: org.apache.commons.lang3.reflect.TypeUtilsTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.016 sec
+
+Testcase: testGetArrayComponentType236 took 0.002 sec
+	Caused an ERROR
+org.apache.commons.lang3.reflect.TypeUtilsTest.dummyMethod(java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, [Ljava.util.List;, [Ljava.util.List;, [Ljava.util.List;, [Ljava.util.List;, [Ljava.util.List;, [Ljava.util.List;, [Ljava.util.List;)
+java.lang.NoSuchMethodException: org.apache.commons.lang3.reflect.TypeUtilsTest.dummyMethod(java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, [Ljava.util.List;, [Ljava.util.List;, [Ljava.util.List;, [Ljava.util.List;, [Ljava.util.List;, [Ljava.util.List;, [Ljava.util.List;)
+	at java.lang.Class.getMethod(Class.java:1786)
+	at org.apache.commons.lang3.reflect.TypeUtilsTest.testGetArrayComponentType236(TypeUtilsTest.java:110)
+

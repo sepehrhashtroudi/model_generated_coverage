@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: com.google.gson.TypeUtilsTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 sec <<< FAILURE!
+testIsArrayForArrayClasses56(com.google.gson.TypeUtilsTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertFalse(Assert.java:34)
+	at junit.framework.Assert.assertFalse(Assert.java:41)
+	at com.google.gson.TypeUtilsTest.__CLR4_4_142fxa938y(TypeUtilsTest.java:36)
+	at com.google.gson.TypeUtilsTest.testIsArrayForArrayClasses56(TypeUtilsTest.java:35)
+

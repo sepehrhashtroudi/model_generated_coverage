@@ -1,0 +1,10 @@
+Testsuite: org.apache.commons.lang3.time.FastDateFormat_ParserTest
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.556 sec
+
+Testcase: testFormatPeriodISO98 took 0.124 sec
+	FAILED
+expected:<P32Y1M22DT9H11M12.[00]1S> but was:<P32Y1M22DT9H11M12.[29]1S>
+junit.framework.AssertionFailedError: expected:<P32Y1M22DT9H11M12.[00]1S> but was:<P32Y1M22DT9H11M12.[29]1S>
+	at org.apache.commons.lang3.time.FastDateParserTest.testFormatPeriodISO98(FastDateParserTest.java:100)
+
+Testcase: testLocales_ShortNoEra_AD97 took 1.412 sec

@@ -1,0 +1,14 @@
+Testsuite: org.apache.commons.lang3.text.StrMatcherTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+
+Testcase: testCharSetMatcher_String336 took 0.025 sec
+Testcase: testTrimMatcher331 took 0 sec
+Testcase: testCommaMatcher327 took 0 sec
+Testcase: testDoubleQuoteMatcher332 took 0 sec
+Testcase: testMatcherIndices337 took 0 sec
+Testcase: testCharSetMatcher_charArray335 took 0 sec
+Testcase: testSpaceMatcher329 took 0 sec
+Testcase: testSplitMatcher330 took 0 sec
+Testcase: testTabMatcher328 took 0 sec
+Testcase: testQuoteMatcher333 took 0 sec
+Testcase: testStringMatcher_String338 took 0 sec

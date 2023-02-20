@@ -1,0 +1,31 @@
+Testsuite: org.apache.commons.lang3.ObjectUtilsTest
+Tests run: 8, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+
+Testcase: testCloneOfPrimitiveArray389 took 0.021 sec
+Testcase: testCompare386 took 0.001 sec
+Testcase: testMedian387 took 0.004 sec
+	FAILED
+expected:<6> but was:<7>
+junit.framework.AssertionFailedError: expected:<6> but was:<7>
+	at org.apache.commons.lang3.ObjectUtilsTest.testMedian387(ObjectUtilsTest.java:97)
+
+Testcase: testConstructor392 took 0 sec
+Testcase: testCloneIfPossible390 took 0.001 sec
+Testcase: testCloneIfPossible391 took 0 sec
+	FAILED
+expected same:<abc> was not:<90>
+junit.framework.AssertionFailedError: expected same:<abc> was not:<90>
+	at org.apache.commons.lang3.ObjectUtilsTest.testCloneIfPossible391(ObjectUtilsTest.java:117)
+
+Testcase: testMin384 took 0.001 sec
+	FAILED
+expected:<[]> but was:<[abc]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[abc]>
+	at org.apache.commons.lang3.ObjectUtilsTest.testMin384(ObjectUtilsTest.java:57)
+
+Testcase: testMin385 took 0 sec
+	FAILED
+expected:<> but was:<null>
+junit.framework.AssertionFailedError: expected:<> but was:<null>
+	at org.apache.commons.lang3.ObjectUtilsTest.testMin385(ObjectUtilsTest.java:67)
+

@@ -1,0 +1,8 @@
+Testsuite: org.apache.commons.lang3.builder.EqualsBuilderTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec
+
+Testcase: testBoolean115 took 0.021 sec
+Testcase: testMultiCharArray117 took 0 sec
+Testcase: testReflectionHierarchyEquals112 took 0.016 sec
+Testcase: testUnrelatedClasses116 took 0 sec
+Testcase: testBooleanArrayHiddenByObject114 took 0 sec

@@ -1,0 +1,17 @@
+Testsuite: org.apache.commons.lang3.mutable.MutableDoubleTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+
+Testcase: testPrimitiveValues1100 took 0.021 sec
+Testcase: testHashCode1103 took 0 sec
+Testcase: testSubtractValuePrimitive1098 took 0 sec
+Testcase: testSetNull1092 took 0 sec
+Testcase: testEquals1102 took 0 sec
+Testcase: testToDouble1101 took 0.001 sec
+Testcase: testAddValuePrimitive1096 took 0 sec
+Testcase: testAddValueObject1097 took 0 sec
+Testcase: testNanInfinite1093 took 0 sec
+Testcase: testCompareTo1104 took 0 sec
+Testcase: testIncrement1094 took 0 sec
+Testcase: testDecrement1095 took 0 sec
+Testcase: testToString1105 took 0.001 sec
+Testcase: testSubtractValueObject1099 took 0 sec

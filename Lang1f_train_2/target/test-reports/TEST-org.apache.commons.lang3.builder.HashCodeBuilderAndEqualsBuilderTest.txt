@@ -1,0 +1,5 @@
+Testsuite: org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+
+Testcase: testFixtureWithTransients769 took 0.033 sec
+Testcase: testIntegerWithTransients299 took 0.001 sec

@@ -1,0 +1,15 @@
+Testsuite: org.apache.commons.lang3.StringUtilsSubstringTest
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+
+Testcase: testRight_String477 took 0.024 sec
+	FAILED
+expected:<[foo]> but was:<[bar]>
+junit.framework.AssertionFailedError: expected:<[foo]> but was:<[bar]>
+	at org.apache.commons.lang3.StringUtilsSubstringTest.testRight_String477(StringUtilsSubstringTest.java:49)
+
+Testcase: testRight_String478 took 0 sec
+	FAILED
+expected:<[foo]> but was:<[bar]>
+junit.framework.AssertionFailedError: expected:<[foo]> but was:<[bar]>
+	at org.apache.commons.lang3.StringUtilsSubstringTest.testRight_String478(StringUtilsSubstringTest.java:63)
+

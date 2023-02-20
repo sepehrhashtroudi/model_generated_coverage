@@ -1,0 +1,18 @@
+Testsuite: org.apache.commons.lang3.RangeTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+
+Testcase: testToString814 took 0.02 sec
+Testcase: testIsStartedBy820 took 0 sec
+Testcase: testEqualsObject826 took 0 sec
+Testcase: testGetMaximum817 took 0 sec
+Testcase: testIntersectionWith818 took 0 sec
+Testcase: testIsAfterRange823 took 0 sec
+Testcase: testIsAfter819 took 0 sec
+Testcase: testIsBeforeRange825 took 0 sec
+Testcase: testIsEndedBy821 took 0.001 sec
+Testcase: testComparableConstructors815 took 0 sec
+Testcase: testElementCompareTo822 took 0 sec
+Testcase: testGetMinimum816 took 0.001 sec
+Testcase: testHashCode827 took 0 sec
+Testcase: testIntersectionWithNull824 took 0 sec
+Testcase: testIsWithCompare813 took 0.001 sec

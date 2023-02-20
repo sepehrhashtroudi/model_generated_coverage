@@ -1,0 +1,26 @@
+Testsuite: org.apache.commons.lang3.reflect.FieldUtilsTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec
+
+Testcase: testReadStaticFieldIllegalArgumentException1732 took 0.02 sec
+Testcase: testReadStaticFieldIllegalArgumentException2609 took 0.005 sec
+Testcase: testReadField727 took 0.001 sec
+Testcase: testReadDeclaredNamedField729 took 0.001 sec
+Testcase: testAmbig726 took 0.002 sec
+Testcase: testReadNamedField737 took 0 sec
+Testcase: testWriteDeclaredNamedStaticField738 took 0 sec
+Testcase: testReadFieldForceAccess734 took 0 sec
+Testcase: testGetAllFields730 took 0.006 sec
+Testcase: testWriteFieldForceAccess739 took 0.001 sec
+Testcase: testReadNamedStaticField723 took 0 sec
+Testcase: testReadDeclaredNamedStaticFieldForceAccess610 took 0 sec
+Testcase: testWriteNamedStaticField724 took 0.001 sec
+Testcase: testReadDeclaredNamedStaticField733 took 0 sec
+Testcase: testGetAllFieldsList731 took 0.001 sec
+Testcase: testConstructor720 took 0 sec
+Testcase: testReadNamedFieldForceAccess736 took 0.001 sec
+Testcase: testGetDeclaredFieldAccessIllegalArgumentException1728 took 0 sec
+Testcase: testWriteDeclaredNamedField740 took 0 sec
+Testcase: testWriteNamedField735 took 0 sec
+Testcase: testWriteNamedFieldForceAccess725 took 0 sec
+Testcase: testGetFieldIllegalArgumentException2721 took 0 sec
+Testcase: testReadStaticFieldForceAccessIllegalArgumentException2722 took 0 sec

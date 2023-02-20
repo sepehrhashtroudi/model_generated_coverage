@@ -1,0 +1,11 @@
+Testsuite: org.apache.commons.lang3.BitFieldTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+
+Testcase: testSetShortBoolean30 took 0 sec
+Testcase: testSetShortValue33 took 0 sec
+Testcase: testIsAllSet32 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.BitFieldTest.testIsAllSet32(BitFieldTest.java:51)
+

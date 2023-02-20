@@ -1,0 +1,40 @@
+Testsuite: org.apache.commons.lang3.ArrayUtilsTest
+Tests run: 27, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+
+Testcase: testLastIndexOfBoolean294 took 0.026 sec
+Testcase: testSameLengthChar281 took 0 sec
+Testcase: testNullToEmptyByte275 took 0 sec
+Testcase: testLastIndexOfIntWithStartIndex287 took 0 sec
+Testcase: testCloneBoolean273 took 0 sec
+Testcase: testToPrimitive_int_int298 took 0.001 sec
+Testcase: testNullToEmptyIntegerObject276 took 0 sec
+Testcase: testNullToEmptyIntegerObject277 took 0 sec
+Testcase: testContains284 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.ArrayUtilsTest.testContains284(ArrayUtilsTest.java:210)
+
+Testcase: testRemoveElementDoubleArray289 took 0 sec
+Testcase: testIndexOf282 took 0 sec
+Testcase: testToPrimitive_char_char295 took 0 sec
+Testcase: testToPrimitive_char_char296 took 0.001 sec
+Testcase: testToPrimitive_char_char297 took 0 sec
+Testcase: testContainsByte288 took 0 sec
+Testcase: testContainsFloat292 took 0 sec
+Testcase: testSameLengthInt279 took 0 sec
+Testcase: testSameLengthInt280 took 0 sec
+Testcase: testContainsBoolean293 took 0 sec
+Testcase: testLastIndexOfFloatWithStartIndex291 took 0.001 sec
+	FAILED
+expected:<4> but was:<0>
+junit.framework.AssertionFailedError: expected:<4> but was:<0>
+	at org.apache.commons.lang3.ArrayUtilsTest.testLastIndexOfFloatWithStartIndex291(ArrayUtilsTest.java:309)
+
+Testcase: testRemoveElementLongArray285 took 0 sec
+Testcase: testLastIndexOfLongWithStartIndex286 took 0 sec
+Testcase: testLastIndexOfWithStartIndex283 took 0.001 sec
+Testcase: testNullToEmptyString274 took 0 sec
+Testcase: testContainsDoubleTolerance290 took 0 sec
+Testcase: testToPrimitive_boolean299 took 0 sec
+Testcase: testCloneObject272 took 0 sec

@@ -1,0 +1,4 @@
+Testsuite: org.apache.commons.lang3.builder.ShortPrefixToStringStyleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+
+Testcase: testPerson1118 took 0.03 sec

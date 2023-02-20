@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":64,"id":1503,"methods":[{"el":43,"sc":3,"sl":41},{"el":53,"sc":3,"sl":51},{"el":63,"sc":3,"sl":61}],"name":"JsonParseException","sl":32}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_10":{"methods":[{"sl":51}],"name":"testBadValueForBigDecimalDeserialization104","pass":true,"statements":[{"sl":52}]},"test_100":{"methods":[{"sl":51}],"name":"testBadValueForBigIntegerDeserialization107","pass":true,"statements":[{"sl":52}]},"test_143":{"methods":[{"sl":51}],"name":"testRawCollectionDeserializationNotAlllowed167","pass":true,"statements":[{"sl":52}]},"test_196":{"methods":[{"sl":41}],"name":"testBadTypeForDeserializingCustomTree123","pass":true,"statements":[{"sl":42}]},"test_216":{"methods":[{"sl":51}],"name":"testWrappedExceptionPropagation163","pass":true,"statements":[{"sl":52}]},"test_28":{"methods":[{"sl":51}],"name":"testRawCollectionOfBagOfPrimitivesNotAllowed215","pass":true,"statements":[{"sl":52}]},"test_52":{"methods":[{"sl":41},{"sl":61}],"name":"testInvalidJsonDeserializationFails68","pass":true,"statements":[{"sl":42},{"sl":62}]},"test_55":{"methods":[{"sl":51}],"name":"testBadFieldTypeForCustomDeserializerCustomTree110","pass":true,"statements":[{"sl":52}]},"test_71":{"methods":[{"sl":41}],"name":"testRethrowJsonParseException162","pass":true,"statements":[{"sl":42}]},"test_79":{"methods":[{"sl":51}],"name":"testDefaultTypeAdapterThrowsParseException208","pass":true,"statements":[{"sl":52}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [196, 52, 71], [196, 52, 71], [], [], [], [], [], [], [], [], [216, 100, 143, 55, 79, 10, 28], [216, 100, 143, 55, 79, 10, 28], [], [], [], [], [], [], [], [], [52], [52], [], []]

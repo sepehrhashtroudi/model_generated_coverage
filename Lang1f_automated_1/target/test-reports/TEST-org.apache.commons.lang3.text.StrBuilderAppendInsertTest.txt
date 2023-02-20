@@ -1,0 +1,32 @@
+Testsuite: org.apache.commons.lang3.text.StrBuilderAppendInsertTest
+Tests run: 12, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+
+Testcase: testAppendln_String_int_int266 took 0.005 sec
+Testcase: testAppendWithSeparators_Iterator263 took 0.001 sec
+Testcase: testAppend_Object264 took 0.001 sec
+Testcase: testAppendln_StrBuilder_int_int271 took 0 sec
+Testcase: testAppend_PrimitiveNumber269 took 0.002 sec
+	FAILED
+expected:<0[
+]> but was:<0[]>
+junit.framework.AssertionFailedError: expected:<0[
+]> but was:<0[]>
+	at org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppend_PrimitiveNumber269(StrBuilderAppendInsertTest.java:151)
+
+Testcase: testGetSetNullText259 took 0 sec
+Testcase: testAppendSeparator_String274 took 0 sec
+	FAILED
+expected:<foo,[]> but was:<foo,[,]>
+junit.framework.AssertionFailedError: expected:<foo,[]> but was:<foo,[,]>
+	at org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendSeparator_String274(StrBuilderAppendInsertTest.java:216)
+
+Testcase: testAppend_StringBuffer268 took 0 sec
+Testcase: testAppendSeparator_char275 took 0.001 sec
+	FAILED
+expected:<foo[,]> but was:<foo[.]>
+junit.framework.AssertionFailedError: expected:<foo[,]> but was:<foo[.]>
+	at org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppendSeparator_char275(StrBuilderAppendInsertTest.java:228)
+
+Testcase: testLang299276 took 0 sec
+Testcase: testCapacity265 took 0 sec
+Testcase: testAppendln_StringBuffer270 took 0 sec

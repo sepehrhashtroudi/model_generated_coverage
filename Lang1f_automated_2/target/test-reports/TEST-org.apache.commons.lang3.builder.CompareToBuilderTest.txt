@@ -1,0 +1,20 @@
+Testsuite: org.apache.commons.lang3.builder.CompareToBuilderTest
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+
+Testcase: testSuper410 took 0.02 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.builder.CompareToBuilderTest.testSuper410(CompareToBuilderTest.java:125)
+
+Testcase: testReflectionCompare408 took 0.008 sec
+Testcase: testObject411 took 0 sec
+Testcase: testByteArrayHiddenByObject414 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.builder.CompareToBuilderTest.testByteArrayHiddenByObject414(CompareToBuilderTest.java:213)
+
+Testcase: testObjectArrayHiddenByObject412 took 0 sec
+Testcase: testReflectionHierarchyCompare409 took 0 sec
+Testcase: testByteArray413 took 0 sec

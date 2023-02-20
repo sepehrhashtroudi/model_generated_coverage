@@ -1,0 +1,26 @@
+Testsuite: org.apache.commons.lang3.AnnotationUtilsTest
+Tests run: 7, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.047 sec
+
+Testcase: testNonEquivalentAnnotationsOfSameType301 took 0.028 sec
+Testcase: testToString300 took 0.002 sec
+	Caused an ERROR
+org.apache.commons.lang3.AnnotationUtilsTest.testToString()
+java.lang.NoSuchMethodException: org.apache.commons.lang3.AnnotationUtilsTest.testToString()
+	at java.lang.Class.getDeclaredMethod(Class.java:2130)
+	at org.apache.commons.lang3.AnnotationUtilsTest.testToString300(AnnotationUtilsTest.java:399)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+
+Testcase: testEquivalence305 took 0.002 sec
+Testcase: testOneArgNull1120 took 0 sec
+Testcase: testAnnotationsOfDifferingTypes303 took 0 sec
+Testcase: testHashCode304 took 0 sec
+	Caused an ERROR
+org.apache.commons.lang3.AnnotationUtilsTest.testHashCode()
+java.lang.NoSuchMethodException: org.apache.commons.lang3.AnnotationUtilsTest.testHashCode()
+	at java.lang.Class.getDeclaredMethod(Class.java:2130)
+	at org.apache.commons.lang3.AnnotationUtilsTest.testHashCode304(AnnotationUtilsTest.java:423)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+
+Testcase: testSameInstance302 took 0 sec

@@ -1,0 +1,25 @@
+Testsuite: org.apache.commons.lang3.builder.EqualsBuilderTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+
+Testcase: testFloat332 took 0.02 sec
+Testcase: testBooleanArray340 took 0.001 sec
+Testcase: testBoolean333 took 0 sec
+Testcase: testFloatArray339 took 0 sec
+Testcase: testMultiBooleanArray327 took 0 sec
+Testcase: testSuper323 took 0.001 sec
+Testcase: testIntArray336 took 0 sec
+Testcase: testObject326 took 0 sec
+Testcase: testObjectArrayHiddenByObject325 took 0 sec
+Testcase: testShortArray331 took 0 sec
+Testcase: testCharArray337 took 0 sec
+Testcase: testUnrelatedClasses324 took 0.001 sec
+Testcase: testDoubleArray320 took 0 sec
+Testcase: testReflectionEqualsExcludeFields321 took 0.01 sec
+Testcase: testMultiFloatArray329 took 0 sec
+Testcase: testMultiLongArray328 took 0 sec
+Testcase: testObjectBuild341 took 0 sec
+Testcase: testObjectArray334 took 0 sec
+Testcase: testReflectionEquals322 took 0 sec
+Testcase: testBooleanArrayHiddenByObject330 took 0 sec
+Testcase: testLongArray335 took 0 sec
+Testcase: testByteArray338 took 0 sec

@@ -1,0 +1,13 @@
+Testsuite: org.apache.commons.lang3.StringUtilsSubstringTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+
+Testcase: testSubstringAfter_StringString1029 took 0.025 sec
+Testcase: testRight_String1026 took 0.001 sec
+Testcase: testCountMatches_String1077 took 0.001 sec
+Testcase: testSubstringAfterLast_StringString1030 took 0 sec
+Testcase: testLeft_String1025 took 0 sec
+Testcase: testSubstringBetween_StringString1031 took 0 sec
+Testcase: testMid_String1027 took 0 sec
+Testcase: testSubstringsBetween_StringStringString1032 took 0.004 sec
+Testcase: testSubstringBefore_StringString1028 took 0 sec
+Testcase: testSubstring_StringIntInt1024 took 0 sec

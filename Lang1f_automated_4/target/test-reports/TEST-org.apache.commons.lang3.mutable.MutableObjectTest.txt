@@ -1,0 +1,22 @@
+Testsuite: org.apache.commons.lang3.mutable.MutableObjectTest
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+
+Testcase: testDefault161 took 0.02 sec
+	FAILED
+expected:<> but was:<null>
+junit.framework.AssertionFailedError: expected:<> but was:<null>
+	at org.apache.commons.lang3.mutable.MutableObjectTest.testDefault161(MutableObjectTest.java:34)
+
+Testcase: testHashCode162 took 0 sec
+Testcase: testGetSet164 took 0 sec
+	FAILED
+expected:<HELLO> but was:<null>
+junit.framework.AssertionFailedError: expected:<HELLO> but was:<null>
+	at org.apache.commons.lang3.mutable.MutableObjectTest.testGetSet164(MutableObjectTest.java:68)
+
+Testcase: testEquals163 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.mutable.MutableObjectTest.testEquals163(MutableObjectTest.java:61)
+

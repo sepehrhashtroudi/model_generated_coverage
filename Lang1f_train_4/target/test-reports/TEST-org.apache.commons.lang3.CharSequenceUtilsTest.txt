@@ -1,0 +1,5 @@
+Testsuite: org.apache.commons.lang3.CharSequenceUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+
+Testcase: testConstructor275 took 0.021 sec
+Testcase: testSubSequence276 took 0 sec

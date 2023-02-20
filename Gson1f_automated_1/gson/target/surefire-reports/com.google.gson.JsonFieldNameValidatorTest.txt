@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.google.gson.JsonFieldNameValidatorTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec <<< FAILURE!
+testValidFieldBeginsWithDollarSign78(com.google.gson.JsonFieldNameValidatorTest)  Time elapsed: 0.011 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Field name should not be valid
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.google.gson.JsonFieldNameValidatorTest.__CLR4_4_1b089wf32l(JsonFieldNameValidatorTest.java:44)
+	at com.google.gson.JsonFieldNameValidatorTest.testValidFieldBeginsWithDollarSign78(JsonFieldNameValidatorTest.java:40)
+

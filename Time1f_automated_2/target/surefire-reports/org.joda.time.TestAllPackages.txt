@@ -1,0 +1,2007 @@
+-------------------------------------------------------------------------------
+Test set: org.joda.time.TestAllPackages
+-------------------------------------------------------------------------------
+Tests run: 433, Failures: 141, Errors: 17, Skipped: 0, Time elapsed: 2.315 sec <<< FAILURE! - in org.joda.time.TestAllPackages
+warning(junit.framework.TestSuite$1)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.TestDateTimeFieldType
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+testWithDate_int_int251(org.joda.time.TestDateTime_Basics)  Time elapsed: 0.004 sec  <<< ERROR!
+org.joda.time.IllegalFieldValueException: Value 24 for monthOfYear must be in the range [1,12]
+	at org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:236)
+	at org.joda.time.chrono.BasicMonthOfYearDateTimeField.set(BasicMonthOfYearDateTimeField.java:299)
+	at org.joda.time.chrono.GJChronology$CutoverField.set(GJChronology.java:752)
+	at org.joda.time.chrono.LimitChronology$LimitDateTimeField.set(LimitChronology.java:511)
+	at org.joda.time.DateTime.withDate(DateTime.java:712)
+	at org.joda.time.TestDateTime_Basics.__CLR4_4_1gxhkxbh99(TestDateTime_Basics.java:132)
+	at org.joda.time.TestDateTime_Basics.testWithDate_int_int251(TestDateTime_Basics.java:130)
+
+testPlus_RP257(org.joda.time.TestDateTime_Basics)  Time elapsed: 0.004 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<2003-07-28T01:02:03.004-00:01:15> but was:<2003-07-28T06:08:10.012-00:01:15>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestDateTime_Basics.__CLR4_4_1vn8olmhaa(TestDateTime_Basics.java:177)
+	at org.joda.time.TestDateTime_Basics.testPlus_RP257(TestDateTime_Basics.java:173)
+
+testPropertyAddLongDayOfWeek263(org.joda.time.TestDateTime_Properties)  Time elapsed: 0.006 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2004-[12-09T00:00:00.000Z]> but was:<2004-[06-18T00:00:00.000+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestDateTime_Properties.__CLR4_4_1b009izhd5(TestDateTime_Properties.java:136)
+	at org.joda.time.TestDateTime_Properties.testPropertyAddLongDayOfWeek263(TestDateTime_Properties.java:132)
+
+testPropertySetDayOfWeek262(org.joda.time.TestDateTime_Properties)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2004-0[1-19T00:00:00.000Z]> but was:<2004-0[6-10T00:00:00.000+01:00]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestDateTime_Properties.__CLR4_4_1ffswevhcu(TestDateTime_Properties.java:120)
+	at org.joda.time.TestDateTime_Properties.testPropertySetDayOfWeek262(TestDateTime_Properties.java:116)
+
+testPropertyWithMaximumValueMillisOfDayDSTGap265(org.joda.time.TestDateTime_Properties)  Time elapsed: 0.008 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2001-04-20T[01:00:00.000]+03:00> but was:<2001-04-20T[23:59:59.999]+03:00>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestDateTime_Properties.__CLR4_4_1w1eweyhdl(TestDateTime_Properties.java:154)
+	at org.joda.time.TestDateTime_Properties.testPropertyWithMaximumValueMillisOfDayDSTGap265(TestDateTime_Properties.java:150)
+
+testSetMillisOfDay_int1431(org.joda.time.TestMutableDateTime_Sets)  Time elapsed: 0.003 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2002-06-09T00:00:[13.008]+01:00> but was:<2002-06-09T00:00:[00.013]+01:00>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestMutableDateTime_Sets.__CLR4_4_1oekv9jisf(TestMutableDateTime_Sets.java:145)
+	at org.joda.time.TestMutableDateTime_Sets.testSetMillisOfDay_int1431(TestMutableDateTime_Sets.java:142)
+
+testSetWeekyear_int2427(org.joda.time.TestMutableDateTime_Sets)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.fail(Assert.java:53)
+	at org.joda.time.TestMutableDateTime_Sets.__CLR4_4_16euhflirs(TestMutableDateTime_Sets.java:115)
+	at org.joda.time.TestMutableDateTime_Sets.testSetWeekyear_int2427(TestMutableDateTime_Sets.java:111)
+
+testSetMillisOfSecond_int1432(org.joda.time.TestMutableDateTime_Sets)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2002-06-09T05:06:[13.008]+01:00> but was:<2002-06-09T05:06:[07.013]+01:00>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestMutableDateTime_Sets.__CLR4_4_1r94flyisj(TestMutableDateTime_Sets.java:150)
+	at org.joda.time.TestMutableDateTime_Sets.testSetMillisOfSecond_int1432(TestMutableDateTime_Sets.java:147)
+
+testSetDate_int_int_int_dstOverlapWinter_addZero435(org.joda.time.TestMutableDateTime_Sets)  Time elapsed: 0.005 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...10-30T02:30:00.000+0[1]:00> but was:<...10-30T02:30:00.000+0[2]:00>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestMutableDateTime_Sets.__CLR4_4_18w7oqtist(TestMutableDateTime_Sets.java:164)
+	at org.joda.time.TestMutableDateTime_Sets.testSetDate_int_int_int_dstOverlapWinter_addZero435(TestMutableDateTime_Sets.java:159)
+
+testSetDate_int_int_dstOverlapWinter_addZero433(org.joda.time.TestMutableDateTime_Sets)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...10-30T02:30:00.000+0[1]:00> but was:<...10-30T02:30:00.000+0[2]:00>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestMutableDateTime_Sets.__CLR4_4_15gnuo9isn(TestMutableDateTime_Sets.java:157)
+	at org.joda.time.TestMutableDateTime_Sets.testSetDate_int_int_dstOverlapWinter_addZero433(TestMutableDateTime_Sets.java:152)
+
+testSetDayOfMonth_int_dstOverlapWinter_addZero429(org.joda.time.TestMutableDateTime_Sets)  Time elapsed: 0.002 sec  <<< ERROR!
+org.joda.time.IllegalFieldValueException: Value 303 for dayOfMonth must be in the range [1,31]
+	at org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:236)
+	at org.joda.time.field.PreciseDurationDateTimeField.set(PreciseDurationDateTimeField.java:79)
+	at org.joda.time.chrono.ZonedChronology$ZonedDateTimeField.set(ZonedChronology.java:481)
+	at org.joda.time.MutableDateTime.setDayOfMonth(MutableDateTime.java:754)
+	at org.joda.time.TestMutableDateTime_Sets.__CLR4_4_1tz3wg1is3(TestMutableDateTime_Sets.java:130)
+	at org.joda.time.TestMutableDateTime_Sets.testSetDayOfMonth_int_dstOverlapWinter_addZero429(TestMutableDateTime_Sets.java:126)
+
+testSetMinuteOfDay_int2430(org.joda.time.TestMutableDateTime_Sets)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.fail(Assert.java:53)
+	at org.joda.time.TestMutableDateTime_Sets.__CLR4_4_14pzn8pis9(TestMutableDateTime_Sets.java:137)
+	at org.joda.time.TestMutableDateTime_Sets.testSetMinuteOfDay_int2430(TestMutableDateTime_Sets.java:133)
+
+testSetDayOfMonth_int_dstOverlapSummer_addZero428(org.joda.time.TestMutableDateTime_Sets)  Time elapsed: 0.003 sec  <<< ERROR!
+org.joda.time.IllegalFieldValueException: Value 303 for dayOfMonth must be in the range [1,31]
+	at org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:236)
+	at org.joda.time.field.PreciseDurationDateTimeField.set(PreciseDurationDateTimeField.java:79)
+	at org.joda.time.chrono.ZonedChronology$ZonedDateTimeField.set(ZonedChronology.java:481)
+	at org.joda.time.MutableDateTime.setDayOfMonth(MutableDateTime.java:754)
+	at org.joda.time.TestMutableDateTime_Sets.__CLR4_4_1que14kiry(TestMutableDateTime_Sets.java:123)
+	at org.joda.time.TestMutableDateTime_Sets.testSetDayOfMonth_int_dstOverlapSummer_addZero428(TestMutableDateTime_Sets.java:120)
+
+testPropertyGetYearOfCentury437(org.joda.time.TestMutableDateTime_Properties)  Time elapsed: 0.005 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<2004> but was:<4>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestMutableDateTime_Properties.__CLR4_4_14xkjseind(TestMutableDateTime_Properties.java:97)
+	at org.joda.time.TestMutableDateTime_Properties.testPropertyGetYearOfCentury437(TestMutableDateTime_Properties.java:92)
+
+testPropertyGetMinuteOfDay440(org.joda.time.TestMutableDateTime_Properties)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<53> but was:<803>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestMutableDateTime_Properties.__CLR4_4_1q724adio8(TestMutableDateTime_Properties.java:135)
+	at org.joda.time.TestMutableDateTime_Properties.testPropertyGetMinuteOfDay440(TestMutableDateTime_Properties.java:129)
+
+testPropertyGetMinuteOfHour441(org.joda.time.TestMutableDateTime_Properties)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<53> but was:<23>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestMutableDateTime_Properties.__CLR4_4_1s9j1iioo(TestMutableDateTime_Properties.java:152)
+	at org.joda.time.TestMutableDateTime_Properties.testPropertyGetMinuteOfHour441(TestMutableDateTime_Properties.java:146)
+
+testPropertyGetSecondOfDay442(org.joda.time.TestMutableDateTime_Properties)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<53> but was:<48223>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestMutableDateTime_Properties.__CLR4_4_1r3uatzip4(TestMutableDateTime_Properties.java:169)
+	at org.joda.time.TestMutableDateTime_Properties.testPropertyGetSecondOfDay442(TestMutableDateTime_Properties.java:163)
+
+testPropertyAddWrapFieldYear447(org.joda.time.TestMutableDateTime_Properties)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<200[4]-06-09T00:00:00.000+...> but was:<200[5]-06-09T00:00:00.000+...>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestMutableDateTime_Properties.__CLR4_4_18wba51ipk(TestMutableDateTime_Properties.java:183)
+	at org.joda.time.TestMutableDateTime_Properties.testPropertyAddWrapFieldYear447(TestMutableDateTime_Properties.java:180)
+
+testPropertyAddWrapFieldYear448(org.joda.time.TestMutableDateTime_Properties)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<200[4]-06-09T00:00:00.000+...> but was:<200[8]-06-09T00:00:00.000+...>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestMutableDateTime_Properties.__CLR4_4_15nbbckipx(TestMutableDateTime_Properties.java:197)
+	at org.joda.time.TestMutableDateTime_Properties.testPropertyAddWrapFieldYear448(TestMutableDateTime_Properties.java:194)
+
+testPropertyRoundCeilingHourOfDay449(org.joda.time.TestMutableDateTime_Properties)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2004-06-09T1[3]:00:00.000+01:00> but was:<2004-06-09T1[4]:00:00.000+01:00>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestMutableDateTime_Properties.__CLR4_4_19oc617iq1(TestMutableDateTime_Properties.java:202)
+	at org.joda.time.TestMutableDateTime_Properties.testPropertyRoundCeilingHourOfDay449(TestMutableDateTime_Properties.java:199)
+
+testPropertyRoundCeilingHourOfDay450(org.joda.time.TestMutableDateTime_Properties)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2004-06-09T1[3]:00:00.000+01:00> but was:<2004-06-09T1[4]:00:00.000+01:00>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestMutableDateTime_Properties.__CLR4_4_197gylxiq5(TestMutableDateTime_Properties.java:207)
+	at org.joda.time.TestMutableDateTime_Properties.testPropertyRoundCeilingHourOfDay450(TestMutableDateTime_Properties.java:204)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.TestDateMidnight_Constructors
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+testMinus_RP621(org.joda.time.TestDateMidnight_Basics)  Time elapsed: 0.005 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<2001-03-26T00:00:00.000-00:01:15> but was:<2001-03-25T00:00:00.000-00:01:15>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestDateMidnight_Basics.__CLR4_4_1f7tlvhgxq(TestDateMidnight_Basics.java:195)
+	at org.joda.time.TestDateMidnight_Basics.testMinus_RP621(TestDateMidnight_Basics.java:191)
+
+testPlusWeeks_int619(org.joda.time.TestDateMidnight_Basics)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<2002-05-04T00:00:00.000-00:01:15> but was:<2002-05-10T00:00:00.000-00:01:15>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestDateMidnight_Basics.__CLR4_4_1zb8yqmgxc(TestDateMidnight_Basics.java:179)
+	at org.joda.time.TestDateMidnight_Basics.testPlusWeeks_int619(TestDateMidnight_Basics.java:175)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.TestDateMidnight_Properties
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+testFactory_standardSeconds_long115(org.joda.time.TestDuration_Constructors)  Time elapsed: 0.004 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<3600000> but was:<1000>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:133)
+	at junit.framework.Assert.assertEquals(Assert.java:139)
+	at org.joda.time.TestDuration_Constructors.__CLR4_4_17bkq78hlh(TestDuration_Constructors.java:103)
+	at org.joda.time.TestDuration_Constructors.testFactory_standardSeconds_long115(TestDuration_Constructors.java:101)
+
+testToString602(org.joda.time.TestDuration_Basics)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<PT[12.6]S> but was:<PT[0.123]S>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestDuration_Basics.__CLR4_4_1vn9tenhj1(TestDuration_Basics.java:191)
+	at org.joda.time.TestDuration_Basics.testToString602(TestDuration_Basics.java:189)
+
+testToString604(org.joda.time.TestDuration_Basics)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<PT[12.6]S> but was:<PT[0.123]S>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestDuration_Basics.__CLR4_4_1p59vtphk3(TestDuration_Basics.java:231)
+	at org.joda.time.TestDuration_Basics.testToString604(TestDuration_Basics.java:229)
+
+testToString603(org.joda.time.TestDuration_Basics)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<PT[123L]> but was:<PT[0.123S]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestDuration_Basics.__CLR4_4_1se9um6hji(TestDuration_Basics.java:209)
+	at org.joda.time.TestDuration_Basics.testToString603(TestDuration_Basics.java:207)
+
+testToPeriod_PeriodType278(org.joda.time.TestDuration_Basics)  Time elapsed: 0.012 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<P64W2DT5H6M7S> but was:<PT10805H6M7S>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestDuration_Basics.__CLR4_4_128fjihi1(TestDuration_Basics.java:149)
+	at org.joda.time.TestDuration_Basics.testToPeriod_PeriodType278(TestDuration_Basics.java:145)
+
+testPlus_RP544(org.joda.time.TestLocalDateTime_Basics)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<2003-07-28T10:20:30.040> but was:<2003-07-29T15:26:37.048>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestLocalDateTime_Basics.__CLR4_4_1e866wlhuz(TestLocalDateTime_Basics.java:149)
+	at org.joda.time.TestLocalDateTime_Basics.testPlus_RP544(TestLocalDateTime_Basics.java:145)
+
+testToString_String_Locale553(org.joda.time.TestLocalDateTime_Basics)  Time elapsed: 0.006 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[]10:20:30.040> but was:<[2002-06-09T]10:20:30.040>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestLocalDateTime_Basics.__CLR4_4_1y9bap9hwc(TestLocalDateTime_Basics.java:203)
+	at org.joda.time.TestLocalDateTime_Basics.testToString_String_Locale553(TestLocalDateTime_Basics.java:200)
+
+testGetters549(org.joda.time.TestLocalDateTime_Basics)  Time elapsed: 0.003 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<1970> but was:<70>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestLocalDateTime_Basics.__CLR4_4_18hhpd7hvy(TestLocalDateTime_Basics.java:195)
+	at org.joda.time.TestLocalDateTime_Basics.testGetters549(TestLocalDateTime_Basics.java:185)
+
+testIsSupported_DurationFieldType542(org.joda.time.TestLocalDateTime_Basics)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<false> but was:<true>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:146)
+	at junit.framework.Assert.assertEquals(Assert.java:152)
+	at org.joda.time.TestLocalDateTime_Basics.__CLR4_4_164boyvhuo(TestLocalDateTime_Basics.java:142)
+	at org.joda.time.TestLocalDateTime_Basics.testIsSupported_DurationFieldType542(TestLocalDateTime_Basics.java:133)
+
+testPlusDays_int545(org.joda.time.TestLocalDateTime_Basics)  Time elapsed: 0.005 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<2002-05-03T10:20:30.040> but was:<2002-05-04T10:20:30.040>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestLocalDateTime_Basics.__CLR4_4_1bxaneehv6(TestLocalDateTime_Basics.java:157)
+	at org.joda.time.TestLocalDateTime_Basics.testPlusDays_int545(TestLocalDateTime_Basics.java:153)
+
+testMinusMinutes_int548(org.joda.time.TestLocalDateTime_Basics)  Time elapsed: 0.009 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<2002-05-03T10:20:30.040> but was:<2002-05-03T10:19:30.040>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestLocalDateTime_Basics.__CLR4_4_19r2xrjhvr(TestLocalDateTime_Basics.java:181)
+	at org.joda.time.TestLocalDateTime_Basics.testMinusMinutes_int548(TestLocalDateTime_Basics.java:177)
+
+testPropertyGetWeekyear100(org.joda.time.TestLocalDate_Basics)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<4> but was:<2004>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestLocalDate_Basics.__CLR4_4_19mxi7si1e(TestLocalDate_Basics.java:125)
+	at org.joda.time.TestLocalDate_Basics.testPropertyGetWeekyear100(TestLocalDate_Basics.java:119)
+
+testGet_DateTimeFieldType301(org.joda.time.TestLocalDate_Basics)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<1970> but was:<2002>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestLocalDate_Basics.__CLR4_4_1egool9i2l(TestLocalDate_Basics.java:167)
+	at org.joda.time.TestLocalDate_Basics.testGet_DateTimeFieldType301(TestLocalDate_Basics.java:165)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.TestLocalDate_Properties
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+testPlusSeconds_int414(org.joda.time.TestLocalTime_Basics)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<02:02:04.004> but was:<01:02:04.004>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestLocalTime_Basics.__CLR4_4_1idzmd7i8w(TestLocalTime_Basics.java:160)
+	at org.joda.time.TestLocalTime_Basics.testPlusSeconds_int414(TestLocalTime_Basics.java:156)
+
+testPlusSeconds_int413(org.joda.time.TestLocalTime_Basics)  Time elapsed: 0.005 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<02:02:04.004> but was:<01:02:04.004>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestLocalTime_Basics.__CLR4_4_1f4znkqi8p(TestLocalTime_Basics.java:152)
+	at org.joda.time.TestLocalTime_Basics.testPlusSeconds_int413(TestLocalTime_Basics.java:149)
+
+testWithFieldAdded_DurationFieldType_int_1409(org.joda.time.TestLocalTime_Basics)  Time elapsed: 0.003 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<12:20:30.040> but was:<16:20:30.040>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestLocalTime_Basics.__CLR4_4_11vkut9i83(TestLocalTime_Basics.java:125)
+	at org.joda.time.TestLocalTime_Basics.testWithFieldAdded_DurationFieldType_int_1409(TestLocalTime_Basics.java:121)
+
+testPlusMinutes_int412(org.joda.time.TestLocalTime_Basics)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<01:02:03.004> but was:<01:03:03.004>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestLocalTime_Basics.__CLR4_4_1hh7ftli8i(TestLocalTime_Basics.java:145)
+	at org.joda.time.TestLocalTime_Basics.testPlusMinutes_int412(TestLocalTime_Basics.java:141)
+
+testWithFieldAdded_DurationFieldType_int_1410(org.joda.time.TestLocalTime_Basics)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<15:20:30.040> but was:<16:20:30.040>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestLocalTime_Basics.__CLR4_4_11epndzi88(TestLocalTime_Basics.java:131)
+	at org.joda.time.TestLocalTime_Basics.testWithFieldAdded_DurationFieldType_int_1410(TestLocalTime_Basics.java:127)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.TestLocalTime_Properties
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.TestMutableInterval_Basics
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+testSetInterval_RInterval1610(org.joda.time.TestMutableInterval_Updates)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<1018009440001> but was:<1052231280000>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:133)
+	at junit.framework.Assert.assertEquals(Assert.java:139)
+	at org.joda.time.TestMutableInterval_Updates.__CLR4_4_1jvut88ix7(TestMutableInterval_Updates.java:105)
+	at org.joda.time.TestMutableInterval_Updates.testSetInterval_RInterval1610(TestMutableInterval_Updates.java:101)
+
+testSetInterval_RInterval3611(org.joda.time.TestMutableInterval_Updates)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Interval must not be null
+	at org.joda.time.MutableInterval.setInterval(MutableInterval.java:228)
+	at org.joda.time.TestMutableInterval_Updates.__CLR4_4_1wu82frixc(TestMutableInterval_Updates.java:109)
+	at org.joda.time.TestMutableInterval_Updates.testSetInterval_RInterval3611(TestMutableInterval_Updates.java:107)
+
+testSetInterval_RInterval3612(org.joda.time.TestMutableInterval_Updates)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Interval must not be null
+	at org.joda.time.MutableInterval.setInterval(MutableInterval.java:228)
+	at org.joda.time.TestMutableInterval_Updates.__CLR4_4_1yxw0qwixh(TestMutableInterval_Updates.java:115)
+	at org.joda.time.TestMutableInterval_Updates.testSetInterval_RInterval3612(TestMutableInterval_Updates.java:113)
+
+testFactoryFieldDifference540(org.joda.time.TestPeriod_Constructors)  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Values array must be the same length as the types array
+	at org.joda.time.Partial.<init>(Partial.java:200)
+	at org.joda.time.Partial.<init>(Partial.java:175)
+	at org.joda.time.TestPeriod_Constructors.__CLR4_4_1jyh5kpjl3(TestPeriod_Constructors.java:152)
+	at org.joda.time.TestPeriod_Constructors.testFactoryFieldDifference540(TestPeriod_Constructors.java:150)
+
+testFactoryFieldDifference537(org.joda.time.TestPeriod_Constructors)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Values array must be the same length as the types array
+	at org.joda.time.Partial.<init>(Partial.java:200)
+	at org.joda.time.Partial.<init>(Partial.java:175)
+	at org.joda.time.TestPeriod_Constructors.__CLR4_4_1czm0khjk5(TestPeriod_Constructors.java:106)
+	at org.joda.time.TestPeriod_Constructors.testFactoryFieldDifference537(TestPeriod_Constructors.java:104)
+
+testWithFieldAdded350(org.joda.time.TestPeriod_Basics)  Time elapsed: 0.003 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Period does not support field 'years'
+	at org.joda.time.base.BasePeriod.checkAndUpdate(BasePeriod.java:394)
+	at org.joda.time.base.BasePeriod.setPeriodInternal(BasePeriod.java:454)
+	at org.joda.time.base.BasePeriod.<init>(BasePeriod.java:93)
+	at org.joda.time.Period.<init>(Period.java:352)
+	at org.joda.time.TestPeriod_Basics.__CLR4_4_1gj0b13jg3(TestPeriod_Basics.java:141)
+	at org.joda.time.TestPeriod_Basics.testWithFieldAdded350(TestPeriod_Basics.java:140)
+
+testConstructor_Object3498(org.joda.time.TestPeriod_Basics)  Time elapsed: 0.003 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<64> but was:<0>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestPeriod_Basics.__CLR4_4_1y7ts8tjir(TestPeriod_Basics.java:265)
+	at org.joda.time.TestPeriod_Basics.testConstructor_Object3498(TestPeriod_Basics.java:259)
+
+testConstructor_long_long_Chronology1495(org.joda.time.TestMutablePeriod_Constructors)  Time elapsed: 0.003 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<1> but was:<0>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestMutablePeriod_Constructors.__CLR4_4_161il2tj0v(TestMutablePeriod_Constructors.java:173)
+	at org.joda.time.TestMutablePeriod_Constructors.testConstructor_long_long_Chronology1495(TestMutablePeriod_Constructors.java:161)
+
+testConstructor_RI_RI2496(org.joda.time.TestMutablePeriod_Constructors)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<0> but was:<1>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestMutablePeriod_Constructors.__CLR4_4_1j7czn6j18(TestMutablePeriod_Constructors.java:181)
+	at org.joda.time.TestMutablePeriod_Constructors.testConstructor_RI_RI2496(TestMutablePeriod_Constructors.java:175)
+
+testConstructor_long_Chronology2494(org.joda.time.TestMutablePeriod_Constructors)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<64> but was:<0>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestMutablePeriod_Constructors.__CLR4_4_12lo9zsj0j(TestMutablePeriod_Constructors.java:154)
+	at org.joda.time.TestMutablePeriod_Constructors.testConstructor_long_Chronology2494(TestMutablePeriod_Constructors.java:148)
+
+testConstructor_long_PeriodType_Chronology1493(org.joda.time.TestMutablePeriod_Constructors)  Time elapsed: 0.004 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<64> but was:<0>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestMutablePeriod_Constructors.__CLR4_4_13z7avgj07(TestMutablePeriod_Constructors.java:141)
+	at org.joda.time.TestMutablePeriod_Constructors.testConstructor_long_PeriodType_Chronology1493(TestMutablePeriod_Constructors.java:135)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.TestMutablePeriod_Basics
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+testAddMinutes506(org.joda.time.TestMutablePeriod_Updates)  Time elapsed: 0.003 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<15> but was:<16>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestMutablePeriod_Updates.__CLR4_4_1uqlv0uj5o(TestMutablePeriod_Updates.java:167)
+	at org.joda.time.TestMutablePeriod_Updates.testAddMinutes506(TestMutablePeriod_Updates.java:164)
+
+testConstructor_long_PeriodType2492(org.joda.time.TestMutablePeriod_Updates)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<64> but was:<0>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestMutablePeriod_Updates.__CLR4_4_1p5yevj4e(TestMutablePeriod_Updates.java:120)
+	at org.joda.time.TestMutablePeriod_Updates.testConstructor_long_PeriodType2492(TestMutablePeriod_Updates.java:114)
+
+testAddDays504(org.joda.time.TestMutablePeriod_Updates)  Time elapsed: 0.003 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<15> but was:<14>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestMutablePeriod_Updates.__CLR4_4_1q7sbjuj5e(TestMutablePeriod_Updates.java:156)
+	at org.joda.time.TestMutablePeriod_Updates.testAddDays504(TestMutablePeriod_Updates.java:153)
+
+testSetPeriod_8ints1500(org.joda.time.TestMutablePeriod_Updates)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<15> but was:<17>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestMutablePeriod_Updates.__CLR4_4_1m2vty1j4q(TestMutablePeriod_Updates.java:136)
+	at org.joda.time.TestMutablePeriod_Updates.testSetPeriod_8ints1500(TestMutablePeriod_Updates.java:127)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.TestBaseSingleFieldPeriod
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+testFactory_parseWeeks_String244(org.joda.time.TestWeeks)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid format: "P2W0M" is malformed at "0M"
+	at org.joda.time.format.PeriodFormatter.parseMutablePeriod(PeriodFormatter.java:326)
+	at org.joda.time.format.PeriodFormatter.parsePeriod(PeriodFormatter.java:304)
+	at org.joda.time.Weeks.parseWeeks(Weeks.java:185)
+	at org.joda.time.TestWeeks.__CLR4_4_132yijgjwk(TestWeeks.java:93)
+	at org.joda.time.TestWeeks.testFactory_parseWeeks_String244(TestWeeks.java:87)
+
+testToStandardHours248(org.joda.time.TestWeeks)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<PT1209600H> but was:<PT336H>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestWeeks.__CLR4_4_1nd7skojxj(TestWeeks.java:132)
+	at org.joda.time.TestWeeks.testToStandardHours248(TestWeeks.java:129)
+
+testToStandardHours517(org.joda.time.TestDays)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<PT172800H> but was:<PT48H>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestDays.__CLR4_4_1jvvkd9hdy(TestDays.java:58)
+	at org.joda.time.TestDays.testToStandardHours517(TestDays.java:55)
+
+testToStandardDays456(org.joda.time.TestHours)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<P2D> but was:<P3600000D>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestHours.__CLR4_4_1utpr0lhma(TestHours.java:69)
+	at org.joda.time.TestHours.testToStandardDays456(TestHours.java:66)
+
+testFactory_hoursBetween_RPartial454(org.joda.time.TestHours)  Time elapsed: 0.003 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<3> but was:<0>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestHours.__CLR4_4_1853ux8hm1(TestHours.java:60)
+	at org.joda.time.TestHours.testFactory_hoursBetween_RPartial454(TestHours.java:55)
+
+testToStandardWeeks389(org.joda.time.TestMinutes)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<P2W> but was:<P0W>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestMinutes.__CLR4_4_1gutzxiidq(TestMinutes.java:148)
+	at org.joda.time.TestMinutes.testToStandardWeeks389(TestMinutes.java:145)
+
+testFactory_minutesBetween_RPartial384(org.joda.time.TestMinutes)  Time elapsed: 0.003 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<3> but was:<0>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestMinutes.__CLR4_4_1grf8woicf(TestMinutes.java:89)
+	at org.joda.time.TestMinutes.testFactory_minutesBetween_RPartial384(TestMinutes.java:84)
+
+testFactory_parseMinutes_String386(org.joda.time.TestMinutes)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Period does not support field 'months'
+	at org.joda.time.base.BasePeriod.setFieldInto(BasePeriod.java:489)
+	at org.joda.time.base.BasePeriod.setField(BasePeriod.java:474)
+	at org.joda.time.MutablePeriod.setMonths(MutablePeriod.java:843)
+	at org.joda.time.format.PeriodFormatterBuilder$FieldFormatter.setFieldValue(PeriodFormatterBuilder.java:1511)
+	at org.joda.time.format.PeriodFormatterBuilder$FieldFormatter.parseInto(PeriodFormatterBuilder.java:1308)
+	at org.joda.time.format.PeriodFormatterBuilder$Composite.parseInto(PeriodFormatterBuilder.java:1837)
+	at org.joda.time.format.PeriodFormatterBuilder$Separator.parseInto(PeriodFormatterBuilder.java:1709)
+	at org.joda.time.format.PeriodFormatter.parseMutablePeriod(PeriodFormatter.java:318)
+	at org.joda.time.format.PeriodFormatter.parsePeriod(PeriodFormatter.java:304)
+	at org.joda.time.Minutes.parseMinutes(Minutes.java:185)
+	at org.joda.time.TestMinutes.__CLR4_4_1l2pobpid1(TestMinutes.java:118)
+	at org.joda.time.TestMinutes.testFactory_parseMinutes_String386(TestMinutes.java:113)
+
+testFactory_minutesBetween_RPartial387(org.joda.time.TestMinutes)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<3> but was:<4320>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestMinutes.__CLR4_4_1qif5a3ide(TestMinutes.java:135)
+	at org.joda.time.TestMinutes.testFactory_minutesBetween_RPartial387(TestMinutes.java:131)
+
+testFactory_parseMinutes_String385(org.joda.time.TestMinutes)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Period does not support field 'seconds'
+	at org.joda.time.base.BasePeriod.setFieldInto(BasePeriod.java:489)
+	at org.joda.time.base.BasePeriod.setField(BasePeriod.java:474)
+	at org.joda.time.MutablePeriod.setSeconds(MutablePeriod.java:953)
+	at org.joda.time.format.PeriodFormatterBuilder$FieldFormatter.setFieldValue(PeriodFormatterBuilder.java:1526)
+	at org.joda.time.format.PeriodFormatterBuilder$FieldFormatter.parseInto(PeriodFormatterBuilder.java:1310)
+	at org.joda.time.format.PeriodFormatterBuilder$Composite.parseInto(PeriodFormatterBuilder.java:1837)
+	at org.joda.time.format.PeriodFormatterBuilder$Separator.parseInto(PeriodFormatterBuilder.java:1736)
+	at org.joda.time.format.PeriodFormatter.parseMutablePeriod(PeriodFormatter.java:318)
+	at org.joda.time.format.PeriodFormatter.parsePeriod(PeriodFormatter.java:304)
+	at org.joda.time.Minutes.parseMinutes(Minutes.java:185)
+	at org.joda.time.TestMinutes.__CLR4_4_1obpn46ico(TestMinutes.java:98)
+	at org.joda.time.TestMinutes.testFactory_parseMinutes_String385(TestMinutes.java:95)
+
+testToStandardWeeks228(org.joda.time.TestSeconds)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<P2W> but was:<P0W>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestSeconds.__CLR4_4_1ki8laujne(TestSeconds.java:81)
+	at org.joda.time.TestSeconds.testToStandardWeeks228(TestSeconds.java:78)
+
+testConstructor_ObjectString3476(org.joda.time.TestTimeOfDay_Constructors)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<7> but was:<10>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestTimeOfDay_Constructors.__CLR4_4_1ynjoc2jso(TestTimeOfDay_Constructors.java:97)
+	at org.joda.time.TestTimeOfDay_Constructors.testConstructor_ObjectString3476(TestTimeOfDay_Constructors.java:94)
+
+testPropertySetMilli480(org.joda.time.TestTimeOfDay_Properties)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<49> but was:<12>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestTimeOfDay_Properties.check(TestTimeOfDay_Properties.java:248)
+	at org.joda.time.TestTimeOfDay_Properties.__CLR4_4_1q4vlq9juc(TestTimeOfDay_Properties.java:129)
+	at org.joda.time.TestTimeOfDay_Properties.testPropertySetMilli480(TestTimeOfDay_Properties.java:125)
+
+testToString_String_Locale624(org.joda.time.TestYearMonthDay_Basics)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[]10:20:30.040> but was:<[T]10:20:30.040>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestYearMonthDay_Basics.__CLR4_4_1jrhdjsk0h(TestYearMonthDay_Basics.java:161)
+	at org.joda.time.TestYearMonthDay_Basics.testToString_String_Locale624(TestYearMonthDay_Basics.java:158)
+
+testMinus_RP20(org.joda.time.TestYearMonthDay_Basics)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<2001-03-03> but was:<2001-04-02>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestYearMonthDay_Basics.__CLR4_4_1g6a01ojyt(TestYearMonthDay_Basics.java:93)
+	at org.joda.time.TestYearMonthDay_Basics.testMinus_RP20(TestYearMonthDay_Basics.java:89)
+
+testToLocalDate169(org.joda.time.TestYearMonth_Basics)  Time elapsed: 0.001 sec  <<< ERROR!
+org.joda.time.IllegalFieldValueException: Value 2009 for dayOfMonth must be in the range [1,30]
+	at org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:254)
+	at org.joda.time.chrono.BasicChronology.getDateMidnightMillis(BasicChronology.java:613)
+	at org.joda.time.chrono.BasicChronology.getDateTimeMillis(BasicChronology.java:159)
+	at org.joda.time.chrono.CopticChronology.getDateTimeMillis(CopticChronology.java:51)
+	at org.joda.time.chrono.LimitChronology.getDateTimeMillis(LimitChronology.java:177)
+	at org.joda.time.chrono.BasicChronology.getDateTimeMillis(BasicChronology.java:154)
+	at org.joda.time.chrono.CopticChronology.getDateTimeMillis(CopticChronology.java:51)
+	at org.joda.time.LocalDate.<init>(LocalDate.java:457)
+	at org.joda.time.YearMonth.toLocalDate(YearMonth.java:669)
+	at org.joda.time.TestYearMonth_Basics.__CLR4_4_1o7znxrk5u(TestYearMonth_Basics.java:145)
+	at org.joda.time.TestYearMonth_Basics.testToLocalDate169(TestYearMonth_Basics.java:143)
+
+testMinus_RP164(org.joda.time.TestYearMonth_Basics)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<2001-03> but was:<2001-04>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestYearMonth_Basics.__CLR4_4_1cgags7k52(TestYearMonth_Basics.java:115)
+	at org.joda.time.TestYearMonth_Basics.testMinus_RP164(TestYearMonth_Basics.java:111)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.TestYearMonth_Constructors
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+testGet8(org.joda.time.TestYearMonth_Properties)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<10> but was:<0>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestYearMonth_Properties.__CLR4_4_1b5fkytk76(TestYearMonth_Properties.java:85)
+	at org.joda.time.TestYearMonth_Properties.testGet8(TestYearMonth_Properties.java:83)
+
+testMinusMonths_int528(org.joda.time.TestMonthDay_Basics)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<--02-03> but was:<--01-03>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestMonthDay_Basics.__CLR4_4_15133q7ifq(TestMonthDay_Basics.java:137)
+	at org.joda.time.TestMonthDay_Basics.testMinusMonths_int528(TestMonthDay_Basics.java:133)
+
+testMinusDays_int529(org.joda.time.TestMonthDay_Basics)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<--05-11> but was:<--05-09>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestMonthDay_Basics.__CLR4_4_1qpcs4eifx(TestMonthDay_Basics.java:145)
+	at org.joda.time.TestMonthDay_Basics.testMinusDays_int529(TestMonthDay_Basics.java:141)
+
+testMinusDays_int530(org.joda.time.TestMonthDay_Basics)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<--05-10> but was:<--05-09>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestMonthDay_Basics.__CLR4_4_1r67zjoig4(TestMonthDay_Basics.java:153)
+	at org.joda.time.TestMonthDay_Basics.testMinusDays_int530(TestMonthDay_Basics.java:149)
+
+testToString_String_Locale531(org.joda.time.TestMonthDay_Basics)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[--06-0]6> but was:<[� 6/]6>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestMonthDay_Basics.__CLR4_4_1t5wze5igb(TestMonthDay_Basics.java:159)
+	at org.joda.time.TestMonthDay_Basics.testToString_String_Locale531(TestMonthDay_Basics.java:157)
+
+testToString_String_Locale532(org.joda.time.TestMonthDay_Basics)  Time elapsed: 0.004 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[--06-06]> but was:<[06 ��]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestMonthDay_Basics.__CLR4_4_1pwx0loigh(TestMonthDay_Basics.java:166)
+	at org.joda.time.TestMonthDay_Basics.testToString_String_Locale532(TestMonthDay_Basics.java:164)
+
+testGetFieldTypes525(org.joda.time.TestMonthDay_Basics)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: 2
+	at org.joda.time.TestMonthDay_Basics.__CLR4_4_1r4i9jwif8(TestMonthDay_Basics.java:117)
+	at org.joda.time.TestMonthDay_Basics.testGetFieldTypes525(TestMonthDay_Basics.java:112)
+
+testPropertyAddMonthOfYear533(org.joda.time.TestMonthDay_Properties)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<2> but was:<12>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestMonthDay_Properties.check(TestMonthDay_Properties.java:158)
+	at org.joda.time.TestMonthDay_Properties.__CLR4_4_1e9gbj2ii9(TestMonthDay_Properties.java:98)
+	at org.joda.time.TestMonthDay_Properties.testPropertyAddMonthOfYear533(TestMonthDay_Properties.java:92)
+
+testPropertySetTextDayOfMonth534(org.joda.time.TestMonthDay_Properties)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<12> but was:<10>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestMonthDay_Properties.check(TestMonthDay_Properties.java:158)
+	at org.joda.time.TestMonthDay_Properties.__CLR4_4_15sfcm0iim(TestMonthDay_Properties.java:110)
+	at org.joda.time.TestMonthDay_Properties.testPropertySetTextDayOfMonth534(TestMonthDay_Properties.java:106)
+
+testPropertySetTextDayOfMonth535(org.joda.time.TestMonthDay_Properties)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<6> but was:<12>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestMonthDay_Properties.check(TestMonthDay_Properties.java:159)
+	at org.joda.time.TestMonthDay_Properties.__CLR4_4_12jfdtjiir(TestMonthDay_Properties.java:116)
+	at org.joda.time.TestMonthDay_Properties.testPropertySetTextDayOfMonth535(TestMonthDay_Properties.java:112)
+
+testPropertyAddMonthOfYear198(org.joda.time.TestMonthDay_Properties)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<3> but was:<12>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestMonthDay_Properties.check(TestMonthDay_Properties.java:158)
+	at org.joda.time.TestMonthDay_Properties.__CLR4_4_1o98gsjihy(TestMonthDay_Properties.java:84)
+	at org.joda.time.TestMonthDay_Properties.testPropertyAddMonthOfYear198(TestMonthDay_Properties.java:80)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.TestPartial_Properties
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.TestPartial_Match
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+testGetField5(org.joda.time.TestAbstractPartial)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected same:<DateTimeField[hourOfDay]> was not:<DateTimeField[year]>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotSame(Assert.java:276)
+	at junit.framework.Assert.assertSame(Assert.java:239)
+	at junit.framework.Assert.assertSame(Assert.java:246)
+	at org.joda.time.TestAbstractPartial.__CLR4_4_1c70n6ugpg(TestAbstractPartial.java:106)
+	at org.joda.time.TestAbstractPartial.testGetField5(TestAbstractPartial.java:104)
+
+testGetFieldTypes2(org.joda.time.TestAbstractPartial)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: 2
+	at org.joda.time.TestAbstractPartial.__CLR4_4_13u7okqgoz(TestAbstractPartial.java:86)
+	at org.joda.time.TestAbstractPartial.testGetFieldTypes2(TestAbstractPartial.java:81)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.TestBasePartial
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+testStaticGetInstanceLower219(org.joda.time.TestDateTimeComparator)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected same:<DateTimeComparator[]> was not:<DateTimeComparator[-hourOfDay]>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotSame(Assert.java:276)
+	at junit.framework.Assert.assertSame(Assert.java:239)
+	at junit.framework.Assert.assertSame(Assert.java:246)
+	at org.joda.time.TestDateTimeComparator.__CLR4_4_1ew9d2jh09(TestDateTimeComparator.java:188)
+	at org.joda.time.TestDateTimeComparator.testStaticGetInstanceLower219(TestDateTimeComparator.java:182)
+
+testStaticGetTimeOnlyInstance221(org.joda.time.TestDateTimeComparator)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<dayOfYear> but was:<null>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestDateTimeComparator.__CLR4_4_12xpmcsh0m(TestDateTimeComparator.java:199)
+	at org.joda.time.TestDateTimeComparator.testStaticGetTimeOnlyInstance221(TestDateTimeComparator.java:197)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.TestDateTimeConstants
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.TestDateTimeUtils
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+test_DateTimeZone359(org.joda.time.TestDateTimeZone)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.fail(Assert.java:53)
+	at org.joda.time.TestDateTimeZone.__CLR4_4_1ecto9ih5b(TestDateTimeZone.java:197)
+	at org.joda.time.TestDateTimeZone.test_DateTimeZone359(TestDateTimeZone.java:194)
+
+test_DateTime_plusHour_NewYork_Autumn259(org.joda.time.TestDateTimeZoneCutover)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2007-11-04T[02]:00:00.000-05:00> but was:<2007-11-04T[14]:00:00.000-05:00>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestDateTimeZoneCutover.__CLR4_4_1qlx7ylh7g(TestDateTimeZoneCutover.java:71)
+	at org.joda.time.TestDateTimeZoneCutover.test_DateTime_plusHour_NewYork_Autumn259(TestDateTimeZoneCutover.java:67)
+
+testMaskHours336(org.joda.time.TestPeriodType)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<hours> but was:<minutes>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestPeriodType.__CLR4_4_1x9wxccjd1(TestPeriodType.java:249)
+	at org.joda.time.TestPeriodType.testMaskHours336(TestPeriodType.java:242)
+
+testToString331(org.joda.time.TestPeriodType)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<PeriodType[[dayTime]]> but was:<PeriodType[[DayTimeNoMillis]]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestPeriodType.__CLR4_4_1ad91yejbd(TestPeriodType.java:180)
+	at org.joda.time.TestPeriodType.testToString331(TestPeriodType.java:178)
+
+testName328(org.joda.time.TestPeriodType)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[dayTime]> but was:<[DayTimeNoMillis]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.TestPeriodType.__CLR4_4_19vuhwjjat(TestPeriodType.java:159)
+	at org.joda.time.TestPeriodType.testName328(TestPeriodType.java:157)
+
+testMaskDays335(org.joda.time.TestPeriodType)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<months> but was:<years>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestPeriodType.__CLR4_4_1nymjtzjci(TestPeriodType.java:225)
+	at org.joda.time.TestPeriodType.testMaskDays335(TestPeriodType.java:222)
+
+testForFields6326(org.joda.time.TestPeriodType)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.IllegalArgumentException: PeriodType does not support fields: [centuries]
+	at org.joda.time.PeriodType.forFields(PeriodType.java:536)
+	at org.joda.time.TestPeriodType.__CLR4_4_18548k8jae(TestPeriodType.java:143)
+	at org.joda.time.TestPeriodType.testForFields6326(TestPeriodType.java:141)
+
+testMaskWeeks334(org.joda.time.TestPeriodType)  Time elapsed: 0.003 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<weeks> but was:<days>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestPeriodType.__CLR4_4_1i1hy56jbz(TestPeriodType.java:207)
+	at org.joda.time.TestPeriodType.testMaskWeeks334(TestPeriodType.java:202)
+
+testMaskMonths333(org.joda.time.TestPeriodType)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<months> but was:<years>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestPeriodType.__CLR4_4_1r1i9knjbg(TestPeriodType.java:185)
+	at org.joda.time.TestPeriodType.testMaskMonths333(TestPeriodType.java:182)
+
+testMaskSeconds337(org.joda.time.TestPeriodType)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<seconds> but was:<years>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestPeriodType.__CLR4_4_1ifsddpjdk(TestPeriodType.java:265)
+	at org.joda.time.TestPeriodType.testMaskSeconds337(TestPeriodType.java:262)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.TestDurationField
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.TestStringConvert
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+testSerializedMutableDateTimeProperty446(org.joda.time.TestSerialization)  Time elapsed: 0.003 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<Property[monthOfYear]> but was:<Property[hourOfDay]>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.TestSerialization.loadAndCompare(TestSerialization.java:229)
+	at org.joda.time.TestSerialization.__CLR4_4_1va1wqrjpq(TestSerialization.java:163)
+	at org.joda.time.TestSerialization.testSerializedMutableDateTimeProperty446(TestSerialization.java:161)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.TestIllegalFieldValueException
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.chrono.TestBuddhistChronology
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.chrono.TestGregorianChronology
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.chrono.TestLenientChronology
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.chrono.TestGJDate
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+testGetPeriodConverterRemovedNull212(org.joda.time.convert.TestConverterManager)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.fail(Assert.java:53)
+	at org.joda.time.convert.TestConverterManager.__CLR4_4_13juu7mlca(TestConverterManager.java:128)
+	at org.joda.time.convert.TestConverterManager.testGetPeriodConverterRemovedNull212(TestConverterManager.java:123)
+
+testRemovePartialConverter2215(org.joda.time.convert.TestConverterManager)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<Converter[java.lang.String]> but was:<null>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.convert.TestConverterManager.__CLR4_4_1f8ojk0ld9(TestConverterManager.java:207)
+	at org.joda.time.convert.TestConverterManager.testRemovePartialConverter2215(TestConverterManager.java:182)
+
+testRemoveNullRemoved3460(org.joda.time.convert.TestConverterSet)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at org.joda.time.convert.TestConverterSet.__CLR4_4_1u7ujfflfa(TestConverterSet.java:100)
+	at org.joda.time.convert.TestConverterSet.testRemoveNullRemoved3460(TestConverterSet.java:96)
+
+testGetInstantMillis_Object_Chronology565(org.joda.time.convert.TestCalendarConverter)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<123> but was:<1676524832917>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:133)
+	at junit.framework.Assert.assertEquals(Assert.java:139)
+	at org.joda.time.convert.TestCalendarConverter.__CLR4_4_1o891ghlb5(TestCalendarConverter.java:81)
+	at org.joda.time.convert.TestCalendarConverter.testGetInstantMillis_Object_Chronology565(TestCalendarConverter.java:79)
+
+testGetInstantMillis_Object_Chronology564(org.joda.time.convert.TestCalendarConverter)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.ClassCastException: java.util.Date cannot be cast to java.util.Calendar
+	at org.joda.time.convert.CalendarConverter.getInstantMillis(CalendarConverter.java:121)
+	at org.joda.time.convert.TestCalendarConverter.__CLR4_4_1rh908ylb0(TestCalendarConverter.java:75)
+	at org.joda.time.convert.TestCalendarConverter.testGetInstantMillis_Object_Chronology564(TestCalendarConverter.java:73)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.convert.TestDateConverter
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.convert.TestNullConverter
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.convert.TestReadableDurationConverter
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+testGetDurationMillis_Object605(org.joda.time.convert.TestReadableIntervalConverter)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<123> but was:<333>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:133)
+	at junit.framework.Assert.assertEquals(Assert.java:139)
+	at org.joda.time.convert.TestReadableIntervalConverter.__CLR4_4_1i30yg2lhp(TestReadableIntervalConverter.java:72)
+	at org.joda.time.convert.TestReadableIntervalConverter.testGetDurationMillis_Object605(TestReadableIntervalConverter.java:71)
+
+testSetInto_Object82(org.joda.time.convert.TestReadablePeriodConverter)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Period does not support field 'weeks'
+	at org.joda.time.base.BasePeriod.checkAndUpdate(BasePeriod.java:394)
+	at org.joda.time.base.BasePeriod.setPeriodInternal(BasePeriod.java:424)
+	at org.joda.time.base.BasePeriod.setPeriod(BasePeriod.java:412)
+	at org.joda.time.MutablePeriod.setPeriod(MutablePeriod.java:468)
+	at org.joda.time.convert.ReadablePeriodConverter.setInto(ReadablePeriodConverter.java:58)
+	at org.joda.time.convert.TestReadablePeriodConverter.__CLR4_4_1vo7qghlip(TestReadablePeriodConverter.java:69)
+	at org.joda.time.convert.TestReadablePeriodConverter.testSetInto_Object82(TestReadablePeriodConverter.java:67)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.field.TestFieldUtils
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+test_roundHalfCeiling_long512(org.joda.time.field.TestOffsetDateTimeField)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<0> but was:<-1000>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:133)
+	at junit.framework.Assert.assertEquals(Assert.java:139)
+	at org.joda.time.field.TestOffsetDateTimeField.__CLR4_4_1e5k8fplng(TestOffsetDateTimeField.java:60)
+	at org.joda.time.field.TestOffsetDateTimeField.test_roundHalfCeiling_long512(TestOffsetDateTimeField.java:56)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.field.TestPreciseDurationDateTimeField
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+test_getRangeDurationField395(org.joda.time.field.TestPreciseDateTimeField)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<null> but was:<DurationField[minutes]>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.joda.time.field.TestPreciseDateTimeField.__CLR4_4_1wy2ickloi(TestPreciseDateTimeField.java:58)
+	at org.joda.time.field.TestPreciseDateTimeField.test_getRangeDurationField395(TestPreciseDateTimeField.java:56)
+
+test_getValue_long136(org.joda.time.field.TestPreciseDurationField)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<12345> but was:<123>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.field.TestPreciseDurationField.__CLR4_4_1w0uho8lt0(TestPreciseDurationField.java:66)
+	at org.joda.time.field.TestPreciseDurationField.test_getValue_long136(TestPreciseDurationField.java:64)
+
+test_getValue_long137(org.joda.time.field.TestPreciseDurationField)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<12345> but was:<123>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.field.TestPreciseDurationField.__CLR4_4_1sruivrlt8(TestPreciseDurationField.java:77)
+	at org.joda.time.field.TestPreciseDurationField.test_getValue_long137(TestPreciseDurationField.java:75)
+
+test_getMillis_int_long195(org.joda.time.field.TestPreciseDurationField)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<1234> but was:<1234000>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:133)
+	at junit.framework.Assert.assertEquals(Assert.java:139)
+	at org.joda.time.field.TestPreciseDurationField.__CLR4_4_1vivzi0ltg(TestPreciseDurationField.java:88)
+	at org.joda.time.field.TestPreciseDurationField.test_getMillis_int_long195(TestPreciseDurationField.java:86)
+
+test_getDifference_long_long130(org.joda.time.field.TestScaledDurationField)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<1801> but was:<568>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:133)
+	at junit.framework.Assert.assertEquals(Assert.java:139)
+	at org.joda.time.field.TestScaledDurationField.__CLR4_4_1jz6ittlus(TestScaledDurationField.java:84)
+	at org.joda.time.field.TestScaledDurationField.test_getDifference_long_long130(TestScaledDurationField.java:80)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.field.TestUnsupportedDateTimeField
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+testFormat_dayOfYear113(org.joda.time.format.TestDateTimeFormat)  Time elapsed: 0.004 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: 2004-06-09T10:20:30.040Z expected:<[2004]> but was:<[Wed]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at org.joda.time.format.TestDateTimeFormat.__CLR4_4_1qg8pb4lwp(TestDateTimeFormat.java:105)
+	at org.joda.time.format.TestDateTimeFormat.testFormat_dayOfYear113(TestDateTimeFormat.java:102)
+
+testForStyle_shortDate102(org.joda.time.format.TestDateTimeFormatStyle)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected same:<org.joda.time.format.DateTimeFormatter@41d477ed> was not:<org.joda.time.format.DateTimeFormatter@3590fc5b>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotSame(Assert.java:276)
+	at junit.framework.Assert.assertSame(Assert.java:239)
+	at junit.framework.Assert.assertSame(Assert.java:246)
+	at org.joda.time.format.TestDateTimeFormatStyle.__CLR4_4_164q423lxp(TestDateTimeFormatStyle.java:95)
+	at org.joda.time.format.TestDateTimeFormatStyle.testForStyle_shortDate102(TestDateTimeFormatStyle.java:92)
+
+testFormat_dateHourMinuteSecondMillis379(org.joda.time.format.TestISODateTimeFormat)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2004-06-09T10:20:30[]> but was:<2004-06-09T10:20:30[.040]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestISODateTimeFormat.__CLR4_4_1ib5tqem2q(TestISODateTimeFormat.java:114)
+	at org.joda.time.format.TestISODateTimeFormat.testFormat_dateHourMinuteSecondMillis379(TestISODateTimeFormat.java:112)
+
+testFormat_dateHourMinuteSecondFraction380(org.joda.time.format.TestISODateTimeFormat)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2004-06-09T10:20:30[]> but was:<2004-06-09T10:20:30[.040]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestISODateTimeFormat.__CLR4_4_1qus5nkm2x(TestISODateTimeFormat.java:122)
+	at org.joda.time.format.TestISODateTimeFormat.testFormat_dateHourMinuteSecondFraction380(TestISODateTimeFormat.java:120)
+
+testFormat_weekyear377(org.joda.time.format.TestISODateTimeFormat)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<2004[-W24]> but was:<2004[]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestISODateTimeFormat.__CLR4_4_1v6jz8zm2c(TestISODateTimeFormat.java:98)
+	at org.joda.time.format.TestISODateTimeFormat.testFormat_weekyear377(TestISODateTimeFormat.java:96)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.format.TestISODateTimeFormatParsing
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+test_append_Printer464(org.joda.time.format.TestDateTimeFormatterBuilder)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<false> but was:<true>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:146)
+	at junit.framework.Assert.assertEquals(Assert.java:152)
+	at org.joda.time.format.TestDateTimeFormatterBuilder.__CLR4_4_1mimzmfm0o(TestDateTimeFormatterBuilder.java:102)
+	at org.joda.time.format.TestDateTimeFormatterBuilder.test_append_Printer464(TestDateTimeFormatterBuilder.java:93)
+
+test_wordBased_default315(org.joda.time.format.TestPeriodFormat)  Time elapsed: 0.005 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<1 [Tag, 5 Stunden, 6 Minuten, 7 Sekunden und 8 Millisekunden]> but was:<1 [day, 5 hours, 6 minutes, 7 seconds and 8 milliseconds]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestPeriodFormat.__CLR4_4_1m2d7j4m8r(TestPeriodFormat.java:68)
+	at org.joda.time.format.TestPeriodFormat.test_wordBased_default315(TestPeriodFormat.java:66)
+
+testFormatAlternateExtended121(org.joda.time.format.TestISOPeriodFormat)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<P0001-0[6-09]T05:06:07.008> but was:<P0001-0[2-04]T05:06:07.008>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestISOPeriodFormat.__CLR4_4_1ktux9m7g(TestISOPeriodFormat.java:95)
+	at org.joda.time.format.TestISOPeriodFormat.testFormatAlternateExtended121(TestISOPeriodFormat.java:93)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.format.TestISOPeriodFormatParsing
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.format.TestPeriodFormatParsing
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+testFormatPrintZeroRarelyLast87(org.joda.time.format.TestPeriodFormatterBuilder)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[0---]> but was:<[---0]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestPeriodFormatterBuilder.__CLR4_4_17x8g89mbc(TestPeriodFormatterBuilder.java:114)
+	at org.joda.time.format.TestPeriodFormatterBuilder.testFormatPrintZeroRarelyLast87(TestPeriodFormatterBuilder.java:109)
+
+testFormatSeparatorIfFieldsAfter90(org.joda.time.format.TestPeriodFormatterBuilder)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[]5> but was:<[T]5>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at org.joda.time.format.TestPeriodFormatterBuilder.__CLR4_4_16qz6wmbz(TestPeriodFormatterBuilder.java:139)
+	at org.joda.time.format.TestPeriodFormatterBuilder.testFormatSeparatorIfFieldsAfter90(TestPeriodFormatterBuilder.java:134)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.format.TestTextFields
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.tz.TestUTCProvider
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.tz.TestBuilder
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.tz.TestCompiler
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.tz.TestCachedDateTimeZone
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+warning(junit.framework.TestSuite$1)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: No tests found in org.joda.time.tz.TestFixedDateTimeZone
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.TestSuite$1.runTest(TestSuite.java:90)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:95)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:108)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+

@@ -1,0 +1,5 @@
+Testsuite: org.apache.commons.lang3.time.StopWatchTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.114 sec
+
+Testcase: testLang315432 took 0.42 sec
+Testcase: testStopWatchSplit431 took 1.678 sec

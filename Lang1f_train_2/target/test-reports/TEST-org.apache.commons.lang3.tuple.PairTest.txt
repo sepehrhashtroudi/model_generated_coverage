@@ -1,0 +1,7 @@
+Testsuite: org.apache.commons.lang3.tuple.PairTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+
+Testcase: testToStringCustom112 took 0.024 sec
+Testcase: testComparable1108 took 0.002 sec
+Testcase: testCompatibilityBetweenPairs755 took 0.002 sec
+Testcase: testFormattable_simple111 took 0 sec

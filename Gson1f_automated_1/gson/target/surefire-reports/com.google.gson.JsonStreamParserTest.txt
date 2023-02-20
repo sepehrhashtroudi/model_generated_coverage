@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.google.gson.JsonStreamParserTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+testCallingNextBeyondAvailableInput50(com.google.gson.JsonStreamParserTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Parser should not go beyond available input
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.google.gson.JsonStreamParserTest.__CLR4_4_1hgmaaf336(JsonStreamParserTest.java:40)
+	at com.google.gson.JsonStreamParserTest.testCallingNextBeyondAvailableInput50(JsonStreamParserTest.java:36)
+

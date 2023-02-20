@@ -1,0 +1,38 @@
+Testsuite: org.apache.commons.lang3.text.StrBuilderAppendInsertTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+
+Testcase: testAppendln_String_int_int643 took 0.005 sec
+Testcase: testAppend_StrBuilder652 took 0 sec
+Testcase: testAppendWithSeparators_Iterator645 took 0.001 sec
+Testcase: testAppendln_StringBuilder649 took 0 sec
+Testcase: testAppendNewLine644 took 0.001 sec
+Testcase: testAppendFixedWidthPadRight_int677 took 0 sec
+Testcase: testAppend_Object646 took 0 sec
+Testcase: testAppendln_CharArray660 took 0 sec
+Testcase: testAppendln_Object656 took 0 sec
+Testcase: testAppendWithSeparators_Collection667 took 0 sec
+Testcase: testAppendAll_Iterator665 took 0 sec
+Testcase: testAppendln_FormattedString647 took 0 sec
+Testcase: testAppendSeparator_String_String668 took 0 sec
+Testcase: testAppendFixedWidthPadLeft631 took 0 sec
+Testcase: testAppendln_StringBuffer_int_int658 took 0 sec
+Testcase: testAppendln_StrBuilder659 took 0.001 sec
+Testcase: testAppendln_String657 took 0 sec
+Testcase: testAppend_StringBuilder_int_int651 took 0 sec
+Testcase: testAppend_StringBuffer_int_int648 took 0.001 sec
+Testcase: testInsert678 took 0.001 sec
+Testcase: testAppendSeparator_char_int671 took 0 sec
+Testcase: testAppendln_Boolean662 took 0 sec
+Testcase: testAppendln_CharArray_int_int661 took 0 sec
+Testcase: testAppend_CharArray_int_int654 took 0 sec
+Testcase: testAppendSeparator_String_int670 took 0 sec
+Testcase: testAppend_Boolean655 took 0 sec
+Testcase: testAppendFixedWidthPadLeft_int673 took 0 sec
+Testcase: testAppend_StrBuilder_int_int641 took 0 sec
+Testcase: testAppendWithSeparators_Array666 took 0 sec
+Testcase: testLang299675 took 0 sec
+Testcase: testAppendAll_Collection664 took 0 sec
+Testcase: testAppendPadding672 took 0 sec
+Testcase: testAppendSeparator_char_char669 took 0 sec
+Testcase: testAppendln_StringBuilder_int_int650 took 0 sec
+Testcase: testAppendln_PrimitiveNumber663 took 0 sec

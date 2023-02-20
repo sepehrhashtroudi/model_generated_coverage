@@ -1,0 +1,18 @@
+Testsuite: org.apache.commons.lang3.time.StopWatchTest
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 1.948 sec
+
+Testcase: testStopWatchSimple480 took 1.126 sec
+	Caused an ERROR
+Stopwatch is not running. 
+java.lang.IllegalStateException: Stopwatch is not running. 
+	at org.apache.commons.lang3.time.StopWatch.stop(StopWatch.java:150)
+	at org.apache.commons.lang3.time.StopWatchTest.testStopWatchSimple480(StopWatchTest.java:84)
+
+Testcase: testLang315477 took 0.4 sec
+Testcase: testLang315478 took 0.401 sec
+	Caused an ERROR
+Stopwatch is not running. 
+java.lang.IllegalStateException: Stopwatch is not running. 
+	at org.apache.commons.lang3.time.StopWatch.split(StopWatch.java:187)
+	at org.apache.commons.lang3.time.StopWatchTest.testLang315478(StopWatchTest.java:66)
+

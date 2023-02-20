@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":144,"id":35773,"methods":[{"el":55,"sc":5,"sl":53},{"el":59,"sc":5,"sl":57},{"el":63,"sc":5,"sl":61},{"el":69,"sc":5,"sl":65},{"el":77,"sc":1,"sl":73},{"el":84,"sc":1,"sl":80},{"el":102,"sc":1,"sl":87},{"el":107,"sc":1,"sl":105}],"name":"TestReadablePartialConverter","sl":42},{"el":139,"id":35804,"methods":[{"el":135,"sc":9,"sl":123},{"el":138,"sc":9,"sl":136}],"name":"TestReadablePartialConverter.MockTOD","sl":122}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_294":{"methods":[{"sl":105}],"name":"testSupportedType58","pass":true,"statements":[{"sl":106}]},"test_66":{"methods":[{"sl":73}],"name":"testGetChronology_Object_Zone55","pass":true,"statements":[{"sl":74},{"sl":75},{"sl":76}]},"test_720":{"methods":[{"sl":87},{"sl":123},{"sl":136}],"name":"testGetPartialValues57","pass":true,"statements":[{"sl":88},{"sl":89},{"sl":90},{"sl":91},{"sl":92},{"sl":93},{"sl":97},{"sl":98},{"sl":124},{"sl":125},{"sl":126},{"sl":127},{"sl":128},{"sl":129},{"sl":130},{"sl":131},{"sl":132},{"sl":137}]},"test_851":{"methods":[{"sl":80}],"name":"testGetChronology_Object_Chronology56","pass":true,"statements":[{"sl":81},{"sl":82},{"sl":83}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [66], [66], [66], [66], [], [], [], [851], [851], [851], [851], [], [], [], [720], [720], [720], [720], [720], [720], [720], [], [], [], [720], [720], [], [], [], [], [], [], [294], [294], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [720], [720], [720], [720], [720], [720], [720], [720], [720], [720], [], [], [], [720], [720], [], [], [], [], [], [], []]

@@ -1,0 +1,6 @@
+Testsuite: org.apache.commons.lang3.event.EventUtilsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+
+Testcase: testBindFilteredEventsToMethod103 took 0.033 sec
+Testcase: testAddEventListenerWithNoAddMethod102 took 0.003 sec
+Testcase: testAddEventListenerWithPrivateAddMethod48 took 0.001 sec

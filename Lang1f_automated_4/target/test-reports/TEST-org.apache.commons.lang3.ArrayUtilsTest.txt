@@ -1,0 +1,75 @@
+Testsuite: org.apache.commons.lang3.ArrayUtilsTest
+Tests run: 31, Failures: 7, Errors: 1, Skipped: 0, Time elapsed: 0.053 sec
+
+Testcase: testSameLengthLong189 took 0.023 sec
+Testcase: testSameLengthLong190 took 0 sec
+Testcase: testReverseByte200 took 0 sec
+Testcase: testContainsInt206 took 0 sec
+Testcase: testContainsInt207 took 0 sec
+Testcase: testReverseShort197 took 0 sec
+Testcase: testSameType194 took 0.001 sec
+	Caused an ERROR
+The Array must not be null
+java.lang.IllegalArgumentException: The Array must not be null
+	at org.apache.commons.lang3.ArrayUtils.isSameType(ArrayUtils.java:1387)
+	at org.apache.commons.lang3.ArrayUtilsTest.testSameType194(ArrayUtilsTest.java:148)
+
+Testcase: testReverseChar198 took 0 sec
+	FAILED
+expected:<98> but was:<100>
+junit.framework.AssertionFailedError: expected:<98> but was:<100>
+	at org.apache.commons.lang3.ArrayUtilsTest.testReverseChar198(ArrayUtilsTest.java:203)
+
+Testcase: testReverseChar199 took 0.001 sec
+	FAILED
+expected:<98> but was:<100>
+junit.framework.AssertionFailedError: expected:<98> but was:<100>
+	at org.apache.commons.lang3.ArrayUtilsTest.testReverseChar199(ArrayUtilsTest.java:215)
+
+Testcase: testNullToEmptyInt184 took 0 sec
+Testcase: testReverse196 took 0 sec
+	FAILED
+expected:<null> but was:<2>
+junit.framework.AssertionFailedError: expected:<null> but was:<2>
+	at org.apache.commons.lang3.ArrayUtilsTest.testReverse196(ArrayUtilsTest.java:181)
+
+Testcase: testReverseObject195 took 0 sec
+	FAILED
+expected:<null> but was:<2>
+junit.framework.AssertionFailedError: expected:<null> but was:<2>
+	at org.apache.commons.lang3.ArrayUtilsTest.testReverseObject195(ArrayUtilsTest.java:170)
+
+Testcase: testLastIndexOfDoubleWithStartIndexTolerance209 took 0 sec
+	FAILED
+expected:<-1> but was:<4>
+junit.framework.AssertionFailedError: expected:<-1> but was:<4>
+	at org.apache.commons.lang3.ArrayUtilsTest.testLastIndexOfDoubleWithStartIndexTolerance209(ArrayUtilsTest.java:333)
+
+Testcase: testToPrimitive_int_int213 took 0 sec
+Testcase: testToPrimitive_int_int214 took 0 sec
+Testcase: testToPrimitive_long211 took 0.001 sec
+Testcase: testReverseDouble201 took 0.002 sec
+	FAILED
+expected:<4.3> but was:<3.0>
+junit.framework.AssertionFailedError: expected:<4.3> but was:<3.0>
+	at org.apache.commons.lang3.ArrayUtilsTest.testReverseDouble201(ArrayUtilsTest.java:236)
+
+Testcase: testReverseDouble202 took 0 sec
+	FAILED
+expected:<4.3> but was:<3.0>
+junit.framework.AssertionFailedError: expected:<4.3> but was:<3.0>
+	at org.apache.commons.lang3.ArrayUtilsTest.testReverseDouble202(ArrayUtilsTest.java:247)
+
+Testcase: testReverseDouble203 took 0 sec
+Testcase: testSameLengthBoolean191 took 0 sec
+Testcase: testLastIndexOfDoubleWithTolerance208 took 0 sec
+Testcase: testContainsLong205 took 0 sec
+Testcase: testNullToEmptyDouble185 took 0 sec
+Testcase: testLastIndexOfLongWithStartIndex204 took 0 sec
+Testcase: testCloneChar183 took 0 sec
+Testcase: testToPrimitive_long_long212 took 0 sec
+Testcase: testToPrimitive_byte_byte215 took 0 sec
+Testcase: testToPrimitive_byte_byte216 took 0 sec
+Testcase: testToPrimitive_byte_byte217 took 0 sec
+Testcase: testToObject_boolean218 took 0.001 sec
+Testcase: testRemoveElementFloatArray210 took 0 sec

@@ -1,0 +1,13 @@
+Testsuite: org.apache.commons.lang3.time.DateUtilsFragmentTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+
+Testcase: testNullDate458 took 0.026 sec
+Testcase: testSecondsOfMonthWithDate453 took 0.001 sec
+Testcase: testMinutesOfHourWithDate460 took 0 sec
+Testcase: testMillisecondsOfYearWithCalendar454 took 0 sec
+Testcase: testInvalidFragmentWithDate452 took 0.001 sec
+Testcase: testInvalidFragmentWithCalendar456 took 0 sec
+Testcase: testNullCalendar459 took 0 sec
+Testcase: testSecondsofMinuteWithCalendar455 took 0 sec
+Testcase: testDateFragmentInLargerUnitWithCalendar457 took 0 sec
+Testcase: testMillisecondsOfSecondWithDate461 took 0 sec

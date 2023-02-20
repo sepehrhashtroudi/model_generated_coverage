@@ -1,0 +1,140 @@
+Testsuite: org.apache.commons.lang3.StringUtilsTest
+Tests run: 31, Failures: 16, Errors: 3, Skipped: 0, Time elapsed: 0.073 sec
+
+Testcase: testDefault_StringString555 took 0.025 sec
+	FAILED
+expected:<[NULL]> but was:<[]>
+junit.framework.AssertionFailedError: expected:<[NULL]> but was:<[]>
+	at org.apache.commons.lang3.StringUtilsTest.testDefault_StringString555(StringUtilsTest.java:423)
+
+Testcase: testJoin_ArrayOfFloats520 took 0.001 sec
+Testcase: testJoin_ArrayOfLongs521 took 0 sec
+Testcase: testDifference_StringStringArray564 took 0 sec
+	FAILED
+expected:<[robot]> but was:<[]>
+junit.framework.AssertionFailedError: expected:<[robot]> but was:<[]>
+	at org.apache.commons.lang3.StringUtilsTest.testDifference_StringStringArray564(StringUtilsTest.java:433)
+
+Testcase: testJoin_IterableString528 took 0.002 sec
+Testcase: testJoin_IterableString529 took 0 sec
+Testcase: testReverseDelimited_StringChar516 took 0.005 sec
+Testcase: testGetLevenshteinDistance_StringString565 took 0 sec
+Testcase: testSplitByCharacterType_String517 took 0.002 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsTest.testSplitByCharacterType_String517(StringUtilsTest.java:127)
+
+Testcase: testJoin_ArrayOfPrimitives519 took 0 sec
+Testcase: testRepeat_charInt534 took 0.001 sec
+	FAILED
+expected:<[]> but was:<[aa]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[aa]>
+	at org.apache.commons.lang3.StringUtilsTest.testRepeat_charInt534(StringUtilsTest.java:273)
+
+Testcase: testCapitalize_String547 took 0 sec
+	FAILED
+expected:<I [Am H]ere 123> but was:<I [am h]ere 123>
+junit.framework.AssertionFailedError: expected:<I [Am H]ere 123> but was:<I [am h]ere 123>
+	at org.apache.commons.lang3.StringUtilsTest.testCapitalize_String547(StringUtilsTest.java:348)
+
+Testcase: testCapitalize_String548 took 0 sec
+	FAILED
+expected:<I [AM HERE] 123> but was:<I [am here] 123>
+junit.framework.AssertionFailedError: expected:<I [AM HERE] 123> but was:<I [am here] 123>
+	at org.apache.commons.lang3.StringUtilsTest.testCapitalize_String548(StringUtilsTest.java:360)
+
+Testcase: testLength537 took 0.001 sec
+	FAILED
+expected:<null> but was:<0>
+junit.framework.AssertionFailedError: expected:<null> but was:<0>
+	at org.apache.commons.lang3.StringUtilsTest.testLength537(StringUtilsTest.java:320)
+
+Testcase: testLength538 took 0 sec
+	FAILED
+expected:<null> but was:<0>
+junit.framework.AssertionFailedError: expected:<null> but was:<0>
+	at org.apache.commons.lang3.StringUtilsTest.testLength538(StringUtilsTest.java:334)
+
+Testcase: testJoin_ArrayOfObjects522 took 0 sec
+Testcase: testJoin_ArrayOfObjects524 took 0 sec
+	FAILED
+expected:<[1;2]> but was:<[[I@34340fab24]>
+junit.framework.AssertionFailedError: expected:<[1;2]> but was:<[[I@34340fab24]>
+	at org.apache.commons.lang3.StringUtilsTest.testJoin_ArrayOfObjects524(StringUtilsTest.java:170)
+
+Testcase: testJoin_ArrayOfObjects525 took 0.001 sec
+	FAILED
+expected:<[1;2]> but was:<[[I@34340fab24]>
+junit.framework.AssertionFailedError: expected:<[1;2]> but was:<[[I@34340fab24]>
+	at org.apache.commons.lang3.StringUtilsTest.testJoin_ArrayOfObjects525(StringUtilsTest.java:180)
+
+Testcase: testJoin_ArrayOfObjects526 took 0 sec
+Testcase: testJoin_ArrayOfObjects527 took 0 sec
+	FAILED
+expected:<[1;2]> but was:<[[I@34340fab24]>
+junit.framework.AssertionFailedError: expected:<[1;2]> but was:<[[I@34340fab24]>
+	at org.apache.commons.lang3.StringUtilsTest.testJoin_ArrayOfObjects527(StringUtilsTest.java:195)
+
+Testcase: testJoin_ArrayOfInts518 took 0 sec
+Testcase: testJoin_ArrayOfInts523 took 0 sec
+Testcase: testRepeat_char_int535 took 0.001 sec
+	FAILED
+expected:<[]> but was:<[aa]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[aa]>
+	at org.apache.commons.lang3.StringUtilsTest.testRepeat_char_int535(StringUtilsTest.java:288)
+
+Testcase: testUncapitalize_String549 took 0.002 sec
+	FAILED
+expected:<[I AM HERE] 123> but was:<[i am here] 123>
+junit.framework.AssertionFailedError: expected:<[I AM HERE] 123> but was:<[i am here] 123>
+	at org.apache.commons.lang3.StringUtilsTest.testUncapitalize_String549(StringUtilsTest.java:375)
+
+Testcase: testUncapitalize_String550 took 0 sec
+	FAILED
+expected:<[I]> but was:<[i]>
+junit.framework.AssertionFailedError: expected:<[I]> but was:<[i]>
+	at org.apache.commons.lang3.StringUtilsTest.testUncapitalize_String550(StringUtilsTest.java:389)
+
+Testcase: testReplacePattern_StringStringString530 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at java.util.regex.Matcher.getTextLength(Matcher.java:1283)
+	at java.util.regex.Matcher.reset(Matcher.java:309)
+	at java.util.regex.Matcher.<init>(Matcher.java:229)
+	at java.util.regex.Pattern.matcher(Pattern.java:1093)
+	at org.apache.commons.lang3.StringUtils.replacePattern(StringUtils.java:4335)
+	at org.apache.commons.lang3.StringUtilsTest.testReplacePattern_StringStringString530(StringUtilsTest.java:234)
+
+Testcase: testReplacePattern_StringStringString531 took 0 sec
+	Caused an ERROR
+null
+java.lang.NullPointerException
+	at java.util.regex.Matcher.getTextLength(Matcher.java:1283)
+	at java.util.regex.Matcher.reset(Matcher.java:309)
+	at java.util.regex.Matcher.<init>(Matcher.java:229)
+	at java.util.regex.Pattern.matcher(Pattern.java:1093)
+	at org.apache.commons.lang3.StringUtils.replacePattern(StringUtils.java:4335)
+	at org.apache.commons.lang3.StringUtilsTest.testReplacePattern_StringStringString531(StringUtilsTest.java:252)
+
+Testcase: testIsAllUpperCase553 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsTest.testIsAllUpperCase553(StringUtilsTest.java:402)
+
+Testcase: testIsAllUpperCase554 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.StringUtilsTest.testIsAllUpperCase554(StringUtilsTest.java:411)
+
+Testcase: testGetLevenshteinDistance_StringStringInt568 took 0 sec
+	Caused an ERROR
+Threshold must not be negative
+java.lang.IllegalArgumentException: Threshold must not be negative
+	at org.apache.commons.lang3.StringUtils.getLevenshteinDistance(StringUtils.java:6748)
+	at org.apache.commons.lang3.StringUtilsTest.testGetLevenshteinDistance_StringStringInt568(StringUtilsTest.java:465)
+
+Testcase: testCenter_StringIntString536 took 0 sec

@@ -1,0 +1,5 @@
+Testsuite: org.apache.commons.lang3.concurrent.AtomicSafeInitializerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+
+Testcase: testGetMultipleTimes1135 took 0.02 sec
+Testcase: testGetConcurrent904 took 0.003 sec

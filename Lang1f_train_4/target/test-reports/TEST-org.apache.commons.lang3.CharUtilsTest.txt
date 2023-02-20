@@ -1,0 +1,15 @@
+Testsuite: org.apache.commons.lang3.CharUtilsTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+
+Testcase: testIsAsciiControl_char829 took 0.022 sec
+Testcase: testToUnicodeEscaped_Character828 took 0.001 sec
+Testcase: testToChar_Character822 took 0 sec
+Testcase: testToCharacterObject_char820 took 0.007 sec
+Testcase: testToString_Character827 took 0 sec
+Testcase: testConstructor819 took 0 sec
+Testcase: testToCharacterObject_String821 took 0 sec
+Testcase: testIsAsciiAlphanumeric_char830 took 0 sec
+Testcase: testToChar_String824 took 0 sec
+Testcase: testToChar_Character_char823 took 0 sec
+Testcase: testToChar_String_char825 took 0 sec
+Testcase: testToIntValue_Character826 took 0 sec

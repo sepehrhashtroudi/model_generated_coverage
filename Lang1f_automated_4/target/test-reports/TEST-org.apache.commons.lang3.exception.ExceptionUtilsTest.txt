@@ -1,0 +1,4 @@
+Testsuite: org.apache.commons.lang3.exception.ExceptionUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec
+
+Testcase: testIndexOf_ThrowableClassInt467 took 0.041 sec

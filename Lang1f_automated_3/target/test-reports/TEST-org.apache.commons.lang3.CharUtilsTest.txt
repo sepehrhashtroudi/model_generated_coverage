@@ -1,0 +1,12 @@
+Testsuite: org.apache.commons.lang3.CharUtilsTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+
+Testcase: testToUnicodeEscaped_Character418 took 0.023 sec
+	FAILED
+expected:<[A]> but was:<[\u0041]>
+junit.framework.AssertionFailedError: expected:<[A]> but was:<[\u0041]>
+	at org.apache.commons.lang3.CharUtilsTest.testToUnicodeEscaped_Character418(CharUtilsTest.java:70)
+
+Testcase: testToUnicodeEscaped_char415 took 0 sec
+Testcase: testToIntValue_Character414 took 0 sec
+Testcase: testToIntValue_Character_int413 took 0 sec

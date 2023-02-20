@@ -1,0 +1,7 @@
+Testsuite: org.apache.commons.lang3.tuple.MutablePairTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+
+Testcase: testDefault759 took 0.018 sec
+Testcase: testHashCode758 took 0.001 sec
+Testcase: testEquals131 took 0.002 sec
+Testcase: testMutate760 took 0 sec

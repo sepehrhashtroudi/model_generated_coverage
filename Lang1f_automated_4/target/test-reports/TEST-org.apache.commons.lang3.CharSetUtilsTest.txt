@@ -1,0 +1,18 @@
+Testsuite: org.apache.commons.lang3.CharSetUtilsTest
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+
+Testcase: testDelete_StringString462 took 0.026 sec
+	FAILED
+expected:<[]> but was:<[hello]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[hello]>
+	at org.apache.commons.lang3.CharSetUtilsTest.testDelete_StringString462(CharSetUtilsTest.java:100)
+
+Testcase: testCount_StringString461 took 0 sec
+	FAILED
+expected:<> but was:<0>
+junit.framework.AssertionFailedError: expected:<> but was:<0>
+	at org.apache.commons.lang3.CharSetUtilsTest.testCount_StringString461(CharSetUtilsTest.java:83)
+
+Testcase: testConstructor_String_simple332 took 0.002 sec
+Testcase: testContainsAny_StringString464 took 0 sec
+Testcase: testConstructor460 took 0 sec

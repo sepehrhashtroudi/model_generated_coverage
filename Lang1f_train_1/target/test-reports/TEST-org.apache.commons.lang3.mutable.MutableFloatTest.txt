@@ -1,0 +1,16 @@
+Testsuite: org.apache.commons.lang3.mutable.MutableFloatTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+
+Testcase: testToString177 took 0.022 sec
+Testcase: testAddValuePrimitive170 took 0 sec
+Testcase: testDecrement169 took 0 sec
+Testcase: testConstructorNull166 took 0 sec
+Testcase: testSubtractValuePrimitive172 took 0 sec
+Testcase: testNanInfinite167 took 0 sec
+Testcase: testIncrement168 took 0 sec
+Testcase: testSubtractValueObject173 took 0 sec
+Testcase: testCompareTo176 took 0 sec
+Testcase: testAddValueObject171 took 0 sec
+Testcase: testToFloat175 took 0 sec
+Testcase: testGetSet165 took 0 sec
+Testcase: testPrimitiveValues174 took 0 sec

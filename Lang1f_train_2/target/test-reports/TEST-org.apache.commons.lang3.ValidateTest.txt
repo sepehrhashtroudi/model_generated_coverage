@@ -1,0 +1,26 @@
+Testsuite: org.apache.commons.lang3.ValidateTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec
+
+Testcase: testNotBlankBlankStringWithWhitespacesShouldThrow896 took 0.027 sec
+Testcase: testNotEmptyMap1891 took 0.001 sec
+Testcase: testNotBlankMsgBlankStringShouldThrow893 took 0 sec
+Testcase: testMatchesPattern_withMessage901 took 0 sec
+Testcase: testNoNullElementsArray2889 took 0.008 sec
+Testcase: testIsAssignable_withMessage907 took 0 sec
+Testcase: testExclusiveBetween_withMessage904 took 0 sec
+Testcase: testNotEmptyString1892 took 0 sec
+Testcase: testNoNullElementsCollection1897 took 0.001 sec
+Testcase: testValidIndex_collection899 took 0 sec
+Testcase: testIsInstanceOfExceptionMessage905 took 0 sec
+Testcase: testIsTrue1887 took 0 sec
+Testcase: testIsTrue2886 took 0 sec
+Testcase: testIsTrue4885 took 0 sec
+Testcase: testNotEmptyCollection1890 took 0 sec
+Testcase: testNotBlankMsgNotBlankStringShouldNotThrow895 took 0 sec
+Testcase: testInclusiveBetween_withMessage903 took 0 sec
+Testcase: testNotBlankNullStringShouldThrow894 took 0 sec
+Testcase: testIsInstanceOf_withMessage906 took 0 sec
+Testcase: testInclusiveBetween902 took 0 sec
+Testcase: testValidIndex_withMessage_collection898 took 0 sec
+Testcase: testValidIndex_array888 took 0 sec
+Testcase: testMatchesPattern900 took 0 sec

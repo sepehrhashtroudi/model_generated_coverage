@@ -1,0 +1,13 @@
+Testsuite: org.apache.commons.lang3.time.FastDatePrinterTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec
+
+Testcase: testFormat299 took 0.029 sec
+Testcase: testMilleniumBug307 took 0 sec
+Testcase: testShortDateStyleWithLocales306 took 0.003 sec
+Testcase: testToStringContainsName303 took 0 sec
+Testcase: testTimeZoneMatches304 took 0 sec
+Testcase: testLang303305 took 0.024 sec
+Testcase: testLang538300 took 0 sec
+Testcase: testLang645301 took 0 sec
+Testcase: testLowYearPadding302 took 0.001 sec
+Testcase: testLocaleMatches298 took 0 sec

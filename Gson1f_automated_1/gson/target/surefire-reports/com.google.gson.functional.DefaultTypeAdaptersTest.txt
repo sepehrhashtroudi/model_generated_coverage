@@ -1,0 +1,33 @@
+-------------------------------------------------------------------------------
+Test set: com.google.gson.functional.DefaultTypeAdaptersTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE!
+testDefaultJavaSqlTimeDeserialization35(com.google.gson.functional.DefaultTypeAdaptersTest)  Time elapsed: 0.001 sec  <<< ERROR!
+com.google.gson.JsonSyntaxException: java.text.ParseException: Unparseable date: "Dec 3, 2009 1:18:02 PM"
+	at com.google.gson.DefaultTypeAdapters$DefaultTimeTypeAdapter.deserialize(DefaultTypeAdapters.java:354)
+	at com.google.gson.DefaultTypeAdapters$DefaultTimeTypeAdapter.deserialize(DefaultTypeAdapters.java:332)
+	at com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:50)
+	at com.google.gson.JsonDeserializationVisitor.invokeCustomDeserializer(JsonDeserializationVisitor.java:88)
+	at com.google.gson.JsonDeserializationVisitor.visitUsingCustomHandler(JsonDeserializationVisitor.java:76)
+	at com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:106)
+	at com.google.gson.JsonDeserializationContextDefault.fromJsonPrimitive(JsonDeserializationContextDefault.java:84)
+	at com.google.gson.JsonDeserializationContextDefault.deserialize(JsonDeserializationContextDefault.java:53)
+	at com.google.gson.Gson.fromJson(Gson.java:539)
+	at com.google.gson.Gson.fromJson(Gson.java:486)
+	at com.google.gson.Gson.fromJson(Gson.java:473)
+	at com.google.gson.Gson.fromJson(Gson.java:427)
+	at com.google.gson.Gson.fromJson(Gson.java:400)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.__CLR4_4_1cxv8pa3ku(DefaultTypeAdaptersTest.java:108)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.testDefaultJavaSqlTimeDeserialization35(DefaultTypeAdaptersTest.java:106)
+Caused by: java.text.ParseException: Unparseable date: "Dec 3, 2009 1:18:02 PM"
+	at java.text.DateFormat.parse(DateFormat.java:366)
+	at com.google.gson.DefaultTypeAdapters$DefaultTimeTypeAdapter.deserialize(DefaultTypeAdapters.java:350)
+	... 41 more
+
+testLocaleSerialization38(com.google.gson.functional.DefaultTypeAdaptersTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[en]> but was:<["en"]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.__CLR4_4_18rtqo3kz(DefaultTypeAdaptersTest.java:115)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.testLocaleSerialization38(DefaultTypeAdaptersTest.java:112)
+

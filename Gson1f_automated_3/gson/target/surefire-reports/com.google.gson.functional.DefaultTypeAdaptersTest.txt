@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.google.gson.functional.DefaultTypeAdaptersTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec <<< FAILURE!
+testBigDecimalFieldSerialization24(com.google.gson.functional.DefaultTypeAdaptersTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[-122.01e-21]> but was:<[{"value":-1.2201E-19}]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.__CLR4_4_1e7tltu3k6(DefaultTypeAdaptersTest.java:89)
+	at com.google.gson.functional.DefaultTypeAdaptersTest.testBigDecimalFieldSerialization24(DefaultTypeAdaptersTest.java:86)
+

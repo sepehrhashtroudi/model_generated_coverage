@@ -1,0 +1,56 @@
+Testsuite: org.apache.commons.lang3.BooleanUtilsTest
+Tests run: 18, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
+
+Testcase: test_toStringOnOff_boolean17 took 0.02 sec
+Testcase: test_isFalse_Boolean1 took 0.002 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.BooleanUtilsTest.test_isFalse_Boolean1(BooleanUtilsTest.java:41)
+
+Testcase: test_toInteger_Boolean_int_int9 took 0 sec
+	FAILED
+expected:<7> but was:<6>
+junit.framework.AssertionFailedError: expected:<7> but was:<6>
+	at org.apache.commons.lang3.BooleanUtilsTest.test_toInteger_Boolean_int_int9(BooleanUtilsTest.java:82)
+
+Testcase: testOr_object_nullElementInput23 took 0.005 sec
+Testcase: test_toIntegerObject_boolean8 took 0.003 sec
+Testcase: test_toBooleanObject_String_String_String_String_nullValue16 took 0 sec
+Testcase: test_toBoolean_int_int_int_noMatch3 took 0 sec
+Testcase: testAnd_primitive_nullInput20 took 0 sec
+Testcase: testOr_primitive_emptyInput22 took 0 sec
+Testcase: test_toStringYesNo_boolean18 took 0 sec
+Testcase: test_toInteger_boolean7 took 0 sec
+	FAILED
+expected:<0> but was:<1>
+junit.framework.AssertionFailedError: expected:<0> but was:<1>
+	at org.apache.commons.lang3.BooleanUtilsTest.test_toInteger_boolean7(BooleanUtilsTest.java:71)
+
+Testcase: test_toIntegerObject_Boolean_Integer_Integer12 took 0 sec
+Testcase: test_toBooleanObject_Integer_Integer_Integer_nullValue4 took 0 sec
+Testcase: testAnd_object_nullInput21 took 0 sec
+Testcase: test_toInteger_Boolean_int_int10 took 0 sec
+	FAILED
+expected:<7> but was:<6>
+junit.framework.AssertionFailedError: expected:<7> but was:<6>
+	at org.apache.commons.lang3.BooleanUtilsTest.test_toInteger_Boolean_int_int10(BooleanUtilsTest.java:90)
+
+Testcase: test_toInteger_Boolean_int_int11 took 0.001 sec
+	FAILED
+expected:<7> but was:<6>
+junit.framework.AssertionFailedError: expected:<7> but was:<6>
+	at org.apache.commons.lang3.BooleanUtilsTest.test_toInteger_Boolean_int_int11(BooleanUtilsTest.java:99)
+
+Testcase: test_toBooleanObject_Integer_Integer_Integer5 took 0.001 sec
+	FAILED
+expected:<null> but was:<true>
+junit.framework.AssertionFailedError: expected:<null> but was:<true>
+	at org.apache.commons.lang3.BooleanUtilsTest.test_toBooleanObject_Integer_Integer_Integer5(BooleanUtilsTest.java:64)
+
+Testcase: test_isNotFalse_Boolean2 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.BooleanUtilsTest.test_isNotFalse_Boolean2(BooleanUtilsTest.java:46)
+

@@ -1,0 +1,14 @@
+Testsuite: org.apache.commons.lang3.builder.ToStringStyleTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+
+Testcase: testSetArraySeparator1118 took 0.024 sec
+Testcase: testSetArrayEnd1117 took 0 sec
+Testcase: testSetContentEnd1120 took 0 sec
+Testcase: testSetContentStart1119 took 0 sec
+Testcase: testSetSummaryObjectStartText1126 took 0 sec
+Testcase: testSetFieldNameValueSeparator1121 took 0 sec
+Testcase: testSetSizeEndText1125 took 0 sec
+Testcase: testSetArrayStart1116 took 0 sec
+Testcase: testSetNullText1123 took 0 sec
+Testcase: testSetFieldSeparator1122 took 0 sec
+Testcase: testSetSizeStartText1124 took 0 sec

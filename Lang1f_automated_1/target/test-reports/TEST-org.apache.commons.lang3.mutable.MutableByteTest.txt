@@ -1,0 +1,11 @@
+Testsuite: org.apache.commons.lang3.mutable.MutableByteTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+
+Testcase: testConstructors121 took 0.019 sec
+Testcase: testToString127 took 0 sec
+Testcase: testIncrement125 took 0 sec
+Testcase: testSubtractValueObject126 took 0 sec
+Testcase: testCompareTo128 took 0 sec
+Testcase: testGetSet122 took 0 sec
+Testcase: testGetSet123 took 0 sec
+Testcase: testGetSet124 took 0 sec

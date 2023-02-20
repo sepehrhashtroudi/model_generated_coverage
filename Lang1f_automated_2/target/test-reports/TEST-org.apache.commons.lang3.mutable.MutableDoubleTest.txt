@@ -1,0 +1,9 @@
+Testsuite: org.apache.commons.lang3.mutable.MutableDoubleTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+
+Testcase: testConstructors474 took 0.02 sec
+Testcase: testConstructors475 took 0 sec
+Testcase: testConstructorNull473 took 0 sec
+Testcase: testGetSet472 took 0 sec
+Testcase: testGetSet476 took 0 sec
+Testcase: testPrimitiveValues477 took 0 sec

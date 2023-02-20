@@ -1,0 +1,8 @@
+Testsuite: org.apache.commons.lang3.mutable.MutableDoubleTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+
+Testcase: testConstructors580 took 0.021 sec
+Testcase: testToDouble581 took 0 sec
+Testcase: testToString583 took 0.002 sec
+Testcase: testAddValueObject579 took 0 sec
+Testcase: testEquals582 took 0 sec

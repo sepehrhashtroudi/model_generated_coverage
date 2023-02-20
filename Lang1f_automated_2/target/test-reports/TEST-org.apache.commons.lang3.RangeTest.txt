@@ -1,0 +1,28 @@
+Testsuite: org.apache.commons.lang3.RangeTest
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+
+Testcase: testToString349 took 0.018 sec
+Testcase: testIsBefore347 took 0.002 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.RangeTest.testIsBefore347(RangeTest.java:89)
+
+Testcase: testContainsRange348 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.RangeTest.testContainsRange348(RangeTest.java:100)
+
+Testcase: testContains345 took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.RangeTest.testContains345(RangeTest.java:70)
+
+Testcase: testContains346 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.RangeTest.testContains346(RangeTest.java:78)
+

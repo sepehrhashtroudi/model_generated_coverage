@@ -1,0 +1,16 @@
+Testsuite: org.apache.commons.lang3.SystemUtilsTest
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+
+Testcase: testOSNameMatches291 took 0.02 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.SystemUtilsTest.testOSNameMatches291(SystemUtilsTest.java:51)
+
+Testcase: testOSNameMatches292 took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.SystemUtilsTest.testOSNameMatches292(SystemUtilsTest.java:65)
+
+Testcase: testGetJavaHome289 took 0 sec

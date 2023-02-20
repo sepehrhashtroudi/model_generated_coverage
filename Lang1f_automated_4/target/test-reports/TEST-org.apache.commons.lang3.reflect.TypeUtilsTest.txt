@@ -1,0 +1,9 @@
+Testsuite: org.apache.commons.lang3.reflect.TypeUtilsTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.012 sec
+
+Testcase: initializationError took 0.001 sec
+	Caused an ERROR
+Method delegateBooleanAssertion should have no parameters
+java.lang.Exception: Method delegateBooleanAssertion should have no parameters
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+

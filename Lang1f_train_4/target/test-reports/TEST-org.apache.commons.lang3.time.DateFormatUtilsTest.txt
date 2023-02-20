@@ -1,0 +1,10 @@
+Testsuite: org.apache.commons.lang3.time.DateFormatUtilsTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 sec
+
+Testcase: testFormat310 took 0.129 sec
+Testcase: testFormatUTC308 took 0 sec
+Testcase: testDateISO312 took 0.004 sec
+Testcase: testFormatCalendar311 took 0 sec
+Testcase: testTimeISO236 took 0.002 sec
+Testcase: testConstructor307 took 0 sec
+Testcase: testSMTP309 took 0.004 sec

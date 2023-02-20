@@ -1,0 +1,7 @@
+Testsuite: org.apache.commons.lang3.mutable.MutableDoubleTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+
+Testcase: testDecrement506 took 0.017 sec
+Testcase: testSubtractValuePrimitive507 took 0 sec
+Testcase: testIncrement505 took 0 sec
+Testcase: testSubtractValueObject508 took 0 sec

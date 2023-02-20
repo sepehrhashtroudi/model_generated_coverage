@@ -1,0 +1,7 @@
+Testsuite: org.apache.commons.lang3.text.StrTokenizerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
+
+Testcase: testTSVEmpty121 took 0.024 sec
+Testcase: testBasicQuotedTrimmed1120 took 0.01 sec
+Testcase: testCloneOfStringArray124 took 0.013 sec
+Testcase: testToString125 took 0 sec

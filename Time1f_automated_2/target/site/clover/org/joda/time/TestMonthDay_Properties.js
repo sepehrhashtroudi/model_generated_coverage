@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":161,"id":23956,"methods":[{"el":53,"sc":5,"sl":51},{"el":57,"sc":5,"sl":55},{"el":61,"sc":5,"sl":59},{"el":69,"sc":5,"sl":63},{"el":77,"sc":5,"sl":71},{"el":91,"sc":1,"sl":80},{"el":105,"sc":1,"sl":92},{"el":111,"sc":1,"sl":106},{"el":117,"sc":1,"sl":112},{"el":160,"sc":5,"sl":157}],"name":"TestMonthDay_Properties","sl":30}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_108":{"methods":[{"sl":92},{"sl":157}],"name":"testPropertyAddMonthOfYear533","pass":false,"statements":[{"sl":93},{"sl":94},{"sl":95},{"sl":96},{"sl":97},{"sl":98},{"sl":158},{"sl":159}]},"test_279":{"methods":[{"sl":80},{"sl":157}],"name":"testPropertyAddMonthOfYear198","pass":false,"statements":[{"sl":81},{"sl":82},{"sl":83},{"sl":84},{"sl":158},{"sl":159}]},"test_30":{"methods":[{"sl":106},{"sl":157}],"name":"testPropertySetTextDayOfMonth534","pass":false,"statements":[{"sl":107},{"sl":108},{"sl":109},{"sl":110},{"sl":158},{"sl":159}]},"test_79":{"methods":[{"sl":112},{"sl":157}],"name":"testPropertySetTextDayOfMonth535","pass":false,"statements":[{"sl":113},{"sl":114},{"sl":115},{"sl":116},{"sl":158},{"sl":159}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [279], [279], [279], [279], [279], [], [], [], [], [], [], [], [108], [108], [108], [108], [108], [108], [108], [], [], [], [], [], [], [], [30], [30], [30], [30], [30], [], [79], [79], [79], [79], [79], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [108, 30, 79, 279], [108, 30, 79, 279], [108, 30, 79, 279], [], []]

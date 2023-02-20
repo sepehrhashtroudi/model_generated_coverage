@@ -1,0 +1,52 @@
+Testsuite: org.apache.commons.lang3.reflect.FieldUtilsTest
+Tests run: 15, Failures: 3, Errors: 3, Skipped: 0, Time elapsed: 0.046 sec
+
+Testcase: testReadStaticFieldIllegalArgumentException1316 took 0.019 sec
+Testcase: testReadField309 took 0.002 sec
+Testcase: testReadDeclaredNamedField318 took 0.001 sec
+	Caused an ERROR
+Cannot locate declared field java.lang.Class.VALUE
+java.lang.IllegalArgumentException: Cannot locate declared field java.lang.Class.VALUE
+	at org.apache.commons.lang3.reflect.FieldUtils.readDeclaredField(FieldUtils.java:479)
+	at org.apache.commons.lang3.reflect.FieldUtils.readDeclaredField(FieldUtils.java:453)
+	at org.apache.commons.lang3.reflect.FieldUtilsTest.testReadDeclaredNamedField318(FieldUtilsTest.java:254)
+
+Testcase: testAmbig310 took 0.002 sec
+Testcase: testReadNamedStaticFieldForceAccess315 took 0.001 sec
+	FAILED
+expected IllegalArgumentException
+junit.framework.AssertionFailedError: expected IllegalArgumentException
+	at org.apache.commons.lang3.reflect.FieldUtilsTest.testReadNamedStaticFieldForceAccess315(FieldUtilsTest.java:224)
+
+Testcase: testReadDeclaredNamedFieldForceAccess320 took 0.001 sec
+	Caused an ERROR
+Cannot locate declared field org.apache.commons.lang3.reflect.testbed.PublicChild.s
+java.lang.IllegalArgumentException: Cannot locate declared field org.apache.commons.lang3.reflect.testbed.PublicChild.s
+	at org.apache.commons.lang3.reflect.FieldUtils.readDeclaredField(FieldUtils.java:479)
+	at org.apache.commons.lang3.reflect.FieldUtilsTest.testReadDeclaredNamedFieldForceAccess320(FieldUtilsTest.java:269)
+
+Testcase: testReadDeclaredNamedFieldForceAccess322 took 0 sec
+	Caused an ERROR
+Cannot locate declared field java.lang.Class.VALUE
+java.lang.IllegalArgumentException: Cannot locate declared field java.lang.Class.VALUE
+	at org.apache.commons.lang3.reflect.FieldUtils.readDeclaredField(FieldUtils.java:479)
+	at org.apache.commons.lang3.reflect.FieldUtilsTest.testReadDeclaredNamedFieldForceAccess322(FieldUtilsTest.java:294)
+
+Testcase: testReadNamedStaticField317 took 0.001 sec
+	FAILED
+expected:<[child]> but was:<[foo]>
+junit.framework.AssertionFailedError: expected:<[child]> but was:<[foo]>
+	at org.apache.commons.lang3.reflect.FieldUtilsTest.testReadNamedStaticField317(FieldUtilsTest.java:240)
+
+Testcase: testWriteDeclaredNamedStaticFieldForceAccess313 took 0 sec
+Testcase: testReadDeclaredNamedStaticFieldForceAccess256 took 0.001 sec
+Testcase: testWriteNamedStaticField308 took 0 sec
+Testcase: testConstructor307 took 0 sec
+Testcase: testGetDeclaredFieldAccessIllegalArgumentException1312 took 0 sec
+Testcase: testGetFieldForceAccessIllegalArgumentException2311 took 0 sec
+Testcase: testReadStaticFieldForceAccess314 took 0 sec
+	FAILED
+expected IllegalArgumentException
+junit.framework.AssertionFailedError: expected IllegalArgumentException
+	at org.apache.commons.lang3.reflect.FieldUtilsTest.testReadStaticFieldForceAccess314(FieldUtilsTest.java:209)
+

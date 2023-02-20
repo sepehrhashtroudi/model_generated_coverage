@@ -1,0 +1,11 @@
+Testsuite: org.apache.commons.lang3.math.FractionTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
+
+Testcase: testToProperString102 took 0.03 sec
+Testcase: testAdd112 took 0.002 sec
+	FAILED
+expected:<6> but was:<-1>
+junit.framework.AssertionFailedError: expected:<6> but was:<-1>
+	at org.apache.commons.lang3.math.FractionTest.testAdd112(FractionTest.java:97)
+
+Testcase: testHashCode101 took 0 sec

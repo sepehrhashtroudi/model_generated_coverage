@@ -1,0 +1,11 @@
+Testsuite: org.apache.commons.lang3.exception.ContextedRuntimeExceptionTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+
+Testcase: testContextedException44 took 0.025 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at org.apache.commons.lang3.exception.ContextedRuntimeExceptionTest.testContextedException44(ContextedRuntimeExceptionTest.java:47)
+
+Testcase: testContextedException45 took 0.006 sec
+Testcase: testGetContextValues330 took 0 sec
